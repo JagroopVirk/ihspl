@@ -1,0 +1,34 @@
+---
+import favIcon from "../assets/favicon.png";
+
+// Importing google fonts
+import GoogleFonts from "../components/extras/googleFonts.astro";
+
+// Importing the default SEO and location schema
+import Seo from "../components/seo/Seo.astro";
+import { defaultSeo, locationSchema } from "../data/js/siteSeo.js";
+
+const {
+  seo = defaultSeo, // page-specific SEO, or fall back to default
+  location = locationSchema, // locationSchema can also be optional
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png+xml" href={favIcon.src} />
+
+    {/* Google Fonts */}
+    <GoogleFonts />
+
+    {/* SEO component */}
+    <Seo {...seo} locationSchema={location} />
+    
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>

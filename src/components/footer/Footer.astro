@@ -1,0 +1,128 @@
+---
+import offices from "../../data/js/offices.js";
+import footerData from "../../data/js/footerData.js";
+
+// Importing the GoTopBtn component for the "Back to Top" button
+import GoTopBtn from "../other/GoTopBtn.astro";
+
+// Font Awesome
+import { library, icon } from "@fortawesome/fontawesome-svg-core";
+
+// import { faYoutube } from "@fortawesome/free-brands-svg-icons";
+import { faMapMarkerAlt, faPhoneSquare, faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
+import { Fragment } from "react";
+
+// Declare all the icons you plan on using
+library.add(faPhoneSquare, faMapMarkerAlt, faEnvelopeSquare);
+
+// Instantiate the icon with the icon function
+const mapIcon = icon({ prefix: "fas", iconName: faMapMarkerAlt.iconName });
+const phoneIcon = icon({ prefix: "fas", iconName: faPhoneSquare.iconName });
+const emailIcon = icon({ prefix: "fas", iconName: faEnvelopeSquare.iconName });
+
+// Importing the SetMarginTop component for setting margin top
+import SetMarginTop from "../extras/setMarginTop.astro";
+
+---
+
+<footer class="bg-primary text-white px-6 py-12">
+  <!-- Upper Section -->
+  <div class="mb-16">
+    <h2 class="text-2xl font-semibold mb-8 text-center">Our Global Offices</h2>
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
+    >
+      {
+        offices.map((office) => (
+          <div>
+           
+               <h3 class="text-lg font-semibold mb-2 text-center footerHeading">{office.location}</h3>
+           
+               <div class="flex mb-2">
+                 <div class="footerIcon">
+                <Fragment set:html={mapIcon.html}/>
+                 
+                </div><p class="footerAddress">{office.address}</p>
+               </div>
+
+               <div class="flex mb-2">
+                 <div class="footerIcon">
+                  <Fragment set:html={phoneIcon.html}/>
+                </div><p class="footerAddress">{office.phone}</p>
+               </div>
+
+               <div class="flex mb-2">
+                 <div class="footerIcon">
+                  <Fragment set:html={emailIcon.html}/>
+                  </div><p class="footerAddress">{office.email}</p>
+               </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+
+  <!-- Lower Section -->
+  <div
+    class="border-t border-gray-700 pt-12 grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto"
+  >
+    <!-- Company Info -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">About Our Company</h3>
+      <p class="text-sm text-gray-400">
+        We are a leading global tech company offering innovative solutions in
+        web development, cloud hosting, and digital marketing. Our mission is to
+        empower businesses with cutting-edge technologies.
+      </p>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Our Services</h3>
+      <ul class="space-y-2">
+        {
+          footerData.services.map((service) => (
+            <li class="text-sm text-gray-300 hover:text-white cursor-pointer">
+              {service}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+
+    {
+    <!-- Quick Links -->
+    <div>
+      <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+      <ul class="space-y-2">
+        {
+          footerData.quickLinks.map((link) => (
+            <li class="text-sm text-gray-300 hover:text-white cursor-pointer">
+              {link}
+            </li>
+          ))
+        }
+      </ul>
+    </div>
+    }
+  </div>
+  <GoTopBtn />
+  <SetMarginTop />
+</footer>
+
+<style>
+.footerAddress {
+  color: #fff;
+}
+
+.footerHeading {
+  color: var(--color-secondaryOrange);
+}
+
+.footerIcon {
+  min-width:20px;
+  color: var(--color-secondaryOrange);
+  margin-block: auto;
+  }
+
+</style>

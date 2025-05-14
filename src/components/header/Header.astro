@@ -1,0 +1,49 @@
+---
+import Navigation from "./Navigation.astro";
+import { Image } from "astro:assets";
+import logo from "../../assets/logo.svg";
+
+// import top scrolling text
+import topScroll from "../../data/js/topScroll";
+---
+
+<header id="site-header" class="w-full relative z-100">
+  <div
+    id="header-div"
+    class="headerDiv shadow-sm fixed top-0 left-0 right-0"
+  >
+    <div class="marqueeDiv font-semibold text-center">
+      <marquee behavior="scroll" direction="left" class="py-1 align-middle"
+        >{topScroll}</marquee
+      >
+    </div>
+    <div class="container mx-auto flex justify-between items-center px-4 py-2">
+      <section class="flex items-end grow">
+        <a href="/">
+          <Image
+            src={logo}
+            alt="Indivirtus Logo"
+            height="50"
+          />
+        </a>
+      </section>
+      <section>
+        <Navigation />
+      </section>
+    </div>
+  </div>
+</header>
+
+<style>
+
+.headerDiv {
+  background-color: var(--color-white);
+}
+
+.marqueeDiv{
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  font-size: var(--font-size-lg)
+}
+
+</style>

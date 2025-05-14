@@ -1,0 +1,249 @@
+---
+import navItems from "../../data/js/navItems";
+
+const currentPath = Astro.url.pathname;
+
+function isActive(href) {
+  return href === currentPath;
+}
+
+---
+
+<nav class="navigation p-4 container mx-auto relative">
+  <div class="flex items-center justify-between">
+    <!-- Hamburger Button -->
+    <button
+      id="menu-toggle"
+      class="relative w-8 h-8 flex flex-col justify-center items-center lg:hidden"
+    >
+      <span class="hamburger-line top-2"></span>
+      <span class="hamburger-line top-4"></span>
+      <span class="hamburger-line top-6"></span>
+    </button>
+  </div>
+
+  <!-- Desktop Menu -->
+  <ul
+    class="hidden lg:flex flex-col lg:flex-row gap-x-10 min-w-[280px] top-0 left-0 z-50 mt-4 lg:mt-0"
+  >
+    {
+      navItems.map((item) => (
+        <li class={"group relative menuItemLi"   + (isActive(item.href) ? " active" : "")}>
+          <a
+            href={item.href || "#"}
+            class="menuItem flex items-center transition-colors duration-300"          >
+            {item.name}
+            {item.submenu && <span class="ml-1 menuItem">⯆</span>}
+          </a>
+
+          {item.submenu && (
+            <ul class="absolute top-full left-0 z-50 invisible opacity-0 group-hover:visible group-hover:opacity-100 group-hover:translate-y-2 shadow-lg rounded-md min-w-[250px] transition-all duration-300 ease-in-out transform">
+              {item.submenu.map((sub) => (
+                <li class="relative group/submenu">
+                  <a
+                    href={sub.href || "#"}
+                    class="subMenuItem px-4 py-2 transition-colors duration-300 flex items-center justify-between"
+                    target={(sub.href && (sub.href.startsWith('http://') || sub.href.startsWith('https://'))) ? "_blank" : undefined}
+                    rel={(sub.href && (sub.href.startsWith('http://') || sub.href.startsWith('https://'))) ? "noopener noreferrer" : undefined}
+                  >
+                    {sub.name}
+                    {sub.submenu && <span class="ml-1 menuItem">⯈</span>}
+                  </a>
+
+                  {sub.submenu && (
+                    <ul class="absolute top-0 left-full invisible opacity-0 group-hover/submenu:visible group-hover/submenu:opacity-100 group-hover/submenu:translate-x-2 shadow-lg rounded-md min-w-[250px] transition-all duration-300 ease-in-out transform">
+                      {sub.submenu.map((subSub) => (
+                        <li>
+                          <a
+                            href={subSub.href || "#"}
+                            class="subMenuItem block px-4 py-2 transition-colors duration-300"                            
+                          >
+                            {subSub.name}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              ))}
+            </ul>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+
+  <!-- Mobile Menu -->
+  <div
+    id="mobile-menu"
+    class="navigation fixed right-[-100%] w-[250px] h-full shadow-lg flex flex-col gap-y-4 p-6 transition-all duration-300 lg:hidden overflow-y-auto z-50"
+  >
+    <ul class="flex flex-col gap-y-4">
+      {
+        navItems.map((item, idx) => (
+          <li class="group/mobile relative">
+            <a
+              href={item.href || "#"}
+              class="menuItem flex justify-between items-center font-medium transition-colors duration-300"              
+            >
+              {item.name}
+              {item.submenu && <span class="text-xs">⯆</span>}
+            </a>
+
+            {item.submenu && (
+              <ul class="hidden group-hover/mobile:block mt-2 ml-4">
+                {item.submenu.map((sub, subIdx) => (
+                  <li class="group/submobile relative">
+                    <a
+                      href={sub.href || "#"}
+                      class="subMenuItem flex justify-between items-center py-1"
+                    >
+                      {sub.name}
+                      {sub.submenu && <span class="text-xs">⯈</span>}
+                    </a>
+
+                    {sub.submenu && (
+                      <ul class="hidden group-hover/submobile:block mt-2 ml-4">
+                        {sub.submenu.map((subSub) => (
+                          <li>
+                            <a
+                              href={subSub.href || "#"}
+                              class="subMenuItem font-normal py-1 block"                                                           
+                            >
+                              {subSub.name}
+                            </a>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</nav>
+
+
+<style>
+<!--  Hamburger Animation -->
+  #menu-toggle {
+    position: relative;
+  }
+  .hamburger-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 24px;
+    height: 2px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+  }
+  .open .hamburger-line:nth-child(1) {
+    transform: rotate(45deg);
+    top: 12px;
+  }
+  .open .hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  .open .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg);
+    top: 12px;
+  }
+
+.navigation, .navigation ul {
+  color: var(--color-black);
+  background-color: var(--color-white);
+}
+
+.menuItem {
+  font-size: var(--font-size-md);
+  // font-size: clamp(var(--font-size-base), calc(var(--font-size-lg) + 1vw), var(--font-size-lg));
+  // font-size: calc(var(--font-size-base) + .05vw);
+  font-weight: 500;
+}
+
+.subMenuItem  {
+  font-size: var(--font-size-base);
+  font-weight: 400;
+ 
+}
+
+.subMenuItem:hover {
+  color: var(--color-primaryBlue);
+}
+
+.menuItemLi > a {
+  
+&:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-top: 2px solid var(--color-black);
+        border-bottom: 2px solid var(--color-black);
+        transform: scaleY(2);
+        opacity: 0;
+        transition: .3s;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-black);
+        transform: scale(0);
+        opacity: 0;
+        transition: .3s;
+        z-index: -1;
+      }
+      &:hover {
+
+        &:before {
+          transform: scaleY(1);
+          opacity: 1;
+        }
+        &:after {
+          transform: scaleY(1);
+          opacity: 1;
+        }}}
+
+.active {
+  &:after{
+content: "";
+width: 100%;
+height: 2px;
+border-radius: 10px;
+position: absolute;
+left: 0;
+bottom: -10%;
+background: var(--color-black);}
+&:hover:after{
+  display: none;
+}
+
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const toggleBtn = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    toggleBtn.addEventListener("click", () => {
+      // Slide Mobile Menu
+      mobileMenu.classList.toggle("right-0");
+      mobileMenu.classList.toggle("right-[-100%]");
+
+      // Animate Hamburger into X
+      toggleBtn.classList.toggle("open");
+    });
+  });
+</script>

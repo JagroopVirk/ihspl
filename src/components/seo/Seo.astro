@@ -1,0 +1,64 @@
+---
+import { Astro } from 'astro';
+
+
+const {
+  title = 'Indivirtus - Contract Research Organization',
+  description = 'Default description',
+  keywords = '',
+  image = '/default-image.jpg',
+  url = Astro.url.origin + Astro.url.pathname,
+  type = 'website',
+  twitterHandle = '@indivirtus',
+  schema = null,
+  locationSchema = null,
+  canonical = null
+} = Astro.props;
+---
+
+<head>
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  <meta name="keywords" content={keywords} />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  {canonical && (
+    <link rel="canonical" href={canonical} />
+  )}
+
+
+  <meta property="og:type" content={type} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={image} />
+  <meta property="og:url" content={url} />
+
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={image} />
+  <meta name="twitter:site" content={twitterHandle} />
+  <meta name="twitter:creator" content={twitterHandle} />
+
+
+  <meta property="og:type" content={type} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={image} />
+  <meta property="og:url" content={url} />
+  <meta property="og:site_name" content="www.indivirtus.com" />
+
+
+  {schema && (
+    <script type="application/ld+json">
+      {JSON.stringify(schema)}
+    </script>
+  )}
+  
+  {locationSchema && (
+    <script type="application/ld+json">
+      {JSON.stringify(locationSchema)}
+    </script>
+  )}
+</head>
