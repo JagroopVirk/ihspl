@@ -12,8 +12,13 @@ const {
   twitterHandle = '@indivirtus',
   schema = null,
   locationSchema = null,
+  servicesSchema = null,
   canonical = null
 } = Astro.props;
+
+const jsonLocationSchema = JSON.stringify(locationSchema, null, 0);
+const jsonSchema = JSON.stringify(schema, null, 0);
+const jsonServiceSchema = JSON.stringify(servicesSchema, null, 0);
 ---
 
 <head>
@@ -34,7 +39,7 @@ const {
   <meta property="og:url" content={url} />
 
 
-  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:card" content={image} />
   <meta name="twitter:title" content={title} />
   <meta name="twitter:description" content={description} />
   <meta name="twitter:image" content={image} />
@@ -51,14 +56,18 @@ const {
 
 
   {schema && (
-    <script type="application/ld+json">
-      {JSON.stringify(schema)}
+    <script type="application/ld+json" set:html={jsonSchema}>
     </script>
   )}
-  
+
   {locationSchema && (
-    <script type="application/ld+json">
-      {JSON.stringify(locationSchema)}
+    <script type="application/ld+json" set:html={jsonLocationSchema}>
     </script>
   )}
-</head>
+
+  {servicesSchema && (
+    <script type="application/ld+json" set:html={jsonServiceSchema}>
+    </script>
+  )}
+
+  </head>

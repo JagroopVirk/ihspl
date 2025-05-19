@@ -1,0 +1,33 @@
+---
+// Props: services (array of service objects)
+const { services } = Astro.props;
+---
+
+<section class="py-10 px-4 max-w-7xl mx-auto">
+  <h2 class="text-3xl font-bold mb-8 text-center">Consultancy Services</h2>
+
+  <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+    {services.map(service => (
+      <div class="bg-white rounded-2xl shadow-md p-6 flex flex-col justify-between hover:shadow-xl transition">
+        <div>
+          <div class="text-4xl mb-2">{service.icon}</div>
+          <h3 class="text-xl font-semibold">{service.title}</h3>
+          <p class="text-gray-600 mt-2">{service.detailedDescription}</p>
+        </div>
+        <div class="mt-4">
+          <span class="inline-block text-xs font-medium bg-blue-100 text-blue-700 px-2 py-1 rounded">
+            {service.reportType}
+          </span>
+
+        </div>
+        <a class="mt-4 bg-blue-600 text-white text-center px-4 py-2 rounded hover:bg-blue-700 w-full cursor-pointer" href="#">
+          View Details
+        </a>
+        {/* <button class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full" 
+                onclick={`alert('${service.detailedDescription.replace(/'/g, "\\'")}')`}>
+          View Details
+        </button> */}
+      </div>
+    ))}
+  </div>
+</section>
