@@ -25,9 +25,9 @@ import SetMarginTop from "../extras/setMarginTop.astro";
 
 ---
 
-<footer class="bg-primary text-white px-6 py-12">
+<footer class="footer px-6 pt-8 pb-4">
   <!-- Upper Section -->
-  <div class="mb-16">
+  <div>
     <h2 class="text-2xl font-semibold mb-8 text-center">Our Global Offices</h2>
     <div
       class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
@@ -42,19 +42,19 @@ import SetMarginTop from "../extras/setMarginTop.astro";
                  <div class="footerIcon">
                 <Fragment set:html={mapIcon.html}/>
                  
-                </div><p class="footerAddress">{office.address}</p>
+                </div><a class="footerAddress" href={"http://maps.google.com/?q="+(office.address)} target={"_blank"}>{office.address}</a>
                </div>
 
                <div class="flex mb-2">
                  <div class="footerIcon">
                   <Fragment set:html={phoneIcon.html}/>
-                </div><p class="footerAddress">{office.phone}</p>
+                </div><a class="footerAddress" href={"tel:"+ (office.phone)}>{office.phone}</a>
                </div>
 
                <div class="flex mb-2">
                  <div class="footerIcon">
                   <Fragment set:html={emailIcon.html}/>
-                  </div><p class="footerAddress">{office.email}</p>
+                  </div><a class="footerAddress" href={"mailto:"+(office.email)}>{office.email}</a>
                </div>
           </div>
         ))
@@ -62,7 +62,11 @@ import SetMarginTop from "../extras/setMarginTop.astro";
     </div>
   </div>
 
-  <!-- Lower Section -->
+  <div class="footerCopyright text-center mt-8 ">
+    &copy; {new Date().getFullYear()} Indivirtus Heathcare Services Pvt. Ltd. All rights reserved.
+  </div>
+
+  {/* <!-- Lower Section -->
   <div
     class="border-t border-gray-700 pt-12 grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto"
   >
@@ -104,25 +108,51 @@ import SetMarginTop from "../extras/setMarginTop.astro";
         }
       </ul>
     </div>
-    }
+    } */}
   </div>
   <GoTopBtn />
   <SetMarginTop />
 </footer>
 
 <style>
+.footer {
+  background-color: var(--color-primary);
+  color: var(--color-white);
+
+}
+
 .footerAddress {
   color: #fff;
+  font-size: var(--font-size-base);
 }
 
 .footerHeading {
   color: var(--color-secondaryOrange);
+  font-size: var(--font-size-lg);
 }
 
 .footerIcon {
-  min-width:20px;
-  color: var(--color-secondaryOrange);
+  min-width:15px;
+  color: var(--color-white);
   margin-block: auto;
   }
 
+.footerCopyright {
+  padding-top: 1rem;
+  margin-top: 2rem;
+  color: rgb(from var(--color-white) r g b / 0.7);
+  overflow: hidden;
+
+  &:before {
+    content: "";
+    display: block;
+    width: 110%;
+    height: 1px;
+    left: -10%;
+    position: absolute;
+    background-color: var(--color-secondaryOrange);
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+  }
+}
 </style>

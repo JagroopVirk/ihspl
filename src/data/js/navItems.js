@@ -25,7 +25,7 @@ const navItems = [
   { name: "Career", href: "/career" },
 
   {
-    name: "Group of Companies",
+    name: "Group of Companies", href: "/group-of-companies",
     submenu: [
       {
         name: "Indivirtus Healthcare Services Pvt Ltd",

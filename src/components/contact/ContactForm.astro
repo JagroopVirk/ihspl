@@ -1,0 +1,81 @@
+---
+// filepath: src/components/contact/ContactForm.astro
+---
+{/* <form id="contactForm" action="/sendmail.php" method="POST" class="bg-white rounded-lg shadow-md p-8 flex flex-col gap-4 w-full max-w-md mx-auto lg:mx-0">
+  <h2 class="text-2xl text-center font-bold mb-4">Contact Us</h2>
+  <label class="flex flex-col gap-1">
+    <span class="font-medium">Name <span class="text-red-500">*</span></span>
+    <input type="text" name="name" required class="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+  </label>
+  <label class="flex flex-col gap-1">
+    <span class="font-medium">Email <span class="text-red-500">*</span></span>
+    <input type="email" name="email" required class="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+  </label>
+  <label class="flex flex-col gap-1">
+    <span class="font-medium">Contact</span>
+    <input type="text" name="contact" class="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+  </label>
+  <label class="flex flex-col gap-1">
+    <span class="font-medium">Query <span class="text-red-500">*</span></span>
+    <textarea name="message" required rows="4" class="border rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+  </label>
+  <button type="submit" class="mt-4 bg-blue-600 text-white font-semibold py-2 px-4 rounded hover:bg-blue-700 transition cursor-pointer">
+    Send Query
+  </button>
+</form> */}
+
+<div class="w-full md:w-1/2 p-8 flex flex-col justify-center">
+    <h2 class="text-3xl text-center font-bold mb-6">Contact Us</h2>
+    <form 
+      action="https://formspree.io/f/yourFormID" 
+      method="POST"
+      class="space-y-4"
+    >
+      <div>
+        <label for="name" class="block text-base font-semibold mb-1">Name<span class="text-red-500">*</span></label>
+        <input type="text" id="name" name="name" required class="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      
+      <div>
+        <label for="email" class="block text-base font-semibold mb-1">Email<span class="text-red-500">*</span></label>
+        <input type="email" id="email" name="email" required class="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      
+      <div>
+        <label for="contact" class="block text-base font-semibold mb-1">Contact</label>
+        <input type="text" id="contact" name="contact" class="w-full border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" />
+      </div>
+      
+      <div>
+        <label for="message" class="block text-base font-semibold mb-1">Message<span class="text-red-500">*</span></label>
+        <textarea id="message" name="message" required class="w-full border border-gray-300 p-2 rounded-md h-32 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+      </div>
+
+      <button type="submit" class="w-full px-4 py-2 rounded-md transition duration-300">Send Message</button>
+    </form>
+  </div>
+
+  <style>
+/* Text & color styling */
+h2 {
+  color: var(--color-primaryBlue);
+}
+
+label {
+  color: var(--color-gray);
+}
+
+input, textarea {
+  color: var(--color-gray);
+  font-size: var(--font-size-base)
+}
+
+button {
+  font-size: var(--font-size-lg);
+  color: var(--color-white);
+  background-color: rgb(from var(--color-primaryBlue) r g b / 0.7);
+  &:hover {
+    background-color: rgb(from var(--color-primaryBlue) r g b / 1);
+  }
+}
+</style>

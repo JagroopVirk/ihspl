@@ -2,6 +2,7 @@
 import Navigation from "./Navigation.astro";
 import { Image } from "astro:assets";
 import logo from "../../assets/logo.svg";
+import navItems from "../../data/js/navItems";
 
 // import top scrolling text
 import topScroll from "../../data/js/topScroll";
@@ -28,7 +29,7 @@ import topScroll from "../../data/js/topScroll";
         </a>
       </section>
       <section>
-        <Navigation />
+        <Navigation navItems={navItems} />
       </section>
     </div>
   </div>
