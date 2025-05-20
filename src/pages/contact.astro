@@ -8,19 +8,16 @@ import "../styles/global.css";
 
 // Importing the default SEO and location schema
 // import { servicesPageSeo } from "../data/js/siteSeo.js";
-import {  allServicesSchema } from "../data/js/servicesSchemaSEO.js";
+import {  allServicesSchema } from "../data/js/seo/servicesSchemaSEO.js";
 
 //  seo={{ ...servicesPageSeo, canonical: servicesPageSeo.url, servicesSchema: allServicesSchema}}
 ---
 
 <Layout  seo={{ servicesSchema: allServicesSchema}}>
   <Header />
-  {/* <section class="mx-auto maxwidth"> 
-<div class="flex flex-col lg:flex-row-reverse gap-8 p-4"> */}
-<section class="flex flex-col md:flex-row maxwidth min-h-screen bg-white text-gray-900">
+<section class="flex flex-col md:flex-row-reverse maxwidth p-8 gap-8">
     <ContactForm />
-    {/* <GoogleMap /> */}
-{/* </div> */}
+    <GoogleMap />
   </section>
   <Footer />
 </Layout>

@@ -5,7 +5,7 @@ import Footer from "../../components/footer/Footer.astro";
 import "../../styles/global.css";
 
 // Importing SEO data for the About page
-import { aboutPageSeo } from "../../data/js/siteSeo.js";
+import { aboutPageSeo } from "../../data/js/seo/siteSeo.js";
 ---
 
 <Layout seo={{ ...aboutPageSeo, canonical: aboutPageSeo.url }}>

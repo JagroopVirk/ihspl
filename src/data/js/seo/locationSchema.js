@@ -2,38 +2,6 @@
 const siteUrl = "https://indivirtus.com";
 const siteLogo = siteUrl + "/assets/logo.png";
 
-export const defaultSeo = {
-  title: "Indivirtus - Contract Research Organization",
-  description: "Indivirtus is a leading Contract Research Organization (CRO) providing comprehensive clinical trial services.",
-  keywords: "website, seo, awesome",
-  image: siteLogo,
-  url: siteUrl,
-  twitterHandle: "@indivirtus",
-  type: "website",
-};
-
-export const aboutPageSeo = {
-  title: "About Us -Indivirtus",
-  description: "Journey of Indivirtus: A leading Contract Research Organization (CRO) providing comprehensive clinical trial services.",
-  keywords: "about, mission, company",
-  image: siteLogo,
-  url: siteUrl + "/about",
-  twitterHandle: "@indivirtus",
-  type: "article",
-  logo: siteLogo,
-};
-
-export const servicesPageSeo = {
-  title: "Services Provided -Indivirtus",
-  description: "Journey of Indivirtus: A leading Contract Research Organization (CRO) providing comprehensive clinical trial services.",
-  keywords: "about, mission, company",
-  image: siteLogo,
-  url: siteUrl + "/about",
-  twitterHandle: "@indivirtus",
-  type: "article",
-  logo: siteLogo,
-};
-
 // location-based Schema
 export const locationSchema = {
   "@context": "https://schema.org",
@@ -167,43 +135,3 @@ export const locationSchema = {
     }
   ]
 }
-
-
-export const blogPostSchema = (post) => ({
-  "@context": "https://schema.org",
-  "@type": "BlogPosting",
-  "headline": post.title,
-  "description": post.excerpt,
-  "image": post.image,
-  "author": {
-    "@type": "Person",
-    "name": "Author Name"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "My Awesome Site",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://yoursite.com/images/logo.png"
-    }
-  },
-  "datePublished": post.publishedAt,
-  "dateModified": post.updatedAt || post.publishedAt
-});
-
-export const productSchema = (product) => ({
-  "@context": "https://schema.org",
-  "@type": "Product",
-  "name": product.name,
-  "image": [product.image],
-  "description": product.description,
-  "sku": product.sku,
-  "offers": {
-    "@type": "Offer",
-    "url": product.url,
-    "priceCurrency": "INR",
-    "price": product.price,
-    "availability": "https://schema.org/InStock"
-  }
-});
-
