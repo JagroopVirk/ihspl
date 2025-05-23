@@ -38,10 +38,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     echo "Invalid request.";
 }
 
-// Redirect after 5 seconds
-$redirectUrl = "https://www.indivirtus.com/contact-us"; // Replace with your main site URL
+// Redirect
+$redirectUrl = "https://steelblue-nightingale-280613.hostingersite.com//contact-us"; 
 
 
-header("Location: https://www.indivirtusrnd.com/contact-us");
+header("Location: https://steelblue-nightingale-280613.hostingersite.com//contact-us");
 exit;
 ?>
