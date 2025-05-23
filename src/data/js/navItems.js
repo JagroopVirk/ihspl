@@ -43,7 +43,7 @@ const navItems = [
     ],
   },
 
-  { name: "Contact us", href: "/contact" },
+  { name: "Contact us", href: "/contact-us" },
   // { name: "Current Openings", href: "/openings" },
 ];
 

@@ -23,15 +23,16 @@ const jsonServiceSchema = JSON.stringify(servicesSchema, null, 0);
 
 <head>
   <title>{title}</title>
+  
   <meta name="description" content={description} />
   <meta name="keywords" content={keywords} />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
   {canonical && (
     <link rel="canonical" href={canonical} />
   )}
 
-
+  <meta property="og:locale" content="en_US">
   <meta property="og:type" content={type} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
@@ -47,12 +48,12 @@ const jsonServiceSchema = JSON.stringify(servicesSchema, null, 0);
   <meta name="twitter:creator" content={twitterHandle} />
 
 
-  <meta property="og:type" content={type} />
+  {/* <meta property="og:type" content={type} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
   <meta property="og:image" content={image} />
   <meta property="og:url" content={url} />
-  <meta property="og:site_name" content="www.indivirtus.com" />
+  <meta property="og:site_name" content="www.indivirtus.com" /> */}
 
 
   {schema && (

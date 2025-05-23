@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Sanitize and collect form data
     $name = htmlspecialchars(trim($_POST["name"] ?? ''));
-    $email = htmlspecialchars(trim($_POST["email"] ?? ''));
+    $email = filter_var(trim($_POST["email"] ?? ''), FILTER_SANITIZE_EMAIL);
     $contact = htmlspecialchars(trim($_POST["contact"] ?? ''));
     $message = htmlspecialchars(trim($_POST["message"] ?? ''));
 
@@ -12,10 +12,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    // Set your email address here
-    $to = "admin@indivirtus.com"; // <-- CHANGE THIS TO YOUR EMAIL ADDRESS
+    // Validate email format
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        echo "Invalid email format.";
+        exit;
+    }
+
+    // Set recipient email address
+    $to = "admin@indivirtus.com"; // <-- Change this if needed
     $subject = "New Contact Form Submission";
+
+    // Compose the email body
     $body = "Name: $name\nEmail: $email\nContact: $contact\nMessage: $message";
+
+    // Set headers
     $headers = "From: $email\r\nReply-To: $email\r\n";
 
     // Send the email
@@ -27,4 +37,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 } else {
     echo "Invalid request.";
 }
+
+// Redirect after 5 seconds
+$redirectUrl = "https://www.indivirtus.com/contact-us"; // Replace with your main site URL
+
+
+header("Location: https://www.indivirtusrnd.com/contact-us");
+exit;
 ?>
