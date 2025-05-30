@@ -1,50 +1,49 @@
 ---
-import Navigation from "./Navigation.astro";
-import { Image } from "astro:assets";
-import logo from "../../assets/logo.svg";
-import navItems from "../../data/js/navItems";
+// Import astro Picture component for responsive images
+import Picture from 'astro/components/Picture.astro'
+
+import Navigation from './Navigation.astro'
+import logo from '../../assets/logo.svg'
+import navItems from '../../data/js/navItems'
 
 // import top scrolling text
-import topScroll from "../../data/js/topScroll";
+import topScroll from '../../data/js/topScroll'
 ---
 
-<header id="site-header" class="w-full relative z-100">
-  <div
-    id="header-div"
-    class="headerDiv shadow-sm fixed top-0 left-0 right-0"
-  >
-    <div class="marqueeDiv font-semibold text-center">
-      <marquee behavior="scroll" direction="left" class="py-1 align-middle"
-        >{topScroll}</marquee
+<header id="site-header" class="relative z-100 w-full">
+  <div id="header-div" class="headerDiv fixed top-0 right-0 left-0 shadow-sm">
+    <section class="marqueeDiv text-center">
+      <marquee
+        direction="left"
+        scrollamount="7"
+        behavior="scroll"
+        onmouseover="this.stop()"
+        onmouseout="this.start()"
+        class="py-1 align-middle">{topScroll}</marquee
       >
-    </div>
-    <div class="container mx-auto flex justify-between items-center px-4 py-2">
-      <section class="flex items-end grow">
+    </section>
+    <section class="container mx-auto flex items-center justify-between px-4">
+      <div class="flex grow items-end">
         <a href="/">
-          <Image
-            src={logo}
-            alt="Indivirtus Logo"
-            height="50"
-          />
+          <Picture src={logo} alt="Indivirtus Logo" height={'50'} />
         </a>
-      </section>
-      <section>
+      </div>
+      <div>
         <Navigation navItems={navItems} />
-      </section>
-    </div>
+      </div>
+    </section>
   </div>
 </header>
 
 <style>
+  @reference "tailwindcss";
 
-.headerDiv {
-  background-color: var(--color-white);
-}
+  .headerDiv {
+    background-color: var(--color-white);
+  }
 
-.marqueeDiv{
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  font-size: var(--font-size-lg)
-}
-
+  .marqueeDiv {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
 </style>

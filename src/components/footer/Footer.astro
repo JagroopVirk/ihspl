@@ -1,72 +1,82 @@
 ---
-import offices from "../../data/js/offices.js";
-import footerData from "../../data/js/footerData.js";
+import offices from '../../data/js/offices.js'
 
 // Importing the GoTopBtn component for the "Back to Top" button
-import GoTopBtn from "../other/GoTopBtn.astro";
+import GoTopBtn from '../other/GoTopBtn.astro'
 
 // Font Awesome
-import { library, icon } from "@fortawesome/fontawesome-svg-core";
+import { library, icon } from '@fortawesome/fontawesome-svg-core'
 
 // import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faMapMarkerAlt, faPhoneSquare, faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
-import { Fragment } from "react";
+import { faMapMarkerAlt, faPhoneSquare, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
+import { Fragment } from 'react'
 
 // Declare all the icons you plan on using
-library.add(faPhoneSquare, faMapMarkerAlt, faEnvelopeSquare);
+library.add(faPhoneSquare, faMapMarkerAlt, faEnvelopeSquare)
 
 // Instantiate the icon with the icon function
-const mapIcon = icon({ prefix: "fas", iconName: faMapMarkerAlt.iconName });
-const phoneIcon = icon({ prefix: "fas", iconName: faPhoneSquare.iconName });
-const emailIcon = icon({ prefix: "fas", iconName: faEnvelopeSquare.iconName });
+const mapIcon = icon({ prefix: 'fas', iconName: faMapMarkerAlt.iconName })
+const phoneIcon = icon({ prefix: 'fas', iconName: faPhoneSquare.iconName })
+const emailIcon = icon({ prefix: 'fas', iconName: faEnvelopeSquare.iconName })
 
 // Importing the SetMarginTop component for setting margin top
-import SetMarginTop from "../extras/setMarginTop.astro";
-
+import SetMarginTop from '../extras/setMarginTop.astro'
 ---
 
 <footer class="footer px-6 pt-8 pb-4">
-  <!-- Upper Section -->
+  {/* Upper Section */}
   <div>
-    <h2 class="text-2xl font-semibold mb-8 text-center">Our Global Offices</h2>
-    <div
-      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
-    >
+    <h2 class="mb-8 text-center">Our Global Offices</h2>
+    {/* TODO: design in the drop box */}
+    <div class="addDiv mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
       {
         offices.map((office) => (
           <div>
-           
-               <h3 class="text-lg font-semibold mb-2 text-center footerHeading">{office.location}</h3>
-           
-               <div class="flex mb-2">
-                 <div class="footerIcon">
-                <Fragment set:html={mapIcon.html}/>
-                 
-                </div><a class="footerAddress" href={"http://maps.google.com/?q="+(office.address)} target={"_blank"}>{office.address}</a>
-               </div>
+            <h3 class="officeCountry mb-2 text-center">{office.location}</h3>
+            <div class="mb-2 flex">
+              <>
+                <div class="footerIcon">
+                  <Fragment set:html={mapIcon.html} />
+                </div>
+                <a class="addDetails" href={'http://maps.google.com/?q=' + office.address} target={'_blank'}>
+                  {office.address}
+                </a>
+              </>
+            </div>
 
-               <div class="flex mb-2">
-                 <div class="footerIcon">
-                  <Fragment set:html={phoneIcon.html}/>
-                </div><a class="footerAddress" href={"tel:"+ (office.phone)}>{office.phone}</a>
-               </div>
+            <div class="mb-2 flex">
+              <>
+                <div class="footerIcon">
+                  <Fragment set:html={phoneIcon.html} />
+                </div>
+                <a class="addDetails" href={'tel:' + office.phone}>
+                  {office.phone}
+                </a>
+              </>
+            </div>
 
-               <div class="flex mb-2">
-                 <div class="footerIcon">
-                  <Fragment set:html={emailIcon.html}/>
-                  </div><a class="footerAddress" href={"mailto:"+(office.email)}>{office.email}</a>
-               </div>
+            <div class="mb-2 flex">
+              <>
+                <div class="footerIcon">
+                  <Fragment set:html={emailIcon.html} />
+                </div>
+                <a class="addDetails" href={'mailto:' + office.email}>
+                  {office.email}
+                </a>
+              </>
+            </div>
           </div>
         ))
       }
     </div>
   </div>
 
-  <div class="footerCopyright text-center mt-8 ">
-    &copy; {new Date().getFullYear()} Indivirtus Heathcare Services Pvt. Ltd. All rights reserved.
+  <div class="footerCopyright mt-8 text-center">
+    &copy; {new Date().getFullYear()} Indivirtus Healthcare Services Pvt. Ltd. All rights reserved.
   </div>
 
-  {/* <!-- Lower Section -->
+  {
+    /* <!-- Lower Section -->
   <div
     class="border-t border-gray-700 pt-12 grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto"
   >
@@ -108,51 +118,73 @@ import SetMarginTop from "../extras/setMarginTop.astro";
         }
       </ul>
     </div>
-    } */}
-  </div>
-  <GoTopBtn />
-  <SetMarginTop />
+    } */
+  }
 </footer>
+<GoTopBtn />
+<SetMarginTop />
 
 <style>
-.footer {
-  background-color: var(--color-primary);
-  color: var(--color-white);
+  @reference 'tailwindcss';
 
-}
+  .footer {
+    background-color: var(--color-primary);
+    color: var(--color-white);
 
-.footerAddress {
-  color: #fff;
-  font-size: var(--font-size-base);
-}
-
-.footerHeading {
-  color: var(--color-secondaryOrange);
-  font-size: var(--font-size-lg);
-}
-
-.footerIcon {
-  min-width:15px;
-  color: var(--color-white);
-  margin-block: auto;
+    & h2 {
+      color: var(--color-white);
+    }
   }
 
-.footerCopyright {
-  padding-top: 1rem;
-  margin-top: 2rem;
-  color: rgb(from var(--color-white) r g b / 0.7);
-  overflow: hidden;
-
-  &:before {
-    content: "";
-    display: block;
-    width: 110%;
-    height: 1px;
-    left: -10%;
-    position: absolute;
-    background-color: var(--color-secondaryOrange);
-    margin-bottom: 1rem;
-    margin-top: -1rem;
+  .officeCountry {
+    color: var(--color-secondaryOrange);
   }
-}
+
+  .addDetails {
+    @apply ml-1.5;
+    color: var(--color-white);
+  }
+
+  .footerIcon {
+    @apply min-w-[15px] align-middle relative;
+    color: var(--color-white);
+
+    svg {
+      @apply relative top-1/2 -translate-1/2;
+    }
+  }
+
+  .addDiv > div {
+    &:nth-child(1) {
+      @apply md:hidden;
+    }
+    &:nth-child(2) {
+      @apply md:hidden;
+    }
+    &:nth-child(3) {
+      @apply hidden md:block;
+    }
+    &:nth-child(4) {
+      @apply hidden md:block;
+    }
+  }
+
+  .footerCopyright {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    overflow: hidden;
+    color: rgb(from var(--color-white) r g b / 0.7);
+
+    &:before {
+      display: block;
+      position: absolute;
+      left: -10%;
+      margin-top: -1rem;
+      margin-bottom: 1rem;
+      background-color: var(--color-secondaryOrange);
+      width: 110%;
+      height: 1px;
+      content: '';
+    }
+  }
 </style>

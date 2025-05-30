@@ -1,22 +1,18 @@
 ---
 // Props: navItems (array of navigation items)
-const { navItems } = Astro.props;
+const { navItems } = Astro.props
 
-const currentPath = Astro.url.pathname;
+const currentPath = Astro.url.pathname
 
 function isActive(href) {
-  return href === currentPath;
+  return href === currentPath
 }
-
 ---
 
-<nav class="navigation p-4 container mx-auto relative">
+<nav class="navigation relative container mx-auto p-4">
   <div class="flex items-center justify-between">
     <!-- Hamburger Button -->
-    <button
-      id="menu-toggle"
-      class="relative w-8 h-8 flex flex-col justify-center items-center lg:hidden"
-    >
+    <button id="menu-toggle" class="relative flex h-8 w-8 flex-col items-center justify-center lg:hidden">
       <span class="hamburger-line top-2"></span>
       <span class="hamburger-line top-4"></span>
       <span class="hamburger-line top-6"></span>
@@ -24,41 +20,42 @@ function isActive(href) {
   </div>
 
   <!-- Desktop Menu -->
-  <ul
-    class="hidden lg:flex flex-col lg:flex-row gap-x-10 min-w-[280px] top-0 left-0 z-50 mt-4 lg:mt-0"
-  >
+  <ul class="top-0 left-0 z-50 hidden min-w-[280px] flex-col lg:flex lg:flex-row">
     {
       navItems.map((item) => (
-        <li class={"group relative menuItemLi"   + (isActive(item.href) ? " active" : "")}>
-          <a
-            href={item.href || "#"}
-            class="menuItem flex items-center transition-colors duration-300"          >
+        <li class={'group menuItemLi relative' + (isActive(item.href) ? ' active' : '')}>
+          <a href={item.href || '#'} class="menuItem flex items-center transition-colors duration-300">
             {item.name}
-            {item.submenu && <span class="ml-1 menuItem">⯆</span>}
+            {item.submenu && <span class="menuItem ml-1">⯆</span>}
           </a>
 
           {item.submenu && (
-            <ul class="absolute top-full left-0 z-50 invisible opacity-0 group-hover:visible group-hover:opacity-100 group-hover:translate-y-2 shadow-lg rounded-md min-w-[250px] transition-all duration-300 ease-in-out transform">
+            <ul class="invisible absolute top-full left-0 z-50 min-w-[250px] transform rounded-md opacity-0 shadow-lg transition-all duration-300 ease-in-out group-hover:visible group-hover:translate-y-2 group-hover:opacity-100">
               {item.submenu.map((sub) => (
-                <li class="relative group/submenu">
+                <li class="group/submenu relative">
                   <a
-                    href={sub.href || "#"}
-                    class="subMenuItem px-4 py-2 transition-colors duration-300 flex items-center justify-between"
-                    target={(sub.href && (sub.href.startsWith('http://') || sub.href.startsWith('https://'))) ? "_blank" : undefined}
-                    rel={(sub.href && (sub.href.startsWith('http://') || sub.href.startsWith('https://'))) ? "noopener noreferrer" : undefined}
+                    href={sub.href || '#'}
+                    class="subMenuItem flex items-center justify-between transition-colors duration-300"
+                    target={
+                      sub.href && (sub.href.startsWith('http://') || sub.href.startsWith('https://'))
+                        ? '_blank'
+                        : undefined
+                    }
+                    rel={
+                      sub.href && (sub.href.startsWith('http://') || sub.href.startsWith('https://'))
+                        ? 'noopener noreferrer'
+                        : undefined
+                    }
                   >
                     {sub.name}
-                    {sub.submenu && <span class="ml-1 menuItem">⯈</span>}
+                    {sub.submenu && <span class="menuItem ml-1">⯈</span>}
                   </a>
 
                   {sub.submenu && (
-                    <ul class="absolute top-0 left-full invisible opacity-0 group-hover/submenu:visible group-hover/submenu:opacity-100 group-hover/submenu:translate-x-2 shadow-lg rounded-md min-w-[250px] transition-all duration-300 ease-in-out transform">
+                    <ul class="invisible absolute top-0 left-full min-w-[250px] transform rounded-md opacity-0 shadow-lg transition-all duration-300 ease-in-out group-hover/submenu:visible group-hover/submenu:translate-x-2 group-hover/submenu:opacity-100">
                       {sub.submenu.map((subSub) => (
                         <li>
-                          <a
-                            href={subSub.href || "#"}
-                            class="subMenuItem block px-4 py-2 transition-colors duration-300"                            
-                          >
+                          <a href={subSub.href || '#'} class="subMenuItem block transition-colors duration-300">
                             {subSub.name}
                           </a>
                         </li>
@@ -77,40 +74,34 @@ function isActive(href) {
   <!-- Mobile Menu -->
   <div
     id="mobile-menu"
-    class="navigation fixed right-[-100%] w-[250px] h-full shadow-lg flex flex-col gap-y-4 p-6 transition-all duration-300 lg:hidden overflow-y-auto z-50"
+    class="navigation fixed right-[-100%] z-50 flex h-full w-[250px] flex-col overflow-y-auto shadow-lg transition-all duration-300 lg:hidden"
   >
     <ul class="flex flex-col gap-y-4">
       {
         navItems.map((item, idx) => (
           <li class="group/mobile relative">
             <a
-              href={item.href || "#"}
-              class="menuItem flex justify-between items-center font-medium transition-colors duration-300"              
+              href={item.href || '#'}
+              class="menuItem flex items-center justify-between font-medium transition-colors duration-300"
             >
               {item.name}
-              {item.submenu && <span class="text-xs">⯆</span>}
+              {/* {item.submenu && <span class="text-xs">⯆</span>}  */}
             </a>
 
             {item.submenu && (
-              <ul class="hidden group-hover/mobile:block mt-2 ml-4">
+              <ul class="mt-2 ml-4 hidden group-hover/mobile:block">
                 {item.submenu.map((sub, subIdx) => (
                   <li class="group/submobile relative">
-                    <a
-                      href={sub.href || "#"}
-                      class="subMenuItem flex justify-between items-center py-1"
-                    >
+                    <a href={sub.href || '#'} class="subMenuItem flex items-center justify-between py-1">
                       {sub.name}
-                      {sub.submenu && <span class="text-xs">⯈</span>}
+                      {/* {sub.submenu && <span class="text-xs">⯈</span>}  */}
                     </a>
 
                     {sub.submenu && (
-                      <ul class="hidden group-hover/submobile:block mt-2 ml-4">
+                      <ul class="mt-2 ml-4 hidden group-hover/submobile:block">
                         {sub.submenu.map((subSub) => (
                           <li>
-                            <a
-                              href={subSub.href || "#"}
-                              class="subMenuItem font-normal py-1 block"                                                           
-                            >
+                            <a href={subSub.href || '#'} class="subMenuItem block py-1 font-normal">
                               {subSub.name}
                             </a>
                           </li>
@@ -128,123 +119,138 @@ function isActive(href) {
   </div>
 </nav>
 
-
 <style>
-<!--  Hamburger Animation -->
-  #menu-toggle {
+  @reference "tailwindcss";
+
+  <!-- Hamburger Animation -- > #menu-toggle {
     position: relative;
   }
   .hamburger-line {
     position: absolute;
-    left: 0;
     right: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
     margin: auto;
+    background-color: black;
     width: 24px;
     height: 2px;
-    background-color: black;
-    transition: all 0.3s ease-in-out;
   }
   .open .hamburger-line:nth-child(1) {
-    transform: rotate(45deg);
     top: 12px;
+    transform: rotate(45deg);
   }
   .open .hamburger-line:nth-child(2) {
     opacity: 0;
   }
   .open .hamburger-line:nth-child(3) {
-    transform: rotate(-45deg);
     top: 12px;
+    transform: rotate(-45deg);
   }
 
-.navigation, .navigation ul {
-  color: var(--color-black);
-  background-color: var(--color-white);
-}
+  .navigation,
+  .navigation ul {
+    background-color: var(--color-white);
+    color: var(--color-black);
+  }
 
-.menuItem {
-  font-size: var(--font-size-md);
-  // font-size: clamp(var(--font-size-base), calc(var(--font-size-lg) + 1vw), var(--font-size-lg));
-  // font-size: calc(var(--font-size-base) + .05vw);
-  font-weight: 500;
-}
+  .navigation {
+    @apply gap-y-4 p-6;
 
-.subMenuItem  {
-  font-size: var(--font-size-base);
-  font-weight: 400;
- 
-}
+    ul {
+      @apply mt-4 md:gap-x-6 lg:mt-0;
+    }
+  }
 
-.subMenuItem:hover {
-  color: var(--color-primaryBlue);
-}
+  .menuItem {
+    @apply font-semibold relative;
 
-.menuItemLi > a {
-  
-&:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border-top: 2px solid var(--color-black);
-        border-bottom: 2px solid var(--color-black);
-        transform: scaleY(2);
-        opacity: 0;
-        transition: .3s;
+    &:hover {
+      color: var(--color-menu-hover);
+    }
+  }
+  {/* text-sm @max-xl:text-base @max-3xl:text-xl */}
+
+  .subMenuItem {
+    @apply relative px-4 py-2;
+  }
+  {/* text-sm @max-xl:text-base @max-3xl:text-xl */}
+
+  .subMenuItem:hover {
+    color: var(--color-secondary);
+  }
+
+  .menuItemLi > a {
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scaleY(2);
+      opacity: 0;
+      transition: 0.3s;
+      border-top: 2px solid var(--color-menu-hover);
+      border-bottom: 2px solid var(--color-menu-hover);
+      width: 100%;
+      height: 100%;
+      content: '';
+    }
+    &:after {
+      position: absolute;
+      top: 2px;
+      left: 0;
+      transform: scale(0);
+      opacity: 0;
+      z-index: -1;
+      transition: 0.3s;
+      background-color: var(--color-menu-hover);
+      width: 100%;
+      height: 100%;
+      content: '';
+    }
+    &:hover {
+      &:before {
+        transform: scaleY(1);
+        opacity: 1;
       }
       &:after {
-        content: '';
-        position: absolute;
-        top: 2px;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: var(--color-black);
-        transform: scale(0);
-        opacity: 0;
-        transition: .3s;
-        z-index: -1;
+        transform: scaleY(1);
+        opacity: 1;
       }
-      &:hover {
+    }
+  }
 
-        &:before {
-          transform: scaleY(1);
-          opacity: 1;
-        }
-        &:after {
-          transform: scaleY(1);
-          opacity: 1;
-        }}}
-
-.active {
-  &:after{
-content: "";
-width: 100%;
-height: 2px;
-border-radius: 10px;
-position: absolute;
-left: 0;
-bottom: -10%;
-background: var(--color-black);}
-&:hover:after{
-  display: none;
-}
-
+  .active {
+    color: var(--color-menu-hover);
+  }
 </style>
 
 <script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const toggleBtn = document.getElementById("menu-toggle");
-    const mobileMenu = document.getElementById("mobile-menu");
+  {
+    /* 
+  // &:after {
+    //   position: absolute;
+    //   bottom: -10%;
+    //   left: 0;
+    //   border-radius: 10px;
+    //   background: var(--color-menu-hover);
+    //   width: 100%;
+    //   height: 2px;
+    //   content: '';
+    // }
+    // &:hover:after {
+    //   display: none;
+    // } */
+  }
+  document.addEventListener('DOMContentLoaded', () => {
+    const toggleBtn = document.getElementById('menu-toggle')
+    const mobileMenu = document.getElementById('mobile-menu')
 
-    toggleBtn.addEventListener("click", () => {
+    toggleBtn.addEventListener('click', () => {
       // Slide Mobile Menu
-      mobileMenu.classList.toggle("right-0");
-      mobileMenu.classList.toggle("right-[-100%]");
+      mobileMenu.classList.toggle('right-0')
+      mobileMenu.classList.toggle('right-[-100%]')
 
       // Animate Hamburger into X
-      toggleBtn.classList.toggle("open");
-    });
-  });
+      toggleBtn.classList.toggle('open')
+    })
+  })
 </script>

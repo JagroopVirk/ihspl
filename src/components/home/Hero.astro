@@ -1,24 +1,27 @@
 ---
-import { Image } from "astro:assets";
-import heroImg from "../../assets/hero.png";
-import bgImage from "../../assets/bg.jpg";
+import Picture from 'astro/components/Picture.astro'
+import heroImg from '../../assets/hero.png'
+import bgImage from '../../assets/bg.jpg'
 ---
 
 <section
   id="hero-section"
-  class="w-full items-center justify-center relative"
-  style={`background-image: url(${bgImage.src}); background-size: cover; background-repeat: no-repeat;background-position: center;`}
+  class="relative w-full items-center justify-center"
+  style={`background-image: url(${bgImage.src}); background-size: cover; background-repeat: no-repeat; background-position: center;`}
 >
-  <div class="p-6 md:p-10 mx-auto max-w-xl text-center maxwidth flex flex-row">
+  <div class="maxwidth mx-auto flex max-w-xl flex-row p-6 text-center md:p-10">
     <div>
-      <h1 class="text-3xl md:text-5xl font-bold mt-4 headingColor">
-        Welcome to Our Website
-      </h1>
+      <h1>Welcome to Our Website</h1>
     </div>
-    <Image
-      src={heroImg}
-      alt="Hero Image"
-      class="mx-auto rounded-lg max-w-[40%]"
-    />
+    <Picture src={heroImg} alt="Hero Image" class="mx-auto hidden md:block md:max-w-[70%]" />
   </div>
 </section>
+
+<style>
+  @reference "tailwindcss";
+
+  h1 {
+    @apply mt-4;
+    color: var(--color-black);
+  }
+</style>

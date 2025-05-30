@@ -1,25 +1,24 @@
-    ---
-import Layout from "../layouts/Layout.astro";
-import Header from "../components/header/Header.astro";
-import Footer from "../components/footer/Footer.astro";
-import "../styles/global.css";
+---
+import Layout from '../layouts/Layout.astro'
+import Header from '../components/header/Header.astro'
+import Footer from '../components/footer/Footer.astro'
+import '../styles/global.css'
 
 // Importing the SEO and location schema
-import { aboutPageSeo } from "../data/js/seo/siteSeo.js";
-import {  allServicesSchema } from "../data/js/seo/servicesSchemaSEO.js";
+import { aboutPageSeo } from '../data/js/seo/siteSeo.js'
+import { allServicesSchema } from '../data/js/seo/servicesSchemaSEO.js'
 ---
 
 <Layout seo={{ ...aboutPageSeo, canonical: aboutPageSeo.url, servicesSchema: allServicesSchema }}>
   <Header />
-<section class="flex min-h-screen justify-center items-center">
-    <div class="text-center ">
-          <h1 class="text-6xl font-extrabold text-red-500">404</h1>
-          <p class="mt-4 text-xl font-semibold">Oops! Page not found.</p>
-          <p class="mt-2 text-gray-600">The page you're looking for doesn't exist or has been moved.</p>
-          <a href="/" class="mt-6 inline-block px-6 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">
-            Go back to Home
-          </a>
-        </div>
-</section>
+  {/* TODO: colors and font size with variables */}
+  <section class="flex min-h-screen items-center justify-center">
+    <div class="text-center">
+      <h1 class="text-6xl font-extrabold text-red-500">404</h1>
+      <p class="mt-4 text-xl font-semibold">Oops! Page not found.</p>
+      <p class="mt-2 mb-6">The page you're looking for doesn't exist or has been moved.</p>
+      <a href="/" class="button"> Go back to Home </a>
+    </div>
+  </section>
   <Footer />
 </Layout>
