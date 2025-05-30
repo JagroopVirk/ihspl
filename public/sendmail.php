@@ -14,7 +14,7 @@ $fromEmail    = 'admin@indivirtuscro.com';   // Update with your Hostinger email
 $fromName     = 'IHSPL Website Contact Page Form';
 $smtpPass     = $env["PASSWORD"];             // Your email password or app password
 $rateDir      = __DIR__ . '/rate_limit';    // must be writable
-$maxRequests  = 5;                           // submissions per window
+$maxRequests  = 10;                           // submissions per window
 $windowSecs   = 3600;                        // 1 hour
 /* ------------------------------------------------------------- */
 
@@ -69,8 +69,7 @@ if (isRateLimited($ip, $rateDir, $maxRequests, $windowSecs)) {
 }
 
 // Collect & validate input
-$fname    = clean($_POST['firstName'] ?? '');
-$lname    = clean($_POST['lastName'] ?? '');
+$name    = clean($_POST['name'] ?? '');
 $email    = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
 $contact  = clean($_POST['contact'] ?? '');
 $message  = clean($_POST['message'] ?? '');
@@ -80,7 +79,7 @@ if (!empty($_POST['website'] ?? '')) {
     redirect($redirectBase, 'error=spam_detected');
 }
 
-if ($fname === '' || $lname === '' || $email === '' || $message === '') {
+if ($name === '' || $email === '' || $message === '') {
     redirect($redirectBase, 'error=empty');
 }
 
@@ -90,7 +89,7 @@ if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
 
 // Header injection check
 $injPattern = '/(content-type:|bcc:|cc:|to:)/i';
-if (preg_match($injPattern, $fname) || preg_match($injPattern, $email)) {
+if (preg_match($injPattern, $name) || preg_match($injPattern, $email)) {
     redirect($redirectBase, 'error=invalid_input');
 }
 
@@ -109,11 +108,11 @@ $emailBody = <<<HTML
 </head>
 <body>
   <h2>New Contact Form Submission</h2><br>
-  <p><strong>Name:</strong> {$fname} {$lname}</p><br>
+  <p><strong>Name:</strong> {$name} </p><br>
   <p><strong>Email:</strong> {$email}</p><br>
   <p><strong>Contact:</strong> {$contact}</p><br>
   <p><strong>Message:</strong><br>
-     {nl2br($message)}
+     {($message)}
   </p>
 </body>
 </html>
@@ -132,7 +131,7 @@ try {
 
     $mail->setFrom($fromEmail, $fromName);
     $mail->addAddress($to);
-    $mail->addReplyTo($email, "{$fname} {$lname}");
+    $mail->addReplyTo($email, "{$name}");
 
     $mail->isHTML(true);
     $mail->Subject = $subject;

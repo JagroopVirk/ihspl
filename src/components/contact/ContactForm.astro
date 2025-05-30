@@ -1,44 +1,29 @@
 ---
-const url = new URL(Astro.request.url);
-const success = url.searchParams.get("success");
-const error = url.searchParams.get("error");
+// const url = new URL(Astro.request.url);
+// const success = url.searchParams.get("success");
+// const error = url.searchParams.get("error");
 
-let alert = { type: '', text: '' };
+// let alert = { type: '', text: '' };
 
-if (success === "true") {
-  alert = { type: 'success', text: "✅ Thank you for contacting us. We will get back to you soon." };
-} else if (error === "empty") {
-  alert = { type: 'error', text: "⚠️ Please fill in all required fields." };
-} else if (error === "invalid_email") {
-  alert = { type: 'error', text: "⚠️ Invalid email format." };
-} else if (error === "send_failed") {
-  alert = { type: 'error', text: "❌ Sorry, there was an error sending your message." };
-} else if (error === "spam_detected") {
-  alert = { type: 'error', text: "🚫 Spam detected. Please try again later." };
-} else if (error === "too_many_attempts") {
-  alert = { type: 'error', text: "🚫 Too many submissions. Please wait and try again later." };
-} else if (error === "invalid_request") {
-  alert = { type: 'error', text: "❌ Invalid request." };
-}
+// if (success === "true") {
+//   alert = { type: 'success', text: "✅ Thank you for contacting us. We will get back to you soon." };
+// } else if (error === "empty") {
+//   alert = { type: 'error', text: "⚠️ Please fill in all required fields." };
+// } else if (error === "invalid_email") {
+//   alert = { type: 'error', text: "⚠️ Invalid email format." };
+// } else if (error === "send_failed") {
+//   alert = { type: 'error', text: "❌ Sorry, there was an error sending your message." };
+// } else if (error === "spam_detected") {
+//   alert = { type: 'error', text: "🚫 Spam detected. Please try again later." };
+// } else if (error === "too_many_attempts") {
+//   alert = { type: 'error', text: "🚫 Too many submissions. Please wait and try again later." };
+// } else if (error === "invalid_request") {
+//   alert = { type: 'error', text: "❌ Invalid request." };
+// }
 ---
 
 <div class="formDiv w-full md:w-1/2 pxy-8 flex flex-col justify-center">
    
-{/* Alert Message  */}
-{alert.text && (
-  <div
-    id="form-alert"
-    class={`p-4 my-4 rounded-md text-sm ${
-      alert.type === 'success'
-        ? 'bg-green-100 text-green-800 border border-green-300'
-        : 'bg-red-100 text-red-800 border border-red-300'
-    }`} 
-    
-  >
-    {/* // TODO: use color variables */}
-    {alert.text}
-  </div>
-)}
 {/* Form */}
 <h2 class="text-center mb-6">Have a Question? <span class="halfHeading">Let’s Talk</span></h2>
     <form 
@@ -74,18 +59,57 @@ if (success === "true") {
 
       <button type="submit" class="button">Send Message</button>
     </form>
-  </div>
+{/* alert box  */}
+  <script type="text/javascript">
+  window.addEventListener('DOMContentLoaded', () => {
+    const url = new URL(window.location.href);
+    const success = url.searchParams.get("success");
+    const error = url.searchParams.get("error");
 
- {/* to hide the alert box  */}
-  <script>
-  setTimeout(() => { 
-    const alertBox = document.getElementById("form-alert");
-    if (alertBox) {
-      alertBox.style.display = "none";
+    let alert = { type: '', text: '' };
+
+    if (success === "true") {
+      alert = { type: 'success', text: "✅ Thank you for contacting us. We will get back to you soon." };
+    } else if (error === "empty") {
+      alert = { type: 'error', text: "⚠️ Please fill in all required fields." };
+    } else if (error === "invalid_email") {
+      alert = { type: 'error', text: "⚠️ Invalid email format." };
+    } else if (error === "send_failed") {
+      alert = { type: 'error', text: "❌ Sorry, there was an error sending your message." };
+    } else if (error === "spam_detected") {
+      alert = { type: 'error', text: "🚫 Spam detected. Please try again later." };
+    } else if (error === "too_many_attempts") {
+      alert = { type: 'error', text: "🚫 Too many submissions. Please wait and try again later." };
+    } else if (error === "invalid_request") {
+      alert = { type: 'error', text: "❌ Invalid request." };
     }
-  }, 5000);
+
+    if (alert.text) {
+      const alertBox = document.createElement('div');
+      alertBox.id = 'form-alert';
+      alertBox.className = `p-4 my-4 rounded-md text-sm ${
+        alert.type === 'success'
+          ? 'bg-green-100 text-green-800 border border-green-300'
+          : 'bg-red-100 text-red-800 border border-red-300'
+      }`;
+      alertBox.textContent = alert.text;
+
+      const formDiv = document.querySelector('.formDiv');
+      if (formDiv) {
+        formDiv.insertBefore(alertBox, formDiv.firstChild);
+      }
+
+      // Remove alert after 5 seconds
+      setTimeout(() => {
+        alertBox.style.display = "none";
+      }, 5000);
+    }
+  });
 </script>
 
+  </div>
+
+ 
 
 <style>
 {/* Text & color styling  */}
