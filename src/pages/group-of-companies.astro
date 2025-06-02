@@ -2,7 +2,9 @@
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/header/Header.astro'
 import Footer from '../components/footer/Footer.astro'
-import Companies from '../components/companies/Companies.astro'
+
+import CompanyCard from '../components/companies/CompanyCard.astro'
+import cards from '../data/js/companies.js'
 
 import '../styles/global.css'
 
@@ -15,6 +17,12 @@ import { allServicesSchema } from '../data/js/seo/servicesSchemaSEO.js'
 
 <Layout seo={{ servicesSchema: allServicesSchema }}>
   <Header />
-  <Companies />
+  <section>
+    <div
+      class="maxwidth mx-auto mt-36 mb-12 grid grid-cols-1 justify-items-center gap-6 px-4 sm:grid-cols-2 md:grid-cols-3"
+    >
+      {cards.map((card) => <CompanyCard {...card} />)}
+    </div>
+  </section>
   <Footer />
 </Layout>
