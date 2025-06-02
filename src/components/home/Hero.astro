@@ -1,27 +1,32 @@
 ---
-import Picture from 'astro/components/Picture.astro'
-import heroImg from '../../assets/hero.png'
+// import Picture from 'astro/components/Picture.astro'
+// import heroImg from '../../assets/hero.png'
 import bgImage from '../../assets/bg.jpg'
+import { heroDescription, heroReportsDetails } from '../../data/js/hero.js'
+import Stats from './Stats.astro'
 ---
 
 <section
   id="hero-section"
-  class="relative w-full items-center justify-center"
-  style={`background-image: url(${bgImage.src}); background-size: cover; background-repeat: no-repeat; background-position: center;`}
+  class="bg-blur-xs relative w-full bg-cover bg-center bg-no-repeat"
+  style={`background-image: url(${bgImage.src});`}
 >
-  <div class="maxwidth mx-auto flex max-w-xl flex-row p-6 text-center md:p-10">
-    <div>
-      <h1>Welcome to Our Website</h1>
+  <div class="maxwidth mx-auto flex flex-col-reverse px-8 py-8 lg:flex-row lg:py-20">
+    <Stats heroReportsDetails={heroReportsDetails} />
+    <div class="mb-6 lg:max-w-2/3">
+      <h1>
+        {heroDescription.tag}<br /><span class="text-lg font-semibold">{heroDescription.description}</span>
+      </h1>
     </div>
-    <Picture src={heroImg} alt="Hero Image" class="mx-auto hidden md:block md:max-w-[70%]" />
+    {/* <Picture src={heroImg} alt="Hero Image" class="mx-auto hidden md:block md:max-w-[70%]" /> */}
   </div>
 </section>
 
 <style>
-  @reference "tailwindcss";
-
   h1 {
-    @apply mt-4;
-    color: var(--color-black);
+    text-shadow: 2px 2px 2px var(--color-white);
+    span {
+      color: var(--color-black);
+    }
   }
 </style>

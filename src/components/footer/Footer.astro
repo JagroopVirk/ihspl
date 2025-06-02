@@ -26,9 +26,8 @@ import SetMarginTop from '../extras/setMarginTop.astro'
 <footer class="footer px-6 pt-8 pb-4">
   {/* Upper Section */}
   <div>
-    <h2 class="mb-8 text-center">Our Global Offices</h2>
-    {/* TODO: design in the drop box */}
-    <div class="addDiv mx-auto grid max-w-6xl grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
+    <h2>Our Global Offices</h2>
+    <div class="addDiv maxwidth mx-auto grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-3">
       {
         offices.map((office) => (
           <div>
@@ -128,11 +127,29 @@ import SetMarginTop from '../extras/setMarginTop.astro'
   @reference 'tailwindcss';
 
   .footer {
+    @apply relative;
     background-color: var(--color-primary);
     color: var(--color-white);
 
     & h2 {
-      color: var(--color-white);
+      @apply relative z-2 mb-10 text-center;
+      color: var(--color-primary);
+    }
+
+    &:after {
+      @apply absolute top-0 px-6 left-1/2 -translate-x-1/2 h-24 w-82 rounded-b-xl;
+      background-color: var(--color-white);
+      content: '';
+    }
+    &:before {
+      @apply absolute z-1 top-0 px-6 left-1/2 -translate-x-1/2 h-4 w-60 rounded-t-xl;
+      box-shadow:
+        -300.6Q 0Q var(--color-primary),
+        -280Q 0Q var(--color-white),
+        300.6Q 0Q var(--color-primary),
+        280Q 0Q var(--color-white);
+      background-color: transparent;
+      content: '';
     }
   }
 
