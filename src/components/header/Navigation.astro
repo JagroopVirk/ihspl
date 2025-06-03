@@ -20,11 +20,11 @@ function isActive(href) {
   </div>
 
   <!-- Desktop Menu -->
-  <ul class="top-0 left-0 z-50 hidden min-w-[280px] flex-col lg:flex lg:flex-row">
+  <ul class="top-0 left-0 z-50 my-auto hidden min-w-[280px] flex-col items-center lg:flex lg:flex-row">
     {
-      navItems.map((item) => (
+      navItems.map((item, idx) => (
         <li class={'group menuItemLi relative' + (isActive(item.href) ? ' active' : '')}>
-          <a href={item.href || '#'} class="menuItem flex items-center transition-colors duration-300">
+          <a href={item.href || '#'} id={idx} class="menuItem flex items-center transition-colors duration-300">
             {item.name}
             {item.submenu && <span class="menuItem ml-1">⯆</span>}
           </a>
@@ -188,7 +188,7 @@ function isActive(href) {
     color: var(--color-secondary);
   }
 
-  .menuItemLi > a {
+  .menuItemLi > .menuItem {
     &:before {
       position: absolute;
       top: 0;
@@ -263,5 +263,9 @@ function isActive(href) {
         }
       })
     })
+
+    // const quoteButton = document.getElementById('7')
+    // quoteButton.classList.add('button')
+    // quoteButton.classList.remove('menuItem')
   })
 </script>

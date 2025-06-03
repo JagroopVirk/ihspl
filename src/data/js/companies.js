@@ -2,7 +2,7 @@ export default [
   {
     title: 'Indivirtus Healthcare Services',
     services: ['Toxicological Services', 'Pharmacovigilance', 'MICC', 'CSV and GxP Services'],
-    link: '#',
+    link: 'https://www.indivirtus.com',
     bgColor: 'bg-blue-50',
     textColor: 'text-blue-900',
     linkColor: 'text-orange-600',
@@ -10,7 +10,7 @@ export default [
   {
     title: 'Indivirtus Solutions',
     services: ['Insurance Services', 'Accounting Services', 'Data Management Services', 'International B.P.O.'],
-    link: '#',
+    link: 'https://www.indivirtussolutions.com',
     bgColor: 'bg-sky-400',
     textColor: 'text-blue-900',
     linkColor: 'text-blue-900 font-semibold underline',
@@ -18,7 +18,7 @@ export default [
   {
     title: 'Indivirtus Strategic Solutions',
     services: ['Export/ import of finished formulations', 'Finding a suitable MAH across all regions'],
-    link: '#',
+    link: 'https://www.indivirtusrnd.com',
     bgColor: 'bg-sky-300',
     textColor: 'text-blue-900',
     linkColor: 'text-blue-900 font-semibold underline',
@@ -26,7 +26,7 @@ export default [
   {
     title: 'Indivirtus AB7 Scribing and RCM',
     services: ['Medical scribing', 'Revenue cycle management', 'Medical transcription'],
-    link: '#',
+    link: 'https://www.indivirtusab7.com',
     bgColor: 'bg-orange-200',
     textColor: 'text-blue-900',
     linkColor: 'text-blue-900 font-semibold underline',
@@ -39,7 +39,7 @@ export default [
       'Bio-Analytical',
       'Medical Writing',
     ],
-    link: '#',
+    link: 'https://www.indivirtuscro.com',
     bgColor: 'bg-slate-200',
     textColor: 'text-blue-900',
     linkColor: 'text-blue-900 font-semibold underline',
@@ -47,7 +47,7 @@ export default [
   {
     title: 'Indivirtus Ecological Services',
     services: ['Environmental Risk Assessment', 'Ecotoxicology Studies', 'Biodiversity Compliance'],
-    link: '#',
+    link: 'https://www.indivirtuseco.com',
     bgColor: 'bg-green-100',
     textColor: 'text-blue-900',
     linkColor: 'text-blue-900 font-semibold underline',
