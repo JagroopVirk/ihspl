@@ -2,7 +2,9 @@
 
 @theme {
   --color-primary: rgb(1, 166, 158);
+  --color-primary-light: rgb(214, 255, 250);
   --color-secondary: rgb(245, 105, 12);
+  --color-secondary-light: rgb(255, 159, 95);
   --color-primaryBlue: rgb(0, 0, 255);
   --color-secondaryOrange: rgb(255, 187, 69);
   --color-input-focus: rgb(110, 110, 255);

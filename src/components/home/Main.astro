@@ -2,7 +2,7 @@
 import Hero from './Hero.astro'
 import Companies from '../companies/Companies.astro'
 import SerivcesGrid from './SerivcesGrid.astro'
-import Testimonials from './Testimonials.astro'
+import Testimonials from './Testimonials.jsx'
 import Certifications from './Certifications.astro'
 ---
 
@@ -10,6 +10,6 @@ import Certifications from './Certifications.astro'
   <Hero />
   <Companies />
   <SerivcesGrid />
-  <Testimonials />
+  <Testimonials client:load />
   <Certifications />
 </main>
