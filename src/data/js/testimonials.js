@@ -27,7 +27,7 @@ export const testimonials = [
   },
   {
     name: 'Rajinder',
-    company: 'my own Ltd.',
+    company: 'My own Ltd.',
     quote: 'Txceeded our expectations with their thorough he CRO team regulatory knowledge and timely deliverables.',
   },
 ]
