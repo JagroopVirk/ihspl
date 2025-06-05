@@ -4,12 +4,16 @@ import Companies from '../companies/Companies.astro'
 import SerivcesGrid from './SerivcesGrid.astro'
 import Testimonials from './Testimonials.jsx'
 import Certifications from './Certifications.astro'
+import WhyUs from './WhyUs.astro'
+
+import whyUs from '../../data/js/whyUs.js'
 ---
 
 <main id="main-content maxwidth">
   <Hero />
   <Companies />
   <SerivcesGrid />
+  <WhyUs features={whyUs} />
   <Testimonials client:load />
   <Certifications />
 </main>

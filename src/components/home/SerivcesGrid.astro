@@ -12,10 +12,7 @@ import { services } from '../../data/js/homeServices.js'
           class={`block aspect-square w-[120px] rotate-45 transform bg-gradient-to-br sm:w-[140px] md:w-[160px] ${service.color} rounded-[20%] shadow-md transition-transform duration-300 hover:scale-110 hover:shadow-xl`}
         >
           <div class="flex h-full w-full -rotate-45 items-center justify-center px-2 text-center text-sm font-bold whitespace-pre-line text-black">
-            <span>
-              {service.title}
-              {service.highlight && <span class="font-semibold text-blue-800">*</span>}
-            </span>
+            <span>{service.title}</span>
           </div>
         </a>
       ))
