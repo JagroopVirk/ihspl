@@ -70,7 +70,7 @@ export default function GlobalFootprint() {
         <p class="mx-auto mb-10 max-w-2xl text-gray-600">Offices and operations in key regions across the world.</p>
 
         <div class="relative mx-auto aspect-[2/1] w-full max-w-5xl">
-          <img src={worldMap} alt="World Map" class="absolute inset-0 z-0 h-full w-full object-contain" />
+          <img src="/world_map.svg" alt="World Map" class="absolute inset-0 z-0 h-full w-full object-contain" />
           {/* <Picture src={worldMap} alt="World map" class="absolute inset-0 z-0 h-full w-full object-contain" /> */}
 
           {locations.map((loc) => (
