@@ -1,13 +1,4 @@
 import {
-  AcademicCapIcon,
-  BuildingLibraryIcon,
-  Cog6ToothIcon,
-  UserGroupIcon,
-  ShieldCheckIcon,
-  ClipboardDocumentCheckIcon,
-} from '@heroicons/react/24/solid';
-
-import {
   FaGraduationCap,
   FaBuildingColumns,
   FaGear,
@@ -15,9 +6,6 @@ import {
   FaShieldHalved,
   FaClipboardCheck,
 } from 'react-icons/fa6';
-
-// heroicons/react/24/solid
-// heroicons/react/24/outline
 
 export default [
   {

@@ -1,12 +1,13 @@
 ---
-import Hero from './Hero.astro'
-import Companies from '../companies/Companies.astro'
-import SerivcesGrid from './SerivcesGrid.astro'
-import Testimonials from './Testimonials.jsx'
-import Certifications from './Certifications.astro'
-import WhyUs from './WhyUs.astro'
+import Hero from './Hero.astro';
+import Companies from '../companies/Companies.astro';
+import SerivcesGrid from './SerivcesGrid.astro';
+import Testimonials from './Testimonials.jsx';
+import Certifications from './Certifications.astro';
+import WhyUs from './WhyUs.astro';
 
-import whyUs from '../../data/js/whyUs.js'
+import whyUs from '../../data/js/whyUs.js';
+import GlobalFootprint from './GlobalFootprint.jsx';
 ---
 
 <main id="main-content maxwidth">
@@ -15,5 +16,6 @@ import whyUs from '../../data/js/whyUs.js'
   <SerivcesGrid />
   <WhyUs features={whyUs} />
   <Testimonials client:load />
+  <GlobalFootprint client:load />
   <Certifications />
 </main>

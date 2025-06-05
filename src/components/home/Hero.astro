@@ -1,9 +1,9 @@
 ---
 // import Picture from 'astro/components/Picture.astro'
 // import heroImg from '../../assets/hero.png'
-import bgImage from '../../assets/hero-bg-4.avif'
-import { heroDescription, heroReportsDetails } from '../../data/js/hero.js'
-import Stats from './Stats.astro'
+import bgImage from '../../assets/bg.jpg';
+import { heroDescription, heroReportsDetails } from '../../data/js/hero.js';
+import Stats from './Stats.astro';
 ---
 
 <section
@@ -20,11 +20,11 @@ import Stats from './Stats.astro'
     </div>
     {/* <Picture src={heroImg} alt="Hero Image" class="mx-auto hidden md:block md:max-w-[70%]" /> */}
   </div>
+  {/* text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); */}
 </section>
 
 <style>
   h1 {
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
     span {
       color: var(--color-black);
     }

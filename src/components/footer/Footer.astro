@@ -20,6 +20,7 @@ import {
   FaLocationDot,
   FaPhone,
   FaEnvelope,
+  FaWhatsapp,
 } from 'react-icons/fa6';
 
 // Importing the SetMarginTop component for setting margin top
@@ -27,7 +28,6 @@ import SetMarginTop from '../extras/setMarginTop.astro';
 ---
 
 <footer class="footer px-6 pt-8 pb-4">
-  {/* TODO: social media links */}
   {/* Upper Section */}
   <div>
     <h2>Our Global Offices</h2>
@@ -37,7 +37,7 @@ import SetMarginTop from '../extras/setMarginTop.astro';
           <div>
             <h3 class="officeCountry mb-2 text-center">{office.location}</h3>
             <div class="mb-2 flex">
-              <div class="footerIcon">
+              <div class="footerIcon text-lg">
                 <FaLocationDot />
               </div>
               <a class="addDetails" href={'http://maps.google.com/?q=' + office.address} target={'_blank'}>
@@ -46,7 +46,7 @@ import SetMarginTop from '../extras/setMarginTop.astro';
             </div>
 
             <div class="mb-2 flex">
-              <div class="footerIcon">
+              <div class="footerIcon text-lg">
                 <FaPhone />
               </div>
               {office.phone.map((element) => (
@@ -56,11 +56,11 @@ import SetMarginTop from '../extras/setMarginTop.astro';
               ))}
             </div>
             <div class="mb-2 flex">
-              <div class="footerIcon">
+              <div class="footerIcon text-lg">
                 <FaEnvelope />
               </div>
               {office.email.map((element) => (
-                <a class="addDetails" href={`tel:${element}`}>
+                <a class="addDetails" href={`mailto:${element}`}>
                   {element}
                 </a>
               ))}
@@ -84,6 +84,9 @@ import SetMarginTop from '../extras/setMarginTop.astro';
         </a>
         <a class="text-3xl" href="https://instagram.com/indivirtus" target="_blank" aria-label="Facebook">
           <FaInstagram />
+        </a>
+        <a class="text-3xl" href="https://whatsapp.com/indivirtus" target="_blank" aria-label="Facebook">
+          <FaWhatsapp />
         </a>
       </div>
     </div>
