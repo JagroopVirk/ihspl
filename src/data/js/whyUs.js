@@ -5,7 +5,10 @@ import {
   UserGroupIcon,
   ShieldCheckIcon,
   ClipboardDocumentCheckIcon,
-} from '@heroicons/react/24/outline'
+} from '@heroicons/react/24/solid'
+
+// heroicons/react/24/solid
+// heroicons/react/24/outline
 
 export default [
   {
