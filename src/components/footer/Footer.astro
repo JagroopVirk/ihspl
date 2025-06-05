@@ -1,29 +1,33 @@
 ---
-import offices from '../../data/js/offices.js'
+import offices from '../../data/js/offices.js';
 
 // Importing the GoTopBtn component for the "Back to Top" button
-import GoTopBtn from '../other/GoTopBtn.astro'
+import GoTopBtn from '../other/GoTopBtn.astro';
 
-// Font Awesome
-import { library, icon } from '@fortawesome/fontawesome-svg-core'
+// Importing heroicons
+// import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 
-// import { faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faMapMarkerAlt, faPhoneSquare, faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
-import { Fragment } from 'react'
+// Importing Lucide Icons
+// import { MapPin, PhoneIcon, Mail } from 'lucide-react';
 
-// Declare all the icons you plan on using
-library.add(faPhoneSquare, faMapMarkerAlt, faEnvelopeSquare)
-
-// Instantiate the icon with the icon function
-const mapIcon = icon({ prefix: 'fas', iconName: faMapMarkerAlt.iconName })
-const phoneIcon = icon({ prefix: 'fas', iconName: faPhoneSquare.iconName })
-const emailIcon = icon({ prefix: 'fas', iconName: faEnvelopeSquare.iconName })
+// Importing React Icons
+import {
+  FaTwitter,
+  FaLinkedin,
+  FaFacebook,
+  FaSquareInstagram,
+  FaInstagram,
+  FaLocationDot,
+  FaPhone,
+  FaEnvelope,
+} from 'react-icons/fa6';
 
 // Importing the SetMarginTop component for setting margin top
-import SetMarginTop from '../extras/setMarginTop.astro'
+import SetMarginTop from '../extras/setMarginTop.astro';
 ---
 
 <footer class="footer px-6 pt-8 pb-4">
+  {/* TODO: social media links */}
   {/* Upper Section */}
   <div>
     <h2>Our Global Offices</h2>
@@ -33,49 +37,63 @@ import SetMarginTop from '../extras/setMarginTop.astro'
           <div>
             <h3 class="officeCountry mb-2 text-center">{office.location}</h3>
             <div class="mb-2 flex">
-              <>
-                <div class="footerIcon">
-                  <Fragment set:html={mapIcon.html} />
-                </div>
-                <a class="addDetails" href={'http://maps.google.com/?q=' + office.address} target={'_blank'}>
-                  {office.address}
-                </a>
-              </>
+              <div class="footerIcon">
+                <FaLocationDot />
+              </div>
+              <a class="addDetails" href={'http://maps.google.com/?q=' + office.address} target={'_blank'}>
+                {office.address}
+              </a>
             </div>
 
             <div class="mb-2 flex">
-              <>
-                <div class="footerIcon">
-                  <Fragment set:html={phoneIcon.html} />
-                </div>
-                <a class="addDetails" href={'tel:' + office.phone}>
-                  {office.phone}
+              <div class="footerIcon">
+                <FaPhone />
+              </div>
+              {office.phone.map((element) => (
+                <a class="addDetails" href={`tel:${element}`}>
+                  {element}
                 </a>
-              </>
+              ))}
             </div>
-            {/* TODO: phone and address in diffrent links */}
             <div class="mb-2 flex">
-              <>
-                <div class="footerIcon">
-                  <Fragment set:html={emailIcon.html} />
-                </div>
-                <a class="addDetails" href={'mailto:' + office.email}>
-                  {office.email}
+              <div class="footerIcon">
+                <FaEnvelope />
+              </div>
+              {office.email.map((element) => (
+                <a class="addDetails" href={`tel:${element}`}>
+                  {element}
                 </a>
-              </>
+              ))}
             </div>
           </div>
         ))
       }
     </div>
-  </div>
 
-  <div class="footerCopyright mt-8 text-center">
-    &copy; {new Date().getFullYear()} Indivirtus Healthcare Services Pvt. Ltd. All rights reserved.
-  </div>
+    {/* Social media links */}
+    <div class="w-full pt-4 text-center">
+      <div class="flex justify-center gap-6">
+        <a class="text-3xl" href="https://linkedin.com/company/indivirtus" target="_blank" aria-label="LinkedIn">
+          <FaLinkedin />
+        </a>
+        <a class="text-3xl" href="https://twitter.com/indivirtus" target="_blank" aria-label="Twitter">
+          <FaTwitter />
+        </a>
+        <a class="text-3xl" href="https://facebook.com/indivirtus" target="_blank" aria-label="Facebook">
+          <FaFacebook />
+        </a>
+        <a class="text-3xl" href="https://instagram.com/indivirtus" target="_blank" aria-label="Facebook">
+          <FaInstagram />
+        </a>
+      </div>
+    </div>
 
-  {
-    /* <!-- Lower Section -->
+    <div class="footerCopyright text-center">
+      &copy; {new Date().getFullYear()} Indivirtus Healthcare Services Pvt. Ltd. All rights reserved.
+    </div>
+
+    {
+      /* <!-- Lower Section -->
   <div
     class="border-t border-gray-700 pt-12 grid grid-cols-1 md:grid-cols-3 gap-12 max-w-6xl mx-auto"
   >
@@ -118,90 +136,91 @@ import SetMarginTop from '../extras/setMarginTop.astro'
       </ul>
     </div>
     } */
-  }
+    }
+  </div>
+  <GoTopBtn />
+  <SetMarginTop />
+
+  <style>
+    @reference 'tailwindcss';
+
+    .footer {
+      @apply relative;
+      background-color: var(--color-primary);
+      color: var(--color-white);
+
+      & h2 {
+        @apply relative z-2 mb-10 text-center;
+        color: var(--color-primary);
+      }
+
+      &:after {
+        @apply absolute top-0 px-6 left-1/2 -translate-x-1/2 h-24 w-82 rounded-b-xl;
+        background-color: var(--color-white);
+        content: '';
+      }
+      &:before {
+        @apply absolute z-1 top-0 px-6 left-1/2 -translate-x-1/2 h-4 w-60 rounded-t-xl;
+        box-shadow:
+          -300.6Q 0Q var(--color-primary),
+          -280Q 0Q var(--color-white),
+          300.6Q 0Q var(--color-primary),
+          280Q 0Q var(--color-white);
+        background-color: transparent;
+        content: '';
+      }
+    }
+
+    .officeCountry {
+      color: var(--color-secondaryOrange);
+    }
+
+    .addDetails {
+      @apply ml-1.5;
+      color: var(--color-white);
+    }
+
+    .footerIcon {
+      @apply align-middle relative;
+      color: var(--color-white);
+
+      svg {
+        @apply relative top-1/2 -translate-1/2;
+      }
+    }
+
+    .addDiv > div {
+      &:nth-child(1) {
+        @apply md:hidden;
+      }
+      &:nth-child(2) {
+        @apply md:hidden;
+      }
+      &:nth-child(3) {
+        @apply hidden md:block;
+      }
+      &:nth-child(4) {
+        @apply hidden md:block;
+      }
+    }
+
+    .footerCopyright {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      overflow: hidden;
+      color: rgb(from var(--color-white) r g b / 0.7);
+
+      &:before {
+        display: block;
+        position: absolute;
+        left: -10%;
+        margin-top: -1rem;
+        margin-bottom: 1rem;
+        background-color: var(--color-secondaryOrange);
+        width: 110%;
+        height: 1px;
+        content: '';
+      }
+    }
+  </style>
 </footer>
-<GoTopBtn />
-<SetMarginTop />
-
-<style>
-  @reference 'tailwindcss';
-
-  .footer {
-    @apply relative;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-
-    & h2 {
-      @apply relative z-2 mb-10 text-center;
-      color: var(--color-primary);
-    }
-
-    &:after {
-      @apply absolute top-0 px-6 left-1/2 -translate-x-1/2 h-24 w-82 rounded-b-xl;
-      background-color: var(--color-white);
-      content: '';
-    }
-    &:before {
-      @apply absolute z-1 top-0 px-6 left-1/2 -translate-x-1/2 h-4 w-60 rounded-t-xl;
-      box-shadow:
-        -300.6Q 0Q var(--color-primary),
-        -280Q 0Q var(--color-white),
-        300.6Q 0Q var(--color-primary),
-        280Q 0Q var(--color-white);
-      background-color: transparent;
-      content: '';
-    }
-  }
-
-  .officeCountry {
-    color: var(--color-secondaryOrange);
-  }
-
-  .addDetails {
-    @apply ml-1.5;
-    color: var(--color-white);
-  }
-
-  .footerIcon {
-    @apply min-w-[15px] align-middle relative;
-    color: var(--color-white);
-
-    svg {
-      @apply relative top-1/2 -translate-1/2;
-    }
-  }
-
-  .addDiv > div {
-    &:nth-child(1) {
-      @apply md:hidden;
-    }
-    &:nth-child(2) {
-      @apply md:hidden;
-    }
-    &:nth-child(3) {
-      @apply hidden md:block;
-    }
-    &:nth-child(4) {
-      @apply hidden md:block;
-    }
-  }
-
-  .footerCopyright {
-    margin-top: 2rem;
-    padding-top: 1rem;
-    overflow: hidden;
-    color: rgb(from var(--color-white) r g b / 0.7);
-
-    &:before {
-      display: block;
-      position: absolute;
-      left: -10%;
-      margin-top: -1rem;
-      margin-bottom: 1rem;
-      background-color: var(--color-secondaryOrange);
-      width: 110%;
-      height: 1px;
-      content: '';
-    }
-  }
-</style>

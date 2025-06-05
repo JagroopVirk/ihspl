@@ -1,6 +1,6 @@
 ---
 // Props: features = [{ title, description, icon }]
-const { features = [] } = Astro.props
+const { features = [] } = Astro.props;
 ---
 
 <section class="bg-primary-light w-full px-6 py-16">
@@ -11,8 +11,8 @@ const { features = [] } = Astro.props
         features.map((item, idx) => (
           <div class="rounded-2xl bg-gray-50 p-6 shadow transition hover:shadow-md">
             <div class="mb-4 flex items-start gap-4">
-              <div class="text-primaryBlue flex h-10 w-10 items-center justify-center rounded-full">
-                <item.icon class="h-6 w-6" />
+              <div class="text-primaryBlue flex h-10 w-10 items-center justify-center text-2xl">
+                <item.icon />
               </div>
               <div>
                 <h3 class="">{item.title}</h3>

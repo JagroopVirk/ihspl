@@ -42,7 +42,7 @@ const TestimonialCarousel = forwardRef((props, ref) => {
 
   return (
     <div {...swipeHandlers} className="relative w-full overflow-hidden py-12">
-      <h2 style={{ color: 'var(--color-secondary' }} class="mb-10 text-center">
+      <h2 style={{ color: 'var(--color-secondary' }} className="mb-10 text-center">
         What our clients say!
       </h2>
       <div className="maxwidth relative">

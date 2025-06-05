@@ -5,7 +5,16 @@ import {
   UserGroupIcon,
   ShieldCheckIcon,
   ClipboardDocumentCheckIcon,
-} from '@heroicons/react/24/solid'
+} from '@heroicons/react/24/solid';
+
+import {
+  FaGraduationCap,
+  FaBuildingColumns,
+  FaGear,
+  FaPeopleGroup,
+  FaShieldHalved,
+  FaClipboardCheck,
+} from 'react-icons/fa6';
 
 // heroicons/react/24/solid
 // heroicons/react/24/outline
@@ -14,31 +23,31 @@ export default [
   {
     title: 'Regulatory Expertise',
     description: 'Deep understanding of USFDA, EMA, CDSCO regulations.',
-    icon: AcademicCapIcon,
+    icon: FaGraduationCap,
   },
   {
     title: 'Certified Infrastructure',
     description: 'NABL certified labs, GMP-compliant facilities.',
-    icon: BuildingLibraryIcon,
+    icon: FaBuildingColumns,
   },
   {
     title: 'End-to-End Services',
     description: 'Complete solutions from preclinical to tech transfer.',
-    icon: Cog6ToothIcon,
+    icon: FaGear,
   },
   {
     title: 'Client-Centric Approach',
     description: 'Customized, transparent and responsive engagement.',
-    icon: UserGroupIcon,
+    icon: FaPeopleGroup,
   },
   {
     title: 'Skilled Professionals',
     description: 'Qualified experts in science, QA, and compliance.',
-    icon: ShieldCheckIcon,
+    icon: FaShieldHalved,
   },
   {
     title: 'Data Integrity & Compliance',
     description: '21 CFR Part 11, GLP/GMP practices ensured.',
-    icon: ClipboardDocumentCheckIcon,
+    icon: FaClipboardCheck,
   },
-]
+];
