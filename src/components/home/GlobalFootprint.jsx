@@ -52,7 +52,9 @@ export default function GlobalFootprint() {
   return (
     <section className="overflow-hidden bg-[#f0fdfa] py-16">
       <div className="maxwidth mx-auto px-4 text-center">
-        <h2 className="mb-4 text-3xl font-bold text-[#01a69e]">Our Global Footprint</h2>
+        <h2 className="mb-4 text-3xl font-bold text-[#01a69e]">
+          Our <span className="halfHeading">Global Footprint</span>
+        </h2>
 
         <div className="relative mx-auto aspect-[2/1] w-full">
           <img
@@ -70,9 +72,9 @@ export default function GlobalFootprint() {
               style={{ top: loc.top, left: loc.left }}
               onClick={() => setOpenId(loc.id)}
             >
-              <span class="relative inline-flex h-2 w-2 items-center justify-center">
-                <span class="absolute inset-0 animate-ping rounded-full bg-[#f5690c] opacity-75 transition-transform duration-1000 ease-out"></span>
-                <span class="relative h-2 w-2 rounded-full border-2 border-white bg-[#f5690c] shadow-md"></span>
+              <span className="relative inline-flex h-2 w-2 items-center justify-center">
+                <span className="absolute inset-0 animate-ping rounded-full bg-[#f5690c] opacity-75 transition-transform duration-1000 ease-out"></span>
+                <span className="relative h-2 w-2 rounded-full border-2 border-white bg-[#f5690c] shadow-md"></span>
               </span>
             </button>
           ))}

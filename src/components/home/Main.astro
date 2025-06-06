@@ -1,13 +1,16 @@
 ---
 import Hero from './Hero.astro';
 import Companies from '../companies/Companies.astro';
-import SerivcesGrid from './SerivcesGrid.astro';
+import SerivcesGrid from '../services/SerivcesGrid.astro';
 import Testimonials from './Testimonials.jsx';
 import Certifications from './Certifications.astro';
 import WhyUs from './WhyUs.astro';
-
-import whyUs from '../../data/js/whyUs.js';
 import GlobalFootprint from './GlobalFootprint.jsx';
+import ContactForm from '../contact/ContactForm.astro';
+import GoogleMap from '../contact/GoogleMap.astro';
+
+//importing whyus data
+import whyUs from '../../data/js/whyUs.js';
 ---
 
 <main id="main-content maxwidth">
@@ -18,4 +21,10 @@ import GlobalFootprint from './GlobalFootprint.jsx';
   <Testimonials client:load />
   <GlobalFootprint client:load />
   <Certifications />
+  <section class="bg-primary-light py-6 md:py-10">
+    <div class="maxwidth flex flex-col gap-8 p-10 md:flex-row-reverse">
+      <ContactForm />
+      <GoogleMap />
+    </div>
+  </section>
 </main>
