@@ -4,6 +4,8 @@ import offices from '../../data/js/offices.js';
 // Importing the GoTopBtn component for the "Back to Top" button
 import GoTopBtn from '../other/GoTopBtn.astro';
 
+import Social from './SocialMedia.astro';
+
 // Importing heroicons
 // import { MapPinIcon, PhoneIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
 
@@ -11,17 +13,7 @@ import GoTopBtn from '../other/GoTopBtn.astro';
 // import { MapPin, PhoneIcon, Mail } from 'lucide-react';
 
 // Importing React Icons
-import {
-  FaTwitter,
-  FaLinkedin,
-  FaFacebook,
-  FaSquareInstagram,
-  FaInstagram,
-  FaLocationDot,
-  FaPhone,
-  FaEnvelope,
-  FaWhatsapp,
-} from 'react-icons/fa6';
+import { FaLocationDot, FaPhone, FaEnvelope } from 'react-icons/fa6';
 
 // Importing the SetMarginTop component for setting margin top
 import SetMarginTop from '../extras/setMarginTop.astro';
@@ -71,25 +63,7 @@ import SetMarginTop from '../extras/setMarginTop.astro';
     </div>
 
     {/* Social media links */}
-    <div class="w-full pt-4 text-center">
-      <div class="flex justify-center gap-6">
-        <a class="text-3xl" href="https://linkedin.com/company/indivirtus" target="_blank" aria-label="LinkedIn">
-          <FaLinkedin />
-        </a>
-        <a class="text-3xl" href="https://twitter.com/indivirtus" target="_blank" aria-label="Twitter">
-          <FaTwitter />
-        </a>
-        <a class="text-3xl" href="https://facebook.com/indivirtus" target="_blank" aria-label="Facebook">
-          <FaFacebook />
-        </a>
-        <a class="text-3xl" href="https://instagram.com/indivirtus" target="_blank" aria-label="Facebook">
-          <FaInstagram />
-        </a>
-        <a class="text-3xl" href="https://whatsapp.com/indivirtus" target="_blank" aria-label="Facebook">
-          <FaWhatsapp />
-        </a>
-      </div>
-    </div>
+    <Social />
 
     <div class="footerCopyright text-center">
       &copy; {new Date().getFullYear()} Indivirtus Healthcare Services Pvt. Ltd. All rights reserved.
