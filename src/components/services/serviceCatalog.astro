@@ -1,29 +1,31 @@
 ---
 // Props: services (array of service objects)
-const { services } = Astro.props
+const { services } = Astro.props;
 ---
 
-<section class="maxwidth mx-auto px-4 py-10">
-  <h2>Browse Our <span class="halfHeading"> Comprehensive Service Offerings</span></h2>
+<section class="section">
+  <div class="maxwidth mx-auto px-4">
+    <h2>Browse Our <span class="halfHeading"> Comprehensive Service Offerings</span></h2>
 
-  <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-    {
-      services.map((service) => (
-        <div class="serviceDiv">
-          <div>
-            <div class="serviceIcon">{service.icon}</div>
-            <h3 class="serviceHeading">{service.title}</h3>
-            <p class="servicePara">{service.detailedDescription}</p>
+    <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {
+        services.map((service) => (
+          <div class="serviceDiv">
+            <div>
+              <div class="serviceIcon">{service.icon}</div>
+              <h3 class="serviceHeading">{service.title}</h3>
+              <p class="servicePara">{service.detailedDescription}</p>
+            </div>
+            <div class="mt-4">
+              <span class="tags">{service.reportType}</span>
+            </div>
+            <a class="button mt-4" href="#">
+              View Details
+            </a>
           </div>
-          <div class="mt-4">
-            <span class="tags">{service.reportType}</span>
-          </div>
-          <a class="button mt-4" href="#">
-            View Details
-          </a>
-        </div>
-      ))
-    }
+        ))
+      }
+    </div>
   </div>
 </section>
 

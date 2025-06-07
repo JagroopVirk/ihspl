@@ -1,20 +1,20 @@
 ---
 // import Picture from 'astro/components/Picture.astro'
 // import heroImg from '../../assets/hero.png'
-import bgImage from '../../assets/bg.jpg';
+import bgImage from '../../assets/hero-bg-4.avif';
 import { heroDescription, heroReportsDetails } from '../../data/js/hero.js';
 import Stats from './Stats.astro';
 ---
 
 <section
   id="hero-section"
-  class="bg-blur-xs relative w-full bg-cover bg-center bg-no-repeat"
+  class="section relative bg-cover bg-center bg-no-repeat"
   style={`background-image: url(${bgImage.src});`}
 >
   <div class="maxwidth mx-auto flex flex-col-reverse px-8 py-8 lg:flex-row lg:py-20">
     <Stats heroReportsDetails={heroReportsDetails} />
-    <div class="mb-6 lg:max-w-2/3">
-      <h1>
+    <div class="mb-6 sm:text-justify lg:max-w-2/3">
+      <h1 class="text-justify md:text-left">
         {heroDescription.tag}<br /><span class="text-lg font-semibold">{heroDescription.description}</span>
       </h1>
     </div>

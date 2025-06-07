@@ -50,7 +50,7 @@ export default function GlobalFootprint() {
   const [openId, setOpenId] = useState(null);
 
   return (
-    <section className="overflow-hidden bg-[#f0fdfa] py-16">
+    <section className="section overflow-hidden bg-[#f0fdfa]">
       <div className="maxwidth mx-auto px-4 text-center">
         <h2 className="mb-4 text-3xl font-bold text-[#01a69e]">
           Our <span className="halfHeading">Global Footprint</span>

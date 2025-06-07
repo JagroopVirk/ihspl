@@ -1,49 +1,49 @@
-import React, { useState, useEffect, useImperativeHandle, forwardRef } from 'react'
-import { useSwipeable } from 'react-swipeable'
-import { testimonials } from '../../data/js/testimonials'
+import React, { useState, useEffect, useImperativeHandle, forwardRef } from 'react';
+import { useSwipeable } from 'react-swipeable';
+import { testimonials } from '../../data/js/testimonials';
 // TODO: colors and sized with variables
 
 const TestimonialCarousel = forwardRef((props, ref) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const visibleCount = 3
+  const visibleCount = 3;
 
   const next = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length)
-  }
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  };
 
   const prev = () => {
-    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length)
-  }
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + testimonials.length) % testimonials.length);
+  };
 
   useImperativeHandle(ref, () => ({
     next,
     prev,
-  }))
+  }));
 
   useEffect(() => {
-    const interval = setInterval(next, 5000)
-    return () => clearInterval(interval)
-  }, [])
+    const interval = setInterval(next, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   const swipeHandlers = useSwipeable({
     onSwipedLeft: next,
     onSwipedRight: prev,
     preventScrollOnSwipe: true,
     trackMouse: true,
-  })
+  });
 
   const getVisibleTestimonials = () => {
     return Array.from({ length: visibleCount }, (_, i) => {
-      const index = (currentIndex + i) % testimonials.length
-      return testimonials[index]
-    })
-  }
+      const index = (currentIndex + i) % testimonials.length;
+      return testimonials[index];
+    });
+  };
 
   return (
-    <div {...swipeHandlers} className="relative w-full overflow-hidden py-12">
-      <h2 style={{ color: 'var(--color-secondary' }} className="mb-10 text-center">
-        What our clients say!
+    <div {...swipeHandlers} className="section relative overflow-hidden">
+      <h2 className="mb-10 text-center">
+        What our <span className="halfHeading">clients say!</span>
       </h2>
       <div className="maxwidth relative">
         <div className="mx-[3%] grid grid-cols-1 gap-6 transition-all duration-500 ease-in-out select-none md:grid-cols-3">
@@ -75,7 +75,7 @@ const TestimonialCarousel = forwardRef((props, ref) => {
         </div>
       </div>
     </div>
-  )
-})
+  );
+});
 
-export default TestimonialCarousel
+export default TestimonialCarousel;

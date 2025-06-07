@@ -26,6 +26,10 @@ body {
   @apply px-6;
 }
 
+.section {
+  @apply py-10 md:py-15 w-full;
+}
+
 /* typography */
 h1,
 h2 {
