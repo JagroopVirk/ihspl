@@ -1,11 +1,12 @@
 ---
 // Props: features = [{ title, description, icon }]
 const { features = [] } = Astro.props;
+const { setStyle } = Astro.props;
 ---
 
-<section class="section px-6">
+<section class="section px-6" style={`background: ${setStyle}`}>
   <div class="maxwidth mx-auto text-center">
-    <h2 class="mb-10 text-3xl font-bold">Why Choose Us</h2>
+    <h2 class="mb-10 text-3xl font-bold">Why Choose <span class="halfHeading">Us?</span></h2>
     <div class="grid grid-cols-1 gap-8 text-left md:grid-cols-2 lg:grid-cols-3">
       {
         features.map((item, idx) => (

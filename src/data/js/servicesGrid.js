@@ -25,4 +25,4 @@ export const services = [
     highlight: true,
     link: '/services/calibration',
   },
-]
+];

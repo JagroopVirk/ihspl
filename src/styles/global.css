@@ -89,13 +89,6 @@ p,
   @apply font-semibold text-base;
 }
 
-/* main home */
-
-/* #main-content {
-  & section:nth-child(odd) {
-    background: var(--color-primary-light);
-  }
-} */
 /* footer */
 .addDetails {
   @apply text-sm;

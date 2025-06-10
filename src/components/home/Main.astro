@@ -12,17 +12,19 @@ import GoogleMap from '../contact/GoogleMap.astro';
 //importing data
 import whyUs from '../../data/js/whyUs.js';
 import AboutShort from '../aboutus/AboutShort.astro';
+
+const colorPrimaryLight = 'var(--color-primary-light)';
 ---
 
 <main id="main-content">
   <Hero />
-  <Companies />
+  <Companies setStyle="var(--color-secondary-light)" />
   <AboutShort />
-  <SerivcesGrid />
+  <SerivcesGrid setStyle={colorPrimaryLight} />
   <WhyUs features={whyUs} />
-  <Testimonials client:load />
-  <GlobalFootprint client:load />
-  <Certifications />
+  <Testimonials client:load setStyle={colorPrimaryLight} />
+  <GlobalFootprint client:load setStyle="" />
+  <Certifications setStyle={colorPrimaryLight} />
   <section class="section">
     <div class="maxwidth flex flex-col gap-8 p-10 md:flex-row-reverse">
       <ContactForm />

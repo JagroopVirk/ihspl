@@ -1,10 +1,11 @@
 ---
+const { setStyle } = Astro.props;
 import { certifications } from '../../data/js/certifications';
 
 import Picture from 'astro/components/Picture.astro';
 ---
 
-<section class="section w-full">
+<section class="section w-full" style={`background: ${setStyle}`}>
   <div class="maxwidth mx-auto max-w-6xl text-center">
     <h2 class="mb-10 text-3xl font-bold">Certifications <span class="halfHeading">& Accreditations</span></h2>
     <div class="flex flex-wrap justify-center gap-6">

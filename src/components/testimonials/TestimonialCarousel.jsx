@@ -3,7 +3,7 @@ import { useSwipeable } from 'react-swipeable';
 import { testimonials } from '../../data/js/testimonials';
 // TODO: colors and sized with variables
 
-const TestimonialCarousel = forwardRef((props, ref) => {
+const TestimonialCarousel = forwardRef(({ setStyle }, ref) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const visibleCount = 3;
@@ -41,7 +41,7 @@ const TestimonialCarousel = forwardRef((props, ref) => {
   };
 
   return (
-    <section {...swipeHandlers} className="section relative overflow-hidden">
+    <section {...swipeHandlers} className="section relative overflow-hidden" style={{ background: setStyle }}>
       <h2 className="mb-10 text-center">
         What our <span className="halfHeading">clients say!</span>
       </h2>

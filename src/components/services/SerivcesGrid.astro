@@ -1,8 +1,10 @@
 ---
-import { services } from '../../data/js/homeServices.js';
+const { setStyle } = Astro.props;
+
+import { services } from '../../data/js/servicesGrid.js';
 ---
 
-<section class="section">
+<section class="section" style={`background: ${setStyle}`}>
   <div class="maxwidth flex flex-col items-center justify-center gap-10">
     <h2>Comprehensive <span class="halfHeading">Service Offerings</span></h2>
     <div class="flex flex-wrap justify-center gap-20 p-6">

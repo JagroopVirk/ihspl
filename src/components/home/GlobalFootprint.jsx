@@ -46,11 +46,11 @@ const locations = rawLocations.map((loc, index) => ({
   id: index,
 }));
 
-export default function GlobalFootprint() {
+export default function GlobalFootprint({ setStyle }) {
   const [openId, setOpenId] = useState(null);
 
   return (
-    <section className="section overflow-hidden">
+    <section className="section overflow-hidden" style={{ background: setStyle }}>
       <div className="maxwidth mx-auto px-4 text-center">
         <h2 className="mb-4 text-3xl font-bold text-[#01a69e]">
           Our <span className="halfHeading">Global Footprint</span>

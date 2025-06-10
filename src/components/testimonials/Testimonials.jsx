@@ -1,7 +1,7 @@
 import TestimonialCarousel from './TestimonialCarousel.jsx';
 import React, { useRef, useEffect } from 'react';
 
-const TestimonialSection = () => {
+const TestimonialSection = ({ setStyle }) => {
   const carouselRef = useRef();
 
   useEffect(() => {
@@ -14,7 +14,7 @@ const TestimonialSection = () => {
     }
   }, []);
 
-  return <TestimonialCarousel ref={carouselRef} />;
+  return <TestimonialCarousel ref={carouselRef} setStyle={setStyle} />;
 };
 
 export default TestimonialSection;
