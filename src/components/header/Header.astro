@@ -2,8 +2,10 @@
 // Import astro Picture component for responsive images
 import Picture from 'astro/components/Picture.astro';
 
-import Navigation from './Navigation.astro';
 import logo from '../../assets/logo.svg';
+
+import Navigation from './Navigation.astro';
+
 import { navItems } from '../../data/js/navItems.js';
 
 // import top scrolling text
@@ -24,7 +26,7 @@ import topScroll from '../../data/js/topScroll';
     </section>
     <section class="container mx-auto flex items-center justify-between px-4">
       <div class="flex grow items-end">
-        <a href="/">
+        <a href="/" class="py-1.5">
           <Picture src={logo} alt="Indivirtus Logo" height={'65'} />
         </a>
       </div>

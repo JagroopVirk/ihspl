@@ -1,4 +1,6 @@
 @import './variables.css';
+@import './buttons.css';
+@import './typography.css';
 
 html,
 body {
@@ -30,102 +32,7 @@ body {
   @apply py-10 md:py-15 w-full;
 }
 
-/* typography */
-h1,
-h2 {
-  color: var(--color-primary);
-}
-
-h3,
-h4,
-h5,
-h6 {
-  color: var(--color-black);
-}
-
-h1,
-.h1 {
-  @apply text-2xl md:text-3xl font-bold;
-}
-
-h2,
-.h2 {
-  @apply text-2xl md:text-3xl font-semibold;
-}
-
-h3,
-.h3 {
-  @apply text-xl font-semibold;
-  color: var(--color-black);
-}
-
-p,
-.p {
-  @apply text-base leading-7;
-  color: var(--color-gray);
-}
-
-.halfHeading {
-  color: var(--color-secondary);
-}
-
-/* navigation typography */
-
-.subMenuItem,
-.menuItem {
-  @media screen and (max-width: 1024px) {
-    font-size: 0.875rem;
-  }
-
-  @media screen and (min-width: 1024px) {
-    @apply tracking-wide;
-    font-size: clamp(0.875rem, 0.8vw, 1.4rem);
-  }
-}
-
-/* marquee typo */
-
-.marqueeDiv {
-  @apply font-semibold text-base;
-}
-
 /* footer */
 .addDetails {
   @apply text-sm;
-}
-
-/* button */
-.button {
-  @apply px-4 py-2 rounded-lg transition duration-200 cursor-pointer relative text-center text-lg font-medium;
-  border: 2px solid var(--color-primary);
-  background-color: var(--color-primary);
-  color: var(--color-white);
-
-  /* &:after {
-    display: block;
-    position: absolute;
-    top: -2px;
-    left: 0;
-    transform: translate(0px, 0px);
-    opacity: 0.3;
-    z-index: -1;
-    transition: transform 0.2s ease-out;
-    border-radius: 8px;
-    background-color: var(--color-button-bg);
-    width: 100%;
-    height: 100%;
-    content: '';
-  }
-
-  &:hover {
-    &::after {
-      transform: translate(8px, 8px);
-    }
-  } */
-
-  &:hover {
-    @apply shadow-lg;
-    background-color: var(--color-white);
-    color: var(--color-primary);
-  }
 }
