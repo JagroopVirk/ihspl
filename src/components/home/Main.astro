@@ -9,19 +9,21 @@ import GlobalFootprint from './GlobalFootprint.jsx';
 import ContactForm from '../contact/ContactForm.astro';
 import GoogleMap from '../contact/GoogleMap.astro';
 
-//importing whyus data
+//importing data
 import whyUs from '../../data/js/whyUs.js';
+import AboutShort from '../aboutus/AboutShort.astro';
 ---
 
-<main id="main-content maxwidth">
+<main id="main-content">
   <Hero />
   <Companies />
+  <AboutShort />
   <SerivcesGrid />
   <WhyUs features={whyUs} />
   <Testimonials client:load />
   <GlobalFootprint client:load />
   <Certifications />
-  <section class="bg-primary-light section">
+  <section class="section">
     <div class="maxwidth flex flex-col gap-8 p-10 md:flex-row-reverse">
       <ContactForm />
       <GoogleMap />

@@ -41,7 +41,7 @@ const TestimonialCarousel = forwardRef((props, ref) => {
   };
 
   return (
-    <div {...swipeHandlers} className="section relative overflow-hidden">
+    <section {...swipeHandlers} className="section relative overflow-hidden">
       <h2 className="mb-10 text-center">
         What our <span className="halfHeading">clients say!</span>
       </h2>
@@ -74,7 +74,7 @@ const TestimonialCarousel = forwardRef((props, ref) => {
           </button>
         </div>
       </div>
-    </div>
+    </section>
   );
 });
 
