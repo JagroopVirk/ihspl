@@ -2,22 +2,22 @@ import { FaTwitter, FaLinkedin, FaFacebook, FaInstagram, FaWhatsapp } from 'reac
 
 export default [
   {
-    link: 'https://linkedin.com/company/indivirtus',
+    link: 'https://www.linkedin.com/company/indivirtus-group-of-companies',
     label: 'LinkedIn',
     icon: FaLinkedin,
   },
   {
-    link: 'https://twitter.com/indivirtus',
+    link: 'https://x.com/indivirtus',
     label: 'Twitter',
     icon: FaTwitter,
   },
   {
-    link: 'https://facebook.com/indivirtus',
+    link: 'https://www.facebook.com/Indivirtus',
     label: 'Facebook',
     icon: FaFacebook,
   },
   {
-    link: 'https://instagram.com/indivirtus',
+    link: 'https://www.instagram.com/indivirtus_healthcare/',
     label: 'Instagram',
     icon: FaInstagram,
   },
