@@ -10,12 +10,12 @@ export const services = [
   {
     title: 'ADE/PDE OEL/OEB',
     color: 'from-orange-200 to-orange-400',
-    link: '/services/risk-assessment',
+    link: '/services/ade-pde-oel',
   },
   {
     title: 'RISK ASSESSMENT OF IMPURITIES',
     color: 'from-green-100 to-green-300',
-    link: '/services/technology-transfer',
+    link: '/services/risk-assessment',
   },
   { title: 'REGULATORY AFFAIRS', color: 'from-indigo-200 to-indigo-400', link: '/services/regulatory-affairs' },
   {

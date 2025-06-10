@@ -14,14 +14,13 @@ export const navItems = [
     href: '/services',
     submenu: [
       { name: 'Pharmacovigilance', href: '/services/pharmacovigilance' },
-      { name: 'Toxicological Risk Assessment', href: '/services/toxicological-risk-assessment' },
-      { name: 'Regulatory Services', href: '/services/regulatoryservices' },
-      { name: 'Validation', href: '/services/validation' },
-      { name: 'GMP Approvals', href: '/services/gmp-approvals' },
-      { name: 'Technology Transfer', href: '/services/technology-transfer' },
-      { name: 'Greenfield/Brownfield Projects', href: '/services/greenfield-brownfield-projects' },
-      { name: 'Calibration Lab', href: '/services/calibration-lab' },
-      { name: 'Trainings', href: '/services/trainings' },
+      { name: 'Greenfield/ Brownfield Projects', href: '/services/greenfield-brownfield' },
+      { name: 'Validation (CSV/ Equipment/ HVAC)', href: '/services/validation' },
+      { name: 'Risk Assessment of Impurities', href: '/services/risk-assessment' },
+      { name: 'ADE/PDE OEL/OEB', href: '/services/ade-pde-oel' },
+      { name: 'Regulatory Affairs', href: '/services/regulatory-affairs' },
+      { name: 'GMP, Schedule M Compliance & Training', href: '/services/gmp-training' },
+      { name: 'Calibration Services (NABL Accredited Lab)', href: '/services/calibration' },
     ],
   },
   { name: 'Resources', href: '/resources' },
@@ -53,4 +52,4 @@ export const navItems = [
   },
 
   { name: 'Contact us', href: '/contact-us' },
-]
+];

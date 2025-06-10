@@ -1,13 +1,13 @@
 ---
 // Import astro Picture component for responsive images
-import Picture from 'astro/components/Picture.astro'
+import Picture from 'astro/components/Picture.astro';
 
-import Navigation from './Navigation.astro'
-import logo from '../../assets/logo.svg'
-import { navItems } from '../../data/js/navItems.js'
+import Navigation from './Navigation.astro';
+import logo from '../../assets/logo.svg';
+import { navItems } from '../../data/js/navItems.js';
 
 // import top scrolling text
-import topScroll from '../../data/js/topScroll'
+import topScroll from '../../data/js/topScroll';
 ---
 
 <header id="site-header" class="relative z-100 w-full">
@@ -25,7 +25,7 @@ import topScroll from '../../data/js/topScroll'
     <section class="container mx-auto flex items-center justify-between px-4">
       <div class="flex grow items-end">
         <a href="/">
-          <Picture src={logo} alt="Indivirtus Logo" height={'50'} />
+          <Picture src={logo} alt="Indivirtus Logo" height={'65'} />
         </a>
       </div>
       <div>
