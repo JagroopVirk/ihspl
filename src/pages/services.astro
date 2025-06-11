@@ -1,14 +1,14 @@
 ---
-import Layout from '../layouts/Layout.astro'
-import Header from '../components/header/Header.astro'
-import Footer from '../components/footer/Footer.astro'
-import ServiceCatalog from '../components/services/serviceCatalog.astro'
-import '../styles/global.css'
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/header/Header.astro';
+import Footer from '../components/footer/Footer.astro';
+import ServiceCatalog from '../components/services/serviceCatalog.astro';
+import '../styles/global.css';
 
 // Importing the default SEO and location schema
-import { servicesPageSeo } from '../data/js/seo/siteSeo.js'
-import { allServicesSchema } from '../data/js/seo/servicesSchemaSEO.js'
-import { services } from '../data/js/services.js'
+import { servicesPageSeo } from '../data/js/seo/siteSeo.js';
+import { allServicesSchema } from '../data/js/seo/servicesSchemaSEO.js';
+import { services } from '../data/js/services.js';
 ---
 
 <Layout seo={{ ...servicesPageSeo, canonical: servicesPageSeo.url, servicesSchema: allServicesSchema }}>
