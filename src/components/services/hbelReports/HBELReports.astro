@@ -5,7 +5,8 @@
 <section class="section">
   <div class="maxwidth">
     <h1 class="mb-6 text-center text-4xl font-bold text-blue-900">
-      Toxicological Risk Assessment: A Scientific Foundation for Human Health Protection
+      Toxicological Risk Assessment: <span class="halfHeading">A Scientific Foundation for Human Health Protection</span
+      >
     </h1>
     <p class="mb-6 text-lg leading-relaxed">
       In the context of pharmaceutical, biopharmaceutical, and medical device industries, Toxicological Risk Assessment
@@ -27,10 +28,8 @@
       evaluation, occupational safety, and medical device assessments.
     </p>
     <!-- Section 1 -->
-    <details class="mb-6 rounded-lg border border-gray-200 bg-gray-50 p-4" open>
-      <summary class="mb-2 cursor-pointer text-xl font-semibold text-blue-800"
-        >I. Toxicological Risk Assessment of Medical Devices</summary
-      >
+    <details open>
+      <summary>I. Toxicological Risk Assessment of Medical Devices</summary>
       <div class="mt-4 space-y-3">
         <p>
           Medical devices, particularly those classified under Class II and III, are composed of complex polymeric and
@@ -50,10 +49,8 @@
       </div>
     </details>
     <!-- Section 2 -->
-    <details class="mb-6 rounded-lg border border-gray-200 bg-gray-50 p-4">
-      <summary class="mb-2 cursor-pointer text-xl font-semibold text-blue-800"
-        >II. Health-Based Exposure Limits (HBELs): PDE, ADE, and OEL Calculations</summary
-      >
+    <details>
+      <summary>II. Health-Based Exposure Limits (HBELs): PDE, ADE, and OEL Calculations</summary>
       <div class="mt-4 space-y-3">
         <p>The establishment of HBELs is central to cross-contamination control in pharmaceutical manufacturing.</p>
         <ul class="list-inside list-disc space-y-2">
@@ -69,10 +66,8 @@
       </div>
     </details>
     <!-- Section 3 -->
-    <details class="mb-6 rounded-lg border border-gray-200 bg-gray-50 p-4">
-      <summary class="mb-2 cursor-pointer text-xl font-semibold text-blue-800"
-        >III. Genotoxic Impurity (GTI) Risk Assessment: ICH M7 Approach</summary
-      >
+    <details>
+      <summary>III. Genotoxic Impurity (GTI) Risk Assessment: ICH M7 Approach</summary>
       <div class="mt-4 space-y-3">
         <p>The control of GTIs is governed by the ICH M7 guideline.</p>
         <ul class="list-inside list-disc space-y-2">
@@ -84,10 +79,8 @@
       </div>
     </details>
     <!-- Section 4 -->
-    <details class="mb-6 rounded-lg border border-gray-200 bg-gray-50 p-4">
-      <summary class="mb-2 cursor-pointer text-xl font-semibold text-blue-800"
-        >IV. Cleaning Validation Training and Implementation</summary
-      >
+    <details>
+      <summary>IV. Cleaning Validation Training and Implementation</summary>
       <div class="mt-4 space-y-3">
         <p>Cleaning validation ensures that residues do not contaminate subsequent products.</p>
         <ul class="list-inside list-disc space-y-2">
@@ -99,10 +92,8 @@
       </div>
     </details>
     <!-- Section 5 -->
-    <details class="mb-6 rounded-lg border border-gray-200 bg-gray-50 p-4">
-      <summary class="mb-2 cursor-pointer text-xl font-semibold text-blue-800"
-        >V. Safety Assessment of Finished Formulations</summary
-      >
+    <details>
+      <summary>V. Safety Assessment of Finished Formulations</summary>
       <div class="mt-4 space-y-3">
         <p>TRA is applied to assessment of finished pharmaceutical products:</p>
         <ul class="list-inside list-disc space-y-2">
@@ -117,10 +108,8 @@
       </div>
     </details>
     <!-- Section 6 -->
-    <details class="mb-6 rounded-lg border border-gray-200 bg-gray-50 p-4">
-      <summary class="mb-2 cursor-pointer text-xl font-semibold text-blue-800"
-        >VI. Preparation of Safety Data Sheets (MSDS/SDS)</summary
-      >
+    <details>
+      <summary>VI. Preparation of Safety Data Sheets (MSDS/SDS)</summary>
       <div class="mt-4 space-y-3">
         <p>SDS are critical for hazard communication and chemical safety:</p>
         <ul class="list-inside list-disc space-y-2">
@@ -145,3 +134,14 @@
     </div>
   </div>
 </section>
+
+<style>
+  @reference "tailwindcss";
+  details {
+    @apply mb-6 rounded-lg border border-gray-200 bg-gray-50 p-4;
+  }
+  summary {
+    @apply mb-2 cursor-pointer text-xl font-semibold;
+    color: var(--color-primary);
+  }
+</style>

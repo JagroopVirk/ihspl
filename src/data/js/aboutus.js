@@ -4,7 +4,7 @@ export const services = [
   {
     title: 'Toxicological Risk Assessment',
     description: 'Impurities, ADE/PDE/OEL/OEB reports for global regulatory compliance.',
-    icon: 'BeakerIcon', // Heroicons
+    icon: 'BeakerIcon',
   },
   {
     title: 'Regulatory Affairs',
@@ -30,7 +30,7 @@ export const services = [
 
 export const shortDescription = {
   description:
-    '<strong>Indivirtus Healthcare Services Pvt. Ltd.</strong> is a trusted CRO providing expert solutions in <strong>toxicological risk assessment (impurities, ADE/PDE/OEL/OEB reports), regulatory affairs, NABL-accredited calibration services, pharmacovigilance,</strong> and <strong>greenfield/brownfield turnkey project consulting</strong>. We help pharmaceutical and healthcare organizations worldwide achieve <strong>regulatory compliance</strong>, ensure p<strong>atient safety</strong>, and accelerate product success.',
+    '<span class="text-primary text-3xl"><strong>Indivirtus Healthcare Services Pvt. Ltd.</strong></span><br /> <span class="text-base">is a trusted CRO providing expert solutions in <strong>Toxicological Risk Assessment (impurities, ADE/PDE/OEL/OEB reports), Regulatory Affairs, NABL-accredited Calibration Services, Pharmacovigilance,</strong> and <strong>Greenfield/Brownfield turnkey project consulting</strong>. We help pharmaceutical and healthcare organizations worldwide achieve <strong>regulatory compliance</strong>, ensure <strong>patient safety</strong>, and accelerate product success.</span>',
   image: aboutImg,
   alt: 'About Us Description',
 };
