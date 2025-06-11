@@ -12,14 +12,19 @@ const { services } = Astro.props;
         services.map((service) => (
           <div class="serviceDiv">
             <div>
-              <div class="serviceIcon">{service.icon}</div>
-              <h3 class="serviceHeading">{service.title}</h3>
-              <p class="servicePara">{service.detailedDescription}</p>
+              <div class="flex items-center gap-2">
+                <div class="serviceIcon">{service.icon}</div>
+                <h3 class="tags">{service.title}</h3>
+              </div>
+              <h4 class="serviceHeading my-4">{service.description}</h4>
+              <ul class="ml-4 list-outside list-disc">
+                {service.deliverables.map((listItem) => (
+                  <li class="py-1">{listItem}</li>
+                ))}
+              </ul>
             </div>
-            <div class="mt-4">
-              <span class="tags">{service.reportType}</span>
-            </div>
-            <a class="button mt-4" href="#">
+
+            <a class="button mt-4" href={service.pageLink}>
               View Details
             </a>
           </div>
@@ -27,6 +32,14 @@ const { services } = Astro.props;
       }
     </div>
   </div>
+
+  {
+    /* .tags {
+    @apply inline-block rounded px-2 py-1;
+    // background-color: var(--color-primary-light);
+    // color: var(--color-primary);
+  } */
+  }
 </section>
 
 <style>
@@ -42,20 +55,6 @@ const { services } = Astro.props;
   }
 
   .serviceIcon {
-    @apply text-4xl mb-2;
-  }
-
-  .serviceHeading {
-  }
-
-  .servicePara {
-    @apply mt-2;
-    color: var(--color-gray);
-  }
-
-  .tags {
-    @apply inline-block rounded px-2 py-1 text-xs font-medium;
-    background-color: var(--color-primary-light);
-    color: var(--color-primary);
+    @apply text-3xl;
   }
 </style>
