@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header/Header.astro';
-import Footer from '../components/footer/Footer.astro';
+
 import '../styles/global.css';
 
 import ResourceGrid from '../components/resourses/ResourceGrid.astro';
@@ -14,9 +13,7 @@ import { allServicesSchema } from '../data/js/seo/servicesSchemaSEO.js';
 ---
 
 <Layout seo={{ servicesSchema: allServicesSchema }}>
-  <Header />
   <ResourceGrid />
-  <Footer />
 </Layout>
 
 style

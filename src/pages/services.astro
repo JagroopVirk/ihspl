@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header/Header.astro';
-import Footer from '../components/footer/Footer.astro';
+
 import ServiceCatalog from '../components/services/serviceCatalog.astro';
 import '../styles/global.css';
 
@@ -12,9 +11,7 @@ import { services } from '../data/js/services2.js';
 ---
 
 <Layout seo={{ ...servicesPageSeo, canonical: servicesPageSeo.url, servicesSchema: allServicesSchema }}>
-  <Header />
   <main>
     <ServiceCatalog services={services} />
   </main>
-  <Footer />
 </Layout>

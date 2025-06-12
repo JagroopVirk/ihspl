@@ -1,7 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Header from '../components/header/Header.astro';
-import Footer from '../components/footer/Footer.astro';
+
 import ContactForm from '../components/contact/ContactForm.astro';
 import GoogleMap from '../components/contact/GoogleMap.astro';
 import '../styles/global.css';
@@ -14,12 +13,10 @@ import { allServicesSchema } from '../data/js/seo/servicesSchemaSEO.js';
 ---
 
 <Layout seo={{ servicesSchema: allServicesSchema }}>
-  <Header />
   <section class="section">
     <div class="maxwidth flex flex-col gap-8 p-10 md:flex-row-reverse">
       <ContactForm />
       <GoogleMap />
     </div>
   </section>
-  <Footer />
 </Layout>
