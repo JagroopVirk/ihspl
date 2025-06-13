@@ -1,4 +1,13 @@
 // Indivirtus – Services Catalog with SEO, GTM & schema.org Markup
+import pv_image from '../../assets/pharmacovigilance.png';
+import greenfield from '../../assets/greenfieldBrownfieldProjects.png';
+import validation from '../../assets/validation.png';
+import riskAssessment from '../../assets/riskAssessment.png';
+import adePdeOelOeb from '../../assets/ade_pde_oel_oeb_reports.png';
+import regulatoryAffairs from '../../assets/regulatoryAffairs.png';
+import gmpCompliance from '../../assets/gmpCompliance.png';
+import calibration from '../../assets/calibration.png';
+import gmpAudit from '../../assets/gmpAudit.png';
 
 export const services = [
   {
@@ -7,9 +16,9 @@ export const services = [
     title: 'Pharmacovigilance & Drug Safety Monitoring',
     name: 'Pharmacovigilance',
     description:
-      'Integrated pharmacovigilance solutions to monitor, manage, and report drug safety throughout its lifecycle.',
+      'Solutions for integrated pharmacovigilance that track, oversee, and document medication safety across the course of its lifespan.',
     full_description:
-      'At Indivirtus, we offer full‑spectrum pharmacovigilance support—case processing, signal detection, literature surveillance, aggregate reporting—to safeguard patients and help you meet global compliance standards like ICH, EMA, US FDA, CDSCO.',
+      'To protect patients and assist you in meeting international compliance standards such as ICH, EMA, US FDA, and CDSCO, <strong>Indivirtus</strong> provides full-spectrum pharmacovigilance support, including case processing, signal identification, literature surveillance, and aggregate reporting.',
     keywords: [
       'pharmacovigilance services',
       'drug safety monitoring solutions',
@@ -38,6 +47,7 @@ export const services = [
     is_active: true,
     pageLink: '/services/pharmacovigilance',
     icon: '🛡️',
+    image: { path: pv_image, alt: 'Pharmacovigilance' },
     gtm: {
       eventCategory: 'Service',
       eventAction: 'Click',
@@ -56,9 +66,9 @@ export const services = [
     title: 'Greenfield & Brownfield Pharma Facility Projects',
     name: 'Turnkey Project Services',
     description:
-      'All‑inclusive project delivery—from concept and design to GMP validation—for new or upgraded pharma facilities.',
+      'Complete project management for fresh or renovated pharmaceutical facilities, from design and concept development to GMP validation.',
     full_description:
-      'Indivirtus handles your full project lifecycle—feasibility, design, approvals, procurement, construction, commissioning, and validation—for Greenfield builds or Brownfield upgrades. Our team ensures GMP compliance, on‑time delivery, and regulatory readiness at every stage.',
+      'For Greenfield construction or Brownfield renovations, Indivirtus manages the entire project lifecycle, including feasibility, design, approvals, procurement, construction, commissioning, and validation. At every stage, our team ensures regulatory readiness, on-time delivery, and GMP compliance.',
     keywords: [
       'greenfield pharma projects',
       'brownfield facility upgrades',
@@ -87,6 +97,7 @@ export const services = [
     is_active: true,
     pageLink: '/services/greenfield-brownfield',
     icon: '🏗️',
+    image: { path: greenfield, alt: 'Greenfield/Brownfield Turnkey projects' },
     gtm: {
       eventCategory: 'Service',
       eventAction: 'Click',
@@ -105,9 +116,9 @@ export const services = [
     title: 'CSV, Equipment & HVAC Validation Services',
     name: 'Validation (CSV/Equipment/HVAC)',
     description:
-      'Ensure compliant operations with full-cycle Computer System, Equipment, and HVAC qualification and validation.',
+      'Use equipment, HVAC qualification and validation, and full-cycle computer system validation to guarantee compliant operations.',
     full_description:
-      'Indivirtus delivers comprehensive validation—from CSV (13, 21 CFR Part 11/GAMP 5) to equipment IQ/OQ/PQ and HVAC system validation—helping you achieve data integrity, operational consistency, and regulatory compliance with FDA, EMA, MHRA, WHO standards.',
+      'From CSV (13, 21 CFR Part 11/GAMP 5) to equipment IQ/OQ/PQ and HVAC system validation, Indivirtus provides thorough validation to assist you achieve operational consistency, data integrity, and regulatory compliance with FDA, EMA, MHRA, and WHO standards.',
     keywords: [
       'computer system validation services',
       'CSV pharma',
@@ -135,6 +146,7 @@ export const services = [
     is_active: true,
     pageLink: '/services/validation',
     icon: '✅',
+    image: { path: validation, alt: 'computer system validation' },
     gtm: {
       eventCategory: 'Service',
       eventAction: 'Click',
@@ -153,9 +165,9 @@ export const services = [
     title: 'Genotoxic & Non‑Genotoxic Impurity Risk Assessment',
     name: 'Impurity Risk Assessment',
     description:
-      'Assess safety risk for chemical impurities—genotoxic or otherwise—aligned with ICH M7/Q3A‑B and global standards.',
+      'Evaluate the safety risk of chemical impurities, whether genotoxic or non-genotoxic, in compliance with ICH M7/Q3A-B and international standards.',
     full_description:
-      'We evaluate known, unknown, and carry‑over impurities using toxicological data and SAR approaches. Our ICH‑aligned risk assessments (M7, Q3A/B) help you justify exposure limits, smooth regulatory reviews, and minimize development delays.',
+      'We use SAR techniques and toxicological data to assess known, unknown, and carry-over substances. You may minimize development delays, streamline regulatory approvals, and support exposure limits with our ICH-aligned risk assessments (M7, Q3A/B).',
     keywords: [
       'impurity risk assessment service',
       'ICH M7 impurity assessment',
@@ -182,6 +194,10 @@ export const services = [
     is_active: true,
     pageLink: '/services/risk-assessment',
     icon: '🧪',
+    image: {
+      path: riskAssessment,
+      alt: 'Risk Assessment of Impurities',
+    },
     gtm: {
       eventCategory: 'Service',
       eventAction: 'Click',
@@ -199,9 +215,9 @@ export const services = [
     report_type: 'ADE/PDE/OEL/OEB Reports',
     title: 'Exposure Limit Reports: ADE, PDE, OEL & OEB',
     name: 'ADE / PDE / OEL / OEB Reports',
-    description: 'Expert toxicology reports to set safe exposure limits for APIs and workplace environments.',
+    description: 'To establish safe exposure limits for APIs and work settings, expert toxicology reports are used.',
     full_description:
-      'We develop ADE, PDE, OEL, and OEB assessments using scientific literature and toxicological data, guided by ICH Q3D, EMA, ISPE. These reports are essential for cleaning validation, facility design, GMP compliance, and worker safety.',
+      'ADE, PDE, OEL, and OEB assessments, using toxicological data and/or scientific literature, that comply to ICH Q3D, EMA, and ISPE format. Cleaning validation, facility design, GMP compliance, and worker safety all depend on these reports. Our Reports are duly certified by experienced ERT/DABT Toxicologists.',
     keywords: [
       'ADE report service',
       'PDE toxicology report',
@@ -228,6 +244,7 @@ export const services = [
     is_active: true,
     pageLink: '/services/ade-pde-oel',
     icon: '📊',
+    image: { path: adePdeOelOeb, alt: 'ADE, PDE, OEL, OEB Reports' },
     gtm: {
       eventCategory: 'Service',
       eventAction: 'Click',
@@ -246,9 +263,9 @@ export const services = [
     title: 'Strategic Regulatory Affairs & Submission Support',
     name: 'Regulatory Affairs',
     description:
-      'Full spectrum regulatory support for product dossiers, approvals, labeling, variations, and renewals across global markets.',
+      'Comprehensive regulatory support for product approvals, labeling, variants, renewals, and dossiers for international markets.',
     full_description:
-      'Our regulatory experts support global market entry—from dossier compilation (eCTD/ACTD) and submission strategy to responses, labeling, renewals, and intelligence. With strong knowledge of FDA, EMA, CDSCO and WHO requirements, we keep your project compliant and on track.',
+      'From dossier compilation (eCTD/ACTD) and submission strategy to answers, labeling, renewals, and intelligence, our regulatory specialists assist with international market access. We maintain your project compliant and on schedule thanks to our solid understanding of FDA, EMA, CDSCO, and WHO requirements.',
     keywords: [
       'regulatory affairs services',
       'drug approval support',
@@ -276,6 +293,7 @@ export const services = [
     is_active: true,
     pageLink: '/services/regulatory-affairs',
     icon: '📁',
+    image: { path: regulatoryAffairs, alt: 'Regulatory Affairs' },
     gtm: {
       eventCategory: 'Service',
       eventAction: 'Click',
@@ -294,9 +312,9 @@ export const services = [
     title: 'GMP & Schedule M Audits, Compliance & Training',
     name: 'GMP, Schedule M, Trainings',
     description:
-      'Tailored GMP and Schedule M compliance audits, SOP development, implementation support, and workforce training.',
+      'Workforce training, SOP creation, implementation assistance, and customized GMP and Schedule M compliance audits.',
     full_description:
-      'We help pharma and biotech teams achieve inspection‑ready GMP (including Schedule M) status through audits, gap analysis, SOP crafting, and hands‑on training sessions. Boost quality culture, close compliance gaps, and improve operational discipline.',
+      'We assist biotech and pharmaceutical teams in achieving inspection-ready GMP (including Schedule M) status through practical training sessions, gap analysis, audits, and SOP creation. Strengthen operational discipline, reduce compliance gaps, and enhance quality culture.',
     keywords: [
       'GMP compliance audit',
       'Schedule M training',
@@ -324,6 +342,7 @@ export const services = [
     is_active: true,
     pageLink: '/services/gmp-training',
     icon: '📚',
+    image: { path: gmpCompliance, alt: 'GMP Compliance & trainings' },
     gtm: {
       eventCategory: 'Service',
       eventAction: 'Click',
@@ -342,9 +361,9 @@ export const services = [
     title: 'NABL‑Accredited Instrument Calibration Services',
     name: 'Calibration Services – Multi‑Parameter',
     description:
-      'Accurate, traceable calibration (thermal, electrical, mechanical, pressure, mass, volume) backed by NABL ISO/IEC 17025.',
+      'NABL-accredited lab which provides precise, traceable calibration (thermal, electrical, mechanical, pressure, mass, and volume).',
     full_description:
-      'Our NABL‑accredited lab delivers thermal, electrotechnical, mechanical, pressure/vacuum, mass & volume calibrations to international standards. Each instrument receives full traceability and a comprehensive calibration certificate—ideal for audits, quality systems and regulatory compliance.',
+      'In compliance with international standards, our NABL-accredited lab provides mechanical, thermal, electrotechnical, pressure/vacuum, mass, and volume calibrations. Every instrument is given a thorough calibration certificate and complete traceability, making it perfect for regulatory compliance, quality systems, and audits.',
     keywords: [
       'NABL calibration services',
       'ISO 17025 calibration',
@@ -372,6 +391,7 @@ export const services = [
     is_active: true,
     pageLink: '/services/calibration',
     icon: '🧪',
+    image: { path: calibration, alt: 'NABL-Accredited Calibration Lab' },
     gtm: {
       eventCategory: 'Service',
       eventAction: 'Click',
@@ -390,9 +410,9 @@ export const services = [
     title: 'Vendor GMP Audits & Regulatory Approval Dossiers',
     name: 'Vendor Assessment Audits for Plant & Product Approvals',
     description:
-      'We conduct vendor GMP assessments and prepare approval dossiers for plant and product registrations with CDSCO, WHO, US FDA, MHRA and peers.',
+      'We create approval dossiers for plant and product registrations with CDSCO, WHO, US FDA, MHRA, and peers in addition to doing vendor GMP evaluations.',
     full_description:
-      'Indivirtus supports GMP approval journeys—from vendor audits and GAP analysis to creating GMP audit reports, CAPA plans, and regulatory dossiers. We guide you through inspections and approval processes for plants and products under CDSCO, WHO, FDA, MHRA, EU and more.',
+      'From vendor audits and GAP analysis to the development of GMP audit reports, CAPA strategies, and regulatory dossiers, Indivirtus facilitates the GMP approval process. We help you with plant and product inspections and approvals under CDSCO, WHO, FDA, MHRA, EU, and more.',
     keywords: [
       'vendor GMP audit',
       'GMP approval dossier',
@@ -420,6 +440,7 @@ export const services = [
     is_active: true,
     pageLink: '/services/gmp-training',
     icon: '📋',
+    image: { path: gmpAudit, alt: 'GMP Audit & Approval Dossier' },
     gtm: {
       eventCategory: 'Service',
       eventAction: 'Click',

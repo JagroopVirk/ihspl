@@ -1,13 +1,13 @@
 ---
 import Hero from './Hero.astro';
 import Companies from '../companies/Companies.astro';
-import SerivcesGrid from '../services/SerivcesGrid.astro';
+import SerivcesSectionGrid from '../services/ServicesSectionGrid.astro';
 import Testimonials from '../testimonials/Testimonials.jsx';
 import Certifications from './Certifications.astro';
 import WhyUs from './WhyUs.astro';
 import GlobalFootprint from './GlobalFootprint.jsx';
 import ContactForm from '../contact/ContactForm.astro';
-import GoogleMap from '../contact/GoogleMap.astro';
+import QR from '../contact/QR.astro';
 
 //importing data
 import whyUs from '../../data/js/whyUs.js';
@@ -20,15 +20,15 @@ const colorPrimaryLight = 'var(--color-primary-light)';
   <Hero />
   <Companies setStyle="var(--color-secondary-light)" />
   <AboutShort />
-  <SerivcesGrid setStyle={colorPrimaryLight} />
+  <SerivcesSectionGrid setStyle={colorPrimaryLight} />
   <WhyUs features={whyUs} />
   <Testimonials client:load setStyle={colorPrimaryLight} />
   <GlobalFootprint client:load setStyle="" />
   <Certifications setStyle={colorPrimaryLight} />
   <section class="section">
-    <div class="maxwidth flex flex-col gap-8 p-10 md:flex-row-reverse">
+    <div class="maxwidth flex flex-col justify-between gap-8 p-10 md:flex-row">
       <ContactForm />
-      <GoogleMap />
+      <QR />
     </div>
   </section>
 </main>

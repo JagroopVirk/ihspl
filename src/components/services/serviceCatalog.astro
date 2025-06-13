@@ -16,7 +16,7 @@ const { services } = Astro.props;
                 <div class="serviceIcon">{service.icon}</div>
                 <h3 class="tags">{service.title}</h3>
               </div>
-              <h4 class="serviceHeading my-4">{service.description}</h4>
+              <h4 class="serviceHeading my-4" set:html={service.description} />
               <ul class="ml-4 list-outside list-disc">
                 {service.deliverables.map((listItem) => (
                   <li class="py-1">{listItem}</li>
