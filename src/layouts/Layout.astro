@@ -2,10 +2,10 @@
 import favIcon from '../assets/favicon.png';
 
 // Importing google fonts
-import GoogleFonts from '../components/extras/GoogleFonts.astro';
+import GoogleFonts from '@/components/extras/GoogleFonts.astro';
 
 // Importing google tag manager
-import GoogleTag from '../components/extras/GoogleTag.astro';
+import GoogleTag from '@/components/extras/GoogleTag.astro';
 
 // Importing the default SEO and location schema
 import Seo from '../components/seo/Seo.astro';
@@ -37,6 +37,7 @@ const {
     {/* Google Tag Manager */}
     <GoogleTag />
   </head>
-
+  <Header />
   <slot />
+  <Footer />
 </html>
