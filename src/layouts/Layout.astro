@@ -15,8 +15,6 @@ import { locationSchema } from '../data/js/seo/locationSchema.js';
 import Header from '../components/header/Header.astro';
 import Footer from '../components/footer/Footer.astro';
 
-import HeaderFooter from './HeaderFooter.astro';
-
 const {
   seo = defaultSeo, // page-specific SEO, or fall back to default
   location = locationSchema, // locationSchema can also be optional
@@ -39,6 +37,6 @@ const {
     {/* Google Tag Manager */}
     <GoogleTag />
   </head>
-  <HeaderFooter />
+
   <slot />
 </html>
