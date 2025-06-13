@@ -15,6 +15,8 @@ import { locationSchema } from '../data/js/seo/locationSchema.js';
 import Header from '../components/header/Header.astro';
 import Footer from '../components/footer/Footer.astro';
 
+import HeaderFooter from './HeaderFooter.astro';
+
 const {
   seo = defaultSeo, // page-specific SEO, or fall back to default
   location = locationSchema, // locationSchema can also be optional
@@ -29,7 +31,7 @@ const {
     <link rel="icon" type="image/png+xml" href={favIcon.src} />
 
     {/* Google Fonts */}
-    {/* <GoogleFonts /> */}
+    <GoogleFonts />
 
     {/* SEO component */}
     <Seo {...seo} locationSchema={location} />
@@ -37,7 +39,6 @@ const {
     {/* Google Tag Manager */}
     <GoogleTag />
   </head>
-  <Header />
+  <HeaderFooter />
   <slot />
-  <Footer />
 </html>
