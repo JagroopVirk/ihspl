@@ -1,0 +1,10 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+import '../../styles/global.css';
+
+// Importing SEO data for the About page
+import { aboutPageSeo } from '../../data/js/seo/siteSeo.js';
+---
+
+<Layout seo={{ ...aboutPageSeo, canonical: aboutPageSeo.url }} />

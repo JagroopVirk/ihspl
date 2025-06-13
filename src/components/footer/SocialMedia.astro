@@ -1,0 +1,15 @@
+---
+import social from '../../data/js/social';
+---
+
+<div class="w-full pt-4 text-center">
+  <div class="flex justify-center gap-6">
+    {
+      social.map((item, idx) => (
+        <a class="text-3xl" href={item.link} target="_blank" aria-label={item.label}>
+          <item.icon />
+        </a>
+      ))
+    }
+  </div>
+</div>
