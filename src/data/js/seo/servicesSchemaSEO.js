@@ -13,145 +13,205 @@ export const pdeReports = {
   is_active: true,
 };
 
-export const adeReports = {
-  service_id: 'svc-ade-001',
-  report_type: 'ADE',
-  name: 'ADE Report for Compound',
-  description: 'Establish Acceptable Daily Exposure values for cross-contamination control.',
-  price_model: 'Fixed',
-  estimated_duration: '3 business days',
-  deliverables: ['ADE Report (PDF)', 'Risk-Based Justification Document'],
-  regulatory_basis: ['EMA', 'WHO'],
-  requires_data_from_client: true,
-  target_industry: ['Pharma', 'CMO'],
-  expertise_area: ['Risk Assessment', 'Pharmacology'],
-  is_active: true,
-};
-
-export const oelReports = {
-  service_id: 'svc-oel-001',
-  report_type: 'OEL',
-  name: 'Occupational Exposure Limit Assessment for API',
-  description: 'Determine safe workplace exposure limits using toxicological and epidemiological data.',
-  price_model: 'Per Report',
-  estimated_duration: '3 business days',
-  deliverables: ['OEL Assessment Report', 'Toxicity Profile', 'Airborne Exposure Calculations'],
-  regulatory_basis: ['OSHA', 'NIOSH', 'ACGIH'],
-  requires_data_from_client: true,
-  target_industry: ['API', 'Manufacturing', 'CMO'],
-  expertise_area: ['Industrial Hygiene', 'Toxicology'],
-  is_active: true,
-};
-
-export const oebReports = {
-  service_id: 'svc-oeb-001',
-  report_type: 'OEB',
-  name: 'Occupational Exposure Banding for Early-stage Molecule',
-  description: 'Band assignment based on limited data for R&D phase compounds.',
-  price_model: 'Fixed',
-  estimated_duration: '3 business days',
-  deliverables: ['OEB Classification Document', 'Data Summary Table', 'Banding Rationale'],
-  regulatory_basis: ['NIOSH', 'PhRMA', 'ISPE'],
-  requires_data_from_client: true,
-  target_industry: ['Biotech', 'Pharma R&D'],
-  expertise_area: ['Toxicology', 'Occupational Safety'],
-  is_active: true,
-};
-
-// export const adeReports = (
-// );
-
 export const allServicesSchema = {
-  hasOfferCatalog: {
-    '@type': 'OfferCatalog',
-    name: 'Healthcare Healthcare Services',
-    itemListElement: [
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Permitted Daily Exposure (PDE) Report',
-          description:
-            'Permitted Daily Exposure (PDE) Report service offered by our healthcare and pharmaceutical consultancy.',
+  '@context': 'https://schema.org',
+  '@type': 'ItemList',
+  itemListElement: [
+    {
+      '@type': 'ListItem',
+      position: 1,
+      item: {
+        '@type': 'ProfessionalService',
+        name: 'Comprehensive Pharmacovigilance Services',
+        description: 'End-to-end pharmacovigilance solutions for global regulatory compliance',
+        serviceType: 'Pharmacovigilance',
+        url: '/services/pharmacovigilance',
+        provider: {
+          '@type': 'Organization',
+          name: 'Indivirtus',
+          logo: 'https://www.indivirtus.com/logo.png',
+        },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'USD',
+          price: 'Contact for customized pricing',
         },
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Acceptable Daily Exposure (ADE) Report',
-          description:
-            'Acceptable Daily Exposure (ADE) Report service offered by our healthcare and pharmaceutical consultancy.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 2,
+      item: {
+        '@type': 'ProfessionalService',
+        name: 'Pharmaceutical Turnkey Facility Solutions',
+        description: 'End-to-end design, construction and validation of GMP-compliant pharmaceutical facilities',
+        serviceType: ['EngineeringService', 'ConstructionService'],
+        url: '/services/greenfield-brownfield',
+        provider: {
+          '@type': 'Organization',
+          name: 'Indivirtus',
+          logo: 'https://www.indivirtus.com/logo.png',
+        },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'USD',
+          price: 'Project-based',
         },
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Occupational Exposure Limit (OEL) Assessment',
-          description:
-            'Occupational Exposure Limit (OEL) Assessment service offered by our healthcare and pharmaceutical consultancy.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 3,
+      item: {
+        '@type': 'ProfessionalService',
+        name: 'GMP Validation Services - CSV & Equipment Qualification',
+        description: 'Comprehensive validation services ensuring 21 CFR Part 11, EU Annex 11 and GAMP 5 compliance',
+        serviceType: 'ValidationService',
+        url: '/services/validation',
+        provider: {
+          '@type': 'Organization',
+          name: 'Indivirtus',
+          logo: 'https://www.indivirtus.com/logo.png',
+        },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'USD',
+          price: 'Contact for quote',
         },
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Occupational Exposure Band (OEB) Classification',
-          description:
-            'Occupational Exposure Band (OEB) Classification service offered by our healthcare and pharmaceutical consultancy.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 4,
+      item: {
+        '@type': 'ProfessionalService',
+        name: 'ICH M7 Impurity Risk Assessment Service',
+        description: 'Regulatory-compliant evaluation of genotoxic and non-genotoxic impurities per ICH guidelines',
+        serviceType: 'ToxicologyService',
+        url: '/services/risk-assessment',
+        provider: {
+          '@type': 'Organization',
+          name: 'Indivirtus',
+          logo: 'https://www.indivirtus.com/logo.png',
+        },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'USD',
+          price: 'Contact for quote',
         },
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Pharmacovigilance',
-          description: 'Pharmacovigilance service offered by our healthcare and pharmaceutical consultancy.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 5,
+      item: {
+        '@type': 'ProfessionalService',
+        name: 'Pharmaceutical Exposure Limit Assessment Services',
+        description:
+          'Science-based derivation of ADE, PDE, OEL and OEB values with DABT-certified toxicological review',
+        serviceType: 'ToxicologyService',
+        url: '/services/ade-pde-oel',
+        provider: {
+          '@type': 'Organization',
+          name: 'Indivirtus',
+          logo: 'https://www.indivirtus.com/logo.png',
+        },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'USD',
+          price: 'Compound-based pricing',
         },
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Genotoxic (Mutagenic) Evaluation of Impurities',
-          description:
-            'Genotoxic (Mutagenic) Evaluation of Impurities service offered by our healthcare and pharmaceutical consultancy.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 6,
+      item: {
+        '@type': 'ProfessionalService',
+        name: 'Global Regulatory Affairs Services',
+        description:
+          'End-to-end regulatory strategy and submission support for pharmaceutical market approvals worldwide',
+        serviceType: 'RegulatoryConsulting',
+        url: '/services/regulatory-affairs',
+        provider: {
+          '@type': 'Organization',
+          name: 'Indivirtus',
+          logo: 'https://www.indivirtus.com/logo.png',
+        },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'USD',
+          price: 'Project-based pricing',
         },
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Safety Assessment Report of Finished Formulations',
-          description:
-            'Safety Assessment Report of Finished Formulations service offered by our healthcare and pharmaceutical consultancy.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 7,
+      item: {
+        '@type': 'ProfessionalService',
+        name: 'GMP Compliance & Training Services',
+        description: 'Comprehensive GMP audit, remediation and training solutions for pharmaceutical quality systems',
+        serviceType: 'QualityAssuranceService',
+        url: '/services/gmp-compliance-trainings',
+        provider: {
+          '@type': 'Organization',
+          name: 'Indivirtus',
+          logo: 'https://www.indivirtus.com/logo.png',
+        },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'USD',
+          price: 'Project-based',
         },
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Preparation of MSDS/SDS',
-          description: 'Preparation of MSDS/SDS service offered by our healthcare and pharmaceutical consultancy.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 8,
+      item: {
+        '@type': 'ProfessionalService',
+        name: 'NABL Accredited Calibration Services',
+        description:
+          'Precision calibration services for pharmaceutical and healthcare instruments with full metrological traceability',
+        serviceType: 'CalibrationService',
+        url: '/services/calibration',
+        provider: {
+          '@type': 'Organization',
+          name: 'Indivirtus',
+          logo: 'https://www.indivirtus.com/logo.png',
+        },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'USD',
+          price: 'Instrument-based pricing',
         },
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Regulatory Compliance',
-          description: 'Regulatory Compliance service offered by our healthcare and pharmaceutical consultancy.',
+    },
+    {
+      '@type': 'ListItem',
+      position: 9,
+      item: {
+        '@type': 'ProfessionalService',
+        name: 'Vendor GMP Audit & Qualification Services',
+        description: 'Regulatory-standard GMP audits and approval dossier preparation for pharmaceutical suppliers',
+        serviceType: 'QualityAuditService',
+        url: '/services/gmp-audits',
+        provider: {
+          '@type': 'Organization',
+          name: 'Indivirtus',
+          logo: 'https://www.indivirtus.com/logo.png',
+        },
+        offers: {
+          '@type': 'Offer',
+          priceCurrency: 'USD',
+          price: 'Project-based',
         },
       },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          name: 'Medical Device Registration',
-          description: 'Medical Device Registration service offered by our healthcare and pharmaceutical consultancy.',
-        },
-      },
-    ],
+    },
+  ],
+  mainEntityOfPage: {
+    '@type': 'WebPage',
+    '@id': 'https://www.indivirtus.com/services',
   },
 };

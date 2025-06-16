@@ -1,34 +1,28 @@
 ---
-const { heroReportsDetails } = Astro.props
-import Picture from 'astro/components/Picture.astro'
-import stats1 from '../../assets/stats1.svg'
-import stats2 from '../../assets/stats2.svg'
+import Picture from 'astro/components/Picture.astro';
+
+import AnimatedNumber from '@/components/extras/AnimatedNumber.jsx';
+
+import { heroStats } from '../../data/js/hero.js';
 ---
 
 <div class="md:mt-auto">
   <div class="my-5 flex gap-10 md:px-4 lg:flex-col">
-    {/* Block 1 */}
-    <div class="flex gap-4">
-      {/* SVG Icon: Document with plus */}
-      <div class="max-w-[14%]">
-        <Picture src={stats1} alt="stats picture icon" />
-      </div>
-      <div>
-        <h3>{heroReportsDetails.pde}+</h3>
-        <p>PDE/OEL Reports as per<br />EMA/PICS/ APIC/WHO</p>
-      </div>
-    </div>
-    {/* Block 2 */}
-    <div class="flex gap-4">
-      {/* SVG Icon: Checked document */}
-      <div class="max-w-[14%]">
-        <Picture src={stats2} alt="stats picture icon" />
-      </div>
-      <div>
-        <h3>{heroReportsDetails.genotox}+</h3>
-        <p>Mutagenic & Genotox Assessments<br />as per ICH, M7</p>
-      </div>
-    </div>
+    {
+      heroStats.map((stat) => (
+        <div class="flex gap-4">
+          <div class="max-w-[14%]">
+            <Picture src={stat.image.path} alt={stat.image.alt} />
+          </div>
+          <div>
+            <h3>
+              <AnimatedNumber value={Number(stat.qty)} duration={2000} client:load />+
+            </h3>
+            <p set:html={stat.description}>""</p>
+          </div>
+        </div>
+      ))
+    }
   </div>
 </div>
 

@@ -2,7 +2,7 @@
 // import Picture from 'astro/components/Picture.astro'
 // import heroImg from '../../assets/hero.png'
 import bgImage from '../../assets/hero-bg-4.avif';
-import { heroDescription, heroReportsDetails } from '../../data/js/hero.js';
+import { heroDescription } from '../../data/js/hero.js';
 import Stats from './Stats.astro';
 ---
 
@@ -12,7 +12,7 @@ import Stats from './Stats.astro';
   style={`background-image: url(${bgImage.src});`}
 >
   <div class="maxwidth mx-auto flex flex-col-reverse px-8 py-8 lg:flex-row lg:py-20">
-    <Stats heroReportsDetails={heroReportsDetails} />
+    <Stats />
     <div class="mb-6 sm:text-justify lg:max-w-2/3">
       <h1 class="text-justify md:text-left">
         {heroDescription.tag}<br /><span class="text-lg font-semibold">{heroDescription.description}</span>
