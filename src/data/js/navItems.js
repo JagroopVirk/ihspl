@@ -6,7 +6,7 @@ export const navItems = [
     submenu: [
       { name: 'Vision, Mission and Quality Policy', href: '/about/vision-mission-qualityPolicy' },
       { name: 'Security and Confidentiality', href: '/about/security-confidentiality' },
-      { name: 'Terms, Policy, Payments and Refunds', href: '/about/tearms&policy' },
+      { name: 'Terms, Policy, Payments and Refunds', href: '/about/tearms-policy' },
     ],
   },
   {
@@ -19,7 +19,8 @@ export const navItems = [
       { name: 'Risk Assessment of Impurities', href: '/services/risk-assessment' },
       { name: 'ADE/PDE OEL/OEB', href: '/services/ade-pde-oel' },
       { name: 'Regulatory Affairs', href: '/services/regulatory-affairs' },
-      { name: 'GMP, Schedule M Compliance & Training', href: '/services/gmp-training' },
+      { name: 'GMP, Schedule M Compliance & Trainings', href: '/services/gmp-compliance-trainings' },
+      { name: 'GMP Audits', href: '/services/gmp-audits' },
       { name: 'Calibration Services (NABL Accredited Lab)', href: '/services/calibration' },
     ],
   },
