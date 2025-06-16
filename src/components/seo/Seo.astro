@@ -20,7 +20,6 @@ const jsonLocationSchema = JSON.stringify(locationSchema, null, 0);
 const jsonSchema = JSON.stringify(schema, null, 0);
 const jsonServiceSchema = JSON.stringify(servicesSchema, null, 0);
 
-const resolvedImage = image.startsWith('http') ? image : `${Astro.url.origin}${image}`;
 ---
 
 <head>
@@ -38,7 +37,7 @@ const resolvedImage = image.startsWith('http') ? image : `${Astro.url.origin}${i
   <meta property="og:type" content={type} />
   <meta property="og:title" content={title} />
   <meta property="og:description" content={description} />
-  <meta property="og:image" content={resolvedImage} />
+  <meta property="og:image" content={image} />
   <meta property="og:url" content={url} />
 
 

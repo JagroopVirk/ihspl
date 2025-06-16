@@ -15,9 +15,9 @@ import { heroStats } from '../../data/js/hero.js';
             <Picture src={stat.image.path} alt={stat.image.alt} />
           </div>
           <div>
-            <h3>
+            <span>
               <AnimatedNumber value={Number(stat.qty)} duration={2000} client:load />+
-            </h3>
+            </span>
             <p set:html={stat.description}>""</p>
           </div>
         </div>
@@ -28,8 +28,8 @@ import { heroStats } from '../../data/js/hero.js';
 
 <style>
   @reference "tailwindcss";
-  h3 {
-    @apply text-2xl md:text-4xl;
+  span {
+    @apply text-2xl md:text-4xl font-semibold;
   }
 
   p {
