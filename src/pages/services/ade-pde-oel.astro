@@ -3,9 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 
 import '../../styles/global.css';
 
-// Importing SEO data for the About page
-import { aboutPageSeo } from '../../data/js/seo/siteSeo.js';
-
+// Importing SEO data
 import seoData from '@/data/js/services/adepde.js';
 ---
 
@@ -20,7 +18,7 @@ import seoData from '@/data/js/services/adepde.js';
     schema: seoData.schema,
   }}
 >
-  <article class="mx-auto max-w-4xl px-6 py-12">
+  <article class="maxwidth px-6 py-12">
     <header class="mb-12">
       <h1 class="mb-4 text-4xl font-bold text-blue-900">
         Understanding ADE, PDE, OEL, and OEB Assessments for API Safety and Compliance

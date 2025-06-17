@@ -25,7 +25,7 @@ body {
 .maxwidth {
   margin-inline: auto;
   max-width: clamp(10%, 1348px, 100%);
-  @apply px-6;
+  @apply px-6 mx-auto;
 }
 
 .section {

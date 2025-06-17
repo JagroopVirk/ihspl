@@ -126,6 +126,7 @@ export default {
       description: 'Professional validation services for regulated industries',
       image: validation,
     },
+    canonicalUrl: 'https://www.indivirtus.com/services/validation',
   },
 };
 

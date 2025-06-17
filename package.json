@@ -4,9 +4,10 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "generate:services": "node utils/generate-services-index.js",
+    "build": "npm run generate:services && astro build"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",
