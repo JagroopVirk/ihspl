@@ -35,21 +35,25 @@ import SetMarginTop from '../extras/SetMarginTop.astro';
               <div class="footerIcon text-lg">
                 <FaPhone />
               </div>
-              {office.phone.map((element) => (
-                <a class="addDetails" href={`tel:${element}`}>
-                  {element}
-                </a>
-              ))}
+              <div class="flex flex-col xl:flex-row">
+                {office.phone.map((element) => (
+                  <a class="addDetails" href={`tel:${element}`}>
+                    {element}
+                  </a>
+                ))}
+              </div>
             </div>
             <div class="mb-2 flex">
               <div class="footerIcon text-lg">
                 <FaEnvelope />
               </div>
-              {office.email.map((element) => (
-                <a class="addDetails" href={`mailto:${element}`}>
-                  {element}
-                </a>
-              ))}
+              <div class="flex flex-col xl:flex-row">
+                {office.email.map((element) => (
+                  <a class="addDetails" href={`mailto:${element}`}>
+                    {element}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         ))

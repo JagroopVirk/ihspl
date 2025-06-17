@@ -2,7 +2,7 @@ const offices = [
   {
     location: 'INDIA- Head Office',
     address: '521-522, Top Floor, Taj Plaza, TDI City, Sector-118,  Airport Road, Mohali, Punjab, India 160059',
-    phone: ['+91 9131925456', '+91 9888111109'],
+    phone: ['+91 9131925456', '+91 9888111109', '+91 172 4508817'],
     email: ['director.bd@indivirtus.com', 'director@indivirtus.com'],
   },
   {
@@ -21,7 +21,7 @@ const offices = [
   {
     location: 'INDIA- Head Office',
     address: '521-522, Top Floor, Taj Plaza, TDI City, Sector-118,  Airport Road, Mohali, Punjab, India 160059',
-    phone: ['+91 9131925456', '+91 9888111109'],
+    phone: ['+91 9131925456', '+91 9888111109', '+91 172 4508817'],
     email: ['director.bd@indivirtus.com', 'director@indivirtus.com'],
   },
   {
