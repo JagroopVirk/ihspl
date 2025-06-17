@@ -6,8 +6,7 @@
     "dev": "astro dev",
     "preview": "astro preview",
     "astro": "astro",
-    "generate:services": "node utils/generate-services-index.js",
-    "build": "npm run generate:services && astro build"
+    "build": "astro build"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",

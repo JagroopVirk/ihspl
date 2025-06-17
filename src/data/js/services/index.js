@@ -9,17 +9,7 @@ import service7 from './regulatoryAffairs.js';
 import service8 from './riskAssessment.js';
 import service9 from './validation.js';
 
-const services = [
-  service0,
-  service1,
-  service2,
-  service3,
-  service4,
-  service5,
-  service6,
-  service7,
-  service8,
-  service9
-];
+const services = [service0, service1, service2, service3, service4, service5, service6, service7, service8, service9];
 
 export default services;
+console.log('🚀 ~ services:', services);
