@@ -39,6 +39,7 @@ import pharmacovigilance from '@/data/js/services/pharmacovigilance';
 import regulatoryAffairs from '@/data/js/services/regulatoryAffairs';
 import riskAssessment from '@/data/js/services/riskAssessment';
 import validation from '@/data/js/services/validation';
+import containmentValidation from '@/data/js/services/containmentValidation';
 
 const services = [
   adepde,
@@ -50,6 +51,7 @@ const services = [
   regulatoryAffairs,
   riskAssessment,
   validation,
+  containmentValidation,
 ];
 
 export default services;

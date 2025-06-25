@@ -1,220 +1,248 @@
-import validation from '@/assets/validation.png';
+import serviceImage from '@/assets/validation.png';
+const link = '/services/validation';
 
 export default {
-  service_id: 'VAL-001',
-  report_type: 'Validation Report',
-  title: 'GMP Validation Services | CSV & Equipment Qualification Experts',
-  name: 'Validation (CSV/Equipment/HVAC)',
+  service_id: 'cro-validation-equipment-csv-hvac',
+  report_type: 'Validation & Qualification Services',
+  title: 'CSV, Equipment & HVAC Validation Services',
+  name: 'Comprehensive Validation Services for Pharma CRO Operations',
   description:
-    'Use equipment, HVAC qualification and validation, and full-cycle computer system validation to guarantee compliant operations.',
+    'Validation of laboratory systems, process automation, EMS, LIMS, HVAC and temperature mapping to support regulatory compliance.',
   full_description:
-    'From CSV (13, 21 CFR Part 11/GAMP 5) to equipment IQ/OQ/PQ and HVAC system validation, Indivirtus provides thorough validation to assist you achieve operational consistency, data integrity, and regulatory compliance with FDA, EMA, MHRA, and WHO standards.',
-  estimated_duration: '2–6 weeks per system/phase',
+    'Indivirtus offers a full suite of validation and qualification services in support of pharmaceutical CRO operations. We validate computerized systems (CSV), laboratory instruments (HPLC, GC, FTIR, etc.), process automation platforms, environmental monitoring, enterprise software (LIMS, ERP, SAP), HVAC systems, and perform temperature mapping for critical zones. Our services ensure compliance with FDA, EMA, WHO and GMP standards, mitigating operational risk and ensuring data integrity.',
+  estimated_duration: '2–8 weeks per system/project, depending on scope & complexity',
   deliverables: [
     'Validation Master Plan (VMP)',
-    'User Requirement Specs (URS)',
-    'Risk Assessments',
-    'IQ/OQ/PQ Protocols & Reports',
-    'Final Validation Report',
+    'User Requirement Specification (URS)',
+    'Risk Assessment & Qualification Protocols (IQ/OQ/PQ)',
+    'Traceable Test Scripts and Execution Records',
+    'Deviation/Incident Reports and CAPA',
+    'Final Validation Report & Summary',
   ],
-  regulatory_basis: ['21 CFR Part 11', 'EU Annex 11', 'GAMP 5', 'WHO TRS', 'US FDA', 'MHRA', 'EMA'],
+  regulatory_basis: [
+    'FDA 21 CFR Part 11',
+    'EU GMP Annex 11',
+    'PIC/S GMP',
+    'WHO GMP',
+    'ISO 14644 (Cleanroom)',
+    'FDA HVAC Guidance',
+  ],
   requires_data_from_client: true,
-  target_industry: ['Pharmaceutical', 'Biotech', 'Medical Devices', 'API Manufacturing', 'CDMO'],
-  expertise_area: ['Validation', 'CSV', 'Equipment Qualification', 'HVAC Systems', 'Regulatory Compliance'],
+  target_industry: ['Pharmaceuticals', 'Biotech', 'CRO', 'Medical Devices'],
+  expertise_area: ['CSV', 'Equipment Validation', 'HVAC Qualification', 'Temperature Mapping'],
   is_active: true,
-  pageLink: '/services/validation',
-  icon: '✅',
+  pageLink: link,
+  icon: '✔️',
   image: {
-    path: validation,
-    alt: 'Computer system validation process',
-    caption: 'GMP validation services for regulated industries',
+    path: serviceImage,
+    alt: 'Validation services for systems, equipment and HVAC',
+    caption: 'CSV, equipment, EMS, and HVAC validation tailored for pharmaceutical labs',
   },
   gtm: {
-    eventCategory: 'Service',
-    eventAction: 'Click',
-    eventLabel: 'Validation Services',
-    customDimensions: {
-      cd1: 'Validation',
-      cd2: 'Quality Assurance',
-      cd3: 'Medium',
+    eventCategory: 'CRO Services',
+    eventAction: 'Validation_Services_Click',
+    eventLabel: 'Validation & Qualification',
+    customDimensions: {},
+    dataLayerPush: {
+      reportType: ['CSV Validation', 'Equipment Qualification', 'HVAC Mapping'],
+      certification: 'GMP Compliance',
     },
   },
   schema: {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'GMP Validation Services - CSV & Equipment Qualification',
+    name: 'Validation & Qualification Services',
     description:
-      'Comprehensive validation services ensuring 21 CFR Part 11, EU Annex 11 and GAMP 5 compliance for pharmaceutical systems and equipment',
-    serviceType: 'ValidationService',
+      'CRO-based validation services covering CSV, lab equipment, automation systems, EMS, enterprise applications, temperature mapping, and HVAC qualification.',
+    serviceType: 'Validation Services',
     provider: {
       '@type': 'Organization',
       name: 'Indivirtus',
       url: 'https://www.indivirtus.com',
       logo: 'https://www.indivirtus.com/logo.png',
+      sameAs: [
+        'https://www.linkedin.com/company/indivirtus-group-of-companies',
+        'https://twitter.com/indivirtus',
+        'https://www.facebook.com/Indivirtus',
+        'https://www.instagram.com/indivirtus_healthcare',
+      ],
     },
     areaServed: {
       '@type': 'Country',
       name: 'Global',
     },
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: link,
+      servicePhone: '+91-9131925456',
+      servicePostalAddress: {
+        '@type': 'PostalAddress',
+        streetAddress: '522, Taj Plaza, TDI city, Sector 118',
+        addressLocality: 'Mohali',
+        addressRegion: 'Punjab',
+        postalCode: '160059',
+        addressCountry: 'India',
+      },
+    },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Validation Services Catalog',
+      name: 'Validation & Qualification Services',
       itemListElement: [
         {
-          '@type': 'OfferCatalog',
-          name: 'Computer System Validation',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: '21 CFR Part 11 Compliance Validation',
-                description: 'Full lifecycle CSV for GxP systems',
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Laboratory Systems Validation (HPLC/GC/UV/FTIR/Polarimeter)',
+            description: 'IQ/OQ/PQ protocols and validation for analytical instruments.',
+          },
         },
         {
-          '@type': 'OfferCatalog',
-          name: 'Equipment Qualification',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'IQ/OQ/PQ Services',
-                description: 'Installation, operational and performance qualification',
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Process Automation Systems Validation (PLC/HMI/SCADA)',
+            description: 'CSV of automation platforms including risk assessment and data integrity.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Environmental Monitoring Systems (EMS) Validation',
+            description: 'Qualification of systems capturing environmental and process data.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Enterprise Applications Validation (SAP/ERP/LIMS/DMS/QMS/LMS)',
+            description: 'Computer system validation to meet GxP and Part 11 requirements.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Temperature Mapping (SIP, Autoclave, Tunnel, Cold Room, Warehouse)',
+            description: 'Mapping and qualification of temperature-controlled zones and equipment.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'HVAC Qualification (DOP/Air Velocity/NVPC/Filter Integrity)',
+            description: 'DOP testing, air changes, velocity mapping and filter integrity testing for cleanrooms.',
+          },
         },
       ],
     },
     offers: {
       '@type': 'Offer',
-      priceCurrency: 'USD',
-      price: 'Contact for quote',
-      url: '/services/validation',
+      priceCurrency: ['INR', 'USD'],
+      price: 'Project-based pricing',
+      url: link,
       availability: 'https://schema.org/InStock',
+      businessFunction: 'https://schema.org/ProvideService',
     },
   },
+  faqSchema: {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What does CSV cover for process automation systems?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'CSV includes risk assessment, requirement traceability, protocol design (IQ/OQ/PQ), execution, deviation handling and final report for PLC/HMI/SCADA systems.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you validate laboratory equipment like HPLC or FTIR?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We develop instrument-specific validation plans, conduct IQ/OQ/PQ runs, document performance qualifications, and assess calibration and maintenance needs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is temperature mapping and why is it necessary?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Temperature mapping documents spatial temperature uniformity and stability in critical environments (e.g., cold rooms, autoclaves) to ensure product safety and compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What tests are included in HVAC qualification?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'HVAC qualification includes DOP/fog testing, air velocity profiling, NVPC (non-viable particle counts), air changes per hour, and HEPA filter integrity checks.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you validate enterprise applications like LIMS or SAP?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we perform full CSV including requirement gathering, functional testing, user acceptance, and compliance to ensure systems meet GxP and 21 CFR Part 11 standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does a validation project typically take?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Validation timelines depend on system complexity and client readiness, but most projects complete in 2–8 weeks per system.',
+        },
+      },
+    ],
+  },
   meta: {
-    title: 'GMP Validation Services | CSV & Equipment Qualification Experts',
+    title: 'Validation Services: CSV, Equipment & HVAC | Indivirtus',
     description:
-      'End-to-end validation services for pharmaceutical computer systems, manufacturing equipment and facilities ensuring FDA, EMA compliance.',
+      'Indivirtus offers validation and qualification of lab instruments, automation, EMS, LIMS/SAP, temperature mapping and HVAC for pharma CRO compliance.',
     keywords: [
-      'computer system validation',
       'CSV services',
-      'GMP validation experts',
-      '21 CFR Part 11 compliance',
-      'equipment qualification',
-      'pharmaceutical validation',
-      'IQ OQ PQ services',
-      'cleanroom validation',
-      'GAMP 5 validation',
-      'regulatory compliance validation',
+      'equipment validation',
+      'HVAC qualification',
+      'temperature mapping',
+      'LIMS validation',
+      'HPLC validation',
+      'SCADA qualification',
+      'GMP compliance',
+      'FDA Part 11',
+      'EU Annex 11',
     ],
     ogTags: {
       type: 'service',
-      image: validation,
-      url: '/services/validation',
+      image: serviceImage.src,
+      url: link,
       site_name: 'Indivirtus',
     },
     twitterCard: {
       card: 'summary_large_image',
-      title: 'GMP Validation Services | CSV & Equipment Qualification Experts',
-      description: 'Professional validation services for regulated industries',
-      image: validation,
+      title: 'CSV & Equipment Validation Services | Indivirtus',
+      description:
+        'Comprehensive validation of laboratory, automation, EMS, enterprise systems and HVAC in pharmaceutical environments.',
+      image: serviceImage.src,
     },
-    canonicalUrl: 'https://www.indivirtus.com/services/validation',
+    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    robotsMeta: {
+      index: true,
+      follow: true,
+      nocache: false,
+    },
   },
+  assessmentTypes: [
+    'Computer System Validation',
+    'Laboratory Instrument Qualification',
+    'HVAC & Cleanroom Qualification',
+    'Temperature Mapping Services',
+    'Enterprise Application Validation',
+    'EMS System Validation',
+  ],
 };
-
-// export default validation = {
-//   service_id: 'VAL-001',
-//   report_type: 'Validation Report',
-//   title: 'GMP Validation Services | CSV & Equipment Qualification Experts',
-//   name: 'Validation (CSV/Equipment/HVAC)',
-//   description:
-//     'Use equipment, HVAC qualification and validation, and full-cycle computer system validation to guarantee compliant operations.',
-//   full_description:
-//     'From CSV (13, 21 CFR Part 11/GAMP 5) to equipment IQ/OQ/PQ and HVAC system validation, Indivirtus provides thorough validation to assist you achieve operational consistency, data integrity, and regulatory compliance with FDA, EMA, MHRA, and WHO standards.',
-//   estimated_duration: '2–6 weeks per system/phase',
-//   deliverables: [
-//     'Validation Master Plan (VMP)',
-//     'User Requirement Specs (URS)',
-//     'Risk Assessments',
-//     'IQ/OQ/PQ Protocols & Reports',
-//     'Final Validation Report',
-//   ],
-//   regulatory_basis: ['21 CFR Part 11', 'EU Annex 11', 'GAMP 5', 'WHO TRS', 'US FDA', 'MHRA', 'EMA'],
-//   requires_data_from_client: true,
-//   target_industry: ['Pharmaceutical', 'Biotech', 'Medical Devices', 'API Manufacturing', 'CDMO'],
-//   expertise_area: ['Validation', 'CSV', 'Equipment Qualification', 'HVAC Systems', 'Regulatory Compliance'],
-//   is_active: true,
-//   pageLink: '/services/validation',
-//   icon: '✅',
-//   image: {
-//     path: validation,
-//     alt: 'Computer system validation process',
-//     caption: 'GMP validation services for regulated industries',
-//   },
-//   gtm: {
-//     eventCategory: 'Service',
-//     eventAction: 'Click',
-//     eventLabel: 'Validation Services',
-//   },
-//   schema: {
-//     '@context': 'https://schema.org',
-//     '@type': 'ProfessionalService',
-//     name: '',
-//     description: '',
-//     serviceType: '',
-//     provider: {
-//       '@type': 'Organization',
-//       name: 'Indivirtus',
-//     },
-//     areaServed: ['Global'],
-//     availableChannel: {
-//       '@type': 'ServiceChannel',
-//       serviceUrl: '/services/validation',
-//     },
-//     hasOfferCatalog: {
-//       '@type': 'OfferCatalog',
-//       name: '',
-//       itemListElement: [
-//         {
-//           '@type': 'OfferCatalog',
-//           name: '',
-//           itemListElement: [
-//             {
-//               '@type': 'Offer',
-//               itemOffered: {
-//                 '@type': 'Service',
-//                 name: '',
-//               },
-//             },
-//           ],
-//         },
-//       ],
-//     },
-//   },
-
-//   meta: {
-//     title: 'GMP Validation Services | CSV & Equipment Qualification Experts',
-//     description:
-//       'End-to-end validation services for pharmaceutical computer systems, manufacturing equipment and facilities ensuring FDA, EMA compliance.',
-//     keywords: [
-//       'computer system validation',
-//       'CSV services',
-//       'GMP validation experts',
-//       '21 CFR Part 11 compliance',
-//       'equipment qualification',
-//       'pharmaceutical validation',
-//       'IQ OQ PQ services',
-//       'cleanroom validation',
-//       'GAMP 5 validation',
-//       'regulatory compliance validation',
-//     ],
-//   },
-// };

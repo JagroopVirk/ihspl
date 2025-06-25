@@ -1,221 +1,245 @@
-import riskAssessment from '@/assets/riskAssessment.png';
+import serviceImage from '@/assets/riskAssessment.png';
+const link = '/services/risk-assessment';
 
 export default {
-  service_id: 'IMP-RA-001',
-  report_type: 'Impurity Risk Assessment Report',
-  title: 'ICH M7 Impurity Risk Assessment | Genotoxic Evaluation',
-  name: 'Impurity Risk Assessment',
+  service_id: 'cro-genotoxic-medical-device-toxicology',
+  report_type: 'Toxicological Risk Assessment',
+  title: 'Genotoxic Impurity & Medical Device Toxicology Assessment',
+  name: 'Genotoxicity Evaluation & Toxicological Risk for Medical Devices',
   description:
-    'Evaluate the safety risk of chemical impurities, whether genotoxic or non-genotoxic, in compliance with ICH M7/Q3A-B and international standards.',
+    'Comprehensive CRO support for genotoxic impurity evaluation and toxicological risk assessments of medical devices.',
   full_description:
-    'We use SAR techniques and toxicological data to assess known, unknown, and carry-over substances. You may minimize development delays, streamline regulatory approvals, and support exposure limits with our ICH-aligned risk assessments (M7, Q3A/B).',
-  estimated_duration: '7–15 business days',
+    'Indivirtus offers specialized CRO services for genotoxic impurity evaluation and medical device toxicological risk assessment. We follow global regulatory standards like ICH Q3A(R2), Q3B(R2), Q3C(R8), M7 for mutagenic impurity profiling and ISO 10993-17 for evaluating extractables, leachables, and their toxicological relevance in medical devices. Our expert toxicologists provide data-driven risk assessments to ensure product safety and global compliance.',
+  estimated_duration: '2–6 weeks (depending on data availability and number of substances)',
   deliverables: [
-    'Impurity Risk Assessment Report',
-    'SAR Analysis Document',
-    'TTC Justification (where applicable)',
-    'Regulatory‑ready Toxicology Summary',
+    'Genotoxicity risk assessment report aligned with ICH Q3A/B/C/M7',
+    'TTC-based impurity categorization and qualification strategy',
+    'Toxicological Risk Assessment (TRA) report for medical devices per ISO 10993',
+    'Assessment of extractables and leachables (E&L)',
   ],
-  regulatory_basis: ['ICH M7', 'ICH Q3A', 'ICH Q3B', 'EMA', 'US FDA'],
+  regulatory_basis: [
+    'ICH Q3A(R2), Q3B(R2), Q3C(R8)',
+    'ICH M7 (R1)',
+    'ISO 10993-17',
+    'ISO 10993-18',
+    'US FDA, EMA, PMDA expectations',
+  ],
   requires_data_from_client: true,
-  target_industry: ['Pharma', 'API Manufacturers', 'Biotech', 'CDMO'],
-  expertise_area: ['Toxicology', 'Impurity Profiling', 'Risk Assessment', 'Regulatory Affairs'],
+  target_industry: ['Pharmaceuticals', 'Biotechnology', 'Medical Devices'],
+  expertise_area: ['Toxicology', 'Risk Assessment', 'Regulatory Compliance'],
   is_active: true,
-  pageLink: '/services/risk-assessment',
-  icon: '🧪',
+  pageLink: link,
+  icon: '🧬',
   image: {
-    path: riskAssessment,
-    alt: 'Impurity risk assessment process',
-    caption: 'Toxicological evaluation of pharmaceutical impurities',
+    path: serviceImage,
+    alt: 'Genotoxicity and Medical Device Toxicological Risk Assessment',
+    caption: 'Expert ICH and ISO-aligned toxicological assessments for impurities and medical devices',
   },
   gtm: {
-    eventCategory: 'Scientific Services',
-    eventAction: 'Click',
-    eventLabel: 'Impurity Risk Assessment',
-    customDimensions: {
-      cd1: 'Toxicology',
-      cd2: 'Risk Assessment',
-      cd3: 'High',
+    eventCategory: 'CRO Services',
+    eventAction: 'Genotoxicity_MedicalDevice_Click',
+    eventLabel: 'Genotoxic & TRA Services',
+    customDimensions: {},
+    dataLayerPush: {
+      reportType: ['Genotoxic Impurity Evaluation', 'Medical Device Toxicological Risk Assessment'],
+      certification: 'Regulatory Toxicology',
     },
   },
   schema: {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'ICH M7 Impurity Risk Assessment Service',
+    name: 'Genotoxic Impurity Evaluation & Toxicological Risk Assessment',
     description:
-      'Regulatory-compliant evaluation of genotoxic and non-genotoxic impurities per ICH M7 and Q3 guidelines',
-    serviceType: 'ToxicologyService',
+      'CRO support for pharmaceutical and medical device manufacturers to assess genotoxic impurities and toxicological risks as per ICH and ISO guidelines.',
+    serviceType: 'Pharmaceutical & Medical Device CRO Service',
     provider: {
       '@type': 'Organization',
       name: 'Indivirtus',
       url: 'https://www.indivirtus.com',
       logo: 'https://www.indivirtus.com/logo.png',
-      sameAs: ['https://www.linkedin.com/company/indivirtus', 'https://twitter.com/indivirtus'],
+      sameAs: [
+        'https://www.linkedin.com/company/indivirtus-group-of-companies',
+        'https://twitter.com/indivirtus',
+        'https://www.facebook.com/Indivirtus',
+        'https://www.instagram.com/indivirtus_healthcare',
+      ],
     },
     areaServed: {
       '@type': 'Country',
       name: 'Global',
     },
+    availableChannel: {
+      '@type': 'ServiceChannel',
+      serviceUrl: link,
+      servicePhone: '+91-9131925456',
+      servicePostalAddress: {
+        '@type': 'PostalAddress',
+        streetAddress: '522, Taj Plaza, TDI city, Sector 118',
+        addressLocality: 'Mohali',
+        addressRegion: 'Punjab',
+        postalCode: '160059',
+        addressCountry: 'India',
+      },
+    },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Impurity Risk Assessment Services',
+      name: 'Genotoxic and Medical Device Risk Assessment Services',
       itemListElement: [
         {
-          '@type': 'OfferCatalog',
-          name: 'Genotoxic Impurity Assessment',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'ICH M7 Compliant Assessment',
-                description: 'Threshold of Toxicological Concern (TTC) based evaluation',
-                serviceOutput: 'Impurity Risk Assessment Report',
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Genotoxic Impurity Risk Assessment (ICH Q3A/Q3B)',
+            description:
+              'Evaluation of organic impurities for genotoxic potential in drug substances and drug products.',
+          },
         },
         {
-          '@type': 'OfferCatalog',
-          name: 'Non-Genotoxic Impurity Assessment',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'ICH Q3A/B Evaluation',
-                description: 'Qualification of impurities based on toxicological data',
-                serviceOutput: 'Toxicology Summary Report',
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Elemental Impurity Assessment (ICH Q3C/Q3D)',
+            description: 'Assessment and justification of metal impurities in line with ICH Q3C/Q3D guidelines.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'ICH M7 (R1) Toxicological Evaluation',
+            description: 'In silico and literature-based risk assessment of genotoxic impurities per ICH M7.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Toxicological Risk Assessment (TRA) for Medical Devices',
+            description:
+              'Evaluation of biological safety risks from extractables and leachables in devices per ISO 10993-17.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Extractables and Leachables (E&L) Toxicological Interpretation',
+            description: 'Toxicological relevance of E&L studies for device safety across product lifecycle.',
+          },
         },
       ],
     },
     offers: {
       '@type': 'Offer',
-      priceCurrency: 'USD',
-      price: 'Contact for quote',
-      url: '/services/risk-assessment',
+      priceCurrency: ['INR', 'USD'],
+      price: 'Compound-based pricing',
+      url: link,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
   },
+  faqSchema: {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is genotoxic impurity evaluation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'It is the assessment of impurities in pharmaceuticals for their potential to damage DNA. This ensures patient safety and aligns with regulatory guidelines like ICH M7.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you evaluate genotoxicity risk without lab testing?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We use (Q)SAR in silico tools, literature review, and threshold of toxicological concern (TTC) principles to evaluate genotoxic potential when experimental data is not available.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is covered under ICH M7?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ICH M7 covers assessment, control, and qualification of mutagenic impurities, combining computational toxicology and structure-activity relationship analysis.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is a toxicological risk assessment for medical devices?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'It evaluates the safety impact of chemical substances (like leachables) from device materials on human health, based on exposure and hazard data, as outlined in ISO 10993-17.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do extractables and leachables impact patient safety?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Extractables and leachables are chemical compounds that can migrate from medical device materials. If toxic, they can pose risks to patients. Risk assessments help determine if their levels are safe.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What data is needed for genotoxic impurity assessment?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We require chemical structure (SMILES or CAS), batch impurity data, synthetic pathway, and analytical impurity profiles. Public literature and Ames test data (if available) can be included.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you support ISO 10993-based biological evaluation plans?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we help create and execute Biological Evaluation Plans (BEPs) including toxicological interpretation under ISO 10993-17 and 10993-18.',
+        },
+      },
+    ],
+  },
   meta: {
-    title: 'ICH M7 Impurity Risk Assessment | Genotoxic Evaluation',
+    title: 'Genotoxicity & Medical Device Toxicology Assessment | Indivirtus',
     description:
-      'Regulatory-compliant safety evaluation of genotoxic and non-genotoxic impurities per ICH guidelines with DABT-certified review.',
+      'Indivirtus offers CRO services for genotoxic impurity risk evaluation (ICH Q3/M7) and toxicological assessment of medical devices (ISO 10993).',
     keywords: [
-      'impurity risk assessment',
-      'ICH M7 compliance',
-      'genotoxic impurities',
-      'TTC calculation',
-      'pharmaceutical toxicology',
-      'elemental impurities',
-      'degradation products',
-      'ICH Q3A Q3B',
-      'regulatory toxicology',
-      'DABT certified review',
+      'genotoxic impurity evaluation',
+      'ICH M7',
+      'toxicological risk assessment',
+      'medical device safety',
+      'ISO 10993-17',
+      'extractables and leachables',
+      'ICH Q3A',
+      'ICH Q3C',
+      'ICH Q3D',
+      'in silico mutagenicity',
+      'TTC thresholds',
     ],
     ogTags: {
       type: 'service',
-      image: riskAssessment,
-      url: '/services/risk-assessment',
+      image: serviceImage.src,
+      url: link,
       site_name: 'Indivirtus',
     },
     twitterCard: {
       card: 'summary_large_image',
-      title: 'ICH M7 Impurity Risk Assessment Service',
-      description: 'Expert evaluation of pharmaceutical impurities for regulatory compliance',
-      image: riskAssessment,
+      title: 'Genotoxicity & Medical Device Toxicology | Indivirtus',
+      description: 'Comprehensive toxicological evaluations for impurities and devices using ICH & ISO standards.',
+      image: serviceImage.src,
     },
-    canonicalUrl: 'https://www.indivirtus.com/services/risk-assessment',
+    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    robotsMeta: {
+      index: true,
+      follow: true,
+      nocache: false,
+    },
   },
+  assessmentTypes: [
+    'Genotoxicity Evaluation',
+    'Mutagenicity Prediction',
+    'Medical Device Toxicological Risk Assessment',
+    'Extractables and Leachables Interpretation',
+  ],
 };
-
-// export default riskAssessment = {
-//   service_id: 'IMP-RA-001',
-//   report_type: 'Impurity Risk Assessment Report',
-//   title: 'ICH M7 Impurity Risk Assessment | Genotoxic Evaluation',
-//   name: 'Impurity Risk Assessment',
-//   description:
-//     'Evaluate the safety risk of chemical impurities, whether genotoxic or non-genotoxic, in compliance with ICH M7/Q3A-B and international standards.',
-//   full_description:
-//     'We use SAR techniques and toxicological data to assess known, unknown, and carry-over substances. You may minimize development delays, streamline regulatory approvals, and support exposure limits with our ICH-aligned risk assessments (M7, Q3A/B).',
-//   estimated_duration: '7–15 business days',
-//   deliverables: [
-//     'Impurity Risk Assessment Report',
-//     'SAR Analysis Document',
-//     'TTC Justification (where applicable)',
-//     'Regulatory‑ready Toxicology Summary',
-//   ],
-//   regulatory_basis: ['ICH M7', 'ICH Q3A', 'ICH Q3B', 'EMA', 'US FDA'],
-//   requires_data_from_client: true,
-//   target_industry: ['Pharma', 'API Manufacturers', 'Biotech', 'CDMO'],
-//   expertise_area: ['Toxicology', 'Impurity Profiling', 'Risk Assessment', 'Regulatory Affairs'],
-//   is_active: true,
-//   pageLink: '/services/risk-assessment',
-//   icon: '🧪',
-//   image: {
-//     path: riskAssessment,
-//     alt: 'Impurity risk assessment process',
-//     caption: 'Toxicological evaluation of pharmaceutical impurities',
-//   },
-//   gtm: {
-//     eventCategory: 'Service',
-//     eventAction: 'Click',
-//     eventLabel: 'Impurity Risk Assessment',
-//   },
-//   schema: {
-//     '@context': 'https://schema.org',
-//     '@type': 'ProfessionalService',
-//     name: '',
-//     description: '',
-//     serviceType: '',
-//     provider: {
-//       '@type': 'Organization',
-//       name: 'Indivirtus',
-//     },
-//     areaServed: ['Global'],
-//     availableChannel: {
-//       '@type': 'ServiceChannel',
-//       serviceUrl: '/services/risk-assessment',
-//     },
-//     hasOfferCatalog: {
-//       '@type': 'OfferCatalog',
-//       name: '',
-//       itemListElement: [
-//         {
-//           '@type': 'OfferCatalog',
-//           name: '',
-//           itemListElement: [
-//             {
-//               '@type': 'Offer',
-//               itemOffered: {
-//                 '@type': 'Service',
-//                 name: '',
-//               },
-//             },
-//           ],
-//         },
-//       ],
-//     },
-//   },
-//   meta: {
-//     title: 'ICH M7 Impurity Risk Assessment | Genotoxic Evaluation',
-//     description:
-//       'Regulatory-compliant safety evaluation of genotoxic and non-genotoxic impurities per ICH guidelines with DABT-certified review.',
-//     keywords: [
-//       'impurity risk assessment',
-//       'ICH M7 compliance',
-//       'genotoxic impurities',
-//       'TTC calculation',
-//       'pharmaceutical toxicology',
-//       'elemental impurities',
-//       'degradation products',
-//       'ICH Q3A Q3B',
-//       'regulatory toxicology',
-//       'DABT certified review',
-//     ],
-//   },
-// };

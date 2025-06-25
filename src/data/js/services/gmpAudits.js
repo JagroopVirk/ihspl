@@ -1,60 +1,73 @@
-import gmpAudit from '@/assets/gmpAudit.png';
+import serviceImage from '@/assets/gmpAudit.png';
+const link = '/services/ade-pde-oel';
 
 export default {
-  service_id: 'GMP-APP-001',
-  report_type: 'GMP Audit & Approval Dossier',
-  title: 'Vendor GMP Audit Services | Supplier Qualification',
-  name: 'Vendor Assessment Audits for Plant & Product Approvals',
+  service_id: 'cro-gmp-approvals',
+  report_type: 'GMP Audit Preparation & Regulatory Compliance',
+  title: 'GMP Approvals & Global Regulatory Readiness',
+  name: 'GMP Audit Preparation and Regulatory Compliance Services',
   description:
-    'We create approval dossiers for plant and product registrations with CDSCO, WHO, US FDA, MHRA, and peers in addition to doing vendor GMP evaluations.',
+    'Comprehensive CRO support for GMP approvals from global authorities like EU-GMP, USFDA, WHO-GMP, TGA, and more.',
   full_description:
-    'From vendor audits and GAP analysis to the development of GMP audit reports, CAPA strategies, and regulatory dossiers, Indivirtus facilitates the GMP approval process. We help you with plant and product inspections and approvals under CDSCO, WHO, FDA, MHRA, EU, and more.',
-  estimated_duration: '4–6 weeks (site readiness dependent)',
+    'Indivirtus offers end-to-end assistance for pharmaceutical facilities seeking GMP approvals from global regulatory bodies such as EU-GMP, USFDA, WHO-GMP, PIC/S, TGA, Health Canada, GCC, ANVISA (Brazil), and COFEPRIS (Mexico). Services include vendor assessment audits, plant design and infrastructure evaluations, validation and calibration checks, documentation reviews, and GAP assessments as per Schedule M and international GMP guidelines. Our experts help prepare for regulatory inspections with tailored remediation and compliance strategies.',
+  estimated_duration: '4–12 weeks depending on facility size and regulatory scope',
   deliverables: [
-    'Vendor Assessment Report',
-    'GMP Audit Report',
-    'CAPA Plan',
-    'Regulatory Approval Dossier',
-    'Inspection Support',
+    'Regulatory Readiness Assessment Report',
+    'Vendor Audit Checklist and Reports',
+    'CAPA and Risk Mitigation Plans',
+    'GMP Documentation Review Summary',
+    'Schedule M GAP Assessment Report',
+    'Audit Remediation Strategy Document',
   ],
-  regulatory_basis: ['WHO GMP', 'Schedule M', 'US FDA 21 CFR 210/211', 'EU GMP', 'ICH Q7', 'CDSCO'],
+  regulatory_basis: [
+    'EU-GMP Guidelines',
+    'FDA 21 CFR Parts 210 & 211',
+    'WHO-GMP',
+    'Schedule M (India)',
+    'TGA GMP Code',
+    'ANVISA RDC 301',
+    'COFEPRIS Guidelines',
+    'Health Canada GMP',
+  ],
   requires_data_from_client: true,
-  target_industry: ['Pharma', 'Biotech', 'API Manufacturing', 'Formulation Plants', 'CDMO'],
-  expertise_area: ['GMP Compliance', 'Regulatory Affairs', 'Quality Audits'],
+  target_industry: ['Pharmaceuticals', 'Biopharma', 'CRO', 'Medical Devices'],
+  expertise_area: ['GMP Approvals', 'Regulatory Readiness', 'Facility Compliance'],
   is_active: true,
-  pageLink: '/services/gmp-audits',
-  icon: '📋',
+  pageLink: link,
+  icon: '🏭',
   image: {
-    path: gmpAudit,
-    alt: 'GMP audit process',
-    caption: 'Comprehensive vendor quality system assessment',
+    path: serviceImage,
+    alt: 'GMP regulatory audit readiness services',
+    caption: 'GMP audit preparation and remediation support for global authorities',
   },
   gtm: {
-    eventCategory: 'Quality Assurance',
-    eventAction: 'Vendor Audit Inquiry',
-    eventLabel: 'GMP Vendor Audit Services',
-    customDimensions: {
-      cd1: 'Supplier Quality',
-      cd2: 'Audit Services',
-      cd3: 'Regulatory',
-    },
+    eventCategory: 'CRO Services',
+    eventAction: 'GMP_Approval_Click',
+    eventLabel: 'GMP Compliance',
+    customDimensions: {},
     dataLayerPush: {
-      auditType: 'Third-Party',
-      applicableRegions: ['US', 'EU', 'India', 'Global'],
+      reportType: ['Audit Readiness', 'GMP Documentation Review'],
+      certification: 'Global GMP Certification Support',
     },
   },
   schema: {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'Vendor GMP Audit & Qualification Services',
-    description: 'Regulatory-standard GMP audits and approval dossier preparation for pharmaceutical suppliers',
-    serviceType: 'QualityAuditService',
+    name: 'GMP Approvals & Regulatory Readiness',
+    description:
+      'Audit preparation and compliance services for EU-GMP, USFDA, WHO-GMP, TGA, ANVISA, COFEPRIS, and other regulatory bodies.',
+    serviceType: 'GMP Compliance & Audit Services',
     provider: {
       '@type': 'Organization',
       name: 'Indivirtus',
       url: 'https://www.indivirtus.com',
       logo: 'https://www.indivirtus.com/logo.png',
-      sameAs: ['https://www.linkedin.com/company/indivirtus', 'https://twitter.com/indivirtus'],
+      sameAs: [
+        'https://www.linkedin.com/company/indivirtus-group-of-companies',
+        'https://twitter.com/indivirtus',
+        'https://www.facebook.com/Indivirtus',
+        'https://www.instagram.com/indivirtus_healthcare',
+      ],
     },
     areaServed: {
       '@type': 'Country',
@@ -62,215 +75,170 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: '/services/gmp-audits',
-      servicePhone: '+1-XXX-XXX-XXXX',
+      serviceUrl: link,
+      servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
-        streetAddress: '123 Audit Center',
-        addressLocality: 'City',
-        addressRegion: 'State',
-        postalCode: 'ZIP',
-        addressCountry: 'Country',
+        streetAddress: '522, Taj Plaza, TDI city, Sector 118',
+        addressLocality: 'Mohali',
+        addressRegion: 'Punjab',
+        postalCode: '160059',
+        addressCountry: 'India',
       },
-      availableLanguage: ['English', 'Spanish', 'Hindi'],
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Vendor Audit Services',
+      name: 'GMP Regulatory Approval Services',
       itemListElement: [
         {
-          '@type': 'OfferCatalog',
-          name: 'Audit Programs',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Comprehensive GMP Audit',
-                description: 'Full-scope evaluation of vendor quality systems',
-                serviceOutput: ['Audit Report', 'Risk Assessment'],
-              },
-            },
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'For-Cause Audit',
-                description: 'Targeted investigation of quality issues',
-                serviceOutput: 'Investigation Report',
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Vendor Assessment Audits',
+            description:
+              'Audit of third-party manufacturers and suppliers for regulatory compliance and product approvals.',
+          },
         },
         {
-          '@type': 'OfferCatalog',
-          name: 'Approval Support',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Regulatory Dossier Preparation',
-                description: 'Compilation of approval documentation for health authorities',
-                serviceOutput: 'Submission-Ready Dossier',
-              },
-            },
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Inspection Readiness Support',
-                description: 'Preparation for regulatory inspections of vendors',
-                serviceOutput: 'Mock Inspection Report',
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Facility & Process Flow Evaluation',
+            description:
+              'Assessment of plant layout, equipment, material/personnel flow, and infrastructure for GMP suitability.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Validation, Calibration & Qualification Review',
+            description:
+              'Gap analysis of equipment, utility, and process validation status against regulatory standards.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'CAPA and Risk Management Planning',
+            description:
+              'Design of risk-based mitigation plans and CAPA frameworks to address audit observations and non-conformances.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Schedule M GAP Assessment',
+            description: 'Detailed GAP analysis of facility and documentation per India’s Schedule M guidelines.',
+          },
         },
       ],
     },
     offers: {
       '@type': 'Offer',
-      priceCurrency: 'USD',
-      price: 'Project-based',
-      url: '/services/gmp-audits',
+      priceCurrency: ['INR', 'USD'],
+      price: 'Facility-based pricing',
+      url: link,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
   },
+  faqSchema: {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Which global regulatory bodies does Indivirtus support for GMP approvals?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide GMP readiness and audit preparation for EU-GMP, USFDA, WHO-GMP, PIC/S, TGA (Australia), Health Canada, ANVISA (Brazil), COFEPRIS (Mexico), and GCC nations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is included in a vendor assessment audit?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our vendor audits assess compliance with GMP standards in terms of documentation, infrastructure, process capability, quality systems, and regulatory history.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How is the plant layout and process flow evaluated?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We assess the logical flow of materials and personnel, zoning, segregation, equipment placement, and overall facility design in line with GMP best practices.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is CAPA and risk management critical for GMP audits?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'CAPA and risk management are central to regulatory compliance. We help design proactive systems to detect, correct, and prevent non-conformities.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is a GAP assessment as per Schedule M?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "It’s a comparison of your facility’s practices and documentation against India's Schedule M guidelines. We identify gaps and recommend remediation.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How soon can GMP readiness be achieved?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Readiness depends on the initial gap and facility type, but our approach typically enables preparation within 4–12 weeks.',
+        },
+      },
+    ],
+  },
   meta: {
-    title: 'Vendor GMP Audit Services | Supplier Qualification',
-    description: 'Regulatory-standard GMP audits of API manufacturers, excipient suppliers and contract facilities.',
+    title: 'GMP Approvals & Audit Readiness | Indivirtus CRO Services',
+    description:
+      'Expert GMP audit preparation for EU-GMP, USFDA, WHO-GMP, ANVISA, TGA and more. Get vendor audits, facility evaluations, CAPA plans, and Schedule M GAP analysis.',
     keywords: [
-      'vendor GMP audit',
-      'supplier qualification',
-      'third-party audit',
-      'API manufacturer audit',
-      'contract facility assessment',
-      'GMP compliance audit',
-      'quality system evaluation',
-      'regulatory audit service',
-      'pharmaceutical supplier audit',
-      'audit remediation support',
+      'GMP audit readiness',
+      'EU-GMP compliance',
+      'USFDA GMP support',
+      'ANVISA GMP',
+      'Schedule M gap assessment',
+      'CAPA plan pharma',
+      'pharmaceutical vendor audit',
+      'GMP plant layout review',
+      'WHO-GMP preparation',
+      'regulatory audit support',
     ],
     ogTags: {
       type: 'service',
-      image: gmpAudit,
-      url: '/services/gmp-audits',
+      image: serviceImage.src,
+      url: link,
       site_name: 'Indivirtus',
     },
     twitterCard: {
       card: 'summary_large_image',
-      title: 'Vendor GMP Audit Services',
-      description: 'Regulatory-compliant supplier qualification audits',
-      image: gmpAudit,
+      title: 'Global GMP Regulatory Approvals | Indivirtus',
+      description: 'GMP audit and documentation readiness support for EU, US, WHO, TGA, ANVISA, COFEPRIS and more.',
+      image: serviceImage.src,
     },
-    canonicalUrl: 'https://www.indivirtus.com/services/gmp-audits',
+    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    robotsMeta: {
+      index: true,
+      follow: true,
+      nocache: false,
+    },
   },
-  auditScope: [
-    {
-      area: 'Quality Systems',
-      elements: ['Documentation', 'Change Control', 'CAPA'],
-    },
-    {
-      area: 'Facilities & Equipment',
-      elements: ['Maintenance', 'Calibration', 'Qualification'],
-    },
-    {
-      area: 'Materials Management',
-      elements: ['Supplier Qualification', 'Storage', 'Distribution'],
-    },
-    {
-      area: 'Production Controls',
-      elements: ['Process Validation', 'Cleaning Validation', 'Batch Records'],
-    },
+  assessmentTypes: [
+    'Vendor Audit',
+    'Plant Layout Assessment',
+    'Validation & Calibration Review',
+    'Schedule M Gap Assessment',
+    'Regulatory Readiness',
   ],
 };
-
-// export default {
-//   service_id: 'GMP-APP-001',
-//   report_type: 'GMP Audit & Approval Dossier',
-//   title: 'Vendor GMP Audit Services | Supplier Qualification',
-//   name: 'Vendor Assessment Audits for Plant & Product Approvals',
-//   description:
-//     'We create approval dossiers for plant and product registrations with CDSCO, WHO, US FDA, MHRA, and peers in addition to doing vendor GMP evaluations.',
-//   full_description:
-//     'From vendor audits and GAP analysis to the development of GMP audit reports, CAPA strategies, and regulatory dossiers, Indivirtus facilitates the GMP approval process. We help you with plant and product inspections and approvals under CDSCO, WHO, FDA, MHRA, EU, and more.',
-
-//   estimated_duration: '4–6 weeks (site readiness dependent)',
-//   deliverables: [
-//     'Vendor Assessment Report',
-//     'GMP Audit Report',
-//     'CAPA Plan',
-//     'Regulatory Approval Dossier',
-//     'Inspection Support',
-//   ],
-//   regulatory_basis: ['WHO GMP', 'Schedule M', 'US FDA 21 CFR 210/211', 'EU GMP', 'ICH Q7', 'CDSCO'],
-//   requires_data_from_client: true,
-//   target_industry: ['Pharma', 'Biotech', 'API Manufacturing', 'Formulation Plants', 'CDMO'],
-//   expertise_area: ['GMP Compliance', 'Regulatory Affairs', 'Quality Audits'],
-//   is_active: true,
-//   pageLink: '/services/gmp-audits',
-//   icon: '📋',
-//   image: {
-//     path: gmpAudit,
-//     alt: 'GMP audit process',
-//     caption: 'Vendor quality system assessment',
-//   },
-//   gtm: {
-//     eventCategory: 'Service',
-//     eventAction: 'Click',
-//     eventLabel: 'Vendor Audit & Approvals',
-//   },
-//   schema: {
-//     '@context': 'https://schema.org',
-//     '@type': 'ProfessionalService',
-//     name: '',
-//     description: '',
-//     serviceType: '',
-//     provider: {
-//       '@type': 'Organization',
-//       name: 'Indivirtus',
-//     },
-//     areaServed: ['Global'],
-//     availableChannel: {
-//       '@type': 'ServiceChannel',
-//       serviceUrl: '/services/gmp-audits',
-//     },
-//     hasOfferCatalog: {
-//       '@type': 'OfferCatalog',
-//       name: '',
-//       itemListElement: [
-//         {
-//           '@type': 'OfferCatalog',
-//           name: '',
-//           itemListElement: [
-//             {
-//               '@type': 'Offer',
-//               itemOffered: {
-//                 '@type': 'Service',
-//                 name: '',
-//               },
-//             },
-//           ],
-//         },
-//       ],
-//     },
-//   },
-
-//   meta: {
-//     title: 'Vendor GMP Audit Services | Supplier Qualification',
-//     description: 'Regulatory-standard GMP audits of API manufacturers, excipient suppliers and contract facilities.',
-//     keywords: [
-//       'vendor GMP audit',
-//       'supplier qualification',
-//       'third-party audit',
-//       'API manufacturer audit',
-//       'contract facility assessment',
-//       'GMP compliance audit',
-//       'quality system evaluation',
-//       'regulatory audit service',
-//       'pharmaceutical supplier audit',
-//       'audit remediation support',
-//     ],
-//   },
-// };

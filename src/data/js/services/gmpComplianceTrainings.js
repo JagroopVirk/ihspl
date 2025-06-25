@@ -1,60 +1,69 @@
-import gmpCompliance from '@/assets/gmpCompliance.png';
+import serviceImage from '@/assets/gmpCompliance.png';
+const link = '/services/gmp-compliance-trainings';
 
 export default {
-  service_id: 'GMP-001',
-  report_type: 'GMP Compliance & Training',
-  title: 'GMP Compliance Services | Audit & Remediation Experts',
-  name: 'GMP, Schedule M, Trainings',
+  service_id: 'cro-training-pharma-quality-compliance',
+  report_type: 'Pharma Quality & Compliance Training',
+  title: 'Pharmaceutical Quality & Compliance Trainings',
+  name: 'Comprehensive Training Programs for Pharma CRO Teams',
   description:
-    'Workforce training, SOP creation, implementation assistance, and customized GMP and Schedule M compliance audits.',
+    'Hands‑on training on key topics like Cleaning Validation, GxP, Schedule M, WHO TRS, Data Integrity, Quality Culture, and QMS.',
   full_description:
-    'We assist biotech and pharmaceutical teams in achieving inspection-ready GMP (including Schedule M) status through practical training sessions, gap analysis, audits, and SOP creation. Strengthen operational discipline, reduce compliance gaps, and enhance quality culture.',
-  estimated_duration: '2–4 weeks (scope based)',
+    'Indivirtus offers expert-led training programs tailored to pharmaceutical CRO teams and client staff. Our sessions cover essential topics: Cleaning Validation best practices, GxP standards (GLP, GMP, GCP, GDP), Revised Schedule M requirements, WHO TRS and annexures, creating a quality-minded culture, managing data integrity, and designing compliant quality management systems. Delivered by industry specialists, our programs include case studies, practical examples, and regulatory insight to build capability and compliance.',
+  estimated_duration: '1–3 days per topic (customizable modular delivery)',
   deliverables: [
-    'GMP Audit Report',
-    'Gap Analysis & Recommendations',
-    'Customized SOPs',
-    'Training Materials & Certificates',
-    'Compliance Implementation Plan',
+    'Presentation slides & workbooks',
+    'Case‑study discussion materials',
+    'Training certificates',
+    'Post‑training checklist & action plan',
   ],
-  regulatory_basis: ['Schedule M', 'WHO GMP', 'US FDA cGMP', 'PIC/S', 'EU GMP'],
-  requires_data_from_client: true,
-  target_industry: ['Pharma', 'Biotech', 'Nutraceuticals', 'Medical Devices'],
-  expertise_area: ['GMP Compliance', 'Quality Assurance', 'Regulatory Training'],
+  regulatory_basis: [
+    'FDA 21 CFR Parts 210/211/820/58',
+    'EU GMP Annexes, GCP, GLP',
+    'WHO TRS Series 996 Annex 2–5',
+    'Schedule M – Indian GMP',
+    'PIC/S GMP',
+    'ICH Q9, Q10, Q14',
+  ],
+  requires_data_from_client: false,
+  target_industry: ['Pharmaceuticals', 'Biotech', 'CRO', 'Regulatory Affairs'],
+  expertise_area: ['Training & Development', 'Quality Compliance', 'Regulatory Education'],
   is_active: true,
-  pageLink: '/services/gmp-compliance-trainings',
-  icon: '📚',
+  pageLink: link,
+  icon: '🎓',
   image: {
-    path: gmpCompliance,
-    alt: 'GMP compliance audit process',
-    caption: 'GMP gap assessment and remediation services',
+    path: serviceImage,
+    alt: 'Pharma compliance training sessions',
+    caption: 'Quality and compliance training for pharmaceutical professionals',
   },
   gtm: {
-    eventCategory: 'Quality Services',
-    eventAction: 'Compliance Engagement',
-    eventLabel: 'GMP Compliance Page View',
-    customDimensions: {
-      cd1: 'GMP Compliance',
-      cd2: 'Quality Systems',
-      cd3: 'High Priority',
-    },
+    eventCategory: 'CRO Services',
+    eventAction: 'Training_Click',
+    eventLabel: 'Quality & Compliance Training',
+    customDimensions: {},
     dataLayerPush: {
-      serviceTier: 'Comprehensive',
-      complianceStandards: ['FDA', 'EMA', 'WHO'],
+      reportType: ['Training', 'Compliance'],
+      certification: 'Training Delivered',
     },
   },
   schema: {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'GMP Compliance & Training Services',
-    description: 'Comprehensive GMP audit, remediation and training solutions for pharmaceutical quality systems',
-    serviceType: 'QualityAssuranceService',
+    name: 'Pharmaceutical Quality & Compliance Training',
+    description:
+      'Modular training programs on Cleaning Validation, GxP, Schedule M, WHO TRS, Data Integrity, Quality Culture, and QMS.',
+    serviceType: 'Professional Training Service',
     provider: {
       '@type': 'Organization',
       name: 'Indivirtus',
       url: 'https://www.indivirtus.com',
       logo: 'https://www.indivirtus.com/logo.png',
-      sameAs: ['https://www.linkedin.com/company/indivirtus', 'https://twitter.com/indivirtus'],
+      sameAs: [
+        'https://www.linkedin.com/company/indivirtus-group-of-companies',
+        'https://twitter.com/indivirtus',
+        'https://www.facebook.com/Indivirtus',
+        'https://www.instagram.com/indivirtus_healthcare',
+      ],
     },
     areaServed: {
       '@type': 'Country',
@@ -62,213 +71,175 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: '/services/gmp-compliance-trainings',
-      servicePhone: '+1-XXX-XXX-XXXX',
+      serviceUrl: link,
+      servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
-        streetAddress: '123 Quality Lane',
-        addressLocality: 'City',
-        addressRegion: 'State',
-        postalCode: 'ZIP',
-        addressCountry: 'Country',
+        streetAddress: '522, Taj Plaza, TDI city, Sector 118',
+        addressLocality: 'Mohali',
+        addressRegion: 'Punjab',
+        postalCode: '160059',
+        addressCountry: 'India',
       },
-      availableLanguage: ['English', 'Spanish', 'French'],
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'GMP Compliance Services',
+      name: 'Pharma Quality & Compliance Trainings',
       itemListElement: [
         {
-          '@type': 'OfferCatalog',
-          name: 'Audit Services',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'GMP Compliance Audit',
-                description: 'Comprehensive evaluation against regulatory standards',
-                serviceOutput: ['Audit Report', 'CAPA Plan'],
-              },
-            },
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Mock FDA Inspection',
-                description: 'Simulated regulatory inspection with findings report',
-                serviceOutput: 'Inspection Readiness Scorecard',
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Cleaning Validation Training',
+            description: 'Principles, protocols, execution and acceptance criteria for cleaning in pharma operations.',
+          },
         },
         {
-          '@type': 'OfferCatalog',
-          name: 'Training Programs',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'GMP Fundamentals Training',
-                description: 'Core GMP principles for operational staff',
-                serviceOutput: ['Training Materials', 'Certificates'],
-              },
-            },
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Data Integrity Workshop',
-                description: 'ALCOA+ principles and implementation',
-                serviceOutput: 'Gap Assessment Report',
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'GxP Standards (GLP/GMP/GCP/GDP)',
+            description: 'Overview and practical compliance of GxP requirements across pharmaceutical systems.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Revised Schedule M Training',
+            description: 'Detailed review of India’s Revised Schedule M: requirements and implementation.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'WHO TRS Guidelines & Annexures',
+            description:
+              'Interpretation and application of WHO Technical Report Series guidance in pharma quality systems.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Pharma Quality Systems: Data Integrity & Culture',
+            description: 'Building data-centric quality culture: ALCOA+, risk awareness and compliance mindset.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Quality Management Systems (QMS)',
+            description:
+              'Designing and operating QMS aligned to ICH Q10, CAPA, audit readiness, and continuous improvement.',
+          },
         },
       ],
     },
     offers: {
       '@type': 'Offer',
-      priceCurrency: 'USD',
-      price: 'Project-based',
-      url: '/services/gmp-compliance-trainings',
+      priceCurrency: ['INR', 'USD'],
+      price: 'Per‑participant/module pricing',
+      url: link,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
   },
+  faqSchema: {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is covered in Cleaning Validation training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We cover planning, sampling techniques, analytical methods, acceptance criteria, re‑validation triggers and documentation best practices.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What topics are included in GxP training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our GxP module reviews regulatory requirements under GLP, GMP, GCP and GDP, with practical advice for compliance in lab, manufacturing and distribution.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is Revised Schedule M training important?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'It helps teams understand new Indian GMP standards on quality systems, risk management, HVAC, data integrity and documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do WHO TRS guidelines cover?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'WHO TRS Annexures provide detailed expectations on GMP, quality risk management, sampling, validation, and trouble‑shooting guidance for pharma.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you train on pharma data integrity?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Training includes ALCOA+ principles, data lifecycle, audit trails, documentation controls, self‑inspection and CAPA.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is a Quality Management System (QMS)?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'QMS is a structured system for all quality-related activities: document mgmt, audit, CAPA, training, change control and continuous improvement.',
+        },
+      },
+    ],
+  },
   meta: {
-    title: 'GMP Compliance Services | Audit & Remediation Experts',
-    description: 'GMP audit, remediation and training services to achieve and maintain regulatory compliance.',
+    title: 'Pharma Quality & Compliance Training | Indivirtus CRO',
+    description:
+      'Training programs in Cleaning Validation, GxP, Schedule M, WHO TRS, Data Integrity, Quality Culture and QMS by Indivirtus CRO experts.',
     keywords: [
-      'GMP audit services',
-      'pharmaceutical compliance',
-      'FDA inspection readiness',
-      'GMP training programs',
-      'data integrity compliance',
-      'quality system remediation',
-      'cGMP consulting',
-      'regulatory audit support',
-      'pharmaceutical quality systems',
-      'CAPA development',
+      'pharma training',
+      'cleaning validation training',
+      'GxP training',
+      'Schedule M training',
+      'WHO TRS training',
+      'data integrity training',
+      'quality culture training',
+      'QMS training',
     ],
     ogTags: {
       type: 'service',
-      image: gmpCompliance,
-      url: '/services/gmp-compliance-trainings',
+      image: serviceImage.src,
+      url: link,
       site_name: 'Indivirtus',
     },
     twitterCard: {
       card: 'summary_large_image',
-      title: 'GMP Compliance Services',
-      description: 'Audit, training and remediation for pharmaceutical quality systems',
-      image: gmpCompliance,
+      title: 'Pharma Quality & Compliance Training | Indivirtus',
+      description:
+        'Expert-led training in pharmaceutical quality and compliance areas: GxP, data integrity, QMS, Cleaning Validation, and more.',
+      image: serviceImage.src,
     },
-    canonicalUrl: 'https://www.indivirtus.com/services/gmp-compliance-trainings',
+    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    robotsMeta: {
+      index: true,
+      follow: true,
+      nocache: false,
+    },
   },
-  serviceTiers: [
-    {
-      level: 'Basic',
-      offerings: ['Document Review', 'Gap Analysis', 'Remediation Plan'],
-      duration: '2-3 weeks',
-    },
-    {
-      level: 'Comprehensive',
-      offerings: ['On-site Audit', 'SOP Development', 'Staff Training'],
-      duration: '3-4 weeks',
-    },
-    {
-      level: 'Enterprise',
-      offerings: ['Full QMS Implementation', 'Validation Support', 'Ongoing Compliance Monitoring'],
-      duration: 'Ongoing',
-    },
+  assessmentTypes: [
+    'Regulatory Training',
+    'Quality Systems Training',
+    'Data Integrity Education',
+    'Cleaning Validation Training',
+    'GxP Awareness',
   ],
 };
-
-// export default {
-//   service_id: 'GMP-001',
-//   report_type: 'GMP Compliance & Training',
-//   title: 'GMP Compliance Services | Audit & Remediation Experts',
-//   name: 'GMP, Schedule M, Trainings',
-//   description:
-//     'Workforce training, SOP creation, implementation assistance, and customized GMP and Schedule M compliance audits.',
-//   full_description:
-//     'We assist biotech and pharmaceutical teams in achieving inspection-ready GMP (including Schedule M) status through practical training sessions, gap analysis, audits, and SOP creation. Strengthen operational discipline, reduce compliance gaps, and enhance quality culture.',
-
-//   estimated_duration: '2–4 weeks (scope based)',
-//   deliverables: [
-//     'GMP Audit Report',
-//     'Gap Analysis & Recommendations',
-//     'Customized SOPs',
-//     'Training Materials & Certificates',
-//     'Compliance Implementation Plan',
-//   ],
-//   regulatory_basis: ['Schedule M', 'WHO GMP', 'US FDA cGMP', 'PIC/S', 'EU GMP'],
-//   requires_data_from_client: true,
-//   target_industry: ['Pharma', 'Biotech', 'Nutraceuticals', 'Medical Devices'],
-//   expertise_area: ['GMP Compliance', 'Quality Assurance', 'Regulatory Training'],
-//   is_active: true,
-//   pageLink: '/services/gmp-compliance-trainings',
-//   icon: '📚',
-//   image: {
-//     path: gmpCompliance,
-//     alt: 'GMP compliance audit process',
-//     caption: 'GMP gap assessment and remediation',
-//   },
-//   gtm: {
-//     eventCategory: 'Service',
-//     eventAction: 'Click',
-//     eventLabel: 'GMP Training Services',
-//   },
-//   schema: {
-//     '@context': 'https://schema.org',
-//     '@type': 'ProfessionalService',
-//     name: '',
-//     description: '',
-//     serviceType: '',
-//     provider: {
-//       '@type': 'Organization',
-//       name: 'Indivirtus',
-//     },
-//     areaServed: ['Global'],
-//     availableChannel: {
-//       '@type': 'ServiceChannel',
-//       serviceUrl: '/services/gmp-compliance-trainings',
-//     },
-//     hasOfferCatalog: {
-//       '@type': 'OfferCatalog',
-//       name: '',
-//       itemListElement: [
-//         {
-//           '@type': 'OfferCatalog',
-//           name: '',
-//           itemListElement: [
-//             {
-//               '@type': 'Offer',
-//               itemOffered: {
-//                 '@type': 'Service',
-//                 name: '',
-//               },
-//             },
-//           ],
-//         },
-//       ],
-//     },
-//   },
-//   meta: {
-//     title: 'GMP Compliance Services | Audit & Remediation Experts',
-//     description: 'GMP audit, remediation and training services to achieve and maintain regulatory compliance.',
-//     keywords: [
-//       'GMP audit services',
-//       'pharmaceutical compliance',
-//       'FDA inspection readiness',
-//       'GMP training programs',
-//       'data integrity compliance',
-//       'quality system remediation',
-//       'cGMP consulting',
-//       'regulatory audit support',
-//       'pharmaceutical quality systems',
-//       'CAPA development',
-//     ],
-//   },
-// };

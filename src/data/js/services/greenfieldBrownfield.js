@@ -1,61 +1,64 @@
-import greenfield from '../../../assets/greenfieldBrownfieldProjects.png';
+import serviceImage from '../../../assets/greenfieldBrownfieldProjects.png';
+const link = '/services/greenfield-brownfield';
 
 export default {
-  service_id: 'TFP-001',
-  report_type: 'Project Implementation Report',
-  title: 'Pharmaceutical Facility Design & Construction | Turnkey Solutions',
-  name: 'Turnkey Project Services',
+  service_id: 'cro-greenfield-brownfield',
+  report_type: 'Pharma Turnkey Project Setup',
+  title: 'Turnkey Greenfield & Brownfield Projects',
+  name: 'Greenfield and Brownfield Turnkey Pharmaceutical Projects',
   description:
-    'Complete project management for fresh or renovated pharmaceutical facilities, from design and concept development to GMP validation.',
+    'End-to-end project execution for new (Greenfield) and upgrade (Brownfield) pharmaceutical manufacturing facilities.',
   full_description:
-    'For Greenfield construction or Brownfield renovations, Indivirtus manages the entire project lifecycle, including feasibility, design, approvals, procurement, construction, commissioning, and validation. At every stage, our team ensures regulatory readiness, on-time delivery, and GMP compliance.',
-  estimated_duration: '6–18 months (scope dependent)',
+    'Indivirtus offers turnkey consulting and implementation services for Greenfield and Brownfield pharmaceutical projects. Our CRO services include conceptual planning, design, execution, compliance, and technology transfer for Finished Dosage Forms (FDFs), Active Pharmaceutical Ingredients (APIs), and Intermediates. We ensure regulatory-ready facilities through a single-window approach—from layout to validation—meeting all global GMP requirements.',
+  estimated_duration: '6–18 months depending on scope and regulatory jurisdiction',
   deliverables: [
-    'Feasibility Study Report',
-    'Conceptual & Detailed Layouts',
-    'Regulatory Approval Assistance',
-    'Construction & Commissioning',
-    'HVAC & Cleanroom Validation',
-    'GMP Documentation Package',
+    'Concept-to-commissioning project plan',
+    'Facility layout and cleanroom design',
+    'Process flow diagrams (material, personnel, utility)',
+    'Equipment & utility qualification',
+    'Validation master plan (VMP)',
+    'Regulatory submission documentation (as needed)',
   ],
-  regulatory_basis: ['WHO GMP', 'EU GMP', 'US FDA', 'MHRA', 'CDSCO', 'PIC/S'],
+  regulatory_basis: ['WHO-GMP', 'EU-GMP', 'USFDA cGMP', 'PIC/S Guidelines', 'Schedule M (India)'],
   requires_data_from_client: true,
-  target_industry: ['Pharmaceutical', 'Biotech', 'API Manufacturing', 'CDMO'],
-  expertise_area: ['Pharma Engineering', 'GMP Compliance', 'Regulatory Affairs', 'Project Management'],
+  target_industry: ['Pharmaceuticals', 'APIs', 'Biotech', 'CDMO'],
+  expertise_area: ['Turnkey Projects', 'GMP Facility Design', 'Regulatory Engineering'],
   is_active: true,
-  pageLink: '/services/greenfield-brownfield',
+  pageLink: link, // page link through variable
   icon: '🏗️',
   image: {
-    path: greenfield,
-    alt: 'Pharmaceutical facility construction',
-    caption: 'End-to-end GMP facility development',
+    path: serviceImage,
+    alt: 'Pharmaceutical facility construction and design',
+    caption: 'Complete Greenfield and Brownfield execution for pharma plants',
   },
   gtm: {
-    eventCategory: 'Engineering Services',
-    eventAction: 'Project Inquiry',
-    eventLabel: 'Turnkey Pharma Facility Services',
-    customDimensions: {
-      cd1: 'Facility Development',
-      cd2: 'Engineering',
-      cd3: 'High Value',
-    },
+    eventCategory: 'CRO Services',
+    eventAction: 'Greenfield_Project_Click',
+    eventLabel: 'Turnkey Facility Setup',
+    customDimensions: {},
     dataLayerPush: {
-      projectScale: 'Large Capital',
-      facilityType: ['Greenfield', 'Brownfield'],
+      reportType: ['Greenfield', 'Brownfield'],
+      certification: 'Regulatory-Ready Turnkey Facility',
     },
   },
   schema: {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'Pharmaceutical Turnkey Facility Solutions',
-    description: 'End-to-end design, construction and validation of GMP-compliant pharmaceutical facilities',
-    serviceType: ['EngineeringService', 'ConstructionService'],
+    name: 'Turnkey Greenfield and Brownfield Projects',
+    description:
+      'Complete project execution for FDF, API, and Intermediate manufacturing units under global GMP regulations.',
+    serviceType: 'Turnkey Pharmaceutical Facility Projects',
     provider: {
       '@type': 'Organization',
       name: 'Indivirtus',
       url: 'https://www.indivirtus.com',
       logo: 'https://www.indivirtus.com/logo.png',
-      sameAs: ['https://www.linkedin.com/company/indivirtus', 'https://twitter.com/indivirtus'],
+      sameAs: [
+        'https://www.linkedin.com/company/indivirtus-group-of-companies',
+        'https://twitter.com/indivirtus',
+        'https://www.facebook.com/Indivirtus',
+        'https://www.instagram.com/indivirtus_healthcare',
+      ],
     },
     areaServed: {
       '@type': 'Country',
@@ -63,216 +66,161 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: '/services/greenfield-brownfield',
-      servicePhone: '+1-XXX-XXX-XXXX',
+      serviceUrl: link,
+      servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
-        streetAddress: '123 Engineering Drive',
-        addressLocality: 'City',
-        addressRegion: 'State',
-        postalCode: 'ZIP',
-        addressCountry: 'Country',
+        streetAddress: '522, Taj Plaza, TDI city, Sector 118',
+        addressLocality: 'Mohali',
+        addressRegion: 'Punjab',
+        postalCode: '160059',
+        addressCountry: 'India',
       },
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Pharma Facility Services',
+      name: 'Turnkey Facility Setup Services',
       itemListElement: [
         {
-          '@type': 'OfferCatalog',
-          name: 'Greenfield Projects',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'New Facility Development',
-                description: 'Complete turnkey solutions for new GMP facilities',
-                serviceOutput: ['Regulatory-ready facility', 'Validation package'],
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Greenfield Project Execution for Finished Dosage Forms',
+            description: 'From concept to commissioning of new FDF plants including layout, utilities, and validation.',
+          },
         },
         {
-          '@type': 'OfferCatalog',
-          name: 'Brownfield Projects',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Facility Upgrades',
-                description: 'Retrofitting and modernization of existing facilities',
-                serviceOutput: ['Upgraded GMP facility', 'Compliance documentation'],
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Greenfield Project Execution for APIs',
+            description: 'Complete setup of new API facilities with compliance to cGMP and ICH Q7 standards.',
+          },
         },
         {
-          '@type': 'OfferCatalog',
-          name: 'Specialized Services',
-          itemListElement: [
-            {
-              '@type': 'Offer',
-              itemOffered: {
-                '@type': 'Service',
-                name: 'Cleanroom Design & Build',
-                description: 'ISO-classified environment implementation',
-                serviceOutput: 'Validated cleanroom facility',
-              },
-            },
-          ],
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Greenfield Setup for Intermediates Manufacturing',
+            description:
+              'Design and establish facilities for intermediates with integrated safety and environmental controls.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Brownfield Expansion for FDF Manufacturing',
+            description:
+              'Upgrading and expanding existing FDF units for capacity enhancement and regulatory compliance.',
+          },
+        },
+        {
+          '@type': 'Offer',
+          itemOffered: {
+            '@type': 'Service',
+            name: 'Brownfield Upgrade for API Units',
+            description: 'Retrofitting legacy API plants to meet current GMP expectations and regulatory requirements.',
+          },
         },
       ],
     },
     offers: {
       '@type': 'Offer',
-      priceCurrency: 'USD',
-      price: 'Project-based',
-      url: '/services/greenfield-brownfield',
+      priceCurrency: ['INR', 'USD'],
+      price: 'Project-based pricing',
+      url: link,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
   },
+  faqSchema: {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the difference between Greenfield and Brownfield pharmaceutical projects?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Greenfield projects are entirely new facilities built from the ground up, while Brownfield projects involve upgrading or expanding existing facilities.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What services are included in a turnkey Greenfield FDF project?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We cover complete design, engineering, equipment selection, utility integration, validation, and regulatory compliance for finished dosage form manufacturing plants.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can you help retrofit our existing API facility for regulatory audits?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. Our Brownfield services include facility revamp, process requalification, documentation alignment, and CAPA support to meet global GMP expectations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does it take to complete a Greenfield project?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Typical timelines range from 12 to 18 months depending on the size and regulatory scope of the facility.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Do you offer end-to-end compliance support with turnkey execution?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes. We provide design, engineering, execution, and documentation aligned with WHO-GMP, EU-GMP, and other standards to ensure inspection readiness.',
+        },
+      },
+    ],
+  },
   meta: {
-    title: 'Pharmaceutical Facility Design & Construction | Turnkey Solutions',
+    title: 'Turnkey Greenfield & Brownfield Pharma Projects | Indivirtus CRO',
     description:
-      'End-to-end GMP facility development from concept through validation with regulatory compliance built-in.',
+      'Indivirtus provides complete turnkey project services for pharmaceutical manufacturing facilities – Greenfield and Brownfield – covering FDF, API, and intermediates.',
     keywords: [
-      'pharma facility design',
-      'GMP construction',
-      'turnkey pharma projects',
-      'cleanroom design',
-      'regulatory compliant facilities',
-      'pharma engineering',
-      'facility validation',
-      'greenfield pharma',
-      'brownfield upgrades',
-      'HVAC design pharma',
+      'greenfield pharma projects',
+      'brownfield pharma projects',
+      'turnkey API facility',
+      'turnkey dosage form setup',
+      'pharma facility construction',
+      'regulatory ready pharma plant',
+      'GMP compliant design',
+      'FDF plant turnkey',
+      'intermediate manufacturing',
+      'pharma engineering CRO',
     ],
     ogTags: {
       type: 'service',
-      image: greenfield,
-      url: '/services/greenfield-brownfield',
+      image: serviceImage.src,
+      url: link,
       site_name: 'Indivirtus',
     },
     twitterCard: {
       card: 'summary_large_image',
-      title: 'Pharma Facility Turnkey Solutions',
-      description: 'GMP-compliant facility design and construction services',
-      image: greenfield,
+      title: 'Greenfield & Brownfield Turnkey Pharma Projects | Indivirtus',
+      description:
+        'Turnkey execution of FDF, API, and Intermediate pharmaceutical facilities from concept to GMP readiness.',
+      image: serviceImage.src,
     },
-    canonicalUrl: 'https://www.indivirtus.com/services/greenfield-brownfield',
+    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    robotsMeta: {
+      index: true,
+      follow: true,
+      nocache: false,
+    },
   },
-  projectPhases: [
-    {
-      phase: 'Concept',
-      activities: ['Feasibility', 'Regulatory Strategy', 'Preliminary Design'],
-      duration: '1-3 months',
-    },
-    {
-      phase: 'Design',
-      activities: ['Detailed Engineering', 'GMP Layouts', 'Equipment Specification'],
-      duration: '3-6 months',
-    },
-    {
-      phase: 'Execution',
-      activities: ['Construction', 'Equipment Installation', 'Commissioning'],
-      duration: '6-12 months',
-    },
-    {
-      phase: 'Qualification',
-      activities: ['IQ/OQ/PQ', 'Process Validation', 'Regulatory Approval'],
-      duration: '3-6 months',
-    },
+  assessmentTypes: [
+    'Facility Engineering Assessment',
+    'Regulatory Compliance Mapping',
+    'Cleanroom Design Review',
+    'Utility Qualification',
+    'FDF/API Manufacturing Layout Audit',
   ],
 };
-
-// export default greenfieldBrownfield = {
-//   service_id: 'TFP-001',
-//   report_type: 'Project Implementation Report',
-//   title: 'Pharmaceutical Facility Design & Construction | Turnkey Solutions',
-//   name: 'Turnkey Project Services',
-//   description:
-//     'Complete project management for fresh or renovated pharmaceutical facilities, from design and concept development to GMP validation.',
-//   full_description:
-//     'For Greenfield construction or Brownfield renovations, Indivirtus manages the entire project lifecycle, including feasibility, design, approvals, procurement, construction, commissioning, and validation. At every stage, our team ensures regulatory readiness, on-time delivery, and GMP compliance.',
-//   estimated_duration: '6–18 months (scope dependent)',
-//   deliverables: [
-//     'Feasibility Study Report',
-//     'Conceptual & Detailed Layouts',
-//     'Regulatory Approval Assistance',
-//     'Construction & Commissioning',
-//     'HVAC & Cleanroom Validation',
-//     'GMP Documentation Package',
-//   ],
-//   regulatory_basis: ['WHO GMP', 'EU GMP', 'US FDA', 'MHRA', 'CDSCO', 'PIC/S'],
-//   requires_data_from_client: true,
-//   target_industry: ['Pharmaceutical', 'Biotech', 'API Manufacturing', 'CDMO'],
-//   expertise_area: ['Pharma Engineering', 'GMP Compliance', 'Regulatory Affairs', 'Project Management'],
-//   is_active: true,
-//   pageLink: '/services/greenfield-brownfield',
-//   icon: '🏗️',
-//   image: {
-//     path: greenfield,
-//     alt: 'Pharmaceutical facility construction',
-//     caption: 'GMP facility design and construction',
-//   },
-//   gtm: {
-//     eventCategory: 'Service',
-//     eventAction: 'Click',
-//     eventLabel: 'Turnkey Project Services',
-//   },
-//   schema: {
-//     '@context': 'https://schema.org',
-//     '@type': 'ProfessionalService',
-//     name: '',
-//     description: '',
-//     serviceType: '',
-//     provider: {
-//       '@type': 'Organization',
-//       name: 'Indivirtus',
-//     },
-//     areaServed: ['Global'],
-//     availableChannel: {
-//       '@type': 'ServiceChannel',
-//       serviceUrl: '/services/greenfield-brownfield',
-//     },
-//     hasOfferCatalog: {
-//       '@type': 'OfferCatalog',
-//       name: '',
-//       itemListElement: [
-//         {
-//           '@type': 'OfferCatalog',
-//           name: '',
-//           itemListElement: [
-//             {
-//               '@type': 'Offer',
-//               itemOffered: {
-//                 '@type': 'Service',
-//                 name: '',
-//               },
-//             },
-//           ],
-//         },
-//       ],
-//     },
-//   },
-//   meta: {
-//     title: 'Pharmaceutical Facility Design & Construction | Turnkey Solutions',
-//     description:
-//       'End-to-end GMP facility development from concept through validation with regulatory compliance built-in.',
-//     keywords: [
-//       'pharma facility design',
-//       'GMP construction',
-//       'turnkey pharma projects',
-//       'cleanroom design',
-//       'regulatory compliant facilities',
-//       'pharma engineering',
-//       'facility validation',
-//       'greenfield pharma',
-//       'brownfield upgrades',
-//       'HVAC design pharma',
-//     ],
-//   },
-// };
