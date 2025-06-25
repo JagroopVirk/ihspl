@@ -22,6 +22,7 @@ export const navItems = [
       { name: 'GMP, Schedule M Compliance & Trainings', href: '/services/gmp-compliance-trainings' },
       { name: 'GMP Audits', href: '/services/gmp-audits' },
       { name: 'Calibration Services (NABL Accredited Lab)', href: '/services/calibration' },
+      { name: 'Containment Validation', href: '/services/containment-validation' },
     ],
   },
   { name: 'Resources', href: '/resources' },
