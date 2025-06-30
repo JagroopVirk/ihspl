@@ -31,8 +31,3 @@ body {
 .section {
   @apply py-10 md:py-15 w-full;
 }
-
-/* footer */
-.addDetails {
-  @apply text-sm;
-}
