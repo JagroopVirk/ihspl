@@ -45,10 +45,10 @@ export const navItems = [
         name: 'Indivirtus Global CRO Pvt Ltd',
         href: 'http://www.indivirtuscro.com',
       },
-      {
-        name: 'Indivirtus Ecological Services Pvt Ltd',
-        href: 'http://www.indivirtuseco.com',
-      },
+      // {
+      //   name: 'Indivirtus Ecological Services Pvt Ltd',
+      //   href: 'http://www.indivirtuseco.com',
+      // },
       { name: 'Indivirtus AB7 Pvt Ltd', href: 'http://www.indivirtusab7.com' },
     ],
   },

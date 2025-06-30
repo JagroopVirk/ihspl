@@ -44,12 +44,12 @@ export default [
     textColor: 'text-blue-900',
     linkColor: 'text-blue-900 font-semibold underline',
   },
-  {
-    title: 'Indivirtus Ecological Services',
-    services: ['Environmental Risk Assessment', 'Ecotoxicology Studies', 'Biodiversity Compliance'],
-    link: 'https://www.indivirtuseco.com',
-    bgColor: 'bg-green-100',
-    textColor: 'text-blue-900',
-    linkColor: 'text-blue-900 font-semibold underline',
-  },
-]
+  // {
+  //   title: 'Indivirtus Ecological Services',
+  //   services: ['Environmental Risk Assessment', 'Ecotoxicology Studies', 'Biodiversity Compliance'],
+  //   link: 'https://www.indivirtuseco.com',
+  //   bgColor: 'bg-green-100',
+  //   textColor: 'text-blue-900',
+  //   linkColor: 'text-blue-900 font-semibold underline',
+  // },
+];
