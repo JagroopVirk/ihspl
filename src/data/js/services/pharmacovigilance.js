@@ -240,6 +240,54 @@ export default {
           text: 'We follow a structured signal management process—detection, validation, prioritization, assessment, and recommendation—based on quantitative and qualitative safety data.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What does your pharmacovigilance database setup include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our database setup includes implementation of validated safety databases like Argus Safety or Veeva Vault, workflow customization, MedDRA/WHO-DD coding, 21 CFR Part 11 compliance, and E2B R3 data exchange setup.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does your Medical Information Call Centre operate?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our 24/7 MICC provides multilingual support for medical inquiries, adverse event intake, and product complaint triage, handling interactions from healthcare professionals and patients globally.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is involved in ICSR case processing?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ICSR processing includes triage, data entry, MedDRA coding, narrative writing, seriousness/causality assessment, and submission to authorities like EMA, FDA, and DCGI using E2B R2/R3 formats.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you ensure compliance with global PV regulations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We adhere to GVP Modules, ICH E2E, FDA 21 CFR Part 11, EU Annex 11, and regional requirements, with compliance monitoring, audit preparation, and CAPA management.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from your pharmacovigilance services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies, biotech firms, generic and biosimilar manufacturers, and MAHs benefit by ensuring drug safety, regulatory compliance, and effective risk management.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the role of literature monitoring in pharmacovigilance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Literature monitoring involves global and local surveillance for ADRs and safety signals using databases like Embase and PubMed, ensuring compliance with GVP Module VI.',
+        },
+      },
     ],
   },
   meta: {

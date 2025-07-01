@@ -5,50 +5,50 @@ import BTN from '../components/BTN.astro';
 const mainEntity = [
   {
     '@type': 'Question',
-    name: 'What is the scope of your turnkey pharmaceutical project services?',
+    name: 'What does your pharmacovigilance database setup include?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Our turnkey services cover feasibility studies, facility design, equipment procurement, validation, regulatory compliance, construction, commissioning, and post-handover support for greenfield and brownfield pharmaceutical projects.',
+      text: 'Our database setup includes implementation of validated safety databases like Argus Safety or Veeva Vault, workflow customization, MedDRA/WHO-DD coding, 21 CFR Part 11 compliance, and E2B R3 data exchange setup.',
     },
   },
   {
     '@type': 'Question',
-    name: 'How do you ensure GMP compliance in facility design?',
+    name: 'How does your Medical Information Call Centre operate?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'We align facility designs with USFDA, EMA, WHO, PIC/S, and Revised Schedule M guidelines, incorporating GMP-compliant cleanroom zoning, HVAC systems, and validation protocols like DQ, IQ, OQ, and PQ.',
+      text: 'Our 24/7 MICC provides multilingual support for medical inquiries, adverse event intake, and product complaint triage, handling interactions from healthcare professionals and patients globally.',
     },
   },
   {
     '@type': 'Question',
-    name: 'What is the typical timeline for a greenfield pharmaceutical project?',
+    name: 'What is involved in ICSR case processing?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Timelines vary, but a greenfield project typically takes 12–24 months, depending on facility size, complexity, and regulatory requirements. Brownfield upgrades may take 6–12 months.',
+      text: 'ICSR processing includes triage, data entry, MedDRA coding, narrative writing, seriousness/causality assessment, and submission to authorities like EMA, FDA, and DCGI using E2B R2/R3 formats.',
     },
   },
   {
     '@type': 'Question',
-    name: 'How do you support brownfield facility upgrades?',
+    name: 'How do you ensure compliance with global PV regulations?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'We conduct gap assessments, retrofit designs for GMP compliance, enhance capacity, support tech transfers, and minimize downtime to ensure seamless upgrades.',
+      text: 'We adhere to GVP Modules, ICH E2E, FDA 21 CFR Part 11, EU Annex 11, and regional requirements, with compliance monitoring, audit preparation, and CAPA management.',
     },
   },
   {
     '@type': 'Question',
-    name: 'What industries benefit from your project services?',
+    name: 'Who benefits from your pharmacovigilance services?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Pharmaceutical manufacturers, biotech firms, API producers, and CROs benefit from our services, ensuring compliant facilities for finished dosage forms, APIs, and intermediates.',
+      text: 'Pharmaceutical companies, biotech firms, generic and biosimilar manufacturers, and MAHs benefit by ensuring drug safety, regulatory compliance, and effective risk management.',
     },
   },
   {
     '@type': 'Question',
-    name: 'How do you integrate Industry 4.0 into pharmaceutical projects?',
+    name: 'What is the role of literature monitoring in pharmacovigilance?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'We incorporate SCADA, BMS, IoT sensors, eBMR/eBPR systems, and 21 CFR Part 11-compliant solutions to enable real-time monitoring, automation, and data integrity.',
+      text: 'Literature monitoring involves global and local surveillance for ADRs and safety signals using databases like Embase and PubMed, ensuring compliance with GVP Module VI.',
     },
   },
 ];
@@ -56,276 +56,228 @@ const mainEntity = [
 
 <!-- Hero Section -->
 <section class="bg-primary-light border-primary border-b-4 py-10 text-center">
-  <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">Greenfield & Brownfield Pharmaceutical Projects</h1>
-  <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
-    Building and Upgrading Compliant Facilities for Pharma Excellence
-  </p>
+  <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">Pharmacovigilance Services</h1>
+  <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">Ensuring Drug Safety with Comprehensive PV Solutions</p>
 </section>
 
 <!-- Main Content Section -->
 <div class="mx-auto max-w-7xl px-6 py-12">
   <!-- Introductory Description -->
   <section class="mb-12">
-    <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Our Turnkey Project Services</h2>
+    <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Our Pharmacovigilance Services</h2>
     <p class="text-gray text-lg leading-relaxed">
-      Our Contract Research Organization (CRO) specializes in delivering turnkey greenfield and brownfield
-      pharmaceutical projects, covering finished dosage forms, active pharmaceutical ingredients (APIs), and
-      intermediates. From feasibility studies and facility design to regulatory compliance, validation, and
-      commissioning, we provide end-to-end solutions to ensure GMP-compliant, efficient, and future-proof facilities.
-      These services are critical for ensuring product quality, regulatory approvals, and operational excellence,
-      serving pharmaceutical manufacturers, biotech firms, API producers, and CROs aiming to establish or upgrade their
-      facilities.
+      Our Contract Research Organization (CRO) provides end-to-end pharmacovigilance (PV) services to ensure drug safety
+      and regulatory compliance across the product lifecycle. From database setup and adverse event reporting to risk
+      management and global submissions, we help pharmaceutical companies, biotech firms, and marketing authorization
+      holders (MAHs) monitor and manage drug safety effectively. Our services are critical for maintaining patient
+      safety, meeting stringent regulatory requirements, and supporting clinical and post-marketing phases for generics,
+      biosimilars, and innovative drugs.
     </p>
   </section>
 
   <!-- Service Cards -->
   <section class="mb-12">
-    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Project Expertise</h2>
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our PV Expertise</h2>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <!-- Project Feasibility & Planning -->
+      <!-- Pharmacovigilance Database Setup -->
       <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">📊</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Feasibility & Planning</h3>
+        <div class="text-primary mb-4 text-4xl">💾</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">PV Database Setup</h3>
         <ul class="text-gray mb-4 list-inside list-disc">
-          <li>Technical & financial viability</li>
-          <li>Site selection & evaluation</li>
-          <li>Business case & ROI planning</li>
-          <li>Regulatory landscape mapping</li>
-        </ul>
-        <BTN btnLink="/services/feasibility-planning" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Project Conceptualization & Design -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">🖼️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Conceptualization & Design</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>Facility layout optimization</li>
-          <li>Modular & prefab design</li>
-          <li>3D modeling & BIM integration</li>
-          <li>Cleanroom zoning</li>
-        </ul>
-        <BTN btnLink="/services/conceptual-design" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Civil, Structural & Architectural Design -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">🏛️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Civil & Architectural Design</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>Detailed engineering drawings</li>
-          <li>Cleanroom ISO classification</li>
-          <li>Seismic & fire safety compliance</li>
-          <li>Construction management</li>
-        </ul>
-        <BTN btnLink="/services/civil-design" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Process & Utility Engineering -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">⚙️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Process & Utility Engineering</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>HVAC & water system design</li>
-          <li>PFD & P&ID preparation</li>
-          <li>Automation & SCADA integration</li>
-          <li>Effluent treatment systems</li>
-        </ul>
-        <BTN btnLink="/services/utility-engineering" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Equipment Procurement & Installation -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">🛠️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Equipment Procurement</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>Vendor selection & audits</li>
-          <li>FAT/SAT coordination</li>
-          <li>Global & local sourcing</li>
-          <li>Installation & hook-up</li>
-        </ul>
-        <BTN btnLink="/services/equipment-procurement" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Regulatory & GMP Compliance -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">📜</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">GMP Compliance Consulting</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>USFDA, EMA, WHO compliance</li>
-          <li>URS, DQ, IQ, OQ, PQ</li>
-          <li>Schedule M implementation</li>
-          <li>Mock inspections</li>
-        </ul>
-        <BTN btnLink="/services/gmp-compliance" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Validation & Qualification Services -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">✅</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Validation & Qualification</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>Validation Master Plan</li>
-          <li>HVAC & cleanroom validation</li>
-          <li>Process & cleaning validation</li>
-          <li>Computer system validation</li>
-        </ul>
-        <BTN btnLink="/services/validation-services" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Construction, Commissioning & Handover -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">🏗️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Construction & Commissioning</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>Project management</li>
-          <li>Site supervision</li>
-          <li>Utility commissioning</li>
-          <li>As-built documentation</li>
-        </ul>
-        <BTN btnLink="/services/construction-commissioning" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Warehouse & Material Management -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">📦</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Warehouse Design</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>GMP-compliant layout</li>
-          <li>Cold & hazardous storage</li>
-          <li>Material traceability</li>
-          <li>Personnel flow design</li>
-        </ul>
-        <BTN btnLink="/services/warehouse-design" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- EHS Services -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">🛡️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">EHS Services</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>HAZOP & HIRA studies</li>
-          <li>Fire safety & emergency plans</li>
-          <li>Waste management</li>
-          <li>Occupational health programs</li>
-        </ul>
-        <BTN btnLink="/services/ehs-services" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Quality & Documentation Systems -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">📋</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">QMS Setup</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>ICH Q10 QMS development</li>
-          <li>SOPs & BMR/BPR</li>
-          <li>Electronic document systems</li>
-          <li>Training management</li>
-        </ul>
-        <BTN btnLink="/services/qms-setup" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Brownfield Services -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">🔄</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Brownfield Upgrades</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>GMP gap assessments</li>
-          <li>Retrofitting & expansion</li>
-          <li>Tech transfer support</li>
-          <li>Downtime minimization</li>
-        </ul>
-        <BTN btnLink="/services/brownfield-upgrades" btnClass="buttonSimple" btnText="Read more…" />
-      </div>
-
-      <!-- Digital Pharma & Industry 4.0 -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">💻</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Digital Pharma Integration</h3>
-        <ul class="text-gray mb-4 list-inside list-disc">
-          <li>SCADA & IoT integration</li>
-          <li>eBMR/eBPR systems</li>
-          <li>Track & trace solutions</li>
+          <li>Argus, Veeva Vault implementation</li>
+          <li>MedDRA/WHO-DD coding</li>
+          <li>E2B R3 data exchange</li>
           <li>21 CFR Part 11 compliance</li>
         </ul>
-        <BTN btnLink="/services/digital-pharma" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/pv-database" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- Turnkey Project Management -->
+      <!-- Medical Information Call Centre -->
       <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">📅</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Turnkey Project Management</h3>
+        <div class="text-primary mb-4 text-4xl">📞</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Medical Information Call Centre</h3>
         <ul class="text-gray mb-4 list-inside list-disc">
-          <li>EPCM services</li>
-          <li>Time-cost-quality management</li>
-          <li>Risk mitigation planning</li>
-          <li>Project dashboards</li>
+          <li>24/7 medical inquiry support</li>
+          <li>Multilingual adverse event intake</li>
+          <li>HCP & patient interaction</li>
+          <li>Product complaint triage</li>
         </ul>
-        <BTN btnLink="/services/project-management" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/micc" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- Post-Handover Support -->
+      <!-- PSMF and SOPs Preparation -->
       <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">🤝</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Post-Handover Support</h3>
+        <div class="text-primary mb-4 text-4xl">📜</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">PSMF & SOPs Preparation</h3>
         <ul class="text-gray mb-4 list-inside list-disc">
-          <li>SOP training & handholding</li>
-          <li>Regulatory inspection support</li>
-          <li>Maintenance planning</li>
-          <li>APR/PQR setup</li>
+          <li>EMA/MHRA-compliant PSMF</li>
+          <li>SOPs for PV activities</li>
+          <li>Annexes & version control</li>
+          <li>Quality system documentation</li>
         </ul>
-        <BTN btnLink="/services/post-handover" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/psmf-sops" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- ICSR Case Processing -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">📋</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">ICSR Case Processing</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Triage & MedDRA coding</li>
+          <li>E2B R2/R3 submissions</li>
+          <li>Seriousness assessment</li>
+          <li>Follow-up & reconciliation</li>
+        </ul>
+        <BTN btnLink="/services/icsr-processing" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Literature Monitoring -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🔍</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Literature Monitoring</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>GVP Module VI compliance</li>
+          <li>Embase/PubMed searches</li>
+          <li>ADR & signal screening</li>
+          <li>Regulatory submissions</li>
+        </ul>
+        <BTN btnLink="/services/literature-monitoring" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Aggregate Report Preparation -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">📊</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Aggregate Reports</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>PSUR, PBRER, PADER</li>
+          <li>DSUR & ASRs</li>
+          <li>ICH E2C(R2) compliance</li>
+          <li>Quality review & submission</li>
+        </ul>
+        <BTN btnLink="/services/aggregate-reports" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Risk Management Plan -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">⚠️</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Risk Management Plan</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>EU-RMP & REMS preparation</li>
+          <li>Safety specification</li>
+          <li>Risk minimization measures</li>
+          <li>RMP lifecycle management</li>
+        </ul>
+        <BTN btnLink="/services/risk-management" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Signal Management -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🚨</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Signal Management</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Disproportionality analysis</li>
+          <li>Signal validation & assessment</li>
+          <li>Empirica/VigiLyze tools</li>
+          <li>Regulatory communication</li>
+        </ul>
+        <BTN btnLink="/services/signal-management" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Compliance & Audit Support -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">✅</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Compliance & Audit Support</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>PV compliance monitoring</li>
+          <li>Audit/inspection preparation</li>
+          <li>CAPA management</li>
+          <li>GVP & ICH E2E training</li>
+        </ul>
+        <BTN btnLink="/services/compliance-audit" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Global Regulatory Submissions -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🌍</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Global Submissions</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>E2B-compliant submissions</li>
+          <li>EMA, FDA, PMDA filings</li>
+          <li>PvPI & WHO submissions</li>
+          <li>PV gateway configuration</li>
+        </ul>
+        <BTN btnLink="/services/global-submissions" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Medical Review & Benefit-Risk -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🩺</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Medical Review</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>ICSR & safety report review</li>
+          <li>Benefit-risk assessments</li>
+          <li>Signal trend analysis</li>
+          <li>Medical narrative writing</li>
+        </ul>
+        <BTN btnLink="/services/medical-review" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Training & PV System Setup -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🎓</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">PV Training & Setup</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>GVP & ICH E2E training</li>
+          <li>PV system setup for MAHs</li>
+          <li>Train-the-trainer workshops</li>
+          <li>Custom PV process design</li>
+        </ul>
+        <BTN btnLink="/services/pv-training" btnClass="buttonSimple" btnText="Read more…" />
       </div>
     </div>
   </section>
 
   <!-- Process Section -->
   <section class="mb-12">
-    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Project Delivery Process</h2>
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our PV Service Process</h2>
     <div class="space-y-6">
       <div class="flex items-start">
         <div class="text-primary mr-4 text-2xl font-bold">1</div>
         <div>
-          <h3 class="text-primaryBlue text-xl font-semibold">Feasibility & Planning</h3>
-          <p class="text-gray">
-            We assess project viability, select sites, and map regulatory requirements to create a robust business case.
-          </p>
+          <h3 class="text-primaryBlue text-xl font-semibold">System Setup & Planning</h3>
+          <p class="text-gray">We implement PV databases, PSMF, and SOPs tailored to your regulatory needs.</p>
         </div>
       </div>
       <div class="flex items-start">
         <div class="text-primary mr-4 text-2xl font-bold">2</div>
         <div>
-          <h3 class="text-primaryBlue text-xl font-semibold">Design & Engineering</h3>
+          <h3 class="text-primaryBlue text-xl font-semibold">Data Collection & Monitoring</h3>
           <p class="text-gray">
-            We develop GMP-compliant facility designs, including cleanrooms, utilities, and automation systems.
+            We handle ICSR processing, literature monitoring, and MICC operations for adverse event data.
           </p>
         </div>
       </div>
       <div class="flex items-start">
         <div class="text-primary mr-4 text-2xl font-bold">3</div>
         <div>
-          <h3 class="text-primaryBlue text-xl font-semibold">Procurement & Construction</h3>
+          <h3 class="text-primaryBlue text-xl font-semibold">Analysis & Reporting</h3>
           <p class="text-gray">
-            We manage equipment sourcing, vendor audits, construction, and quality control to meet project timelines.
+            We perform signal detection, prepare aggregate reports, and conduct benefit-risk evaluations.
           </p>
         </div>
       </div>
       <div class="flex items-start">
         <div class="text-primary mr-4 text-2xl font-bold">4</div>
         <div>
-          <h3 class="text-primaryBlue text-xl font-semibold">Validation & Commissioning</h3>
-          <p class="text-gray">
-            We perform validations (DQ/IQ/OQ/PQ) and commission utilities, ensuring regulatory compliance.
-          </p>
+          <h3 class="text-primaryBlue text-xl font-semibold">Regulatory Submissions</h3>
+          <p class="text-gray">We submit ICSRs, PSURs, and RMPs to global authorities like EMA, FDA, and PMDA.</p>
         </div>
       </div>
       <div class="flex items-start">
         <div class="text-primary mr-4 text-2xl font-bold">5</div>
         <div>
-          <h3 class="text-primaryBlue text-xl font-semibold">Handover & Support</h3>
-          <p class="text-gray">
-            We deliver as-built documentation, train personnel, and provide ongoing regulatory and maintenance support.
-          </p>
+          <h3 class="text-primaryBlue text-xl font-semibold">Compliance & Audit Support</h3>
+          <p class="text-gray">We ensure audit readiness, provide CAPA management, and offer ongoing PV training.</p>
         </div>
       </div>
     </div>
@@ -341,18 +293,18 @@ const mainEntity = [
           <li>FDA (U.S. Food and Drug Administration)</li>
           <li>EMA (European Medicines Agency)</li>
           <li>ICH (International Council for Harmonisation)</li>
-          <li>CDSCO (Central Drugs Standard Control Organization)</li>
-          <li>WHO, PIC/S, TGA, Health Canada, ANVISA</li>
+          <li>DCGI (Drugs Controller General of India)</li>
+          <li>PMDA, Health Canada, TGA, WHO-UMC</li>
         </ul>
       </div>
       <div>
         <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Guidelines & Certifications</h3>
         <ul class="text-gray list-inside list-disc">
-          <li>USFDA, EU GMP, WHO TRS, PIC/S</li>
-          <li>Revised Schedule M</li>
-          <li>ICH Q7/Q9/Q10</li>
-          <li>ISO 14644 (Cleanrooms)</li>
-          <li>21 CFR Part 11</li>
+          <li>GVP Modules (EMA)</li>
+          <li>ICH E2A/E2B/E2C/E2E</li>
+          <li>21 CFR Part 11, EU Annex 11</li>
+          <li>WHO TRS Annex 2–5</li>
+          <li>PvPI (India)</li>
         </ul>
       </div>
       <div>
@@ -360,9 +312,9 @@ const mainEntity = [
         <ul class="text-gray list-inside list-disc">
           <li>Pharmaceutical Manufacturing</li>
           <li>Biotechnology</li>
-          <li>API & Intermediates Production</li>
-          <li>Contract Research Organizations</li>
-          <li>Contract Manufacturing</li>
+          <li>Generics & Biosimilars</li>
+          <li>Marketing Authorization Holders</li>
+          <li>Clinical Research</li>
         </ul>
       </div>
     </div>
@@ -374,37 +326,36 @@ const mainEntity = [
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
       <div class="rounded-lg bg-white p-6 shadow-lg">
         <p class="text-gray italic">
-          "Their turnkey project management delivered our greenfield API facility on time and within GMP standards,
-          ready for USFDA inspection."
+          "Their PV database setup and ICSR processing streamlined our compliance with EMA and FDA requirements."
         </p>
-        <p class="text-primaryBlue mt-2 font-semibold">– Pharma Manufacturer, India</p>
+        <p class="text-primaryBlue mt-2 font-semibold">– Biotech Firm, Germany</p>
       </div>
       <div class="rounded-lg bg-white p-6 shadow-lg">
         <p class="text-gray italic">
-          "The brownfield upgrade minimized downtime and ensured compliance, allowing us to expand production
-          seamlessly."
+          "The signal management and RMP services ensured we addressed safety concerns proactively, passing our MHRA
+          audit."
         </p>
-        <p class="text-primaryBlue mt-2 font-semibold">– Biotech Firm, USA</p>
+        <p class="text-primaryBlue mt-2 font-semibold">– Pharma Manufacturer, UK</p>
       </div>
     </div>
   </section>
 
   <!-- Conclusion -->
   <section class="mb-12">
-    <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Why Choose Our CRO?</h2>
+    <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Why Choose Our PV Services?</h2>
     <p class="text-gray text-lg leading-relaxed">
-      Our CRO delivers end-to-end greenfield and brownfield pharmaceutical projects with precision, ensuring GMP
-      compliance, operational efficiency, and regulatory success. With expertise in facility design, validation, and
-      Industry 4.0 integration, we build future-proof facilities tailored to your needs. Partner with us to transform
-      your vision into a compliant, high-performing pharmaceutical operation.
+      Our CRO delivers comprehensive pharmacovigilance services to ensure drug safety and regulatory compliance. With
+      expertise in ICSR processing, signal management, and global submissions, we help you meet stringent requirements
+      from FDA, EMA, and other authorities. Partner with us to safeguard patients, streamline PV operations, and achieve
+      regulatory success with confidence.
     </p>
   </section>
 </div>
 
 <!-- Call to Action -->
 <div class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
-  <h3 class="mb-4 text-xl font-semibold">Ready to Build or Upgrade Your Pharma Facility?</h3>
-  <p class="text-gray mb-4">Let us deliver turnkey solutions for your greenfield or brownfield project.</p>
+  <h3 class="mb-4 text-xl font-semibold">Ready to Strengthen Your Drug Safety Program?</h3>
+  <p class="text-gray mb-4">Partner with us for expert pharmacovigilance solutions tailored to your needs.</p>
   <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
 </div>
 
