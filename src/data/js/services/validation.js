@@ -199,6 +199,54 @@ export default {
           text: 'Validation timelines depend on system complexity and client readiness, but most projects complete in 2–8 weeks per system.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is involved in laboratory systems validation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our laboratory systems validation includes DQ, IQ, OQ, PQ for instruments like HPLC, GC, and FTIR, along with analytical method validation, 21 CFR Part 11 compliance, and software validation for data acquisition systems.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you validate HVAC systems for cleanrooms?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We perform HVAC validation with DQ/IQ/OQ/PQ protocols, including airflow visualization, DOP/PAO testing, air velocity, particle counts, and compliance with ISO 14644-1/2 for cleanroom classifications.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does temperature mapping entail?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Temperature mapping involves protocol development, pre/post-calibrated data loggers, and validation for autoclaves, tunnels, cold rooms, warehouses, and vehicles, ensuring data integrity and regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you ensure compliance for enterprise applications like LIMS or ERP?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We execute CSV lifecycles (URS, FS/DS, IQ/OQ/PQ) for systems like LabWare, SAP, and Veeva, ensuring 21 CFR Part 11 compliance, risk assessments, and data integrity audits.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What industries benefit from your validation services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers, biotech firms, CROs, and medical device companies benefit by ensuring compliant systems for quality, safety, and regulatory inspections.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the role of GAMP 5 in your validation process?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GAMP 5 provides a risk-based approach for validating automated systems like PLC, SCADA, and LIMS, ensuring compliance with regulatory standards and efficient validation processes.',
+        },
+      },
     ],
   },
   meta: {
