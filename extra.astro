@@ -1,0 +1,261 @@
+---
+import Faq from '../components/Faq.astro';
+import BTN from '../components/BTN.astro';
+
+const mainEntity = [
+  {
+    '@type': 'Question',
+    name: 'What is the purpose of ADE/PDE calculations in pharmaceutical manufacturing?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'ADE (Acceptable Daily Exposure) and PDE (Permitted Daily Exposure) calculations determine safe exposure limits for pharmaceutical compounds to prevent cross-contamination and ensure patient safety during manufacturing. These calculations are critical for cleaning validation and regulatory compliance with guidelines like EMA and ICH Q3D.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'How does OEL determination benefit workplace safety?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Occupational Exposure Limit (OEL) determination establishes safe exposure levels for workers handling APIs, intermediates, or excipients. It minimizes health risks from inhalation, dermal, or oral exposure, ensuring compliance with OSHA and REACH standards.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'What are the key components of a GHS-compliant SDS?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'A GHS-compliant Safety Data Sheet (SDS) includes 16 sections covering identification, hazard identification, composition, first-aid, fire-fighting, handling, storage, exposure controls, physical/chemical properties, stability, toxicology, ecological information, disposal, transport, regulatory information, and other details.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'How long does it take to complete a toxicological risk assessment?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'The duration of a toxicological risk assessment, such as ADE/PDE/OEL calculations, typically ranges from 2 to 4 weeks, depending on the compound complexity and scope of the project.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'Which industries benefit from CRO toxicological services?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Pharmaceutical manufacturers, biotechnology companies, API production units, CDMOs, CROs, and healthcare manufacturing facilities benefit from toxicological services for regulatory compliance, safety, and risk management.',
+    },
+  },
+];
+---
+
+<!-- Hero Section -->
+<section class="bg-primary-light py-10 text-center">
+  <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">Pharmaceutical CRO Services</h1>
+  <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
+    Comprehensive Toxicological and Safety Documentation for Regulatory Compliance and Innovation
+  </p>
+</section>
+
+<!-- Main Content Section -->
+<div class="mx-auto max-w-7xl px-6 py-12">
+  <!-- Introductory Description -->
+  <section class="mb-12">
+    <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Our CRO Services</h2>
+    <p class="text-gray text-lg leading-relaxed">
+      Our Contract Research Organization (CRO) specializes in providing end-to-end toxicological and safety
+      documentation services tailored for the pharmaceutical industry. These services include health-based exposure
+      limit calculations (ADE/PDE/OEL), occupational exposure banding (OEB), safety assessment reports (SAR), and
+      GHS-compliant Safety Data Sheets (SDS). These offerings are critical for ensuring regulatory compliance,
+      mitigating risks of cross-contamination, and safeguarding personnel and environmental safety. Our services cater
+      to pharmaceutical manufacturers, biotech firms, CDMOs, and regulatory affairs teams, enabling them to meet
+      stringent global standards, accelerate drug development, and maintain Good Manufacturing Practices (GMP).
+    </p>
+  </section>
+
+  <!-- Service Cards -->
+  <section class="mb-12">
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Specialized Services</h2>
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- ADE/PDE/OEL/OEB Calculations -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🧪</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">ADE/PDE/OEL/OEB Calculations</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Health-Based Exposure Limit (HBEL) calculations</li>
+          <li>Occupational Exposure Limit (OEL) determination</li>
+          <li>Occupational Exposure Banding (OEB 1–5/6)</li>
+          <li>Risk assessment and control strategies</li>
+          <li>Regulatory submission support</li>
+        </ul>
+        <BTN btnLink="/services/ade-pde-oel" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Safety Assessment Reports -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">📊</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Safety Assessment Reports (SAR)</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Comprehensive SAR for finished formulations</li>
+          <li>Compliance with EMA, ICH, and WHO guidelines</li>
+          <li>Cross-contamination risk assessment</li>
+          <li>Inhalation toxicology modeling</li>
+          <li>Support for GMP audits</li>
+        </ul>
+        <BTN btnLink="/services/sar" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- MSDS/SDS Preparation -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">📝</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">MSDS/SDS Preparation</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>GHS-compliant SDS authoring</li>
+          <li>Multi-region compliance (EU, US, India, etc.)</li>
+          <li>Hazard classification and H/P-code assignments</li>
+          <li>Transport and dangerous goods classification</li>
+          <li>Digital SDS management and distribution</li>
+        </ul>
+        <BTN btnLink="/services/sds" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="mb-12">
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Service Delivery Process</h2>
+    <div class="space-y-6">
+      <div class="flex items-start">
+        <div class="text-primary mr-4 text-2xl font-bold">1</div>
+        <div>
+          <h3 class="text-primaryBlue text-xl font-semibold">Onboarding & Scope Definition</h3>
+          <p class="text-gray">
+            We collaborate with clients to define project scope, collect necessary data, and establish timelines for
+            deliverables.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="text-primary mr-4 text-2xl font-bold">2</div>
+        <div>
+          <h3 class="text-primaryBlue text-xl font-semibold">Data Collection & Analysis</h3>
+          <p class="text-gray">
+            Our experts gather toxicological, pharmacological, and physicochemical data from public and client sources
+            for accurate assessments.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="text-primary mr-4 text-2xl font-bold">3</div>
+        <div>
+          <h3 class="text-primaryBlue text-xl font-semibold">Trials & Assessments</h3>
+          <p class="text-gray">
+            We conduct risk assessments, calculate exposure limits, and develop containment strategies tailored to
+            client needs.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="text-primary mr-4 text-2xl font-bold">4</div>
+        <div>
+          <h3 class="text-primaryBlue text-xl font-semibold">Regulatory Filing</h3>
+          <p class="text-gray">
+            We prepare and submit comprehensive reports to regulatory bodies, ensuring compliance with global standards.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="text-primary mr-4 text-2xl font-bold">5</div>
+        <div>
+          <h3 class="text-primaryBlue text-xl font-semibold">Final Reporting & Support</h3>
+          <p class="text-gray">
+            Clients receive detailed reports, SDS documents, and ongoing support for audits and regulatory queries.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compliance & Guidelines -->
+  <section class="bg-secondary-light2 mb-12 rounded-lg p-6">
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Compliance & Certifications</h2>
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Regulatory Bodies</h3>
+        <ul class="text-gray list-inside list-disc">
+          <li>FDA (U.S. Food and Drug Administration)</li>
+          <li>EMA (European Medicines Agency)</li>
+          <li>ICH (International Council for Harmonisation)</li>
+          <li>CDSCO (Central Drugs Standard Control Organization)</li>
+          <li>WHO (World Health Organization)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Guidelines & Certifications</h3>
+        <ul class="text-gray list-inside list-disc">
+          <li>EMA Guidelines on PDE/ADE</li>
+          <li>ICH Q3D (Elemental Impurities)</li>
+          <li>REACH & GHS Compliance</li>
+          <li>OSHA Hazard Communication Standards</li>
+          <li>ISO 9001:2015 Certified</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Applications & Industries</h3>
+        <ul class="text-gray list-inside list-disc">
+          <li>Pharmaceutical Manufacturing</li>
+          <li>Biotechnology</li>
+          <li>API & CDMO Operations</li>
+          <li>Healthcare Manufacturing</li>
+          <li>Regulatory Affairs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conclusion -->
+  <section class="mb-12">
+    <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Why Choose Us?</h2>
+    <p class="text-gray text-lg leading-relaxed">
+      Our CRO delivers unparalleled expertise in toxicological risk assessment and safety documentation, ensuring
+      compliance with global regulatory standards. With a commitment to precision, innovation, and client satisfaction,
+      we empower pharmaceutical manufacturers, biotech firms, and CDMOs to achieve safe, efficient, and compliant
+      operations. Choose us for reliable, high-quality services that accelerate your drug development and safeguard your
+      processes.
+    </p>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="bg-primary rounded-lg py-10 text-center text-white">
+    <h2 class="mb-4 text-3xl font-semibold">Ready to Ensure Compliance and Safety?</h2>
+    <p class="mb-6 text-xl">Partner with us to streamline your toxicological and regulatory needs.</p>
+    <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="mt-12">
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Frequently Asked Questions</h2>
+    <Faq faqs={mainEntity} />
+  </section>
+</div>
+
+<style>
+  :root {
+    --color-primary: rgb(1, 166, 158);
+    --color-primary-light: rgb(240, 253, 250);
+    --color-secondary: rgb(245, 105, 12);
+    --color-secondary-light2: rgb(255, 234, 220);
+    --color-secondary-light: rgb(255, 159, 95);
+    --color-primaryBlue: rgb(0, 0, 255);
+    --color-primaryBlueLight: rgb(77, 77, 255);
+    --color-secondaryOrange: rgb(255, 187, 69);
+    --color-black: rgb(27, 27, 27);
+    --color-white: rgb(255, 255, 255);
+    --color-gray: rgb(85, 85, 85);
+  }
+
+  .buttonSimple {
+    @apply inline-block px-4 py-2 bg-primary text-white rounded-lg hover:bg-primaryBlue transition-colors duration-300;
+  }
+
+  .button {
+    @apply inline-block px-6 py-3 bg-secondary text-white font-semibold rounded-lg hover:bg-secondaryOrange transition-colors duration-300;
+  }
+</style>

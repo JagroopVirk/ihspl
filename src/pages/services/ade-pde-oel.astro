@@ -5,6 +5,68 @@ import '../../styles/global.css';
 
 // Importing SEO data
 import seoData from '@/data/js/services/adepde.js';
+
+import BTN from '@/components/other/BTN.astro';
+import Faq from '@/components/other/Faq.astro';
+
+const mainEntity = [
+  {
+    '@type': 'Question',
+    name: 'What is the purpose of ADE/PDE calculations in pharmaceutical manufacturing?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'ADE (Acceptable Daily Exposure) and PDE (Permitted Daily Exposure) calculations determine safe exposure limits for pharmaceutical compounds to prevent cross-contamination and ensure patient safety during manufacturing. These calculations are critical for cleaning validation and compliance with regulatory guidelines like EMA and ICH Q3D.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'How are Occupational Exposure Limits (OELs) determined?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'OELs are calculated based on toxicological, pharmacological, and clinical data for APIs, intermediates, and excipients. The process involves assessing NOAEL/LOAEL thresholds, route-specific exposures (inhalation, dermal, oral), and ensuring compliance with regulations like REACH and OSHA.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'What is Occupational Exposure Banding (OEB), and why is it used?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'OEB categorizes compounds into exposure bands (OEB 1–5/6) based on their toxicity and potency. It is used to assess risks for compounds with limited toxicological data and to select appropriate containment strategies, ensuring worker safety in pharmaceutical facilities.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'What are the key components of a Safety Data Sheet (SDS)?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'An SDS includes 16 sections covering identification, hazard identification, composition, first-aid measures, fire-fighting measures, accidental release measures, handling and storage, exposure controls, physical and chemical properties, stability and reactivity, toxicological and ecological information, disposal, transport, regulatory information, and other details.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'How does Indivirtus ensure multi-region SDS compliance?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Indivirtus prepares region-specific SDSs compliant with regulations like EU REACH/CLP, US OSHA, Canada WHMIS, and India’s Hazardous Chemical Rules. They also provide multi-lingual SDS preparation and translation to meet global regulatory requirements.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'Why is cleaning validation important in pharmaceutical manufacturing?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Cleaning validation ensures that equipment used in pharmaceutical manufacturing is free from residues that could cause cross-contamination, ensuring product safety and compliance with GMP and regulatory standards.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'What data is required for toxicological risk assessments?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Toxicological risk assessments require physical, chemical, toxicological, and ecotoxicological data, often sourced from public databases like PubChem, ECHA, and TOXNET, as well as supplier or manufacturer data for cross-verification.',
+    },
+  },
+];
 ---
 
 <Layout
@@ -18,235 +80,303 @@ import seoData from '@/data/js/services/adepde.js';
     schema: seoData.schema,
   }}
 >
-  <article class="maxwidth px-6 py-12">
-    <header class="mb-12">
-      <h1 class="mb-4 text-4xl font-bold text-blue-900">
-        Understanding ADE, PDE, OEL, and OEB Assessments for API Safety and Compliance
-      </h1>
-      <div class="mb-6 w-24 border-b-2 border-blue-200"></div>
-    </header>
-
-    <section class="mb-12">
-      <h2 class="mb-4 text-2xl font-semibold text-blue-800">Introduction</h2>
-      <div class="prose max-w-none">
-        <p>
-          In pharmaceutical manufacturing, ensuring the safety of workers and patients is paramount. To establish safe
-          exposure limits for Active Pharmaceutical Ingredients (APIs) in workplace settings, expert toxicology
-          assessments are required.
-        </p>
-        <p>
-          These assessments—<strong>Acceptable Daily Exposure (ADE)</strong>, <strong
-            >Permitted Daily Exposure (PDE)</strong
-          >, <strong>Occupational Exposure Limit (OEL)</strong>, and <strong>Occupational Exposure Band (OEB)</strong
-          >—are critical for regulatory compliance, cleaning validation, facility design, and Good Manufacturing
-          Practice (GMP) adherence.
-        </p>
-      </div>
+  <main>
+    <!-- Heading Section -->
+    <section class="bg-primary-light py-10 text-center">
+      <h1 class="text-primary text-4xl font-bold">Toxicological Safety & Regulatory Documentation</h1>
+      <p class="text-gray mt-2 text-lg">Comprehensive support for pharmaceutical safety and compliance</p>
     </section>
 
-    <section class="mb-12 rounded-lg bg-blue-50 p-6">
-      <h2 class="mb-4 text-2xl font-semibold text-blue-800">Why Are ADE, PDE, OEL, and OEB Assessments Necessary?</h2>
-      <div class="prose max-w-none">
-        <p>
-          Pharmaceutical facilities must ensure that workers are not exposed to harmful levels of APIs, while also
-          guaranteeing that cross-contamination does not compromise drug safety.
+    <!-- Main Content Section -->
+    <section class="maxwidth border-primary border-t-4 bg-white px-6 py-12">
+      <!-- Description -->
+      <div class="mb-12">
+        <h2 class="text-primaryBlue mb-4 text-2xl font-semibold">Why Toxicological Safety Services Are Essential</h2>
+        <p class="text-gray leading-relaxed">
+          Indivirtus provides specialized toxicological and safety documentation services to support pharmaceutical
+          manufacturing and cleaning validation. These services are critical for ensuring regulatory compliance,
+          mitigating risks of cross-contamination, protecting personnel from exposure to hazardous substances, and
+          minimizing environmental hazards. By offering end-to-end solutions, including ADE/PDE/OEL & OEB calculations,
+          Safety Assessment Reports (SAR) for finished formulations, and expertly prepared MSDS/SDS documents,
+          Indivirtus helps pharmaceutical manufacturers and CROs meet stringent global standards. These services are
+          vital for GMP-compliant operations, facility design, and regulatory audits, ensuring product safety and
+          workplace health.
         </p>
+      </div>
 
-        <h3 class="mt-6 text-xl font-medium text-blue-700">Key reasons for these assessments include:</h3>
-        <ul class="list-disc space-y-2 pl-6">
-          <li><strong>Worker Safety:</strong> Protecting employees from hazardous API exposure.</li>
-          <li><strong>Cleaning Validation:</strong> Ensuring equipment is free from harmful residues.</li>
-          <li><strong>Facility Design:</strong> Designing containment strategies to minimize exposure.</li>
-          <li><strong>Regulatory Compliance:</strong> Meeting EMA, ICH Q3D, and ISPE standards.</li>
+      <!-- Services Cards for ADE/PDE/OEL/OEB Calculations -->
+      <div class="mb-12">
+        <h3 class="text-primaryBlue mb-6 text-xl font-semibold">ADE / PDE / OEL / OEB Calculation Services</h3>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- HBEL Calculations -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">🧪</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Health-Based Exposure Limit (HBEL) Calculations</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>ADE (Acceptable Daily Exposure) determination</li>
+              <li>PDE (Permitted Daily Exposure) as per EMA/ICH Q3D</li>
+              <li>NOAEL/LOAEL-based toxicological thresholds</li>
+              <li>Thresholds for genotoxic or sensitizing compounds</li>
+            </ul>
+            <BTN btnLink="/services/hbel-calculations" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- OEL Determination -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">🛡️</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Occupational Exposure Limit (OEL) Determination</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>OELs for APIs, intermediates, and excipients</li>
+              <li>Based on toxicological and clinical data</li>
+              <li>Route-specific OELs (inhalation, dermal, oral)</li>
+              <li>REACH-compliant DNEL/DMEL calculations</li>
+            </ul>
+            <BTN btnLink="/services/oel-determination" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- OEB -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">📊</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Occupational Exposure Banding (OEB)</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>Categorization into OEB 1–5/6</li>
+              <li>Banding using public data (RTECS, HSDB, PubChem)</li>
+              <li>Risk assessment for limited data compounds</li>
+              <li>Control strategy selection based on OEB</li>
+            </ul>
+            <BTN btnLink="/services/oeb-categorization" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- Risk Assessment -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">⚠️</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Risk Assessment & Control Strategy</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>Containment strategy (Isolator, RABS)</li>
+              <li>Cleaning validation limits based on PDE</li>
+              <li>Gap analysis and remediation planning</li>
+              <li>Carryover calculation for cleaning hold time</li>
+            </ul>
+            <BTN btnLink="/services/risk-assessment" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- Report Preparation -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">📝</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Report Preparation & Regulatory Support</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>HBEL, PDE, OEL justification reports</li>
+              <li>Compliance with EMA, WHO, ICH, OSHA</li>
+              <li>Regulatory submission support</li>
+              <li>Justification for QRM and GMP audits</li>
+            </ul>
+            <BTN btnLink="/services/report-preparation" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- Specialized Support -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">🔬</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Specialized Support Services</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>Potent compound classification (PCC)</li>
+              <li>Hazard categorization for APIs and HAPIs</li>
+              <li>Cross-contamination risk assessment</li>
+              <li>Inhalation toxicology modeling</li>
+            </ul>
+            <BTN btnLink="/services/specialized-support" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Cards for MSDS/SDS Preparation -->
+      <div class="mb-12">
+        <h3 class="text-primaryBlue mb-6 text-xl font-semibold">MSDS / SDS Preparation Services</h3>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- SDS Authoring -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">📄</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">SDS Authoring & Preparation</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>Full-format SDS per GHS, OSHA, REACH, CLP</li>
+              <li>Multi-language preparation for global compliance</li>
+              <li>Compliant with EU, US, India regulations</li>
+            </ul>
+            <BTN btnLink="/services/sds-authoring" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- Regulatory Classification -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">⚖️</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Regulatory Classification & Compliance</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>GHS hazard classification</li>
+              <li>REACH, OSHA, WHMIS compliance</li>
+              <li>H-code and P-code assignments</li>
+            </ul>
+            <BTN btnLink="/services/regulatory-classification" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- Data Collection -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">🔍</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Data Collection & Interpretation</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>Analysis of toxicological and ecotoxicological data</li>
+              <li>Use of PubChem, ECHA, TOXNET</li>
+              <li>Cross-verification of supplier data</li>
+            </ul>
+            <BTN btnLink="/services/data-collection" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- Section-by-Section SDS -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">📑</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Section-by-Section SDS Population</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>Complete 16-section SDS</li>
+              <li>Details on hazards, handling, and disposal</li>
+              <li>Regulatory and transport information</li>
+            </ul>
+            <BTN btnLink="/services/sds-population" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- Multi-Region SDS -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">🌐</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Multi-Region SDS Compliance</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>Region-specific SDS for EU, US, India, Canada</li>
+              <li>Multi-lingual preparation and translation</li>
+              <li>Compliance with local GHS adaptations</li>
+            </ul>
+            <BTN btnLink="/services/multi-region-sds" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- Transport Classification -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">🚚</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Transport & Dangerous Goods Classification</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>UN Number and hazard class assignment</li>
+              <li>IATA/IMDG/ADR compliance</li>
+              <li>Packaging and labeling recommendations</li>
+            </ul>
+            <BTN btnLink="/services/transport-classification" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- Special Compounds -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">🧬</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">SDS for Special Compounds</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>SDS for APIs, intermediates, excipients</li>
+              <li>Genotoxic and cytotoxic substances</li>
+              <li>Laboratory reagents and bulk chemicals</li>
+            </ul>
+            <BTN btnLink="/services/special-compounds" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- MSDS to SDS Conversion -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">🔄</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">MSDS to SDS Conversion</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>Convert old MSDS to GHS-compliant SDS</li>
+              <li>Reformatting and updating regulations</li>
+              <li>Version control and archiving</li>
+            </ul>
+            <BTN btnLink="/services/msds-conversion" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+          <!-- Document Management -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="mb-4 flex items-center">
+              <span class="text-primary mr-2 text-3xl">📂</span>
+              <h4 class="text-primaryBlue text-lg font-semibold">Document Management & Distribution</h4>
+            </div>
+            <ul class="text-gray mb-4 list-disc pl-5">
+              <li>Digitally signed PDF generation</li>
+              <li>Version control and expiry tracking</li>
+              <li>Integration into ERP/LIMS systems</li>
+            </ul>
+            <BTN btnLink="/services/document-management" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Process Section -->
+      <div class="bg-primary-light border-primary mb-12 rounded-lg border p-6">
+        <h3 class="text-primaryBlue mb-4 text-xl font-semibold">How We Deliver These Services</h3>
+        <p class="text-gray leading-relaxed">
+          The process begins with data collection from clients, including compound-specific details, manufacturing
+          processes, and existing toxicological data. Our toxicologists analyze this data alongside public databases
+          (e.g., PubChem, ECHA, TOXNET) to derive ADE/PDE/OEL values and categorize compounds into OEB bands. For
+          cleaning validation, we calculate residue limits and develop containment strategies. Safety Assessment Reports
+          (SAR) are prepared for finished formulations, integrating toxicological thresholds and regulatory
+          requirements. MSDS/SDS documents are authored by compiling data into the 16-section GHS format, ensuring
+          compliance with region-specific regulations. The entire process, typically spanning 2–4 weeks, involves
+          iterative reviews, client collaboration, and regulatory submission support to ensure GMP and audit readiness.
+        </p>
+      </div>
+
+      <!-- Regulatory and Certifications Section -->
+      <div class="bg-secondary-light2 border-secondary mb-12 rounded-lg border p-6">
+        <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Regulatory Compliance and Certifications</h3>
+        <p class="text-gray leading-relaxed">
+          Our services adhere to stringent global regulatory standards, including:
+        </p>
+        <ul class="text-gray mb-4 list-disc pl-5">
+          <li><strong>EMA Guidelines on PDE/ADE:</strong> For health-based exposure limits in cleaning validation.</li>
+          <li><strong>ICH Q3D:</strong> Elemental impurities assessment for pharmaceuticals.</li>
+          <li><strong>REACH & GHS Compliance:</strong> For chemical safety and classification in the EU.</li>
+          <li><strong>OSHA Hazard Communication Standards:</strong> For workplace safety in the US.</li>
+          <li><strong>EU Regulation No 1272/2008 (CLP):</strong> For classification, labeling, and packaging.</li>
+          <li><strong>WHO, ISPE, and GMP Guidelines:</strong> For quality risk management and manufacturing.</li>
         </ul>
+        <p class="text-gray leading-relaxed">
+          Our team ensures compliance through expertise in toxicology, regulatory affairs, and occupational safety,
+          supported by certifications in GHS, REACH, and OSHA standards. We provide audit-ready documentation and assist
+          with regulatory submissions to streamline approvals.
+        </p>
+      </div>
 
-        <p class="mt-4">
-          Certified toxicologists (such as <strong>ERT/DABT-certified professionals</strong>) conduct these evaluations
-          using toxicological data and scientific literature to derive scientifically justified limits.
+      <!-- Conclusion Section -->
+      <div class="bg-primary-light border-primary mb-12 rounded-lg border p-6">
+        <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Conclusion</h3>
+        <p class="text-gray leading-relaxed">
+          Indivirtus’ toxicological and safety documentation services empower pharmaceutical manufacturers, CROs, and
+          biotech firms to achieve regulatory compliance, ensure workplace safety, and mitigate risks. By delivering
+          precise ADE/PDE/OEL calculations, comprehensive Safety Assessment Reports, and GHS-compliant SDS documents, we
+          support GMP-compliant operations and global market access. Our expertise in toxicology and regulatory affairs
+          ensures that your manufacturing processes meet the highest safety and quality standards.
         </p>
       </div>
     </section>
-
-    <section class="mb-12">
-      <h2 class="mb-6 text-2xl font-semibold text-blue-800">Breaking Down ADE, PDE, OEL, and OEB</h2>
-
-      <div class="grid gap-8 md:grid-cols-2">
-        <div class="rounded-lg border-t-4 border-blue-500 bg-white p-6 shadow-md">
-          <h3 class="mb-3 text-xl font-semibold text-blue-700">1. Acceptable Daily Exposure (ADE)</h3>
-          <p>
-            The <strong>ADE</strong> represents the maximum amount of an API that a person can be exposed to daily over a
-            lifetime without adverse effects.
-          </p>
-
-          <h4 class="mt-4 mb-2 font-medium text-blue-600">Key Aspects:</h4>
-          <ul class="list-disc space-y-1 pl-5">
-            <li>Used in <strong>cleaning validation</strong> to determine safe residue limits.</li>
-            <li>Based on <strong>NOAEL (No Observed Adverse Effect Level)</strong> and safety factors.</li>
-            <li>Complies with <strong>ICH Q3D</strong> guidelines for elemental impurities.</li>
-          </ul>
-        </div>
-
-        <div class="rounded-lg border-t-4 border-green-500 bg-white p-6 shadow-md">
-          <h3 class="mb-3 text-xl font-semibold text-green-700">2. Permitted Daily Exposure (PDE)</h3>
-          <p>The <strong>PDE</strong> is similar to ADE but is often used interchangeably in regulatory contexts.</p>
-
-          <h4 class="mt-4 mb-2 font-medium text-green-600">Key Aspects:</h4>
-          <ul class="list-disc space-y-1 pl-5">
-            <li>Applied in <strong>risk assessment for cross-contamination</strong>.</li>
-            <li>Follows <strong>EMA and ISPE</strong> standards.</li>
-            <li>Considers <strong>chronic toxicity, reproductive effects, and carcinogenicity</strong>.</li>
-          </ul>
-        </div>
-
-        <div class="rounded-lg border-t-4 border-purple-500 bg-white p-6 shadow-md">
-          <h3 class="mb-3 text-xl font-semibold text-purple-700">3. Occupational Exposure Limit (OEL)</h3>
-          <p>
-            The <strong>OEL</strong> indicates the airborne concentration of an API that workers can be exposed to over an
-            8-hour workday.
-          </p>
-
-          <h4 class="mt-4 mb-2 font-medium text-purple-600">Key Aspects:</h4>
-          <ul class="list-disc space-y-1 pl-5">
-            <li>Critical for <strong>worker safety programs</strong>.</li>
-            <li>Expressed in <strong>μg/m³ or mg/m³</strong>.</li>
-            <li>Used to design <strong>engineering controls (ventilation, containment)</strong>.</li>
-          </ul>
-        </div>
-
-        <div class="rounded-lg border-t-4 border-orange-500 bg-white p-6 shadow-md">
-          <h3 class="mb-3 text-xl font-semibold text-orange-700">4. Occupational Exposure Band (OEB)</h3>
-          <p>The <strong>OEB</strong> categorizes APIs based on their toxicity and potency.</p>
-
-          <h4 class="mt-4 mb-2 font-medium text-orange-600">Key Aspects:</h4>
-          <ul class="list-disc space-y-1 pl-5">
-            <li>Ranges from <strong>OEB 1 (low risk) to OEB 5 (highest risk)</strong>.</li>
-            <li>Guides <strong>containment strategies and PPE requirements</strong>.</li>
-            <li>Aligns with <strong>ISPE's Risk-MaPP</strong> guidelines.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12 rounded-lg bg-gray-100 p-6">
-      <h2 class="mb-4 text-2xl font-semibold text-blue-800">How Are These Assessments Conducted?</h2>
-      <div class="prose max-w-none">
-        <p>Expert toxicologists follow a structured approach:</p>
-
-        <div class="mt-6 space-y-6">
-          <div>
-            <h3 class="mb-2 text-xl font-medium text-gray-700">Step 1: Data Collection</h3>
-            <ul class="list-disc space-y-1 pl-6">
-              <li>Review <strong>toxicological studies (animal/human data)</strong>.</li>
-              <li>Identify <strong>NOAEL, LOAEL, and benchmark doses</strong>.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="mb-2 text-xl font-medium text-gray-700">Step 2: Apply Safety Factors</h3>
-            <ul class="list-disc space-y-1 pl-6">
-              <li>Adjust for <strong>interspecies differences and intraspecies variability</strong>.</li>
-              <li>Use <strong>ICH Q3D</strong> guidelines for elemental impurities.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="mb-2 text-xl font-medium text-gray-700">Step 3: Derive Exposure Limits</h3>
-            <ul class="list-disc space-y-1 pl-6">
-              <li>Calculate <strong>ADE/PDE</strong> using dose-response data.</li>
-              <li>Establish <strong>OELs</strong> based on inhalation toxicity.</li>
-              <li>Assign <strong>OEBs</strong> based on potency and toxicity.</li>
-            </ul>
-          </div>
-
-          <div>
-            <h3 class="mb-2 text-xl font-medium text-gray-700">Step 4: Certification & Compliance</h3>
-            <ul class="list-disc space-y-1 pl-6">
-              <li>Reports are certified by <strong>ERT/DABT</strong> professionals.</li>
-              <li>Ensure alignment with <strong>EMA, ICH, and ISPE</strong> standards.</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="mb-4 text-2xl font-semibold text-blue-800">Applications in Pharmaceutical Operations</h2>
-
-      <div class="grid gap-6 md:grid-cols-2">
-        <div class="rounded-lg border-l-4 border-blue-500 bg-white p-6 shadow-sm">
-          <h3 class="mb-3 text-xl font-semibold text-blue-700">1. Cleaning Validation</h3>
-          <ul class="list-disc space-y-1 pl-5">
-            <li>ADE/PDE values set <strong>maximum allowable carryover (MACO)</strong> limits.</li>
-            <li>Ensures equipment cleaning procedures eliminate harmful residues.</li>
-          </ul>
-        </div>
-
-        <div class="rounded-lg border-l-4 border-green-500 bg-white p-6 shadow-sm">
-          <h3 class="mb-3 text-xl font-semibold text-green-700">2. Facility Design & Containment</h3>
-          <ul class="list-disc space-y-1 pl-5">
-            <li>OEL/OEB ratings determine <strong>containment requirements</strong>.</li>
-            <li>Prevents cross-contamination in <strong>multi-product facilities</strong>.</li>
-          </ul>
-        </div>
-
-        <div class="rounded-lg border-l-4 border-purple-500 bg-white p-6 shadow-sm">
-          <h3 class="mb-3 text-xl font-semibold text-purple-700">3. Worker Safety Programs</h3>
-          <ul class="list-disc space-y-1 pl-5">
-            <li>OELs guide <strong>exposure monitoring and PPE selection</strong>.</li>
-            <li>OEBs help classify <strong>handling procedures</strong>.</li>
-          </ul>
-        </div>
-
-        <div class="rounded-lg border-l-4 border-orange-500 bg-white p-6 shadow-sm">
-          <h3 class="mb-3 text-xl font-semibold text-orange-700">4. Regulatory Submissions</h3>
-          <ul class="list-disc space-y-1 pl-5">
-            <li>Required for <strong>GMP compliance and inspections</strong>.</li>
-            <li>Supports <strong>risk assessments for FDA, EMA</strong>.</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="bg-primary-light mb-12 rounded-lg p-8 text-white">
-      <h2 class="mb-4 text-2xl font-semibold">Why Choose Certified Toxicology Reports?</h2>
-      <div class="prose text-gray max-w-none">
-        <p>
-          Given the critical nature of these assessments, they must be conducted by qualified professionals. <strong
-            >ERT/DABT-certified toxicologists</strong
-          > ensure:
-        </p>
-        <ul class="mt-4 list-disc space-y-2 pl-6">
-          <li><strong>Scientifically robust limits</strong> backed by data</li>
-          <li><strong>Regulatory compliance</strong> with EMA, ICH, and ISPE</li>
-          <li><strong>Defensible risk assessments</strong> for audits and inspections</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="mb-4 text-2xl font-semibold text-blue-800">Conclusion</h2>
-      <div class="prose max-w-none">
-        <p>
-          ADE, PDE, OEL, and OEB assessments are essential for pharmaceutical safety and compliance. These toxicological
-          evaluations protect workers, prevent cross-contamination, and ensure adherence to <strong
-            >GMP, ICH Q3D, EMA, and ISPE</strong
-          > guidelines.
-        </p>
-        <p class="mt-4">
-          By relying on <strong>certified toxicology reports</strong>, pharmaceutical companies can confidently
-          establish safe exposure limits, optimize facility design, and maintain regulatory compliance.
-        </p>
-      </div>
-    </section>
-
-    <div class="rounded-lg border border-blue-200 bg-blue-50 p-6 text-center">
-      <h3 class="mb-3 text-xl font-semibold text-blue-800">Need Expert Toxicology Assessments?</h3>
-      <p class="mb-4">
-        Ensure your facility meets safety and compliance standards with <strong
-          >ERT/DABT-certified ADE, PDE, OEL, and OEB reports</strong
-        >.
-      </p>
-      <a href="/contact-us" class="button">Contact Us Today</a>
+    <!-- Call to Action Section -->
+    <div class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
+      <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Ready to Ensure Safety and Compliance?</h3>
+      <p class="text-gray mb-4">Partner with Indivirtus for expert toxicological and regulatory support.</p>
+      <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
     </div>
-  </article>
+
+    <section class="maxwidth">
+      <!-- FAQ Section -->
+      <Faq faqs={mainEntity} />
+    </section>
+  </main>
 </Layout>

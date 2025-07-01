@@ -1,6 +1,6 @@
 /* button */
 .button {
-  @apply px-4 py-2 rounded-lg transition duration-200 cursor-pointer relative text-center text-lg font-medium;
+  @apply px-4 py-2 rounded-lg transition duration-200 cursor-pointer relative text-center text-lg font-medium max-w-fit mx-auto;
   border: 2px solid var(--color-primary);
   background-color: var(--color-primary);
   color: var(--color-white);
@@ -32,6 +32,10 @@
     background-color: var(--color-white);
     color: var(--color-primary);
   }
+}
+
+.contactBtn {
+  @apply min-w-full;
 }
 
 .buttonSimple {
