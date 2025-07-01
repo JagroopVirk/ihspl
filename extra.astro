@@ -5,50 +5,58 @@ import BTN from '../components/BTN.astro';
 const mainEntity = [
   {
     '@type': 'Question',
-    name: 'What is the importance of NABL accreditation for calibration services?',
+    name: 'What is isolator containment validation, and why is it critical?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'NABL accreditation ensures that our calibration laboratory adheres to international standards like ISO/IEC 17025, guaranteeing accuracy, reliability, and traceability of measurements. This is critical for pharmaceutical companies to maintain compliance with regulatory requirements.',
+      text: 'Isolator containment validation verifies that pharmaceutical isolators protect operators and the environment from potent compounds (OEB 3+). It’s critical to ensure safety, prevent cross-contamination, and comply with cGMP and ISPE SMEPAC standards.',
     },
   },
   {
     '@type': 'Question',
-    name: 'What types of equipment are calibrated under thermal calibration services?',
+    name: 'What tests are included in containment performance testing (CPT)?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Our thermal calibration services cover temperature and relative humidity (RH) devices, IR thermometers, furnaces, ovens, and environmental chambers, ensuring precise control in pharmaceutical manufacturing and storage environments.',
+      text: 'CPT includes surrogate powder testing, isokinetic air sampling, real-time particle counting, and gravimetric/chemical analysis to measure airborne particulate levels and operator exposure during simulated operations.',
     },
   },
   {
     '@type': 'Question',
-    name: 'How often should pharmaceutical equipment be calibrated?',
+    name: 'How long does isolator containment validation typically take?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Calibration frequency depends on equipment usage, manufacturer recommendations, and regulatory guidelines. Typically, critical instruments like balances and thermometers require annual or biannual calibration to ensure compliance and accuracy.',
+      text: 'The process takes 2–4 weeks, depending on isolator complexity, the number of batch cycles, and the scope of testing required.',
     },
   },
   {
     '@type': 'Question',
-    name: 'What are the benefits of calibrating pressure and vacuum gauges?',
+    name: 'What regulatory standards guide your validation services?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Calibrating pressure and vacuum gauges ensures accurate measurements for processes like sterilization, filtration, and HVAC systems, preventing equipment failures and ensuring compliance with GMP and other regulatory standards.',
+      text: 'Our services comply with ISPE SMEPAC (3rd Edition), cGMP regulations, Occupational Exposure Band (OEB) best practices, and ISO 14644 for cleanroom standards.',
     },
   },
   {
     '@type': 'Question',
-    name: 'How does your CRO support multi-disciplinary calibration needs?',
+    name: 'Who benefits from your isolator containment validation services?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Our CRO provides comprehensive calibration services across thermal, electro-technical, mechanical, pressure/vacuum, mass/volume, and other specialized areas, ensuring all pharmaceutical equipment meets stringent quality and regulatory standards.',
+      text: 'Pharmaceutical manufacturers, biotech companies, and CROs handling high-potency APIs (HPAPIs) benefit by ensuring operator safety, environmental protection, and regulatory compliance.',
     },
   },
   {
     '@type': 'Question',
-    name: 'What is the typical turnaround time for calibration services?',
+    name: 'What is surrogate powder testing, and why is it used?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Turnaround time varies based on the equipment and calibration scope, but most services are completed within 3–7 business days, with expedited options available for urgent needs.',
+      text: 'Surrogate powder testing uses safe compounds like lactose or naproxen to simulate potent API handling, evaluating containment breaches and worst-case exposure scenarios without risking hazardous exposure.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'How do you ensure operator safety during validation?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'We conduct breathing zone monitoring (BZM), personal exposure monitoring (PEM), and wipe sampling to assess operator exposure risks, ensuring safe handling of potent compounds.',
     },
   },
 ];
@@ -56,9 +64,9 @@ const mainEntity = [
 
 <!-- Hero Section -->
 <section class="bg-primary-light border-primary border-b-4 py-10 text-center">
-  <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">NABL-Accredited Calibration Services</h1>
+  <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">Isolator Containment Validation Services</h1>
   <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
-    Precision Calibration for Pharmaceutical Excellence and Regulatory Compliance
+    Safeguarding Your Operations with Expert Containment Solutions
   </p>
 </section>
 
@@ -66,151 +74,209 @@ const mainEntity = [
 <div class="mx-auto max-w-7xl px-6 py-12">
   <!-- Introductory Description -->
   <section class="mb-12">
-    <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Our Calibration Services</h2>
+    <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Our Isolator Validation Services</h2>
     <p class="text-gray text-lg leading-relaxed">
-      Our NABL-accredited Contract Research Organization (CRO) offers comprehensive calibration services tailored for
-      the pharmaceutical industry. From thermal and electro-technical calibration to mechanical, pressure, and
-      mass/volume measurements, we ensure your equipment delivers precise, reliable, and compliant results. These
-      services are vital for maintaining Good Manufacturing Practices (GMP), ensuring product quality, and meeting
-      stringent regulatory standards set by bodies like the FDA, EMA, and CDSCO. Our calibration solutions support
-      pharmaceutical manufacturers, biotech firms, research laboratories, and quality assurance teams, helping them
-      achieve operational excellence and regulatory compliance.
+      Our Contract Research Organization (CRO) provides specialized isolator containment validation services to ensure
+      the safe handling of potent compounds (OEB 3+) in pharmaceutical manufacturing. From surrogate powder testing to
+      airflow visualization and operator safety assessments, our services protect workers, prevent environmental
+      contamination, and ensure compliance with global standards like ISPE SMEPAC and cGMP. These solutions are
+      essential for pharmaceutical manufacturers, biotech firms, and CROs working with high-potency active
+      pharmaceutical ingredients (HPAPIs), helping them maintain safety, quality, and regulatory compliance.
     </p>
   </section>
 
   <!-- Service Cards -->
   <section class="mb-12">
-    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Calibration Expertise</h2>
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Comprehensive Validation Services</h2>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <!-- Thermal Calibration -->
+      <!-- Containment Performance Testing -->
       <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">🌡️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Thermal Calibration</h3>
+        <div class="text-primary mb-4 text-4xl">🧪</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Containment Performance Testing</h3>
         <ul class="text-gray mb-4 list-inside list-disc">
-          <li>Temperature & Relative Humidity (RH)</li>
-          <li>IR Thermometers</li>
-          <li>Furnaces and Ovens</li>
-          <li>Environmental Chambers</li>
+          <li>SMEPAC-compliant testing</li>
+          <li>Airborne contamination monitoring</li>
+          <li>Operator exposure measurement</li>
+          <li>Gravimetric/chemical analysis</li>
         </ul>
-        <BTN btnLink="/services/thermal-calibration" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/cpt" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- Electro-Technical Calibration -->
+      <!-- Isolator Qualification Services -->
       <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">⚡️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Electro-Technical Calibration</h3>
+        <div class="text-primary mb-4 text-4xl">🧰</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Isolator Qualification</h3>
         <ul class="text-gray mb-4 list-inside list-disc">
-          <li>AC/DC Current & Voltage</li>
-          <li>Resistance & Inductance</li>
-          <li>Time & Frequency</li>
-          <li>Multimeters & Power Supplies</li>
+          <li>Design, Installation, Operational, and Performance Qualification</li>
+          <li>HEPA/ULPA filter testing</li>
+          <li>Glove leak integrity testing</li>
+          <li>Potent compound validation</li>
         </ul>
-        <BTN btnLink="/services/electro-technical-calibration" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/isolator-qualification" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- Mechanical Calibration -->
+      <!-- Airflow Visualization & Smoke Studies -->
       <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">⚙️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Mechanical Calibration</h3>
+        <div class="text-primary mb-4 text-4xl">🌬️</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Airflow Visualization</h3>
         <ul class="text-gray mb-4 list-inside list-disc">
-          <li>Dimension & Length</li>
-          <li>Speed & Acoustics</li>
-          <li>Vernier Calipers & Micrometers</li>
-          <li>Tachometers</li>
+          <li>Unidirectional airflow testing</li>
+          <li>Turbulence visualization</li>
+          <li>Video documentation</li>
+          <li>Containment boundary verification</li>
         </ul>
-        <BTN btnLink="/services/mechanical-calibration" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/airflow-visualization" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- Pressure/Vacuum Calibration -->
+      <!-- Environmental Monitoring -->
       <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">🛠️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Pressure/Vacuum Calibration</h3>
+        <div class="text-primary mb-4 text-4xl">🧫</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Environmental Monitoring</h3>
         <ul class="text-gray mb-4 list-inside list-disc">
-          <li>Pressure & Vacuum Gauges</li>
-          <li>Magnehelic Gauges</li>
-          <li>Transmitters & Safety Valves</li>
-          <li>HVAC Systems</li>
+          <li>Non-viable particulate monitoring</li>
+          <li>Viable microbial testing</li>
+          <li>Surface contamination analysis</li>
+          <li>ISO 14644-1/2 compliance</li>
         </ul>
-        <BTN btnLink="/services/pressure-vacuum-calibration" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/environmental-monitoring" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- Mass & Volume Calibration -->
+      <!-- Operator Safety Testing -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">👷</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Operator Safety Testing</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Breathing zone monitoring</li>
+          <li>Personal exposure monitoring</li>
+          <li>Wipe sampling for contamination</li>
+          <li>Surrogate handling studies</li>
+        </ul>
+        <BTN btnLink="/services/operator-safety" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Surrogate Powder Testing -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🧪</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Surrogate Powder Testing</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Simulated API handling</li>
+          <li>Containment breach evaluation</li>
+          <li>Powder dispersibility studies</li>
+          <li>Worst-case exposure testing</li>
+        </ul>
+        <BTN btnLink="/services/surrogate-testing" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Engineering & Containment Consulting -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🏗️</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Engineering Consulting</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Gap analysis & containment hierarchy</li>
+          <li>Isolator design review</li>
+          <li>Cascading pressure validation</li>
+          <li>Decontamination system verification</li>
+        </ul>
+        <BTN btnLink="/services/engineering-consulting" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Documentation & Regulatory Support -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">📜</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Regulatory Support</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>SMEPAC-compliant reports</li>
+          <li>Risk assessment documentation</li>
+          <li>Cleaning validation support</li>
+          <li>Regulatory filing assistance</li>
+        </ul>
+        <BTN btnLink="/services/regulatory-support" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- Occupational Toxicology & OEL -->
       <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
         <div class="text-primary mb-4 text-4xl">⚖️</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Mass & Volume Calibration</h3>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Occupational Toxicology</h3>
         <ul class="text-gray mb-4 list-inside list-disc">
-          <li>Weights & Weighing Balances</li>
-          <li>Pipettes & Burettes</li>
-          <li>Volumetric Flasks</li>
-          <li>Analytical Balances</li>
+          <li>OEL/ADE determination</li>
+          <li>OEB banding for APIs</li>
+          <li>Cross-contamination risk assessment</li>
+          <li>Toxicology data analysis</li>
         </ul>
-        <BTN btnLink="/services/mass-volume-calibration" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/occupational-toxicology" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- Other Calibration Services -->
+      <!-- Decontamination & Cleaning Validation -->
       <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
-        <div class="text-primary mb-4 text-4xl">🔬</div>
-        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Specialized Calibration</h3>
+        <div class="text-primary mb-4 text-4xl">📊</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Decontamination Validation</h3>
         <ul class="text-gray mb-4 list-inside list-disc">
-          <li>pH Meters & ORP</li>
-          <li>Conductivity & TDS Meters</li>
-          <li>Flow Meters</li>
-          <li>Specialized Lab Equipment</li>
+          <li>Residue analysis (TOC, swabs)</li>
+          <li>Cleaning efficacy studies</li>
+          <li>VHP cycle validation</li>
+          <li>Rinse sampling</li>
         </ul>
-        <BTN btnLink="/services/specialized-calibration" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/decontamination-validation" btnClass="buttonSimple" btnText="Read more…" />
+      </div>
+
+      <!-- HPAPI Handling Consulting -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🧩</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">HPAPI Handling Consulting</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Potent compound strategy</li>
+          <li>Isolator & SBV design</li>
+          <li>Tech transfer support</li>
+          <li>Containment system validation</li>
+        </ul>
+        <BTN btnLink="/services/hpapi-consulting" btnClass="buttonSimple" btnText="Read more…" />
       </div>
     </div>
   </section>
 
   <!-- Process Section -->
   <section class="mb-12">
-    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Calibration Process</h2>
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Validation Process</h2>
     <div class="space-y-6">
       <div class="flex items-start">
         <div class="text-primary mr-4 text-2xl font-bold">1</div>
         <div>
-          <h3 class="text-primaryBlue text-xl font-semibold">Client Consultation & Planning</h3>
+          <h3 class="text-primaryBlue text-xl font-semibold">Client Onboarding</h3>
           <p class="text-gray">
-            We work closely with you to understand your equipment needs, regulatory requirements, and calibration
-            schedule.
+            We collaborate to understand your isolator setup, compound potency, and compliance needs.
           </p>
         </div>
       </div>
       <div class="flex items-start">
         <div class="text-primary mr-4 text-2xl font-bold">2</div>
         <div>
-          <h3 class="text-primaryBlue text-xl font-semibold">Equipment Assessment</h3>
-          <p class="text-gray">
-            Our team evaluates your instruments to determine calibration requirements and traceability standards.
-          </p>
+          <h3 class="text-primaryBlue text-xl font-semibold">Protocol Development</h3>
+          <p class="text-gray">We create SMEPAC-compliant protocols and sampling plans tailored to your facility.</p>
         </div>
       </div>
       <div class="flex items-start">
         <div class="text-primary mr-4 text-2xl font-bold">3</div>
         <div>
-          <h3 class="text-primaryBlue text-xl font-semibold">Calibration Execution</h3>
+          <h3 class="text-primaryBlue text-xl font-semibold">Testing & Sampling</h3>
           <p class="text-gray">
-            Using NABL-accredited standards, we calibrate your equipment with precision in our state-of-the-art lab or
-            on-site.
+            Certified Industrial Hygienists perform surrogate testing, airflow studies, and environmental monitoring.
           </p>
         </div>
       </div>
       <div class="flex items-start">
         <div class="text-primary mr-4 text-2xl font-bold">4</div>
         <div>
-          <h3 class="text-primaryBlue text-xl font-semibold">Documentation & Certification</h3>
+          <h3 class="text-primaryBlue text-xl font-semibold">Analysis & Reporting</h3>
           <p class="text-gray">
-            We provide detailed calibration certificates compliant with ISO/IEC 17025 for regulatory audits.
+            Samples are analyzed by AIHA-accredited labs, and we deliver detailed validation reports.
           </p>
         </div>
       </div>
       <div class="flex items-start">
         <div class="text-primary mr-4 text-2xl font-bold">5</div>
         <div>
-          <h3 class="text-primaryBlue text-xl font-semibold">Ongoing Support</h3>
-          <p class="text-gray">
-            We offer maintenance schedules, re-calibration reminders, and support for regulatory compliance.
-          </p>
+          <h3 class="12xl text-primaryBlue font-semibold">Certification & Support</h3>
+          <p class="text-gray">We issue containment certificates and provide ongoing regulatory and audit support.</p>
         </div>
       </div>
     </div>
@@ -227,17 +293,17 @@ const mainEntity = [
           <li>EMA (European Medicines Agency)</li>
           <li>ICH (International Council for Harmonisation)</li>
           <li>CDSCO (Central Drugs Standard Control Organization)</li>
-          <li>NABL (National Accreditation Board for Testing and Calibration Laboratories)</li>
+          <li>AIHA (American Industrial Hygiene Association)</li>
         </ul>
       </div>
       <div>
         <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Guidelines & Certifications</h3>
         <ul class="text-gray list-inside list-disc">
-          <li>ISO/IEC 17025:2017</li>
-          <li>GMP (Good Manufacturing Practices)</li>
-          <li>USP (United States Pharmacopeia)</li>
-          <li>WHO Guidelines</li>
-          <li>NABL Accreditation</li>
+          <li>ISPE SMEPAC, 3rd Edition</li>
+          <li>cGMP Regulations</li>
+          <li>OEB Best Practices</li>
+          <li>ISO 14644-1/2 (Cleanrooms)</li>
+          <li>AIHA Laboratory Accreditation</li>
         </ul>
       </div>
       <div>
@@ -245,9 +311,9 @@ const mainEntity = [
         <ul class="text-gray list-inside list-disc">
           <li>Pharmaceutical Manufacturing</li>
           <li>Biotechnology</li>
-          <li>Research Laboratories</li>
-          <li>Quality Assurance/Control</li>
-          <li>Healthcare Equipment Providers</li>
+          <li>Contract Research Organizations</li>
+          <li>HPAPI Processing</li>
+          <li>Containment Facility Design</li>
         </ul>
       </div>
     </div>
@@ -259,17 +325,16 @@ const mainEntity = [
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
       <div class="rounded-lg bg-white p-6 shadow-lg">
         <p class="text-gray italic">
-          "Their NABL-accredited calibration services ensured our manufacturing equipment met FDA standards, saving us
-          time and resources."
+          "Their expertise in isolator validation ensured our facility met stringent OEB 4 requirements, protecting our
+          team and products."
         </p>
-        <p class="text-primaryBlue mt-2 font-semibold">– Pharma Manufacturer, USA</p>
+        <p class="text-primaryBlue mt-2 font-semibold">– Biotech Firm, Germany</p>
       </div>
       <div class="rounded-lg bg-white p-6 shadow-lg">
         <p class="text-gray italic">
-          "The team’s expertise in calibrating our pipettes and balances was exceptional, ensuring precision in our lab
-          operations."
+          "The detailed reports and professional support made our regulatory audit seamless and stress-free."
         </p>
-        <p class="text-primaryBlue mt-2 font-semibold">– Biotech Firm, India</p>
+        <p class="text-primaryBlue mt-2 font-semibold">– Pharma Manufacturer, USA</p>
       </div>
     </div>
   </section>
@@ -278,23 +343,22 @@ const mainEntity = [
   <section class="mb-12">
     <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Why Partner with Us?</h2>
     <p class="text-gray text-lg leading-relaxed">
-      Our NABL-accredited CRO delivers precise, reliable, and compliant calibration services to keep your pharmaceutical
-      operations running smoothly. With expertise across thermal, electro-technical, mechanical, and specialized
-      calibration, we help you meet global regulatory standards, ensure product quality, and maintain operational
-      efficiency. Choose us for trusted calibration solutions that empower your success in the pharmaceutical industry.
+      Our CRO delivers expert isolator containment validation to ensure your pharmaceutical operations are safe,
+      compliant, and efficient. With Certified Industrial Hygienists, AIHA-accredited lab partnerships, and adherence to
+      ISPE SMEPAC and cGMP standards, we provide reliable solutions for handling potent compounds. Choose us to
+      safeguard your workforce, protect the environment, and streamline your regulatory compliance.
     </p>
   </section>
 
-  <!-- Call to Action -->
+  <!-- Call to Action Section -->
   <div class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
-    <h3 class="mb-4 text-xl font-semibold">Need Precision Calibration for Your Equipment?</h3>
-    <p class="text-gray mb-4">Let us help you achieve compliance and accuracy with our expert calibration services.</p>
+    <h3 class="mb-4 text-xl font-semibold">Ready to Ensure Safe Handling of Potent Compounds?</h3>
+    <p class="text-gray mb-4">Partner with us for expert isolator validation and compliance solutions.</p>
     <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
   </div>
 
-  <!-- FAQ Section -->
-  <section class="mt-12">
-    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Frequently Asked Questions</h2>
+  <section class="maxwidth">
+    <!-- FAQ Section -->
     <Faq faqs={mainEntity} />
   </section>
 </div>

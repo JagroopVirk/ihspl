@@ -203,6 +203,54 @@ export default {
           text: 'Yes. We follow ISPE SMEPAC practices and cGMP standards to meet regulatory inspection requirements.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is the purpose of isolator containment validation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Isolator containment validation verifies that pharmaceutical isolators effectively protect operators and the environment from potent compounds (OEB 3+), ensuring safety and compliance with cGMP and ISPE standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What types of tests are performed during containment validation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Tests include surrogate powder testing, air sampling, personal sampling, and surface sampling at critical points, with analysis conducted by AIHA-accredited labs to confirm containment performance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does the containment validation process take?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The process typically takes 2–4 weeks, depending on the complexity of the isolator and the number of batch cycles required for testing.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which regulatory guidelines govern isolator containment validation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Validation adheres to the ISPE Good Practice Guide (SMEPAC, 3rd Edition), cGMP regulations, and Occupational Exposure Band (OEB) best practices to ensure compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from isolator containment validation services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers, biotech companies, and CROs handling potent compounds benefit from these services to ensure operator safety, environmental protection, and regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables can we expect from containment validation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Deliverables include a containment protocol, raw data and lab analysis reports, a validation summary report, excursion investigation recommendations, and a certificate of successful containment.',
+        },
+      },
     ],
   },
   meta: {

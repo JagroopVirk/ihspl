@@ -5,6 +5,11 @@ import '../../styles/global.css';
 
 // Importing SEO data
 import seoData from '@/data/js/services/containmentValidation';
+
+import BTN from '@/components/other/BTN.astro';
+import Faq from '@/components/other/Faq.astro';
+
+const mainEntity = seoData.faqSchema.mainEntity;
 ---
 
 <Layout
@@ -16,234 +21,293 @@ import seoData from '@/data/js/services/containmentValidation';
     image: seoData.image.path.src,
     url: seoData.pageLink,
     schema: seoData.schema,
+    faqSchema: seoData.faqSchema,
   }}
 >
-  <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
+  <main>
     <!-- Hero Section -->
-    <section class="mb-16 text-center">
-      <h1 class="mb-6 text-4xl font-extrabold text-gray-900">Pharmaceutical Isolator Performance Verification</h1>
-      <p class="mx-auto max-w-3xl text-xl text-gray-600">
-        Ensuring operator and environmental safety when handling potent compounds through rigorous containment
-        validation protocols.
+    <section class="bg-primary-light border-primary border-b-4 py-10 text-center">
+      <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">Isolator Containment Validation Services</h1>
+      <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
+        Safeguarding Your Operations with Expert Containment Solutions
       </p>
-      <div class="mt-8">
-        <a href="/contact-us" class="button"> Request Consultation </a>
-      </div>
     </section>
 
-    <!-- Main Content -->
-    <article class="prose prose-lg max-w-none">
-      <!-- Introduction -->
+    <!-- Main Content Section -->
+    <div class="mx-auto max-w-7xl px-6 py-12">
+      <!-- Introductory Description -->
       <section class="mb-12">
-        <h2 class="mb-4 text-2xl font-bold text-gray-800">Comprehensive Containment Validation for Potent Compounds</h2>
-        <p>
-          In pharmaceutical manufacturing facilities handling potent compounds (OEB 3+), proper isolator performance is
-          critical for protecting both operators and the environment. Our containment validation services verify that
-          your pharmaceutical isolators effectively contain these hazardous materials according to the highest industry
-          standards.
+        <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Our Isolator Validation Services</h2>
+        <p class="text-gray text-lg leading-relaxed">
+          Our Contract Research Organization (CRO) provides specialized isolator containment validation services to
+          ensure the safe handling of potent compounds (OEB 3+) in pharmaceutical manufacturing. From surrogate powder
+          testing to airflow visualization and operator safety assessments, our services protect workers, prevent
+          environmental contamination, and ensure compliance with global standards like ISPE SMEPAC and cGMP. These
+          solutions are essential for pharmaceutical manufacturers, biotech firms, and CROs working with high-potency
+          active pharmaceutical ingredients (HPAPIs), helping them maintain safety, quality, and regulatory compliance.
         </p>
       </section>
 
-      <!-- Why It Matters -->
-      <section class="mb-12 rounded-lg bg-blue-50 p-6">
-        <h2 class="mb-4 text-2xl font-bold text-gray-800">The Importance of Isolator Performance Verification</h2>
-        <p>
-          Pharmaceutical isolators serve as the primary barrier between potent compounds and personnel/environment.
-          Without proper verification:
-        </p>
-        <ul class="mt-4 list-disc space-y-2 pl-6">
-          <li>Operators may be exposed to hazardous compounds</li>
-          <li>Cross-contamination risks increase significantly</li>
-          <li>Regulatory compliance may be compromised</li>
-          <li>Environmental contamination could occur</li>
-          <li>Product quality may be affected</li>
-        </ul>
-        <p class="mt-4">
-          Our verification process ensures your containment systems perform as intended, mitigating these risks through
-          scientific testing and analysis.
-        </p>
-      </section>
-
-      <!-- Our Methodology -->
+      <!-- Service Cards -->
       <section class="mb-12">
-        <h2 class="mb-4 text-2xl font-bold text-gray-800">Our ISPE SMEPAC-Compliant Verification Process</h2>
-        <p>
-          We follow a rigorous methodology aligned with ISPE SMEPAC guidelines and cGMP requirements to deliver
-          reliable, defensible results:
-        </p>
-
-        <div class="mt-8 grid gap-6 md:grid-cols-3">
-          <div class="rounded-lg border border-gray-100 bg-white p-6 shadow-sm">
-            <h3 class="mb-3 text-xl font-semibold text-blue-600">1. Performance Target Definition</h3>
-            <p>
-              We establish appropriate containment performance targets based on your specific compounds, processes, and
-              risk assessments.
-            </p>
+        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Comprehensive Validation Services</h2>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Containment Performance Testing -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🧪</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Containment Performance Testing</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>SMEPAC-compliant testing</li>
+              <li>Airborne contamination monitoring</li>
+              <li>Operator exposure measurement</li>
+              <li>Gravimetric/chemical analysis</li>
+            </ul>
+            <BTN btnLink="/services/cpt" btnClass="buttonSimple" btnText="Read more…" />
           </div>
 
-          <div class="rounded-lg border border-gray-100 bg-white p-6 shadow-sm">
-            <h3 class="mb-3 text-xl font-semibold text-blue-600">2. Surrogate Powder Testing</h3>
-            <p>
-              Using scientifically validated surrogate materials, we simulate worst-case scenarios to challenge your
-              isolator's containment capabilities.
-            </p>
+          <!-- Isolator Qualification Services -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🧰</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Isolator Qualification</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Design, Installation, Operational, and Performance Qualification</li>
+              <li>HEPA/ULPA filter testing</li>
+              <li>Glove leak integrity testing</li>
+              <li>Potent compound validation</li>
+            </ul>
+            <BTN btnLink="/services/isolator-qualification" btnClass="buttonSimple" btnText="Read more…" />
           </div>
 
-          <div class="rounded-lg border border-gray-100 bg-white p-6 shadow-sm">
-            <h3 class="mb-3 text-xl font-semibold text-blue-600">3. Comprehensive Sampling</h3>
-            <p>
-              Our Certified Industrial Hygienists collect air, personal, and surface samples at all critical points to
-              identify potential leakage.
-            </p>
+          <!-- Airflow Visualization & Smoke Studies -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🌬️</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Airflow Visualization</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Unidirectional airflow testing</li>
+              <li>Turbulence visualization</li>
+              <li>Video documentation</li>
+              <li>Containment boundary verification</li>
+            </ul>
+            <BTN btnLink="/services/airflow-visualization" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Environmental Monitoring -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🧫</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Environmental Monitoring</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Non-viable particulate monitoring</li>
+              <li>Viable microbial testing</li>
+              <li>Surface contamination analysis</li>
+              <li>ISO 14644-1/2 compliance</li>
+            </ul>
+            <BTN btnLink="/services/environmental-monitoring" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Operator Safety Testing -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">👷</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Operator Safety Testing</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Breathing zone monitoring</li>
+              <li>Personal exposure monitoring</li>
+              <li>Wipe sampling for contamination</li>
+              <li>Surrogate handling studies</li>
+            </ul>
+            <BTN btnLink="/services/operator-safety" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Surrogate Powder Testing -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🧪</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Surrogate Powder Testing</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Simulated API handling</li>
+              <li>Containment breach evaluation</li>
+              <li>Powder dispersibility studies</li>
+              <li>Worst-case exposure testing</li>
+            </ul>
+            <BTN btnLink="/services/surrogate-testing" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Engineering & Containment Consulting -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🏗️</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Engineering Consulting</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Gap analysis & containment hierarchy</li>
+              <li>Isolator design review</li>
+              <li>Cascading pressure validation</li>
+              <li>Decontamination system verification</li>
+            </ul>
+            <BTN btnLink="/services/engineering-consulting" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Documentation & Regulatory Support -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">📜</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Regulatory Support</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>SMEPAC-compliant reports</li>
+              <li>Risk assessment documentation</li>
+              <li>Cleaning validation support</li>
+              <li>Regulatory filing assistance</li>
+            </ul>
+            <BTN btnLink="/services/regulatory-support" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Occupational Toxicology & OEL -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">⚖️</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Occupational Toxicology</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>OEL/ADE determination</li>
+              <li>OEB banding for APIs</li>
+              <li>Cross-contamination risk assessment</li>
+              <li>Toxicology data analysis</li>
+            </ul>
+            <BTN btnLink="/services/occupational-toxicology" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Decontamination & Cleaning Validation -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">📊</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Decontamination Validation</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Residue analysis (TOC, swabs)</li>
+              <li>Cleaning efficacy studies</li>
+              <li>VHP cycle validation</li>
+              <li>Rinse sampling</li>
+            </ul>
+            <BTN btnLink="/services/decontamination-validation" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- HPAPI Handling Consulting -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🧩</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">HPAPI Handling Consulting</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Potent compound strategy</li>
+              <li>Isolator & SBV design</li>
+              <li>Tech transfer support</li>
+              <li>Containment system validation</li>
+            </ul>
+            <BTN btnLink="/services/hpapi-consulting" btnClass="buttonSimple" btnText="Read more…" />
           </div>
         </div>
-
-        <div class="mt-6 grid gap-6 md:grid-cols-2">
-          <div class="rounded-lg border border-gray-100 bg-white p-6 shadow-sm">
-            <h3 class="mb-3 text-xl font-semibold text-blue-600">4. AIHA-Accredited Analysis</h3>
-            <p>
-              Samples are analyzed by AIHA-accredited laboratories using validated methods to ensure accurate, reliable
-              results.
-            </p>
-          </div>
-
-          <div class="rounded-lg border border-gray-100 bg-white p-6 shadow-sm">
-            <h3 class="mb-3 text-xl font-semibold text-blue-600">5. Detailed Reporting</h3>
-            <p>
-              You receive comprehensive documentation including test protocols, raw data, analysis, and recommendations
-              for compliance.
-            </p>
-          </div>
-        </div>
       </section>
 
-      <!-- Industry Standards -->
+      <!-- Process Section -->
       <section class="mb-12">
-        <h2 class="mb-4 text-2xl font-bold text-gray-800">Compliance with Industry Standards</h2>
-        <p>Our verification services align with all major regulatory and industry guidelines:</p>
-        <div class="mt-6 grid gap-4 sm:grid-cols-2 md:grid-cols-3">
-          <div class="flex items-center rounded bg-gray-50 px-4 py-3">
-            <svg class="mr-2 h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>ISPE SMEPAC Guidelines</span>
+        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Validation Process</h2>
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="text-primary mr-4 text-2xl font-bold">1</div>
+            <div>
+              <h3 class="text-primaryBlue text-xl font-semibold">Client Onboarding</h3>
+              <p class="text-gray">
+                We collaborate to understand your isolator setup, compound potency, and compliance needs.
+              </p>
+            </div>
           </div>
-          <div class="flex items-center rounded bg-gray-50 px-4 py-3">
-            <svg class="mr-2 h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>cGMP Requirements</span>
+          <div class="flex items-start">
+            <div class="text-primary mr-4 text-2xl font-bold">2</div>
+            <div>
+              <h3 class="text-primaryBlue text-xl font-semibold">Protocol Development</h3>
+              <p class="text-gray">
+                We create SMEPAC-compliant protocols and sampling plans tailored to your facility.
+              </p>
+            </div>
           </div>
-          <div class="flex items-center rounded bg-gray-50 px-4 py-3">
-            <svg class="mr-2 h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>OSHA Standards</span>
+          <div class="flex items-start">
+            <div class="text-primary mr-4 text-2xl font-bold">3</div>
+            <div>
+              <h3 class="text-primaryBlue text-xl font-semibold">Testing & Sampling</h3>
+              <p class="text-gray">
+                Certified Industrial Hygienists perform surrogate testing, airflow studies, and environmental
+                monitoring.
+              </p>
+            </div>
           </div>
-          <div class="flex items-center rounded bg-gray-50 px-4 py-3">
-            <svg class="mr-2 h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>AIHA Protocols</span>
+          <div class="flex items-start">
+            <div class="text-primary mr-4 text-2xl font-bold">4</div>
+            <div>
+              <h3 class="text-primaryBlue text-xl font-semibold">Analysis & Reporting</h3>
+              <p class="text-gray">
+                Samples are analyzed by AIHA-accredited labs, and we deliver detailed validation reports.
+              </p>
+            </div>
           </div>
-          <div class="flex items-center rounded bg-gray-50 px-4 py-3">
-            <svg class="mr-2 h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>ISO 14644 Standards</span>
-          </div>
-          <div class="flex items-center rounded bg-gray-50 px-4 py-3">
-            <svg class="mr-2 h-5 w-5 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-            </svg>
-            <span>EU GMP Annex 1</span>
+          <div class="flex items-start">
+            <div class="text-primary mr-4 text-2xl font-bold">5</div>
+            <div>
+              <h3 class="12xl text-primaryBlue font-semibold">Certification & Support</h3>
+              <p class="text-gray">
+                We issue containment certificates and provide ongoing regulatory and audit support.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
+      <!-- Compliance & Guidelines -->
+      <section class="bg-secondary-light2 mb-12 rounded-lg p-6">
+        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Compliance & Standards</h2>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Regulatory Bodies</h3>
+            <ul class="text-gray list-inside list-disc">
+              <li>FDA (U.S. Food and Drug Administration)</li>
+              <li>EMA (European Medicines Agency)</li>
+              <li>ICH (International Council for Harmonisation)</li>
+              <li>CDSCO (Central Drugs Standard Control Organization)</li>
+              <li>AIHA (American Industrial Hygiene Association)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Guidelines & Certifications</h3>
+            <ul class="text-gray list-inside list-disc">
+              <li>ISPE SMEPAC, 3rd Edition</li>
+              <li>cGMP Regulations</li>
+              <li>OEB Best Practices</li>
+              <li>ISO 14644-1/2 (Cleanrooms)</li>
+              <li>AIHA Laboratory Accreditation</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Applications & Industries</h3>
+            <ul class="text-gray list-inside list-disc">
+              <li>Pharmaceutical Manufacturing</li>
+              <li>Biotechnology</li>
+              <li>Contract Research Organizations</li>
+              <li>HPAPI Processing</li>
+              <li>Containment Facility Design</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-12">
+        <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Why Partner with Us?</h2>
+        <p class="text-gray text-lg leading-relaxed">
+          Our CRO delivers expert isolator containment validation to ensure your pharmaceutical operations are safe,
+          compliant, and efficient. With Certified Industrial Hygienists, AIHA-accredited lab partnerships, and
+          adherence to ISPE SMEPAC and cGMP standards, we provide reliable solutions for handling potent compounds.
+          Choose us to safeguard your workforce, protect the environment, and streamline your regulatory compliance.
+        </p>
+      </section>
+    </div>
+    <!-- Call to Action Section -->
+    <div class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
+      <h3 class="mb-4 text-xl font-semibold">Ready to Ensure Safe Handling of Potent Compounds?</h3>
+      <p class="text-gray mb-4">Partner with us for expert isolator validation and compliance solutions.</p>
+      <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
+    </div>
+
+    <section class="maxwidth">
       <!-- FAQ Section -->
-      <section class="mb-12">
-        <h2 class="mb-6 text-2xl font-bold text-gray-800">Frequently Asked Questions</h2>
-        <div class="space-y-4">
-          <div title="">
-            <p></p>
-          </div>
-          <div title="">
-            <p></p>
-          </div>
-          <div title="">
-            <p></p>
-          </div>
-          <div title="">
-            <p></p>
-          </div>
-        </div>
-      </section>
-
-      <section class="mb-16">
-        <h2 class="mb-8 text-center text-3xl font-bold text-blue-800">Frequently Asked Questions</h2>
-
-        <div class="overflow-hidden rounded-lg bg-white shadow-md">
-          <div class="border-b border-gray-200 p-6">
-            <h3 class="mb-2 text-lg font-semibold text-blue-700">How often should isolator performance be verified?</h3>
-            <p class="text-gray-700">
-              We recommend annual verification as a minimum, with more frequent testing following significant changes to
-              equipment, processes, or when handling new compounds. Some high-risk applications may require quarterly
-              verification.
-            </p>
-          </div>
-
-          <div class="border-b border-gray-200 p-6">
-            <h3 class="mb-2 text-lg font-semibold text-blue-700">What surrogate materials do you use for testing?</h3>
-            <p class="text-gray-700">
-              We select surrogate materials based on your specific compounds and processes. Common choices include
-              lactose monohydrate, mannitol, or other powders with similar particle size distribution to your active
-              ingredients. All surrogates are thoroughly characterized for testing validity.
-            </p>
-          </div>
-
-          <div class="border-b border-gray-200 p-6">
-            <h3 class="mb-2 text-lg font-semibold text-blue-700">
-              Can you help us establish appropriate performance targets?
-            </h3>
-            <p class="text-gray-700">
-              Absolutely. Our team of Certified Industrial Hygienists will work with you to establish scientifically
-              defensible performance targets based on your compounds' occupational exposure bands (OEB), toxicity data,
-              and regulatory requirements.
-            </p>
-          </div>
-
-          <div class="border-b border-gray-200 p-6">
-            <h3 class="mb-2 text-lg font-semibold text-blue-700">What happens if our isolator fails verification?</h3>
-            <p class="text-gray-700">
-              In case of performance issues, we provide detailed recommendations for corrective actions ranging from
-              operational adjustments to equipment modifications. We can also assist with retesting after improvements
-              are implemented.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <!-- CTA Section -->
-      <section class="rounded-xl bg-gradient-to-r from-blue-50 to-indigo-50 py-12 text-center">
-        <h2 class="mb-4 text-3xl font-bold text-gray-800">Ready to Verify Your Isolator Performance?</h2>
-        <p class="mx-auto mb-8 max-w-2xl text-xl text-gray-600">
-          Ensure your containment systems are properly protecting your workforce and environment.
-        </p>
-        <a href="/contact-us" class="button"> Request Consultation </a>
-      </section>
-    </article>
-  </div>
-
-  <style is:global>
-    /* Custom styles for better readability */
-    .prose h2,
-    .prose h3 {
-      scroll-margin-top: 100px;
-    }
-    .prose ul {
-      padding-left: 1.5rem;
-      list-style-type: disc;
-    }
-  </style>
+      <Faq faqs={mainEntity} />
+    </section>
+  </main>
 </Layout>
