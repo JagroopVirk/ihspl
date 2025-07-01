@@ -204,6 +204,54 @@ export default {
           text: 'Yes, we provide QP declaration services, support MAH representation, and arrange for EU-based testing sites for batch release purposes.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is involved in CTD/ACTD dossier preparation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We compile Modules 1–5 for CTD or ACTD formats, including administrative, quality, non-clinical, and clinical data, with gap analysis, localization, and eCTD/NeeS publishing for global submissions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you support medical device registration under MDR-2017?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We handle classification, TDF/CSDT preparation, clinical evaluation reports, risk management files, and submissions (MD-7/MD-14/MD-15) to CDSCO, ensuring compliance with MDR-2017 rules.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the role of an MAH or QP in regulatory submissions?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our MAH services manage EU/UK regulatory obligations, while our Qualified Person (QP) ensures batch release, import testing, and compliance for clinical trials and marketing authorizations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you manage regulatory responses and remediation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We prepare responses to FDA 483s, EU LoQs, and CDSCO queries, manage CAPAs, and support audit remediation to address compliance gaps and regulatory actions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which industries benefit from your regulatory services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers, biotech firms, medical device companies, and MAHs benefit by achieving global regulatory approvals and maintaining compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the process for DMF/CEP filing?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We prepare and submit DMFs (Type I–V) and CEPs to EDQM, FDA, or Health Canada, including open/restricted parts, annual updates, and query response support.',
+        },
+      },
     ],
   },
   meta: {

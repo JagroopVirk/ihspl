@@ -5,6 +5,11 @@ import '../../styles/global.css';
 
 // Importing SEO data for the About page
 import seoData from '@/data/js/services/regulatoryAffairs';
+
+import BTN from '@/components/other/BTN.astro';
+import Faq from '@/components/other/Faq.astro';
+
+const mainEntity = seoData.faqSchema.mainEntity;
 ---
 
 <Layout
@@ -16,384 +21,265 @@ import seoData from '@/data/js/services/regulatoryAffairs';
     image: seoData.image.path.src,
     url: seoData.pageLink,
     schema: seoData.schema,
+    faqSchema: seoData.faqSchema,
   }}
 >
-  <article class="maxwidth px-4 py-12 sm:px-6">
+  <main>
     <!-- Hero Section -->
-    <header class="bg-primary-light mb-16 rounded-xl px-6 py-16 text-center text-white">
-      <h1 class="mb-4 text-4xl font-bold">Global Regulatory Affairs Solutions</h1>
-      <h2 class="mb-6 text-2xl font-semibold">End-to-End Support for International Market Approvals</h2>
-      <div class="mx-auto max-w-3xl">
-        <p class="text-lg opacity-90">
-          From initial dossier submission to post-approval maintenance, we navigate complex regulatory pathways to
-          accelerate your product's global market access.
+    <section class="bg-primary-light border-primary border-b-4 py-10 text-center">
+      <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">
+        Regulatory Compliance & Medical Device Registration
+      </h1>
+      <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">Streamlined Solutions for Global Regulatory Success</p>
+    </section>
+
+    <!-- Main Content Section -->
+    <div class="mx-auto max-w-7xl px-6 py-12">
+      <!-- Introductory Description -->
+      <section class="mb-12">
+        <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Our Regulatory Compliance Services</h2>
+        <p class="text-gray text-lg leading-relaxed">
+          Our Contract Research Organization (CRO) provides comprehensive regulatory compliance and medical device
+          registration services to help pharmaceutical and medical device companies navigate complex global regulations.
+          From dossier preparation (CTD/ACTD, DMF, CEP) to medical device filings under CDSCO’s MDR-2017 rules, we
+          ensure compliance with standards set by FDA, EMA, ICH, and other authorities. Our services are essential for
+          ensuring product approvals, maintaining compliance, and accelerating market entry for pharmaceutical
+          manufacturers, biotech firms, medical device companies, and marketing authorization holders (MAHs).
         </p>
-      </div>
-    </header>
+      </section>
 
-    <!-- Introduction Section -->
-    <section class="mb-16 rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
-      <div class="prose max-w-none">
-        <p>
-          Navigating the regulatory landscape for pharmaceutical products across international markets requires
-          specialized expertise and strategic planning. Our comprehensive regulatory affairs services provide:
+      <!-- Service Cards -->
+      <section class="mb-12">
+        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Regulatory Expertise</h2>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- CTD/ACTD Dossier Preparation -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">📑</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">CTD/ACTD Dossier Preparation</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Modules 1–5 compilation</li>
+              <li>ASEAN ACTD preparation</li>
+              <li>eCTD/NeeS publishing</li>
+              <li>Gap analysis & localization</li>
+            </ul>
+            <BTN btnLink="/services/ctd-actd-dossiers" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Medical Device Filing (MDR-2017) -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🩺</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Medical Device Filing</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Class A–D classification</li>
+              <li>TDF/CSDT preparation</li>
+              <li>Clinical evaluation & RMF</li>
+              <li>Indian Authorized Agent</li>
+            </ul>
+            <BTN btnLink="/services/medical-device-filing" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- CEP/DMF Filing -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">📄</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">CEP/DMF Filing</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>DMF Type I–V preparation</li>
+              <li>CEP submission to EDQM</li>
+              <li>ASMF for EU filings</li>
+              <li>Lifecycle management</li>
+            </ul>
+            <BTN btnLink="/services/cep-dmf-filing" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Clinical/Non-Clinical Overview -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🔬</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Clinical/Non-Clinical Overview</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Module 2.4 & 2.5 preparation</li>
+              <li>Bioequivalence justification</li>
+              <li>BCS Class I/III biowaivers</li>
+              <li>Bridging study reports</li>
+            </ul>
+            <BTN btnLink="/services/clinical-overview" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Regulatory Responses & Remediation -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🛠️</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Regulatory Responses</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>FDA 483 & EU LoQ responses</li>
+              <li>CAPA & remediation planning</li>
+              <li>Pre-submission support</li>
+              <li>Labeling updates</li>
+            </ul>
+            <BTN btnLink="/services/regulatory-responses" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- MAH & QP Services -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🤝</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">MAH & QP Services</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>EU/UK MAH representation</li>
+              <li>QP for batch release</li>
+              <li>PV obligation management</li>
+              <li>Local EU representative</li>
+            </ul>
+            <BTN btnLink="/services/mah-qp-services" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Regulatory Strategy & Consulting -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🧠</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Regulatory Strategy</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Global pathway analysis</li>
+              <li>Pre-submission consultations</li>
+              <li>Expedited program support</li>
+              <li>Regulatory gap assessment</li>
+            </ul>
+            <BTN btnLink="/services/regulatory-strategy" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Lifecycle Management -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">🔄</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Lifecycle Management</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>Variation filings</li>
+              <li>Labeling & renewals</li>
+              <li>Change control</li>
+              <li>License renewals</li>
+            </ul>
+            <BTN btnLink="/services/lifecycle-management" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+
+          <!-- Product Registration & Licensing -->
+          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
+            <div class="text-primary mb-4 text-4xl">📝</div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Product Registration</h3>
+            <ul class="text-gray mb-4 list-inside list-disc">
+              <li>CDSCO, FDA, EMA filings</li>
+              <li>ROW market submissions</li>
+              <li>Local agent support</li>
+              <li>License tracking</li>
+            </ul>
+            <BTN btnLink="/services/product-registration" btnClass="buttonSimple" btnText="Read more…" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Process Section -->
+      <section class="mb-12">
+        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Regulatory Service Process</h2>
+        <div class="space-y-6">
+          <div class="flex items-start">
+            <div class="text-primary mr-4 text-2xl font-bold">1</div>
+            <div>
+              <h3 class="text-primaryBlue text-xl font-semibold">Regulatory Assessment</h3>
+              <p class="text-gray">
+                We analyze your product and market goals to map out the appropriate regulatory pathway.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="text-primary mr-4 text-2xl font-bold">2</div>
+            <div>
+              <h3 class="text-primaryBlue text-xl font-semibold">Dossier Preparation</h3>
+              <p class="text-gray">
+                We compile and review CTD/ACTD, DMF, CEP, or medical device dossiers for global submissions.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="text-primary mr-4 text-2xl font-bold">3</div>
+            <div>
+              <h3 class="text-primaryBlue text-xl font-semibold">Submission & Liaison</h3>
+              <p class="text-gray">
+                We submit dossiers to authorities like FDA, EMA, and CDSCO, managing queries and interactions.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="text-primary mr-4 text-2xl font-bold">4</div>
+            <div>
+              <h3 class="text-primaryBlue text-xl font-semibold">Remediation & Compliance</h3>
+              <p class="text-gray">We address regulatory deficiencies, prepare CAPAs, and ensure audit readiness.</p>
+            </div>
+          </div>
+          <div class="flex items-start">
+            <div class="text-primary mr-4 text-2xl font-bold">5</div>
+            <div>
+              <h3 class="text-primaryBlue text-xl font-semibold">Post-Approval Support</h3>
+              <p class="text-gray">
+                We manage variations, renewals, and lifecycle compliance to maintain market authorization.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Compliance & Guidelines -->
+      <section class="bg-secondary-light2 mb-12 rounded-lg p-6">
+        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Compliance & Standards</h2>
+        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+          <div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Regulatory Bodies</h3>
+            <ul class="text-gray list-inside list-disc">
+              <li>FDA (U.S. Food and Drug Administration)</li>
+              <li>EMA (European Medicines Agency)</li>
+              <li>ICH (International Council for Harmonisation)</li>
+              <li>CDSCO (Central Drugs Standard Control Organization)</li>
+              <li>TGA, Health Canada, PMDA</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Guidelines & Certifications</h3>
+            <ul class="text-gray list-inside list-disc">
+              <li>ICH Q1–Q14</li>
+              <li>CTD/ACTD Guidelines</li>
+              <li>MDR-2017 (India)</li>
+              <li>21 CFR Part 11</li>
+              <li>ISO 13485 (Medical Devices)</li>
+            </ul>
+          </div>
+          <div>
+            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Applications & Industries</h3>
+            <ul class="text-gray list-inside list-disc">
+              <li>Pharmaceutical Manufacturing</li>
+              <li>Biotechnology</li>
+              <li>Medical Device Manufacturing</li>
+              <li>Marketing Authorization Holders</li>
+              <li>Generic & Biosimilar Producers</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Conclusion -->
+      <section class="mb-12">
+        <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Why Choose Our Regulatory Services?</h2>
+        <p class="text-gray text-lg leading-relaxed">
+          Our CRO provides expert regulatory compliance and medical device registration services, ensuring seamless
+          approvals across global markets. With comprehensive dossier preparation, strategic consulting, and
+          post-approval support, we help you navigate complex regulations from FDA, EMA, CDSCO, and beyond. Choose us to
+          accelerate your market entry and maintain compliance with confidence.
         </p>
+      </section>
+    </div>
 
-        <ul class="mt-4 list-disc space-y-2 pl-6">
-          <li>
-            <strong>Market-specific submission strategies</strong> for FDA, EMA, CDSCO, WHO, and other jurisdictions
-          </li>
-          <li><strong>End-to-end dossier management</strong> from compilation to approval</li>
-          <li><strong>Post-approval lifecycle management</strong> including variations and renewals</li>
-          <li><strong>Regulatory intelligence</strong> to anticipate and adapt to changing requirements</li>
-        </ul>
+    <!-- Call to Action -->
+    <div class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
+      <h3 class="mb-4 text-xl font-semibold">Ready to Achieve Global Regulatory Compliance?</h3>
+      <p class="text-gray mb-4">Let us streamline your drug and device approvals with precision.</p>
+      <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
+    </div>
 
-        <p class="mt-6">
-          With deep expertise in <strong>eCTD/ACTD formats</strong> and regional submission requirements, we ensure your
-          applications meet all technical and scientific standards while maintaining compliance throughout the product lifecycle.
-        </p>
-      </div>
+    <!-- FAQ Section -->
+    <section class="mx-auto max-w-7xl">
+      <Faq faqs={mainEntity} />
     </section>
-
-    <!-- Services Section -->
-    <section class="mb-16">
-      <h2 class="mb-8 text-center text-3xl font-bold text-blue-800">Our Regulatory Affairs Services</h2>
-
-      <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <!-- Dossier Preparation -->
-        <div class="group rounded-xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-          <div
-            class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-blue-100 transition-colors group-hover:bg-blue-200"
-          >
-            <svg class="h-6 w-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="mb-3 text-xl font-semibold text-blue-700">Dossier Preparation</h3>
-          <ul class="list-disc space-y-1 pl-5 text-gray-700">
-            <li>eCTD/ACTD compilation</li>
-            <li>Module-wise document preparation</li>
-            <li>Quality review and gap analysis</li>
-            <li>Regional format adaptation</li>
-          </ul>
-        </div>
-
-        <!-- Submission Strategy -->
-        <div class="group rounded-xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-          <div
-            class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-green-100 transition-colors group-hover:bg-green-200"
-          >
-            <svg class="h-6 w-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
-            </svg>
-          </div>
-          <h3 class="mb-3 text-xl font-semibold text-green-700">Submission Strategy</h3>
-          <ul class="list-disc space-y-1 pl-5 text-gray-700">
-            <li>Regulatory pathway analysis</li>
-            <li>Sequence planning for global submissions</li>
-            <li>Agency meeting preparation</li>
-            <li>Orphan drug/expedited program applications</li>
-          </ul>
-        </div>
-
-        <!-- Labeling -->
-        <div class="group rounded-xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-          <div
-            class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-purple-100 transition-colors group-hover:bg-purple-200"
-          >
-            <svg class="h-6 w-6 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="mb-3 text-xl font-semibold text-purple-700">Labeling Compliance</h3>
-          <ul class="list-disc space-y-1 pl-5 text-gray-700">
-            <li>Core labeling development</li>
-            <li>Country-specific label adaptation</li>
-            <li>PLR/QRD compliance review</li>
-            <li>Patient information leaflets</li>
-          </ul>
-        </div>
-
-        <!-- Lifecycle Management -->
-        <div class="group rounded-xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-          <div
-            class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-red-100 transition-colors group-hover:bg-red-200"
-          >
-            <svg class="h-6 w-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-            </svg>
-          </div>
-          <h3 class="mb-3 text-xl font-semibold text-red-700">Lifecycle Management</h3>
-          <ul class="list-disc space-y-1 pl-5 text-gray-700">
-            <li>Variations and amendments</li>
-            <li>Renewals and annual reports</li>
-            <li>Post-approval change management</li>
-            <li>Product discontinuation support</li>
-          </ul>
-        </div>
-
-        <!-- Agency Interactions -->
-        <div class="group rounded-xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-          <div
-            class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-yellow-100 transition-colors group-hover:bg-yellow-200"
-          >
-            <svg class="h-6 w-6 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="mb-3 text-xl font-semibold text-yellow-700">Agency Interactions</h3>
-          <ul class="list-disc space-y-1 pl-5 text-gray-700">
-            <li>Query responses and deficiency letters</li>
-            <li>Scientific advice procedures</li>
-            <li>Oral explanation preparation</li>
-            <li>Post-marketing commitment tracking</li>
-          </ul>
-        </div>
-
-        <!-- Regulatory Intelligence -->
-        <div class="group rounded-xl border border-gray-100 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
-          <div
-            class="mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-cyan-100 transition-colors group-hover:bg-cyan-200"
-          >
-            <svg class="h-6 w-6 text-cyan-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-              ></path>
-            </svg>
-          </div>
-          <h3 class="mb-3 text-xl font-semibold text-cyan-700">Regulatory Intelligence</h3>
-          <ul class="list-disc space-y-1 pl-5 text-gray-700">
-            <li>Regulatory change monitoring</li>
-            <li>Competitor approval tracking</li>
-            <li>Emerging market assessments</li>
-            <li>Policy impact analysis</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- Market Expertise Section -->
-    <section class="mb-16 rounded-xl bg-blue-50 p-8">
-      <h2 class="mb-8 text-center text-3xl font-bold text-blue-800">Our Global Regulatory Expertise</h2>
-
-      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="flex items-center rounded-lg bg-white p-6 shadow-sm">
-          <img src="/icons/fda.svg" alt="FDA" class="mr-4 h-12 w-12" />
-          <div>
-            <h3 class="text-lg font-semibold text-gray-800">US FDA</h3>
-            <p class="text-gray-600">NDA/ANDA/BLA submissions</p>
-          </div>
-        </div>
-
-        <div class="flex items-center rounded-lg bg-white p-6 shadow-sm">
-          <img src="/icons/ema.svg" alt="EMA" class="mr-4 h-12 w-12" />
-          <div>
-            <h3 class="text-lg font-semibold text-gray-800">EU EMA</h3>
-            <p class="text-gray-600">Centralized & National Procedures</p>
-          </div>
-        </div>
-
-        <div class="flex items-center rounded-lg bg-white p-6 shadow-sm">
-          <img src="/icons/cdsco.svg" alt="CDSCO" class="mr-4 h-12 w-12" />
-          <div>
-            <h3 class="text-lg font-semibold text-gray-800">CDSCO</h3>
-            <p class="text-gray-600">India market approvals</p>
-          </div>
-        </div>
-
-        <div class="flex items-center rounded-lg bg-white p-6 shadow-sm">
-          <img src="/icons/who.svg" alt="WHO" class="mr-4 h-12 w-12" />
-          <div>
-            <h3 class="text-lg font-semibold text-gray-800">WHO</h3>
-            <p class="text-gray-600">Prequalification programs</p>
-          </div>
-        </div>
-
-        <div class="flex items-center rounded-lg bg-white p-6 shadow-sm">
-          <img src="/icons/mhra.svg" alt="MHRA" class="mr-4 h-12 w-12" />
-          <div>
-            <h3 class="text-lg font-semibold text-gray-800">MHRA</h3>
-            <p class="text-gray-600">UK regulatory requirements</p>
-          </div>
-        </div>
-
-        <div class="flex items-center rounded-lg bg-white p-6 shadow-sm">
-          <img src="/icons/health-canada.svg" alt="Health Canada" class="mr-4 h-12 w-12" />
-          <div>
-            <h3 class="text-lg font-semibold text-gray-800">Health Canada</h3>
-            <p class="text-gray-600">Canadian submissions</p>
-          </div>
-        </div>
-
-        <div class="flex items-center rounded-lg bg-white p-6 shadow-sm">
-          <img src="/icons/tga.svg" alt="TGA" class="mr-4 h-12 w-12" />
-          <div>
-            <h3 class="text-lg font-semibold text-gray-800">TGA</h3>
-            <p class="text-gray-600">Australian regulations</p>
-          </div>
-        </div>
-
-        <div class="flex items-center rounded-lg bg-white p-6 shadow-sm">
-          <img src="/icons/global.svg" alt="Global" class="mr-4 h-12 w-12" />
-          <div>
-            <h3 class="text-lg font-semibold text-gray-800">Emerging Markets</h3>
-            <p class="text-gray-600">ASEAN, LATAM, MENA</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Process Section -->
-    <section class="mb-16">
-      <h2 class="mb-8 text-center text-3xl font-bold text-blue-800">Our Regulatory Approval Process</h2>
-
-      <div class="rounded-xl border border-gray-200 bg-white p-8 shadow-sm">
-        <div class="grid gap-6 text-center md:grid-cols-5">
-          <div class="flex flex-col items-center">
-            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-blue-100">
-              <span class="text-2xl font-bold text-blue-800">1</span>
-            </div>
-            <h3 class="font-semibold text-gray-800">Strategy Development</h3>
-            <p class="mt-2 text-sm text-gray-600">Define regulatory pathway</p>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-green-100">
-              <span class="text-2xl font-bold text-green-800">2</span>
-            </div>
-            <h3 class="font-semibold text-gray-800">Dossier Preparation</h3>
-            <p class="mt-2 text-sm text-gray-600">Compile submission documents</p>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-purple-100">
-              <span class="text-2xl font-bold text-purple-800">3</span>
-            </div>
-            <h3 class="font-semibold text-gray-800">Submission</h3>
-            <p class="mt-2 text-sm text-gray-600">File with health authorities</p>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-yellow-100">
-              <span class="text-2xl font-bold text-yellow-800">4</span>
-            </div>
-            <h3 class="font-semibold text-gray-800">Agency Interaction</h3>
-            <p class="mt-2 text-sm text-gray-600">Respond to queries</p>
-          </div>
-
-          <div class="flex flex-col items-center">
-            <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-cyan-100">
-              <span class="text-2xl font-bold text-cyan-800">5</span>
-            </div>
-            <h3 class="font-semibold text-gray-800">Approval & Maintenance</h3>
-            <p class="mt-2 text-sm text-gray-600">Manage post-approval changes</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Benefits Section -->
-    <section class="bg-primary-light mb-16 rounded-xl p-12 text-white">
-      <h2 class="mb-8 text-center text-3xl font-bold">Why Partner With Us?</h2>
-
-      <div class="grid gap-8 md:grid-cols-2">
-        <div class="flex items-start">
-          <svg
-            class="mt-1 mr-3 h-6 w-6 flex-shrink-0 text-green-400"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <div>
-            <h3 class="mb-2 text-xl font-semibold">Regulatory Expertise</h3>
-            <p class="text-blue-100">
-              Team includes former regulators with deep knowledge of FDA, EMA, CDSCO, and other key agencies.
-            </p>
-          </div>
-        </div>
-
-        <div class="flex items-start">
-          <svg
-            class="mt-1 mr-3 h-6 w-6 flex-shrink-0 text-green-400"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <div>
-            <h3 class="mb-2 text-xl font-semibold">Submission Excellence</h3>
-            <p class="text-blue-100">98% first-time acceptance rate for dossier submissions.</p>
-          </div>
-        </div>
-
-        <div class="flex items-start">
-          <svg
-            class="mt-1 mr-3 h-6 w-6 flex-shrink-0 text-green-400"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <div>
-            <h3 class="mb-2 text-xl font-semibold">Global Reach</h3>
-            <p class="text-blue-100">Single point of contact for submissions across 40+ markets.</p>
-          </div>
-        </div>
-
-        <div class="flex items-start">
-          <svg
-            class="mt-1 mr-3 h-6 w-6 flex-shrink-0 text-green-400"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
-          </svg>
-          <div>
-            <h3 class="mb-2 text-xl font-semibold">Technology Enabled</h3>
-            <p class="text-blue-100">Advanced regulatory information management systems.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="mb-16 text-center">
-      <div class="bg-primary-light inline-block max-w-2xl rounded-xl p-8 text-white shadow-lg">
-        <h3 class="mb-4 text-2xl font-bold">Ready to Accelerate Your Global Approvals?</h3>
-        <p class="mb-6 text-lg opacity-90">
-          Our regulatory experts will guide you through every step of the approval process.
-        </p>
-        <div class="flex flex-col justify-center gap-4 sm:flex-row">
-          <a href="/contact-us" class="button"> Get Started </a>
-        </div>
-      </div>
-    </section>
-  </article>
+  </main>
 </Layout>
