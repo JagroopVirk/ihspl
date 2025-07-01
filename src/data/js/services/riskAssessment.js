@@ -198,6 +198,46 @@ export default {
           text: 'Yes, we help create and execute Biological Evaluation Plans (BEPs) including toxicological interpretation under ISO 10993-17 and 10993-18.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What does genotoxic impurity evaluation involve?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Genotoxic impurity evaluation identifies and assesses DNA-damaging impurities in pharmaceuticals, following ICH M7 and related guidelines. It combines in silico predictions, in vitro/in vivo testing, and risk assessments to ensure product safety and regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus maintain regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Indivirtus adheres to global standards like ICH Q3A-Q3C, M7, and ISO 10993, delivering GLP-compliant studies, detailed documentation, and regulatory submission support for agencies such as FDA, EMA, and PMDA.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What are extractables and leachables (E&L) studies?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'E&L studies analyze chemicals released from medical devices or packaging under simulated conditions, using ISO 10993-18 compliant methods to ensure safety through identification, quantification, and toxicological risk assessment.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How is (Q)SAR used in CRO services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '(Q)SAR employs computational models to predict toxicity risks of impurities, supporting ICH M7 compliance by identifying potential genotoxic hazards efficiently without extensive laboratory testing.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus support medical device safety?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Indivirtus conducts ISO 10993-17 compliant toxicological risk assessments, evaluating extractables, leachables, and degradation products with route- and patient-specific analyses to ensure medical device safety.',
+        },
+      },
     ],
   },
   meta: {

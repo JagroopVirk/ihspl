@@ -224,6 +224,62 @@ export default {
           text: 'The turnaround time for SDS/MSDS preparation is typically 5–10 business days, depending on the complexity of the substance and availability of data.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is the purpose of ADE/PDE calculations in pharmaceutical manufacturing?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'ADE (Acceptable Daily Exposure) and PDE (Permitted Daily Exposure) calculations determine safe exposure limits for pharmaceutical compounds to prevent cross-contamination and ensure patient safety during manufacturing. These calculations are critical for cleaning validation and compliance with regulatory guidelines like EMA and ICH Q3D.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How are Occupational Exposure Limits (OELs) determined?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'OELs are calculated based on toxicological, pharmacological, and clinical data for APIs, intermediates, and excipients. The process involves assessing NOAEL/LOAEL thresholds, route-specific exposures (inhalation, dermal, oral), and ensuring compliance with regulations like REACH and OSHA.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is Occupational Exposure Banding (OEB), and why is it used?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'OEB categorizes compounds into exposure bands (OEB 1–5/6) based on their toxicity and potency. It is used to assess risks for compounds with limited toxicological data and to select appropriate containment strategies, ensuring worker safety in pharmaceutical facilities.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What are the key components of a Safety Data Sheet (SDS)?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'An SDS includes 16 sections covering identification, hazard identification, composition, first-aid measures, fire-fighting measures, accidental release measures, handling and storage, exposure controls, physical and chemical properties, stability and reactivity, toxicological and ecological information, disposal, transport, regulatory information, and other details.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure multi-region SDS compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Indivirtus prepares region-specific SDSs compliant with regulations like EU REACH/CLP, US OSHA, Canada WHMIS, and India’s Hazardous Chemical Rules. They also provide multi-lingual SDS preparation and translation to meet global regulatory requirements.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is cleaning validation important in pharmaceutical manufacturing?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Cleaning validation ensures that equipment used in pharmaceutical manufacturing is free from residues that could cause cross-contamination, ensuring product safety and compliance with GMP and regulatory standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What data is required for toxicological risk assessments?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Toxicological risk assessments require physical, chemical, toxicological, and ecotoxicological data, often sourced from public databases like PubChem, ECHA, and TOXNET, as well as supplier or manufacturer data for cross-verification.',
+        },
+      },
     ],
   },
   meta: {

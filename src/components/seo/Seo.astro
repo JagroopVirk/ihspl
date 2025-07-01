@@ -13,12 +13,14 @@ const {
   schema = null,
   locationSchema = null,
   servicesSchema = null,
+  faqSchema = null,
   canonical = null,
 } = Astro.props;
 
 const jsonLocationSchema = JSON.stringify(locationSchema, null, 0);
 const jsonSchema = JSON.stringify(schema, null, 0);
 const jsonServiceSchema = JSON.stringify(servicesSchema, null, 0);
+const jsonFaqSchema = JSON.stringify(faqSchema, null, 0);
 
 ---
 
@@ -60,6 +62,11 @@ const jsonServiceSchema = JSON.stringify(servicesSchema, null, 0);
 
   {servicesSchema && Object.keys(servicesSchema).length > 0 && (
     <script type="application/ld+json" set:html={jsonServiceSchema}>
+    </script>
+  )}
+
+  {faqSchema && Object.keys(faqSchema).length > 0 && (
+    <script type="application/ld+json" set:html={jsonFaqSchema}>
     </script>
   )}
 

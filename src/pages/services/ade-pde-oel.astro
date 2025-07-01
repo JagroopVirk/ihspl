@@ -9,64 +9,7 @@ import seoData from '@/data/js/services/adepde.js';
 import BTN from '@/components/other/BTN.astro';
 import Faq from '@/components/other/Faq.astro';
 
-const mainEntity = [
-  {
-    '@type': 'Question',
-    name: 'What is the purpose of ADE/PDE calculations in pharmaceutical manufacturing?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'ADE (Acceptable Daily Exposure) and PDE (Permitted Daily Exposure) calculations determine safe exposure limits for pharmaceutical compounds to prevent cross-contamination and ensure patient safety during manufacturing. These calculations are critical for cleaning validation and compliance with regulatory guidelines like EMA and ICH Q3D.',
-    },
-  },
-  {
-    '@type': 'Question',
-    name: 'How are Occupational Exposure Limits (OELs) determined?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'OELs are calculated based on toxicological, pharmacological, and clinical data for APIs, intermediates, and excipients. The process involves assessing NOAEL/LOAEL thresholds, route-specific exposures (inhalation, dermal, oral), and ensuring compliance with regulations like REACH and OSHA.',
-    },
-  },
-  {
-    '@type': 'Question',
-    name: 'What is Occupational Exposure Banding (OEB), and why is it used?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'OEB categorizes compounds into exposure bands (OEB 1–5/6) based on their toxicity and potency. It is used to assess risks for compounds with limited toxicological data and to select appropriate containment strategies, ensuring worker safety in pharmaceutical facilities.',
-    },
-  },
-  {
-    '@type': 'Question',
-    name: 'What are the key components of a Safety Data Sheet (SDS)?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'An SDS includes 16 sections covering identification, hazard identification, composition, first-aid measures, fire-fighting measures, accidental release measures, handling and storage, exposure controls, physical and chemical properties, stability and reactivity, toxicological and ecological information, disposal, transport, regulatory information, and other details.',
-    },
-  },
-  {
-    '@type': 'Question',
-    name: 'How does Indivirtus ensure multi-region SDS compliance?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'Indivirtus prepares region-specific SDSs compliant with regulations like EU REACH/CLP, US OSHA, Canada WHMIS, and India’s Hazardous Chemical Rules. They also provide multi-lingual SDS preparation and translation to meet global regulatory requirements.',
-    },
-  },
-  {
-    '@type': 'Question',
-    name: 'Why is cleaning validation important in pharmaceutical manufacturing?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'Cleaning validation ensures that equipment used in pharmaceutical manufacturing is free from residues that could cause cross-contamination, ensuring product safety and compliance with GMP and regulatory standards.',
-    },
-  },
-  {
-    '@type': 'Question',
-    name: 'What data is required for toxicological risk assessments?',
-    acceptedAnswer: {
-      '@type': 'Answer',
-      text: 'Toxicological risk assessments require physical, chemical, toxicological, and ecotoxicological data, often sourced from public databases like PubChem, ECHA, and TOXNET, as well as supplier or manufacturer data for cross-verification.',
-    },
-  },
-];
+const mainEntity = seoData.faqSchema.mainEntity;
 ---
 
 <Layout
@@ -78,21 +21,22 @@ const mainEntity = [
     image: seoData.image.path.src,
     url: seoData.pageLink,
     schema: seoData.schema,
+    faqSchema: seoData.faqSchema,
   }}
 >
   <main>
     <!-- Heading Section -->
-    <section class="bg-primary-light py-10 text-center">
-      <h1 class="text-primary text-4xl font-bold">Toxicological Safety & Regulatory Documentation</h1>
-      <p class="text-gray mt-2 text-lg">Comprehensive support for pharmaceutical safety and compliance</p>
+    <section class="bg-primary-light border-primary border-b-4 py-10 text-center">
+      <h1 class="text-4xl font-bold">Toxicological Safety & Regulatory Documentation</h1>
+      <p class="mt-2 text-lg">Comprehensive support for pharmaceutical safety and compliance</p>
     </section>
 
     <!-- Main Content Section -->
-    <section class="maxwidth border-primary border-t-4 bg-white px-6 py-12">
+    <section class="maxwidth bg-white px-6 py-12">
       <!-- Description -->
       <div class="mb-12">
-        <h2 class="text-primaryBlue mb-4 text-2xl font-semibold">Why Toxicological Safety Services Are Essential</h2>
-        <p class="text-gray leading-relaxed">
+        <h2 class="mb-4 text-2xl font-semibold">Why Toxicological Safety Services Are Essential</h2>
+        <p class="leading-relaxed">
           Indivirtus provides specialized toxicological and safety documentation services to support pharmaceutical
           manufacturing and cleaning validation. These services are critical for ensuring regulatory compliance,
           mitigating risks of cross-contamination, protecting personnel from exposure to hazardous substances, and
@@ -106,13 +50,13 @@ const mainEntity = [
 
       <!-- Services Cards for ADE/PDE/OEL/OEB Calculations -->
       <div class="mb-12">
-        <h3 class="text-primaryBlue mb-6 text-xl font-semibold">ADE / PDE / OEL / OEB Calculation Services</h3>
+        <h3 class="mb-6 text-xl font-semibold">ADE / PDE / OEL / OEB Calculation Services</h3>
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <!-- HBEL Calculations -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">🧪</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Health-Based Exposure Limit (HBEL) Calculations</h4>
+              <span class="mr-2 text-3xl">🧪</span>
+              <h4 class="text-lg font-semibold">Health-Based Exposure Limit (HBEL) Calculations</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>ADE (Acceptable Daily Exposure) determination</li>
@@ -125,8 +69,8 @@ const mainEntity = [
           <!-- OEL Determination -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">🛡️</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Occupational Exposure Limit (OEL) Determination</h4>
+              <span class="mr-2 text-3xl">🛡️</span>
+              <h4 class="text-lg font-semibold">Occupational Exposure Limit (OEL) Determination</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>OELs for APIs, intermediates, and excipients</li>
@@ -139,8 +83,8 @@ const mainEntity = [
           <!-- OEB -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">📊</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Occupational Exposure Banding (OEB)</h4>
+              <span class="mr-2 text-3xl">📊</span>
+              <h4 class="text-lg font-semibold">Occupational Exposure Banding (OEB)</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>Categorization into OEB 1–5/6</li>
@@ -153,8 +97,8 @@ const mainEntity = [
           <!-- Risk Assessment -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">⚠️</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Risk Assessment & Control Strategy</h4>
+              <span class="mr-2 text-3xl">⚠️</span>
+              <h4 class="text-lg font-semibold">Risk Assessment & Control Strategy</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>Containment strategy (Isolator, RABS)</li>
@@ -167,8 +111,8 @@ const mainEntity = [
           <!-- Report Preparation -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">📝</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Report Preparation & Regulatory Support</h4>
+              <span class="mr-2 text-3xl">📝</span>
+              <h4 class="text-lg font-semibold">Report Preparation & Regulatory Support</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>HBEL, PDE, OEL justification reports</li>
@@ -181,8 +125,8 @@ const mainEntity = [
           <!-- Specialized Support -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">🔬</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Specialized Support Services</h4>
+              <span class="mr-2 text-3xl">🔬</span>
+              <h4 class="text-lg font-semibold">Specialized Support Services</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>Potent compound classification (PCC)</li>
@@ -197,13 +141,13 @@ const mainEntity = [
 
       <!-- Services Cards for MSDS/SDS Preparation -->
       <div class="mb-12">
-        <h3 class="text-primaryBlue mb-6 text-xl font-semibold">MSDS / SDS Preparation Services</h3>
+        <h3 class="mb-6 text-xl font-semibold">MSDS / SDS Preparation Services</h3>
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
           <!-- SDS Authoring -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">📄</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">SDS Authoring & Preparation</h4>
+              <span class="mr-2 text-3xl">📄</span>
+              <h4 class="text-lg font-semibold">SDS Authoring & Preparation</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>Full-format SDS per GHS, OSHA, REACH, CLP</li>
@@ -215,8 +159,8 @@ const mainEntity = [
           <!-- Regulatory Classification -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">⚖️</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Regulatory Classification & Compliance</h4>
+              <span class="mr-2 text-3xl">⚖️</span>
+              <h4 class="text-lg font-semibold">Regulatory Classification & Compliance</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>GHS hazard classification</li>
@@ -228,8 +172,8 @@ const mainEntity = [
           <!-- Data Collection -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">🔍</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Data Collection & Interpretation</h4>
+              <span class="mr-2 text-3xl">🔍</span>
+              <h4 class="text-lg font-semibold">Data Collection & Interpretation</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>Analysis of toxicological and ecotoxicological data</li>
@@ -241,8 +185,8 @@ const mainEntity = [
           <!-- Section-by-Section SDS -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">📑</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Section-by-Section SDS Population</h4>
+              <span class="mr-2 text-3xl">📑</span>
+              <h4 class="text-lg font-semibold">Section-by-Section SDS Population</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>Complete 16-section SDS</li>
@@ -254,8 +198,8 @@ const mainEntity = [
           <!-- Multi-Region SDS -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">🌐</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Multi-Region SDS Compliance</h4>
+              <span class="mr-2 text-3xl">🌐</span>
+              <h4 class="text-lg font-semibold">Multi-Region SDS Compliance</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>Region-specific SDS for EU, US, India, Canada</li>
@@ -267,8 +211,8 @@ const mainEntity = [
           <!-- Transport Classification -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">🚚</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Transport & Dangerous Goods Classification</h4>
+              <span class="mr-2 text-3xl">🚚</span>
+              <h4 class="text-lg font-semibold">Transport & Dangerous Goods Classification</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>UN Number and hazard class assignment</li>
@@ -280,8 +224,8 @@ const mainEntity = [
           <!-- Special Compounds -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">🧬</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">SDS for Special Compounds</h4>
+              <span class="mr-2 text-3xl">🧬</span>
+              <h4 class="text-lg font-semibold">SDS for Special Compounds</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>SDS for APIs, intermediates, excipients</li>
@@ -293,8 +237,8 @@ const mainEntity = [
           <!-- MSDS to SDS Conversion -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">🔄</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">MSDS to SDS Conversion</h4>
+              <span class="mr-2 text-3xl">🔄</span>
+              <h4 class="text-lg font-semibold">MSDS to SDS Conversion</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>Convert old MSDS to GHS-compliant SDS</li>
@@ -306,8 +250,8 @@ const mainEntity = [
           <!-- Document Management -->
           <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
             <div class="mb-4 flex items-center">
-              <span class="text-primary mr-2 text-3xl">📂</span>
-              <h4 class="text-primaryBlue text-lg font-semibold">Document Management & Distribution</h4>
+              <span class="mr-2 text-3xl">📂</span>
+              <h4 class="text-lg font-semibold">Document Management & Distribution</h4>
             </div>
             <ul class="text-gray mb-4 list-disc pl-5">
               <li>Digitally signed PDF generation</li>
@@ -321,7 +265,7 @@ const mainEntity = [
 
       <!-- Process Section -->
       <div class="bg-primary-light border-primary mb-12 rounded-lg border p-6">
-        <h3 class="text-primaryBlue mb-4 text-xl font-semibold">How We Deliver These Services</h3>
+        <h3 class="mb-4 text-xl font-semibold">How We Deliver These Services</h3>
         <p class="text-gray leading-relaxed">
           The process begins with data collection from clients, including compound-specific details, manufacturing
           processes, and existing toxicological data. Our toxicologists analyze this data alongside public databases
@@ -336,7 +280,7 @@ const mainEntity = [
 
       <!-- Regulatory and Certifications Section -->
       <div class="bg-secondary-light2 border-secondary mb-12 rounded-lg border p-6">
-        <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Regulatory Compliance and Certifications</h3>
+        <h3 class="mb-4 text-xl font-semibold">Regulatory Compliance and Certifications</h3>
         <p class="text-gray leading-relaxed">
           Our services adhere to stringent global regulatory standards, including:
         </p>
@@ -357,7 +301,7 @@ const mainEntity = [
 
       <!-- Conclusion Section -->
       <div class="bg-primary-light border-primary mb-12 rounded-lg border p-6">
-        <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Conclusion</h3>
+        <h3 class="mb-4 text-xl font-semibold">Conclusion</h3>
         <p class="text-gray leading-relaxed">
           Indivirtus’ toxicological and safety documentation services empower pharmaceutical manufacturers, CROs, and
           biotech firms to achieve regulatory compliance, ensure workplace safety, and mitigate risks. By delivering
@@ -369,7 +313,7 @@ const mainEntity = [
     </section>
     <!-- Call to Action Section -->
     <div class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
-      <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Ready to Ensure Safety and Compliance?</h3>
+      <h3 class="mb-4 text-xl font-semibold">Ready to Ensure Safety and Compliance?</h3>
       <p class="text-gray mb-4">Partner with Indivirtus for expert toxicological and regulatory support.</p>
       <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
     </div>
