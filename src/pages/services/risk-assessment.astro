@@ -1,191 +1,276 @@
 ---
+// Imports
 import Layout from '../../layouts/Layout.astro';
-
 import '../../styles/global.css';
 
-// Importing SEO data for the About page
+// SEO Data
 import seoData from '@/data/js/services/riskAssessment';
 
+// Components
 import BTN from '@/components/other/BTN.astro';
 import Faq from '@/components/other/Faq.astro';
 
-const mainEntity = seoData.faqSchema.mainEntity;
+const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { mainEntity } = faqSchema;
 ---
 
 <Layout
   seo={{
-    title: `${seoData.meta.title} - Indivirtus`,
-    description: seoData.meta.description,
-    keywords: seoData.meta.keywords,
-    canonical: seoData.meta.canonicalUrl,
-    image: seoData.image.path.src,
-    url: seoData.pageLink,
-    schema: seoData.schema,
-    faqSchema: seoData.faqSchema,
+    title: `${meta.title} - Indivirtus`,
+    description: meta.description,
+    keywords: meta.keywords,
+    canonical: meta.canonicalUrl,
+    image: image.path.src,
+    url: pageLink,
+    schema: schema,
+    faqSchema: faqSchema,
   }}
 >
   <main>
     <!-- Hero Section -->
-    <section class="bg-primary-light border-primary border-b-4 py-10 text-center">
-      <h1 class="text-primary mb-4 text-4xl font-bold md:text-5xl">Cutting-Edge CRO Solutions for Pharmaceuticals</h1>
-      <p class="text-xl text-gray-600 md:text-2xl">
-        Unrivaled expertise in genotoxic impurity evaluation and toxicological risk assessment.
-      </p>
+    <header class="bg-primary-light border-primary border-b-4 py-12 text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-primary mb-4 text-4xl leading-tight font-bold md:text-5xl">
+          Cutting-Edge CRO Solutions for Pharmaceuticals for Genotoxicity & Medical Device Toxicity Assessment
+        </h1>
+        <p class="mx-auto max-w-3xl text-xl text-gray-600 md:text-2xl">
+          Unrivaled expertise in genotoxic impurity evaluation and toxicological risk assessment
+        </p>
+      </div>
+    </header>
+
+    <div class="maxwidth">
+      <!-- Main Content -->
+      <div class="container mx-auto px-6 py-12">
+        <!-- Service Overview -->
+        <section class="mb-16" aria-labelledby="service-overview">
+          <h2 id="service-overview" class="text-primary mb-6 text-3xl font-semibold">Why Our CRO Services Stand Out</h2>
+          <div class="prose prose-lg text-gray max-w-none">
+            <p>
+              Indivirtus provides specialized CRO services, delivering precision in genotoxic impurity evaluation,
+              toxicological risk assessments, and extractables and leachables (E&L) studies.
+            </p>
+            <p>
+              These services empower pharmaceutical companies, biotech innovators, and medical device manufacturers to
+              achieve compliance with stringent global regulations while ensuring patient safety. By integrating
+              advanced analytics, computational toxicology, and rigorous testing, we streamline drug and device
+              development, helping clients bring safe, high-quality products to market efficiently.
+            </p>
+          </div>
+        </section>
+        <!-- Service Cards -->
+        <section class="mb-16" aria-labelledby="our-services">
+          <h2 id="our-services" class="text-primary mb-8 text-3xl font-semibold">Tailored CRO Services</h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {
+              [
+                {
+                  icon: '🧪',
+                  title: 'Impurity Profiling',
+                  items: [
+                    'Precise identification via LC-MS/MS, GC-MS, NMR, HRMS',
+                    'Threshold of Toxicological Concern (TTC) analysis',
+                    'Robust impurity qualification studies',
+                  ],
+                  link: '/services/impurity-profiling',
+                },
+                {
+                  icon: '💻',
+                  title: 'In Silico (Q)SAR Assessment',
+                  items: [
+                    'Advanced toxicity predictions with Derek Nexus, Leadscope',
+                    'Dual-model approach: rule-based and statistical',
+                    'ICH M7-compliant mutagenicity reports',
+                  ],
+                  link: '/services/qsar-assessment',
+                },
+                {
+                  icon: '🧬',
+                  title: 'In Vitro Genotoxicity Testing',
+                  items: [
+                    'Ames Test (OECD 471) for mutagenicity',
+                    'Mouse Lymphoma Assay (OECD 490)',
+                    'GLP-compliant, high-precision studies',
+                  ],
+                  link: '/services/in-vitro-testing',
+                },
+                {
+                  icon: '🐁',
+                  title: 'In Vivo Genotoxicity Testing',
+                  items: [
+                    'In vivo Micronucleus Test (OECD 474)',
+                    'Comet Assay (OECD 489) for DNA damage',
+                    'Transgenic Rodent Mutation Assays',
+                  ],
+                  link: '/services/in-vivo-testing',
+                },
+                {
+                  icon: '⚗️',
+                  title: 'Extractables and Leachables Studies',
+                  items: [
+                    'ISO 10993-18 chemical characterization',
+                    'Simulated-use extraction for real-world insights',
+                    'Advanced GC-MS, LC-MS/MS analysis',
+                  ],
+                  link: '/services/e-and-l-studies',
+                },
+                {
+                  icon: '📊',
+                  title: 'Toxicological Risk Assessment',
+                  items: [
+                    'Tolerable Intake and PDE calculations',
+                    'Route-specific safety evaluations',
+                    'Cramer Classification for unquantified substances',
+                  ],
+                  link: '/services/risk-assessment',
+                },
+              ].map((service, index) => (
+                <article
+                  key={index}
+                  class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md transition-all hover:shadow-lg"
+                >
+                  <div class="mb-4 text-4xl" aria-hidden="true">
+                    {service.icon}
+                  </div>
+                  <h3 class="text-primary mb-3 text-xl font-bold">{service.title}</h3>
+                  <ul class="text-gray mb-6 space-y-2">
+                    {service.items.map((item, i) => (
+                      <li key={i} class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <BTN
+                    btnLink={service.link}
+                    btnClass="buttonSimple"
+                    btnText="Read more…"
+                    aria-label={`Learn more about ${service.title}`}
+                  />
+                </article>
+              ))
+            }
+          </div>
+        </section>
+        <!-- Process Section -->
+        <section class="bg-primary-light border-primary mb-16 rounded-lg border p-8" aria-labelledby="our-process">
+          <h2 id="our-process" class="text-primary mb-6 text-3xl font-semibold">How We Deliver Excellence</h2>
+          <ol class="text-gray space-y-4">
+            {
+              [
+                {
+                  title: 'Project Onboarding',
+                  description: 'Align with clients on objectives and regulatory needs',
+                },
+                {
+                  title: 'Data Acquisition',
+                  description: 'Leverage cutting-edge analytics and in silico tools',
+                },
+                {
+                  title: 'Testing Phase',
+                  description: 'Conduct OECD-compliant in vitro and in vivo trials',
+                },
+                {
+                  title: 'Regulatory Support',
+                  description: 'Prepare ICH-compliant documentation for global submissions',
+                },
+                {
+                  title: 'Final Delivery',
+                  description: 'Provide actionable risk assessments and stability reports',
+                },
+              ].map((step, index) => (
+                <li key={index} class="flex items-start">
+                  <span class="text-primary mr-4 flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-white font-bold">
+                    {index + 1}
+                  </span>
+                  <div>
+                    <h3 class="text-primary mb-1 text-lg font-semibold">{step.title}</h3>
+                    <p>{step.description}</p>
+                  </div>
+                </li>
+              ))
+            }
+          </ol>
+        </section>
+        <!-- Compliance Section -->
+        <section class="mb-16" aria-labelledby="compliance">
+          <h2 id="compliance" class="text-primary mb-6 text-3xl font-semibold">Global Compliance, Assured</h2>
+          <div class="grid gap-8 md:grid-cols-2">
+            <div>
+              <h3 class="text-primary mb-4 text-xl font-bold">Regulatory Oversight</h3>
+              <ul class="text-gray space-y-2">
+                {
+                  [
+                    'FDA (U.S. Food and Drug Administration)',
+                    'EMA (European Medicines Agency)',
+                    "CDSCO (India's Regulatory Authority)",
+                    "PMDA (Japan's Regulatory Authority)",
+                  ].map((item, i) => (
+                    <li key={i} class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-primary mb-4 text-xl font-bold">Standards & Certifications</h3>
+              <ul class="text-gray space-y-2">
+                {
+                  [
+                    'ICH Q3A, Q3B, Q3C, M7 for impurities',
+                    'ISO 10993 for medical device safety',
+                    'GLP-certified laboratories',
+                    'ISO 14971 risk management framework',
+                  ].map((item, i) => (
+                    <li key={i} class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </div>
+          <p class="text-gray mt-6 text-center">
+            Serving pharmaceuticals, biotech, and medical device sectors with unwavering compliance.
+          </p>
+        </section>
+        <!-- Conclusion -->
+        <section class="mb-16" aria-labelledby="why-choose-us">
+          <h2 id="why-choose-us" class="text-primary mb-6 text-3xl font-semibold">Your Trusted CRO Partner</h2>
+          <div class="prose prose-lg text-gray max-w-none">
+            <p>
+              Indivirtus combines scientific rigor with regulatory expertise to deliver CRO services that ensure your
+              pharmaceutical and medical device products are safe, compliant, and market-ready.
+            </p>
+            <p>
+              Our advanced analytical tools, global compliance know-how, and commitment to precision make us the ideal
+              partner to accelerate your development journey with confidence.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="bg-secondary-light border-secondary mb-16 border py-12 text-center" aria-labelledby="cta-heading">
+      <div class="container mx-auto px-4">
+        <h3 id="cta-heading" class="mb-4 text-2xl font-semibold">Ready to Advance Your Research?</h3>
+        <p class="text-gray mx-auto mb-6 max-w-2xl">Partner with Indivirtus for innovative, compliant CRO solutions.</p>
+        <BTN
+          btnLink="/contact-us"
+          btnClass="button"
+          btnText="Contact Us Today"
+          aria-label="Contact us about CRO services"
+        />
+      </div>
     </section>
 
-    <!-- Main Content -->
-    <div class="mx-auto max-w-7xl px-6 py-12">
-      <!-- Introductory Description -->
-      <section class="mb-12">
-        <h2 class="text-primary mb-4 text-3xl font-semibold">Why Our CRO Services Stand Out</h2>
-        <p class="text-gray text-lg">
-          Indivirtus provides specialized CRO services, delivering precision in genotoxic impurity evaluation,
-          toxicological risk assessments, and extractables and leachables (E&L) studies. These services empower
-          pharmaceutical companies, biotech innovators, and medical device manufacturers to achieve compliance with
-          stringent global regulations while ensuring patient safety. By integrating advanced analytics, computational
-          toxicology, and rigorous testing, we streamline drug and device development, helping clients bring safe,
-          high-quality products to market efficiently.
-        </p>
-      </section>
-
-      <!-- Service Cards -->
-      <section class="mb-12">
-        <h2 class="text-primary mb-6 text-3xl font-semibold">Tailored CRO Services</h2>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Impurity Profiling -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="mb-4 text-4xl">🧪</div>
-            <h3 class="text-primary mb-2 text-xl font-bold">Impurity Profiling</h3>
-            <ul class="text-gray mb-4 list-disc pl-5">
-              <li>Precise identification via LC-MS/MS, GC-MS, NMR, HRMS</li>
-              <li>Threshold of Toxicological Concern (TTC) analysis</li>
-              <li>Robust impurity qualification studies</li>
-            </ul>
-            <BTN btnLink="/services/impurity-profiling" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- In Silico (Q)SAR Assessment -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="mb-4 text-4xl">💻</div>
-            <h3 class="text-primary mb-2 text-xl font-bold">In Silico (Q)SAR Assessment</h3>
-            <ul class="text-gray mb-4 list-disc pl-5">
-              <li>Advanced toxicity predictions with Derek Nexus, Leadscope</li>
-              <li>Dual-model approach: rule-based and statistical</li>
-              <li>ICH M7-compliant mutagenicity reports</li>
-            </ul>
-            <BTN btnLink="/services/qsar-assessment" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- In Vitro Genotoxicity Testing -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="mb-4 text-4xl">🧬</div>
-            <h3 class="text-primary mb-2 text-xl font-bold">In Vitro Genotoxicity Testing</h3>
-            <ul class="text-gray mb-4 list-disc pl-5">
-              <li>Ames Test (OECD 471) for mutagenicity</li>
-              <li>Mouse Lymphoma Assay (OECD 490)</li>
-              <li>GLP-compliant, high-precision studies</li>
-            </ul>
-            <BTN btnLink="/services/in-vitro-testing" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- In Vivo Genotoxicity Testing -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="mb-4 text-4xl">🐁</div>
-            <h3 class="text-primary mb-2 text-xl font-bold">In Vivo Genotoxicity Testing</h3>
-            <ul class="text-gray mb-4 list-disc pl-5">
-              <li>In vivo Micronucleus Test (OECD 474)</li>
-              <li>Comet Assay (OECD 489) for DNA damage</li>
-              <li>Transgenic Rodent Mutation Assays</li>
-            </ul>
-            <BTN btnLink="/services/in-vivo-testing" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Extractables and Leachables Studies -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="mb-4 text-4xl">⚗️</div>
-            <h3 class="text-primary mb-2 text-xl font-bold">Extractables and Leachables Studies</h3>
-            <ul class="text-gray mb-4 list-disc pl-5">
-              <li>ISO 10993-18 chemical characterization</li>
-              <li>Simulated-use extraction for real-world insights</li>
-              <li>Advanced GC-MS, LC-MS/MS analysis</li>
-            </ul>
-            <BTN btnLink="/services/e-and-l-studies" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Toxicological Risk Assessment -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="mb-4 text-4xl">📊</div>
-            <h3 class="text-primary mb-2 text-xl font-bold">Toxicological Risk Assessment</h3>
-            <ul class="text-gray mb-4 list-disc pl-5">
-              <li>Tolerable Intake and PDE calculations</li>
-              <li>Route-specific safety evaluations</li>
-              <li>Cramer Classification for unquantified substances</li>
-            </ul>
-            <BTN btnLink="/services risked-assessment" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Process Section -->
-      <section class="bg-primary-light border-primary mb-12 rounded-lg border p-8">
-        <h2 class="text-primary mb-6 text-3xl font-semibold">How We Deliver Excellence</h2>
-        <ol class="text-gray list-decimal space-y-4 pl-5">
-          <li><strong>Project Onboarding:</strong> Align with clients on objectives and regulatory needs.</li>
-          <li><strong>Data Acquisition:</strong> Leverage cutting-edge analytics and in silico tools.</li>
-          <li><strong>Testing Phase:</strong> Conduct OECD-compliant in vitro and in vivo trials.</li>
-          <li><strong>Regulatory Support:</strong> Prepare ICH-compliant documentation for global submissions.</li>
-          <li><strong>Final Delivery:</strong> Provide actionable risk assessments and stability reports.</li>
-        </ol>
-      </section>
-
-      <!-- Compliance & Guidelines -->
-      <section class="mb-12">
-        <h2 class="text-primary mb-6 text-3xl font-semibold">Global Compliance, Assured</h2>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div>
-            <h3 class="text-primary mb-2 text-xl font-bold">Regulatory Oversight</h3>
-            <ul class="text-gray list-disc pl-5">
-              <li>FDA (U.S. Food and Drug Administration)</li>
-              <li>EMA (European Medicines Agency)</li>
-              <li>CDSCO (India’s Regulatory Authority)</li>
-              <li>PMDA (Japan’s Regulatory Authority)</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-primary mb-2 text-xl font-bold">Standards & Certifications</h3>
-            <ul class="text-gray list-disc pl-5">
-              <li>ICH Q3A, Q3B, Q3C, M7 for impurities</li>
-              <li>ISO 10993 for medical device safety</li>
-              <li>GLP-certified laboratories</li>
-              <li>ISO 14971 risk management framework</li>
-            </ul>
-          </div>
-        </div>
-        <p class="text-gray mt-4">
-          Serving pharmaceuticals, biotech, and medical device sectors with unwavering compliance.
-        </p>
-      </section>
-
-      <!-- Conclusion -->
-      <section class="mb-12">
-        <h2 class="text-primary mb-4 text-3xl font-semibold">Your Trusted CRO Partner</h2>
-        <p class="text-gray text-lg">
-          Indivirtus combines scientific rigor with regulatory expertise to deliver CRO services that ensure your
-          pharmaceutical and medical device products are safe, compliant, and market-ready. Our advanced analytical
-          tools, global compliance know-how, and commitment to precision make us the ideal partner to accelerate your
-          development journey with confidence.
-        </p>
-      </section>
-    </div>
-    <!-- Call to Action Section -->
-    <div class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
-      <h3 class="mb-4 text-xl font-semibold">Ready to Advance Your Research?</h3>
-      <p class="text-gray mb-4">Partner with Indivirtus for innovative, compliant CRO solutions.</p>
-      <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
-    </div>
-
-    <section class="maxwidth">
-      <!-- FAQ Section -->
+    <!-- FAQ Section -->
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
       <Faq faqs={mainEntity} />
     </section>
   </main>

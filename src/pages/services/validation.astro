@@ -1,285 +1,338 @@
 ---
+// Imports
 import Layout from '../../layouts/Layout.astro';
-
 import '../../styles/global.css';
 
-// Importing SEO data for the About page
+// SEO Data
 import seoData from '@/data/js/services/validation';
 
+// Components
 import BTN from '@/components/other/BTN.astro';
 import Faq from '@/components/other/Faq.astro';
 
-const mainEntity = seoData.faqSchema.mainEntity;
+const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { mainEntity } = faqSchema;
 ---
 
 <Layout
   seo={{
-    title: `${seoData.meta.title} - Indivirtus`,
-    description: seoData.meta.description,
-    keywords: seoData.meta.keywords,
-    canonical: seoData.meta.canonicalUrl,
-    image: seoData.image.path.src,
-    url: seoData.pageLink,
-    schema: seoData.schema,
-    faqSchema: seoData.faqSchema,
+    title: `${meta.title} - Indivirtus`,
+    description: meta.description,
+    keywords: meta.keywords,
+    canonical: meta.canonicalUrl,
+    image: image.path.src,
+    url: pageLink,
+    schema: schema,
+    faqSchema: faqSchema,
   }}
 >
   <main>
     <!-- Hero Section -->
-    <section class="bg-primary-light border-primary border-b-4 py-10 text-center">
-      <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">Validation Services for Pharma & Biotech</h1>
-      <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
-        Ensuring Compliance for Critical Systems and Processes
-      </p>
+    <header class="bg-primary-light border-primary border-b-4 py-10 text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">Validation Services for Pharma & Biotech</h1>
+        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
+          Ensuring Compliance for Critical Systems and Processes
+        </p>
+      </div>
+    </header>
+
+    <div class="maxwidth">
+      <!-- Main Content -->
+      <div class="container mx-auto px-6 py-12">
+        <!-- Service Overview -->
+        <section class="mb-16" aria-labelledby="service-overview">
+          <h2 id="service-overview" class="text-primaryBlue mb-6 text-3xl font-semibold">Our Validation Services</h2>
+          <div class="prose prose-lg text-gray max-w-none">
+            <p>
+              Our Contract Research Organization (CRO) offers comprehensive validation services for pharmaceutical and
+              biotech systems, including laboratory instruments, process automation, HVAC, and enterprise applications.
+            </p>
+            <p>
+              These services ensure compliance with global regulatory standards, maintain data integrity, and support
+              operational excellence. Our solutions are critical for pharmaceutical manufacturers, biotech firms, CROs,
+              and medical device companies seeking to meet stringent requirements from FDA, EMA, and other authorities
+              while ensuring system reliability and product quality.
+            </p>
+          </div>
+        </section>
+        <!-- Service Cards Grid -->
+        <section class="mb-16" aria-labelledby="our-expertise">
+          <h2 id="our-expertise" class="text-primaryBlue mb-8 text-3xl font-semibold">Our Validation Expertise</h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {
+              [
+                {
+                  icon: '🔬',
+                  title: 'Laboratory Systems Validation',
+                  items: [
+                    'DQ/IQ/OQ/PQ for HPLC, GC, etc.',
+                    'ICH Q2 method validation',
+                    '21 CFR Part 11 compliance',
+                    'Software validation (Empower)',
+                  ],
+                  link: '/services/lab-systems-validation',
+                },
+                {
+                  icon: '⚙️',
+                  title: 'Process Automation Validation',
+                  items: [
+                    'PLC/HMI/SCADA validation',
+                    'GAMP 5 risk-based approach',
+                    'FS/DS documentation',
+                    'Cybersecurity verification',
+                  ],
+                  link: '/services/process-automation-validation',
+                },
+                {
+                  icon: '🌡️',
+                  title: 'EMS Validation',
+                  items: [
+                    'IQ/OQ/PQ & software validation',
+                    'BMS/HVAC integration',
+                    '21 CFR Part 11 compliance',
+                    'Sensor calibration',
+                  ],
+                  link: '/services/ems-validation',
+                },
+                {
+                  icon: '💻',
+                  title: 'Enterprise Application Validation',
+                  items: [
+                    'CSV for SAP, LIMS, QMS',
+                    '21 CFR Part 11 compliance',
+                    'Risk & data integrity audits',
+                    'URS to summary reports',
+                  ],
+                  link: '/services/enterprise-app-validation',
+                },
+                {
+                  icon: '📏',
+                  title: 'Temperature Mapping',
+                  items: [
+                    'Autoclave, tunnel validation',
+                    'Cold room & warehouse mapping',
+                    'Data logger calibration',
+                    'Graphical data analysis',
+                  ],
+                  link: '/services/temperature-mapping',
+                },
+                {
+                  icon: '❄️',
+                  title: 'HVAC Validation',
+                  items: [
+                    'DOP/PAO filter testing',
+                    'Airflow & particle testing',
+                    'ISO 14644 compliance',
+                    'Cleanroom classification',
+                  ],
+                  link: '/services/hvac-validation',
+                },
+                {
+                  icon: '📜',
+                  title: 'Validation Documentation',
+                  items: [
+                    'VMP & protocol preparation',
+                    'GAMP 5 risk planning',
+                    'Traceability & summary reports',
+                    'Audit readiness support',
+                  ],
+                  link: '/services/validation-documentation',
+                },
+                {
+                  icon: '🎓',
+                  title: 'Validation Training',
+                  items: [
+                    'CSV & GAMP 5 training',
+                    'Data integrity (ALCOA+)',
+                    'Validation strategy workshops',
+                    'GxP system training',
+                  ],
+                  link: '/services/validation-training',
+                },
+                {
+                  icon: '🔄',
+                  title: 'Periodic Review & Revalidation',
+                  items: [
+                    'Periodic system reviews',
+                    'Trigger-based revalidation',
+                    'System decommissioning',
+                    'Change control integration',
+                  ],
+                  link: '/services/periodic-revalidation',
+                },
+              ].map((service, index) => (
+                <article
+                  key={index}
+                  class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md transition-transform hover:scale-[1.02]"
+                >
+                  <div class="text-primary mb-4 text-4xl" aria-hidden="true">
+                    {service.icon}
+                  </div>
+                  <h3 class="text-primaryBlue mb-3 text-xl font-bold">{service.title}</h3>
+                  <ul class="text-gray mb-6 space-y-2">
+                    {service.items.map((item, i) => (
+                      <li key={i} class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <BTN
+                    btnLink={service.link}
+                    btnClass="buttonSimple"
+                    btnText="Read more…"
+                    aria-label={`Learn more about ${service.title}`}
+                  />
+                </article>
+              ))
+            }
+          </div>
+        </section>
+        <!-- Process Section -->
+        <section class="mb-16" aria-labelledby="our-process">
+          <h2 id="our-process" class="text-primaryBlue mb-8 text-3xl font-semibold">Our Validation Process</h2>
+          <div class="space-y-8">
+            {
+              [
+                {
+                  title: 'System Assessment',
+                  description:
+                    'We evaluate systems (lab, automation, HVAC, etc.) to define validation scope and regulatory requirements.',
+                },
+                {
+                  title: 'Protocol Development',
+                  description:
+                    'We create Validation Master Plans, DQ/IQ/OQ/PQ protocols, and risk assessments per GAMP 5.',
+                },
+                {
+                  title: 'Execution & Testing',
+                  description:
+                    'We execute validation protocols, including testing for functionality, data integrity, and compliance.',
+                },
+                {
+                  title: 'Documentation & Reporting',
+                  description: 'We provide traceability matrices, summary reports, and audit-ready documentation.',
+                },
+                {
+                  title: 'Ongoing Support',
+                  description:
+                    'We offer periodic reviews, revalidation, and training to maintain compliance and system performance.',
+                },
+              ].map((step, index) => (
+                <div key={index} class="flex items-start">
+                  <div class="text-primary bg-primary/10 mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-2xl font-bold">
+                    {index + 1}
+                  </div>
+                  <div>
+                    <h3 class="text-primaryBlue mb-2 text-xl font-semibold">{step.title}</h3>
+                    <p class="text-gray">{step.description}</p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+        <!-- Compliance Section -->
+        <section class="bg-secondary-light2 mb-16 rounded-lg p-8" aria-labelledby="compliance">
+          <h2 id="compliance" class="text-primaryBlue mb-8 text-3xl font-semibold">Compliance & Standards</h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div>
+              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Regulatory Bodies</h3>
+              <ul class="text-gray space-y-2">
+                {
+                  [
+                    'FDA (U.S. Food and Drug Administration)',
+                    'EMA (European Medicines Agency)',
+                    'ICH (International Council for Harmonisation)',
+                    'CDSCO (Central Drugs Standard Control Organization)',
+                    'WHO, PIC/S, TGA',
+                  ].map((item, i) => (
+                    <li key={i} class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Guidelines & Certifications</h3>
+              <ul class="text-gray space-y-2">
+                {
+                  [
+                    '21 CFR Part 11, EU Annex 11',
+                    'GAMP 5, ICH Q2',
+                    'ISO 14644-1/2 (Cleanrooms)',
+                    'WHO TRS Annexes',
+                    'ISPE Guidelines',
+                  ].map((item, i) => (
+                    <li key={i} class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Applications & Industries</h3>
+              <ul class="text-gray space-y-2">
+                {
+                  [
+                    'Pharmaceutical Manufacturing',
+                    'Biotechnology',
+                    'Contract Research Organizations',
+                    'Medical Device Manufacturing',
+                    'Quality Assurance/Control',
+                  ].map((item, i) => (
+                    <li key={i} class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- Conclusion -->
+        <section class="mb-16" aria-labelledby="why-choose-us">
+          <h2 id="why-choose-us" class="text-primaryBlue mb-6 text-3xl font-semibold">
+            Why Choose Our Validation Services?
+          </h2>
+          <div class="prose prose-lg text-gray max-w-none">
+            <p>
+              Our CRO delivers expert validation services for laboratory, automation, HVAC, and enterprise systems,
+              ensuring compliance with global standards like 21 CFR Part 11, GAMP 5, and ISO 14644.
+            </p>
+            <p>
+              With a risk-based approach and comprehensive documentation, we help you maintain system integrity and pass
+              regulatory inspections. Partner with us to ensure your systems are robust, compliant, and ready for
+              operational excellence.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="bg-secondary-light border-secondary mb-16 border py-12 text-center" aria-labelledby="cta-heading">
+      <div class="container mx-auto px-4">
+        <h3 id="cta-heading" class="mb-4 text-2xl font-semibold">Ready to Validate Your Critical Systems?</h3>
+        <p class="text-gray mx-auto mb-6 max-w-2xl">Partner with us for compliant, reliable validation solutions.</p>
+        <BTN
+          btnLink="/contact-us"
+          btnClass="button"
+          btnText="Contact Us Today"
+          aria-label="Contact us about validation services"
+        />
+      </div>
     </section>
 
-    <!-- Main Content Section -->
-    <div class="mx-auto max-w-7xl px-6 py-12">
-      <!-- Introductory Description -->
-      <section class="mb-12">
-        <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Our Validation Services</h2>
-        <p class="text-gray text-lg leading-relaxed">
-          Our Contract Research Organization (CRO) offers comprehensive validation services for pharmaceutical and
-          biotech systems, including laboratory instruments, process automation, HVAC, and enterprise applications.
-          These services ensure compliance with global regulatory standards, maintain data integrity, and support
-          operational excellence. Our solutions are critical for pharmaceutical manufacturers, biotech firms, CROs, and
-          medical device companies seeking to meet stringent requirements from FDA, EMA, and other authorities while
-          ensuring system reliability and product quality.
-        </p>
-      </section>
-
-      <!-- Service Cards -->
-      <section class="mb-12">
-        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Validation Expertise</h2>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Laboratory Systems Validation -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">🔬</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Laboratory Systems Validation</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>DQ/IQ/OQ/PQ for HPLC, GC, etc.</li>
-              <li>ICH Q2 method validation</li>
-              <li>21 CFR Part 11 compliance</li>
-              <li>Software validation (Empower)</li>
-            </ul>
-            <BTN btnLink="/services/lab-systems-validation" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Process Automation Systems Validation -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">⚙️</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Process Automation Validation</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>PLC/HMI/SCADA validation</li>
-              <li>GAMP 5 risk-based approach</li>
-              <li>FS/DS documentation</li>
-              <li>Cybersecurity verification</li>
-            </ul>
-            <BTN btnLink="/services/process-automation-validation" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Environmental Monitoring System Validation -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">🌡️</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">EMS Validation</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>IQ/OQ/PQ & software validation</li>
-              <li>BMS/HVAC integration</li>
-              <li>21 CFR Part 11 compliance</li>
-              <li>Sensor calibration</li>
-            </ul>
-            <BTN btnLink="/services/ems-validation" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Enterprise Application Validation -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">💻</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Enterprise Application Validation</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>CSV for SAP, LIMS, QMS</li>
-              <li>21 CFR Part 11 compliance</li>
-              <li>Risk & data integrity audits</li>
-              <li>URS to summary reports</li>
-            </ul>
-            <BTN btnLink="/services/enterprise-app-validation" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Temperature Mapping & Thermal Validation -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">📏</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Temperature Mapping</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>Autoclave, tunnel validation</li>
-              <li>Cold room & warehouse mapping</li>
-              <li>Data logger calibration</li>
-              <li>Graphical data analysis</li>
-            </ul>
-            <BTN btnLink="/services/temperature-mapping" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- HVAC System Validation -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">❄️</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">HVAC Validation</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>DOP/PAO filter testing</li>
-              <li>Airflow & particle testing</li>
-              <li>ISO 14644 compliance</li>
-              <li>Cleanroom classification</li>
-            </ul>
-            <BTN btnLink="/services/hvac-validation" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Validation Documentation & Compliance -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">📜</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Validation Documentation</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>VMP & protocol preparation</li>
-              <li>GAMP 5 risk planning</li>
-              <li>Traceability & summary reports</li>
-              <li>Audit readiness support</li>
-            </ul>
-            <BTN btnLink="/services/validation-documentation" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Training & Consultation -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">🎓</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Validation Training</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>CSV & GAMP 5 training</li>
-              <li>Data integrity (ALCOA+)</li>
-              <li>Validation strategy workshops</li>
-              <li>GxP system training</li>
-            </ul>
-            <BTN btnLink="/services/validation-training" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Periodic Review & Revalidation -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">🔄</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Periodic Review & Revalidation</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>Periodic system reviews</li>
-              <li>Trigger-based revalidation</li>
-              <li>System decommissioning</li>
-              <li>Change control integration</li>
-            </ul>
-            <BTN btnLink="/services/periodic-revalidation" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Process Section -->
-      <section class="mb-12">
-        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Validation Process</h2>
-        <div class="space-y-6">
-          <div class="flex items-start">
-            <div class="text-primary mr-4 text-2xl font-bold">1</div>
-            <div>
-              <h3 class="text-primaryBlue text-xl font-semibold">System Assessment</h3>
-              <p class="text-gray">
-                We evaluate systems (lab, automation, HVAC, etc.) to define validation scope and regulatory
-                requirements.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="text-primary mr-4 text-2xl font-bold">2</div>
-            <div>
-              <h3 class="text-primaryBlue text-xl font-semibold">Protocol Development</h3>
-              <p class="text-gray">
-                We create Validation Master Plans, DQ/IQ/OQ/PQ protocols, and risk assessments per GAMP 5.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="text-primary mr-4 text-2xl font-bold">3</div>
-            <div>
-              <h3 class="text-primaryBlue text-xl font-semibold">Execution & Testing</h3>
-              <p class="text-gray">
-                We execute validation protocols, including testing for functionality, data integrity, and compliance.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="text-primary mr-4 text-2xl font-bold">4</div>
-            <div>
-              <h3 class="text-primaryBlue text-xl font-semibold">Documentation & Reporting</h3>
-              <p class="text-gray">We provide traceability matrices, summary reports, and audit-ready documentation.</p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="text-primary mr-4 text-2xl font-bold">5</div>
-            <div>
-              <h3 class="text-primaryBlue text-xl font-semibold">Ongoing Support</h3>
-              <p class="text-gray">
-                We offer periodic reviews, revalidation, and training to maintain compliance and system performance.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Compliance & Guidelines -->
-      <section class="bg-secondary-light2 mb-12 rounded-lg p-6">
-        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Compliance & Standards</h2>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Regulatory Bodies</h3>
-            <ul class="text-gray list-inside list-disc">
-              <li>FDA (U.S. Food and Drug Administration)</li>
-              <li>EMA (European Medicines Agency)</li>
-              <li>ICH (International Council for Harmonisation)</li>
-              <li>CDSCO (Central Drugs Standard Control Organization)</li>
-              <li>WHO, PIC/S, TGA</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Guidelines & Certifications</h3>
-            <ul class="text-gray list-inside list-disc">
-              <li>21 CFR Part 11, EU Annex 11</li>
-              <li>GAMP 5, ICH Q2</li>
-              <li>ISO 14644-1/2 (Cleanrooms)</li>
-              <li>WHO TRS Annexes</li>
-              <li>ISPE Guidelines</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Applications & Industries</h3>
-            <ul class="text-gray list-inside list-disc">
-              <li>Pharmaceutical Manufacturing</li>
-              <li>Biotechnology</li>
-              <li>Contract Research Organizations</li>
-              <li>Medical Device Manufacturing</li>
-              <li>Quality Assurance/Control</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Conclusion -->
-      <section class="mb-12">
-        <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Why Choose Our Validation Services?</h2>
-        <p class="text-gray text-lg leading-relaxed">
-          Our CRO delivers expert validation services for laboratory, automation, HVAC, and enterprise systems, ensuring
-          compliance with global standards like 21 CFR Part 11, GAMP 5, and ISO 14644. With a risk-based approach and
-          comprehensive documentation, we help you maintain system integrity and pass regulatory inspections. Partner
-          with us to ensure your systems are robust, compliant, and ready for operational excellence.
-        </p>
-      </section>
-    </div>
-
-    <!-- Call to Action -->
-    <div class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
-      <h3 class="mb-4 text-xl font-semibold">Ready to Validate Your Critical Systems?</h3>
-      <p class="text-gray mb-4">Partner with us for compliant, reliable validation solutions.</p>
-      <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
-    </div>
-
     <!-- FAQ Section -->
-    <section class="mx-auto max-w-7xl">
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
       <Faq faqs={mainEntity} />
     </section>
   </main>

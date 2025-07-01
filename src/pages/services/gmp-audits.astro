@@ -1,326 +1,377 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-
 import '../../styles/global.css';
 
-// Importing SEO data for the About page
+// SEO Data
 import seoData from '@/data/js/services/gmpAudits';
 
+// Components
 import BTN from '@/components/other/BTN.astro';
 import Faq from '@/components/other/Faq.astro';
 
-const mainEntity = seoData.faqSchema.mainEntity;
+const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { mainEntity } = faqSchema;
 ---
 
 <Layout
   seo={{
-    title: `${seoData.meta.title} - Indivirtus`,
-    description: seoData.meta.description,
-    keywords: seoData.meta.keywords,
-    canonical: seoData.meta.canonicalUrl,
-    image: seoData.image.path.src,
-    url: seoData.pageLink,
-    schema: seoData.schema,
-    faqSchema: seoData.faqSchema,
+    title: `${meta.title} - Indivirtus`,
+    description: meta.description,
+    keywords: meta.keywords,
+    canonical: meta.canonicalUrl,
+    image: image.path.src,
+    url: pageLink,
+    schema: schema,
+    faqSchema: faqSchema,
   }}
 >
   <main>
     <!-- Hero Section -->
-    <section class="bg-primary-light border-primary border-b-4 py-10 text-center">
-      <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">GMP Approval & Compliance Services</h1>
-      <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
-        Streamlining Regulatory Approvals for Pharmaceutical Excellence
-      </p>
+    <header class="bg-primary-light border-primary border-b-4 py-12 text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-primaryBlue mb-4 text-4xl leading-tight font-bold md:text-5xl">
+          GMP Approval & Compliance Services
+        </h1>
+        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
+          Streamlining Regulatory Approvals for Pharmaceutical Excellence
+        </p>
+      </div>
+    </header>
+    <div class="maxwidth">
+      <!-- Main Content -->
+      <div class="container mx-auto px-6 py-12">
+        <!-- Service Overview -->
+        <section class="mb-16" aria-labelledby="service-overview">
+          <h2 id="service-overview" class="text-primaryBlue mb-6 text-3xl font-semibold">
+            Our GMP Compliance Services
+          </h2>
+          <div class="prose prose-lg text-gray max-w-none">
+            <p>
+              Our Contract Research Organization (CRO) specializes in Good Manufacturing Practice (GMP) approval and
+              compliance services to help pharmaceutical companies navigate complex regulatory landscapes. From vendor
+              assessments and GMP audits to regulatory dossier preparation and facility qualifications, we ensure your
+              operations align with global standards like EU-GMP, USFDA, WHO-GMP, and PIC/S.
+            </p>
+            <p>
+              These services are critical for ensuring product quality, patient safety, and regulatory compliance. Our
+              solutions support pharmaceutical manufacturers, biotech firms, API producers, and contract manufacturers,
+              helping them achieve approvals and maintain robust quality systems.
+            </p>
+          </div>
+        </section>
+
+        <!-- Service Cards -->
+        <section class="mb-16" aria-labelledby="our-expertise">
+          <h2 id="our-expertise" class="text-primaryBlue mb-8 text-3xl font-semibold">Our GMP Expertise</h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {
+              [
+                {
+                  icon: '📋',
+                  title: 'Vendor Assessment Audits',
+                  items: [
+                    'Plant layout & process flow evaluation',
+                    'Equipment & infrastructure assessment',
+                    'CAPA and risk management',
+                    'GAP analysis per Schedule M',
+                  ],
+                  link: '/services/vendor-assessments',
+                },
+                {
+                  icon: '🔍',
+                  title: 'GMP Compliance Audits',
+                  items: [
+                    'Internal GMP audits',
+                    'Mock regulatory inspections',
+                    'Supplier & contract manufacturer audits',
+                    'GxP audits (GMP, GLP, GCP, GDP)',
+                  ],
+                  link: '/services/gmp-audits',
+                },
+                {
+                  icon: '🤝',
+                  title: 'Audit Representation',
+                  items: [
+                    'On-site support during inspections',
+                    'Audit response preparation',
+                    'CAPA development',
+                    'Post-inspection follow-up',
+                  ],
+                  link: '/services/audit-representation',
+                },
+                {
+                  icon: '📄',
+                  title: 'Regulatory Dossier Support',
+                  items: [
+                    'CTD/eCTD module preparation',
+                    'NDA, ANDA, IND, DMF, MAA',
+                    'CMC documentation review',
+                    'Pre-approval inspection readiness',
+                  ],
+                  link: '/services/dossier-support',
+                },
+                {
+                  icon: '⚙️',
+                  title: 'Quality System Development',
+                  items: [
+                    'QMS setup & optimization',
+                    'Data integrity (ALCOA+)',
+                    'SOP & documentation audits',
+                    'Deviation & OOS management',
+                  ],
+                  link: '/services/quality-systems',
+                },
+                {
+                  icon: '🏭',
+                  title: 'Facility Qualification',
+                  items: [
+                    'DQ, IQ, OQ, PQ services',
+                    'Cleaning & HVAC validation',
+                    'Water system validation',
+                    'Validation master plan',
+                  ],
+                  link: '/services/facility-qualification',
+                },
+                {
+                  icon: '🧠',
+                  title: 'Regulatory Strategy',
+                  items: [
+                    'Regulatory pathway consultation',
+                    'Global submission harmonization',
+                    'Country-specific gap analysis',
+                    'Authority engagement strategy',
+                  ],
+                  link: '/services/regulatory-strategy',
+                },
+                {
+                  icon: '🌍',
+                  title: 'Global Submission Support',
+                  items: [
+                    'FDA, EMA, PMDA filings',
+                    'Query response compilation',
+                    'DMF/CEP lifecycle management',
+                    'WHO PQ submissions',
+                  ],
+                  link: '/services/global-submissions',
+                },
+                {
+                  icon: '📚',
+                  title: 'SOP & Documentation Audits',
+                  items: [
+                    'SOP preparation & review',
+                    'Batch record audits',
+                    'Training & logbook audits',
+                    'Equipment log reviews',
+                  ],
+                  link: '/services/sop-audits',
+                },
+                {
+                  icon: '💾',
+                  title: 'Data Integrity & CSV',
+                  items: [
+                    'Computer system validation',
+                    '21 CFR Part 11 compliance',
+                    'Audit trail verification',
+                    'Data backup strategies',
+                  ],
+                  link: '/services/data-integrity',
+                },
+                {
+                  icon: '⚠️',
+                  title: 'Risk Management',
+                  items: [
+                    'ICH Q9 compliance',
+                    'FMEA & HACCP audits',
+                    'Risk control documentation',
+                    'Process risk reviews',
+                  ],
+                  link: '/services/risk-management',
+                },
+                {
+                  icon: '✅',
+                  title: 'PAI Support',
+                  items: [
+                    'Site readiness assessments',
+                    'PAI documentation support',
+                    'Real-time audit assistance',
+                    'Remediation planning',
+                  ],
+                  link: '/services/pai-support',
+                },
+              ].map((service, index) => (
+                <article
+                  key={index}
+                  class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div class="mb-4 text-4xl" aria-hidden="true">
+                    {service.icon}
+                  </div>
+                  <h3 class="text-primaryBlue mb-3 text-xl font-bold">{service.title}</h3>
+                  <ul class="text-gray mb-6 space-y-2">
+                    {service.items.map((item, i) => (
+                      <li key={i} class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <BTN
+                    btnLink={service.link}
+                    btnClass="buttonSimple"
+                    btnText="Read more…"
+                    aria-label={`Learn more about ${service.title}`}
+                  />
+                </article>
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="mb-16" aria-labelledby="our-process">
+          <h2 id="our-process" class="text-primaryBlue mb-8 text-3xl font-semibold">Our GMP Compliance Process</h2>
+          <div class="space-y-6">
+            {
+              [
+                {
+                  title: 'Client Onboarding',
+                  description: 'We assess your facility, processes, and regulatory goals to tailor our GMP services.',
+                },
+                {
+                  title: 'Gap Analysis & Planning',
+                  description:
+                    'We conduct audits and gap assessments to identify compliance gaps and develop a remediation plan.',
+                },
+                {
+                  title: 'Audits & Qualifications',
+                  description:
+                    'Our experts perform GMP audits, facility qualifications, and system validations to ensure compliance.',
+                },
+                {
+                  title: 'Dossier & Submission Support',
+                  description:
+                    'We prepare and review regulatory dossiers, ensuring readiness for submissions and inspections.',
+                },
+                {
+                  title: 'Ongoing Compliance Support',
+                  description:
+                    'We provide continuous support for audits, CAPA implementation, and regulatory query responses.',
+                },
+              ].map((step, index) => (
+                <div key={index} class="flex items-start">
+                  <div class="text-primary bg-primary/10 mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-2xl font-bold">
+                    {index + 1}
+                  </div>
+                  <div>
+                    <h3 class="text-primaryBlue mb-2 text-xl font-semibold">{step.title}</h3>
+                    <p class="text-gray">{step.description}</p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- Compliance Section -->
+        <section class="bg-secondary-light2 mb-16 rounded-lg p-8" aria-labelledby="compliance">
+          <h2 id="compliance" class="text-primaryBlue mb-8 text-3xl font-semibold">Compliance & Standards</h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div>
+              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Regulatory Bodies</h3>
+              <ul class="text-gray space-y-2">
+                {
+                  [
+                    'FDA (U.S. Food and Drug Administration)',
+                    'EMA (European Medicines Agency)',
+                    'ICH (International Council for Harmonisation)',
+                    'CDSCO (Central Drugs Standard Control Organization)',
+                    'WHO, PIC/S, TGA, Health Canada, ANVISA, COFEPRIS',
+                  ].map((item, i) => (
+                    <li key={i} class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Guidelines & Certifications</h3>
+              <ul class="text-gray space-y-2">
+                {
+                  [
+                    'ICH Q7/Q9/Q10',
+                    'EU-GMP, USFDA, WHO-GMP, PIC/S',
+                    '21 CFR Part 11',
+                    'ISO 9001:2015',
+                    'GxP (GMP, GLP, GCP, GDP)',
+                  ].map((item, i) => (
+                    <li key={i} class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Applications & Industries</h3>
+              <ul class="text-gray space-y-2">
+                {
+                  [
+                    'Pharmaceutical Manufacturing',
+                    'Biotechnology',
+                    'API & Drug Product Manufacturing',
+                    'Contract Manufacturing',
+                    'Quality Assurance/Control',
+                  ].map((item, i) => (
+                    <li key={i} class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-16" aria-labelledby="why-choose-us">
+          <h2 id="why-choose-us" class="text-primaryBlue mb-6 text-3xl font-semibold">Why Choose Our CRO?</h2>
+          <div class="prose prose-lg text-gray max-w-none">
+            <p>
+              Our CRO delivers expert GMP compliance and regulatory approval services, ensuring your pharmaceutical
+              operations meet global standards. With comprehensive audits, robust quality systems, and strategic
+              regulatory support, we help you achieve approvals from authorities like USFDA, EMA, and WHO.
+            </p>
+            <p>
+              Partner with us for reliable, efficient solutions that enhance product quality and regulatory success.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="bg-secondary-light border-secondary mb-16 border py-12 text-center" aria-labelledby="cta-heading">
+      <div class="container mx-auto px-4">
+        <h3 id="cta-heading" class="mb-4 text-2xl font-semibold">Ready to Achieve GMP Compliance?</h3>
+        <p class="text-gray mx-auto mb-6 max-w-2xl">
+          Let us guide you through regulatory approvals with confidence and precision.
+        </p>
+        <BTN
+          btnLink="/contact-us"
+          btnClass="button"
+          btnText="Contact Us Today"
+          aria-label="Contact us about GMP compliance services"
+        />
+      </div>
     </section>
 
-    <!-- Main Content Section -->
-    <div class="mx-auto max-w-7xl px-6 py-12">
-      <!-- Introductory Description -->
-      <section class="mb-12">
-        <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Our GMP Compliance Services</h2>
-        <p class="text-gray text-lg leading-relaxed">
-          Our Contract Research Organization (CRO) specializes in Good Manufacturing Practice (GMP) approval and
-          compliance services to help pharmaceutical companies navigate complex regulatory landscapes. From vendor
-          assessments and GMP audits to regulatory dossier preparation and facility qualifications, we ensure your
-          operations align with global standards like EU-GMP, USFDA, WHO-GMP, and PIC/S. These services are critical for
-          ensuring product quality, patient safety, and regulatory compliance. Our solutions support pharmaceutical
-          manufacturers, biotech firms, API producers, and contract manufacturers, helping them achieve approvals and
-          maintain robust quality systems.
-        </p>
-      </section>
-
-      <!-- Service Cards -->
-      <section class="mb-12">
-        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our GMP Expertise</h2>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <!-- Vendor Assessment Audits -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">📋</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Vendor Assessment Audits</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>Plant layout & process flow evaluation</li>
-              <li>Equipment & infrastructure assessment</li>
-              <li>CAPA and risk management</li>
-              <li>GAP analysis per Schedule M</li>
-            </ul>
-            <BTN btnLink="/services/vendor-assessments" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- GMP Compliance Audits -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">🔍</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">GMP Compliance Audits</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>Internal GMP audits</li>
-              <li>Mock regulatory inspections</li>
-              <li>Supplier & contract manufacturer audits</li>
-              <li>GxP audits (GMP, GLP, GCP, GDP)</li>
-            </ul>
-            <BTN btnLink="/services/gmp-audits" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Third-Party Audit Representation -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">🤝</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Audit Representation</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>On-site support during inspections</li>
-              <li>Audit response preparation</li>
-              <li>CAPA development</li>
-              <li>Post-inspection follow-up</li>
-            </ul>
-            <BTN btnLink="/services/audit-representation" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Regulatory Dossier Support -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">📄</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Regulatory Dossier Support</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>CTD/eCTD module preparation</li>
-              <li>NDA, ANDA, IND, DMF, MAA</li>
-              <li>CMC documentation review</li>
-              <li>Pre-approval inspection readiness</li>
-            </ul>
-            <BTN btnLink="/services/dossier-support" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Quality System Development -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">⚙️</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Quality System Development</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>QMS setup & optimization</li>
-              <li>Data integrity (ALCOA+)</li>
-              <li>SOP & documentation audits</li>
-              <li>Deviation & OOS management</li>
-            </ul>
-            <BTN btnLink="/services/quality-systems" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Facility & Equipment Qualification -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">🏭</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Facility Qualification</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>DQ, IQ, OQ, PQ services</li>
-              <li>Cleaning & HVAC validation</li>
-              <li>Water system validation</li>
-              <li>Validation master plan</li>
-            </ul>
-            <BTN btnLink="/services/facility-qualification" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Regulatory Strategy & Consulting -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">🧠</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Regulatory Strategy</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>Regulatory pathway consultation</li>
-              <li>Global submission harmonization</li>
-              <li>Country-specific gap analysis</li>
-              <li>Authority engagement strategy</li>
-            </ul>
-            <BTN btnLink="/services/regulatory-strategy" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Global Submission Support -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">🌍</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Global Submission Support</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>FDA, EMA, PMDA filings</li>
-              <li>Query response compilation</li>
-              <li>DMF/CEP lifecycle management</li>
-              <li>WHO PQ submissions</li>
-            </ul>
-            <BTN btnLink="/services/global-submissions" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Documentation & SOP Audits -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">📚</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">SOP & Documentation Audits</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>SOP preparation & review</li>
-              <li>Batch record audits</li>
-              <li>Training & logbook audits</li>
-              <li>Equipment log reviews</li>
-            </ul>
-            <BTN btnLink="/services/sop-audits" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Electronic Systems & Data Integrity -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">💾</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Data Integrity & CSV</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>Computer system validation</li>
-              <li>21 CFR Part 11 compliance</li>
-              <li>Audit trail verification</li>
-              <li>Data backup strategies</li>
-            </ul>
-            <BTN btnLink="/services/data-integrity" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Risk Management & ICH Q9 -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">⚠️</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">Risk Management</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>ICH Q9 compliance</li>
-              <li>FMEA & HACCP audits</li>
-              <li>Risk control documentation</li>
-              <li>Process risk reviews</li>
-            </ul>
-            <BTN btnLink="/services/risk-management" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-
-          <!-- Pre-Approval Inspection Support -->
-          <div class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md">
-            <div class="text-primary mb-4 text-4xl">✅</div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-bold">PAI Support</h3>
-            <ul class="text-gray mb-4 list-inside list-disc">
-              <li>Site readiness assessments</li>
-              <li>PAI documentation support</li>
-              <li>Real-time audit assistance</li>
-              <li>Remediation planning</li>
-            </ul>
-            <BTN btnLink="/services/pai-support" btnClass="buttonSimple" btnText="Read more…" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Process Section -->
-      <section class="mb-12">
-        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our GMP Compliance Process</h2>
-        <div class="space-y-6">
-          <div class="flex items-start">
-            <div class="text-primary mr-4 text-2xl font-bold">1</div>
-            <div>
-              <h3 class="text-primaryBlue text-xl font-semibold">Client Onboarding</h3>
-              <p class="text-gray">
-                We assess your facility, processes, and regulatory goals to tailor our GMP services.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="text-primary mr-4 text-2xl font-bold">2</div>
-            <div>
-              <h3 class="text-primaryBlue text-xl font-semibold">Gap Analysis & Planning</h3>
-              <p class="text-gray">
-                We conduct audits and gap assessments to identify compliance gaps and develop a remediation plan.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="text-primary mr-4 text-2xl font-bold">3</div>
-            <div>
-              <h3 class="text-primaryBlue text-xl font-semibold">Audits & Qualifications</h3>
-              <p class="text-gray">
-                Our experts perform GMP audits, facility qualifications, and system validations to ensure compliance.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="text-primary mr-4 text-2xl font-bold">4</div>
-            <div>
-              <h3 class="text-primaryBlue text-xl font-semibold">Dossier & Submission Support</h3>
-              <p class="text-gray">
-                We prepare and review regulatory dossiers, ensuring readiness for submissions and inspections.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start">
-            <div class="text-primary mr-4 text-2xl font-bold">5</div>
-            <div>
-              <h3 class="text-primaryBlue text-xl font-semibold">Ongoing Compliance Support</h3>
-              <p class="text-gray">
-                We provide continuous support for audits, CAPA implementation, and regulatory query responses.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Compliance & Guidelines -->
-      <section class="bg-secondary-light2 mb-12 rounded-lg p-6">
-        <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Compliance & Standards</h2>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
-          <div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Regulatory Bodies</h3>
-            <ul class="text-gray list-inside list-disc">
-              <li>FDA (U.S. Food and Drug Administration)</li>
-              <li>EMA (European Medicines Agency)</li>
-              <li>ICH (International Council for Harmonisation)</li>
-              <li>CDSCO (Central Drugs Standard Control Organization)</li>
-              <li>WHO, PIC/S, TGA, Health Canada, ANVISA, COFEPRIS</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Guidelines & Certifications</h3>
-            <ul class="text-gray list-inside list-disc">
-              <li>ICH Q7/Q9/Q10</li>
-              <li>EU-GMP, USFDA, WHO-GMP, PIC/S</li>
-              <li>21 CFR Part 11</li>
-              <li>ISO 9001:2015</li>
-              <li>GxP (GMP, GLP, GCP, GDP)</li>
-            </ul>
-          </div>
-          <div>
-            <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Applications & Industries</h3>
-            <ul class="text-gray list-inside list-disc">
-              <li>Pharmaceutical Manufacturing</li>
-              <li>Biotechnology</li>
-              <li>API & Drug Product Manufacturing</li>
-              <li>Contract Manufacturing</li>
-              <li>Quality Assurance/Control</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <!-- Conclusion -->
-      <section class="mb-12">
-        <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Why Choose Our CRO?</h2>
-        <p class="text-gray text-lg leading-relaxed">
-          Our CRO delivers expert GMP compliance and regulatory approval services, ensuring your pharmaceutical
-          operations meet global standards. With comprehensive audits, robust quality systems, and strategic regulatory
-          support, we help you achieve approvals from authorities like USFDA, EMA, and WHO. Partner with us for
-          reliable, efficient solutions that enhance product quality and regulatory success.
-        </p>
-      </section>
-    </div>
-
-    <!-- Call to Action -->
-    <div class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
-      <h3 class="mb-4 text-xl font-semibold">Ready to Achieve GMP Compliance?</h3>
-      <p class="text-gray mb-4">Let us guide you through regulatory approvals with confidence and precision.</p>
-      <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
-    </div>
-
     <!-- FAQ Section -->
-    <section class="mx-auto max-w-7xl">
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
       <Faq faqs={mainEntity} />
     </section>
   </main>
