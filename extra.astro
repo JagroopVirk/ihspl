@@ -1,46 +1,54 @@
 ---
-import BTN from '../components/BTN.astro';
 import Faq from '../components/Faq.astro';
+import BTN from '../components/BTN.astro';
 
 const mainEntity = [
   {
     '@type': 'Question',
-    name: 'What does genotoxic impurity evaluation involve?',
+    name: 'What is the importance of NABL accreditation for calibration services?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Genotoxic impurity evaluation identifies and assesses DNA-damaging impurities in pharmaceuticals, following ICH M7 and related guidelines. It combines in silico predictions, in vitro/in vivo testing, and risk assessments to ensure product safety and regulatory compliance.',
+      text: 'NABL accreditation ensures that our calibration laboratory adheres to international standards like ISO/IEC 17025, guaranteeing accuracy, reliability, and traceability of measurements. This is critical for pharmaceutical companies to maintain compliance with regulatory requirements.',
     },
   },
   {
     '@type': 'Question',
-    name: 'How does Indivirtus maintain regulatory compliance?',
+    name: 'What types of equipment are calibrated under thermal calibration services?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Indivirtus adheres to global standards like ICH Q3A-Q3C, M7, and ISO 10993, delivering GLP-compliant studies, detailed documentation, and regulatory submission support for agencies such as FDA, EMA, and PMDA.',
+      text: 'Our thermal calibration services cover temperature and relative humidity (RH) devices, IR thermometers, furnaces, ovens, and environmental chambers, ensuring precise control in pharmaceutical manufacturing and storage environments.',
     },
   },
   {
     '@type': 'Question',
-    name: 'What are extractables and leachables (E&L) studies?',
+    name: 'How often should pharmaceutical equipment be calibrated?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'E&L studies analyze chemicals released from medical devices or packaging under simulated conditions, using ISO 10993-18 compliant methods to ensure safety through identification, quantification, and toxicological risk assessment.',
+      text: 'Calibration frequency depends on equipment usage, manufacturer recommendations, and regulatory guidelines. Typically, critical instruments like balances and thermometers require annual or biannual calibration to ensure compliance and accuracy.',
     },
   },
   {
     '@type': 'Question',
-    name: 'How is (Q)SAR used in CRO services?',
+    name: 'What are the benefits of calibrating pressure and vacuum gauges?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: '(Q)SAR employs computational models to predict toxicity risks of impurities, supporting ICH M7 compliance by identifying potential genotoxic hazards efficiently without extensive laboratory testing.',
+      text: 'Calibrating pressure and vacuum gauges ensures accurate measurements for processes like sterilization, filtration, and HVAC systems, preventing equipment failures and ensuring compliance with GMP and other regulatory standards.',
     },
   },
   {
     '@type': 'Question',
-    name: 'How does Indivirtus support medical device safety?',
+    name: 'How does your CRO support multi-disciplinary calibration needs?',
     acceptedAnswer: {
       '@type': 'Answer',
-      text: 'Indivirtus conducts ISO 10993-17 compliant toxicological risk assessments, evaluating extractables, leachables, and degradation products with route- and patient-specific analyses to ensure medical device safety.',
+      text: 'Our CRO provides comprehensive calibration services across thermal, electro-technical, mechanical, pressure/vacuum, mass/volume, and other specialized areas, ensuring all pharmaceutical equipment meets stringent quality and regulatory standards.',
+    },
+  },
+  {
+    '@type': 'Question',
+    name: 'What is the typical turnaround time for calibration services?',
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: 'Turnaround time varies based on the equipment and calibration scope, but most services are completed within 3–7 business days, with expedited options available for urgent needs.',
     },
   },
 ];
@@ -48,182 +56,245 @@ const mainEntity = [
 
 <!-- Hero Section -->
 <section class="bg-primary-light border-primary border-b-4 py-10 text-center">
-  <h1 class="text-primary mb-4 text-4xl font-bold md:text-5xl">Cutting-Edge CRO Solutions for Pharmaceuticals</h1>
-  <p class="text-xl text-gray-600 md:text-2xl">
-    Unrivaled expertise in genotoxic impurity evaluation and toxicological risk assessment.
+  <h1 class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">NABL-Accredited Calibration Services</h1>
+  <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
+    Precision Calibration for Pharmaceutical Excellence and Regulatory Compliance
   </p>
 </section>
 
-<!-- Main Content -->
+<!-- Main Content Section -->
 <div class="mx-auto max-w-7xl px-6 py-12">
   <!-- Introductory Description -->
   <section class="mb-12">
-    <h2 class="text-primary mb-4 text-3xl font-semibold">Why Our CRO Services Stand Out</h2>
-    <p class="text-gray text-lg">
-      Indivirtus provides specialized CRO services, delivering precision in genotoxic impurity evaluation, toxicological
-      risk assessments, and extractables and leachables (E&L) studies. These services empower pharmaceutical companies,
-      biotech innovators, and medical device manufacturers to achieve compliance with stringent global regulations while
-      ensuring patient safety. By integrating advanced analytics, computational toxicology, and rigorous testing, we
-      streamline drug and device development, helping clients bring safe, high-quality products to market efficiently.
+    <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Our Calibration Services</h2>
+    <p class="text-gray text-lg leading-relaxed">
+      Our NABL-accredited Contract Research Organization (CRO) offers comprehensive calibration services tailored for
+      the pharmaceutical industry. From thermal and electro-technical calibration to mechanical, pressure, and
+      mass/volume measurements, we ensure your equipment delivers precise, reliable, and compliant results. These
+      services are vital for maintaining Good Manufacturing Practices (GMP), ensuring product quality, and meeting
+      stringent regulatory standards set by bodies like the FDA, EMA, and CDSCO. Our calibration solutions support
+      pharmaceutical manufacturers, biotech firms, research laboratories, and quality assurance teams, helping them
+      achieve operational excellence and regulatory compliance.
     </p>
   </section>
 
   <!-- Service Cards -->
   <section class="mb-12">
-    <h2 class="text-primary mb-6 text-3xl font-semibold">Tailored CRO Services</h2>
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Calibration Expertise</h2>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-      <!-- Impurity Profiling -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl">
-        <div class="mb-4 text-4xl">🧪</div>
-        <h3 class="text-primary mb-2 text-xl font-bold">Impurity Profiling</h3>
-        <ul class="text-gray mb-4 list-disc pl-5">
-          <li>Precise identification via LC-MS/MS, GC-MS, NMR, HRMS</li>
-          <li>Threshold of Toxicological Concern (TTC) analysis</li>
-          <li>Robust impurity qualification studies</li>
+      <!-- Thermal Calibration -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🌡️</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Thermal Calibration</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Temperature & Relative Humidity (RH)</li>
+          <li>IR Thermometers</li>
+          <li>Furnaces and Ovens</li>
+          <li>Environmental Chambers</li>
         </ul>
-        <BTN btnLink="/services/impurity-profiling" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/thermal-calibration" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- In Silico (Q)SAR Assessment -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl">
-        <div class="mb-4 text-4xl">💻</div>
-        <h3 class="text-primary mb-2 text-xl font-bold">In Silico (Q)SAR Assessment</h3>
-        <ul class="text-gray mb-4 list-disc pl-5">
-          <li>Advanced toxicity predictions with Derek Nexus, Leadscope</li>
-          <li>Dual-model approach: rule-based and statistical</li>
-          <li>ICH M7-compliant mutagenicity reports</li>
+      <!-- Electro-Technical Calibration -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">⚡️</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Electro-Technical Calibration</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>AC/DC Current & Voltage</li>
+          <li>Resistance & Inductance</li>
+          <li>Time & Frequency</li>
+          <li>Multimeters & Power Supplies</li>
         </ul>
-        <BTN btnLink="/services/qsar-assessment" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/electro-technical-calibration" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- In Vitro Genotoxicity Testing -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl">
-        <div class="mb-4 text-4xl">🧬</div>
-        <h3 class="text-primary mb-2 text-xl font-bold">In Vitro Genotoxicity Testing</h3>
-        <ul class="text-gray mb-4 list-disc pl-5">
-          <li>Ames Test (OECD 471) for mutagenicity</li>
-          <li>Mouse Lymphoma Assay (OECD 490)</li>
-          <li>GLP-compliant, high-precision studies</li>
+      <!-- Mechanical Calibration -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">⚙️</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Mechanical Calibration</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Dimension & Length</li>
+          <li>Speed & Acoustics</li>
+          <li>Vernier Calipers & Micrometers</li>
+          <li>Tachometers</li>
         </ul>
-        <BTN btnLink="/services/in-vitro-testing" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/mechanical-calibration" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- In Vivo Genotoxicity Testing -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl">
-        <div class="mb-4 text-4xl">🐁</div>
-        <h3 class="text-primary mb-2 text-xl font-bold">In Vivo Genotoxicity Testing</h3>
-        <ul class="text-gray mb-4 list-disc pl-5">
-          <li>In vivo Micronucleus Test (OECD 474)</li>
-          <li>Comet Assay (OECD 489) for DNA damage</li>
-          <li>Transgenic Rodent Mutation Assays</li>
+      <!-- Pressure/Vacuum Calibration -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🛠️</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Pressure/Vacuum Calibration</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Pressure & Vacuum Gauges</li>
+          <li>Magnehelic Gauges</li>
+          <li>Transmitters & Safety Valves</li>
+          <li>HVAC Systems</li>
         </ul>
-        <BTN btnLink="/services/in-vivo-testing" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/pressure-vacuum-calibration" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- Extractables and Leachables Studies -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl">
-        <div class="mb-4 text-4xl">⚗️</div>
-        <h3 class="text-primary mb-2 text-xl font-bold">Extractables and Leachables Studies</h3>
-        <ul class="text-gray mb-4 list-disc pl-5">
-          <li>ISO 10993-18 chemical characterization</li>
-          <li>Simulated-use extraction for real-world insights</li>
-          <li>Advanced GC-MS, LC-MS/MS analysis</li>
+      <!-- Mass & Volume Calibration -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">⚖️</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Mass & Volume Calibration</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>Weights & Weighing Balances</li>
+          <li>Pipettes & Burettes</li>
+          <li>Volumetric Flasks</li>
+          <li>Analytical Balances</li>
         </ul>
-        <BTN btnLink="/services/e-and-l-studies" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/mass-volume-calibration" btnClass="buttonSimple" btnText="Read more…" />
       </div>
 
-      <!-- Toxicological Risk Assessment -->
-      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow hover:shadow-xl">
-        <div class="mb-4 text-4xl">📊</div>
-        <h3 class="text-primary mb-2 text-xl font-bold">Toxicological Risk Assessment</h3>
-        <ul class="text-gray mb-4 list-disc pl-5">
-          <li>Tolerable Intake and PDE calculations</li>
-          <li>Route-specific safety evaluations</li>
-          <li>Cramer Classification for unquantified substances</li>
+      <!-- Other Calibration Services -->
+      <div class="rounded-lg bg-white p-6 shadow-lg transition-shadow duration-300 hover:shadow-xl">
+        <div class="text-primary mb-4 text-4xl">🔬</div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-bold">Specialized Calibration</h3>
+        <ul class="text-gray mb-4 list-inside list-disc">
+          <li>pH Meters & ORP</li>
+          <li>Conductivity & TDS Meters</li>
+          <li>Flow Meters</li>
+          <li>Specialized Lab Equipment</li>
         </ul>
-        <BTN btnLink="/services risked-assessment" btnClass="buttonSimple" btnText="Read more…" />
+        <BTN btnLink="/services/specialized-calibration" btnClass="buttonSimple" btnText="Read more…" />
       </div>
     </div>
   </section>
 
   <!-- Process Section -->
-  <section class="bg-secondary-light2 mb-12 rounded-lg p-8">
-    <h2 class="text-primary mb-6 text-3xl font-semibold">How We Deliver Excellence</h2>
-    <ol class="text-gray list-decimal space-y-4 pl-5">
-      <li><strong>Project Onboarding:</strong> Align with clients on objectives and regulatory needs.</li>
-      <li><strong>Data Acquisition:</strong> Leverage cutting-edge analytics and in silico tools.</li>
-      <li><strong>Testing Phase:</strong> Conduct OECD-compliant in vitro and in vivo trials.</li>
-      <li><strong>Regulatory Support:</strong> Prepare ICH-compliant documentation for global submissions.</li>
-      <li><strong>Final Delivery:</strong> Provide actionable risk assessments and stability reports.</li>
-    </ol>
+  <section class="mb-12">
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Our Calibration Process</h2>
+    <div class="space-y-6">
+      <div class="flex items-start">
+        <div class="text-primary mr-4 text-2xl font-bold">1</div>
+        <div>
+          <h3 class="text-primaryBlue text-xl font-semibold">Client Consultation & Planning</h3>
+          <p class="text-gray">
+            We work closely with you to understand your equipment needs, regulatory requirements, and calibration
+            schedule.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="text-primary mr-4 text-2xl font-bold">2</div>
+        <div>
+          <h3 class="text-primaryBlue text-xl font-semibold">Equipment Assessment</h3>
+          <p class="text-gray">
+            Our team evaluates your instruments to determine calibration requirements and traceability standards.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="text-primary mr-4 text-2xl font-bold">3</div>
+        <div>
+          <h3 class="text-primaryBlue text-xl font-semibold">Calibration Execution</h3>
+          <p class="text-gray">
+            Using NABL-accredited standards, we calibrate your equipment with precision in our state-of-the-art lab or
+            on-site.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="text-primary mr-4 text-2xl font-bold">4</div>
+        <div>
+          <h3 class="text-primaryBlue text-xl font-semibold">Documentation & Certification</h3>
+          <p class="text-gray">
+            We provide detailed calibration certificates compliant with ISO/IEC 17025 for regulatory audits.
+          </p>
+        </div>
+      </div>
+      <div class="flex items-start">
+        <div class="text-primary mr-4 text-2xl font-bold">5</div>
+        <div>
+          <h3 class="text-primaryBlue text-xl font-semibold">Ongoing Support</h3>
+          <p class="text-gray">
+            We offer maintenance schedules, re-calibration reminders, and support for regulatory compliance.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Compliance & Guidelines -->
-  <section class="mb-12">
-    <h2 class="text-primary mb-6 text-3xl font-semibold">Global Compliance, Assured</h2>
+  <section class="bg-secondary-light2 mb-12 rounded-lg p-6">
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Compliance & Standards</h2>
     <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
       <div>
-        <h3 class="text-primary mb-2 text-xl font-bold">Regulatory Oversight</h3>
-        <ul class="text-gray list-disc pl-5">
+        <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Regulatory Bodies</h3>
+        <ul class="text-gray list-inside list-disc">
           <li>FDA (U.S. Food and Drug Administration)</li>
           <li>EMA (European Medicines Agency)</li>
-          <li>CDSCO (India’s Regulatory Authority)</li>
-          <li>PMDA (Japan’s Regulatory Authority)</li>
+          <li>ICH (International Council for Harmonisation)</li>
+          <li>CDSCO (Central Drugs Standard Control Organization)</li>
+          <li>NABL (National Accreditation Board for Testing and Calibration Laboratories)</li>
         </ul>
       </div>
       <div>
-        <h3 class="text-primary mb-2 text-xl font-bold">Standards & Certifications</h3>
-        <ul class="text-gray list-disc pl-5">
-          <li>ICH Q3A, Q3B, Q3C, M7 for impurities</li>
-          <li>ISO 10993 for medical device safety</li>
-          <li>GLP-certified laboratories</li>
-          <li>ISO 14971 risk management framework</li>
+        <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Guidelines & Certifications</h3>
+        <ul class="text-gray list-inside list-disc">
+          <li>ISO/IEC 17025:2017</li>
+          <li>GMP (Good Manufacturing Practices)</li>
+          <li>USP (United States Pharmacopeia)</li>
+          <li>WHO Guidelines</li>
+          <li>NABL Accreditation</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Applications & Industries</h3>
+        <ul class="text-gray list-inside list-disc">
+          <li>Pharmaceutical Manufacturing</li>
+          <li>Biotechnology</li>
+          <li>Research Laboratories</li>
+          <li>Quality Assurance/Control</li>
+          <li>Healthcare Equipment Providers</li>
         </ul>
       </div>
     </div>
-    <p class="text-gray mt-4">
-      Serving pharmaceuticals, biotech, and medical device sectors with unwavering compliance.
-    </p>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="mb-12">
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">What Our Clients Say</h2>
+    <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+      <div class="rounded-lg bg-white p-6 shadow-lg">
+        <p class="text-gray italic">
+          "Their NABL-accredited calibration services ensured our manufacturing equipment met FDA standards, saving us
+          time and resources."
+        </p>
+        <p class="text-primaryBlue mt-2 font-semibold">– Pharma Manufacturer, USA</p>
+      </div>
+      <div class="rounded-lg bg-white p-6 shadow-lg">
+        <p class="text-gray italic">
+          "The team’s expertise in calibrating our pipettes and balances was exceptional, ensuring precision in our lab
+          operations."
+        </p>
+        <p class="text-primaryBlue mt-2 font-semibold">– Biotech Firm, India</p>
+      </div>
+    </div>
   </section>
 
   <!-- Conclusion -->
   <section class="mb-12">
-    <h2 class="text-primary mb-4 text-3xl font-semibold">Your Trusted CRO Partner</h2>
-    <p class="text-gray text-lg">
-      Indivirtus combines scientific rigor with regulatory expertise to deliver CRO services that ensure your
-      pharmaceutical and medical device products are safe, compliant, and market-ready. Our advanced analytical tools,
-      global compliance know-how, and commitment to precision make us the ideal partner to accelerate your development
-      journey with confidence.
+    <h2 class="text-primaryBlue mb-4 text-3xl font-semibold">Why Partner with Us?</h2>
+    <p class="text-gray text-lg leading-relaxed">
+      Our NABL-accredited CRO delivers precise, reliable, and compliant calibration services to keep your pharmaceutical
+      operations running smoothly. With expertise across thermal, electro-technical, mechanical, and specialized
+      calibration, we help you meet global regulatory standards, ensure product quality, and maintain operational
+      efficiency. Choose us for trusted calibration solutions that empower your success in the pharmaceutical industry.
     </p>
   </section>
 
   <!-- Call to Action -->
-  <section class="bg-primary mb-12 rounded-lg py-10 text-center text-white">
-    <h2 class="mb-4 text-3xl font-bold">Ready to Advance Your Research?</h2>
-    <p class="mb-6 text-xl">Partner with Indivirtus for innovative, compliant CRO solutions.</p>
+  <div class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
+    <h3 class="mb-4 text-xl font-semibold">Need Precision Calibration for Your Equipment?</h3>
+    <p class="text-gray mb-4">Let us help you achieve compliance and accuracy with our expert calibration services.</p>
     <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" />
-  </section>
+  </div>
 
   <!-- FAQ Section -->
-  <section>
+  <section class="mt-12">
+    <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Frequently Asked Questions</h2>
     <Faq faqs={mainEntity} />
   </section>
 </div>
-
-<style>
-  :root {
-    --color-primary: rgb(1, 166, 158);
-    --color-primary-light: rgb(240, 253, 250);
-    --color-secondary: rgb(245, 105, 12);
-    --color-secondary-light2: rgb(255, 234, 220);
-    --color-gray: rgb(85, 85, 85);
-  }
-
-  .buttonSimple {
-    @apply inline-block bg-primary text-white px-4 py-2 rounded-md hover:bg-primaryBlue transition-colors;
-  }
-
-  .button {
-    @apply inline-block bg-secondary text-white px-6 py-3 rounded-lg hover:bg-secondaryOrange transition-colors text-lg font-semibold;
-  }
-</style>

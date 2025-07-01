@@ -196,6 +196,54 @@ export default {
           text: 'Yes. NABL accreditation is recognized by ILAC MRA signatories—including regulators in USA, EU and other regions.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is the importance of NABL accreditation for calibration services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'NABL accreditation ensures that our calibration laboratory adheres to international standards like ISO/IEC 17025, guaranteeing accuracy, reliability, and traceability of measurements. This is critical for pharmaceutical companies to maintain compliance with regulatory requirements.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What types of equipment are calibrated under thermal calibration services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our thermal calibration services cover temperature and relative humidity (RH) devices, IR thermometers, furnaces, ovens, and environmental chambers, ensuring precise control in pharmaceutical manufacturing and storage environments.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How often should pharmaceutical equipment be calibrated?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Calibration frequency depends on equipment usage, manufacturer recommendations, and regulatory guidelines. Typically, critical instruments like balances and thermometers require annual or biannual calibration to ensure compliance and accuracy.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What are the benefits of calibrating pressure and vacuum gauges?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Calibrating pressure and vacuum gauges ensures accurate measurements for processes like sterilization, filtration, and HVAC systems, preventing equipment failures and ensuring compliance with GMP and other regulatory standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does your CRO support multi-disciplinary calibration needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our CRO provides comprehensive calibration services across thermal, electro-technical, mechanical, pressure/vacuum, mass/volume, and other specialized areas, ensuring all pharmaceutical equipment meets stringent quality and regulatory standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the typical turnaround time for calibration services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Turnaround time varies based on the equipment and calibration scope, but most services are completed within 3–7 business days, with expedited options available for urgent needs.',
+        },
+      },
     ],
   },
   meta: {
