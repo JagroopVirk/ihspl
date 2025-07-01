@@ -197,6 +197,54 @@ export default {
           text: 'Readiness depends on the initial gap and facility type, but our approach typically enables preparation within 4–12 weeks.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is the purpose of GMP compliance audits?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GMP compliance audits ensure that pharmaceutical manufacturing processes, facilities, and documentation meet global regulatory standards like EU-GMP, USFDA, and WHO-GMP, ensuring product quality and patient safety.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you support regulatory inspections?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide on-site representation, mock inspections, audit response preparation, CAPA development, and follow-up support to address findings like FDA 483s or warning letters.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is involved in regulatory dossier preparation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We prepare and review CTD/eCTD modules, NDA, ANDA, IND, IMPD, and DMF submissions, including CMC documentation and GMP sections, to ensure compliance and readiness for regulatory review.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does a typical GMP audit or qualification process take?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The duration varies based on scope, but audits typically take 1–3 weeks, while facility qualifications (DQ/IQ/OQ/PQ) may take 2–8 weeks, depending on complexity.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from your GMP approval services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers, biotech firms, API producers, and contract manufacturers benefit by achieving regulatory compliance, streamlining approvals, and ensuring quality systems.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is data integrity assessment, and why is it important?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Data integrity assessments verify that records and systems follow ALCOA+ principles, ensuring traceability and compliance with 21 CFR Part 11, which is critical for regulatory audits.',
+        },
+      },
     ],
   },
   meta: {
