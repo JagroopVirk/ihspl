@@ -199,6 +199,54 @@ export default {
           text: 'QMS is a structured system for all quality-related activities: document mgmt, audit, CAPA, training, change control and continuous improvement.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What topics are covered in your cleaning validation training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our cleaning validation training covers principles, worst-case product selection, residue limits (MACO, PDE), swab and rinse sampling, cleaning method validation, protocol development, and regulatory expectations from FDA, EMA, WHO, and PIC/S.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do your GxP trainings benefit pharmaceutical teams?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GxP trainings (GMP, GLP, GCP, GDP, GVP) equip teams with knowledge of global standards, ensuring compliance, improving operational efficiency, and preparing staff for regulatory inspections.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the duration of your training programs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Training sessions typically last 1–3 days per topic, with customizable modular delivery to suit client schedules and specific needs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you ensure training aligns with regulatory requirements?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our programs are designed to comply with FDA 21 CFR Parts 210/211, EU GMP Annexes, WHO TRS, Schedule M, and ICH Q9/Q10/Q14, with training certificates and documentation suitable for audits.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who should attend your quality management systems (QMS) training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'QMS training is ideal for QA, QC, production, warehouse, R&D, and regulatory affairs teams in pharmaceuticals, biotech, and CROs seeking to implement or optimize ICH Q10-compliant systems.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can your training programs be customized for specific roles?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we offer tailored modules for QA, QC, production, R&D, and regulatory affairs, with options for on-site, virtual, or hybrid delivery, including workshops and role-specific simulations.',
+        },
+      },
     ],
   },
   meta: {
