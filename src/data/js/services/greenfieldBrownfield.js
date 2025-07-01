@@ -178,6 +178,54 @@ export default {
           text: 'Yes. We provide design, engineering, execution, and documentation aligned with WHO-GMP, EU-GMP, and other standards to ensure inspection readiness.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is the scope of your turnkey pharmaceutical project services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our turnkey services cover feasibility studies, facility design, equipment procurement, validation, regulatory compliance, construction, commissioning, and post-handover support for greenfield and brownfield pharmaceutical projects.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you ensure GMP compliance in facility design?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We align facility designs with USFDA, EMA, WHO, PIC/S, and Revised Schedule M guidelines, incorporating GMP-compliant cleanroom zoning, HVAC systems, and validation protocols like DQ, IQ, OQ, and PQ.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the typical timeline for a greenfield pharmaceutical project?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Timelines vary, but a greenfield project typically takes 12–24 months, depending on facility size, complexity, and regulatory requirements. Brownfield upgrades may take 6–12 months.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you support brownfield facility upgrades?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We conduct gap assessments, retrofit designs for GMP compliance, enhance capacity, support tech transfers, and minimize downtime to ensure seamless upgrades.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What industries benefit from your project services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers, biotech firms, API producers, and CROs benefit from our services, ensuring compliant facilities for finished dosage forms, APIs, and intermediates.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you integrate Industry 4.0 into pharmaceutical projects?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We incorporate SCADA, BMS, IoT sensors, eBMR/eBPR systems, and 21 CFR Part 11-compliant solutions to enable real-time monitoring, automation, and data integrity.',
+        },
+      },
     ],
   },
   meta: {
