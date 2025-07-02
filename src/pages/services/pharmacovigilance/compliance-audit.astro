@@ -1,7 +1,7 @@
 ---
 // Imports
 import Layout from '../../../layouts/Layout.astro';
-import '../../styles/global.css';
+import '@/styles/global.css';
 
 // SEO Data
 import seoData from '@/data/js/services/adepde.js';
@@ -34,6 +34,6 @@ const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <h1 class="flex items-center justify-center">Coming Soon</h1>
+    <h1 class="flex h-[500px] items-center justify-center">Coming Soon</h1>
   </main>
 </Layout>
