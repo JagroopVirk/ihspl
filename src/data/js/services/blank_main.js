@@ -23,11 +23,13 @@ export default {
     alt: ,
     caption: ,
   },
+
+  fill the above data in the following structure
   pageContent: {
     hero: {heading:"",tagline:""},
     main: {heading:"",detail:""},
-    cards: {heading:"", services:[],},
-    process: {heading:"", steps:[]},
+    cards: {heading:"", services:[{icon: '',title: '',items: [],link: baseLink + '',},],},
+    process: {heading:"", steps:[{title: '', description: '',},]},
     compliance: {heading:"", complianceSections: [{title: '', items: [],}]},
     conclusion: {heading:"", detail:""},
     cta: {heading:"", tagline:"",},

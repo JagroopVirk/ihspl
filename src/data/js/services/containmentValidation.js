@@ -1,5 +1,5 @@
 import serviceImage from '@/assets/containment-validation.png';
-const link = '/services/containment-validation';
+const baseLink = '/services/containment-validation';
 
 export default {
   service_id: 'cro-containment-isolator-validation',
@@ -27,12 +27,219 @@ export default {
   target_industry: ['Pharmaceutical Manufacturing', 'Biotech', 'CRO'],
   expertise_area: ['Containment Validation', 'Industrial Hygiene', 'Safety Compliance'],
   is_active: true,
-  pageLink: link,
+  pageLink: baseLink,
   icon: '🛡️',
   image: {
     path: serviceImage,
     alt: 'Containment validation in isolator using surrogate powder',
     caption: 'Ensuring isolator protection for operator and product safety',
+  },
+  pageContent: {
+    hero: {
+      heading: 'Isolator Containment Validation Services',
+      tagline: 'Safeguarding Your Operations with Expert Containment Solutions',
+    },
+    main: {
+      heading: 'Our Isolator Validation Services',
+      detail:
+        'Our Contract Research Organization (CRO) provides specialized isolator containment validation services to ensure the safe handling of potent compounds (OEB 3+) in pharmaceutical manufacturing. From surrogate powder testing to airflow visualization and operator safety assessments, our services protect workers, prevent environmental contamination, and ensure compliance with global standards like ISPE SMEPAC and cGMP. These solutions are essential for pharmaceutical manufacturers, biotech firms, and CROs working with high-potency active pharmaceutical ingredients (HPAPIs), helping them maintain safety, quality, and regulatory compliance.',
+    },
+    cards: {
+      heading: 'Our Comprehensive Validation Services',
+      services: [
+        {
+          icon: '🧪',
+          title: 'Containment Performance Testing',
+          items: [
+            'SMEPAC-compliant testing',
+            'Airborne contamination monitoring',
+            'Operator exposure measurement',
+            'Gravimetric/chemical analysis',
+          ],
+          link: baseLink + '/cpt',
+        },
+        {
+          icon: '🧰',
+          title: 'Isolator Qualification',
+          items: [
+            'Design, Installation, Operational, and Performance Qualification',
+            'HEPA/ULPA filter testing',
+            'Glove leak integrity testing',
+            'Potent compound validation',
+          ],
+          link: baseLink + '/isolator-qualification',
+        },
+        {
+          icon: '🌬️',
+          title: 'Airflow Visualization',
+          items: [
+            'Unidirectional airflow testing',
+            'Turbulence visualization',
+            'Video documentation',
+            'Containment boundary verification',
+          ],
+          link: baseLink + '/airflow-visualization',
+        },
+        {
+          icon: '🧫',
+          title: 'Environmental Monitoring',
+          items: [
+            'Non-viable particulate monitoring',
+            'Viable microbial testing',
+            'Surface contamination analysis',
+            'ISO 14644-1/2 compliance',
+          ],
+          link: baseLink + '/environmental-monitoring',
+        },
+        {
+          icon: '👷',
+          title: 'Operator Safety Testing',
+          items: [
+            'Breathing zone monitoring',
+            'Personal exposure monitoring',
+            'Wipe sampling for contamination',
+            'Surrogate handling studies',
+          ],
+          link: baseLink + '/operator-safety',
+        },
+        {
+          icon: '🧪',
+          title: 'Surrogate Powder Testing',
+          items: [
+            'Simulated API handling',
+            'Containment breach evaluation',
+            'Powder dispersibility studies',
+            'Worst-case exposure testing',
+          ],
+          link: baseLink + '/surrogate-testing',
+        },
+        {
+          icon: '🏗️',
+          title: 'Engineering Consulting',
+          items: [
+            'Gap analysis & containment hierarchy',
+            'Isolator design review',
+            'Cascading pressure validation',
+            'Decontamination system verification',
+          ],
+          link: baseLink + '/engineering-consulting',
+        },
+        {
+          icon: '📜',
+          title: 'Regulatory Support',
+          items: [
+            'SMEPAC-compliant reports',
+            'Risk assessment documentation',
+            'Cleaning validation support',
+            'Regulatory filing assistance',
+          ],
+          link: baseLink + '/regulatory-support',
+        },
+        {
+          icon: '⚖️',
+          title: 'Occupational Toxicology',
+          items: [
+            'OEL/ADE determination',
+            'OEB banding for APIs',
+            'Cross-contamination risk assessment',
+            'Toxicology data analysis',
+          ],
+          link: baseLink + '/occupational-toxicology',
+        },
+        {
+          icon: '📊',
+          title: 'Decontamination Validation',
+          items: [
+            'Residue analysis (TOC, swabs)',
+            'Cleaning efficacy studies',
+            'VHP cycle validation',
+            'Rinse sampling',
+          ],
+          link: baseLink + '/decontamination-validation',
+        },
+        {
+          icon: '🧩',
+          title: 'HPAPI Handling Consulting',
+          items: [
+            'Potent compound strategy',
+            'Isolator & SBV design',
+            'Tech transfer support',
+            'Containment system validation',
+          ],
+          link: baseLink + '/hpapi-consulting',
+        },
+      ],
+    },
+    process: {
+      heading: 'Our Validation Process',
+      steps: [
+        {
+          title: 'Client Onboarding',
+          description: 'We collaborate to understand your isolator setup, compound potency, and compliance needs.',
+        },
+        {
+          title: 'Protocol Development',
+          description: 'We create SMEPAC-compliant protocols and sampling plans tailored to your facility.',
+        },
+        {
+          title: 'Testing & Sampling',
+          description:
+            'Certified Industrial Hygienists perform surrogate testing, airflow studies, and environmental monitoring.',
+        },
+        {
+          title: 'Analysis & Reporting',
+          description: 'Samples are analyzed by AIHA-accredited labs, and we deliver detailed validation reports.',
+        },
+        {
+          title: 'Certification & Support',
+          description: 'We issue containment certificates and provide ongoing regulatory and audit support.',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Compliance & Standards',
+      complianceSections: [
+        {
+          title: 'Regulatory Bodies',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            'ICH (International Council for Harmonisation)',
+            'CDSCO (Central Drugs Standard Control Organization)',
+            'AIHA (American Industrial Hygiene Association)',
+          ],
+        },
+        {
+          title: 'Guidelines & Certifications',
+          items: [
+            'ISPE SMEPAC, 3rd Edition',
+            'cGMP Regulations',
+            'OEB Best Practices',
+            'ISO 14644-1/2 (Cleanrooms)',
+            'AIHA Laboratory Accreditation',
+          ],
+        },
+        {
+          title: 'Applications & Industries',
+          items: [
+            'Pharmaceutical Manufacturing',
+            'Biotechnology',
+            'Contract Research Organizations',
+            'HPAPI Processing',
+            'Containment Facility Design',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Why Partner with Us?',
+      detail:
+        'Our CRO delivers expert isolator containment validation to ensure your pharmaceutical operations are safe, compliant, and efficient. With Certified Industrial Hygienists, AIHA-accredited lab partnerships, and adherence to ISPE SMEPAC and cGMP standards, we provide reliable solutions for handling potent compounds. Choose us to safeguard your workforce, protect the environment, and streamline your regulatory compliance.',
+    },
+    cta: {
+      heading: 'Ready to Ensure Safe Handling of Potent Compounds?',
+      tagline: 'Partner with us for expert isolator validation and compliance solutions.',
+    },
   },
   gtm: {
     eventCategory: 'Containment Services',
@@ -69,7 +276,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -130,7 +337,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Project‑based pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -269,7 +476,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -279,7 +486,7 @@ export default {
         'Ensure operator and environmental safety with full containment validation using surrogate testing, CPT, sampling and CIH oversight.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,

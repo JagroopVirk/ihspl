@@ -1,5 +1,5 @@
 import serviceImage from '@/assets/msds-sds.png';
-const link = '/services/ade-pde-oel';
+const baseLink = '/services/ade-pde-oel';
 
 export default {
   service_id: 'msds-sds-preparation',
@@ -29,12 +29,168 @@ export default {
   target_industry: ['Pharmaceutical', 'Biotechnology', 'Chemical Manufacturing', 'CDMOs', 'CROs'],
   expertise_area: ['Toxicology', 'Regulatory Compliance', 'Safety Documentation', 'Chemical Classification'],
   is_active: true,
-  pageLink: link,
+  pageLink: baseLink,
   icon: '📄',
   image: {
     path: serviceImage,
     alt: 'MSDS SDS preparation service for pharmaceuticals',
     caption: 'Regulatory-compliant SDS/MSDS preparation by Indivirtus',
+  },
+  pageContent: {
+    hero: {
+      heading: 'MSDS/SDS Preparation Services',
+      tagline: 'Ensuring Global Compliance for Chemical Safety',
+    },
+    main: {
+      heading: 'Our SDS/MSDS Services',
+      detail:
+        "Our Contract Research Organization (CRO) provides expert Material Safety Data Sheet (MSDS) and Safety Data Sheet (SDS) preparation services to ensure compliance with global chemical safety regulations. We deliver GHS-compliant, 16-section SDS tailored to regional standards like OSHA, EU REACH, and India's IS 17803:2022, supporting pharmaceutical manufacturers, biotech firms, chemical producers, and CROs. These services are critical for ensuring worker safety, environmental protection, and regulatory compliance across clinical, manufacturing, and distribution processes.",
+    },
+    cards: {
+      heading: 'Our SDS Expertise',
+      services: [
+        {
+          icon: '📄',
+          title: 'SDS/MSDS Preparation',
+          items: [
+            'GHS-compliant 16-section format',
+            'OSHA, EU REACH, WHMIS standards',
+            'India, China, Japan compliance',
+            'Hazard & safety information',
+          ],
+          link: baseLink + '/sds-preparation',
+        },
+        {
+          icon: '🌍',
+          title: 'Region-Specific Customization',
+          items: [
+            'EU REACH Annex II',
+            'OSHA HCS, WHMIS compliance',
+            'Multilingual translations',
+            'IS 17803:2022 (India)',
+          ],
+          link: baseLink + '/region-specific-sds',
+        },
+        {
+          icon: '⚠️',
+          title: 'Hazard Classification & Labeling',
+          items: [
+            'GHS hazard assessment',
+            'Pictograms & H/P-statements',
+            'Primary/secondary containers',
+            'Serialization & barcoding',
+          ],
+          link: baseLink + '/hazard-classification',
+        },
+        {
+          icon: '🧪',
+          title: 'Toxicological Assessment',
+          items: [
+            'LD50, LC50, NOAEL data',
+            'Mutagenicity & toxicity',
+            'Biodegradability assessment',
+            'ECHA, TOXNET data use',
+          ],
+          link: baseLink + '/toxicological-assessment',
+        },
+        {
+          icon: '🔄',
+          title: 'MSDS Review & Updating',
+          items: ['Legacy MSDS conversion', 'Periodic updates', 'Version control & tracking', 'REACH UFI integration'],
+          link: baseLink + '/msds-review',
+        },
+        {
+          icon: '✍️',
+          title: 'Expert Authoring',
+          items: [
+            'Toxicologist-led preparation',
+            'Expert review & sign-off',
+            'Regulatory endorsement',
+            'Compliance assurance',
+          ],
+          link: baseLink + '/expert-authoring',
+        },
+        {
+          icon: '📤',
+          title: 'Regulatory Submission',
+          items: ['EU Poison Centers', 'Indian BIS/CIB filings', 'ECHA REACH submissions', 'DMF/CTD integration'],
+          link: baseLink + '/regulatory-submission',
+        },
+      ],
+    },
+    process: {
+      heading: 'Our SDS Preparation Process',
+      steps: [
+        {
+          title: 'Data Collection',
+          description:
+            'We gather toxicological, ecotoxicological, and chemical data from ECHA, TOXNET, and other databases.',
+        },
+        {
+          title: 'Hazard Assessment',
+          description:
+            'We classify hazards per GHS categories and prepare compliant labels with pictograms and statements.',
+        },
+        {
+          title: 'SDS Authoring',
+          description:
+            'Our toxicologists draft 16-section SDS, ensuring compliance with regional standards like OSHA and REACH.',
+        },
+        {
+          title: 'Review & Customization',
+          description:
+            'We review and customize SDS for specific regions, including translations and regulatory alignment.',
+        },
+        {
+          title: 'Submission & Support',
+          description: 'We submit SDS to regulatory bodies and integrate them into DMFs, CTDs, and other dossiers.',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Compliance & Standards',
+      complianceSections: [
+        {
+          title: 'Regulatory Bodies',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            'CDSCO (Central Drugs Standard Control Organization)',
+            'ECHA (European Chemicals Agency)',
+            'OSHA, WHMIS, BIS',
+          ],
+        },
+        {
+          title: 'Guidelines & Certifications',
+          items: [
+            'UN GHS (Latest Version)',
+            'EU REACH Annex II',
+            'OSHA HCS 2012',
+            'WHMIS, IS 17803:2022',
+            'JIS Z 7253, GB/T 16483',
+          ],
+        },
+        {
+          title: 'Applications & Industries',
+          items: [
+            'Pharmaceutical Manufacturing',
+            'Biotechnology',
+            'Chemical Production',
+            'Contract Research Organizations',
+            'API & Formulation Development',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Our SDS Services?',
+      detail:
+        'Our CRO delivers expert SDS/MSDS preparation services, ensuring compliance with global GHS standards and regional regulations like OSHA, REACH, and IS 17803:2022. With toxicologist-led authoring, multilingual customization, and regulatory submission support, we help you ensure worker safety and streamline compliance. Choose us for accurate, reliable SDS solutions that support your global operations.',
+    },
+    cta: {
+      heading: 'Ready to Ensure Chemical Safety Compliance?',
+      tagline: 'Partner with us for expert SDS preparation and global regulatory support.',
+    },
   },
   gtm: {
     eventCategory: 'SafetyDocumentationServices',
@@ -71,7 +227,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -116,7 +272,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Compound-based pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -282,7 +438,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -292,7 +448,7 @@ export default {
         'Accurate and globally compliant MSDS/SDS documentation for APIs, excipients, and finished formulations. Trusted by pharmaceutical CROs.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,

@@ -1,5 +1,5 @@
 import serviceImage from '@/assets/validation.png';
-const link = '/services/validation';
+const baseLink = '/services/validation';
 
 export default {
   service_id: 'cro-validation-equipment-csv-hvac',
@@ -31,12 +31,199 @@ export default {
   target_industry: ['Pharmaceuticals', 'Biotech', 'CRO', 'Medical Devices'],
   expertise_area: ['CSV', 'Equipment Validation', 'HVAC Qualification', 'Temperature Mapping'],
   is_active: true,
-  pageLink: link,
+  pageLink: baseLink,
   icon: '✔️',
   image: {
     path: serviceImage,
     alt: 'Validation services for systems, equipment and HVAC',
     caption: 'CSV, equipment, EMS, and HVAC validation tailored for pharmaceutical labs',
+  },
+  pageContent: {
+    hero: {
+      heading: 'Validation Services for Pharma & Biotech',
+      tagline: 'Ensuring Compliance for Critical Systems and Processes',
+    },
+    main: {
+      heading: 'Our Validation Services',
+      detail:
+        'Our Contract Research Organization (CRO) offers comprehensive validation services for pharmaceutical and biotech systems, including laboratory instruments, process automation, HVAC, and enterprise applications. These services ensure compliance with global regulatory standards, maintain data integrity, and support operational excellence. Our solutions are critical for pharmaceutical manufacturers, biotech firms, CROs, and medical device companies seeking to meet stringent requirements from FDA, EMA, and other authorities while ensuring system reliability and product quality.',
+    },
+    cards: {
+      heading: 'Our Validation Expertise',
+      services: [
+        {
+          icon: '🔬',
+          title: 'Laboratory Systems Validation',
+          items: [
+            'DQ/IQ/OQ/PQ for HPLC, GC, etc.',
+            'ICH Q2 method validation',
+            '21 CFR Part 11 compliance',
+            'Software validation (Empower)',
+          ],
+          link: baseLink + '/lab-systems-validation',
+        },
+        {
+          icon: '⚙️',
+          title: 'Process Automation Validation',
+          items: [
+            'PLC/HMI/SCADA validation',
+            'GAMP 5 risk-based approach',
+            'FS/DS documentation',
+            'Cybersecurity verification',
+          ],
+          link: baseLink + '/process-automation-validation',
+        },
+        {
+          icon: '🌡️',
+          title: 'EMS Validation',
+          items: [
+            'IQ/OQ/PQ & software validation',
+            'BMS/HVAC integration',
+            '21 CFR Part 11 compliance',
+            'Sensor calibration',
+          ],
+          link: baseLink + '/ems-validation',
+        },
+        {
+          icon: '💻',
+          title: 'Enterprise Application Validation',
+          items: [
+            'CSV for SAP, LIMS, QMS',
+            '21 CFR Part 11 compliance',
+            'Risk & data integrity audits',
+            'URS to summary reports',
+          ],
+          link: baseLink + '/enterprise-app-validation',
+        },
+        {
+          icon: '📏',
+          title: 'Temperature Mapping',
+          items: [
+            'Autoclave, tunnel validation',
+            'Cold room & warehouse mapping',
+            'Data logger calibration',
+            'Graphical data analysis',
+          ],
+          link: baseLink + '/temperature-mapping',
+        },
+        {
+          icon: '❄️',
+          title: 'HVAC Validation',
+          items: [
+            'DOP/PAO filter testing',
+            'Airflow & particle testing',
+            'ISO 14644 compliance',
+            'Cleanroom classification',
+          ],
+          link: baseLink + '/hvac-validation',
+        },
+        {
+          icon: '📜',
+          title: 'Validation Documentation',
+          items: [
+            'VMP & protocol preparation',
+            'GAMP 5 risk planning',
+            'Traceability & summary reports',
+            'Audit readiness support',
+          ],
+          link: baseLink + '/validation-documentation',
+        },
+        {
+          icon: '🎓',
+          title: 'Validation Training',
+          items: [
+            'CSV & GAMP 5 training',
+            'Data integrity (ALCOA+)',
+            'Validation strategy workshops',
+            'GxP system training',
+          ],
+          link: baseLink + '/validation-training',
+        },
+        {
+          icon: '🔄',
+          title: 'Periodic Review & Revalidation',
+          items: [
+            'Periodic system reviews',
+            'Trigger-based revalidation',
+            'System decommissioning',
+            'Change control integration',
+          ],
+          link: baseLink + '/periodic-revalidation',
+        },
+      ],
+    },
+    process: {
+      heading: 'Our Validation Process',
+      steps: [
+        {
+          title: 'System Assessment',
+          description:
+            'We evaluate systems (lab, automation, HVAC, etc.) to define validation scope and regulatory requirements.',
+        },
+        {
+          title: 'Protocol Development',
+          description: 'We create Validation Master Plans, DQ/IQ/OQ/PQ protocols, and risk assessments per GAMP 5.',
+        },
+        {
+          title: 'Execution & Testing',
+          description:
+            'We execute validation protocols, including testing for functionality, data integrity, and compliance.',
+        },
+        {
+          title: 'Documentation & Reporting',
+          description: 'We provide traceability matrices, summary reports, and audit-ready documentation.',
+        },
+        {
+          title: 'Ongoing Support',
+          description:
+            'We offer periodic reviews, revalidation, and training to maintain compliance and system performance.',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Compliance & Standards',
+      complianceSections: [
+        {
+          title: 'Regulatory Bodies',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            'ICH (International Council for Harmonisation)',
+            'CDSCO (Central Drugs Standard Control Organization)',
+            'WHO, PIC/S, TGA',
+          ],
+        },
+        {
+          title: 'Guidelines & Certifications',
+          items: [
+            '21 CFR Part 11, EU Annex 11',
+            'GAMP 5, ICH Q2',
+            'ISO 14644-1/2 (Cleanrooms)',
+            'WHO TRS Annexes',
+            'ISPE Guidelines',
+          ],
+        },
+        {
+          title: 'Applications & Industries',
+          items: [
+            'Pharmaceutical Manufacturing',
+            'Biotechnology',
+            'Contract Research Organizations',
+            'Medical Device Manufacturing',
+            'Quality Assurance/Control',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Our Validation Services?',
+      detail:
+        'Our CRO delivers expert validation services for laboratory, automation, HVAC, and enterprise systems, ensuring compliance with global standards like 21 CFR Part 11, GAMP 5, and ISO 14644. With a risk-based approach and comprehensive documentation, we help you maintain system integrity and pass regulatory inspections. Partner with us to ensure your systems are robust, compliant, and ready for operational excellence.',
+    },
+    cta: {
+      heading: 'Ready to Validate Your Critical Systems?',
+      tagline: 'Partner with us for compliant, reliable validation solutions.',
+    },
   },
   gtm: {
     eventCategory: 'CRO Services',
@@ -73,7 +260,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -142,7 +329,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Project-based pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -268,7 +455,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -278,7 +465,7 @@ export default {
         'Comprehensive validation of laboratory, automation, EMS, enterprise systems and HVAC in pharmaceutical environments.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,

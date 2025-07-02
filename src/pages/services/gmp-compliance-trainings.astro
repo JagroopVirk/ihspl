@@ -6,11 +6,18 @@ import '../../styles/global.css';
 import seoData from '@/data/js/services/gmpComplianceTrainings';
 
 // Components
-import BTN from '@/components/other/BTN.astro';
 import Faq from '@/components/other/Faq.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import MainContentSection from '@/components/services/MainContentSection.astro';
+import ServiceCard from '@/components/services/ServiceCard.astro';
+import ProcessSection from '@/components/services/ProcessSection.astro';
+import ComplianceSection from '@/components/services/ComplianceSection.astro';
+import ConclusionSection from '@/components/services/ConclusionSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
+const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -25,291 +32,22 @@ const { mainEntity } = faqSchema;
     faqSchema: faqSchema,
   }}
 >
-  <main>
-    <!-- Hero Section -->
-    <header class="bg-primary-light border-primary border-b-4 py-12 text-center">
-      <div class="container mx-auto px-4">
-        <h1 class="text-primaryBlue mb-4 text-4xl leading-tight font-bold md:text-5xl">
-          Pharmaceutical Quality & Compliance Training
-        </h1>
-        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
-          Empowering Your Team with Expert-Led Compliance Training
-        </p>
-      </div>
-    </header>
+  <main id="main-content" aria-labelledby="page-title">
+    <HeroSection hero={hero} />
+
     <div class="maxwidth">
-      <!-- Main Content -->
-      <div class="container mx-auto px-6 py-12">
-        <!-- Service Overview -->
-        <section class="mb-16" aria-labelledby="service-overview">
-          <h2 id="service-overview" class="text-primaryBlue mb-6 text-3xl font-semibold">Our Training Programs</h2>
-          <div class="prose prose-lg text-gray max-w-none">
-            <p>
-              Our Contract Research Organization (CRO) offers comprehensive, expert-led training programs designed for
-              pharmaceutical and biotech teams. Covering critical topics like Cleaning Validation, GxP standards (GMP,
-              GLP, GCP, GDP, GVP), Revised Schedule M, WHO TRS guidelines, Data Integrity, and Quality Management
-              Systems (QMS), our sessions equip your staff with the knowledge and skills needed to ensure compliance.
-            </p>
-            <p>
-              Tailored for pharmaceutical manufacturers, biotech firms, CROs, and regulatory affairs teams, our training
-              programs help you meet global regulatory standards, streamline operations, and prepare for audits with
-              confidence.
-            </p>
-          </div>
-        </section>
+      <MainContentSection main={main} />
 
-        <!-- Training Programs -->
-        <section class="mb-16" aria-labelledby="training-programs">
-          <h2 id="training-programs" class="text-primaryBlue mb-8 text-3xl font-semibold">Our Training Expertise</h2>
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {
-              [
-                {
-                  icon: '🧼',
-                  title: 'Cleaning Validation Training',
-                  items: [
-                    'Worst-case product selection',
-                    'Residue limits (MACO, PDE)',
-                    'Swab and rinse sampling',
-                    'Protocol development',
-                  ],
-                  link: '/services/cleaning-validation-training',
-                },
-                {
-                  icon: '📜',
-                  title: 'GxP Training',
-                  items: [
-                    'GMP, GLP, GCP, GDP, GVP',
-                    'ICH E6, 21 CFR 210/211',
-                    'Cold chain & warehousing',
-                    'Clinical trial compliance',
-                  ],
-                  link: '/services/gxp-training',
-                },
-                {
-                  icon: '🇮🇳',
-                  title: 'Revised Schedule M Training',
-                  items: [
-                    'Key changes overview',
-                    'Implementation roadmap',
-                    'Quality control & documentation',
-                    'Mock audit simulation',
-                  ],
-                  link: '/services/schedule-m-training',
-                },
-                {
-                  icon: '🌍',
-                  title: 'WHO TRS Training',
-                  items: [
-                    'Annex 1–9 guidelines',
-                    'Sterile & API GMP',
-                    'Vaccine & biologics standards',
-                    'FDA/EMA comparisons',
-                  ],
-                  link: '/services/who-trs-training',
-                },
-                {
-                  icon: '⚙️',
-                  title: 'Quality Systems Training',
-                  items: [
-                    'ICH Q10 & quality culture',
-                    'Data integrity (ALCOA+)',
-                    'CAPA & deviation management',
-                    'Risk management (ICH Q9)',
-                  ],
-                  link: '/services/quality-systems-training',
-                },
-                {
-                  icon: '📊',
-                  title: 'QMS Training',
-                  items: [
-                    'QMS framework (ICH Q10)',
-                    'Document management',
-                    'Supplier qualification',
-                    'APQR & KPI tracking',
-                  ],
-                  link: '/services/qms-training',
-                },
-                {
-                  icon: '🎓',
-                  title: 'Training Methodologies',
-                  items: [
-                    'On-site/virtual/hybrid delivery',
-                    'Role-specific workshops',
-                    'Train-the-Trainer programs',
-                    'Training Needs Analysis',
-                  ],
-                  link: '/services/training-methodologies',
-                },
-              ].map((program, index) => (
-                <article
-                  key={index}
-                  class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div class="mb-4 text-4xl" aria-hidden="true">
-                    {program.icon}
-                  </div>
-                  <h3 class="text-primaryBlue mb-3 text-xl font-bold">{program.title}</h3>
-                  <ul class="text-gray mb-6 space-y-2">
-                    {program.items.map((item, i) => (
-                      <li key={i} class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <BTN
-                    btnLink={program.link}
-                    btnClass="buttonSimple"
-                    btnText="Read more…"
-                    aria-label={`Learn more about ${program.title}`}
-                  />
-                </article>
-              ))
-            }
-          </div>
-        </section>
+      <ServiceCard cards={cards} />
 
-        <!-- Training Process -->
-        <section class="mb-16" aria-labelledby="training-process">
-          <h2 id="training-process" class="text-primaryBlue mb-8 text-3xl font-semibold">Our Training Process</h2>
-          <div class="space-y-6">
-            {
-              [
-                {
-                  title: 'Needs Assessment',
-                  description:
-                    "We conduct a Training Needs Analysis (TNA) to tailor programs to your team's roles and compliance goals.",
-                },
-                {
-                  title: 'Program Customization',
-                  description:
-                    'We design modular training sessions with case studies and simulations specific to your operations.',
-                },
-                {
-                  title: 'Delivery',
-                  description:
-                    'Expert-led sessions are delivered on-site, virtually, or in hybrid formats, with hands-on workshops.',
-                },
-                {
-                  title: 'Assessment & Certification',
-                  description:
-                    'Participants undergo competency evaluations and receive regulatory-compliant training certificates.',
-                },
-                {
-                  title: 'Post-Training Support',
-                  description:
-                    'We provide checklists, action plans, and ongoing support to ensure knowledge application and compliance.',
-                },
-              ].map((step, index) => (
-                <div key={index} class="flex items-start">
-                  <div class="text-primary bg-primary/10 mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-2xl font-bold">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <h3 class="text-primaryBlue mb-2 text-xl font-semibold">{step.title}</h3>
-                    <p class="text-gray">{step.description}</p>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </section>
+      <ProcessSection process={process} />
 
-        <!-- Compliance Standards -->
-        <section class="bg-secondary-light2 mb-16 rounded-lg p-8" aria-labelledby="compliance-standards">
-          <h2 id="compliance-standards" class="text-primaryBlue mb-8 text-3xl font-semibold">Compliance & Standards</h2>
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Regulatory Bodies</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'FDA (U.S. Food and Drug Administration)',
-                    'EMA (European Medicines Agency)',
-                    'ICH (International Council for Harmonisation)',
-                    'CDSCO (Central Drugs Standard Control Organization)',
-                    'WHO, PIC/S',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Guidelines & Certifications</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'FDA 21 CFR Parts 210/211/820/58',
-                    'EU GMP Annexes',
-                    'WHO TRS Series 996 Annex 2–5',
-                    'Schedule M (Indian GMP)',
-                    'ICH Q9, Q10, Q14',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Applications & Industries</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'Pharmaceutical Manufacturing',
-                    'Biotechnology',
-                    'Contract Research Organizations',
-                    'Regulatory Affairs',
-                    'Quality Assurance/Control',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-          </div>
-        </section>
+      <ComplianceSection compliance={compliance} />
 
-        <!-- Why Choose Us -->
-        <section class="mb-16" aria-labelledby="why-choose-us">
-          <h2 id="why-choose-us" class="text-primaryBlue mb-6 text-3xl font-semibold">Why Choose Our Training?</h2>
-          <div class="prose prose-lg text-gray max-w-none">
-            <p>
-              Our expert-led training programs empower your pharmaceutical and biotech teams with the knowledge and
-              skills to excel in compliance and quality. With customized, practical sessions aligned with FDA, EMA, WHO,
-              and ICH standards, we help you build a robust quality culture and prepare for regulatory success.
-            </p>
-            <p>Choose us to enhance your team's capabilities and ensure compliance with confidence.</p>
-          </div>
-        </section>
-      </div>
+      <ConclusionSection conclusion={conclusion} />
     </div>
 
-    <!-- CTA Section -->
-    <section class="bg-secondary-light border-secondary mb-16 border py-12 text-center" aria-labelledby="cta-heading">
-      <div class="container mx-auto px-4">
-        <h3 id="cta-heading" class="mb-4 text-2xl font-semibold">Ready to Elevate Your Team's Compliance Skills?</h3>
-        <p class="text-gray mx-auto mb-6 max-w-2xl">
-          Partner with us to deliver expert training tailored to your needs.
-        </p>
-        <BTN
-          btnLink="/contact-us"
-          btnClass="button"
-          btnText="Contact Us Today"
-          aria-label="Contact us about compliance training programs"
-        />
-      </div>
-    </section>
+    <CTASection cta={cta} />
 
     <!-- FAQ Section -->
     <section class="maxwidth" aria-labelledby="faq-heading">

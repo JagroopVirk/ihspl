@@ -7,11 +7,18 @@ import '../../styles/global.css';
 import seoData from '@/data/js/services/greenfieldBrownfield';
 
 // Components
-import BTN from '@/components/other/BTN.astro';
 import Faq from '@/components/other/Faq.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import MainContentSection from '@/components/services/MainContentSection.astro';
+import ServiceCard from '@/components/services/ServiceCard.astro';
+import ProcessSection from '@/components/services/ProcessSection.astro';
+import ComplianceSection from '@/components/services/ComplianceSection.astro';
+import ConclusionSection from '@/components/services/ConclusionSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
+const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -26,374 +33,22 @@ const { mainEntity } = faqSchema;
     faqSchema: faqSchema,
   }}
 >
-  <main>
-    <!-- Hero Section -->
-    <header class="bg-primary-light border-primary border-b-4 py-12 text-center">
-      <div class="container mx-auto px-4">
-        <h1 class="text-primaryBlue mb-4 text-4xl leading-tight font-bold md:text-5xl">
-          Greenfield & Brownfield Pharmaceutical Projects
-        </h1>
-        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
-          Building and Upgrading Compliant Facilities for Pharma Excellence
-        </p>
-      </div>
-    </header>
+  <main id="main-content" aria-labelledby="page-title">
+    <HeroSection hero={hero} />
 
     <div class="maxwidth">
-      <!-- Main Content -->
-      <div class="container mx-auto px-6 py-12">
-        <!-- Service Overview -->
-        <section class="mb-16" aria-labelledby="service-overview">
-          <h2 id="service-overview" class="text-primaryBlue mb-6 text-3xl font-semibold">
-            Our Turnkey Project Services
-          </h2>
-          <div class="prose prose-lg text-gray max-w-none">
-            <p>
-              Our Contract Research Organization (CRO) specializes in delivering turnkey greenfield and brownfield
-              pharmaceutical projects, covering finished dosage forms, active pharmaceutical ingredients (APIs), and
-              intermediates. From feasibility studies and facility design to regulatory compliance, validation, and
-              commissioning, we provide end-to-end solutions to ensure GMP-compliant, efficient, and future-proof
-              facilities.
-            </p>
-            <p>
-              These services are critical for ensuring product quality, regulatory approvals, and operational
-              excellence, serving pharmaceutical manufacturers, biotech firms, API producers, and CROs aiming to
-              establish or upgrade their facilities.
-            </p>
-          </div>
-        </section>
-        <!-- Service Cards -->
-        <section class="mb-16" aria-labelledby="our-expertise">
-          <h2 id="our-expertise" class="text-primaryBlue mb-8 text-3xl font-semibold">Our Project Expertise</h2>
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {
-              [
-                {
-                  icon: '📊',
-                  title: 'Feasibility & Planning',
-                  items: [
-                    'Technical & financial viability',
-                    'Site selection & evaluation',
-                    'Business case & ROI planning',
-                    'Regulatory landscape mapping',
-                  ],
-                  link: '/services/feasibility-planning',
-                },
-                {
-                  icon: '🖼️',
-                  title: 'Conceptualization & Design',
-                  items: [
-                    'Facility layout optimization',
-                    'Modular & prefab design',
-                    '3D modeling & BIM integration',
-                    'Cleanroom zoning',
-                  ],
-                  link: '/services/conceptual-design',
-                },
-                {
-                  icon: '🏛️',
-                  title: 'Civil & Architectural Design',
-                  items: [
-                    'Detailed engineering drawings',
-                    'Cleanroom ISO classification',
-                    'Seismic & fire safety compliance',
-                    'Construction management',
-                  ],
-                  link: '/services/civil-design',
-                },
-                {
-                  icon: '⚙️',
-                  title: 'Process & Utility Engineering',
-                  items: [
-                    'HVAC & water system design',
-                    'PFD & P&ID preparation',
-                    'Automation & SCADA integration',
-                    'Effluent treatment systems',
-                  ],
-                  link: '/services/utility-engineering',
-                },
-                {
-                  icon: '🛠️',
-                  title: 'Equipment Procurement',
-                  items: [
-                    'Vendor selection & audits',
-                    'FAT/SAT coordination',
-                    'Global & local sourcing',
-                    'Installation & hook-up',
-                  ],
-                  link: '/services/equipment-procurement',
-                },
-                {
-                  icon: '📜',
-                  title: 'GMP Compliance Consulting',
-                  items: [
-                    'USFDA, EMA, WHO compliance',
-                    'URS, DQ, IQ, OQ, PQ',
-                    'Schedule M implementation',
-                    'Mock inspections',
-                  ],
-                  link: '/services/gmp-compliance',
-                },
-                {
-                  icon: '✅',
-                  title: 'Validation & Qualification',
-                  items: [
-                    'Validation Master Plan',
-                    'HVAC & cleanroom validation',
-                    'Process & cleaning validation',
-                    'Computer system validation',
-                  ],
-                  link: '/services/validation-services',
-                },
-                {
-                  icon: '🏗️',
-                  title: 'Construction & Commissioning',
-                  items: ['Project management', 'Site supervision', 'Utility commissioning', 'As-built documentation'],
-                  link: '/services/construction-commissioning',
-                },
-                {
-                  icon: '📦',
-                  title: 'Warehouse Design',
-                  items: [
-                    'GMP-compliant layout',
-                    'Cold & hazardous storage',
-                    'Material traceability',
-                    'Personnel flow design',
-                  ],
-                  link: '/services/warehouse-design',
-                },
-                {
-                  icon: '🛡️',
-                  title: 'EHS Services',
-                  items: [
-                    'HAZOP & HIRA studies',
-                    'Fire safety & emergency plans',
-                    'Waste management',
-                    'Occupational health programs',
-                  ],
-                  link: '/services/ehs-services',
-                },
-                {
-                  icon: '📋',
-                  title: 'QMS Setup',
-                  items: [
-                    'ICH Q10 QMS development',
-                    'SOPs & BMR/BPR',
-                    'Electronic document systems',
-                    'Training management',
-                  ],
-                  link: '/services/qms-setup',
-                },
-                {
-                  icon: '🔄',
-                  title: 'Brownfield Upgrades',
-                  items: [
-                    'GMP gap assessments',
-                    'Retrofitting & expansion',
-                    'Tech transfer support',
-                    'Downtime minimization',
-                  ],
-                  link: '/services/brownfield-upgrades',
-                },
-                {
-                  icon: '💻',
-                  title: 'Digital Pharma Integration',
-                  items: [
-                    'SCADA & IoT integration',
-                    'eBMR/eBPR systems',
-                    'Track & trace solutions',
-                    '21 CFR Part 11 compliance',
-                  ],
-                  link: '/services/digital-pharma',
-                },
-                {
-                  icon: '📅',
-                  title: 'Turnkey Project Management',
-                  items: [
-                    'EPCM services',
-                    'Time-cost-quality management',
-                    'Risk mitigation planning',
-                    'Project dashboards',
-                  ],
-                  link: '/services/project-management',
-                },
-                {
-                  icon: '🤝',
-                  title: 'Post-Handover Support',
-                  items: [
-                    'SOP training & handholding',
-                    'Regulatory inspection support',
-                    'Maintenance planning',
-                    'APR/PQR setup',
-                  ],
-                  link: '/services/post-handover',
-                },
-              ].map((service, index) => (
-                <article
-                  key={index}
-                  class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div class="mb-4 text-4xl" aria-hidden="true">
-                    {service.icon}
-                  </div>
-                  <h3 class="text-primaryBlue mb-3 text-xl font-bold">{service.title}</h3>
-                  <ul class="text-gray mb-6 space-y-2">
-                    {service.items.map((item, i) => (
-                      <li key={i} class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <BTN
-                    btnLink={service.link}
-                    btnClass="buttonSimple"
-                    btnText="Read more…"
-                    aria-label={`Learn more about ${service.title}`}
-                  />
-                </article>
-              ))
-            }
-          </div>
-        </section>
-        <!-- Process Section -->
-        <section class="mb-16" aria-labelledby="our-process">
-          <h2 id="our-process" class="text-primaryBlue mb-8 text-3xl font-semibold">Our Project Delivery Process</h2>
-          <div class="space-y-6">
-            {
-              [
-                {
-                  title: 'Feasibility & Planning',
-                  description:
-                    'We assess project viability, select sites, and map regulatory requirements to create a robust business case.',
-                },
-                {
-                  title: 'Design & Engineering',
-                  description:
-                    'We develop GMP-compliant facility designs, including cleanrooms, utilities, and automation systems.',
-                },
-                {
-                  title: 'Procurement & Construction',
-                  description:
-                    'We manage equipment sourcing, vendor audits, construction, and quality control to meet project timelines.',
-                },
-                {
-                  title: 'Validation & Commissioning',
-                  description:
-                    'We perform validations (DQ/IQ/OQ/PQ) and commission utilities, ensuring regulatory compliance.',
-                },
-                {
-                  title: 'Handover & Support',
-                  description:
-                    'We deliver as-built documentation, train personnel, and provide ongoing regulatory and maintenance support.',
-                },
-              ].map((step, index) => (
-                <div key={index} class="flex items-start">
-                  <div class="text-primary bg-primary/10 mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-2xl font-bold">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <h3 class="text-primaryBlue mb-2 text-xl font-semibold">{step.title}</h3>
-                    <p class="text-gray">{step.description}</p>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </section>
-        <!-- Compliance Section -->
-        <section class="bg-secondary-light2 mb-16 rounded-lg p-8" aria-labelledby="compliance">
-          <h2 id="compliance" class="text-primaryBlue mb-8 text-3xl font-semibold">Compliance & Standards</h2>
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Regulatory Bodies</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'FDA (U.S. Food and Drug Administration)',
-                    'EMA (European Medicines Agency)',
-                    'ICH (International Council for Harmonisation)',
-                    'CDSCO (Central Drugs Standard Control Organization)',
-                    'WHO, PIC/S, TGA, Health Canada, ANVISA',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Guidelines & Certifications</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'USFDA, EU GMP, WHO TRS, PIC/S',
-                    'Revised Schedule M',
-                    'ICH Q7/Q9/Q10',
-                    'ISO 14644 (Cleanrooms)',
-                    '21 CFR Part 11',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Applications & Industries</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'Pharmaceutical Manufacturing',
-                    'Biotechnology',
-                    'API & Intermediates Production',
-                    'Contract Research Organizations',
-                    'Contract Manufacturing',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- Conclusion -->
-        <section class="mb-16" aria-labelledby="why-choose-us">
-          <h2 id="why-choose-us" class="text-primaryBlue mb-6 text-3xl font-semibold">Why Choose Our CRO?</h2>
-          <div class="prose prose-lg text-gray max-w-none">
-            <p>
-              Our CRO delivers end-to-end greenfield and brownfield pharmaceutical projects with precision, ensuring GMP
-              compliance, operational efficiency, and regulatory success. With expertise in facility design, validation,
-              and Industry 4.0 integration, we build future-proof facilities tailored to your needs.
-            </p>
-            <p>Partner with us to transform your vision into a compliant, high-performing pharmaceutical operation.</p>
-          </div>
-        </section>
-      </div>
+      <MainContentSection main={main} />
+
+      <ServiceCard cards={cards} />
+
+      <ProcessSection process={process} />
+
+      <ComplianceSection compliance={compliance} />
+
+      <ConclusionSection conclusion={conclusion} />
     </div>
 
-    <!-- CTA Section -->
-    <section class="bg-secondary-light border-secondary mb-16 border py-12 text-center" aria-labelledby="cta-heading">
-      <div class="container mx-auto px-4">
-        <h3 id="cta-heading" class="mb-4 text-2xl font-semibold">Ready to Build or Upgrade Your Pharma Facility?</h3>
-        <p class="text-gray mx-auto mb-6 max-w-2xl">
-          Let us deliver turnkey solutions for your greenfield or brownfield project.
-        </p>
-        <BTN
-          btnLink="/contact-us"
-          btnClass="button"
-          btnText="Contact Us Today"
-          aria-label="Contact us about pharmaceutical facility projects"
-        />
-      </div>
-    </section>
+    <CTASection cta={cta} />
 
     <!-- FAQ Section -->
     <section class="maxwidth" aria-labelledby="faq-heading">

@@ -1,5 +1,5 @@
 import serviceImage from '../../../assets/greenfieldBrownfieldProjects.png';
-const link = '/services/greenfield-brownfield';
+const baseLink = '/services/greenfield-brownfield';
 
 export default {
   service_id: 'cro-greenfield-brownfield',
@@ -24,12 +24,236 @@ export default {
   target_industry: ['Pharmaceuticals', 'APIs', 'Biotech', 'CDMO'],
   expertise_area: ['Turnkey Projects', 'GMP Facility Design', 'Regulatory Engineering'],
   is_active: true,
-  pageLink: link, // page link through variable
+  pageLink: baseLink, // page link through variable
   icon: '🏗️',
   image: {
     path: serviceImage,
     alt: 'Pharmaceutical facility construction and design',
     caption: 'Complete Greenfield and Brownfield execution for pharma plants',
+  },
+  pageContent: {
+    hero: {
+      heading: 'Greenfield & Brownfield Pharmaceutical Projects',
+      tagline: 'Building and Upgrading Compliant Facilities for Pharma Excellence',
+    },
+    main: {
+      heading: 'Our Turnkey Project Services',
+      detail:
+        'Our Contract Research Organization (CRO) specializes in delivering turnkey greenfield and brownfield pharmaceutical projects, covering finished dosage forms, active pharmaceutical ingredients (APIs), and intermediates. From feasibility studies and facility design to regulatory compliance, validation, and commissioning, we provide end-to-end solutions to ensure GMP-compliant, efficient, and future-proof facilities. These services are critical for ensuring product quality, regulatory approvals, and operational excellence, serving pharmaceutical manufacturers, biotech firms, API producers, and CROs aiming to establish or upgrade their facilities.',
+    },
+    cards: {
+      heading: 'Our Project Expertise',
+      services: [
+        {
+          icon: '📊',
+          title: 'Feasibility & Planning',
+          items: [
+            'Technical & financial viability',
+            'Site selection & evaluation',
+            'Business case & ROI planning',
+            'Regulatory landscape mapping',
+          ],
+          link: baseLink + '/feasibility-planning',
+        },
+        {
+          icon: '🖼️',
+          title: 'Conceptualization & Design',
+          items: [
+            'Facility layout optimization',
+            'Modular & prefab design',
+            '3D modeling & BIM integration',
+            'Cleanroom zoning',
+          ],
+          link: baseLink + '/conceptual-design',
+        },
+        {
+          icon: '🏛️',
+          title: 'Civil & Architectural Design',
+          items: [
+            'Detailed engineering drawings',
+            'Cleanroom ISO classification',
+            'Seismic & fire safety compliance',
+            'Construction management',
+          ],
+          link: baseLink + '/civil-design',
+        },
+        {
+          icon: '⚙️',
+          title: 'Process & Utility Engineering',
+          items: [
+            'HVAC & water system design',
+            'PFD & P&ID preparation',
+            'Automation & SCADA integration',
+            'Effluent treatment systems',
+          ],
+          link: baseLink + '/utility-engineering',
+        },
+        {
+          icon: '🛠️',
+          title: 'Equipment Procurement',
+          items: [
+            'Vendor selection & audits',
+            'FAT/SAT coordination',
+            'Global & local sourcing',
+            'Installation & hook-up',
+          ],
+          link: baseLink + '/equipment-procurement',
+        },
+        {
+          icon: '📜',
+          title: 'GMP Compliance Consulting',
+          items: ['USFDA, EMA, WHO compliance', 'URS, DQ, IQ, OQ, PQ', 'Schedule M implementation', 'Mock inspections'],
+          link: baseLink + '/gmp-compliance',
+        },
+        {
+          icon: '✅',
+          title: 'Validation & Qualification',
+          items: [
+            'Validation Master Plan',
+            'HVAC & cleanroom validation',
+            'Process & cleaning validation',
+            'Computer system validation',
+          ],
+          link: baseLink + '/validation-services',
+        },
+        {
+          icon: '🏗️',
+          title: 'Construction & Commissioning',
+          items: ['Project management', 'Site supervision', 'Utility commissioning', 'As-built documentation'],
+          link: baseLink + '/construction-commissioning',
+        },
+        {
+          icon: '📦',
+          title: 'Warehouse Design',
+          items: ['GMP-compliant layout', 'Cold & hazardous storage', 'Material traceability', 'Personnel flow design'],
+          link: baseLink + '/warehouse-design',
+        },
+        {
+          icon: '🛡️',
+          title: 'EHS Services',
+          items: [
+            'HAZOP & HIRA studies',
+            'Fire safety & emergency plans',
+            'Waste management',
+            'Occupational health programs',
+          ],
+          link: baseLink + '/ehs-services',
+        },
+        {
+          icon: '📋',
+          title: 'QMS Setup',
+          items: ['ICH Q10 QMS development', 'SOPs & BMR/BPR', 'Electronic document systems', 'Training management'],
+          link: baseLink + '/qms-setup',
+        },
+        {
+          icon: '🔄',
+          title: 'Brownfield Upgrades',
+          items: ['GMP gap assessments', 'Retrofitting & expansion', 'Tech transfer support', 'Downtime minimization'],
+          link: baseLink + '/brownfield-upgrades',
+        },
+        {
+          icon: '💻',
+          title: 'Digital Pharma Integration',
+          items: [
+            'SCADA & IoT integration',
+            'eBMR/eBPR systems',
+            'Track & trace solutions',
+            '21 CFR Part 11 compliance',
+          ],
+          link: baseLink + '/digital-pharma',
+        },
+        {
+          icon: '📅',
+          title: 'Turnkey Project Management',
+          items: ['EPCM services', 'Time-cost-quality management', 'Risk mitigation planning', 'Project dashboards'],
+          link: baseLink + '/project-management',
+        },
+        {
+          icon: '🤝',
+          title: 'Post-Handover Support',
+          items: [
+            'SOP training & handholding',
+            'Regulatory inspection support',
+            'Maintenance planning',
+            'APR/PQR setup',
+          ],
+          link: baseLink + '/post-handover',
+        },
+      ],
+    },
+    process: {
+      heading: 'Our Project Delivery Process',
+      steps: [
+        {
+          title: 'Feasibility & Planning',
+          description:
+            'We assess project viability, select sites, and map regulatory requirements to create a robust business case.',
+        },
+        {
+          title: 'Design & Engineering',
+          description:
+            'We develop GMP-compliant facility designs, including cleanrooms, utilities, and automation systems.',
+        },
+        {
+          title: 'Procurement & Construction',
+          description:
+            'We manage equipment sourcing, vendor audits, construction, and quality control to meet project timelines.',
+        },
+        {
+          title: 'Validation & Commissioning',
+          description: 'We perform validations (DQ/IQ/OQ/PQ) and commission utilities, ensuring regulatory compliance.',
+        },
+        {
+          title: 'Handover & Support',
+          description:
+            'We deliver as-built documentation, train personnel, and provide ongoing regulatory and maintenance support.',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Compliance & Standards',
+      complianceSections: [
+        {
+          title: 'Regulatory Bodies',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            'ICH (International Council for Harmonisation)',
+            'CDSCO (Central Drugs Standard Control Organization)',
+            'WHO, PIC/S, TGA, Health Canada, ANVISA',
+          ],
+        },
+        {
+          title: 'Guidelines & Certifications',
+          items: [
+            'USFDA, EU GMP, WHO TRS, PIC/S',
+            'Revised Schedule M',
+            'ICH Q7/Q9/Q10',
+            'ISO 14644 (Cleanrooms)',
+            '21 CFR Part 11',
+          ],
+        },
+        {
+          title: 'Applications & Industries',
+          items: [
+            'Pharmaceutical Manufacturing',
+            'Biotechnology',
+            'API & Intermediates Production',
+            'Contract Research Organizations',
+            'Contract Manufacturing',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Our CRO?',
+      detail:
+        'Our CRO delivers end-to-end greenfield and brownfield pharmaceutical projects with precision, ensuring GMP compliance, operational efficiency, and regulatory success. With expertise in facility design, validation, and Industry 4.0 integration, we build future-proof facilities tailored to your needs. Partner with us to transform your vision into a compliant, high-performing pharmaceutical operation.',
+    },
+    cta: {
+      heading: 'Ready to Build or Upgrade Your Pharma Facility?',
+      tagline: 'Let us deliver turnkey solutions for your greenfield or brownfield project.',
+    },
   },
   gtm: {
     eventCategory: 'CRO Services',
@@ -66,7 +290,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -129,7 +353,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Project-based pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -247,7 +471,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -257,7 +481,7 @@ export default {
         'Turnkey execution of FDF, API, and Intermediate pharmaceutical facilities from concept to GMP readiness.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,

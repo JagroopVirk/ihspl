@@ -7,11 +7,18 @@ import '../../styles/global.css';
 import seoData from '@/data/js/services/calibration';
 
 // Components
-import BTN from '@/components/other/BTN.astro';
 import Faq from '@/components/other/Faq.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import MainContentSection from '@/components/services/MainContentSection.astro';
+import ServiceCard from '@/components/services/ServiceCard.astro';
+import ProcessSection from '@/components/services/ProcessSection.astro';
+import ComplianceSection from '@/components/services/ComplianceSection.astro';
+import ConclusionSection from '@/components/services/ConclusionSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
+const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -26,272 +33,22 @@ const { mainEntity } = faqSchema;
     faqSchema: faqSchema,
   }}
 >
-  <main>
-    <!-- Hero Section -->
-    <header class="bg-primary-light border-primary border-b-4 py-12 text-center">
-      <div class="container mx-auto px-4">
-        <h1 class="text-primaryBlue mb-4 text-4xl leading-tight font-bold md:text-5xl">
-          NABL-Accredited Calibration Services
-        </h1>
-        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
-          Precision Calibration for Pharmaceutical Excellence and Regulatory Compliance
-        </p>
-      </div>
-    </header>
+  <main id="main-content" aria-labelledby="page-title">
+    <HeroSection hero={hero} />
+
     <div class="maxwidth">
-      <!-- Main Content -->
-      <div class="container mx-auto px-6 py-12">
-        <!-- Service Overview -->
-        <section class="mb-16" aria-labelledby="service-overview">
-          <h2 id="service-overview" class="text-primaryBlue mb-6 text-3xl font-semibold">Our Calibration Services</h2>
-          <div class="prose prose-lg text-gray max-w-none">
-            <p>
-              Our NABL-accredited Contract Research Organization (CRO) offers comprehensive calibration services
-              tailored for the pharmaceutical industry. From thermal and electro-technical calibration to mechanical,
-              pressure, and mass/volume measurements, we ensure your equipment delivers precise, reliable, and compliant
-              results.
-            </p>
-            <p>
-              These services are vital for maintaining Good Manufacturing Practices (GMP), ensuring product quality, and
-              meeting stringent regulatory standards set by bodies like the FDA, EMA, and CDSCO. Our calibration
-              solutions support pharmaceutical manufacturers, biotech firms, research laboratories, and quality
-              assurance teams, helping them achieve operational excellence and regulatory compliance.
-            </p>
-          </div>
-        </section>
+      <MainContentSection main={main} />
 
-        <!-- Service Cards -->
-        <section class="mb-16" aria-labelledby="our-expertise">
-          <h2 id="our-expertise" class="text-primaryBlue mb-8 text-3xl font-semibold">Our Calibration Expertise</h2>
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {
-              [
-                {
-                  icon: '🌡️',
-                  title: 'Thermal Calibration',
-                  items: [
-                    'Temperature & Relative Humidity (RH)',
-                    'IR Thermometers',
-                    'Furnaces and Ovens',
-                    'Environmental Chambers',
-                  ],
-                  link: '/services/thermal-calibration',
-                },
-                {
-                  icon: '⚡️',
-                  title: 'Electro-Technical Calibration',
-                  items: [
-                    'AC/DC Current & Voltage',
-                    'Resistance & Inductance',
-                    'Time & Frequency',
-                    'Multimeters & Power Supplies',
-                  ],
-                  link: '/services/electro-technical-calibration',
-                },
-                {
-                  icon: '⚙️',
-                  title: 'Mechanical Calibration',
-                  items: ['Dimension & Length', 'Speed & Acoustics', 'Vernier Calipers & Micrometers', 'Tachometers'],
-                  link: '/services/mechanical-calibration',
-                },
-                {
-                  icon: '🛠️',
-                  title: 'Pressure/Vacuum Calibration',
-                  items: [
-                    'Pressure & Vacuum Gauges',
-                    'Magnehelic Gauges',
-                    'Transmitters & Safety Valves',
-                    'HVAC Systems',
-                  ],
-                  link: '/services/pressure-vacuum-calibration',
-                },
-                {
-                  icon: '⚖️',
-                  title: 'Mass & Volume Calibration',
-                  items: [
-                    'Weights & Weighing Balances',
-                    'Pipettes & Burettes',
-                    'Volumetric Flasks',
-                    'Analytical Balances',
-                  ],
-                  link: '/services/mass-volume-calibration',
-                },
-                {
-                  icon: '🔬',
-                  title: 'Specialized Calibration',
-                  items: ['pH Meters & ORP', 'Conductivity & TDS Meters', 'Flow Meters', 'Specialized Lab Equipment'],
-                  link: '/services/specialized-calibration',
-                },
-              ].map((service, index) => (
-                <article
-                  key={index}
-                  class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div class="mb-4 text-4xl" aria-hidden="true">
-                    {service.icon}
-                  </div>
-                  <h3 class="text-primaryBlue mb-3 text-xl font-bold">{service.title}</h3>
-                  <ul class="text-gray mb-6 space-y-2">
-                    {service.items.map((item, i) => (
-                      <li key={i} class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <BTN
-                    btnLink={service.link}
-                    btnClass="buttonSimple"
-                    btnText="Read more…"
-                    aria-label={`Learn more about ${service.title}`}
-                  />
-                </article>
-              ))
-            }
-          </div>
-        </section>
+      <ServiceCard cards={cards} />
 
-        <!-- Process Section -->
-        <section class="mb-16" aria-labelledby="our-process">
-          <h2 id="our-process" class="text-primaryBlue mb-8 text-3xl font-semibold">Our Calibration Process</h2>
-          <div class="space-y-6">
-            {
-              [
-                {
-                  title: 'Client Consultation & Planning',
-                  description:
-                    'We work closely with you to understand your equipment needs, regulatory requirements, and calibration schedule.',
-                },
-                {
-                  title: 'Equipment Assessment',
-                  description:
-                    'Our team evaluates your instruments to determine calibration requirements and traceability standards.',
-                },
-                {
-                  title: 'Calibration Execution',
-                  description:
-                    'Using NABL-accredited standards, we calibrate your equipment with precision in our state-of-the-art lab or on-site.',
-                },
-                {
-                  title: 'Documentation & Certification',
-                  description:
-                    'We provide detailed calibration certificates compliant with ISO/IEC 17025 for regulatory audits.',
-                },
-                {
-                  title: 'Ongoing Support',
-                  description:
-                    'We offer maintenance schedules, re-calibration reminders, and support for regulatory compliance.',
-                },
-              ].map((step, index) => (
-                <div key={index} class="flex items-start">
-                  <div class="text-primary bg-primary/10 mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-2xl font-bold">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <h3 class="text-primaryBlue mb-2 text-xl font-semibold">{step.title}</h3>
-                    <p class="text-gray">{step.description}</p>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </section>
+      <ProcessSection process={process} />
 
-        <!-- Compliance Section -->
-        <section class="bg-secondary-light2 mb-16 rounded-lg p-8" aria-labelledby="compliance">
-          <h2 id="compliance" class="text-primaryBlue mb-8 text-3xl font-semibold">Compliance & Standards</h2>
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Regulatory Bodies</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'FDA (U.S. Food and Drug Administration)',
-                    'EMA (European Medicines Agency)',
-                    'ICH (International Council for Harmonisation)',
-                    'CDSCO (Central Drugs Standard Control Organization)',
-                    'NABL (National Accreditation Board)',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Guidelines & Certifications</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'ISO/IEC 17025:2017',
-                    'GMP (Good Manufacturing Practices)',
-                    'USP (United States Pharmacopeia)',
-                    'WHO Guidelines',
-                    'NABL Accreditation',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Applications & Industries</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'Pharmaceutical Manufacturing',
-                    'Biotechnology',
-                    'Research Laboratories',
-                    'Quality Assurance/Control',
-                    'Healthcare Equipment',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-          </div>
-        </section>
+      <ComplianceSection compliance={compliance} />
 
-        <!-- Conclusion -->
-        <section class="mb-16" aria-labelledby="why-choose-us">
-          <h2 id="why-choose-us" class="text-primaryBlue mb-6 text-3xl font-semibold">Why Partner with Us?</h2>
-          <div class="prose prose-lg text-gray max-w-none">
-            <p>
-              Our NABL-accredited CRO delivers precise, reliable, and compliant calibration services to keep your
-              pharmaceutical operations running smoothly. With expertise across thermal, electro-technical, mechanical,
-              and specialized calibration, we help you meet global regulatory standards, ensure product quality, and
-              maintain operational efficiency.
-            </p>
-            <p>Choose us for trusted calibration solutions that empower your success in the pharmaceutical industry.</p>
-          </div>
-        </section>
-      </div>
+      <ConclusionSection conclusion={conclusion} />
     </div>
 
-    <!-- CTA Section -->
-    <section class="bg-secondary-light border-secondary mb-16 border py-12 text-center" aria-labelledby="cta-heading">
-      <div class="container mx-auto px-4">
-        <h3 id="cta-heading" class="mb-4 text-2xl font-semibold">Need Precision Calibration for Your Equipment?</h3>
-        <p class="text-gray mx-auto mb-6 max-w-2xl">
-          Let us help you achieve compliance and accuracy with our expert calibration services.
-        </p>
-        <BTN
-          btnLink="/contact-us"
-          btnClass="button"
-          btnText="Contact Us Today"
-          aria-label="Contact us about calibration services"
-        />
-      </div>
-    </section>
+    <CTASection cta={cta} />
 
     <!-- FAQ Section -->
     <section class="maxwidth" aria-labelledby="faq-heading">

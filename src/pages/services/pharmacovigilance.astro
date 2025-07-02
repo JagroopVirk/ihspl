@@ -7,11 +7,18 @@ import '../../styles/global.css';
 import seoData from '@/data/js/services/pharmacovigilance';
 
 // Components
-import BTN from '@/components/other/BTN.astro';
 import Faq from '@/components/other/Faq.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import MainContentSection from '@/components/services/MainContentSection.astro';
+import ServiceCard from '@/components/services/ServiceCard.astro';
+import ProcessSection from '@/components/services/ProcessSection.astro';
+import ComplianceSection from '@/components/services/ComplianceSection.astro';
+import ConclusionSection from '@/components/services/ConclusionSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
+const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -26,332 +33,22 @@ const { mainEntity } = faqSchema;
     faqSchema: faqSchema,
   }}
 >
-  <main>
-    <!-- Hero Section -->
-    <header class="bg-primary-light border-primary border-b-4 py-12 text-center">
-      <div class="container mx-auto px-4">
-        <h1 class="text-primaryBlue mb-4 text-4xl leading-tight font-bold md:text-5xl">Pharmacovigilance Services</h1>
-        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
-          Ensuring Drug Safety with Comprehensive PV Solutions
-        </p>
-      </div>
-    </header>
+  <main id="main-content" aria-labelledby="page-title">
+    <HeroSection hero={hero} />
 
     <div class="maxwidth">
-      <!-- Main Content -->
-      <div class="container mx-auto px-6 py-12">
-        <!-- Service Overview -->
-        <section class="mb-16" aria-labelledby="service-overview">
-          <h2 id="service-overview" class="text-primaryBlue mb-6 text-3xl font-semibold">
-            Our Pharmacovigilance Services
-          </h2>
-          <div class="prose prose-lg text-gray max-w-none">
-            <p>
-              Our Contract Research Organization (CRO) provides end-to-end pharmacovigilance (PV) services to ensure
-              drug safety and regulatory compliance across the product lifecycle. From database setup and adverse event
-              reporting to risk management and global submissions, we help pharmaceutical companies, biotech firms, and
-              marketing authorization holders (MAHs) monitor and manage drug safety effectively.
-            </p>
-            <p>
-              Our services are critical for maintaining patient safety, meeting stringent regulatory requirements, and
-              supporting clinical and post-marketing phases for generics, biosimilars, and innovative drugs.
-            </p>
-          </div>
-        </section>
-        <!-- Service Cards -->
-        <section class="mb-16" aria-labelledby="our-expertise">
-          <h2 id="our-expertise" class="text-primaryBlue mb-8 text-3xl font-semibold">Our PV Expertise</h2>
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            {
-              [
-                {
-                  icon: '💾',
-                  title: 'PV Database Setup',
-                  items: [
-                    'Argus, Veeva Vault implementation',
-                    'MedDRA/WHO-DD coding',
-                    'E2B R3 data exchange',
-                    '21 CFR Part 11 compliance',
-                  ],
-                  link: '/services/pv-database',
-                },
-                {
-                  icon: '📞',
-                  title: 'Medical Information Call Centre',
-                  items: [
-                    '24/7 medical inquiry support',
-                    'Multilingual adverse event intake',
-                    'HCP & patient interaction',
-                    'Product complaint triage',
-                  ],
-                  link: '/services/micc',
-                },
-                {
-                  icon: '📜',
-                  title: 'PSMF & SOPs Preparation',
-                  items: [
-                    'EMA/MHRA-compliant PSMF',
-                    'SOPs for PV activities',
-                    'Annexes & version control',
-                    'Quality system documentation',
-                  ],
-                  link: '/services/psmf-sops',
-                },
-                {
-                  icon: '📋',
-                  title: 'ICSR Case Processing',
-                  items: [
-                    'Triage & MedDRA coding',
-                    'E2B R2/R3 submissions',
-                    'Seriousness assessment',
-                    'Follow-up & reconciliation',
-                  ],
-                  link: '/services/icsr-processing',
-                },
-                {
-                  icon: '🔍',
-                  title: 'Literature Monitoring',
-                  items: [
-                    'GVP Module VI compliance',
-                    'Embase/PubMed searches',
-                    'ADR & signal screening',
-                    'Regulatory submissions',
-                  ],
-                  link: '/services/literature-monitoring',
-                },
-                {
-                  icon: '📊',
-                  title: 'Aggregate Reports',
-                  items: ['PSUR, PBRER, PADER', 'DSUR & ASRs', 'ICH E2C(R2) compliance', 'Quality review & submission'],
-                  link: '/services/aggregate-reports',
-                },
-                {
-                  icon: '⚠️',
-                  title: 'Risk Management Plan',
-                  items: [
-                    'EU-RMP & REMS preparation',
-                    'Safety specification',
-                    'Risk minimization measures',
-                    'RMP lifecycle management',
-                  ],
-                  link: '/services/risk-management',
-                },
-                {
-                  icon: '🚨',
-                  title: 'Signal Management',
-                  items: [
-                    'Disproportionality analysis',
-                    'Signal validation & assessment',
-                    'Empirica/VigiLyze tools',
-                    'Regulatory communication',
-                  ],
-                  link: '/services/signal-management',
-                },
-                {
-                  icon: '✅',
-                  title: 'Compliance & Audit Support',
-                  items: [
-                    'PV compliance monitoring',
-                    'Audit/inspection preparation',
-                    'CAPA management',
-                    'GVP & ICH E2E training',
-                  ],
-                  link: '/services/compliance-audit',
-                },
-                {
-                  icon: '🌍',
-                  title: 'Global Submissions',
-                  items: [
-                    'E2B-compliant submissions',
-                    'EMA, FDA, PMDA filings',
-                    'PvPI & WHO submissions',
-                    'PV gateway configuration',
-                  ],
-                  link: '/services/global-submissions',
-                },
-                {
-                  icon: '🩺',
-                  title: 'Medical Review',
-                  items: [
-                    'ICSR & safety report review',
-                    'Benefit-risk assessments',
-                    'Signal trend analysis',
-                    'Medical narrative writing',
-                  ],
-                  link: '/services/medical-review',
-                },
-                {
-                  icon: '🎓',
-                  title: 'PV Training & Setup',
-                  items: [
-                    'GVP & ICH E2E training',
-                    'PV system setup for MAHs',
-                    'Train-the-trainer workshops',
-                    'Custom PV process design',
-                  ],
-                  link: '/services/pv-training',
-                },
-              ].map((service, index) => (
-                <article
-                  key={index}
-                  class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg"
-                >
-                  <div class="mb-4 text-4xl" aria-hidden="true">
-                    {service.icon}
-                  </div>
-                  <h3 class="text-primaryBlue mb-3 text-xl font-bold">{service.title}</h3>
-                  <ul class="text-gray mb-6 space-y-2">
-                    {service.items.map((item, i) => (
-                      <li key={i} class="flex items-start">
-                        <span class="mr-2">•</span>
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  <BTN
-                    btnLink={service.link}
-                    btnClass="buttonSimple"
-                    btnText="Read more…"
-                    aria-label={`Learn more about ${service.title}`}
-                  />
-                </article>
-              ))
-            }
-          </div>
-        </section>
-        <!-- Process Section -->
-        <section class="mb-16" aria-labelledby="our-process">
-          <h2 id="our-process" class="text-primaryBlue mb-8 text-3xl font-semibold">Our PV Service Process</h2>
-          <div class="space-y-6">
-            {
-              [
-                {
-                  title: 'System Setup & Planning',
-                  description: 'We implement PV databases, PSMF, and SOPs tailored to your regulatory needs.',
-                },
-                {
-                  title: 'Data Collection & Monitoring',
-                  description:
-                    'We handle ICSR processing, literature monitoring, and MICC operations for adverse event data.',
-                },
-                {
-                  title: 'Analysis & Reporting',
-                  description:
-                    'We perform signal detection, prepare aggregate reports, and conduct benefit-risk evaluations.',
-                },
-                {
-                  title: 'Regulatory Submissions',
-                  description: 'We submit ICSRs, PSURs, and RMPs to global authorities like EMA, FDA, and PMDA.',
-                },
-                {
-                  title: 'Compliance & Audit Support',
-                  description: 'We ensure audit readiness, provide CAPA management, and offer ongoing PV training.',
-                },
-              ].map((step, index) => (
-                <div key={index} class="flex items-start">
-                  <div class="text-primary bg-primary/10 mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-2xl font-bold">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <h3 class="text-primaryBlue mb-2 text-xl font-semibold">{step.title}</h3>
-                    <p class="text-gray">{step.description}</p>
-                  </div>
-                </div>
-              ))
-            }
-          </div>
-        </section>
-        <!-- Compliance Section -->
-        <section class="bg-secondary-light2 mb-16 rounded-lg p-8" aria-labelledby="compliance">
-          <h2 id="compliance" class="text-primaryBlue mb-8 text-3xl font-semibold">Compliance & Standards</h2>
-          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Regulatory Bodies</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'FDA (U.S. Food and Drug Administration)',
-                    'EMA (European Medicines Agency)',
-                    'ICH (International Council for Harmonisation)',
-                    'DCGI (Drugs Controller General of India)',
-                    'PMDA, Health Canada, TGA, WHO-UMC',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Guidelines & Certifications</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'GVP Modules (EMA)',
-                    'ICH E2A/E2B/E2C/E2E',
-                    '21 CFR Part 11, EU Annex 11',
-                    'WHO TRS Annex 2–5',
-                    'PvPI (India)',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-            <div>
-              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Applications & Industries</h3>
-              <ul class="text-gray space-y-2">
-                {
-                  [
-                    'Pharmaceutical Manufacturing',
-                    'Biotechnology',
-                    'Generics & Biosimilars',
-                    'Marketing Authorization Holders',
-                    'Clinical Research',
-                  ].map((item, i) => (
-                    <li key={i} class="flex items-start">
-                      <span class="mr-2">•</span>
-                      <span>{item}</span>
-                    </li>
-                  ))
-                }
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- Conclusion -->
-        <section class="mb-16" aria-labelledby="why-choose-us">
-          <h2 id="why-choose-us" class="text-primaryBlue mb-6 text-3xl font-semibold">Why Choose Our PV Services?</h2>
-          <div class="prose prose-lg text-gray max-w-none">
-            <p>
-              Our CRO delivers comprehensive pharmacovigilance services to ensure drug safety and regulatory compliance.
-              With expertise in ICSR processing, signal management, and global submissions, we help you meet stringent
-              requirements from FDA, EMA, and other authorities.
-            </p>
-            <p>
-              Partner with us to safeguard patients, streamline PV operations, and achieve regulatory success with
-              confidence.
-            </p>
-          </div>
-        </section>
-      </div>
+      <MainContentSection main={main} />
+
+      <ServiceCard cards={cards} />
+
+      <ProcessSection process={process} />
+
+      <ComplianceSection compliance={compliance} />
+
+      <ConclusionSection conclusion={conclusion} />
     </div>
 
-    <!-- CTA Section -->
-    <section class="bg-secondary-light border-secondary mb-16 border py-12 text-center" aria-labelledby="cta-heading">
-      <div class="container mx-auto px-4">
-        <h3 id="cta-heading" class="mb-4 text-2xl font-semibold">Ready to Strengthen Your Drug Safety Program?</h3>
-        <p class="text-gray mx-auto mb-6 max-w-2xl">
-          Partner with us for expert pharmacovigilance solutions tailored to your needs.
-        </p>
-        <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" aria-label="Contact us button" />
-      </div>
-    </section>
+    <CTASection cta={cta} />
 
     <!-- FAQ Section -->
     <section class="maxwidth" aria-labelledby="faq-heading">

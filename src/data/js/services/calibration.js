@@ -1,15 +1,15 @@
 import serviceImage from '@/assets/calibration.png';
-const link = '/services/calibration';
+const baseLink = '/services/calibration';
 
 export default {
   service_id: 'cro-nabl-calibration-lab',
   report_type: 'NABL Accredited Calibration Services',
-  title: 'NABL‑Accredited Calibration Lab for Pharma Instruments',
+  title: 'NABL-Accredited Calibration Lab for Pharma Instruments',
   name: 'Accurate Calibration of Thermal, Electrical, Mechanical, Pressure/Vacuum, Mass/Volume & Other Instruments',
   description: 'Precise calibration services for critical pharmaceutical instruments, backed by NABL accreditation.',
   full_description:
-    'Our NABL‑accredited calibration lab offers full-spectrum support to pharmaceutical CROs, ensuring accuracy and compliance of analytical, lab, production, and utility instruments. We calibrate thermal and humidity devices, electro‑technical meters, mechanical gauges, pressure/vacuum instruments, mass/volume equipment, and a variety of specialty meters. Each service is underpinned by traceable procedures and recognized across global regulators.',
-  estimated_duration: '2–5 business days per instrument (depends on queue and scope)',
+    'Our NABL-accredited calibration lab offers full-spectrum support to pharmaceutical CROs, ensuring accuracy and compliance of analytical, lab, production, and utility instruments. We calibrate thermal and humidity devices, electro‑technical meters, mechanical gauges, pressure/vacuum instruments, mass/volume equipment, and a variety of specialty meters. Each service is underpinned by traceable procedures and recognized across global regulators.',
+  estimated_duration: '2-5 business days per instrument (depends on queue and scope)',
   deliverables: [
     'Accredited Calibration Certificate',
     'Traceable Calibration Report',
@@ -19,7 +19,7 @@ export default {
   ],
   regulatory_basis: [
     'NABL ISO/IEC 17025',
-    'FDA 21 CFR Part 11 & GMP Annexes',
+    'FDA 21 CFR Part 11 & GMP Annexes',
     'EU GMP & PIC/S',
     'ISO 9001:2015',
     'WHO Good Practices',
@@ -28,12 +28,148 @@ export default {
   target_industry: ['Pharmaceuticals', 'Biotech', 'Laboratories', 'Utilities'],
   expertise_area: ['Calibration Services', 'Quality Compliance', 'Traceability'],
   is_active: true,
-  pageLink: link,
+  pageLink: baseLink,
   icon: '🛠️',
   image: {
     path: serviceImage,
     alt: 'NABL accredited calibration laboratory',
     caption: 'Calibration of pharma-grade instruments with global traceability',
+  },
+  pageContent: {
+    hero: {
+      heading: 'NABL-Accredited Calibration Services',
+      tagline: 'Precision Calibration for Pharmaceutical Excellence and Regulatory Compliance',
+    },
+    main: {
+      heading: 'Our Calibration Services',
+      detail:
+        'Our NABL-accredited Contract Research Organization (CRO) offers comprehensive calibration services tailored for the pharmaceutical industry. From thermal and electro-technical calibration to mechanical, pressure, and mass/volume measurements, we ensure your equipment delivers precise, reliable, and compliant results.\n\nThese services are vital for maintaining Good Manufacturing Practices (GMP), ensuring product quality, and meeting stringent regulatory standards set by bodies like the FDA, EMA, and CDSCO. Our calibration solutions support pharmaceutical manufacturers, biotech firms, research laboratories, and quality assurance teams, helping them achieve operational excellence and regulatory compliance.',
+    },
+    cards: {
+      heading: 'Our Calibration Expertise',
+      services: [
+        {
+          icon: '🌡️',
+          title: 'Thermal Calibration',
+          items: [
+            'Temperature & Relative Humidity (RH)',
+            'IR Thermometers',
+            'Furnaces and Ovens',
+            'Environmental Chambers',
+          ],
+          link: baseLink + '/thermal-calibration',
+        },
+        {
+          icon: '⚡️',
+          title: 'Electro-Technical Calibration',
+          items: [
+            'AC/DC Current & Voltage',
+            'Resistance & Inductance',
+            'Time & Frequency',
+            'Multimeters & Power Supplies',
+          ],
+          link: baseLink + '/electro-technical-calibration',
+        },
+        {
+          icon: '⚙️',
+          title: 'Mechanical Calibration',
+          items: ['Dimension & Length', 'Speed & Acoustics', 'Vernier Calipers & Micrometers', 'Tachometers'],
+          link: baseLink + '/mechanical-calibration',
+        },
+        {
+          icon: '🛠️',
+          title: 'Pressure/Vacuum Calibration',
+          items: ['Pressure & Vacuum Gauges', 'Magnehelic Gauges', 'Transmitters & Safety Valves', 'HVAC Systems'],
+          link: baseLink + '/pressure-vacuum-calibration',
+        },
+        {
+          icon: '⚖️',
+          title: 'Mass & Volume Calibration',
+          items: ['Weights & Weighing Balances', 'Pipettes & Burettes', 'Volumetric Flasks', 'Analytical Balances'],
+          link: baseLink + '/mass-volume-calibration',
+        },
+        {
+          icon: '🔬',
+          title: 'Specialized Calibration',
+          items: ['pH Meters & ORP', 'Conductivity & TDS Meters', 'Flow Meters', 'Specialized Lab Equipment'],
+          link: baseLink + '/specialized-calibration',
+        },
+      ],
+    },
+    process: {
+      heading: 'Our Calibration Process',
+      steps: [
+        {
+          title: 'Client Consultation & Planning',
+          description:
+            'We work closely with you to understand your equipment needs, regulatory requirements, and calibration schedule.',
+        },
+        {
+          title: 'Equipment Assessment',
+          description:
+            'Our team evaluates your instruments to determine calibration requirements and traceability standards.',
+        },
+        {
+          title: 'Calibration Execution',
+          description:
+            'Using NABL-accredited standards, we calibrate your equipment with precision in our state-of-the-art lab or on-site.',
+        },
+        {
+          title: 'Documentation & Certification',
+          description:
+            'We provide detailed calibration certificates compliant with ISO/IEC 17025 for regulatory audits.',
+        },
+        {
+          title: 'Ongoing Support',
+          description:
+            'We offer maintenance schedules, re-calibration reminders, and support for regulatory compliance.',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Compliance & Standards',
+      complianceSections: [
+        {
+          title: 'Regulatory Bodies',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            'ICH (International Council for Harmonisation)',
+            'CDSCO (Central Drugs Standard Control Organization)',
+            'NABL (National Accreditation Board)',
+          ],
+        },
+        {
+          title: 'Guidelines & Certifications',
+          items: [
+            'ISO/IEC 17025:2017',
+            'GMP (Good Manufacturing Practices)',
+            'USP (United States Pharmacopeia)',
+            'WHO Guidelines',
+            'NABL Accreditation',
+          ],
+        },
+        {
+          title: 'Applications & Industries',
+          items: [
+            'Pharmaceutical Manufacturing',
+            'Biotechnology',
+            'Research Laboratories',
+            'Quality Assurance/Control',
+            'Healthcare Equipment',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Why Partner with Us?',
+      detail:
+        'Our NABL-accredited CRO delivers precise, reliable, and compliant calibration services to keep your pharmaceutical operations running smoothly. With expertise across thermal, electro-technical, mechanical, and specialized calibration, we help you meet global regulatory standards, ensure product quality, and maintain operational efficiency.\n\nChoose us for trusted calibration solutions that empower your success in the pharmaceutical industry.',
+    },
+    cta: {
+      heading: 'Need Precision Calibration for Your Equipment?',
+      tagline: 'Let us help you achieve compliance and accuracy with our expert calibration services.',
+    },
   },
   gtm: {
     eventCategory: 'Calibration Services',
@@ -70,7 +206,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -139,7 +275,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Instrument‑based pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -263,7 +399,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -273,7 +409,7 @@ export default {
         'We calibrate all critical pharma instruments—thermal, electrical, mechanical, pressure, mass/volume and more—with NABL accreditation.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,

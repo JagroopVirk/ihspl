@@ -7,136 +7,18 @@ import '../../styles/global.css';
 import seoData from '@/data/js/services/msds-sds.js';
 
 // Components
-import BTN from '@/components/other/BTN.astro';
 import Faq from '@/components/other/Faq.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import MainContentSection from '@/components/services/MainContentSection.astro';
+import ServiceCard from '@/components/services/ServiceCard.astro';
+import ProcessSection from '@/components/services/ProcessSection.astro';
+import ComplianceSection from '@/components/services/ComplianceSection.astro';
+import ConclusionSection from '@/components/services/ConclusionSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
-
-// Service data for cards
-const services = [
-  {
-    icon: '📄',
-    title: 'SDS/MSDS Preparation',
-    items: [
-      'GHS-compliant 16-section format',
-      'OSHA, EU REACH, WHMIS standards',
-      'India, China, Japan compliance',
-      'Hazard & safety information',
-    ],
-    link: '/services/sds-preparation',
-  },
-  {
-    icon: '🌍',
-    title: 'Region-Specific Customization',
-    items: ['EU REACH Annex II', 'OSHA HCS, WHMIS compliance', 'Multilingual translations', 'IS 17803:2022 (India)'],
-    link: '/services/region-specific-sds',
-  },
-  {
-    icon: '⚠️',
-    title: 'Hazard Classification & Labeling',
-    items: [
-      'GHS hazard assessment',
-      'Pictograms & H/P-statements',
-      'Primary/secondary containers',
-      'Serialization & barcoding',
-    ],
-    link: '/services/hazard-classification',
-  },
-  {
-    icon: '🧪',
-    title: 'Toxicological Assessment',
-    items: [
-      'LD50, LC50, NOAEL data',
-      'Mutagenicity & toxicity',
-      'Biodegradability assessment',
-      'ECHA, TOXNET data use',
-    ],
-    link: '/services/toxicological-assessment',
-  },
-  {
-    icon: '🔄',
-    title: 'MSDS Review & Updating',
-    items: ['Legacy MSDS conversion', 'Periodic updates', 'Version control & tracking', 'REACH UFI integration'],
-    link: '/services/msds-review',
-  },
-  {
-    icon: '✍️',
-    title: 'Expert Authoring',
-    items: [
-      'Toxicologist-led preparation',
-      'Expert review & sign-off',
-      'Regulatory endorsement',
-      'Compliance assurance',
-    ],
-    link: '/services/expert-authoring',
-  },
-  {
-    icon: '📤',
-    title: 'Regulatory Submission',
-    items: ['EU Poison Centers', 'Indian BIS/CIB filings', 'ECHA REACH submissions', 'DMF/CTD integration'],
-    link: '/services/regulatory-submission',
-  },
-];
-
-// Process steps
-const processSteps = [
-  {
-    title: 'Data Collection',
-    description: 'We gather toxicological, ecotoxicological, and chemical data from ECHA, TOXNET, and other databases.',
-  },
-  {
-    title: 'Hazard Assessment',
-    description: 'We classify hazards per GHS categories and prepare compliant labels with pictograms and statements.',
-  },
-  {
-    title: 'SDS Authoring',
-    description:
-      'Our toxicologists draft 16-section SDS, ensuring compliance with regional standards like OSHA and REACH.',
-  },
-  {
-    title: 'Review & Customization',
-    description: 'We review and customize SDS for specific regions, including translations and regulatory alignment.',
-  },
-  {
-    title: 'Submission & Support',
-    description: 'We submit SDS to regulatory bodies and integrate them into DMFs, CTDs, and other dossiers.',
-  },
-];
-
-// Compliance data
-const complianceSections = [
-  {
-    title: 'Regulatory Bodies',
-    items: [
-      'FDA (U.S. Food and Drug Administration)',
-      'EMA (European Medicines Agency)',
-      'CDSCO (Central Drugs Standard Control Organization)',
-      'ECHA (European Chemicals Agency)',
-      'OSHA, WHMIS, BIS',
-    ],
-  },
-  {
-    title: 'Guidelines & Certifications',
-    items: [
-      'UN GHS (Latest Version)',
-      'EU REACH Annex II',
-      'OSHA HCS 2012',
-      'WHMIS, IS 17803:2022',
-      'JIS Z 7253, GB/T 16483',
-    ],
-  },
-  {
-    title: 'Applications & Industries',
-    items: [
-      'Pharmaceutical Manufacturing',
-      'Biotechnology',
-      'Chemical Production',
-      'Contract Research Organizations',
-      'API & Formulation Development',
-    ],
-  },
-];
+const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -152,129 +34,21 @@ const complianceSections = [
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <!-- Hero Section -->
-    <header class="bg-primary-light border-primary border-b-4 py-10 text-center">
-      <div class="maxwidth">
-        <h1 id="page-title" class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">
-          MSDS/SDS Preparation Services
-        </h1>
-        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">Ensuring Global Compliance for Chemical Safety</p>
-      </div>
-    </header>
+    <HeroSection hero={hero} />
 
     <div class="maxwidth">
-      <!-- Main Content Section -->
-      <article class="mx-auto max-w-7xl px-6 py-12">
-        <!-- Introductory Description -->
-        <section aria-labelledby="services-heading" class="mb-12">
-          <h2 id="services-heading" class="text-primaryBlue mb-4 text-3xl font-semibold">Our SDS/MSDS Services</h2>
-          <p class="text-gray text-lg leading-relaxed">
-            Our Contract Research Organization (CRO) provides expert Material Safety Data Sheet (MSDS) and Safety Data
-            Sheet (SDS) preparation services to ensure compliance with global chemical safety regulations. We deliver
-            GHS-compliant, 16-section SDS tailored to regional standards like OSHA, EU REACH, and India's IS 17803:2022,
-            supporting pharmaceutical manufacturers, biotech firms, chemical producers, and CROs. These services are
-            critical for ensuring worker safety, environmental protection, and regulatory compliance across clinical,
-            manufacturing, and distribution processes.
-          </p>
-        </section>
+      <MainContentSection main={main} />
 
-        <!-- Service Cards -->
-        <section aria-labelledby="expertise-heading" class="mb-12">
-          <h2 id="expertise-heading" class="text-primaryBlue mb-6 text-3xl font-semibold">Our SDS Expertise</h2>
-          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {
-              services.map((service, index) => (
-                <article
-                  key={`service-${index}`}
-                  class="bg-secondary-light2 border-gray focus-within:ring-primary rounded-lg border p-6 shadow-md transition-all focus-within:ring-2 hover:-translate-y-1 hover:shadow-lg"
-                  tabindex="0"
-                >
-                  <div class="text-primary mb-4 text-4xl" aria-hidden="true">
-                    {service.icon}
-                  </div>
-                  <h3 class="text-primaryBlue mb-2 text-xl font-bold">{service.title}</h3>
-                  <ul class="text-gray mb-4 list-inside list-disc">
-                    {service.items.map((item, i) => (
-                      <li key={`service-${index}-item-${i}`}>{item}</li>
-                    ))}
-                  </ul>
-                  <BTN
-                    btnLink={service.link}
-                    btnClass="buttonSimple focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    btnText="Read more…"
-                  />
-                </article>
-              ))
-            }
-          </div>
-        </section>
+      <ServiceCard cards={cards} />
 
-        <!-- Process Section -->
-        <section aria-labelledby="process-heading" class="mb-12">
-          <h2 id="process-heading" class="text-primaryBlue mb-6 text-3xl font-semibold">Our SDS Preparation Process</h2>
-          <div class="space-y-6">
-            {
-              processSteps.map((step, index) => (
-                <article key={`step-${index}`} class="flex items-start">
-                  <div class="text-primary mr-4 text-2xl font-bold" aria-hidden="true">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <h3 class="text-primaryBlue text-xl font-semibold">{step.title}</h3>
-                    <p class="text-gray">{step.description}</p>
-                  </div>
-                </article>
-              ))
-            }
-          </div>
-        </section>
+      <ProcessSection process={process} />
 
-        <!-- Compliance & Guidelines -->
-        <section aria-labelledby="compliance-heading" class="bg-secondary-light2 mb-12 rounded-lg p-6">
-          <h2 id="compliance-heading" class="text-primaryBlue mb-6 text-3xl font-semibold">Compliance & Standards</h2>
-          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {
-              complianceSections.map((section, index) => (
-                <div key={`compliance-${index}`}>
-                  <h3 class="text-primaryBlue mb-2 text-xl font-semibold">{section.title}</h3>
-                  <ul class="text-gray list-inside list-disc">
-                    {section.items.map((item, i) => (
-                      <li key={`compliance-${index}-item-${i}`}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))
-            }
-          </div>
-        </section>
+      <ComplianceSection compliance={compliance} />
 
-        <!-- Conclusion -->
-        <section aria-labelledby="conclusion-heading" class="mb-12">
-          <h2 id="conclusion-heading" class="text-primaryBlue mb-4 text-3xl font-semibold">
-            Why Choose Our SDS Services?
-          </h2>
-          <p class="text-gray text-lg leading-relaxed">
-            Our CRO delivers expert SDS/MSDS preparation services, ensuring compliance with global GHS standards and
-            regional regulations like OSHA, REACH, and IS 17803:2022. With toxicologist-led authoring, multilingual
-            customization, and regulatory submission support, we help you ensure worker safety and streamline
-            compliance. Choose us for accurate, reliable SDS solutions that support your global operations.
-          </p>
-        </section>
-      </article>
+      <ConclusionSection conclusion={conclusion} />
     </div>
 
-    <!-- Call to Action -->
-    <aside aria-labelledby="cta-heading" class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
-      <div class="maxwidth">
-        <h3 id="cta-heading" class="mb-4 text-xl font-semibold">Ready to Ensure Chemical Safety Compliance?</h3>
-        <p class="text-gray mb-4">Partner with us for expert SDS preparation and global regulatory support.</p>
-        <BTN
-          btnLink="/contact-us"
-          btnClass="button focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-          btnText="Contact Us Today"
-        />
-      </div>
-    </aside>
+    <CTASection cta={cta} />
 
     <!-- FAQ Section -->
     <section class="maxwidth" aria-labelledby="faq-heading">

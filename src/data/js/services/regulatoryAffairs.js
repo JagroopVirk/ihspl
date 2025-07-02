@@ -1,5 +1,5 @@
 import serviceImage from '@/assets/regulatoryAffairs.png';
-const link = '/services/regulatory-affairs';
+const baseLink = '/services/regulatory-affairs';
 
 export default {
   service_id: 'cro-regulatory-compliance-device-registration',
@@ -30,12 +30,181 @@ export default {
   target_industry: ['Pharmaceuticals', 'Biotech', 'Medical Devices'],
   expertise_area: ['Regulatory Affairs', 'Device Registration', 'Dossier Management'],
   is_active: true,
-  pageLink: link,
+  pageLink: baseLink,
   icon: '📄',
   image: {
     path: serviceImage,
     alt: 'Regulatory Compliance and Device Registration Services',
     caption: 'Regulatory filing, QP services, and medical device registration support from Indivirtus',
+  },
+  pageContent: {
+    hero: {
+      heading: 'Regulatory Compliance & Medical Device Registration',
+      tagline: 'Streamlined Solutions for Global Regulatory Success',
+    },
+    main: {
+      heading: 'Our Regulatory Compliance Services',
+      detail:
+        "Our Contract Research Organization (CRO) provides comprehensive regulatory compliance and medical device registration services to help pharmaceutical and medical device companies navigate complex global regulations. From dossier preparation (CTD/ACTD, DMF, CEP) to medical device filings under CDSCO's MDR-2017 rules, we ensure compliance with standards set by FDA, EMA, ICH, and other authorities. Our services are essential for ensuring product approvals, maintaining compliance, and accelerating market entry for pharmaceutical manufacturers, biotech firms, medical device companies, and marketing authorization holders (MAHs).",
+    },
+    cards: {
+      heading: 'Our Regulatory Expertise',
+      services: [
+        {
+          icon: '📑',
+          title: 'CTD/ACTD Dossier Preparation',
+          items: [
+            'Modules 1–5 compilation',
+            'ASEAN ACTD preparation',
+            'eCTD/NeeS publishing',
+            'Gap analysis & localization',
+          ],
+          link: baseLink + '/ctd-actd-dossiers',
+        },
+        {
+          icon: '🩺',
+          title: 'Medical Device Filing',
+          items: [
+            'Class A–D classification',
+            'TDF/CSDT preparation',
+            'Clinical evaluation & RMF',
+            'Indian Authorized Agent',
+          ],
+          link: baseLink + '/medical-device-filing',
+        },
+        {
+          icon: '📄',
+          title: 'CEP/DMF Filing',
+          items: ['DMF Type I–V preparation', 'CEP submission to EDQM', 'ASMF for EU filings', 'Lifecycle management'],
+          link: baseLink + '/cep-dmf-filing',
+        },
+        {
+          icon: '🔬',
+          title: 'Clinical/Non-Clinical Overview',
+          items: [
+            'Module 2.4 & 2.5 preparation',
+            'Bioequivalence justification',
+            'BCS Class I/III biowaivers',
+            'Bridging study reports',
+          ],
+          link: baseLink + '/clinical-overview',
+        },
+        {
+          icon: '🛠️',
+          title: 'Regulatory Responses',
+          items: [
+            'FDA 483 & EU LoQ responses',
+            'CAPA & remediation planning',
+            'Pre-submission support',
+            'Labeling updates',
+          ],
+          link: baseLink + '/regulatory-responses',
+        },
+        {
+          icon: '🤝',
+          title: 'MAH & QP Services',
+          items: [
+            'EU/UK MAH representation',
+            'QP for batch release',
+            'PV obligation management',
+            'Local EU representative',
+          ],
+          link: baseLink + '/mah-qp-services',
+        },
+        {
+          icon: '🧠',
+          title: 'Regulatory Strategy',
+          items: [
+            'Global pathway analysis',
+            'Pre-submission consultations',
+            'Expedited program support',
+            'Regulatory gap assessment',
+          ],
+          link: baseLink + '/regulatory-strategy',
+        },
+        {
+          icon: '🔄',
+          title: 'Lifecycle Management',
+          items: ['Variation filings', 'Labeling & renewals', 'Change control', 'License renewals'],
+          link: baseLink + '/lifecycle-management',
+        },
+        {
+          icon: '📝',
+          title: 'Product Registration',
+          items: ['CDSCO, FDA, EMA filings', 'ROW market submissions', 'Local agent support', 'License tracking'],
+          link: baseLink + '/product-registration',
+        },
+      ],
+    },
+    process: {
+      heading: 'Our Regulatory Service Process',
+      steps: [
+        {
+          title: 'Regulatory Assessment',
+          description: 'We analyze your product and market goals to map out the appropriate regulatory pathway.',
+        },
+        {
+          title: 'Dossier Preparation',
+          description: 'We compile and review CTD/ACTD, DMF, CEP, or medical device dossiers for global submissions.',
+        },
+        {
+          title: 'Submission & Liaison',
+          description: 'We submit dossiers to authorities like FDA, EMA, and CDSCO, managing queries and interactions.',
+        },
+        {
+          title: 'Remediation & Compliance',
+          description: 'We address regulatory deficiencies, prepare CAPAs, and ensure audit readiness.',
+        },
+        {
+          title: 'Post-Approval Support',
+          description: 'We manage variations, renewals, and lifecycle compliance to maintain market authorization.',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Compliance & Standards',
+      complianceSections: [
+        {
+          title: 'Regulatory Bodies',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            'ICH (International Council for Harmonisation)',
+            'CDSCO (Central Drugs Standard Control Organization)',
+            'TGA, Health Canada, PMDA',
+          ],
+        },
+        {
+          title: 'Guidelines & Certifications',
+          items: [
+            'ICH Q1–Q14',
+            'CTD/ACTD Guidelines',
+            'MDR-2017 (India)',
+            '21 CFR Part 11',
+            'ISO 13485 (Medical Devices)',
+          ],
+        },
+        {
+          title: 'Applications & Industries',
+          items: [
+            'Pharmaceutical Manufacturing',
+            'Biotechnology',
+            'Medical Device Manufacturing',
+            'Marketing Authorization Holders',
+            'Generic & Biosimilar Producers',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Our Regulatory Services?',
+      detail:
+        'Our CRO provides expert regulatory compliance and medical device registration services, ensuring seamless approvals across global markets. With comprehensive dossier preparation, strategic consulting, and post-approval support, we help you navigate complex regulations from FDA, EMA, CDSCO, and beyond. Choose us to accelerate your market entry and maintain compliance with confidence.',
+    },
+    cta: {
+      heading: 'Ready to Achieve Global Regulatory Compliance?',
+      tagline: 'Let us streamline your drug and device approvals with precision.',
+    },
   },
   gtm: {
     eventCategory: 'CRO Services',
@@ -72,7 +241,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -147,7 +316,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Compound-based pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -273,7 +442,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -283,7 +452,7 @@ export default {
         'Expert CTD/ACTD filing, CEP/DMF submission, and medical device registration under global regulatory frameworks.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,

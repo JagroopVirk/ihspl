@@ -1,5 +1,5 @@
 import serviceImage from '@/assets/riskAssessment.png';
-const link = '/services/risk-assessment';
+const baseLink = '/services/risk-assessment';
 
 export default {
   service_id: 'cro-genotoxic-medical-device-toxicology',
@@ -28,12 +28,145 @@ export default {
   target_industry: ['Pharmaceuticals', 'Biotechnology', 'Medical Devices'],
   expertise_area: ['Toxicology', 'Risk Assessment', 'Regulatory Compliance'],
   is_active: true,
-  pageLink: link,
+  pageLink: baseLink,
   icon: '🧬',
   image: {
     path: serviceImage,
     alt: 'Genotoxicity and Medical Device Toxicological Risk Assessment',
     caption: 'Expert ICH and ISO-aligned toxicological assessments for impurities and medical devices',
+  },
+  pageContent: {
+    hero: {
+      heading: 'Cutting-Edge CRO Solutions for Pharmaceuticals for Genotoxicity & Medical Device Toxicity Assessment',
+      tagline: 'Unrivaled expertise in genotoxic impurity evaluation and toxicological risk assessment',
+    },
+    main: {
+      heading: 'Why Our CRO Services Stand Out',
+      detail:
+        'Indivirtus provides specialized CRO services, delivering precision in genotoxic impurity evaluation, toxicological risk assessments, and extractables and leachables (E&L) studies. These services empower pharmaceutical companies, biotech innovators, and medical device manufacturers to achieve compliance with stringent global regulations while ensuring patient safety. By integrating advanced analytics, computational toxicology, and rigorous testing, we streamline drug and device development, helping clients bring safe, high-quality products to market efficiently.',
+    },
+    cards: {
+      heading: 'Tailored CRO Services',
+      services: [
+        {
+          icon: '🧪',
+          title: 'Impurity Profiling',
+          items: [
+            'Precise identification via LC-MS/MS, GC-MS, NMR, HRMS',
+            'Threshold of Toxicological Concern (TTC) analysis',
+            'Robust impurity qualification studies',
+          ],
+          link: baseLink + '/impurity-profiling',
+        },
+        {
+          icon: '💻',
+          title: 'In Silico (Q)SAR Assessment',
+          items: [
+            'Advanced toxicity predictions with Derek Nexus, Leadscope',
+            'Dual-model approach: rule-based and statistical',
+            'ICH M7-compliant mutagenicity reports',
+          ],
+          link: baseLink + '/qsar-assessment',
+        },
+        {
+          icon: '🧬',
+          title: 'In Vitro Genotoxicity Testing',
+          items: [
+            'Ames Test (OECD 471) for mutagenicity',
+            'Mouse Lymphoma Assay (OECD 490)',
+            'GLP-compliant, high-precision studies',
+          ],
+          link: baseLink + '/in-vitro-testing',
+        },
+        {
+          icon: '🐁',
+          title: 'In Vivo Genotoxicity Testing',
+          items: [
+            'In vivo Micronucleus Test (OECD 474)',
+            'Comet Assay (OECD 489) for DNA damage',
+            'Transgenic Rodent Mutation Assays',
+          ],
+          link: baseLink + '/in-vivo-testing',
+        },
+        {
+          icon: '⚗️',
+          title: 'Extractables and Leachables Studies',
+          items: [
+            'ISO 10993-18 chemical characterization',
+            'Simulated-use extraction for real-world insights',
+            'Advanced GC-MS, LC-MS/MS analysis',
+          ],
+          link: baseLink + '/e-and-l-studies',
+        },
+        {
+          icon: '📊',
+          title: 'Toxicological Risk Assessment',
+          items: [
+            'Tolerable Intake and PDE calculations',
+            'Route-specific safety evaluations',
+            'Cramer Classification for unquantified substances',
+          ],
+          link: baseLink + '/risk-assessment',
+        },
+      ],
+    },
+    process: {
+      heading: 'How We Deliver Excellence',
+      steps: [
+        {
+          title: 'Project Onboarding',
+          description: 'Align with clients on objectives and regulatory needs',
+        },
+        {
+          title: 'Data Acquisition',
+          description: 'Leverage cutting-edge analytics and in silico tools',
+        },
+        {
+          title: 'Testing Phase',
+          description: 'Conduct OECD-compliant in vitro and in vivo trials',
+        },
+        {
+          title: 'Regulatory Support',
+          description: 'Prepare ICH-compliant documentation for global submissions',
+        },
+        {
+          title: 'Final Delivery',
+          description: 'Provide actionable risk assessments and stability reports',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Global Compliance, Assured',
+      complianceSections: [
+        {
+          title: 'Regulatory Oversight',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            "CDSCO (India's Regulatory Authority)",
+            "PMDA (Japan's Regulatory Authority)",
+          ],
+        },
+        {
+          title: 'Standards & Certifications',
+          items: [
+            'ICH Q3A, Q3B, Q3C, M7 for impurities',
+            'ISO 10993 for medical device safety',
+            'GLP-certified laboratories',
+            'ISO 14971 risk management framework',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Your Trusted CRO Partner',
+      detail:
+        'Indivirtus combines scientific rigor with regulatory expertise to deliver CRO services that ensure your pharmaceutical and medical device products are safe, compliant, and market-ready. Our advanced analytical tools, global compliance know-how, and commitment to precision make us the ideal partner to accelerate your development journey with confidence.',
+    },
+    cta: {
+      heading: 'Ready to Advance Your Research?',
+      tagline: 'Partner with Indivirtus for innovative, compliant CRO solutions.',
+    },
   },
   gtm: {
     eventCategory: 'CRO Services',
@@ -70,7 +203,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -133,7 +266,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Compound-based pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -260,7 +393,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -269,7 +402,7 @@ export default {
       description: 'Comprehensive toxicological evaluations for impurities and devices using ICH & ISO standards.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,

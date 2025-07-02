@@ -1,5 +1,5 @@
 import serviceImage from '@/assets/pharmacovigilance.png';
-const link = '/services/pharmacovigilance';
+const baseLink = '/services/pharmacovigilance';
 
 export default {
   service_id: 'cro-pharmacovigilance-services',
@@ -32,12 +32,224 @@ export default {
   target_industry: ['Pharmaceuticals', 'Biotechnology', 'Clinical Research Organizations'],
   expertise_area: ['Pharmacovigilance', 'Drug Safety', 'Regulatory Compliance', 'Signal Detection'],
   is_active: true,
-  pageLink: link,
+  pageLink: baseLink,
   icon: '💊',
   image: {
     path: serviceImage,
     alt: 'Pharmacovigilance CRO services at Indivirtus',
     caption: 'End-to-end safety monitoring and compliance with global PV regulations',
+  },
+  pageContent: {
+    hero: {
+      heading: 'Pharmacovigilance Services',
+      tagline: 'Ensuring Drug Safety with Comprehensive PV Solutions',
+    },
+    main: {
+      heading: 'Our Pharmacovigilance Services',
+      detail:
+        'Our Contract Research Organization (CRO) provides end-to-end pharmacovigilance (PV) services to ensure drug safety and regulatory compliance across the product lifecycle. From database setup and adverse event reporting to risk management and global submissions, we help pharmaceutical companies, biotech firms, and marketing authorization holders (MAHs) monitor and manage drug safety effectively. Our services are critical for maintaining patient safety, meeting stringent regulatory requirements, and supporting clinical and post-marketing phases for generics, biosimilars, and innovative drugs.',
+    },
+    cards: {
+      heading: 'Our PV Expertise',
+      services: [
+        {
+          icon: '💾',
+          title: 'PV Database Setup',
+          items: [
+            'Argus, Veeva Vault implementation',
+            'MedDRA/WHO-DD coding',
+            'E2B R3 data exchange',
+            '21 CFR Part 11 compliance',
+          ],
+          link: baseLink + '/pv-database',
+        },
+        {
+          icon: '📞',
+          title: 'Medical Information Call Centre',
+          items: [
+            '24/7 medical inquiry support',
+            'Multilingual adverse event intake',
+            'HCP & patient interaction',
+            'Product complaint triage',
+          ],
+          link: baseLink + '/micc',
+        },
+        {
+          icon: '📜',
+          title: 'PSMF & SOPs Preparation',
+          items: [
+            'EMA/MHRA-compliant PSMF',
+            'SOPs for PV activities',
+            'Annexes & version control',
+            'Quality system documentation',
+          ],
+          link: baseLink + '/psmf-sops',
+        },
+        {
+          icon: '📋',
+          title: 'ICSR Case Processing',
+          items: [
+            'Triage & MedDRA coding',
+            'E2B R2/R3 submissions',
+            'Seriousness assessment',
+            'Follow-up & reconciliation',
+          ],
+          link: baseLink + '/icsr-processing',
+        },
+        {
+          icon: '🔍',
+          title: 'Literature Monitoring',
+          items: [
+            'GVP Module VI compliance',
+            'Embase/PubMed searches',
+            'ADR & signal screening',
+            'Regulatory submissions',
+          ],
+          link: baseLink + '/literature-monitoring',
+        },
+        {
+          icon: '📊',
+          title: 'Aggregate Reports',
+          items: ['PSUR, PBRER, PADER', 'DSUR & ASRs', 'ICH E2C(R2) compliance', 'Quality review & submission'],
+          link: baseLink + '/aggregate-reports',
+        },
+        {
+          icon: '⚠️',
+          title: 'Risk Management Plan',
+          items: [
+            'EU-RMP & REMS preparation',
+            'Safety specification',
+            'Risk minimization measures',
+            'RMP lifecycle management',
+          ],
+          link: baseLink + '/risk-management',
+        },
+        {
+          icon: '🚨',
+          title: 'Signal Management',
+          items: [
+            'Disproportionality analysis',
+            'Signal validation & assessment',
+            'Empirica/VigiLyze tools',
+            'Regulatory communication',
+          ],
+          link: baseLink + '/signal-management',
+        },
+        {
+          icon: '✅',
+          title: 'Compliance & Audit Support',
+          items: [
+            'PV compliance monitoring',
+            'Audit/inspection preparation',
+            'CAPA management',
+            'GVP & ICH E2E training',
+          ],
+          link: baseLink + '/compliance-audit',
+        },
+        {
+          icon: '🌍',
+          title: 'Global Submissions',
+          items: [
+            'E2B-compliant submissions',
+            'EMA, FDA, PMDA filings',
+            'PvPI & WHO submissions',
+            'PV gateway configuration',
+          ],
+          link: baseLink + '/global-submissions',
+        },
+        {
+          icon: '🩺',
+          title: 'Medical Review',
+          items: [
+            'ICSR & safety report review',
+            'Benefit-risk assessments',
+            'Signal trend analysis',
+            'Medical narrative writing',
+          ],
+          link: baseLink + '/medical-review',
+        },
+        {
+          icon: '🎓',
+          title: 'PV Training & Setup',
+          items: [
+            'GVP & ICH E2E training',
+            'PV system setup for MAHs',
+            'Train-the-trainer workshops',
+            'Custom PV process design',
+          ],
+          link: baseLink + '/pv-training',
+        },
+      ],
+    },
+    process: {
+      heading: 'Our PV Service Process',
+      steps: [
+        {
+          title: 'System Setup & Planning',
+          description: 'We implement PV databases, PSMF, and SOPs tailored to your regulatory needs.',
+        },
+        {
+          title: 'Data Collection & Monitoring',
+          description: 'We handle ICSR processing, literature monitoring, and MICC operations for adverse event data.',
+        },
+        {
+          title: 'Analysis & Reporting',
+          description: 'We perform signal detection, prepare aggregate reports, and conduct benefit-risk evaluations.',
+        },
+        {
+          title: 'Regulatory Submissions',
+          description: 'We submit ICSRs, PSURs, and RMPs to global authorities like EMA, FDA, and PMDA.',
+        },
+        {
+          title: 'Compliance & Audit Support',
+          description: 'We ensure audit readiness, provide CAPA management, and offer ongoing PV training.',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Compliance & Standards',
+      complianceSections: [
+        {
+          title: 'Regulatory Bodies',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            'ICH (International Council for Harmonisation)',
+            'DCGI (Drugs Controller General of India)',
+            'PMDA, Health Canada, TGA, WHO-UMC',
+          ],
+        },
+        {
+          title: 'Guidelines & Certifications',
+          items: [
+            'GVP Modules (EMA)',
+            'ICH E2A/E2B/E2C/E2E',
+            '21 CFR Part 11, EU Annex 11',
+            'WHO TRS Annex 2–5',
+            'PvPI (India)',
+          ],
+        },
+        {
+          title: 'Applications & Industries',
+          items: [
+            'Pharmaceutical Manufacturing',
+            'Biotechnology',
+            'Generics & Biosimilars',
+            'Marketing Authorization Holders',
+            'Clinical Research',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Our PV Services?',
+      detail:
+        'Our CRO delivers comprehensive pharmacovigilance services to ensure drug safety and regulatory compliance. With expertise in ICSR processing, signal management, and global submissions, we help you meet stringent requirements from FDA, EMA, and other authorities. Partner with us to safeguard patients, streamline PV operations, and achieve regulatory success with confidence.',
+    },
+    cta: {
+      heading: 'Ready to Strengthen Your Drug Safety Program?',
+      tagline: 'Partner with us for expert pharmacovigilance solutions tailored to your needs.',
+    },
   },
   gtm: {
     eventCategory: 'CRO Services',
@@ -74,7 +286,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -167,7 +379,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Compound-based pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -310,7 +522,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -319,7 +531,7 @@ export default {
       description: 'ICSR reporting, RMP, PSUR/PADER preparation, and full PV support under one CRO service umbrella.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,

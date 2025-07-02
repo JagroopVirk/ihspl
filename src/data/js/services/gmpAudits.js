@@ -1,5 +1,5 @@
 import serviceImage from '@/assets/gmpAudit.png';
-const link = '/services/ade-pde-oel';
+const baseLink = '/services/ade-pde-oel';
 
 export default {
   service_id: 'cro-gmp-approvals',
@@ -33,12 +33,226 @@ export default {
   target_industry: ['Pharmaceuticals', 'Biopharma', 'CRO', 'Medical Devices'],
   expertise_area: ['GMP Approvals', 'Regulatory Readiness', 'Facility Compliance'],
   is_active: true,
-  pageLink: link,
+  pageLink: baseLink,
   icon: '🏭',
   image: {
     path: serviceImage,
     alt: 'GMP regulatory audit readiness services',
     caption: 'GMP audit preparation and remediation support for global authorities',
+  },
+  pageContent: {
+    hero: {
+      heading: 'GMP Approval & Compliance Services',
+      tagline: 'Streamlining Regulatory Approvals for Pharmaceutical Excellence',
+    },
+    main: {
+      heading: 'Our GMP Compliance Services',
+      detail:
+        'Our Contract Research Organization (CRO) specializes in Good Manufacturing Practice (GMP) approval and compliance services to help pharmaceutical companies navigate complex regulatory landscapes. From vendor assessments and GMP audits to regulatory dossier preparation and facility qualifications, we ensure your operations align with global standards like EU-GMP, USFDA, WHO-GMP, and PIC/S. These services are critical for ensuring product quality, patient safety, and regulatory compliance. Our solutions support pharmaceutical manufacturers, biotech firms, API producers, and contract manufacturers, helping them achieve approvals and maintain robust quality systems.',
+    },
+    cards: {
+      heading: 'Our GMP Expertise',
+      services: [
+        {
+          icon: '📋',
+          title: 'Vendor Assessment Audits',
+          items: [
+            'Plant layout & process flow evaluation',
+            'Equipment & infrastructure assessment',
+            'CAPA and risk management',
+            'GAP analysis per Schedule M',
+          ],
+          link: baseLink + '/vendor-assessments',
+        },
+        {
+          icon: '🔍',
+          title: 'GMP Compliance Audits',
+          items: [
+            'Internal GMP audits',
+            'Mock regulatory inspections',
+            'Supplier & contract manufacturer audits',
+            'GxP audits (GMP, GLP, GCP, GDP)',
+          ],
+          link: baseLink + '/gmp-audits',
+        },
+        {
+          icon: '🤝',
+          title: 'Audit Representation',
+          items: [
+            'On-site support during inspections',
+            'Audit response preparation',
+            'CAPA development',
+            'Post-inspection follow-up',
+          ],
+          link: baseLink + '/audit-representation',
+        },
+        {
+          icon: '📄',
+          title: 'Regulatory Dossier Support',
+          items: [
+            'CTD/eCTD module preparation',
+            'NDA, ANDA, IND, DMF, MAA',
+            'CMC documentation review',
+            'Pre-approval inspection readiness',
+          ],
+          link: baseLink + '/dossier-support',
+        },
+        {
+          icon: '⚙️',
+          title: 'Quality System Development',
+          items: [
+            'QMS setup & optimization',
+            'Data integrity (ALCOA+)',
+            'SOP & documentation audits',
+            'Deviation & OOS management',
+          ],
+          link: baseLink + '/quality-systems',
+        },
+        {
+          icon: '🏭',
+          title: 'Facility Qualification',
+          items: [
+            'DQ, IQ, OQ, PQ services',
+            'Cleaning & HVAC validation',
+            'Water system validation',
+            'Validation master plan',
+          ],
+          link: baseLink + '/facility-qualification',
+        },
+        {
+          icon: '🧠',
+          title: 'Regulatory Strategy',
+          items: [
+            'Regulatory pathway consultation',
+            'Global submission harmonization',
+            'Country-specific gap analysis',
+            'Authority engagement strategy',
+          ],
+          link: baseLink + '/regulatory-strategy',
+        },
+        {
+          icon: '🌍',
+          title: 'Global Submission Support',
+          items: [
+            'FDA, EMA, PMDA filings',
+            'Query response compilation',
+            'DMF/CEP lifecycle management',
+            'WHO PQ submissions',
+          ],
+          link: baseLink + '/global-submissions',
+        },
+        {
+          icon: '📚',
+          title: 'SOP & Documentation Audits',
+          items: [
+            'SOP preparation & review',
+            'Batch record audits',
+            'Training & logbook audits',
+            'Equipment log reviews',
+          ],
+          link: baseLink + '/sop-audits',
+        },
+        {
+          icon: '💾',
+          title: 'Data Integrity & CSV',
+          items: [
+            'Computer system validation',
+            '21 CFR Part 11 compliance',
+            'Audit trail verification',
+            'Data backup strategies',
+          ],
+          link: baseLink + '/data-integrity',
+        },
+        {
+          icon: '⚠️',
+          title: 'Risk Management',
+          items: ['ICH Q9 compliance', 'FMEA & HACCP audits', 'Risk control documentation', 'Process risk reviews'],
+          link: baseLink + '/risk-management',
+        },
+        {
+          icon: '✅',
+          title: 'PAI Support',
+          items: [
+            'Site readiness assessments',
+            'PAI documentation support',
+            'Real-time audit assistance',
+            'Remediation planning',
+          ],
+          link: baseLink + '/pai-support',
+        },
+      ],
+    },
+    process: {
+      heading: 'Our GMP Compliance Process',
+      steps: [
+        {
+          title: 'Client Onboarding',
+          description: 'We assess your facility, processes, and regulatory goals to tailor our GMP services.',
+        },
+        {
+          title: 'Gap Analysis & Planning',
+          description:
+            'We conduct audits and gap assessments to identify compliance gaps and develop a remediation plan.',
+        },
+        {
+          title: 'Audits & Qualifications',
+          description:
+            'Our experts perform GMP audits, facility qualifications, and system validations to ensure compliance.',
+        },
+        {
+          title: 'Dossier & Submission Support',
+          description: 'We prepare and review regulatory dossiers, ensuring readiness for submissions and inspections.',
+        },
+        {
+          title: 'Ongoing Compliance Support',
+          description: 'We provide continuous support for audits, CAPA implementation, and regulatory query responses.',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Compliance & Standards',
+      complianceSections: [
+        {
+          title: 'Regulatory Bodies',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            'ICH (International Council for Harmonisation)',
+            'CDSCO (Central Drugs Standard Control Organization)',
+            'WHO, PIC/S, TGA, Health Canada, ANVISA, COFEPRIS',
+          ],
+        },
+        {
+          title: 'Guidelines & Certifications',
+          items: [
+            'ICH Q7/Q9/Q10',
+            'EU-GMP, USFDA, WHO-GMP, PIC/S',
+            '21 CFR Part 11',
+            'ISO 9001:2015',
+            'GxP (GMP, GLP, GCP, GDP)',
+          ],
+        },
+        {
+          title: 'Applications & Industries',
+          items: [
+            'Pharmaceutical Manufacturing',
+            'Biotechnology',
+            'API & Drug Product Manufacturing',
+            'Contract Manufacturing',
+            'Quality Assurance/Control',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Our CRO?',
+      detail:
+        'Our CRO delivers expert GMP compliance and regulatory approval services, ensuring your pharmaceutical operations meet global standards. With comprehensive audits, robust quality systems, and strategic regulatory support, we help you achieve approvals from authorities like USFDA, EMA, and WHO. Partner with us for reliable, efficient solutions that enhance product quality and regulatory success.',
+    },
+    cta: {
+      heading: 'Ready to Achieve GMP Compliance?',
+      tagline: 'Let us guide you through regulatory approvals with confidence and precision.',
+    },
   },
   gtm: {
     eventCategory: 'CRO Services',
@@ -75,7 +289,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -140,7 +354,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Facility-based pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -266,7 +480,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -275,7 +489,7 @@ export default {
       description: 'GMP audit and documentation readiness support for EU, US, WHO, TGA, ANVISA, COFEPRIS and more.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,

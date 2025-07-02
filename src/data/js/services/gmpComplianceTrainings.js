@@ -1,5 +1,5 @@
 import serviceImage from '@/assets/gmpCompliance.png';
-const link = '/services/gmp-compliance-trainings';
+const baseLink = '/services/gmp-compliance-trainings';
 
 export default {
   service_id: 'cro-training-pharma-quality-compliance',
@@ -29,12 +29,169 @@ export default {
   target_industry: ['Pharmaceuticals', 'Biotech', 'CRO', 'Regulatory Affairs'],
   expertise_area: ['Training & Development', 'Quality Compliance', 'Regulatory Education'],
   is_active: true,
-  pageLink: link,
+  pageLink: baseLink,
   icon: '🎓',
   image: {
     path: serviceImage,
     alt: 'Pharma compliance training sessions',
     caption: 'Quality and compliance training for pharmaceutical professionals',
+  },
+  pageContent: {
+    hero: {
+      heading: 'Pharmaceutical Quality & Compliance Training',
+      tagline: 'Empowering Your Team with Expert-Led Compliance Training',
+    },
+    main: {
+      heading: 'Our Training Programs',
+      detail:
+        'Our Contract Research Organization (CRO) offers comprehensive, expert-led training programs designed for pharmaceutical and biotech teams. Covering critical topics like Cleaning Validation, GxP standards (GMP, GLP, GCP, GDP, GVP), Revised Schedule M, WHO TRS guidelines, Data Integrity, and Quality Management Systems (QMS), our sessions equip your staff with the knowledge and skills needed to ensure compliance. Tailored for pharmaceutical manufacturers, biotech firms, CROs, and regulatory affairs teams, our training programs help you meet global regulatory standards, streamline operations, and prepare for audits with confidence.',
+    },
+    cards: {
+      heading: 'Our Training Expertise',
+      services: [
+        {
+          icon: '🧼',
+          title: 'Cleaning Validation Training',
+          items: [
+            'Worst-case product selection',
+            'Residue limits (MACO, PDE)',
+            'Swab and rinse sampling',
+            'Protocol development',
+          ],
+          link: baseLink + '/cleaning-validation-training',
+        },
+        {
+          icon: '📜',
+          title: 'GxP Training',
+          items: [
+            'GMP, GLP, GCP, GDP, GVP',
+            'ICH E6, 21 CFR 210/211',
+            'Cold chain & warehousing',
+            'Clinical trial compliance',
+          ],
+          link: baseLink + '/gxp-training',
+        },
+        {
+          icon: '🇮🇳',
+          title: 'Revised Schedule M Training',
+          items: [
+            'Key changes overview',
+            'Implementation roadmap',
+            'Quality control & documentation',
+            'Mock audit simulation',
+          ],
+          link: baseLink + '/schedule-m-training',
+        },
+        {
+          icon: '🌍',
+          title: 'WHO TRS Training',
+          items: ['Annex 1–9 guidelines', 'Sterile & API GMP', 'Vaccine & biologics standards', 'FDA/EMA comparisons'],
+          link: baseLink + '/who-trs-training',
+        },
+        {
+          icon: '⚙️',
+          title: 'Quality Systems Training',
+          items: [
+            'ICH Q10 & quality culture',
+            'Data integrity (ALCOA+)',
+            'CAPA & deviation management',
+            'Risk management (ICH Q9)',
+          ],
+          link: baseLink + '/quality-systems-training',
+        },
+        {
+          icon: '📊',
+          title: 'QMS Training',
+          items: ['QMS framework (ICH Q10)', 'Document management', 'Supplier qualification', 'APQR & KPI tracking'],
+          link: baseLink + '/qms-training',
+        },
+        {
+          icon: '🎓',
+          title: 'Training Methodologies',
+          items: [
+            'On-site/virtual/hybrid delivery',
+            'Role-specific workshops',
+            'Train-the-Trainer programs',
+            'Training Needs Analysis',
+          ],
+          link: baseLink + '/training-methodologies',
+        },
+      ],
+    },
+    process: {
+      heading: 'Our Training Process',
+      steps: [
+        {
+          title: 'Needs Assessment',
+          description:
+            "We conduct a Training Needs Analysis (TNA) to tailor programs to your team's roles and compliance goals.",
+        },
+        {
+          title: 'Program Customization',
+          description:
+            'We design modular training sessions with case studies and simulations specific to your operations.',
+        },
+        {
+          title: 'Delivery',
+          description:
+            'Expert-led sessions are delivered on-site, virtually, or in hybrid formats, with hands-on workshops.',
+        },
+        {
+          title: 'Assessment & Certification',
+          description:
+            'Participants undergo competency evaluations and receive regulatory-compliant training certificates.',
+        },
+        {
+          title: 'Post-Training Support',
+          description:
+            'We provide checklists, action plans, and ongoing support to ensure knowledge application and compliance.',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Compliance & Standards',
+      complianceSections: [
+        {
+          title: 'Regulatory Bodies',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            'ICH (International Council for Harmonisation)',
+            'CDSCO (Central Drugs Standard Control Organization)',
+            'WHO, PIC/S',
+          ],
+        },
+        {
+          title: 'Guidelines & Certifications',
+          items: [
+            'FDA 21 CFR Parts 210/211/820/58',
+            'EU GMP Annexes',
+            'WHO TRS Series 996 Annex 2–5',
+            'Schedule M (Indian GMP)',
+            'ICH Q9, Q10, Q14',
+          ],
+        },
+        {
+          title: 'Applications & Industries',
+          items: [
+            'Pharmaceutical Manufacturing',
+            'Biotechnology',
+            'Contract Research Organizations',
+            'Regulatory Affairs',
+            'Quality Assurance/Control',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Our Training?',
+      detail:
+        "Our expert-led training programs empower your pharmaceutical and biotech teams with the knowledge and skills to excel in compliance and quality. With customized, practical sessions aligned with FDA, EMA, WHO, and ICH standards, we help you build a robust quality culture and prepare for regulatory success. Choose us to enhance your team's capabilities and ensure compliance with confidence.",
+    },
+    cta: {
+      heading: "Ready to Elevate Your Team's Compliance Skills?",
+      tagline: 'Partner with us to deliver expert training tailored to your needs.',
+    },
   },
   gtm: {
     eventCategory: 'CRO Services',
@@ -71,7 +228,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -142,7 +299,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Per‑participant/module pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -266,7 +423,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -276,7 +433,7 @@ export default {
         'Expert-led training in pharmaceutical quality and compliance areas: GxP, data integrity, QMS, Cleaning Validation, and more.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,
