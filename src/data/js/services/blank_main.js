@@ -23,14 +23,14 @@ export default {
     alt: ,
     caption: ,
   },
- pageContent: {
+  pageContent: {
     hero: {heading:"",tagline:""},
     main: {heading:"",detail:""},
-  cards: {heading:"", services:[],},
-process: {heading:"", steps:[]},
-compliance: {heading:"", regulation:[{heading: "", guidesRegulators:[{heading:"",itemsList:""},]}]},
-whyUS: {heading:"", detail:""},
-cta: {heading:"", tagline:"",},
+    cards: {heading:"", services:[],},
+    process: {heading:"", steps:[]},
+    compliance: {heading:"", complianceSections: [{title: '', items: [],}]},
+    conclusion: {heading:"", detail:""},
+    cta: {heading:"", tagline:"",},
   },
 
   gtm: {

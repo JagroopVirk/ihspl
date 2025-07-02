@@ -1,0 +1,14 @@
+---
+const { conclusion } = Astro.props;
+---
+
+{/* Conclusion */}
+
+<section aria-labelledby="conclusion-heading" aria-describedby="conclusion-detail" class="mb-12">
+  <h2 id="conclusion-heading" class="mb-4">
+    {conclusion.heading}
+  </h2>
+  <p id="conclusion-detail" class="leading-relaxed">
+    {conclusion.detail}
+  </p>
+</section>

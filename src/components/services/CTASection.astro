@@ -1,0 +1,24 @@
+---
+const { cta } = Astro.props;
+
+// Components
+import BTN from '@/components/other/BTN.astro';
+---
+
+<!-- Call to Action -->
+<aside
+  class="bg-secondary-light2 p-6 text-center"
+  role="complementary"
+  aria-labelledby="cta-heading"
+  aria-describedby="cta-tagline"
+>
+  <div class="maxwidth">
+    <h3 id="cta-heading" class="mb-4">
+      {cta.heading}
+    </h3>
+    <p id="cta-tagline" class="mb-4">
+      {cta.tagline}
+    </p>
+    <BTN btnLink="/contact-us" btnClass="button" btnText="Contact Us Today" btnAria="Contact us today" />
+  </div>
+</aside>

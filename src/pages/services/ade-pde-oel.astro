@@ -7,119 +7,18 @@ import '../../styles/global.css';
 import seoData from '@/data/js/services/adepde.js';
 
 // Components
-import BTN from '@/components/other/BTN.astro';
 import Faq from '@/components/other/Faq.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import MainContentSection from '@/components/services/MainContentSection.astro';
+import ServiceCard from '@/components/services/ServiceCard.astro';
+import ProcessSection from '@/components/services/ProcessSection.astro';
+import ComplianceSection from '@/components/services/ComplianceSection.astro';
+import ConclusionSection from '@/components/services/ConclusionSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
-
-// Service data for cards
-const services = [
-  {
-    icon: '🧪',
-    title: 'ADE/PDE Calculation',
-    items: [
-      'Full toxicological assessment',
-      'EMA-compliant PDE calculation',
-      'NOAEL/LOAEL-based limits',
-      'Expert toxicologist sign-off',
-    ],
-    link: '/services/ade-pde-calculation',
-  },
-  {
-    icon: '🏭',
-    title: 'OEL Determination',
-    items: ['Airborne exposure modeling', 'Route-specific OELs', 'NIOSH/ACGIH comparison', 'Containment system design'],
-    link: '/services/oel-determination',
-  },
-  {
-    icon: '🧑‍🏭',
-    title: 'OEB Assignment',
-    items: [
-      'Multi-tiered banding (1–5)',
-      'ISPE/SafeBridge systems',
-      'Toxicological criteria',
-      'Facility segregation support',
-    ],
-    link: '/services/oeb-assignment',
-  },
-  {
-    icon: '🧼',
-    title: 'Cleaning Validation Support',
-    items: ['MACO calculation', 'PDE-based protocols', 'Rinse/swab limit setting', 'HBEL report preparation'],
-    link: '/services/cleaning-validation',
-  },
-  {
-    icon: '📄',
-    title: 'TRA Report Preparation',
-    items: [
-      'Toxicology monographs',
-      'Cleaning limit justification',
-      'PQR & regulatory support',
-      'Cross-contamination control',
-    ],
-    link: '/services/tra-reports',
-  },
-  {
-    icon: '📦',
-    title: 'Cross-Contamination Assessments',
-    items: ['HBEL-based assessments', 'Risk-MaPP implementation', 'Facility/equipment design', 'PDE application'],
-    link: '/services/cross-contamination',
-  },
-];
-
-// Process steps
-const processSteps = [
-  {
-    title: 'Toxicological Assessment',
-    description:
-      'We conduct full toxicological evaluations to calculate ADE/PDE and OEL values for APIs and intermediates.',
-  },
-  {
-    title: 'OEB Assignment',
-    description: 'We assign exposure bands to guide containment and facility segregation decisions.',
-  },
-  {
-    title: 'Cleaning Validation Protocol',
-    description: 'We develop PDE-based protocols, calculate MACO, and set rinse/swab limits for shared equipment.',
-  },
-  {
-    title: 'Risk Assessment & Reporting',
-    description: 'We prepare TRA reports and cross-contamination assessments to support compliance and audits.',
-  },
-  {
-    title: 'Regulatory Submission Support',
-    description: 'We provide documentation for PQRs and regulatory submissions, ensuring audit readiness.',
-  },
-];
-
-// Compliance data
-const complianceSections = [
-  {
-    title: 'Regulatory Bodies',
-    items: [
-      'FDA (U.S. Food and Drug Administration)',
-      'EMA (European Medicines Agency)',
-      'ICH (International Council for Harmonisation)',
-      'CDSCO (Central Drugs Standard Control Organization)',
-      'PIC/S, WHO, TGA',
-    ],
-  },
-  {
-    title: 'Guidelines & Certifications',
-    items: ['EMA HBEL Guidelines', 'PIC/S GMP Annex 15', 'ISPE Risk-MaPP', 'ICH Q3D, Q9', 'NIOSH/ACGIH Standards'],
-  },
-  {
-    title: 'Applications & Industries',
-    items: [
-      'Pharmaceutical Manufacturing',
-      'Biotechnology',
-      'Contract Research Organizations',
-      'API & Intermediates Production',
-      'Contract Manufacturing',
-    ],
-  },
-];
+const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -135,136 +34,21 @@ const complianceSections = [
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <!-- Hero Section -->
-    <header class="bg-primary-light border-primary border-b-4 py-10 text-center">
-      <div class="maxwidth">
-        <h1 id="page-title" class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">
-          ADE/PDE, OEL & Cleaning Validation Services
-        </h1>
-        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
-          Ensuring Safe and Compliant Pharmaceutical Manufacturing
-        </p>
-      </div>
-    </header>
+    <HeroSection hero={hero} />
 
     <div class="maxwidth">
-      <!-- Main Content Section -->
-      <article class="mx-auto max-w-7xl px-6 py-12">
-        <!-- Introductory Description -->
-        <section aria-labelledby="services-heading" class="mb-12">
-          <h2 id="services-heading" class="text-primaryBlue mb-4 text-3xl font-semibold">
-            Our Cleaning Validation Services
-          </h2>
-          <p class="text-gray text-lg leading-relaxed">
-            Our Contract Research Organization (CRO) specializes in ADE/PDE, OEL, and OEB calculations, alongside
-            comprehensive cleaning validation services to ensure safe pharmaceutical manufacturing. These services help
-            prevent cross-contamination, meet stringent regulatory requirements, and protect patient and worker safety.
-            With expertise in toxicological assessments and health-based exposure limits, we serve pharmaceutical
-            manufacturers, biotech firms, and CROs. Our proven track record, inspired by industry leaders like
-            Indivirtus with over 13,000 PDE/ADE reports delivered, ensures robust, compliant solutions for shared
-            facilities and equipment.
-          </p>
-        </section>
+      <MainContentSection main={main} />
 
-        <!-- Service Cards -->
-        <section aria-labelledby="expertise-heading" class="mb-12">
-          <h2 id="expertise-heading" class="text-primaryBlue mb-6 text-3xl font-semibold">Our Validation Expertise</h2>
-          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {
-              services.map((service, index) => (
-                <article
-                  key={`service-${index}`}
-                  class="bg-secondary-light2 border-gray focus-within:ring-primary rounded-lg border p-6 shadow-md transition-all focus-within:ring-2 hover:-translate-y-1 hover:shadow-lg"
-                  tabindex="0"
-                >
-                  <div class="text-primary mb-4 text-4xl" aria-hidden="true">
-                    {service.icon}
-                  </div>
-                  <h3 class="text-primaryBlue mb-2 text-xl font-bold">{service.title}</h3>
-                  <ul class="text-gray mb-4 list-inside list-disc">
-                    {service.items.map((item, i) => (
-                      <li key={`service-${index}-item-${i}`}>{item}</li>
-                    ))}
-                  </ul>
-                  <BTN
-                    btnLink={service.link}
-                    btnClass="buttonSimple focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-                    btnText="Read more…"
-                  />
-                </article>
-              ))
-            }
-          </div>
-        </section>
+      <ServiceCard cards={cards} />
 
-        <!-- Process Section -->
-        <section aria-labelledby="process-heading" class="mb-12">
-          <h2 id="process-heading" class="text-primaryBlue mb-6 text-3xl font-semibold">
-            Our Cleaning Validation Process
-          </h2>
-          <div class="space-y-6">
-            {
-              processSteps.map((step, index) => (
-                <article key={`step-${index}`} class="flex items-start">
-                  <div class="text-primary mr-4 text-2xl font-bold" aria-hidden="true">
-                    {index + 1}
-                  </div>
-                  <div>
-                    <h3 class="text-primaryBlue text-xl font-semibold">{step.title}</h3>
-                    <p class="text-gray">{step.description}</p>
-                  </div>
-                </article>
-              ))
-            }
-          </div>
-        </section>
+      <ProcessSection process={process} />
 
-        <!-- Compliance & Guidelines -->
-        <section aria-labelledby="compliance-heading" class="bg-secondary-light2 mb-12 rounded-lg p-6">
-          <h2 id="compliance-heading" class="text-primaryBlue mb-6 text-3xl font-semibold">Compliance & Standards</h2>
-          <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {
-              complianceSections.map((section, index) => (
-                <div key={`compliance-${index}`}>
-                  <h3 class="text-primaryBlue mb-2 text-xl font-semibold">{section.title}</h3>
-                  <ul class="text-gray list-inside list-disc">
-                    {section.items.map((item, i) => (
-                      <li key={`compliance-${index}-item-${i}`}>{item}</li>
-                    ))}
-                  </ul>
-                </div>
-              ))
-            }
-          </div>
-        </section>
+      <ComplianceSection compliance={compliance} />
 
-        <!-- Conclusion -->
-        <section aria-labelledby="conclusion-heading" class="mb-12">
-          <h2 id="conclusion-heading" class="text-primaryBlue mb-4 text-3xl font-semibold">
-            Why Choose Our Cleaning Validation Services?
-          </h2>
-          <p class="text-gray text-lg leading-relaxed">
-            Our CRO delivers expert ADE/PDE, OEL, and cleaning validation services to ensure safe, compliant
-            pharmaceutical manufacturing. With a robust toxicological approach and alignment with EMA, PIC/S, and ISPE
-            guidelines, we minimize cross-contamination risks and ensure audit readiness. Choose us for precise,
-            health-based solutions that protect patients and workers while meeting global regulatory standards.
-          </p>
-        </section>
-      </article>
+      <ConclusionSection conclusion={conclusion} />
     </div>
 
-    <!-- Call to Action -->
-    <aside aria-labelledby="cta-heading" class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
-      <div class="maxwidth">
-        <h3 id="cta-heading" class="mb-4 text-xl font-semibold">Ready to Ensure Safe Manufacturing?</h3>
-        <p class="text-gray mb-4">Partner with us for expert cleaning validation and exposure limit solutions.</p>
-        <BTN
-          btnLink="/contact-us"
-          btnClass="button focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-          btnText="Contact Us Today"
-        />
-      </div>
-    </aside>
+    <CTASection cta={cta} />
 
     <!-- FAQ Section -->
     <section class="maxwidth" aria-labelledby="faq-heading">

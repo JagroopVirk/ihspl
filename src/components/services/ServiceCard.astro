@@ -1,0 +1,43 @@
+---
+const { cards } = Astro.props;
+
+// Components
+import BTN from '@/components/other/BTN.astro';
+---
+
+{/* Service Cards */}
+
+<section aria-labelledby="expertise-heading" aria-describedby="expertise-services" class="mb-12">
+  <h2 id="expertise-heading" class="mb-6">{cards.heading}</h2>
+  <div id="expertise-services" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {
+      cards.services.map((service, index) => (
+        <article
+          key={`service-${index}`}
+          class="bg-primary-light border-primary focus-within:ring-primary rounded-lg border p-6 shadow-md transition-all focus-within:ring-2 hover:-translate-y-1 hover:shadow-lg"
+          tabindex="0"
+          aria-labelledby={`service-title-${index}`}
+          aria-describedby={`service-desc-${index}`}
+        >
+          <div class="mb-4 text-4xl" aria-hidden="true">
+            {service.icon}
+          </div>
+          <h3 id={`service-title-${index}`} class="t mb-2">
+            {service.title}
+          </h3>
+          <ul id={`service-desc-${index}`} class="text-gray mb-4 list-inside list-disc">
+            {service.items.map((item, i) => (
+              <li key={`service-${index}-item-${i}`}>{item}</li>
+            ))}
+          </ul>
+          <BTN
+            btnLink={service.link}
+            btnClass="buttonSimple"
+            btnText="View Details"
+            btnArea={`Learn more about ${service.title}`}
+          />
+        </article>
+      ))
+    }
+  </div>
+</section>

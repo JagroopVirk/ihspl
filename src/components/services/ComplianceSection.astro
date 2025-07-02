@@ -1,0 +1,29 @@
+---
+const { compliance } = Astro.props;
+---
+
+{/* Compliance & Guidelines */}
+
+<section
+  aria-labelledby="compliance-heading"
+  aria-describedby="compliance-description"
+  class="bg-secondary-light2 mb-12 rounded-lg p-6"
+>
+  <h2 id="compliance-heading" class="mb-6">
+    {compliance.heading}
+  </h2>
+  <div id="compliance-description" class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {
+      compliance.complianceSections.map((section, index) => (
+        <div key={`compliance-${index}`}>
+          <h3 class="mb-2">{section.title}</h3>
+          <ul class="text-gray ml-4 list-outside list-disc">
+            {section.items.map((item, i) => (
+              <li key={`${section.title}-${index}-item-${i}`}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      ))
+    }
+  </div>
+</section>

@@ -1,5 +1,5 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
-const link = '/services/ade-pde-oel';
+const baseLink = '/services/ade-pde-oel';
 
 export default {
   service_id: 'ade-pde-oel-oeb-cleaning-validation',
@@ -29,13 +29,157 @@ export default {
   target_industry: ['Pharmaceutical', 'Biotech', 'API Manufacturing', 'CDMO', 'CRO'],
   expertise_area: ['Toxicology', 'Risk Assessment', 'Cleaning Validation', 'Occupational Safety'],
   is_active: true,
-  pageLink: link,
+  pageLink: baseLink,
   icon: '🧪',
   image: {
     path: serviceImage,
     alt: 'ADE PDE OEL OEB Cleaning Validation Calculation',
     caption: 'Toxicological Assessment for Safe Exposure Limits in Cleaning Validation',
   },
+  pageContent: {
+    hero: {
+      heading: 'ADE/PDE, OEL & Cleaning Validation Services',
+      tagline: 'Ensuring Safe and Compliant Pharmaceutical Manufacturing',
+    },
+    main: {
+      heading: 'Our Cleaning Validation Services',
+      detail:
+        'Our Contract Research Organization (CRO) specializes in ADE/PDE, OEL, and OEB calculations, alongside comprehensive cleaning validation services to ensure safe pharmaceutical manufacturing. These services help prevent cross-contamination, meet stringent regulatory requirements, and protect patient and worker safety. With expertise in toxicological assessments and health-based exposure limits, we serve pharmaceutical manufacturers, biotech firms, and CROs. Our proven track record, inspired by industry leaders like Indivirtus with over 13,000 PDE/ADE reports delivered, ensures robust, compliant solutions for shared facilities and equipment.',
+    },
+    cards: {
+      heading: 'Our Validation Expertise',
+      services: [
+        {
+          icon: '🧪',
+          title: 'ADE/PDE Calculation',
+          items: [
+            'Full toxicological assessment',
+            'EMA-compliant PDE calculation',
+            'NOAEL/LOAEL-based limits',
+            'Expert toxicologist sign-off',
+          ],
+          link: baseLink + '/ade-pde-calculation',
+        },
+        {
+          icon: '🏭',
+          title: 'OEL Determination',
+          items: [
+            'Airborne exposure modeling',
+            'Route-specific OELs',
+            'NIOSH/ACGIH comparison',
+            'Containment system design',
+          ],
+          link: baseLink + '/oel-determination',
+        },
+        {
+          icon: '🧑‍🏭',
+          title: 'OEB Assignment',
+          items: [
+            'Multi-tiered banding (1–5)',
+            'ISPE/SafeBridge systems',
+            'Toxicological criteria',
+            'Facility segregation support',
+          ],
+          link: baseLink + '/oeb-assignment',
+        },
+        {
+          icon: '🧼',
+          title: 'Cleaning Validation Support',
+          items: ['MACO calculation', 'PDE-based protocols', 'Rinse/swab limit setting', 'HBEL report preparation'],
+          link: baseLink + '/cleaning-validation',
+        },
+        {
+          icon: '📄',
+          title: 'TRA Report Preparation',
+          items: [
+            'Toxicology monographs',
+            'Cleaning limit justification',
+            'PQR & regulatory support',
+            'Cross-contamination control',
+          ],
+          link: baseLink + '/tra-reports',
+        },
+        {
+          icon: '📦',
+          title: 'Cross-Contamination Assessments',
+          items: ['HBEL-based assessments', 'Risk-MaPP implementation', 'Facility/equipment design', 'PDE application'],
+          link: baseLink + '/cross-contamination',
+        },
+      ],
+    },
+    process: {
+      heading: 'Our Cleaning Validation Process',
+      steps: [
+        {
+          title: 'Toxicological Assessment',
+          description:
+            'We conduct full toxicological evaluations to calculate ADE/PDE and OEL values for APIs and intermediates.',
+        },
+        {
+          title: 'OEB Assignment',
+          description: 'We assign exposure bands to guide containment and facility segregation decisions.',
+        },
+        {
+          title: 'Cleaning Validation Protocol',
+          description:
+            'We develop PDE-based protocols, calculate MACO, and set rinse/swab limits for shared equipment.',
+        },
+        {
+          title: 'Risk Assessment & Reporting',
+          description: 'We prepare TRA reports and cross-contamination assessments to support compliance and audits.',
+        },
+        {
+          title: 'Regulatory Submission Support',
+          description: 'We provide documentation for PQRs and regulatory submissions, ensuring audit readiness.',
+        },
+      ],
+    },
+    compliance: {
+      heading: 'Compliance & Standards',
+      complianceSections: [
+        {
+          title: 'Regulatory Bodies',
+          items: [
+            'FDA (U.S. Food and Drug Administration)',
+            'EMA (European Medicines Agency)',
+            'ICH (International Council for Harmonisation)',
+            'CDSCO (Central Drugs Standard Control Organization)',
+            'PIC/S, WHO, TGA',
+          ],
+        },
+        {
+          title: 'Guidelines & Certifications',
+          items: [
+            'EMA HBEL Guidelines',
+            'PIC/S GMP Annex 15',
+            'ISPE Risk-MaPP',
+            'ICH Q3D, Q9',
+            'NIOSH/ACGIH Standards',
+          ],
+        },
+        {
+          title: 'Applications & Industries',
+          items: [
+            'Pharmaceutical Manufacturing',
+            'Biotechnology',
+            'Contract Research Organizations',
+            'API & Intermediates Production',
+            'Contract Manufacturing',
+          ],
+        },
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Our Cleaning Validation Services?',
+      detail:
+        'Our CRO delivers expert ADE/PDE, OEL, and cleaning validation services to ensure safe, compliant pharmaceutical manufacturing. With a robust toxicological approach and alignment with EMA, PIC/S, and ISPE guidelines, we minimize cross-contamination risks and ensure audit readiness. Choose us for precise, health-based solutions that protect patients and workers while meeting global regulatory standards.',
+    },
+    cta: {
+      heading: 'Ready to Ensure Safe Manufacturing?',
+      tagline: 'Partner with us for expert cleaning validation and exposure limit solutions.',
+    },
+  },
+
   gtm: {
     eventCategory: 'CleaningValidationServices',
     eventAction: 'ADE_PDE_OEL_OEB_Calculation',
@@ -71,7 +215,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: link,
+      serviceUrl: baseLink,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -115,7 +259,7 @@ export default {
       '@type': 'Offer',
       priceCurrency: ['INR', 'USD'],
       price: 'Compound-based pricing',
-      url: link,
+      url: baseLink,
       availability: 'https://schema.org/InStock',
       businessFunction: 'https://schema.org/ProvideService',
     },
@@ -241,7 +385,7 @@ export default {
     ogTags: {
       type: 'service',
       image: serviceImage.src,
-      url: link,
+      url: baseLink,
       site_name: 'Indivirtus',
     },
     twitterCard: {
@@ -251,7 +395,7 @@ export default {
         'Get expert support on ADE, PDE, and OEL calculation for pharma cleaning validation. Ensure global compliance with audit-ready reports.',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `'https://www.indivirtus.com' + ${baseLink}`,
     robotsMeta: {
       index: true,
       follow: true,
