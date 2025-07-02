@@ -1,0 +1,428 @@
+---
+// Imports
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.css';
+
+// SEO Data
+import seoData from '@/data/js/services/adepde.js';
+
+// Components
+import BTN from '@/components/other/BTN.astro';
+import Faq from '@/components/other/Faq.astro';
+
+const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { mainEntity } = faqSchema;
+---
+
+<Layout
+  seo={{
+    title: `${meta.title} - Indivirtus`,
+    description: meta.description,
+    keywords: meta.keywords,
+    canonical: meta.canonicalUrl,
+    image: image.path.src,
+    url: pageLink,
+    schema: schema,
+    faqSchema: faqSchema,
+  }}
+>
+  <main>
+    <!-- Hero Section -->
+    <header class="bg-primary-light border-primary border-b-4 py-12 text-center">
+      <div class="container mx-auto px-4">
+        <h1 class="text-primaryBlue mb-4 text-4xl leading-tight font-bold md:text-5xl">
+          Toxicological Safety & Regulatory Documentation
+        </h1>
+        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
+          Comprehensive support for pharmaceutical safety and compliance
+        </p>
+      </div>
+    </header>
+    <div class="maxwidth">
+      <!-- Main Content -->
+      <div class="container mx-auto px-6 py-12">
+        <!-- Service Overview -->
+        <section class="mb-16" aria-labelledby="service-overview">
+          <h2 id="service-overview" class="text-primaryBlue mb-6 text-3xl font-semibold">
+            Why Toxicological Safety Services Are Essential
+          </h2>
+          <div class="prose prose-lg text-gray max-w-none">
+            <p>
+              Indivirtus provides specialized toxicological and safety documentation services to support pharmaceutical
+              manufacturing and cleaning validation. These services are critical for ensuring regulatory compliance,
+              mitigating risks of cross-contamination, protecting personnel from exposure to hazardous substances, and
+              minimizing environmental hazards.
+            </p>
+            <p>
+              By offering end-to-end solutions, including ADE/PDE/OEL & OEB calculations, Safety Assessment Reports
+              (SAR) for finished formulations, and expertly prepared MSDS/SDS documents, Indivirtus helps pharmaceutical
+              manufacturers and CROs meet stringent global standards. These services are vital for GMP-compliant
+              operations, facility design, and regulatory audits, ensuring product safety and workplace health.
+            </p>
+          </div>
+        </section>
+
+        <!-- ADE/PDE/OEL/OEB Services -->
+        <section class="mb-16" aria-labelledby="ade-services">
+          <h2 id="ade-services" class="text-primaryBlue mb-8 text-3xl font-semibold">
+            ADE / PDE / OEL / OEB Calculation Services
+          </h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {
+              [
+                {
+                  icon: '🧪',
+                  title: 'Health-Based Exposure Limit (HBEL) Calculations',
+                  items: [
+                    'ADE (Acceptable Daily Exposure) determination',
+                    'PDE (Permitted Daily Exposure) as per EMA/ICH Q3D',
+                    'NOAEL/LOAEL-based toxicological thresholds',
+                    'Thresholds for genotoxic or sensitizing compounds',
+                  ],
+                  link: '/services/hbel-calculations',
+                },
+                {
+                  icon: '🛡️',
+                  title: 'Occupational Exposure Limit (OEL) Determination',
+                  items: [
+                    'OELs for APIs, intermediates, and excipients',
+                    'Based on toxicological and clinical data',
+                    'Route-specific OELs (inhalation, dermal, oral)',
+                    'REACH-compliant DNEL/DMEL calculations',
+                  ],
+                  link: '/services/oel-determination',
+                },
+                {
+                  icon: '📊',
+                  title: 'Occupational Exposure Banding (OEB)',
+                  items: [
+                    'Categorization into OEB 1–5/6',
+                    'Banding using public data (RTECS, HSDB, PubChem)',
+                    'Risk assessment for limited data compounds',
+                    'Control strategy selection based on OEB',
+                  ],
+                  link: '/services/oeb-categorization',
+                },
+                {
+                  icon: '⚠️',
+                  title: 'Risk Assessment & Control Strategy',
+                  items: [
+                    'Containment strategy (Isolator, RABS)',
+                    'Cleaning validation limits based on PDE',
+                    'Gap analysis and remediation planning',
+                    'Carryover calculation for cleaning hold time',
+                  ],
+                  link: '/services/risk-assessment',
+                },
+                {
+                  icon: '📝',
+                  title: 'Report Preparation & Regulatory Support',
+                  items: [
+                    'HBEL, PDE, OEL justification reports',
+                    'Compliance with EMA, WHO, ICH, OSHA',
+                    'Regulatory submission support',
+                    'Justification for QRM and GMP audits',
+                  ],
+                  link: '/services/report-preparation',
+                },
+                {
+                  icon: '🔬',
+                  title: 'Specialized Support Services',
+                  items: [
+                    'Potent compound classification (PCC)',
+                    'Hazard categorization for APIs and HAPIs',
+                    'Cross-contamination risk assessment',
+                    'Inhalation toxicology modeling',
+                  ],
+                  link: '/services/specialized-support',
+                },
+              ].map((service, index) => (
+                <article
+                  key={index}
+                  class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div class="mb-4 text-4xl" aria-hidden="true">
+                    {service.icon}
+                  </div>
+                  <h3 class="text-primaryBlue mb-3 text-xl font-bold">{service.title}</h3>
+                  <ul class="text-gray mb-6 space-y-2">
+                    {service.items.map((item, i) => (
+                      <li key={i} class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <BTN
+                    btnLink={service.link}
+                    btnClass="buttonSimple"
+                    btnText="Read more…"
+                    aria-label={`Learn more about ${service.title}`}
+                  />
+                </article>
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- MSDS/SDS Services -->
+        <section class="mb-16" aria-labelledby="sds-services">
+          <h2 id="sds-services" class="text-primaryBlue mb-8 text-3xl font-semibold">
+            MSDS / SDS Preparation Services
+          </h2>
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            {
+              [
+                {
+                  icon: '📄',
+                  title: 'SDS Authoring & Preparation',
+                  items: [
+                    'Full-format SDS per GHS, OSHA, REACH, CLP',
+                    'Multi-language preparation for global compliance',
+                    'Compliant with EU, US, India regulations',
+                  ],
+                  link: '/services/sds-authoring',
+                },
+                {
+                  icon: '⚖️',
+                  title: 'Regulatory Classification & Compliance',
+                  items: [
+                    'GHS hazard classification',
+                    'REACH, OSHA, WHMIS compliance',
+                    'H-code and P-code assignments',
+                  ],
+                  link: '/services/regulatory-classification',
+                },
+                {
+                  icon: '🔍',
+                  title: 'Data Collection & Interpretation',
+                  items: [
+                    'Analysis of toxicological and ecotoxicological data',
+                    'Use of PubChem, ECHA, TOXNET',
+                    'Cross-verification of supplier data',
+                  ],
+                  link: '/services/data-collection',
+                },
+                {
+                  icon: '📑',
+                  title: 'Section-by-Section SDS Population',
+                  items: [
+                    'Complete 16-section SDS',
+                    'Details on hazards, handling, and disposal',
+                    'Regulatory and transport information',
+                  ],
+                  link: '/services/sds-population',
+                },
+                {
+                  icon: '🌐',
+                  title: 'Multi-Region SDS Compliance',
+                  items: [
+                    'Region-specific SDS for EU, US, India, Canada',
+                    'Multi-lingual preparation and translation',
+                    'Compliance with local GHS adaptations',
+                  ],
+                  link: '/services/multi-region-sds',
+                },
+                {
+                  icon: '🚚',
+                  title: 'Transport & Dangerous Goods Classification',
+                  items: [
+                    'UN Number and hazard class assignment',
+                    'IATA/IMDG/ADR compliance',
+                    'Packaging and labeling recommendations',
+                  ],
+                  link: '/services/transport-classification',
+                },
+                {
+                  icon: '🧬',
+                  title: 'SDS for Special Compounds',
+                  items: [
+                    'SDS for APIs, intermediates, excipients',
+                    'Genotoxic and cytotoxic substances',
+                    'Laboratory reagents and bulk chemicals',
+                  ],
+                  link: '/services/special-compounds',
+                },
+                {
+                  icon: '🔄',
+                  title: 'MSDS to SDS Conversion',
+                  items: [
+                    'Convert old MSDS to GHS-compliant SDS',
+                    'Reformatting and updating regulations',
+                    'Version control and archiving',
+                  ],
+                  link: '/services/msds-conversion',
+                },
+                {
+                  icon: '📂',
+                  title: 'Document Management & Distribution',
+                  items: [
+                    'Digitally signed PDF generation',
+                    'Version control and expiry tracking',
+                    'Integration into ERP/LIMS systems',
+                  ],
+                  link: '/services/document-management',
+                },
+              ].map((service, index) => (
+                <article
+                  key={index}
+                  class="bg-secondary-light2 border-gray rounded-lg border p-6 shadow-md transition-all hover:-translate-y-1 hover:shadow-lg"
+                >
+                  <div class="mb-4 text-4xl" aria-hidden="true">
+                    {service.icon}
+                  </div>
+                  <h3 class="text-primaryBlue mb-3 text-xl font-bold">{service.title}</h3>
+                  <ul class="text-gray mb-6 space-y-2">
+                    {service.items.map((item, i) => (
+                      <li key={i} class="flex items-start">
+                        <span class="mr-2">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <BTN
+                    btnLink={service.link}
+                    btnClass="buttonSimple"
+                    btnText="Read more…"
+                    aria-label={`Learn more about ${service.title}`}
+                  />
+                </article>
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="bg-primary-light border-primary mb-16 rounded-lg border p-8" aria-labelledby="our-process">
+          <h2 id="our-process" class="text-primaryBlue mb-6 text-3xl font-semibold">Our Service Delivery Process</h2>
+          <div class="space-y-6">
+            {
+              [
+                {
+                  title: 'Data Collection',
+                  description:
+                    'We gather compound-specific details, manufacturing processes, and existing toxicological data from clients',
+                },
+                {
+                  title: 'Toxicological Analysis',
+                  description:
+                    'Our experts analyze data alongside public databases (PubChem, ECHA, TOXNET) to derive ADE/PDE/OEL values',
+                },
+                {
+                  title: 'OEB Categorization',
+                  description:
+                    'Compounds are categorized into OEB bands and appropriate control strategies are developed',
+                },
+                {
+                  title: 'Document Preparation',
+                  description: 'We prepare comprehensive reports and SDS documents in required formats',
+                },
+                {
+                  title: 'Regulatory Review',
+                  description:
+                    'All documents undergo rigorous quality checks to ensure compliance with global standards',
+                },
+                {
+                  title: 'Client Delivery',
+                  description:
+                    'Final documents are delivered with support for implementation and regulatory submissions',
+                },
+              ].map((step, index) => (
+                <div key={index} class="flex items-start">
+                  <div class="text-primary mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-2xl font-bold">
+                    {index + 1}
+                  </div>
+                  <div>
+                    <h3 class="text-primaryBlue mb-2 text-xl font-semibold">{step.title}</h3>
+                    <p class="text-gray">{step.description}</p>
+                  </div>
+                </div>
+              ))
+            }
+          </div>
+        </section>
+
+        <!-- Compliance Section -->
+        <section class="bg-secondary-light2 mb-16 rounded-lg p-8" aria-labelledby="compliance">
+          <h2 id="compliance" class="text-primaryBlue mb-8 text-3xl font-semibold">
+            Regulatory Compliance & Certifications
+          </h2>
+          <div class="grid gap-8 md:grid-cols-2">
+            <div>
+              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Key Regulations</h3>
+              <ul class="text-gray space-y-2">
+                {
+                  [
+                    'EMA Guidelines on PDE/ADE for health-based exposure limits',
+                    'ICH Q3D for elemental impurities assessment',
+                    'REACH & GHS Compliance for chemical safety',
+                    'OSHA Hazard Communication Standards',
+                    'EU Regulation No 1272/2008 (CLP)',
+                    'WHO, ISPE, and GMP Guidelines',
+                  ].map((item, i) => (
+                    <li key={i} class="flex items-start">
+                      <span class="mr-2">•</span>
+                      <span>{item}</span>
+                    </li>
+                  ))
+                }
+              </ul>
+            </div>
+            <div>
+              <h3 class="text-primaryBlue mb-4 text-xl font-semibold">Our Compliance Approach</h3>
+              <div class="prose prose-sm text-gray">
+                <p>
+                  Our team ensures compliance through expertise in toxicology, regulatory affairs, and occupational
+                  safety, supported by certifications in GHS, REACH, and OSHA standards.
+                </p>
+                <p>
+                  We provide audit-ready documentation and assist with regulatory submissions to streamline approvals,
+                  helping clients maintain compliance with evolving global regulations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mb-16" aria-labelledby="why-choose-us">
+          <h2 id="why-choose-us" class="text-primaryBlue mb-6 text-3xl font-semibold">Why Choose Our Services?</h2>
+          <div class="prose prose-lg text-gray max-w-none">
+            <p>
+              Indivirtus' toxicological and safety documentation services empower pharmaceutical manufacturers, CROs,
+              and biotech firms to achieve regulatory compliance, ensure workplace safety, and mitigate risks.
+            </p>
+            <p>
+              By delivering precise ADE/PDE/OEL calculations, comprehensive Safety Assessment Reports, and GHS-compliant
+              SDS documents, we support GMP-compliant operations and global market access. Our expertise in toxicology
+              and regulatory affairs ensures that your manufacturing processes meet the highest safety and quality
+              standards.
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- CTA Section -->
+    <section class="bg-secondary-light border-secondary mb-16 border py-12 text-center" aria-labelledby="cta-heading">
+      <div class="container mx-auto px-4">
+        <h3 id="cta-heading" class="mb-4 text-2xl font-semibold">Ready to Ensure Safety and Compliance?</h3>
+        <p class="text-gray mx-auto mb-6 max-w-2xl">
+          Partner with Indivirtus for expert toxicological and regulatory support.
+        </p>
+        <BTN
+          btnLink="/contact-us"
+          btnClass="button"
+          btnText="Contact Us Today"
+          aria-label="Contact us about toxicological safety services"
+        />
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
+      <Faq faqs={mainEntity} />
+    </section>
+  </main>
+</Layout>

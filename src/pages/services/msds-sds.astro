@@ -4,7 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import '../../styles/global.css';
 
 // SEO Data
-import seoData from '@/data/js/services/adepde.js';
+import seoData from '@/data/js/services/msds-sds.js';
 
 // Components
 import BTN from '@/components/other/BTN.astro';
@@ -16,80 +16,91 @@ const { mainEntity } = faqSchema;
 // Service data for cards
 const services = [
   {
-    icon: '🧪',
-    title: 'ADE/PDE Calculation',
-    items: [
-      'Full toxicological assessment',
-      'EMA-compliant PDE calculation',
-      'NOAEL/LOAEL-based limits',
-      'Expert toxicologist sign-off',
-    ],
-    link: '/services/ade-pde-calculation',
-  },
-  {
-    icon: '🏭',
-    title: 'OEL Determination',
-    items: ['Airborne exposure modeling', 'Route-specific OELs', 'NIOSH/ACGIH comparison', 'Containment system design'],
-    link: '/services/oel-determination',
-  },
-  {
-    icon: '🧑‍🏭',
-    title: 'OEB Assignment',
-    items: [
-      'Multi-tiered banding (1–5)',
-      'ISPE/SafeBridge systems',
-      'Toxicological criteria',
-      'Facility segregation support',
-    ],
-    link: '/services/oeb-assignment',
-  },
-  {
-    icon: '🧼',
-    title: 'Cleaning Validation Support',
-    items: ['MACO calculation', 'PDE-based protocols', 'Rinse/swab limit setting', 'HBEL report preparation'],
-    link: '/services/cleaning-validation',
-  },
-  {
     icon: '📄',
-    title: 'TRA Report Preparation',
+    title: 'SDS/MSDS Preparation',
     items: [
-      'Toxicology monographs',
-      'Cleaning limit justification',
-      'PQR & regulatory support',
-      'Cross-contamination control',
+      'GHS-compliant 16-section format',
+      'OSHA, EU REACH, WHMIS standards',
+      'India, China, Japan compliance',
+      'Hazard & safety information',
     ],
-    link: '/services/tra-reports',
+    link: '/services/sds-preparation',
   },
   {
-    icon: '📦',
-    title: 'Cross-Contamination Assessments',
-    items: ['HBEL-based assessments', 'Risk-MaPP implementation', 'Facility/equipment design', 'PDE application'],
-    link: '/services/cross-contamination',
+    icon: '🌍',
+    title: 'Region-Specific Customization',
+    items: ['EU REACH Annex II', 'OSHA HCS, WHMIS compliance', 'Multilingual translations', 'IS 17803:2022 (India)'],
+    link: '/services/region-specific-sds',
+  },
+  {
+    icon: '⚠️',
+    title: 'Hazard Classification & Labeling',
+    items: [
+      'GHS hazard assessment',
+      'Pictograms & H/P-statements',
+      'Primary/secondary containers',
+      'Serialization & barcoding',
+    ],
+    link: '/services/hazard-classification',
+  },
+  {
+    icon: '🧪',
+    title: 'Toxicological Assessment',
+    items: [
+      'LD50, LC50, NOAEL data',
+      'Mutagenicity & toxicity',
+      'Biodegradability assessment',
+      'ECHA, TOXNET data use',
+    ],
+    link: '/services/toxicological-assessment',
+  },
+  {
+    icon: '🔄',
+    title: 'MSDS Review & Updating',
+    items: ['Legacy MSDS conversion', 'Periodic updates', 'Version control & tracking', 'REACH UFI integration'],
+    link: '/services/msds-review',
+  },
+  {
+    icon: '✍️',
+    title: 'Expert Authoring',
+    items: [
+      'Toxicologist-led preparation',
+      'Expert review & sign-off',
+      'Regulatory endorsement',
+      'Compliance assurance',
+    ],
+    link: '/services/expert-authoring',
+  },
+  {
+    icon: '📤',
+    title: 'Regulatory Submission',
+    items: ['EU Poison Centers', 'Indian BIS/CIB filings', 'ECHA REACH submissions', 'DMF/CTD integration'],
+    link: '/services/regulatory-submission',
   },
 ];
 
 // Process steps
 const processSteps = [
   {
-    title: 'Toxicological Assessment',
+    title: 'Data Collection',
+    description: 'We gather toxicological, ecotoxicological, and chemical data from ECHA, TOXNET, and other databases.',
+  },
+  {
+    title: 'Hazard Assessment',
+    description: 'We classify hazards per GHS categories and prepare compliant labels with pictograms and statements.',
+  },
+  {
+    title: 'SDS Authoring',
     description:
-      'We conduct full toxicological evaluations to calculate ADE/PDE and OEL values for APIs and intermediates.',
+      'Our toxicologists draft 16-section SDS, ensuring compliance with regional standards like OSHA and REACH.',
   },
   {
-    title: 'OEB Assignment',
-    description: 'We assign exposure bands to guide containment and facility segregation decisions.',
+    title: 'Review & Customization',
+    description: 'We review and customize SDS for specific regions, including translations and regulatory alignment.',
   },
   {
-    title: 'Cleaning Validation Protocol',
-    description: 'We develop PDE-based protocols, calculate MACO, and set rinse/swab limits for shared equipment.',
-  },
-  {
-    title: 'Risk Assessment & Reporting',
-    description: 'We prepare TRA reports and cross-contamination assessments to support compliance and audits.',
-  },
-  {
-    title: 'Regulatory Submission Support',
-    description: 'We provide documentation for PQRs and regulatory submissions, ensuring audit readiness.',
+    title: 'Submission & Support',
+    description: 'We submit SDS to regulatory bodies and integrate them into DMFs, CTDs, and other dossiers.',
   },
 ];
 
@@ -100,23 +111,29 @@ const complianceSections = [
     items: [
       'FDA (U.S. Food and Drug Administration)',
       'EMA (European Medicines Agency)',
-      'ICH (International Council for Harmonisation)',
       'CDSCO (Central Drugs Standard Control Organization)',
-      'PIC/S, WHO, TGA',
+      'ECHA (European Chemicals Agency)',
+      'OSHA, WHMIS, BIS',
     ],
   },
   {
     title: 'Guidelines & Certifications',
-    items: ['EMA HBEL Guidelines', 'PIC/S GMP Annex 15', 'ISPE Risk-MaPP', 'ICH Q3D, Q9', 'NIOSH/ACGIH Standards'],
+    items: [
+      'UN GHS (Latest Version)',
+      'EU REACH Annex II',
+      'OSHA HCS 2012',
+      'WHMIS, IS 17803:2022',
+      'JIS Z 7253, GB/T 16483',
+    ],
   },
   {
     title: 'Applications & Industries',
     items: [
       'Pharmaceutical Manufacturing',
       'Biotechnology',
+      'Chemical Production',
       'Contract Research Organizations',
-      'API & Intermediates Production',
-      'Contract Manufacturing',
+      'API & Formulation Development',
     ],
   },
 ];
@@ -139,11 +156,9 @@ const complianceSections = [
     <header class="bg-primary-light border-primary border-b-4 py-10 text-center">
       <div class="maxwidth">
         <h1 id="page-title" class="text-primaryBlue mb-4 text-4xl font-bold md:text-5xl">
-          ADE/PDE, OEL & Cleaning Validation Services
+          MSDS/SDS Preparation Services
         </h1>
-        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">
-          Ensuring Safe and Compliant Pharmaceutical Manufacturing
-        </p>
+        <p class="text-gray mx-auto max-w-3xl text-xl md:text-2xl">Ensuring Global Compliance for Chemical Safety</p>
       </div>
     </header>
 
@@ -152,23 +167,20 @@ const complianceSections = [
       <article class="mx-auto max-w-7xl px-6 py-12">
         <!-- Introductory Description -->
         <section aria-labelledby="services-heading" class="mb-12">
-          <h2 id="services-heading" class="text-primaryBlue mb-4 text-3xl font-semibold">
-            Our Cleaning Validation Services
-          </h2>
+          <h2 id="services-heading" class="text-primaryBlue mb-4 text-3xl font-semibold">Our SDS/MSDS Services</h2>
           <p class="text-gray text-lg leading-relaxed">
-            Our Contract Research Organization (CRO) specializes in ADE/PDE, OEL, and OEB calculations, alongside
-            comprehensive cleaning validation services to ensure safe pharmaceutical manufacturing. These services help
-            prevent cross-contamination, meet stringent regulatory requirements, and protect patient and worker safety.
-            With expertise in toxicological assessments and health-based exposure limits, we serve pharmaceutical
-            manufacturers, biotech firms, and CROs. Our proven track record, inspired by industry leaders like
-            Indivirtus with over 13,000 PDE/ADE reports delivered, ensures robust, compliant solutions for shared
-            facilities and equipment.
+            Our Contract Research Organization (CRO) provides expert Material Safety Data Sheet (MSDS) and Safety Data
+            Sheet (SDS) preparation services to ensure compliance with global chemical safety regulations. We deliver
+            GHS-compliant, 16-section SDS tailored to regional standards like OSHA, EU REACH, and India's IS 17803:2022,
+            supporting pharmaceutical manufacturers, biotech firms, chemical producers, and CROs. These services are
+            critical for ensuring worker safety, environmental protection, and regulatory compliance across clinical,
+            manufacturing, and distribution processes.
           </p>
         </section>
 
         <!-- Service Cards -->
         <section aria-labelledby="expertise-heading" class="mb-12">
-          <h2 id="expertise-heading" class="text-primaryBlue mb-6 text-3xl font-semibold">Our Validation Expertise</h2>
+          <h2 id="expertise-heading" class="text-primaryBlue mb-6 text-3xl font-semibold">Our SDS Expertise</h2>
           <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {
               services.map((service, index) => (
@@ -199,9 +211,7 @@ const complianceSections = [
 
         <!-- Process Section -->
         <section aria-labelledby="process-heading" class="mb-12">
-          <h2 id="process-heading" class="text-primaryBlue mb-6 text-3xl font-semibold">
-            Our Cleaning Validation Process
-          </h2>
+          <h2 id="process-heading" class="text-primaryBlue mb-6 text-3xl font-semibold">Our SDS Preparation Process</h2>
           <div class="space-y-6">
             {
               processSteps.map((step, index) => (
@@ -241,13 +251,13 @@ const complianceSections = [
         <!-- Conclusion -->
         <section aria-labelledby="conclusion-heading" class="mb-12">
           <h2 id="conclusion-heading" class="text-primaryBlue mb-4 text-3xl font-semibold">
-            Why Choose Our Cleaning Validation Services?
+            Why Choose Our SDS Services?
           </h2>
           <p class="text-gray text-lg leading-relaxed">
-            Our CRO delivers expert ADE/PDE, OEL, and cleaning validation services to ensure safe, compliant
-            pharmaceutical manufacturing. With a robust toxicological approach and alignment with EMA, PIC/S, and ISPE
-            guidelines, we minimize cross-contamination risks and ensure audit readiness. Choose us for precise,
-            health-based solutions that protect patients and workers while meeting global regulatory standards.
+            Our CRO delivers expert SDS/MSDS preparation services, ensuring compliance with global GHS standards and
+            regional regulations like OSHA, REACH, and IS 17803:2022. With toxicologist-led authoring, multilingual
+            customization, and regulatory submission support, we help you ensure worker safety and streamline
+            compliance. Choose us for accurate, reliable SDS solutions that support your global operations.
           </p>
         </section>
       </article>
@@ -256,8 +266,8 @@ const complianceSections = [
     <!-- Call to Action -->
     <aside aria-labelledby="cta-heading" class="bg-secondary-light border-secondary mb-12 border p-6 text-center">
       <div class="maxwidth">
-        <h3 id="cta-heading" class="mb-4 text-xl font-semibold">Ready to Ensure Safe Manufacturing?</h3>
-        <p class="text-gray mb-4">Partner with us for expert cleaning validation and exposure limit solutions.</p>
+        <h3 id="cta-heading" class="mb-4 text-xl font-semibold">Ready to Ensure Chemical Safety Compliance?</h3>
+        <p class="text-gray mb-4">Partner with us for expert SDS preparation and global regulatory support.</p>
         <BTN
           btnLink="/contact-us"
           btnClass="button focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"

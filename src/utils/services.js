@@ -31,6 +31,7 @@
 // }
 
 import adepde from '@/data/js/services/adepde';
+import msdsSds from '@/data/js/services/msds-sds';
 import calibration from '@/data/js/services/calibration';
 import gmpAudits from '@/data/js/services/gmpAudits';
 import gmpComplianceTrainings from '@/data/js/services/gmpComplianceTrainings';
@@ -43,15 +44,16 @@ import containmentValidation from '@/data/js/services/containmentValidation';
 
 const services = [
   adepde,
-  calibration,
-  gmpAudits,
-  gmpComplianceTrainings,
-  greenfieldBrownfield,
-  pharmacovigilance,
-  regulatoryAffairs,
   riskAssessment,
-  validation,
   containmentValidation,
+  msdsSds,
+  pharmacovigilance,
+  calibration,
+  regulatoryAffairs,
+  gmpComplianceTrainings,
+  gmpAudits,
+  greenfieldBrownfield,
+  validation,
 ];
 
 export default services;

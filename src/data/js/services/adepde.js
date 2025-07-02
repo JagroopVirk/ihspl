@@ -2,55 +2,57 @@ import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel';
 
 export default {
-  service_id: 'cro-cleaning-validation-safety-sds',
-  report_type: 'Toxicological Safety Assessment',
-  title: 'Toxicological Safety & Regulatory Documentation',
-  name: 'ADE/PDE/OEL Calculation, Safety Reports & SDS Preparation',
+  service_id: 'ade-pde-oel-oeb-cleaning-validation',
+  report_type: 'Toxicological Risk Assessment',
+  title: 'ADE/PDE/OEL & OEB Calculation for Cleaning Validation',
+  name: 'ADE/PDE/OEL & OEB Calculation',
   description:
-    'Specialized toxicological and safety documentation support for pharmaceutical manufacturing and cleaning validation.',
+    'Specialized calculations for determining safe exposure levels during pharmaceutical cleaning validation to ensure product safety and cross-contamination control.',
   full_description:
-    'Indivirtus offers end-to-end services for toxicological risk assessment and safety documentation as part of pharmaceutical CRO operations. This includes ADE/PDE/OEL & OEB calculations for cleaning validation, Safety Assessment Reports (SAR) for finished formulations, and expert preparation of MSDS/SDS documents. These services ensure regulatory compliance and mitigate risks associated with cross-contamination, personnel exposure, and environmental hazards.',
-  estimated_duration: '2–4 weeks (depending on compound and scope)',
+    'Our ADE (Acceptable Daily Exposure), PDE (Permitted Daily Exposure), OEL (Occupational Exposure Limit), and OEB (Occupational Exposure Banding) calculations are crucial in cleaning validation protocols to ensure that traces of active pharmaceutical ingredients (APIs) do not pose risks to patient safety or operator health. Our service includes scientific justification and detailed toxicological risk assessments, aligned with EMA, ICH Q3D, ISPE, and other international standards.',
+  estimated_duration: '7-10 working days',
   deliverables: [
-    'Compound-specific ADE/PDE/OEL & OEB Calculation Report',
-    'Safety Assessment Report (SAR) for Finished Formulations',
-    'Regulatory-compliant MSDS/SDS for active substances or final products',
+    'ADE/PDE/OEL Calculation Report',
+    'Scientific Justification and Methodology',
+    'Toxicological Monograph Summary',
+    'Risk Assessment Summary for Cleaning Validation',
+    'Compliance Support Documentation',
   ],
   regulatory_basis: [
-    'EMA Guidelines on PDE/ADE',
-    'ICH Q3D (Elemental Impurities)',
-    'REACH & GHS Compliance',
-    'OSHA Hazard Communication Standards',
-    'EU Regulation No 1272/2008 (CLP)',
+    'EMA Guideline on Setting Health Based Exposure Limits',
+    'ICH Q3D (Guideline for Elemental Impurities)',
+    'ISPE Baseline Guide Vol. 7',
+    'Occupational Safety and Health Standards (OSHA)',
+    'PIC/S Guidelines',
   ],
   requires_data_from_client: true,
-  target_industry: ['Pharmaceuticals', 'Biotechnology', 'Healthcare Manufacturing'],
-  expertise_area: ['Toxicology', 'Regulatory Compliance', 'Cleaning Validation', 'Occupational Safety'],
+  target_industry: ['Pharmaceutical', 'Biotech', 'API Manufacturing', 'CDMO', 'CRO'],
+  expertise_area: ['Toxicology', 'Risk Assessment', 'Cleaning Validation', 'Occupational Safety'],
   is_active: true,
   pageLink: link,
   icon: '🧪',
   image: {
     path: serviceImage,
-    alt: 'Toxicological risk assessment and SDS preparation services',
-    caption: 'Risk assessments and SDS tailored to pharmaceutical compounds',
+    alt: 'ADE PDE OEL OEB Cleaning Validation Calculation',
+    caption: 'Toxicological Assessment for Safe Exposure Limits in Cleaning Validation',
   },
   gtm: {
-    eventCategory: 'CRO Services',
-    eventAction: 'ADE_PDE_OEL_SAR_SDS_Click',
-    eventLabel: 'Toxicological Safety Documentation',
+    eventCategory: 'CleaningValidationServices',
+    eventAction: 'ADE_PDE_OEL_OEB_Calculation',
+    eventLabel: 'Toxicological_Risk_Assessment',
     customDimensions: {},
     dataLayerPush: {
-      reportType: ['Toxicological Risk Assessment', 'Safety Data Sheet'],
-      certification: 'Regulatory Toxicology',
+      reportType: ['ADE', 'PDE', 'OEL', 'OEB'],
+      certification: 'EMA | ICH Q3D | ISPE',
     },
   },
   schema: {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'ADE/PDE/OEL Calculation, Safety Reports & SDS Preparation',
+    name: 'ADE/PDE/OEL & OEB Calculation for Cleaning Validation',
     description:
-      'Professional CRO service for preparing toxicological safety reports, risk assessments, and regulatory-compliant SDS for the pharmaceutical sector.',
-    serviceType: 'Pharmaceutical CRO Documentation',
+      'Comprehensive risk-based calculation service for cleaning validation, determining ADE, PDE, OEL, and OEB levels to ensure pharmaceutical safety and compliance.',
+    serviceType: 'Toxicological Risk Assessment for Cleaning Validation',
     provider: {
       '@type': 'Organization',
       name: 'Indivirtus',
@@ -82,60 +84,30 @@ export default {
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Toxicological Risk & Safety Documentation Services',
+      name: 'ADE/PDE/OEL & OEB Cleaning Validation Services',
       itemListElement: [
         {
           '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Acceptable Daily Exposure (ADE) Calculation',
-            description:
-              'Toxicologically-derived exposure limit used to determine safe levels for carryover in pharmaceutical manufacturing.',
-          },
+          name: 'ADE (Acceptable Daily Exposure) Calculation',
+          description:
+            'Scientific determination of ADE values to define safe carryover limits in multiproduct facilities.',
         },
         {
           '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Permitted Daily Exposure (PDE) Calculation',
-            description:
-              'Quantitative limit used in cleaning validation and derived from NOAEL/LOAEL data using EMA/ICH guidelines.',
-          },
+          name: 'PDE (Permitted Daily Exposure) Calculation',
+          description:
+            'Establish PDE values for APIs to support cleaning validation based on toxicological data and safety factors.',
         },
         {
           '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Occupational Exposure Limit (OEL) Calculation',
-            description: 'Determination of airborne limits to protect worker safety in manufacturing environments.',
-          },
+          name: 'OEL (Occupational Exposure Limit) Calculation',
+          description: 'Calculation of safe exposure thresholds for manufacturing personnel handling potent APIs.',
         },
         {
           '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Occupational Exposure Banding (OEB)',
-            description:
-              'Risk-based exposure classification when definitive OEL data is not available. Helps define control strategies.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Safety Assessment Report (SAR)',
-            description:
-              'Comprehensive toxicological and exposure-based evaluation of finished pharmaceutical formulations.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Material Safety Data Sheet (MSDS) / Safety Data Sheet (SDS) Preparation',
-            description:
-              'Preparation of regulatory-compliant safety documents for APIs, intermediates, and finished products.',
-          },
+          name: 'OEB (Occupational Exposure Banding)',
+          description:
+            'Banding assessment to categorize compound toxicity for hazard communication and containment strategy.',
         },
       ],
     },
@@ -154,149 +126,117 @@ export default {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What is Acceptable Daily Exposure (ADE)?',
+        name: 'What is ADE in cleaning validation?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'ADE is the maximum amount of a pharmaceutical substance that a person can be exposed to on a daily basis without appreciable health risk. It is critical for evaluating product carryover during cleaning validation.',
+          text: "ADE (Acceptable Daily Exposure) is the maximum amount of a substance that is considered safe for patient exposure per day. It's critical for determining cross-contamination limits in multiproduct facilities.",
         },
       },
       {
         '@type': 'Question',
-        name: 'What is the difference between PDE and ADE?',
+        name: 'How is PDE calculated for pharmaceutical APIs?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'While PDE (Permitted Daily Exposure) and ADE are often used interchangeably, PDE is more formally defined in regulatory guidelines and includes additional safety factors. ADE is a broader toxicological term used for health-based exposure limits.',
+          text: 'PDE (Permitted Daily Exposure) is calculated using toxicological data such as NOAEL, LOAEL, and safety factors. It supports setting cleaning limits to ensure residual levels are safe for patients.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Why are OEL values important in manufacturing environments?',
+        name: 'Why is OEL important in pharma manufacturing?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Occupational Exposure Limits (OELs) help ensure worker safety by defining the airborne concentration of a substance that should not be exceeded during a typical work shift. These values guide personal protective equipment (PPE) requirements and containment strategies.',
+          text: 'OEL (Occupational Exposure Limit) is essential for safeguarding workers who handle potent APIs. It defines the maximum allowable airborne concentration to avoid health risks.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is OEB and how is it used in risk classification?',
+        name: 'What is OEB and how is it used?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Occupational Exposure Banding (OEB) classifies compounds into exposure bands based on their potency and toxicity. It’s used when quantitative OELs are unavailable and is essential for risk mitigation in early-phase drug development.',
+          text: "OEB (Occupational Exposure Banding) groups compounds based on their toxicity when exact OEL data isn't available. It helps determine containment and PPE requirements during manufacturing.",
         },
       },
       {
         '@type': 'Question',
-        name: 'What does a Safety Assessment Report (SAR) include?',
+        name: 'Do I need ADE/PDE/OEL calculations for all products?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'A SAR includes hazard identification, exposure assessment, dose-response analysis, and risk characterization of pharmaceutical products. It helps ensure regulatory compliance and patient safety.',
+          text: 'Yes, especially in multiproduct facilities or when handling highly potent APIs. These calculations are required by EMA, ICH, and WHO for cleaning validation and risk mitigation.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Why do I need a Safety Assessment for a finished formulation?',
+        name: 'Can you provide ADE/PDE reports for regulatory audits?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Finished product safety assessments ensure that all excipients and APIs combined do not pose any unforeseen health risks when used as intended. It is essential for both market approval and lifecycle risk management.',
+          text: 'Absolutely. Our reports are audit-ready and compliant with EMA, ICH Q3D, and ISPE standards. We also assist with scientific justifications during regulatory inspections.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What regulations apply to SDS/MSDS preparation?',
+        name: 'What is involved in ADE/PDE calculation for cleaning validation?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'MSDS/SDS documents must comply with standards such as REACH (EU), GHS (Globally Harmonized System), and OSHA’s Hazard Communication Standard (US). They provide critical safety, handling, and emergency response information.',
+          text: 'ADE/PDE calculations involve a full toxicological assessment of APIs and intermediates, using NOAEL, LOAEL, and adjustment factors per EMA guidelines to set health-based exposure limits for cleaning validation.',
         },
       },
       {
         '@type': 'Question',
-        name: 'Do you provide SDS for investigational products as well?',
+        name: 'How do you determine Occupational Exposure Limits (OEL)?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes, we prepare SDS for investigational products, research-grade materials, and commercial APIs, all aligned with relevant regional and global guidelines.',
+          text: 'OELs are calculated based on toxicological data, airborne exposure risk modeling, and route-specific limits (inhalation, dermal, etc.), with comparisons to NIOSH, ACGIH, and REACH databases.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How long does it take to prepare an SDS or MSDS?',
+        name: 'What is the role of OEB in pharmaceutical manufacturing?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The turnaround time for SDS/MSDS preparation is typically 5–10 business days, depending on the complexity of the substance and availability of data.',
+          text: 'OEB assigns compounds to exposure bands (e.g., 1–5 or A–F) based on toxicity and pharmacological activity, guiding containment system design and facility segregation decisions.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is the purpose of ADE/PDE calculations in pharmaceutical manufacturing?',
+        name: 'How do PDE values support cleaning validation protocols?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'ADE (Acceptable Daily Exposure) and PDE (Permitted Daily Exposure) calculations determine safe exposure limits for pharmaceutical compounds to prevent cross-contamination and ensure patient safety during manufacturing. These calculations are critical for cleaning validation and compliance with regulatory guidelines like EMA and ICH Q3D.',
+          text: 'PDE values are used to calculate Maximum Allowable Carryover (MACO), set rinse/swab limits, and develop health-based cleaning validation protocols per EMA, PIC/S, and Annex 15 guidelines.',
         },
       },
       {
         '@type': 'Question',
-        name: 'How are Occupational Exposure Limits (OELs) determined?',
+        name: 'Who benefits from your cleaning validation services?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'OELs are calculated based on toxicological, pharmacological, and clinical data for APIs, intermediates, and excipients. The process involves assessing NOAEL/LOAEL thresholds, route-specific exposures (inhalation, dermal, oral), and ensuring compliance with regulations like REACH and OSHA.',
+          text: 'Pharmaceutical manufacturers, biotech firms, and CROs benefit by ensuring safe, compliant shared equipment and facilities, reducing cross-contamination risks.',
         },
       },
       {
         '@type': 'Question',
-        name: 'What is Occupational Exposure Banding (OEB), and why is it used?',
+        name: 'What is included in a Toxicological Risk Assessment (TRA) report?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'OEB categorizes compounds into exposure bands (OEB 1–5/6) based on their toxicity and potency. It is used to assess risks for compounds with limited toxicological data and to select appropriate containment strategies, ensuring worker safety in pharmaceutical facilities.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'What are the key components of a Safety Data Sheet (SDS)?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'An SDS includes 16 sections covering identification, hazard identification, composition, first-aid measures, fire-fighting measures, accidental release measures, handling and storage, exposure controls, physical and chemical properties, stability and reactivity, toxicological and ecological information, disposal, transport, regulatory information, and other details.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'How does Indivirtus ensure multi-region SDS compliance?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Indivirtus prepares region-specific SDSs compliant with regulations like EU REACH/CLP, US OSHA, Canada WHMIS, and India’s Hazardous Chemical Rules. They also provide multi-lingual SDS preparation and translation to meet global regulatory requirements.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Why is cleaning validation important in pharmaceutical manufacturing?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Cleaning validation ensures that equipment used in pharmaceutical manufacturing is free from residues that could cause cross-contamination, ensuring product safety and compliance with GMP and regulatory standards.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'What data is required for toxicological risk assessments?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Toxicological risk assessments require physical, chemical, toxicological, and ecotoxicological data, often sourced from public databases like PubChem, ECHA, and TOXNET, as well as supplier or manufacturer data for cross-verification.',
+          text: 'TRA reports include compound-specific toxicology monographs, cleaning limit justifications, and documentation for cleaning validation protocols, PQRs, and regulatory submissions.',
         },
       },
     ],
   },
   meta: {
-    title: 'Toxicological Risk Assessment & SDS Preparation | Indivirtus CRO Services',
+    title: 'ADE/PDE/OEL & OEB Calculation for Cleaning Validation | Indivirtus',
     description:
-      'Indivirtus provides CRO-based toxicological evaluations including ADE/PDE/OEL calculations, safety assessments, and regulatory-compliant SDS/MSDS for pharmaceuticals.',
+      'Expert toxicological calculations of ADE, PDE, OEL, and OEB for cleaning validation to ensure pharmaceutical safety and compliance. Trusted CRO support by Indivirtus.',
     keywords: [
       'ADE calculation',
-      'PDE calculation',
-      'OEL limits',
-      'Safety Assessment Report',
-      'MSDS preparation',
-      'SDS preparation',
-      'Cleaning validation',
-      'CRO toxicology services',
-      'pharmaceutical safety documentation',
-      'occupational exposure banding',
+      'PDE assessment',
+      'OEL determination',
+      'OEB banding',
+      'cleaning validation',
+      'pharma risk assessment',
+      'toxicological reports',
+      'EMA PDE guideline',
+      'ICH Q3D ADE',
+      'CRO cleaning services',
     ],
     ogTags: {
       type: 'service',
@@ -306,9 +246,9 @@ export default {
     },
     twitterCard: {
       card: 'summary_large_image',
-      title: 'Toxicological Risk Assessment & SDS Preparation | Indivirtus',
+      title: 'ADE/PDE/OEL & OEB Calculation for Cleaning Validation',
       description:
-        'Expert ADE/PDE/OEL calculations, SAR reports, and SDS preparation for regulatory compliance in pharma manufacturing.',
+        'Get expert support on ADE, PDE, and OEL calculation for pharma cleaning validation. Ensure global compliance with audit-ready reports.',
       image: serviceImage.src,
     },
     canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
@@ -318,5 +258,5 @@ export default {
       nocache: false,
     },
   },
-  assessmentTypes: ['Toxicological Assessment', 'Cleaning Validation Support', 'SDS/MSDS Documentation'],
+  assessmentTypes: ['ADE Calculation', 'PDE Calculation', 'OEL Setting', 'OEB Banding'],
 };

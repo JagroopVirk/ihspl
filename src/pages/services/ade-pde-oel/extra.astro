@@ -1,0 +1,411 @@
+---
+// Imports
+import Layout from '../../layouts/Layout.astro';
+import '../../styles/global.css';
+
+// SEO Data
+import seoData from '@/data/js/services/adepde.js';
+
+// Components
+import BTN from '@/components/other/BTN.astro';
+import Faq from '@/components/other/Faq.astro';
+
+const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { mainEntity } = faqSchema;
+---
+
+<Layout
+  seo={{
+    title: `${meta.title} - Indivirtus`,
+    description: meta.description,
+    keywords: meta.keywords,
+    canonical: meta.canonicalUrl,
+    image: image.path.src,
+    url: pageLink,
+    schema: schema,
+    faqSchema: faqSchema,
+  }}
+>
+  <main>
+    <!-- Hero Section -->
+    <section
+      class="from-primary-light to-primary-dark border-primary border-b-4 bg-gradient-to-r py-16 text-center text-white"
+    >
+      <div class="container mx-auto px-4">
+        <h1 class="mb-4 text-4xl leading-tight font-bold md:text-5xl">
+          Expert ADE/PDE & OEL Services for Pharma Compliance
+        </h1>
+        <p class="mx-auto max-w-3xl text-xl opacity-90 md:text-2xl">
+          Scientifically validated health-based exposure limits for GMP manufacturing
+        </p>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <div class="maxwidth">
+      <div class="container mx-auto px-6 py-12">
+        <!-- Intro Section -->
+        <section class="mb-16 text-center">
+          <div class="mx-auto max-w-4xl">
+            <h2 class="text-primaryBlue mb-6 text-3xl font-semibold">Precision Toxicology for Pharmaceutical Safety</h2>
+            <p class="text-gray mb-8 text-lg leading-relaxed">
+              With over 13,000 completed assessments, our toxicology team provides scientifically robust ADE/PDE and OEL
+              calculations that withstand regulatory scrutiny. We combine deep pharmacological expertise with regulatory
+              knowledge to deliver health-based exposure limits that protect both patients and workers.
+            </p>
+            <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+              <div class="bg-primary-light rounded-lg p-4 text-center">
+                <div class="text-primaryBlue text-3xl font-bold">13,000+</div>
+                <div class="text-gray text-sm">PDE Reports</div>
+              </div>
+              <div class="bg-primary-light rounded-lg p-4 text-center">
+                <div class="text-primaryBlue text-3xl font-bold">98%</div>
+                <div class="text-gray text-sm">Regulatory Acceptance</div>
+              </div>
+              <div class="bg-primary-light rounded-lg p-4 text-center">
+                <div class="text-primaryBlue text-3xl font-bold">24-48</div>
+                <div class="text-gray text-sm">Hour Turnaround</div>
+              </div>
+              <div class="bg-primary-light rounded-lg p-4 text-center">
+                <div class="text-primaryBlue text-3xl font-bold">150+</div>
+                <div class="text-gray text-sm">Toxic Compounds</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Services Grid -->
+        <section class="mb-16">
+          <h2 class="text-primaryBlue mb-8 text-center text-3xl font-semibold">
+            Comprehensive Exposure Limit Services
+          </h2>
+
+          <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <!-- ADE/PDE Service -->
+            <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-md transition-all hover:shadow-lg">
+              <div class="bg-primary-light mb-4 inline-flex rounded-full p-3 text-white">
+                <span class="text-3xl">🧪</span>
+              </div>
+              <h3 class="text-primaryBlue mb-3 text-xl font-bold">ADE/PDE Calculation</h3>
+              <ul class="text-gray mb-6 space-y-2">
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>EMA/ICH Q3D compliant assessments</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>NOAEL/LOAEL-based toxicological evaluation</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Genotoxic and sensitizing compounds</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Pediatric and special population considerations</span>
+                </li>
+              </ul>
+              <BTN btnLink="/services/ade-pde-calculation" btnClass="buttonSimple" btnText="Explore ADE/PDE Services" />
+            </div>
+
+            <!-- OEL Service -->
+            <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-md transition-all hover:shadow-lg">
+              <div class="bg-primary-light mb-4 inline-flex rounded-full p-3 text-white">
+                <span class="text-3xl">🏭</span>
+              </div>
+              <h3 class="text-primaryBlue mb-3 text-xl font-bold">OEL Determination</h3>
+              <ul class="text-gray mb-6 space-y-2">
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Route-specific exposure limits (inhalation, dermal)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>REACH DNEL/DMEL calculations</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>NIOSH/ACGIH benchmarking</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Occupational risk assessment</span>
+                </li>
+              </ul>
+              <BTN btnLink="/services/oel-determination" btnClass="buttonSimple" btnText="Learn About OELs" />
+            </div>
+
+            <!-- OEB Service -->
+            <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-md transition-all hover:shadow-lg">
+              <div class="bg-primary-light mb-4 inline-flex rounded-full p-3 text-white">
+                <span class="text-3xl">🧑‍🏭</span>
+              </div>
+              <h3 class="text-primaryBlue mb-3 text-xl font-bold">OEB Classification</h3>
+              <ul class="text-gray mb-6 space-y-2">
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>5-tier or 6-tier banding systems</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>SafeBridge and ISPE methodologies</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Facility design recommendations</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>PPE and containment strategies</span>
+                </li>
+              </ul>
+              <BTN btnLink="/services/oeb-assignment" btnClass="buttonSimple" btnText="OEB Services" />
+            </div>
+
+            <!-- Cleaning Validation -->
+            <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-md transition-all hover:shadow-lg">
+              <div class="bg-primary-light mb-4 inline-flex rounded-full p-3 text-white">
+                <span class="text-3xl">🧼</span>
+              </div>
+              <h3 class="text-primaryBlue mb-3 text-xl font-bold">Cleaning Validation</h3>
+              <ul class="text-gray mb-6 space-y-2">
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>PDE-based MACO calculations</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Swab and rinse limit determination</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Cleaning validation protocols</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Risk-MaPP implementation</span>
+                </li>
+              </ul>
+              <BTN btnLink="/services/cleaning-validation" btnClass="buttonSimple" btnText="Validation Support" />
+            </div>
+
+            <!-- Risk Assessment -->
+            <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-md transition-all hover:shadow-lg">
+              <div class="bg-primary-light mb-4 inline-flex rounded-full p-3 text-white">
+                <span class="text-3xl">⚠️</span>
+              </div>
+              <h3 class="text-primaryBlue mb-3 text-xl font-bold">Risk Assessment</h3>
+              <ul class="text-gray mb-6 space-y-2">
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Cross-contamination risk analysis</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Shared facility evaluations</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>HBEL-based facility design</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Control strategy development</span>
+                </li>
+              </ul>
+              <BTN btnLink="/services/risk-assessment" btnClass="buttonSimple" btnText="Risk Management" />
+            </div>
+
+            <!-- Regulatory Support -->
+            <div class="rounded-xl border border-gray-200 bg-white p-6 shadow-md transition-all hover:shadow-lg">
+              <div class="bg-primary-light mb-4 inline-flex rounded-full p-3 text-white">
+                <span class="text-3xl">📄</span>
+              </div>
+              <h3 class="text-primaryBlue mb-3 text-xl font-bold">Regulatory Support</h3>
+              <ul class="text-gray mb-6 space-y-2">
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>PQR and submission documentation</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Audit preparation and support</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Expert response to regulatory queries</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="text-primary mr-2">•</span>
+                  <span>Global compliance (EMA, FDA, WHO)</span>
+                </li>
+              </ul>
+              <BTN btnLink="/services/regulatory-support" btnClass="buttonSimple" btnText="Regulatory Services" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Methodology Section -->
+        <section class="bg-primary-light mb-16 rounded-xl p-8 text-white">
+          <h2 class="mb-6 text-3xl font-semibold">Our Scientific Methodology</h2>
+          <div class="grid gap-8 md:grid-cols-2">
+            <div>
+              <h3 class="mb-4 text-xl font-semibold">Data Collection & Evaluation</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <span class="mr-3">🔍</span>
+                  <span>Comprehensive literature review of preclinical and clinical data</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3">📊</span>
+                  <span>Critical analysis of NOAEL/LOAEL from GLP studies</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3">🧬</span>
+                  <span>Assessment of genotoxic and carcinogenic potential</span>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="mb-4 text-xl font-semibold">Calculation & Justification</h3>
+              <ul class="space-y-3">
+                <li class="flex items-start">
+                  <span class="mr-3">🧮</span>
+                  <span>Application of appropriate adjustment factors (UF, MF)</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3">⚖️</span>
+                  <span>Route-to-route extrapolation when needed</span>
+                </li>
+                <li class="flex items-start">
+                  <span class="mr-3">📑</span>
+                  <span>Clear documentation of assumptions and rationale</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Compliance Section -->
+        <section class="mb-16">
+          <h2 class="text-primaryBlue mb-8 text-center text-3xl font-semibold">Global Regulatory Compliance</h2>
+          <div class="rounded-xl border border-gray-200 p-6">
+            <div class="grid gap-8 md:grid-cols-3">
+              <div>
+                <h3 class="text-primaryBlue mb-3 text-xl font-semibold">Major Regulations</h3>
+                <ul class="text-gray space-y-2">
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>EMA Guideline on HBELs (2014)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>FDA Process Validation Guidance</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>PIC/S GMP Annex 15</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>ICH Q3D Elemental Impurities</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-primaryBlue mb-3 text-xl font-semibold">Industry Standards</h3>
+                <ul class="text-gray space-y-2">
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>ISPE Risk-MaPP (2nd Ed.)</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>SafeBridge OEB Criteria</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>NIOSH Hazardous Drugs List</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>ACGIH TLVs and BEIs</span>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="text-primaryBlue mb-3 text-xl font-semibold">Our Certifications</h3>
+                <ul class="text-gray space-y-2">
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>ISO 9001:2015 Quality Management</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>GHS/CLP Certified Authors</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>Board-Certified Toxicologists</span>
+                  </li>
+                  <li class="flex items-start">
+                    <span class="text-primary mr-2">•</span>
+                    <span>REACH Compliance Specialists</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Case Studies -->
+        <section class="mb-16">
+          <h2 class="text-primaryBlue mb-8 text-center text-3xl font-semibold">Success Stories</h2>
+          <div class="grid gap-6 md:grid-cols-2">
+            <div class="rounded-xl border border-gray-200 p-6">
+              <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Global API Manufacturer</h3>
+              <p class="text-gray mb-4">
+                Developed PDE values for 12 cytotoxic compounds enabling shared facility production, resulting in $4M
+                annual savings.
+              </p>
+              <div class="text-primary text-sm font-semibold">Key Achievement:</div>
+              <p class="text-gray text-sm">
+                Successfully defended HBEL approach during FDA inspection with zero observations.
+              </p>
+            </div>
+            <div class="rounded-xl border border-gray-200 p-6">
+              <h3 class="text-primaryBlue mb-2 text-xl font-semibold">Biotech Startup</h3>
+              <p class="text-gray mb-4">
+                Rapid OEB classification for novel oncology drug allowed proper facility design before Phase III trials.
+              </p>
+              <div class="text-primary text-sm font-semibold">Key Achievement:</div>
+              <p class="text-gray text-sm">Completed assessment in 72 hours to meet critical investor milestone.</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-secondary-light mb-16 rounded-xl p-8 text-center">
+          <h2 class="text-primaryBlue mb-4 text-2xl font-semibold">
+            Ready to Strengthen Your Cleaning Validation Program?
+          </h2>
+          <p class="text-gray mx-auto mb-6 max-w-2xl">
+            Our toxicology experts are ready to help you develop scientifically sound, regulatory-compliant exposure
+            limits.
+          </p>
+          <div class="flex flex-wrap justify-center gap-4">
+            <BTN btnLink="/contact-us" btnClass="button" btnText="Request a Consultation" />
+            <BTN btnLink="/services/overview" btnClass="buttonSimple" btnText="Learn More About Our Services" />
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section class="maxwidth bg-gray-50 py-12">
+      <div class="container mx-auto px-6">
+        <Faq faqs={mainEntity} />
+      </div>
+    </section>
+  </main>
+</Layout>
