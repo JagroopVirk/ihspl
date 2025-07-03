@@ -51,6 +51,82 @@ export default {
     alt: 'Professional toxicological assessment for ADE/PDE/OEL determination',
     caption: 'Scientifically validated exposure limits with full regulatory compliance documentation.',
   },
+  pageContent: {
+    hero: {
+      heading: 'Expert ADE/PDE/OEL Determination Services',
+      tagline: 'Ensuring Safety and Compliance in Pharmaceutical Manufacturing',
+      detail:
+        'At Indivirtus Healthcare Services, we deliver scientifically robust toxicological assessments to establish safe exposure limits, ensuring regulatory compliance and patient safety worldwide.',
+    },
+    overview: {
+      heading: 'Overview',
+      overviewCards: [
+        {
+          heading: 'What We Do',
+          detail:
+            'Our ADE/PDE/OEL determination service provides rigorous toxicological risk assessments to establish safe exposure limits for pharmaceutical manufacturing, protecting both patients and workers.',
+        },
+        {
+          heading: 'Why It Matters',
+          detail:
+            'Accurate exposure limits are critical for regulatory compliance, ensuring safe manufacturing processes and preventing contamination risks in pharmaceutical production.',
+        },
+        {
+          heading: 'Our Role',
+          detail:
+            'As a trusted CRO, we deliver scientifically defensible reports that meet global regulatory standards, supporting pharmaceutical companies in achieving audit-ready compliance.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach',
+      detail:
+        'At Indivirtus, we combine scientific rigor with regulatory expertise to deliver unmatched ADE/PDE/OEL assessments. Our certified toxicologists conduct thorough NOAEL/LOAEL evaluations, apply precise adjustment factors, and provide detailed scientific justifications. Each report undergoes a meticulous review process to ensure accuracy, compliance, and readiness for regulatory scrutiny. With over 13,000 reports delivered globally, our proven track record speaks for itself.',
+    },
+    deliverables: {
+      heading: 'Service Deliverables',
+      icon: 'tickIcon',
+      deliverables: [
+        'Comprehensive toxicological evaluation report',
+        'EMA/ICH Q3D-compliant PDE calculation',
+        'ADE determination with scientific justification',
+        'OEL recommendation where applicable',
+        'Detailed NOAEL/LOAEL derivation with uncertainty factor analysis',
+        'Toxicologist-signed final report with compliance statement',
+        'Executive summary for regulatory submissions',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance & Guidelines',
+      detail:
+        'Our ADE/PDE/OEL assessments adhere to the highest global regulatory standards, ensuring your pharmaceutical manufacturing processes are audit-ready and compliant with international markets. By following stringent guidelines, we provide scientifically defensible reports that instill confidence in regulatory submissions.',
+      regulations: [
+        'EMA Guideline on Setting Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)',
+        'ICH Q3D Guideline for Elemental Impurities (R2)',
+        'PIC/S PI 046-1 Guide to GMP for Medicinal Products',
+        'WHO Technical Report Series No. 961 (Annex 3)',
+        'FDA Guidance on Elemental Impurities',
+      ],
+    },
+    applications: {
+      heading: 'Applications & Use Cases',
+      detail: [
+        'Our ADE/PDE/OEL determination services are essential for pharmaceutical companies developing new drugs, managing manufacturing processes, or ensuring worker safety. These assessments are critical during drug development, facility cleaning validations, and occupational safety protocols to prevent cross-contamination and ensure product safety.',
+        "Whether you're launching a new product or scaling production, our reports provide the scientific foundation needed for regulatory approval and operational excellence.",
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus',
+      detail: [
+        'With over 13,000 reports delivered worldwide, Indivirtus Healthcare Services is a trusted leader in ADE/PDE/OEL determination. Our team of certified toxicologists brings global regulatory expertise and a commitment to scientific excellence. We prioritize rapid turnaround times without compromising quality, ensuring your projects stay on track.',
+        'Confidentiality is at the core of our operations, and we adhere to industry best practices to safeguard your data. Choose Indivirtus for reliable, defensible, and compliant toxicological assessments that drive success.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Ensure Compliance and Safety?',
+      tagline: 'Partner with Indivirtus for expert ADE/PDE/OEL assessments that drive success.',
+    },
+  },
   gtm: {
     eventCategory: 'Regulatory Services',
     eventAction: 'Service Inquiry',

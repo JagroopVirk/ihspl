@@ -65,15 +65,13 @@ const regulations = [
 >
   <main id="main-content" aria-labelledby="page-title">
     <!-- Hero Section -->
-    <header class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
+    <header class="bg-primary-light px-4 py-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-7xl text-center">
-        <h1 id="page-title" class="mb-4 text-4xl font-bold text-[var(--color-black)] sm:text-5xl">
+        <h1 id="page-title" class="mb-4 text-4xl font-bold text-black sm:text-5xl">
           Expert ADE/PDE/OEL Determination Services
         </h1>
-        <p class="mb-6 text-xl text-[var(--color-gray)]">
-          Ensuring Safety and Compliance in Pharmaceutical Manufacturing
-        </p>
-        <p class="mx-auto max-w-3xl text-lg text-[var(--color-gray)]">
+        <p class="text-gray mb-6 text-xl">Ensuring Safety and Compliance in Pharmaceutical Manufacturing</p>
+        <p class="text-gray mx-auto max-w-3xl text-lg">
           At Indivirtus Healthcare Services, we deliver scientifically robust toxicological assessments to establish
           safe exposure limits, ensuring regulatory compliance and patient safety worldwide.
         </p>
@@ -81,19 +79,19 @@ const regulations = [
     </header>
 
     <!-- Overview Section -->
-    <section aria-labelledby="overview-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
+    <section aria-labelledby="overview-heading" class="px-4 py-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-7xl">
-        <h2 id="overview-heading" class="mb-6 text-3xl font-semibold text-[var(--color-black)]">Overview</h2>
+        <h2 id="overview-heading" class="mb-6 text-3xl font-semibold text-black">Overview</h2>
         <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
           {
             overviewCards.map((card, index) => (
               <article
                 key={index}
-                class="rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
+                class="bg-primary-light rounded-lg p-6 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
                 tabindex="0"
               >
-                <h3 class="mb-4 text-xl font-semibold text-[var(--color-black)]">{card.title}</h3>
-                <p class="text-[var(--color-gray)]">{card.content}</p>
+                <h3 class="mb-4 text-xl font-semibold text-black">{card.title}</h3>
+                <p class="text-gray">{card.content}</p>
               </article>
             ))
           }
@@ -102,12 +100,10 @@ const regulations = [
     </section>
 
     <!-- Our Expert Approach Section -->
-    <section aria-labelledby="approach-heading" class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8">
+    <section aria-labelledby="approach-heading" class="bg-secondary-light2 px-4 py-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-7xl">
-        <h2 id="approach-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Our Expert Approach
-        </h2>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
+        <h2 id="approach-heading" class="mb-6 text-center text-3xl font-semibold text-black">Our Expert Approach</h2>
+        <p class="text-gray mx-auto max-w-4xl text-lg">
           At Indivirtus, we combine scientific rigor with regulatory expertise to deliver unmatched ADE/PDE/OEL
           assessments. Our certified toxicologists conduct thorough NOAEL/LOAEL evaluations, apply precise adjustment
           factors, and provide detailed scientific justifications. Each report undergoes a meticulous review process to
@@ -118,9 +114,9 @@ const regulations = [
     </section>
 
     <!-- Service Deliverables Section -->
-    <section aria-labelledby="deliverables-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
+    <section aria-labelledby="deliverables-heading" class="px-4 py-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-7xl">
-        <h2 id="deliverables-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
+        <h2 id="deliverables-heading" class="mb-6 text-center text-3xl font-semibold text-black">
           Service Deliverables
         </h2>
         <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -128,11 +124,11 @@ const regulations = [
             deliverables.map((item, index) => (
               <article
                 key={index}
-                class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-4 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
+                class="bg-primary-light flex items-start rounded-lg p-4 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
                 tabindex="0"
               >
                 <svg
-                  class="mr-4 h-6 w-6 text-[var(--color-primary)]"
+                  class="text-primary mr-4 h-6 w-6"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -140,7 +136,7 @@ const regulations = [
                 >
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
                 </svg>
-                <p class="text-[var(--color-gray)]">{item}</p>
+                <p class="text-gray">{item}</p>
               </article>
             ))
           }
@@ -149,38 +145,35 @@ const regulations = [
     </section>
 
     <!-- Regulatory Compliance Section -->
-    <section
-      aria-labelledby="regulations-heading"
-      class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8"
-    >
+    <section aria-labelledby="regulations-heading" class="bg-secondary-light2 px-4 py-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-7xl">
-        <h2 id="regulations-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
+        <h2 id="regulations-heading" class="mb-6 text-center text-3xl font-semibold text-black">
           Regulatory Compliance & Guidelines
         </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
+        <p class="text-gray mx-auto mb-6 max-w-4xl text-lg">
           Our ADE/PDE/OEL assessments adhere to the highest global regulatory standards, ensuring your pharmaceutical
           manufacturing processes are audit-ready and compliant with international markets. By following stringent
           guidelines, we provide scientifically defensible reports that instill confidence in regulatory submissions.
         </p>
-        <ul class="mx-auto max-w-4xl list-inside list-disc text-lg text-[var(--color-gray)]">
+        <ul class="text-gray mx-auto max-w-4xl list-inside list-disc text-lg">
           {regulations.map((regulation, index) => <li key={index}>{regulation}</li>)}
         </ul>
       </div>
     </section>
 
     <!-- Applications & Use Cases Section -->
-    <section aria-labelledby="applications-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
+    <section aria-labelledby="applications-heading" class="px-4 py-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-7xl">
-        <h2 id="applications-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
+        <h2 id="applications-heading" class="mb-6 text-center text-3xl font-semibold text-black">
           Applications & Use Cases
         </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
+        <p class="text-gray mx-auto mb-6 max-w-4xl text-lg">
           Our ADE/PDE/OEL determination services are essential for pharmaceutical companies developing new drugs,
           managing manufacturing processes, or ensuring worker safety. These assessments are critical during drug
           development, facility cleaning validations, and occupational safety protocols to prevent cross-contamination
           and ensure product safety.
         </p>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
+        <p class="text-gray mx-auto max-w-4xl text-lg">
           Whether you're launching a new product or scaling production, our reports provide the scientific foundation
           needed for regulatory approval and operational excellence.
         </p>
@@ -188,18 +181,16 @@ const regulations = [
     </section>
 
     <!-- Why Choose Us Section -->
-    <section aria-labelledby="why-us-heading" class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
+    <section aria-labelledby="why-us-heading" class="bg-primary-light px-4 py-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-7xl">
-        <h2 id="why-us-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Why Choose Indivirtus
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
+        <h2 id="why-us-heading" class="mb-6 text-center text-3xl font-semibold text-black">Why Choose Indivirtus</h2>
+        <p class="text-gray mx-auto mb-6 max-w-4xl text-lg">
           With over 13,000 reports delivered worldwide, Indivirtus Healthcare Services is a trusted leader in
           ADE/PDE/OEL determination. Our team of certified toxicologists brings global regulatory expertise and a
           commitment to scientific excellence. We prioritize rapid turnaround times without compromising quality,
           ensuring your projects stay on track.
         </p>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
+        <p class="text-gray mx-auto max-w-4xl text-lg">
           Confidentiality is at the core of our operations, and we adhere to industry best practices to safeguard your
           data. Choose Indivirtus for reliable, defensible, and compliant toxicological assessments that drive success.
         </p>
@@ -207,16 +198,9 @@ const regulations = [
     </section>
 
     <!-- CTA Section -->
-    <aside
-      aria-labelledby="cta-heading"
-      class="mb-12 border border-[var(--color-secondary)] bg-[var(--color-secondary-light)] p-6 text-center"
-    >
-      <h3 id="cta-heading" class="mb-4 text-xl font-semibold text-[var(--color-black)]">
-        Ready to Ensure Compliance and Safety?
-      </h3>
-      <p class="mb-4 text-[var(--color-gray)]">
-        Partner with Indivirtus for expert ADE/PDE/OEL assessments that drive success.
-      </p>
+    <aside aria-labelledby="cta-heading" class="border-secondary bg-secondary-light mb-12 border p-6 text-center">
+      <h3 id="cta-heading" class="mb-4 text-xl font-semibold text-black">Ready to Ensure Compliance and Safety?</h3>
+      <p class="text-gray mb-4">Partner with Indivirtus for expert ADE/PDE/OEL assessments that drive success.</p>
       <BTN
         btnLink="/contact-us"
         btnClass="button transition-all hover:scale-105 focus:scale-105"
@@ -226,7 +210,7 @@ const regulations = [
     </aside>
 
     <!-- FAQ Section -->
-    <section aria-labelledby="faq-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
+    <section aria-labelledby="faq-heading" class="px-4 py-16 sm:px-6 lg:px-8">
       <div class="mx-auto max-w-7xl">
         <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
         <Faq faqs={mainEntity} />

@@ -17,5 +17,6 @@ const { hero } = Astro.props;
     <p id="hero-tagline">
       {hero.tagline}
     </p>
+    {hero.description ? <p id="hero-description">{hero.tagline}</p> : ''}
   </div>
 </header>
