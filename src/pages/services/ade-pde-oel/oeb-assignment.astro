@@ -1,25 +1,59 @@
 ---
 // Imports
-import Layout from '../../../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 import '@/styles/global.css';
-import Picture from 'astro/components/Picture.astro';
 
 // SEO Data
 import seoData from '@/data/js/services/ade-pde-oel/oeb-assignment';
 
 // Components
 import Faq from '@/components/other/Faq.astro';
-import HeroSection from '@/components/services/HeroSection.astro';
-import MainContentSection from '@/components/services/MainContentSection.astro';
-import ServiceCard from '@/components/services/ServiceCard.astro';
-import ProcessSection from '@/components/services/ProcessSection.astro';
-import ComplianceSection from '@/components/services/ComplianceSection.astro';
-import ConclusionSection from '@/components/services/ConclusionSection.astro';
-import CTASection from '@/components/services/CTASection.astro';
+import BTN from '@/components/other/BTN.astro';
 
-const { meta, image, schema, faqSchema, pageLink, full_description, name, deliverables, regulatory_basis } = seoData;
+const { meta, image, schema, faqSchema, pageLink } = seoData;
 const { mainEntity } = faqSchema;
-// const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
+
+// Data for reusable content
+const overviewCards = [
+  {
+    title: 'What We Do',
+    content:
+      'We deliver scientifically robust OEB classifications, evaluating compounds against ISPE, SafeBridge, and NIOSH criteria to ensure safe handling and containment in pharmaceutical facilities.',
+  },
+  {
+    title: 'Why It Matters',
+    content:
+      'Proper OEB classification protects workers from hazardous compounds, ensures regulatory compliance, and minimizes occupational exposure risks in manufacturing environments.',
+  },
+  {
+    title: 'Our Role',
+    content:
+      'As a trusted CRO, we provide actionable containment strategies and detailed reports to support safe operations and compliance with global safety standards.',
+  },
+];
+
+const deliverables = [
+  'Comprehensive OEB classification report',
+  'Toxicological data evaluation matrix',
+  'Multi-framework comparison (ISPE/SafeBridge/NIOSH)',
+  'Compound-specific hazard profile',
+  'Facility containment level recommendations',
+  'Engineering control evaluation',
+  'PPE requirement guidelines',
+  'Cross-contamination risk assessment',
+  'Regulatory compliance statement',
+  'Training package for occupational safety teams',
+];
+
+const regulations = [
+  'ISPE Risk-Based Manufacture of Pharmaceutical Products (Risk-MaPP 2.0)',
+  'SafeBridge Potent Compound Safety Standard (2021)',
+  'NIOSH Occupational Exposure Banding e-Tool (2019)',
+  'EMA Guideline on Hazardous Medicines (EMA/CHMP/608186/2009)',
+  'OSHA Hazard Communication Standard (29 CFR 1910.1200)',
+  'EU REACH Regulation (EC) No 1907/2006',
+  'ACGIH Threshold Limit Values (TLVs)',
+];
 ---
 
 <Layout
@@ -35,41 +69,170 @@ const { mainEntity } = faqSchema;
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <section class="section">
-      <div class="maxwidth flex flex-col items-center justify-center gap-10">
-        <div>
-          <div class="section flex justify-between not-even:flex-row-reverse">
-            <div class="my-auto align-middle md:w-1/2">
-              <h1>{name}</h1>
-              <p class="py-6 leading-loose">{full_description}</p>
-            </div>
-            <div class="hidden transition-shadow hover:shadow-md md:block md:w-1/2 lg:w-1/3">
-              <Picture src={image.path} alt={image.alt} />
-            </div>
-          </div>
+    <!-- Hero Section -->
+    <header class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl text-center">
+        <h1 id="page-title" class="mb-4 text-4xl font-bold text-[var(--color-black)] sm:text-5xl">
+          Expert OEB Assessment & Containment Strategies
+        </h1>
+        <p class="mb-6 text-xl text-[var(--color-gray)]">Ensuring Worker Safety with Science-Driven Solutions</p>
+        <p class="mx-auto max-w-3xl text-lg text-[var(--color-gray)]">
+          At Indivirtus Healthcare Services, we provide tailored Occupational Exposure Banding (OEB) assessments and
+          containment strategies to safeguard workers and ensure compliance in pharmaceutical manufacturing.
+        </p>
+      </div>
+    </header>
+
+    <!-- Overview Section -->
+    <section aria-labelledby="overview-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <h2 id="overview-heading" class="mb-6 text-3xl font-semibold text-[var(--color-black)]">Overview</h2>
+        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+          {
+            overviewCards.map((card, index) => (
+              <article
+                key={index}
+                class="rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
+                tabindex="0"
+              >
+                <h3 class="mb-4 text-xl font-semibold text-[var(--color-black)]">{card.title}</h3>
+                <p class="text-[var(--color-gray)]">{card.content}</p>
+              </article>
+            ))
+          }
         </div>
-        {/* //TODO: colors and fond size through variables */}
       </div>
     </section>
-    <section class="maxwidth bg-primary-light flex w-full justify-around gap-6 p-5">
-      <div class="m-3">
-        <h3>Deliverables</h3>
-        <ul class="ml-4 list-disc py-2">
-          {deliverables.map((item) => <li>{item}</li>)}
-        </ul>
+
+    <!-- Our Expert Approach Section -->
+    <section aria-labelledby="approach-heading" class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <h2 id="approach-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
+          Our Expert Approach
+        </h2>
+        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
+          At Indivirtus, we integrate ISPE, SafeBridge, and NIOSH frameworks to deliver precise OEB classifications. Our
+          certified toxicologists evaluate pharmacological potency, genotoxic potential, and exposure scenarios,
+          providing detailed toxicological justifications and tailored containment strategies. Our approach ensures your
+          facility's workflows are optimized for safety and compliance.
+        </p>
       </div>
-      <div class="m-3">
-        <h3>Regulatory Basis</h3>
-        <ul class="ml-4 list-disc py-2">
-          {regulatory_basis.map((item) => <li>{item}</li>)}
+    </section>
+
+    <!-- Service Deliverables Section -->
+    <section aria-labelledby="deliverables-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <h2 id="deliverables-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
+          Service Deliverables
+        </h2>
+        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {
+            deliverables.map((item, index) => (
+              <article
+                key={index}
+                class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-4 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
+                tabindex="0"
+              >
+                <svg
+                  class="mr-4 h-6 w-6 text-[var(--color-primary)]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <p class="text-[var(--color-gray)]">{item}</p>
+              </article>
+            ))
+          }
+        </div>
+      </div>
+    </section>
+
+    <!-- Regulatory Compliance Section -->
+    <section
+      aria-labelledby="regulations-heading"
+      class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8"
+    >
+      <div class="mx-auto max-w-7xl">
+        <h2 id="regulations-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
+          Regulatory Compliance & Guidelines
+        </h2>
+        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
+          Our OEB assessment services adhere to global regulatory standards, ensuring worker safety and compliance in
+          pharmaceutical manufacturing. By aligning with leading guidelines, we deliver robust, audit-ready solutions
+          that support safe operations and market compliance.
+        </p>
+        <ul class="mx-auto max-w-4xl list-inside list-disc text-lg text-[var(--color-gray)]">
+          {regulations.map((regulation, index) => <li key={index}>{regulation}</li>)}
         </ul>
       </div>
     </section>
 
-    {/* FAQ Section */}
-    <section class="maxwidth" aria-labelledby="faq-heading">
-      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
-      <Faq faqs={mainEntity} />
+    <!-- Applications & Use Cases Section -->
+    <section aria-labelledby="applications-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <h2 id="applications-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
+          Applications & Use Cases
+        </h2>
+        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
+          Our OEB assessment and containment strategy services are essential for manufacturers handling potent
+          compounds, developing new drugs, or operating shared facilities. These solutions are applied during facility
+          design, process development, and occupational safety planning to protect workers and prevent
+          cross-contamination.
+        </p>
+        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
+          From small-scale labs to large manufacturing plants, our tailored strategies ensure safe handling and
+          compliance with global standards.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section aria-labelledby="why-us-heading" class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <h2 id="why-us-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
+          Why Choose Indivirtus
+        </h2>
+        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
+          Indivirtus Healthcare Services is a trusted leader in OEB assessment and containment strategy development. Our
+          team of certified toxicologists and regulatory experts delivers scientifically robust solutions tailored to
+          your facility. We prioritize rapid turnaround, strict confidentiality, and adherence to industry best
+          practices to ensure worker safety and compliance.
+        </p>
+        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
+          Choose Indivirtus for reliable, actionable strategies that protect your workforce and enhance operational
+          safety.
+        </p>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <aside
+      aria-labelledby="cta-heading"
+      class="mb-12 border border-[var(--color-secondary)] bg-[var(--color-secondary-light)] p-6 text-center"
+    >
+      <h3 id="cta-heading" class="mb-4 text-xl font-semibold text-[var(--color-black)]">
+        Ready to Enhance Occupational Safety?
+      </h3>
+      <p class="mb-4 text-[var(--color-gray)]">
+        Partner with Indivirtus for expert OEB assessments and containment solutions.
+      </p>
+      <BTN
+        btnLink="/contact-us"
+        btnClass="button transition-all hover:scale-105 focus:scale-105"
+        btnText="Contact Us Today"
+        btnAria="Contact Indivirtus for OEB Assessment Services"
+      />
+    </aside>
+
+    <!-- FAQ Section -->
+    <section aria-labelledby="faq-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-7xl">
+        <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
+        <Faq faqs={mainEntity} />
+      </div>
     </section>
   </main>
 </Layout>
