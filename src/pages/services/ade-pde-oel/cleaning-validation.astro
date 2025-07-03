@@ -2,9 +2,10 @@
 // Imports
 import Layout from '../../../layouts/Layout.astro';
 import '@/styles/global.css';
+import Picture from 'astro/components/Picture.astro';
 
 // SEO Data
-import seoData from '@/data/js/services/adepde.js';
+import seoData from '@/data/js/services/ade-pde-oel/cleaning-validation';
 
 // Components
 import Faq from '@/components/other/Faq.astro';
@@ -16,9 +17,9 @@ import ComplianceSection from '@/components/services/ComplianceSection.astro';
 import ConclusionSection from '@/components/services/ConclusionSection.astro';
 import CTASection from '@/components/services/CTASection.astro';
 
-const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
+const { meta, image, schema, faqSchema, pageLink, full_description, name, deliverables, regulatory_basis } = seoData;
 const { mainEntity } = faqSchema;
-const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
+// const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -34,6 +35,41 @@ const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <h1 class="flex h-[500px] items-center justify-center">Coming Soon</h1>
+    <section class="section">
+      <div class="maxwidth flex flex-col items-center justify-center gap-10">
+        <div>
+          <div class="section flex justify-between not-even:flex-row-reverse">
+            <div class="my-auto align-middle md:w-1/2">
+              <h1>{name}</h1>
+              <p class="py-6 leading-loose">{full_description}</p>
+            </div>
+            <div class="hidden transition-shadow hover:shadow-md md:block md:w-1/2 lg:w-1/3">
+              <Picture src={image.path} alt={image.alt} />
+            </div>
+          </div>
+        </div>
+        {/* //TODO: colors and fond size through variables */}
+      </div>
+    </section>
+    <section class="maxwidth bg-primary-light flex w-full justify-around gap-6 p-5">
+      <div class="m-3">
+        <h3>Deliverables</h3>
+        <ul class="ml-4 list-disc py-2">
+          {deliverables.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div class="m-3">
+        <h3>Regulatory Basis</h3>
+        <ul class="ml-4 list-disc py-2">
+          {regulatory_basis.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </section>
+
+    {/* FAQ Section */}
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
+      <Faq faqs={mainEntity} />
+    </section>
   </main>
 </Layout>
