@@ -1,5 +1,6 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/cross-contamination';
+import { FaCheck } from 'react-icons/fa6';
 
 export default {
   service_id: 'cross_contam_001',
@@ -55,6 +56,89 @@ export default {
     path: serviceImage,
     alt: 'Pharmaceutical cross-contamination risk assessment and control services',
     caption: 'Science-based contamination control strategies for multi-product facilities.',
+  },
+  pageContent: {
+    hero: {
+      heading: 'Robust Cross-Contamination Risk Management Solutions',
+      tagline: 'Safeguarding Pharmaceutical Manufacturing with Science-Driven Strategies',
+      detail:
+        'At Indivirtus Healthcare Services, we deliver comprehensive cross-contamination risk management strategies to ensure product safety and regulatory compliance in shared manufacturing facilities.',
+    },
+    overview: {
+      heading: 'Overview',
+      overviewCards: [
+        {
+          heading: 'What We Do',
+          detail:
+            'We provide facility-wide risk assessments and actionable contamination control strategies, using HBEL/PDE thresholds and ISPE Risk-MaPP methodology to ensure safe manufacturing processes.',
+        },
+        {
+          heading: 'Why It Matters',
+          detail:
+            'Effective cross-contamination management prevents product adulteration, ensures patient safety, and meets stringent regulatory requirements for shared facilities.',
+        },
+        {
+          heading: 'Our Role',
+          detail:
+            'As a trusted CRO, we deliver scientifically robust solutions, from risk evaluations to engineering controls, to optimize your facility and ensure compliance.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach',
+      detail: [
+        'Indivirtus leverages the ISPE Risk-MaPP methodology and HBEL/PDE thresholds to deliver tailored cross-contamination risk management solutions. Our certified toxicologists and regulatory experts conduct thorough facility-wide evaluations, identifying risks and recommending practical engineering controls. From cleaning validation support to facility design optimization, our strategies ensure compliance with global standards and operational excellence.',
+      ],
+    },
+    deliverables: {
+      heading: 'Service Deliverables',
+      icon: FaCheck,
+      itemList: [
+        'Comprehensive HBEL-based risk assessment report',
+        'Risk-MaPP implementation roadmap',
+        'Facility contamination risk heat map',
+        'Equipment-specific risk profiles',
+        'Cleaning validation gap analysis',
+        'PDE-justified acceptance limits',
+        'Design improvement recommendations (HVAC, material flow, segregation)',
+        'Regulatory compliance checklist',
+        'Training materials for staff implementation',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance & Guidelines',
+      detail: [
+        'Our cross-contamination risk management services adhere to stringent global standards, ensuring your shared facilities are compliant and audit-ready. By following leading regulatory guidelines, we provide robust, scientifically defensible solutions that support seamless market access.',
+      ],
+      regitemListulations: [
+        'EMA Guideline on Setting Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)',
+        'EMA Guideline on Shared Facilities (EMA/CHMP/CVMP/SWP/246844/2018)',
+        'ICH Q9 Quality Risk Management (R1)',
+        'ISPE Risk-Based Manufacture of Pharmaceutical Products (Risk-MaPP 2.0)',
+        'WHO TRS 996 Annex 3: Guidelines on GMP for HVAC systems',
+        'FDA Guidance for Industry: CGMP for Combination Products',
+        'PIC/S PI 046-1 Annex 15: Validation and Qualification',
+      ],
+    },
+    applications: {
+      heading: 'Applications & Use Cases',
+      detail: [
+        'Our cross-contamination risk management services are critical for manufacturers operating shared facilities, introducing new products, or optimizing existing processes. These solutions are applied during facility design, product changeovers, and routine operations to prevent contamination and ensure product safety.',
+        "Whether you're managing a multi-product facility or ensuring compliance for a new production line, our tailored strategies deliver operational confidence and regulatory success.",
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus',
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering science-driven cross-contamination risk management solutions. Our team of certified toxicologists and regulatory experts ensures compliance with global standards, rapid turnaround times, and strict confidentiality. With a focus on industry best practices, we empower your facility to operate safely and efficiently.',
+        'Choose Indivirtus for robust, actionable strategies that safeguard your products and reputation.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Mitigate Cross-Contamination Risks?',
+      tagline: 'Partner with Indivirtus for expert solutions that ensure safety and compliance.',
+      aria: 'Contact Indivirtus for Cross-Contamination Risk Management Services',
+    },
   },
   gtm: {
     eventCategory: 'Quality Risk Services',

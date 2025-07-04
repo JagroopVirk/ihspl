@@ -8,52 +8,15 @@ import seoData from '@/data/js/services/ade-pde-oel/oel-determination';
 
 // Components
 import Faq from '@/components/other/Faq.astro';
-import BTN from '@/components/other/BTN.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import OverviewCards from '@/components/services/subServices/OverviewCards.astro';
+import SubSection from '@/components/services/subServices/SubSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
+import DeliverableCards from '@/components/services/subServices/DeliverableCards.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
-
-// Data for reusable content
-const overviewCards = [
-  {
-    title: 'What We Do',
-    content:
-      'We provide comprehensive OEL assessments, integrating toxicological evaluations, route-specific risk analysis, and advanced modeling to develop safe exposure limits and containment strategies.',
-  },
-  {
-    title: 'Why It Matters',
-    content:
-      'Accurate OELs protect workers from hazardous compounds, ensure regulatory compliance, and minimize occupational health risks in pharmaceutical manufacturing.',
-  },
-  {
-    title: 'Our Role',
-    content:
-      'As a trusted CRO, we deliver scientifically robust OEL solutions and actionable control strategies to enhance workplace safety and meet global regulatory standards.',
-  },
-];
-
-const deliverables = [
-  'Comprehensive OEL justification report',
-  'Route-specific exposure limit analysis',
-  'Airborne dispersion modeling results',
-  'NIOSH/ACGIH/EU-REACH benchmark comparison',
-  'Containment control strategy',
-  'Engineering control recommendations',
-  'PPE requirement guidelines',
-  'Exposure monitoring plan',
-  'Regulatory compliance assessment',
-  'Training package for EHS teams',
-];
-
-const regulations = [
-  'NIOSH Occupational Exposure Banding e-Tool (2019)',
-  'ACGIH Threshold Limit Values (TLVs) and Biological Exposure Indices (BEIs)',
-  'EU REACH Regulation (EC) No 1907/2006',
-  'OSHA Permissible Exposure Limits (29 CFR 1910)',
-  'ISPE Risk-Based Manufacture of Pharmaceutical Products (Risk-MaPP 2.0)',
-  'EMA Guideline on Hazardous Medicines (EMA/CHMP/608186/2009)',
-  'ISO 28862: Workplace Atmospheres Guidance',
-];
+const { hero, overview, approach, deliverables, compliance, applications, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -69,168 +32,34 @@ const regulations = [
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <!-- Hero Section -->
-    <header class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl text-center">
-        <h1 id="page-title" class="mb-4 text-4xl font-bold text-[var(--color-black)] sm:text-5xl">
-          Comprehensive OEL Assessment & Control Strategies
-        </h1>
-        <p class="mb-6 text-xl text-[var(--color-gray)]">Ensuring Worker Safety with Tailored Exposure Solutions</p>
-        <p class="mx-auto max-w-3xl text-lg text-[var(--color-gray)]">
-          At Indivirtus Healthcare Services, we deliver rigorous Occupational Exposure Limit (OEL) assessments and
-          containment strategies to protect workers and ensure compliance in pharmaceutical manufacturing.
-        </p>
-      </div>
-    </header>
+    {/* Hero Section */}
+    <HeroSection hero={hero} />
 
-    <!-- Overview Section -->
-    <section aria-labelledby="overview-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="overview-heading" class="mb-6 text-3xl font-semibold text-[var(--color-black)]">Overview</h2>
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {
-            overviewCards.map((card, index) => (
-              <article
-                key={index}
-                class="rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
-                tabindex="0"
-              >
-                <h3 class="mb-4 text-xl font-semibold text-[var(--color-black)]">{card.title}</h3>
-                <p class="text-[var(--color-gray)]">{card.content}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    {/* Overview Section */}
+    <OverviewCards overviewCards={overview.overviewCards} />
 
-    <!-- Our Expert Approach Section -->
-    <section aria-labelledby="approach-heading" class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="approach-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Our Expert Approach
-        </h2>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          At Indivirtus, we combine rigorous toxicological evaluations with advanced airborne dispersion modeling and
-          route-specific risk analysis. Our assessments integrate NIOSH, ACGIH, and EU REACH methodologies to deliver
-          precise OELs and tailored containment strategies. Our certified toxicologists ensure every solution is
-          scientifically defensible, operationally practical, and compliant with global standards.
-        </p>
-      </div>
-    </section>
+    {/* Our Expert Approach Section */}
+    <SubSection data={approach} , bgColor="bg-secondary-light2" ariaLabel="approach" />
 
-    <!-- Service Deliverables Section -->
-    <section aria-labelledby="deliverables-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="deliverables-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Service Deliverables
-        </h2>
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {
-            deliverables.map((item, index) => (
-              <article
-                key={index}
-                class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-4 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
-                tabindex="0"
-              >
-                <svg
-                  class="mr-4 h-6 w-6 text-[var(--color-primary)]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <p class="text-[var(--color-gray)]">{item}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    {/* Service Deliverables Section */}
+    <DeliverableCards data={deliverables} />
 
-    <!-- Regulatory Compliance Section -->
-    <section
-      aria-labelledby="regulations-heading"
-      class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8"
-    >
-      <div class="mx-auto max-w-7xl">
-        <h2 id="regulations-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Regulatory Compliance & Guidelines
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Our OEL determination services adhere to stringent global regulatory standards, ensuring worker safety and
-          compliance in pharmaceutical manufacturing. By aligning with leading guidelines, we deliver robust,
-          audit-ready solutions that support safe operations and market compliance.
-        </p>
-        <ul class="mx-auto max-w-4xl list-inside list-disc text-lg text-[var(--color-gray)]">
-          {regulations.map((regulation, index) => <li key={index}>{regulation}</li>)}
-        </ul>
-      </div>
-    </section>
+    {/* Regulatory Compliance Section */}
+    <SubSection data={compliance} , bgColor="bg-secondary-light2" ariaLabel="regulations" />
 
-    <!-- Applications & Use Cases Section -->
-    <section aria-labelledby="applications-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="applications-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Applications & Use Cases
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Our OEL determination and control strategy services are critical for manufacturers handling potent or
-          hazardous compounds, developing new drugs, or operating shared facilities. These solutions are applied during
-          process design, facility upgrades, and occupational safety planning to protect workers and ensure compliance.
-        </p>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          From small-scale operations to large manufacturing plants, our tailored strategies ensure safe handling and
-          regulatory adherence, enhancing workplace safety.
-        </p>
-      </div>
-    </section>
+    {/* Applications & Use Cases Section */}
+    <SubSection data={applications} , bgColor="bg-white" ariaLabel="applications" />
 
-    <!-- Why Choose Us Section -->
-    <section aria-labelledby="why-us-heading" class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="why-us-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Why Choose Indivirtus
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Indivirtus Healthcare Services is a trusted leader in OEL determination and containment strategy development.
-          Our certified toxicologists and regulatory experts deliver scientifically robust solutions, ensuring rapid
-          turnaround, strict confidentiality, and adherence to industry best practices. We empower your facility with
-          safe, compliant, and practical safety measures.
-        </p>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          Choose Indivirtus for reliable, actionable strategies that protect your workforce and streamline compliance.
-        </p>
-      </div>
-    </section>
+    {/* Why Choose Us Section */}
+    <SubSection data={conclusion} , bgColor="bg-primary-light" ariaLabel="why-us" />
 
-    <!-- CTA Section -->
-    <aside
-      aria-labelledby="cta-heading"
-      class="mb-12 border border-[var(--color-secondary)] bg-[var(--color-secondary-light)] p-6 text-center"
-    >
-      <h3 id="cta-heading" class="mb-4 text-xl font-semibold text-[var(--color-black)]">
-        Ready to Protect Your Workforce?
-      </h3>
-      <p class="mb-4 text-[var(--color-gray)]">
-        Partner with Indivirtus for expert OEL assessments and containment solutions.
-      </p>
-      <BTN
-        btnLink="/contact-us"
-        btnClass="button transition-all hover:scale-105 focus:scale-105"
-        btnText="Contact Us Today"
-        btnAria="Contact Indivirtus for OEL Assessment Services"
-      />
-    </aside>
+    {/* CTA Section */}
+    <CTASection cta={cta} />
 
-    <!-- FAQ Section -->
-    <section aria-labelledby="faq-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
-        <Faq faqs={mainEntity} />
-      </div>
+    {/* FAQ Section */}
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
+      <Faq faqs={mainEntity} />
     </section>
   </main>
 </Layout>

@@ -8,52 +8,15 @@ import seoData from '@/data/js/services/ade-pde-oel/cleaning-validation';
 
 // Components
 import Faq from '@/components/other/Faq.astro';
-import BTN from '@/components/other/BTN.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import OverviewCards from '@/components/services/subServices/OverviewCards.astro';
+import SubSection from '@/components/services/subServices/SubSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
+import DeliverableCards from '@/components/services/subServices/DeliverableCards.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
-
-// Data for reusable content
-const overviewCards = [
-  {
-    title: 'What We Do',
-    content:
-      'Our cleaning validation services deliver customized strategies to control contamination in pharmaceutical manufacturing, ensuring compliance with global regulatory standards.',
-  },
-  {
-    title: 'Why It Matters',
-    content:
-      'Effective cleaning validation prevents cross-contamination, ensures product safety, and meets regulatory requirements, protecting your brand and patients.',
-  },
-  {
-    title: 'Our Role',
-    content:
-      'We provide scientifically robust validation protocols, backed by toxicological expertise, to streamline your compliance process and ensure audit readiness.',
-  },
-];
-
-const deliverables = [
-  'Comprehensive cleaning validation master plan',
-  'Product-specific HBEL/PDE reports with toxicological justification',
-  'MACO calculation dossier with multiple scenario analysis',
-  'Equipment grouping strategy and rationale',
-  'Worst-case product selection documentation',
-  'Ready-to-use cleaning validation protocols (swab/rinse methods)',
-  'Analytical method suitability evaluation report',
-  'Acceptance limit calculation spreadsheet',
-  'Regulatory compliance gap analysis',
-  'Training package for validation teams',
-];
-
-const regulations = [
-  'EMA Guideline on Setting Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)',
-  'FDA Guidance for Industry: Cleaning Validation Requirements (2015)',
-  'PIC/S PI 006-3 Recommendations on Cleaning Validation',
-  'WHO TRS 1019 Annex 3: GMP for HVAC systems',
-  'ICH Q3D Guideline for Elemental Impurities (R2)',
-  'EU GMP Annex 15: Qualification and Validation',
-  'ISPE Baseline Guide: Commissioning and Qualification',
-];
+const { hero, overview, approach, deliverables, compliance, applications, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -69,170 +32,34 @@ const regulations = [
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <!-- Hero Section -->
-    <header class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl text-center">
-        <h1 id="page-title" class="mb-4 text-4xl font-bold text-[var(--color-black)] sm:text-5xl">
-          Comprehensive Cleaning Validation & Verification Solutions
-        </h1>
-        <p class="mb-6 text-xl text-[var(--color-gray)]">Ensuring Contamination-Free Pharmaceutical Manufacturing</p>
-        <p class="mx-auto max-w-3xl text-lg text-[var(--color-gray)]">
-          At Indivirtus Healthcare Services, we provide tailored cleaning validation strategies to ensure your
-          manufacturing processes meet stringent regulatory standards, safeguarding product quality and patient safety.
-        </p>
-      </div>
-    </header>
+    {/* Hero Section */}
+    <HeroSection hero={hero} />
 
-    <!-- Overview Section -->
-    <section aria-labelledby="overview-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="overview-heading" class="mb-6 text-3xl font-semibold text-[var(--color-black)]">Overview</h2>
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {
-            overviewCards.map((card, index) => (
-              <article
-                key={index}
-                class="rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
-                tabindex="0"
-              >
-                <h3 class="mb-4 text-xl font-semibold text-[var(--color-black)]">{card.title}</h3>
-                <p class="text-[var(--color-gray)]">{card.content}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    {/* Overview Section */}
+    <OverviewCards overviewCards={overview.overviewCards} />
 
-    <!-- Our Expert Approach Section -->
-    <section aria-labelledby="approach-heading" class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="approach-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Our Expert Approach
-        </h2>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          At Indivirtus, we craft bespoke cleaning validation strategies that integrate HBEL/PDE limits, MACO
-          calculations, and equipment grouping rationale. Our team of certified toxicologists and regulatory experts
-          ensures each protocol is tailored to your facility's needs, incorporating swab/rinse sampling and analytical
-          method suitability testing. With a focus on scientific rigor and regulatory alignment, we deliver solutions
-          that stand up to global scrutiny.
-        </p>
-      </div>
-    </section>
+    {/* Our Expert Approach Section */}
+    <SubSection data={approach} , bgColor="bg-secondary-light2" ariaLabel="approach" />
 
-    <!-- Service Deliverables Section -->
-    <section aria-labelledby="deliverables-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="deliverables-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Service Deliverables
-        </h2>
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {
-            deliverables.map((item, index) => (
-              <article
-                key={index}
-                class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-4 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
-                tabindex="0"
-              >
-                <svg
-                  class="mr-4 h-6 w-6 text-[var(--color-primary)]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <p class="text-[var(--color-gray)]">{item}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    {/* Service Deliverables Section */}
+    <DeliverableCards data={deliverables} />
 
-    <!-- Regulatory Compliance Section -->
-    <section
-      aria-labelledby="regulations-heading"
-      class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8"
-    >
-      <div class="mx-auto max-w-7xl">
-        <h2 id="regulations-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Regulatory Compliance & Guidelines
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Our cleaning validation services adhere to stringent global regulatory standards, ensuring your manufacturing
-          processes are compliant and audit-ready. By aligning with leading guidelines, we provide robust documentation
-          that supports regulatory submissions and ensures market compliance worldwide.
-        </p>
-        <ul class="mx-auto max-w-4xl list-inside list-disc text-lg text-[var(--color-gray)]">
-          {regulations.map((regulation, index) => <li key={index}>{regulation}</li>)}
-        </ul>
-      </div>
-    </section>
+    {/* Regulatory Compliance Section */}
+    <SubSection data={compliance} , bgColor="bg-secondary-light2" ariaLabel="regulations" />
 
-    <!-- Applications & Use Cases Section -->
-    <section aria-labelledby="applications-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="applications-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Applications & Use Cases
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Our cleaning validation services are critical for pharmaceutical manufacturers scaling production, introducing
-          new products, or upgrading facilities. These solutions are applied during equipment qualification, product
-          changeovers, and routine manufacturing to prevent cross-contamination and ensure product integrity.
-        </p>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          From small-scale facilities to global manufacturers, our tailored protocols support compliance and operational
-          efficiency, making your processes robust and reliable.
-        </p>
-      </div>
-    </section>
+    {/* Applications & Use Cases Section */}
+    <SubSection data={applications} , bgColor="bg-white" ariaLabel="applications" />
 
-    <!-- Why Choose Us Section -->
-    <section aria-labelledby="why-us-heading" class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="why-us-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Why Choose Indivirtus
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers worldwide, delivering
-          customized cleaning validation solutions. Our team of certified toxicologists and regulatory experts ensures
-          scientific rigor and compliance with global standards. We prioritize fast turnaround times, confidentiality,
-          and adherence to industry best practices to keep your operations compliant and efficient.
-        </p>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          With a proven track record and a commitment to excellence, Indivirtus empowers your team with the tools and
-          expertise needed for successful validation.
-        </p>
-      </div>
-    </section>
+    {/* Why Choose Us Section */}
+    <SubSection data={conclusion} , bgColor="bg-primary-light" ariaLabel="why-us" />
 
-    <!-- CTA Section -->
-    <aside
-      aria-labelledby="cta-heading"
-      class="bg-secondary-light mb-12 border border-[var(--color-secondary)] p-6 text-center"
-    >
-      <h3 id="cta-heading" class="mb-4 text-xl font-semibold text-black">
-        Ready to Streamline Your Cleaning Validation?
-      </h3>
-      <p class="mb-4 text-[var(--color-gray)]">
-        Partner with Indivirtus for robust, compliant, and efficient validation solutions.
-      </p>
-      <BTN
-        btnLink="/contact-us"
-        btnClass="button transition-all hover:scale-105 focus:scale-105"
-        btnText="Contact Us Today"
-        btnAria="Contact Indivirtus for Cleaning Validation Services"
-      />
-    </aside>
+    {/* CTA Section */}
+    <CTASection cta={cta} />
 
-    <!-- FAQ Section -->
-    <section aria-labelledby="faq-heading" class="px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
-        <Faq faqs={mainEntity} />
-      </div>
+    {/* FAQ Section */}
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
+      <Faq faqs={mainEntity} />
     </section>
   </main>
 </Layout>

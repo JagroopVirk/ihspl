@@ -1,3 +1,23 @@
 ---
-const { data, bgColor } = Astro.props;
+const { data, bgColor, ariaLabel } = Astro.props;
+const { heading, detail, itemList } = data;
 ---
+
+<section aria-labelledby=`${ariaLabel}-heading` class=`${bgColor} section`>
+  <div class="maxwidth">
+    <h2 id="approach-heading" class="mb-6 text-center">
+      {heading}
+    </h2>
+    {detail && detail.map((item) => <p class="mx-auto mb-4 md:max-w-2/3">{item}</p>)}
+    <ul class="text-gray mx-auto list-inside list-disc md:max-w-2/3">
+      {
+        itemList &&
+          itemList.map((item, index) => (
+            <li key={index} class="pb-1.5">
+              {item}{' '}
+            </li>
+          ))
+      }
+    </ul>
+  </div>
+</section>

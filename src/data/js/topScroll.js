@@ -6,7 +6,8 @@ const topScroll = {
   row1: 'Queries related to any service or business: - <a class="scrollLink" href="tel:+919888111109">&#9990 +91 9888111109</a>, <a class="scrollLink" href="tel:+919131925456">&#9990 +91 91319 25456</a>, <a class="scrollLink" href="mailto:director.bd@indivirtus.com">&#9993 director.bd@indivirtus.com</a>, <a class="scrollLink" href="mailto:director@indivirtus.com">&#9993 director@indivirtus.com</a>',
   row2: 'For Other enquiries - <a class="scrollLink" href=tel:+916280918142">&#9990 +91 62809 18142</a>, <a class="scrollLink" href="mailto:admin@indivirtus.com">&#9993 admin@indivirtus.com</a>',
   row3: 'For Job and vacancy related enquiries- <a class="scrollLink" href="mailto:hr@indivirtus.com">&#9993 hr@indivirtus.com</a>',
-  icon: FaPhone,
+  phoneIcon: FaPhone,
+  emailIcon: FaEnvelope,
 };
 
 export default topScroll;

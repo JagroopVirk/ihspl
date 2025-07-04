@@ -14,9 +14,17 @@ const { hero } = Astro.props;
     <h1 id="hero-heading" class="mb-4 text-4xl font-bold md:text-5xl">
       {hero.heading}
     </h1>
-    <p id="hero-tagline">
+    <p id="hero-tagline" class="pb-2">
       {hero.tagline}
     </p>
-    {hero.description ? <p id="hero-description">{hero.tagline}</p> : ''}
+    {
+      hero.detail ? (
+        <p id="hero-detail" class="mx-auto max-w-2/3">
+          {hero.detail}
+        </p>
+      ) : (
+        ''
+      )
+    }
   </div>
 </header>

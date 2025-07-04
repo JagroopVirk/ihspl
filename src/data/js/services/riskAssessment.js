@@ -37,7 +37,7 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Cutting-Edge CRO Solutions for Pharmaceuticals for Genotoxicity & Medical Device Toxicity Assessment',
+      heading: 'Genotoxicity Risk Assessment & Medical Device Toxicity Assessment',
       tagline: 'Unrivaled expertise in genotoxic impurity evaluation and toxicological risk assessment',
     },
     main: {

@@ -1,5 +1,6 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/ade-pde-calculation';
+import { FaCheck } from 'react-icons/fa6';
 
 export default {
   service_id: 'ade_pde_calc_001',
@@ -80,13 +81,14 @@ export default {
     },
     approach: {
       heading: 'Our Expert Approach',
-      detail:
+      detail: [
         'At Indivirtus, we combine scientific rigor with regulatory expertise to deliver unmatched ADE/PDE/OEL assessments. Our certified toxicologists conduct thorough NOAEL/LOAEL evaluations, apply precise adjustment factors, and provide detailed scientific justifications. Each report undergoes a meticulous review process to ensure accuracy, compliance, and readiness for regulatory scrutiny. With over 13,000 reports delivered globally, our proven track record speaks for itself.',
+      ],
     },
     deliverables: {
       heading: 'Service Deliverables',
-      icon: 'tickIcon',
-      deliverables: [
+      icon: FaCheck,
+      itemList: [
         'Comprehensive toxicological evaluation report',
         'EMA/ICH Q3D-compliant PDE calculation',
         'ADE determination with scientific justification',
@@ -98,9 +100,10 @@ export default {
     },
     compliance: {
       heading: 'Regulatory Compliance & Guidelines',
-      detail:
+      detail: [
         'Our ADE/PDE/OEL assessments adhere to the highest global regulatory standards, ensuring your pharmaceutical manufacturing processes are audit-ready and compliant with international markets. By following stringent guidelines, we provide scientifically defensible reports that instill confidence in regulatory submissions.',
-      regulations: [
+      ],
+      itemList: [
         'EMA Guideline on Setting Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)',
         'ICH Q3D Guideline for Elemental Impurities (R2)',
         'PIC/S PI 046-1 Guide to GMP for Medicinal Products',
@@ -125,6 +128,7 @@ export default {
     cta: {
       heading: 'Ready to Ensure Compliance and Safety?',
       tagline: 'Partner with Indivirtus for expert ADE/PDE/OEL assessments that drive success.',
+      aria: 'Contact Indivirtus for ADE/PDE/OEL services',
     },
   },
   gtm: {

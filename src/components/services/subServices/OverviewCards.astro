@@ -1,0 +1,27 @@
+---
+const { overviewCards } = Astro.props;
+---
+
+<section aria-labelledby="overview-heading" class="section bg-white">
+  <div class="maxwidth">
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
+      {
+        overviewCards.map((card, index) => (
+          <article
+            key={index}
+            class="bg-primary-light rounded-lg p-6 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
+            tabindex="0"
+            role="region"
+            aria-labelledby={`card-heading-${index}`}
+            aria-describedby={`card-detail-${index}`}
+          >
+            <h3 id={`card-heading-${index}`} class="mb-4">
+              {card.heading}
+            </h3>
+            <p id={`card-detail-${index}`}>{card.detail}</p>
+          </article>
+        ))
+      }
+    </div>
+  </div>
+</section>

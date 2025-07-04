@@ -40,9 +40,9 @@ export default {
   pageContent: {
     hero: {heading:"",tagline:"",detail:""},
     overview: {heading:"" overviewCards:[{heading:"", detail:""},]},
-    approach:{heading:"", detail:""},
-deliverables: {heading:"", deliverables:[], icon: tickIcon},
-compliance:{heading:"", detail:"", regulations: []},
+    approach:{heading:"", detail:[]},
+deliverables: {heading:"", deliverables:[], icon: FaCheck}, 
+compliance:{heading:"", detail:[], regulations: []},
 applications: {heading:"", detail:[]},
 conclusion: {heading:"", detail:[]},
 cta: {heading:"", tagline:"",},

@@ -8,51 +8,15 @@ import seoData from '@/data/js/services/ade-pde-oel/tra-reports';
 
 // Components
 import Faq from '@/components/other/Faq.astro';
-import BTN from '@/components/other/BTN.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import OverviewCards from '@/components/services/subServices/OverviewCards.astro';
+import SubSection from '@/components/services/subServices/SubSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
+import DeliverableCards from '@/components/services/subServices/DeliverableCards.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
-
-// Data for reusable content
-const overviewCards = [
-  {
-    title: 'What We Do',
-    content:
-      'We provide comprehensive TRA reports with HBEL/PDE calculations, cleaning validation justifications, and cross-contamination control strategies to ensure safe pharmaceutical manufacturing.',
-  },
-  {
-    title: 'Why It Matters',
-    content:
-      'TRA and HBEL documentation ensures product safety, prevents contamination, and meets stringent regulatory requirements, protecting patients and supporting market approval.',
-  },
-  {
-    title: 'Our Role',
-    content:
-      'As a trusted CRO, we deliver scientifically robust, inspection-ready documentation to streamline compliance and support quality assurance in pharmaceutical manufacturing.',
-  },
-];
-
-const deliverables = [
-  'Comprehensive TRA report with executive summary',
-  'Detailed toxicological monograph (NOAEL/LOAEL/LD50 data)',
-  'HBEL/PDE calculation with uncertainty factor justification',
-  'Cleaning validation limit rationale (MACO, swab/rinse limits)',
-  'Cross-contamination risk assessment matrix',
-  'Product Quality Review (PQR) support documentation',
-  'Regulatory compliance gap analysis',
-  'Inspection-ready presentation package',
-  'Training materials for quality teams',
-];
-
-const regulations = [
-  'EMA Guideline on Setting Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)',
-  'FDA Guidance for Industry: Cleaning Validation Requirements (2015)',
-  'ICH Q3D Guideline for Elemental Impurities (R2)',
-  'PIC/S PI 006-3 Recommendations on Cleaning Validation',
-  'WHO TRS 1019 Annex 3: GMP for HVAC systems',
-  'EU GMP Annex 15: Qualification and Validation',
-  'ISO 10993-17: Biological Evaluation of Medical Devices',
-];
+const { hero, overview, approach, deliverables, compliance, applications, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -68,172 +32,34 @@ const regulations = [
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <!-- Hero Section -->
-    <header class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl text-center">
-        <h1 id="page-title" class="mb-4 text-4xl font-bold text-[var(--color-black)] sm:text-5xl">
-          Expert TRA & HBEL Documentation Services
-        </h1>
-        <p class="mb-6 text-xl text-[var(--color-gray)]">
-          Ensuring Safety and Compliance with Rigorous Toxicological Assessments
-        </p>
-        <p class="mx-auto max-w-3xl text-lg text-[var(--color-gray)]">
-          At Indivirtus Healthcare Services, we deliver inspection-ready Toxicological Risk Assessment (TRA) and
-          Health-Based Exposure Limit (HBEL) documentation to support pharmaceutical manufacturers in achieving
-          regulatory compliance and product safety.
-        </p>
-      </div>
-    </header>
+    {/* Hero Section */}
+    <HeroSection hero={hero} />
 
-    <!-- Overview Section -->
-    <section aria-labelledby="overview-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="overview-heading" class="mb-6 text-3xl font-semibold text-[var(--color-black)]">Overview</h2>
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {
-            overviewCards.map((card, index) => (
-              <article
-                key={index}
-                class="rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
-                tabindex="0"
-              >
-                <h3 class="mb-4 text-xl font-semibold text-[var(--color-black)]">{card.title}</h3>
-                <p class="text-[var(--color-gray)]">{card.content}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    {/* Overview Section */}
+    <OverviewCards overviewCards={overview.overviewCards} />
 
-    <!-- Our Expert Approach Section -->
-    <section aria-labelledby="approach-heading" class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="approach-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Our Expert Approach
-        </h2>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          At Indivirtus, our TRA and HBEL documentation services are led by certified toxicologists who conduct rigorous
-          assessments, including detailed monographs and uncertainty factor justifications. Each report undergoes a dual
-          review process to ensure scientific accuracy and regulatory alignment. Our tailored solutions support cleaning
-          validation, cross-contamination control, and product quality reviews, delivering compliance with global
-          standards.
-        </p>
-      </div>
-    </section>
+    {/* Our Expert Approach Section */}
+    <SubSection data={approach} , bgColor="bg-secondary-light2" ariaLabel="approach" />
 
-    <!-- Service Deliverables Section -->
-    <section aria-labelledby="deliverables-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="deliverables-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Service Deliverables
-        </h2>
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {
-            deliverables.map((item, index) => (
-              <article
-                key={index}
-                class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-4 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
-                tabindex="0"
-              >
-                <svg
-                  class="mr-4 h-6 w-6 text-[var(--color-primary)]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <p class="text-[var(--color-gray)]">{item}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    {/* Service Deliverables Section */}
+    <DeliverableCards data={deliverables} />
 
-    <!-- Regulatory Compliance Section -->
-    <section
-      aria-labelledby="regulations-heading"
-      class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8"
-    >
-      <div class="mx-auto max-w-7xl">
-        <h2 id="regulations-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Regulatory Compliance & Guidelines
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Our TRA and HBEL documentation services adhere to stringent global regulatory standards, ensuring your
-          manufacturing processes are audit-ready and compliant. By aligning with leading guidelines, we provide robust,
-          inspection-ready documentation to support seamless market access.
-        </p>
-        <ul class="mx-auto max-w-4xl list-inside list-disc text-lg text-[var(--color-gray)]">
-          {regulations.map((regulation, index) => <li key={index}>{regulation}</li>)}
-        </ul>
-      </div>
-    </section>
+    {/* Regulatory Compliance Section */}
+    <SubSection data={compliance} , bgColor="bg-secondary-light2" ariaLabel="regulations" />
 
-    <!-- Applications & Use Cases Section -->
-    <section aria-labelledby="applications-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="applications-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Applications & Use Cases
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Our TRA and HBEL documentation services are essential for manufacturers developing new products, validating
-          cleaning processes, or ensuring compliance in shared facilities. These solutions support regulatory
-          submissions, product quality reviews, and contamination control strategies.
-        </p>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          Whether you're scaling production or addressing regulatory audits, our comprehensive documentation provides
-          the scientific foundation for success.
-        </p>
-      </div>
-    </section>
+    {/* Applications & Use Cases Section */}
+    <SubSection data={applications} , bgColor="bg-white" ariaLabel="applications" />
 
-    <!-- Why Choose Us Section -->
-    <section aria-labelledby="why-us-heading" class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="why-us-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Why Choose Indivirtus
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering
-          inspection-ready TRA and HBEL documentation. Our certified toxicologists and regulatory experts ensure
-          scientific rigor, rapid turnaround, and strict confidentiality. With adherence to industry best practices, we
-          provide robust solutions that support compliance and quality assurance.
-        </p>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          Choose Indivirtus for reliable, scientifically defensible documentation that drives regulatory success.
-        </p>
-      </div>
-    </section>
+    {/* Why Choose Us Section */}
+    <SubSection data={conclusion} , bgColor="bg-primary-light" ariaLabel="why-us" />
 
-    <!-- CTA Section -->
-    <aside
-      aria-labelledby="cta-heading"
-      class="mb-12 border border-[var(--color-secondary)] bg-[var(--color-secondary-light)] p-6 text-center"
-    >
-      <h3 id="cta-heading" class="mb-4 text-xl font-semibold text-[var(--color-black)]">
-        Ready for Inspection-Ready TRA Documentation?
-      </h3>
-      <p class="mb-4 text-[var(--color-gray)]">
-        Partner with Indivirtus for robust, compliant toxicological assessments.
-      </p>
-      <BTN
-        btnLink="/contact-us"
-        btnClass="button transition-all hover:scale-105 focus:scale-105"
-        btnText="Contact Us Today"
-        btnAria="Contact Indivirtus for TRA and HBEL Documentation Services"
-      />
-    </aside>
+    {/* CTA Section */}
+    <CTASection cta={cta} />
 
-    <!-- FAQ Section -->
-    <section aria-labelledby="faq-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
-        <Faq faqs={mainEntity} />
-      </div>
+    {/* FAQ Section */}
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
+      <Faq faqs={mainEntity} />
     </section>
   </main>
 </Layout>

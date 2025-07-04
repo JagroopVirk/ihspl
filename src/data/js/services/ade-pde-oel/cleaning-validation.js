@@ -1,5 +1,6 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/cleaning-validation';
+import { FaCheck } from 'react-icons/fa6';
 
 export default {
   service_id: 'clean_val_support_001',
@@ -100,13 +101,14 @@ export default {
     },
     approach: {
       heading: 'Our Expert Approach',
-      detail:
+      detail: [
         "At Indivirtus, we craft bespoke cleaning validation strategies that integrate HBEL/PDE limits, MACO calculations, and equipment grouping rationale. Our team of certified toxicologists and regulatory experts ensures each protocol is tailored to your facility's needs, incorporating swab/rinse sampling and analytical method suitability testing. With a focus on scientific rigor and regulatory alignment, we deliver solutions that stand up to global scrutiny.",
+      ],
     },
     deliverables: {
       heading: 'Service Deliverables',
-      icon: 'tickIcon',
-      deliverables: [
+      icon: FaCheck,
+      itemList: [
         'Comprehensive cleaning validation master plan',
         'Product-specific HBEL/PDE reports with toxicological justification',
         'MACO calculation dossier with multiple scenario analysis',
@@ -121,9 +123,10 @@ export default {
     },
     compliance: {
       heading: 'Regulatory Compliance & Guidelines',
-      detail:
+      detail: [
         'Our cleaning validation services adhere to stringent global regulatory standards, ensuring your manufacturing processes are compliant and audit-ready. By aligning with leading guidelines, we provide robust documentation that supports regulatory submissions and ensures market compliance worldwide.',
-      regulations: [
+      ],
+      itemList: [
         'EMA Guideline on Setting Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)',
         'FDA Guidance for Industry: Cleaning Validation Requirements (2015)',
         'PIC/S PI 006-3 Recommendations on Cleaning Validation',
@@ -150,6 +153,7 @@ export default {
     cta: {
       heading: 'Ready to Streamline Your Cleaning Validation?',
       tagline: 'Partner with Indivirtus for robust, compliant, and efficient validation solutions.',
+      aria: 'Contact Indivirtus for Cleaning Validation Services',
     },
   },
   schema: {

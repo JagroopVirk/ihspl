@@ -1,5 +1,6 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/oeb-assignment';
+import { FaCheck } from 'react-icons/fa6';
 
 export default {
   service_id: 'oeb_assign_001',
@@ -57,6 +58,90 @@ export default {
     path: serviceImage,
     alt: 'Occupational Exposure Banding (OEB) classification services for pharmaceutical compounds',
     caption: 'Science-based OEB determination for safe handling of potent active ingredients.',
+  },
+  pageContent: {
+    hero: {
+      heading: 'Expert OEB Assessment & Containment Strategies',
+      tagline: 'Ensuring Worker Safety with Science-Driven Solutions',
+      detail:
+        'At Indivirtus Healthcare Services, we provide tailored Occupational Exposure Banding (OEB) assessments and containment strategies to safeguard workers and ensure compliance in pharmaceutical manufacturing.',
+    },
+    overview: {
+      heading: 'Overview',
+      overviewCards: [
+        {
+          heading: 'What We Do',
+          detail:
+            'We deliver scientifically robust OEB classifications, evaluating compounds against ISPE, SafeBridge, and NIOSH criteria to ensure safe handling and containment in pharmaceutical facilities.',
+        },
+        {
+          heading: 'Why It Matters',
+          detail:
+            'Proper OEB classification protects workers from hazardous compounds, ensures regulatory compliance, and minimizes occupational exposure risks in manufacturing environments.',
+        },
+        {
+          heading: 'Our Role',
+          detail:
+            'As a trusted CRO, we provide actionable containment strategies and detailed reports to support safe operations and compliance with global safety standards.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach',
+      detail: [
+        "At Indivirtus, we integrate ISPE, SafeBridge, and NIOSH frameworks to deliver precise OEB classifications. Our certified toxicologists evaluate pharmacological potency, genotoxic potential, and exposure scenarios, providing detailed toxicological justifications and tailored containment strategies. Our approach ensures your facility's workflows are optimized for safety and compliance.",
+      ],
+    },
+    deliverables: {
+      heading: 'Service Deliverables',
+      icon: FaCheck,
+      itemList: [
+        'Comprehensive OEB classification report',
+        'Toxicological data evaluation matrix',
+        'Multi-framework comparison (ISPE/SafeBridge/NIOSH)',
+        'Compound-specific hazard profile',
+        'Facility containment level recommendations',
+        'Engineering control evaluation',
+        'PPE requirement guidelines',
+        'Cross-contamination risk assessment',
+        'Regulatory compliance statement',
+        'Training package for occupational safety teams',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance & Guidelines',
+      detail: [
+        'Our OEB assessment services adhere to global regulatory standards, ensuring worker safety and compliance in pharmaceutical manufacturing. By aligning with leading guidelines, we deliver robust, audit-ready solutions that support safe operations and market compliance.',
+      ],
+      itemList: [
+        'ISPE Risk-Based Manufacture of Pharmaceutical Products (Risk-MaPP 2.0)',
+        'SafeBridge Potent Compound Safety Standard (2021)',
+        'NIOSH Occupational Exposure Banding e-Tool (2019)',
+        'EMA Guideline on Hazardous Medicines (EMA/CHMP/608186/2009)',
+        'OSHA Hazard Communication Standard (29 CFR 1910.1200)',
+        'EU REACH Regulation (EC) No 1907/2006',
+        'ACGIH Threshold Limit Values (TLVs)',
+      ],
+    },
+    applications: {
+      heading: 'Applications & Use Cases',
+      detail: [
+        'Our OEB assessment and containment strategy services are essential for manufacturers handling potent compounds, developing new drugs, or operating shared facilities. These solutions are applied during facility design, process development, and occupational safety planning to protect workers and prevent cross-contamination.',
+        'From small-scale labs to large manufacturing plants, our tailored strategies ensure safe handling and compliance with global standards.',
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus',
+      detail: [
+        'Indivirtus Healthcare Services is a trusted leader in OEB assessment and containment strategy development. Our team of certified toxicologists and regulatory experts delivers scientifically robust solutions tailored to your facility. We prioritize rapid turnaround, strict confidentiality, and adherence to industry best practices to ensure worker safety and compliance.',
+        'Choose Indivirtus for reliable, actionable strategies that protect your workforce and enhance operational safety.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Enhance Occupational Safety?',
+      tagline: 'Partner with Indivirtus for expert OEB assessments and containment solutions.',
+      aria: 'Contact Indivirtus for OEB Assessment Services',
+    },
   },
   gtm: {
     eventCategory: 'Occupational Safety',

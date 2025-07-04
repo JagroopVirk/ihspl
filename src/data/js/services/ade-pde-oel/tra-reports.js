@@ -1,5 +1,6 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/tra-reports';
+import { FaCheck } from 'react-icons/fa6';
 
 export default {
   service_id: 'tra_prep_001',
@@ -55,6 +56,89 @@ export default {
     path: serviceImage,
     alt: 'Professional Toxicological Risk Assessment (TRA) report preparation services',
     caption: 'Scientifically validated TRA reports with regulatory compliance assurance.',
+  },
+  pageContent: {
+    hero: {
+      heading: 'Expert TRA & HBEL Documentation Services',
+      tagline: 'Ensuring Safety and Compliance with Rigorous Toxicological Assessments',
+      detail:
+        'At Indivirtus Healthcare Services, we deliver inspection-ready Toxicological Risk Assessment (TRA) and Health-Based Exposure Limit (HBEL) documentation to support pharmaceutical manufacturers in achieving regulatory compliance and product safety.',
+    },
+    overview: {
+      heading: 'Overview',
+      overviewCards: [
+        {
+          heading: 'What We Do',
+          detail:
+            'We provide comprehensive TRA reports with HBEL/PDE calculations, cleaning validation justifications, and cross-contamination control strategies to ensure safe pharmaceutical manufacturing.',
+        },
+        {
+          heading: 'Why It Matters',
+          detail:
+            'TRA and HBEL documentation ensures product safety, prevents contamination, and meets stringent regulatory requirements, protecting patients and supporting market approval.',
+        },
+        {
+          heading: 'Our Role',
+          detail:
+            'As a trusted CRO, we deliver scientifically robust, inspection-ready documentation to streamline compliance and support quality assurance in pharmaceutical manufacturing.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach',
+      detail: [
+        'At Indivirtus, our TRA and HBEL documentation services are led by certified toxicologists who conduct rigorous assessments, including detailed monographs and uncertainty factor justifications. Each report undergoes a dual review process to ensure scientific accuracy and regulatory alignment. Our tailored solutions support cleaning validation, cross-contamination control, and product quality reviews, delivering compliance with global standards.',
+      ],
+    },
+    deliverables: {
+      heading: 'Service Deliverables',
+      icon: FaCheck,
+      itemList: [
+        'Comprehensive TRA report with executive summary',
+        'Detailed toxicological monograph (NOAEL/LOAEL/LD50 data)',
+        'HBEL/PDE calculation with uncertainty factor justification',
+        'Cleaning validation limit rationale (MACO, swab/rinse limits)',
+        'Cross-contamination risk assessment matrix',
+        'Product Quality Review (PQR) support documentation',
+        'Regulatory compliance gap analysis',
+        'Inspection-ready presentation package',
+        'Training materials for quality teams',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance & Guidelines',
+      detail: [
+        'Our TRA and HBEL documentation services adhere to stringent global regulatory standards, ensuring your manufacturing processes are audit-ready and compliant. By aligning with leading guidelines, we provide robust, inspection-ready documentation to support seamless market access.',
+      ],
+      itemList: [
+        'EMA Guideline on Setting Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)',
+        'FDA Guidance for Industry: Cleaning Validation Requirements (2015)',
+        'ICH Q3D Guideline for Elemental Impurities (R2)',
+        'PIC/S PI 006-3 Recommendations on Cleaning Validation',
+        'WHO TRS 1019 Annex 3: GMP for HVAC systems',
+        'EU GMP Annex 15: Qualification and Validation',
+        'ISO 10993-17: Biological Evaluation of Medical Devices',
+      ],
+    },
+    applications: {
+      heading: 'Applications & Use Cases',
+      detail: [
+        'Our TRA and HBEL documentation services are essential for manufacturers developing new products, validating cleaning processes, or ensuring compliance in shared facilities. These solutions support regulatory submissions, product quality reviews, and contamination control strategies.',
+        "Whether you're scaling production or addressing regulatory audits, our comprehensive documentation provides the scientific foundation for success.",
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus',
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering inspection-ready TRA and HBEL documentation. Our certified toxicologists and regulatory experts ensure scientific rigor, rapid turnaround, and strict confidentiality. With adherence to industry best practices, we provide robust solutions that support compliance and quality assurance.',
+        'Choose Indivirtus for reliable, scientifically defensible documentation that drives regulatory success.',
+      ],
+    },
+    cta: {
+      heading: 'Ready for Inspection-Ready TRA Documentation?',
+      tagline: 'Partner with Indivirtus for robust, compliant toxicological assessments.',
+      aria: 'Contact Indivirtus for TRA and HBEL Documentation Services',
+    },
   },
   gtm: {
     eventCategory: 'Regulatory Services',

@@ -8,47 +8,15 @@ import seoData from '@/data/js/services/ade-pde-oel/ade-pde-calculation';
 
 // Components
 import Faq from '@/components/other/Faq.astro';
-import BTN from '@/components/other/BTN.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import OverviewCards from '@/components/services/subServices/OverviewCards.astro';
+import SubSection from '@/components/services/subServices/SubSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
+import DeliverableCards from '@/components/services/subServices/DeliverableCards.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
-
-// Data for reusable content
-const overviewCards = [
-  {
-    title: 'What We Do',
-    content:
-      'Our ADE/PDE/OEL determination service provides rigorous toxicological risk assessments to establish safe exposure limits for pharmaceutical manufacturing, protecting both patients and workers.',
-  },
-  {
-    title: 'Why It Matters',
-    content:
-      'Accurate exposure limits are critical for regulatory compliance, ensuring safe manufacturing processes and preventing contamination risks in pharmaceutical production.',
-  },
-  {
-    title: 'Our Role',
-    content:
-      'As a trusted CRO, we deliver scientifically defensible reports that meet global regulatory standards, supporting pharmaceutical companies in achieving audit-ready compliance.',
-  },
-];
-
-const deliverables = [
-  'Comprehensive toxicological evaluation report',
-  'EMA/ICH Q3D-compliant PDE calculation',
-  'ADE determination with scientific justification',
-  'OEL recommendation where applicable',
-  'Detailed NOAEL/LOAEL derivation with uncertainty factor analysis',
-  'Toxicologist-signed final report with compliance statement',
-  'Executive summary for regulatory submissions',
-];
-
-const regulations = [
-  'EMA Guideline on Setting Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)',
-  'ICH Q3D Guideline for Elemental Impurities (R2)',
-  'PIC/S PI 046-1 Guide to GMP for Medicinal Products',
-  'WHO Technical Report Series No. 961 (Annex 3)',
-  'FDA Guidance on Elemental Impurities',
-];
+const { hero, overview, approach, deliverables, compliance, applications, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -64,157 +32,34 @@ const regulations = [
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <!-- Hero Section -->
-    <header class="bg-primary-light px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl text-center">
-        <h1 id="page-title" class="mb-4 text-4xl font-bold text-black sm:text-5xl">
-          Expert ADE/PDE/OEL Determination Services
-        </h1>
-        <p class="text-gray mb-6 text-xl">Ensuring Safety and Compliance in Pharmaceutical Manufacturing</p>
-        <p class="text-gray mx-auto max-w-3xl text-lg">
-          At Indivirtus Healthcare Services, we deliver scientifically robust toxicological assessments to establish
-          safe exposure limits, ensuring regulatory compliance and patient safety worldwide.
-        </p>
-      </div>
-    </header>
+    {/* Hero Section */}
+    <HeroSection hero={hero} />
 
-    <!-- Overview Section -->
-    <section aria-labelledby="overview-heading" class="px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="overview-heading" class="mb-6 text-3xl font-semibold text-black">Overview</h2>
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {
-            overviewCards.map((card, index) => (
-              <article
-                key={index}
-                class="bg-primary-light rounded-lg p-6 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
-                tabindex="0"
-              >
-                <h3 class="mb-4 text-xl font-semibold text-black">{card.title}</h3>
-                <p class="text-gray">{card.content}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    {/* Overview Section */}
+    <OverviewCards overviewCards={overview.overviewCards} />
 
-    <!-- Our Expert Approach Section -->
-    <section aria-labelledby="approach-heading" class="bg-secondary-light2 px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="approach-heading" class="mb-6 text-center text-3xl font-semibold text-black">Our Expert Approach</h2>
-        <p class="text-gray mx-auto max-w-4xl text-lg">
-          At Indivirtus, we combine scientific rigor with regulatory expertise to deliver unmatched ADE/PDE/OEL
-          assessments. Our certified toxicologists conduct thorough NOAEL/LOAEL evaluations, apply precise adjustment
-          factors, and provide detailed scientific justifications. Each report undergoes a meticulous review process to
-          ensure accuracy, compliance, and readiness for regulatory scrutiny. With over 13,000 reports delivered
-          globally, our proven track record speaks for itself.
-        </p>
-      </div>
-    </section>
+    {/* Our Expert Approach Section */}
+    <SubSection data={approach} , bgColor="bg-secondary-light2" ariaLabel="approach" />
 
-    <!-- Service Deliverables Section -->
-    <section aria-labelledby="deliverables-heading" class="px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="deliverables-heading" class="mb-6 text-center text-3xl font-semibold text-black">
-          Service Deliverables
-        </h2>
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {
-            deliverables.map((item, index) => (
-              <article
-                key={index}
-                class="bg-primary-light flex items-start rounded-lg p-4 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
-                tabindex="0"
-              >
-                <svg
-                  class="text-primary mr-4 h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <p class="text-gray">{item}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    {/* Service Deliverables Section */}
+    <DeliverableCards data={deliverables} />
 
-    <!-- Regulatory Compliance Section -->
-    <section aria-labelledby="regulations-heading" class="bg-secondary-light2 px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="regulations-heading" class="mb-6 text-center text-3xl font-semibold text-black">
-          Regulatory Compliance & Guidelines
-        </h2>
-        <p class="text-gray mx-auto mb-6 max-w-4xl text-lg">
-          Our ADE/PDE/OEL assessments adhere to the highest global regulatory standards, ensuring your pharmaceutical
-          manufacturing processes are audit-ready and compliant with international markets. By following stringent
-          guidelines, we provide scientifically defensible reports that instill confidence in regulatory submissions.
-        </p>
-        <ul class="text-gray mx-auto max-w-4xl list-inside list-disc text-lg">
-          {regulations.map((regulation, index) => <li key={index}>{regulation}</li>)}
-        </ul>
-      </div>
-    </section>
+    {/* Regulatory Compliance Section */}
+    <SubSection data={compliance} , bgColor="bg-secondary-light2" ariaLabel="regulations" />
 
-    <!-- Applications & Use Cases Section -->
-    <section aria-labelledby="applications-heading" class="px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="applications-heading" class="mb-6 text-center text-3xl font-semibold text-black">
-          Applications & Use Cases
-        </h2>
-        <p class="text-gray mx-auto mb-6 max-w-4xl text-lg">
-          Our ADE/PDE/OEL determination services are essential for pharmaceutical companies developing new drugs,
-          managing manufacturing processes, or ensuring worker safety. These assessments are critical during drug
-          development, facility cleaning validations, and occupational safety protocols to prevent cross-contamination
-          and ensure product safety.
-        </p>
-        <p class="text-gray mx-auto max-w-4xl text-lg">
-          Whether you're launching a new product or scaling production, our reports provide the scientific foundation
-          needed for regulatory approval and operational excellence.
-        </p>
-      </div>
-    </section>
+    {/* Applications & Use Cases Section */}
+    <SubSection data={applications} , bgColor="bg-white" ariaLabel="applications" />
 
-    <!-- Why Choose Us Section -->
-    <section aria-labelledby="why-us-heading" class="bg-primary-light px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="why-us-heading" class="mb-6 text-center text-3xl font-semibold text-black">Why Choose Indivirtus</h2>
-        <p class="text-gray mx-auto mb-6 max-w-4xl text-lg">
-          With over 13,000 reports delivered worldwide, Indivirtus Healthcare Services is a trusted leader in
-          ADE/PDE/OEL determination. Our team of certified toxicologists brings global regulatory expertise and a
-          commitment to scientific excellence. We prioritize rapid turnaround times without compromising quality,
-          ensuring your projects stay on track.
-        </p>
-        <p class="text-gray mx-auto max-w-4xl text-lg">
-          Confidentiality is at the core of our operations, and we adhere to industry best practices to safeguard your
-          data. Choose Indivirtus for reliable, defensible, and compliant toxicological assessments that drive success.
-        </p>
-      </div>
-    </section>
+    {/* Why Choose Us Section */}
+    <SubSection data={conclusion} , bgColor="bg-primary-light" ariaLabel="why-us" />
 
-    <!-- CTA Section -->
-    <aside aria-labelledby="cta-heading" class="border-secondary bg-secondary-light mb-12 border p-6 text-center">
-      <h3 id="cta-heading" class="mb-4 text-xl font-semibold text-black">Ready to Ensure Compliance and Safety?</h3>
-      <p class="text-gray mb-4">Partner with Indivirtus for expert ADE/PDE/OEL assessments that drive success.</p>
-      <BTN
-        btnLink="/contact-us"
-        btnClass="button transition-all hover:scale-105 focus:scale-105"
-        btnText="Contact Us Today"
-        btnAria="Contact Indivirtus for ADE/PDE/OEL services"
-      />
-    </aside>
+    {/* CTA Section */}
+    <CTASection cta={cta} />
 
-    <!-- FAQ Section -->
-    <section aria-labelledby="faq-heading" class="px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
-        <Faq faqs={mainEntity} />
-      </div>
+    {/* FAQ Section */}
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
+      <Faq faqs={mainEntity} />
     </section>
   </main>
 </Layout>

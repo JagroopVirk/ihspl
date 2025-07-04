@@ -44,7 +44,6 @@
   -webkit-transition: 0.5s all ease 0s;
   -moz-transition: 0.5s all ease 0s;
   -ms-transition: 0.5s all ease 0s; */
-  color: var(--color-primary);
 
   /* &:hover {
     @apply hover:origin-left;

@@ -8,51 +8,15 @@ import seoData from '@/data/js/services/ade-pde-oel/cross-contamination';
 
 // Components
 import Faq from '@/components/other/Faq.astro';
-import BTN from '@/components/other/BTN.astro';
+import HeroSection from '@/components/services/HeroSection.astro';
+import OverviewCards from '@/components/services/subServices/OverviewCards.astro';
+import SubSection from '@/components/services/subServices/SubSection.astro';
+import CTASection from '@/components/services/CTASection.astro';
+import DeliverableCards from '@/components/services/subServices/DeliverableCards.astro';
 
-const { meta, image, schema, faqSchema, pageLink } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
-
-// Data for reusable content
-const overviewCards = [
-  {
-    title: 'What We Do',
-    content:
-      'We provide facility-wide risk assessments and actionable contamination control strategies, using HBEL/PDE thresholds and ISPE Risk-MaPP methodology to ensure safe manufacturing processes.',
-  },
-  {
-    title: 'Why It Matters',
-    content:
-      'Effective cross-contamination management prevents product adulteration, ensures patient safety, and meets stringent regulatory requirements for shared facilities.',
-  },
-  {
-    title: 'Our Role',
-    content:
-      'As a trusted CRO, we deliver scientifically robust solutions, from risk evaluations to engineering controls, to optimize your facility and ensure compliance.',
-  },
-];
-
-const deliverables = [
-  'Comprehensive HBEL-based risk assessment report',
-  'Risk-MaPP implementation roadmap',
-  'Facility contamination risk heat map',
-  'Equipment-specific risk profiles',
-  'Cleaning validation gap analysis',
-  'PDE-justified acceptance limits',
-  'Design improvement recommendations (HVAC, material flow, segregation)',
-  'Regulatory compliance checklist',
-  'Training materials for staff implementation',
-];
-
-const regulations = [
-  'EMA Guideline on Setting Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)',
-  'EMA Guideline on Shared Facilities (EMA/CHMP/CVMP/SWP/246844/2018)',
-  'ICH Q9 Quality Risk Management (R1)',
-  'ISPE Risk-Based Manufacture of Pharmaceutical Products (Risk-MaPP 2.0)',
-  'WHO TRS 996 Annex 3: Guidelines on GMP for HVAC systems',
-  'FDA Guidance for Industry: CGMP for Combination Products',
-  'PIC/S PI 046-1 Annex 15: Validation and Qualification',
-];
+const { hero, overview, approach, deliverables, compliance, applications, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -68,172 +32,34 @@ const regulations = [
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <!-- Hero Section -->
-    <header class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl text-center">
-        <h1 id="page-title" class="mb-4 text-4xl font-bold text-[var(--color-black)] sm:text-5xl">
-          Robust Cross-Contamination Risk Management Solutions
-        </h1>
-        <p class="mb-6 text-xl text-[var(--color-gray)]">
-          Safeguarding Pharmaceutical Manufacturing with Science-Driven Strategies
-        </p>
-        <p class="mx-auto max-w-3xl text-lg text-[var(--color-gray)]">
-          At Indivirtus Healthcare Services, we deliver comprehensive cross-contamination risk management strategies to
-          ensure product safety and regulatory compliance in shared manufacturing facilities.
-        </p>
-      </div>
-    </header>
+    {/* Hero Section */}
+    <HeroSection hero={hero} />
 
-    <!-- Overview Section -->
-    <section aria-labelledby="overview-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="overview-heading" class="mb-6 text-3xl font-semibold text-[var(--color-black)]">Overview</h2>
-        <div class="grid grid-cols-1 gap-8 md:grid-cols-3">
-          {
-            overviewCards.map((card, index) => (
-              <article
-                key={index}
-                class="rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
-                tabindex="0"
-              >
-                <h3 class="mb-4 text-xl font-semibold text-[var(--color-black)]">{card.title}</h3>
-                <p class="text-[var(--color-gray)]">{card.content}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    {/* Overview Section */}
+    <OverviewCards overviewCards={overview.overviewCards} />
 
-    <!-- Our Expert Approach Section -->
-    <section aria-labelledby="approach-heading" class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="approach-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Our Expert Approach
-        </h2>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          Indivirtus leverages the ISPE Risk-MaPP methodology and HBEL/PDE thresholds to deliver tailored
-          cross-contamination risk management solutions. Our certified toxicologists and regulatory experts conduct
-          thorough facility-wide evaluations, identifying risks and recommending practical engineering controls. From
-          cleaning validation support to facility design optimization, our strategies ensure compliance with global
-          standards and operational excellence.
-        </p>
-      </div>
-    </section>
+    {/* Our Expert Approach Section */}
+    <SubSection data={approach} , bgColor="bg-secondary-light2" ariaLabel="approach" />
 
-    <!-- Service Deliverables Section -->
-    <section aria-labelledby="deliverables-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="deliverables-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Service Deliverables
-        </h2>
-        <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {
-            deliverables.map((item, index) => (
-              <article
-                key={index}
-                class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-4 shadow-md transition-all hover:shadow-lg focus:shadow-lg"
-                tabindex="0"
-              >
-                <svg
-                  class="mr-4 h-6 w-6 text-[var(--color-primary)]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  aria-hidden="true"
-                >
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                </svg>
-                <p class="text-[var(--color-gray)]">{item}</p>
-              </article>
-            ))
-          }
-        </div>
-      </div>
-    </section>
+    {/* Service Deliverables Section */}
+    <DeliverableCards data={deliverables} />
 
-    <!-- Regulatory Compliance Section -->
-    <section
-      aria-labelledby="regulations-heading"
-      class="bg-[var(--color-secondary-light2)] px-4 py-16 sm:px-6 lg:px-8"
-    >
-      <div class="mx-auto max-w-7xl">
-        <h2 id="regulations-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Regulatory Compliance & Guidelines
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Our cross-contamination risk management services adhere to stringent global standards, ensuring your shared
-          facilities are compliant and audit-ready. By following leading regulatory guidelines, we provide robust,
-          scientifically defensible solutions that support seamless market access.
-        </p>
-        <ul class="mx-auto max-w-4xl list-inside list-disc text-lg text-[var(--color-gray)]">
-          {regulations.map((regulation, index) => <li key={index}>{regulation}</li>)}
-        </ul>
-      </div>
-    </section>
+    {/* Regulatory Compliance Section */}
+    <SubSection data={compliance} , bgColor="bg-secondary-light2" ariaLabel="regulations" />
 
-    <!-- Applications & Use Cases Section -->
-    <section aria-labelledby="applications-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="applications-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Applications & Use Cases
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Our cross-contamination risk management services are critical for manufacturers operating shared facilities,
-          introducing new products, or optimizing existing processes. These solutions are applied during facility
-          design, product changeovers, and routine operations to prevent contamination and ensure product safety.
-        </p>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          Whether you're managing a multi-product facility or ensuring compliance for a new production line, our
-          tailored strategies deliver operational confidence and regulatory success.
-        </p>
-      </div>
-    </section>
+    {/* Applications & Use Cases Section */}
+    <SubSection data={applications} , bgColor="bg-white" ariaLabel="applications" />
 
-    <!-- Why Choose Us Section -->
-    <section aria-labelledby="why-us-heading" class="bg-[var(--color-primary-light)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="why-us-heading" class="mb-6 text-center text-3xl font-semibold text-[var(--color-black)]">
-          Why Choose Indivirtus
-        </h2>
-        <p class="mx-auto mb-6 max-w-4xl text-lg text-[var(--color-gray)]">
-          Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering
-          science-driven cross-contamination risk management solutions. Our team of certified toxicologists and
-          regulatory experts ensures compliance with global standards, rapid turnaround times, and strict
-          confidentiality. With a focus on industry best practices, we empower your facility to operate safely and
-          efficiently.
-        </p>
-        <p class="mx-auto max-w-4xl text-lg text-[var(--color-gray)]">
-          Choose Indivirtus for robust, actionable strategies that safeguard your products and reputation.
-        </p>
-      </div>
-    </section>
+    {/* Why Choose Us Section */}
+    <SubSection data={conclusion} , bgColor="bg-primary-light" ariaLabel="why-us" />
 
-    <!-- CTA Section -->
-    <aside
-      aria-labelledby="cta-heading"
-      class="mb-12 border border-[var(--color-secondary)] bg-[var(--color-secondary-light)] p-6 text-center"
-    >
-      <h3 id="cta-heading" class="mb-4 text-xl font-semibold text-[var(--color-black)]">
-        Ready to Mitigate Cross-Contamination Risks?
-      </h3>
-      <p class="mb-4 text-[var(--color-gray)]">
-        Partner with Indivirtus for expert solutions that ensure safety and compliance.
-      </p>
-      <BTN
-        btnLink="/contact-us"
-        btnClass="button transition-all hover:scale-105 focus:scale-105"
-        btnText="Contact Us Today"
-        btnAria="Contact Indivirtus for Cross-Contamination Risk Management Services"
-      />
-    </aside>
+    {/* CTA Section */}
+    <CTASection cta={cta} />
 
-    <!-- FAQ Section -->
-    <section aria-labelledby="faq-heading" class="bg-[var(--color-white)] px-4 py-16 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-7xl">
-        <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
-        <Faq faqs={mainEntity} />
-      </div>
+    {/* FAQ Section */}
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
+      <Faq faqs={mainEntity} />
     </section>
   </main>
 </Layout>
