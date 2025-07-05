@@ -1,10 +1,10 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
-import adePdeCalculation from '@/assets/ade_pde_oel_oeb_reports.png';
-import oelDetermination from '@/assets/ade_pde_oel_oeb_reports.png';
-import oebAssignment from '@/assets/ade_pde_oel_oeb_reports.png';
-import cleaningValidation from '@/assets/ade_pde_oel_oeb_reports.png';
-import crossContamination from '@/assets/ade_pde_oel_oeb_reports.png';
-import traReports from '@/assets/ade_pde_oel_oeb_reports.png';
+import adePdeCalculation from '@/assets/pde-oel-oeb/ade-pde-calculation.png';
+import oelDetermination from '@/assets/pde-oel-oeb/oel-determination.jpg';
+import oebAssignment from '@/assets/pde-oel-oeb/oeb-assignment.jpg';
+import cleaningValidation from '@/assets/pde-oel-oeb/cleaning-validation.jpg';
+import crossContamination from '@/assets/pde-oel-oeb/cross-contamination.png';
+import traReports from '@/assets/pde-oel-oeb/tra-reports.png';
 const baseLink = '/services/ade-pde-oel';
 
 export default {

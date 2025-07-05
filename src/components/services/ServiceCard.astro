@@ -22,7 +22,7 @@ import BTN from '@/components/other/BTN.astro';
           <div class="h-[260px] bg-cover bg-center" style={`background-image: url('${service.image.src}')`} />
           <a href={service.link}>
             {/* Info Section */}
-            <div class="absolute bottom-0 left-0 h-full w-full bg-[var(--color-white-rgba)] p-6 transition-transform duration-500 ease-[cubic-bezier(0.17,0.67,0.5,1.03)] md:-bottom-[65%] md:bg-white md:group-hover:-translate-y-[65%]">
+            <div class="border-secondary absolute bottom-0 left-0 h-full w-full border-1 bg-[var(--color-white-rgba)] p-6 transition-transform duration-500 ease-[cubic-bezier(0.17,0.67,0.5,1.03)] md:-bottom-[65%] md:border-0 md:border-t-3 md:bg-white md:group-hover:-translate-y-[65%]">
               <div class="flex h-1/4 items-center justify-start gap-3">
                 <span class="text-2xl" aria-hidden="true">
                   {service.icon}
