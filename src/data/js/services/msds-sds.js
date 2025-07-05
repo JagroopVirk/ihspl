@@ -6,9 +6,10 @@ import toxicologicalAssessment from '@/assets/msds-sds.png';
 import msdsReview from '@/assets/msds-sds.png';
 import expertAuthoring from '@/assets/msds-sds.png';
 import regulatorySubmission from '@/assets/msds-sds.png';
-const baseLink = '/services/ade-pde-oel';
+const baseLink = '/services/msds-sds';
 
 export default {
+  slug: 'msds-sds',
   service_id: 'msds-sds-preparation',
   report_type: 'Safety Documentation',
   title: 'Material Safety Data Sheet (MSDS) / Safety Data Sheet (SDS) Preparation',

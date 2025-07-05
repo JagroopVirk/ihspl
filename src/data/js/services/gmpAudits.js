@@ -11,9 +11,10 @@ import sopAudits from '@/assets/gmpAudit.png';
 import dataIntegrity from '@/assets/gmpAudit.png';
 import riskManagement from '@/assets/gmpAudit.png';
 import paiSupport from '@/assets/gmpAudit.png';
-const baseLink = '/services/ade-pde-oel';
+const baseLink = '/services/gmp-audits';
 
 export default {
+  slug: 'gmp-audits',
   service_id: 'cro-gmp-approvals',
   report_type: 'GMP Audit Preparation & Regulatory Compliance',
   title: 'GMP Approvals & Global Regulatory Readiness',

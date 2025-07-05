@@ -1,8 +1,9 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/oeb-assignment';
-import { FaCheck } from 'react-icons/fa6';
 
 export default {
+  slug: 'oeb-assignment',
+  parentSlug: 'ade-pde-oel',
   service_id: 'oeb_assign_001',
   report_type: 'Comprehensive Occupational Exposure Banding',
   title: 'Occupational Exposure Band (OEB) Classification Services',
@@ -94,7 +95,6 @@ export default {
     },
     deliverables: {
       heading: 'Service Deliverables',
-      icon: FaCheck,
       itemList: [
         'Comprehensive OEB classification report',
         'Toxicological data evaluation matrix',

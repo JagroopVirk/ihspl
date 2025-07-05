@@ -17,6 +17,7 @@ import postHandover from '@/assets/greenfieldBrownfieldProjects.png';
 const baseLink = '/services/greenfield-brownfield';
 
 export default {
+  slug: 'greenfield-brownfield',
   service_id: 'cro-greenfield-brownfield',
   report_type: 'Pharma Turnkey Project Setup',
   title: 'Turnkey Greenfield & Brownfield Projects',

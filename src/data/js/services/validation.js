@@ -11,6 +11,7 @@ import periodicRevalidation from '@/assets/validation.png';
 const baseLink = '/services/validation';
 
 export default {
+  slug: 'validation',
   service_id: 'cro-validation-equipment-csv-hvac',
   report_type: 'Validation & Qualification Services',
   title: 'CSV, Equipment & HVAC Validation Services',

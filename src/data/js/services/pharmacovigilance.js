@@ -14,6 +14,7 @@ import pvTraining from '@/assets/pharmacovigilance.png';
 const baseLink = '/services/pharmacovigilance';
 
 export default {
+  slug: 'pharmacovigilance',
   service_id: 'cro-pharmacovigilance-services',
   report_type: 'Pharmacovigilance & Safety Reporting',
   title: 'Pharmacovigilance & Drug Safety Monitoring Services',

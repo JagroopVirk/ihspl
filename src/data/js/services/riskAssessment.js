@@ -8,6 +8,7 @@ import riskAssessment from '@/assets/riskAssessment.png';
 const baseLink = '/services/risk-assessment';
 
 export default {
+  slug: 'risk-assessment',
   service_id: 'cro-genotoxic-medical-device-toxicology',
   report_type: 'Toxicological Risk Assessment',
   title: 'Genotoxic Impurity & Medical Device Toxicology Assessment',

@@ -9,6 +9,7 @@ import trainingMethodologies from '@/assets/gmpCompliance.png';
 const baseLink = '/services/gmp-compliance-trainings';
 
 export default {
+  slug: 'gmp-compliance-trainings',
   service_id: 'cro-training-pharma-quality-compliance',
   report_type: 'Pharma Quality & Compliance Training',
   title: 'Pharmaceutical Quality & Compliance Trainings',

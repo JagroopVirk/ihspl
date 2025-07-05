@@ -1,8 +1,9 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/oel-determination';
-import { FaCheck } from 'react-icons/fa6';
 
 export default {
+  slug: 'oel-determination',
+  parentSlug: 'ade-pde-oel',
   service_id: 'oel_determination_001',
   report_type: 'Comprehensive Occupational Exposure Assessment',
   title: 'Occupational Exposure Limit (OEL) Determination Services',
@@ -94,7 +95,6 @@ export default {
     },
     deliverables: {
       heading: 'Service Deliverables',
-      icon: FaCheck,
       itemList: [
         'Comprehensive OEL justification report',
         'Route-specific exposure limit analysis',

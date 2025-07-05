@@ -20,38 +20,39 @@ import BTN from '@/components/other/BTN.astro';
         >
           {/* Image */}
           <div class="h-[260px] bg-cover bg-center" style={`background-image: url('${service.image.src}')`} />
+          <a href={service.link}>
+            {/* Info Section */}
+            <div class="absolute bottom-0 left-0 h-full w-full bg-[var(--color-white-rgba)] p-6 transition-transform duration-500 ease-[cubic-bezier(0.17,0.67,0.5,1.03)] md:-bottom-[65%] md:bg-white md:group-hover:-translate-y-[65%]">
+              <div class="flex h-1/4 items-center justify-start gap-3">
+                <span class="text-2xl" aria-hidden="true">
+                  {service.icon}
+                </span>
+                <h3 id={`service-title-${index}`} class="text-base font-bold uppercase">
+                  {service.title}
+                </h3>
+              </div>
 
-          {/* Info Section */}
-          <div class="absolute -bottom-[65%] left-0 h-full w-full bg-white p-6 transition-transform duration-500 ease-[cubic-bezier(0.17,0.67,0.5,1.03)] group-hover:-translate-y-[65%]">
-            <div class="flex h-1/4 items-center justify-start gap-3">
-              <span class="text-2xl" aria-hidden="true">
-                {service.icon}
-              </span>
-              <h3 id={`service-title-${index}`} class="text-base font-bold uppercase">
-                {service.title}
-              </h3>
+              <ul
+                id={`service-desc-${index}`}
+                class="mt-4 list-inside list-disc text-sm transition-opacity delay-200 duration-500 md:opacity-0 md:group-hover:opacity-100"
+              >
+                {service.items.map((item, i) => (
+                  <li class="pb-1.5" key={`service-${index}-item-${i}`}>
+                    {item}
+                  </li>
+                ))}
+              </ul>
+
+              <div class="mt-4 transition-opacity delay-300 duration-500 md:opacity-0 md:group-hover:opacity-100">
+                <BTN
+                  btnLink={service.link}
+                  btnClass="buttonSimple text-secondary"
+                  btnText="Learn More..."
+                  btnArea={`Learn more about ${service.title}`}
+                />
+              </div>
             </div>
-
-            <ul
-              id={`service-desc-${index}`}
-              class="mt-4 list-inside list-disc text-sm opacity-0 transition-opacity delay-200 duration-500 group-hover:opacity-100"
-            >
-              {service.items.map((item, i) => (
-                <li class="pb-1.5" key={`service-${index}-item-${i}`}>
-                  {item}
-                </li>
-              ))}
-            </ul>
-
-            <div class="mt-4 opacity-0 transition-opacity delay-300 duration-500 group-hover:opacity-100">
-              <BTN
-                btnLink={service.link}
-                btnClass="buttonSimple text-secondary"
-                btnText="Learn More..."
-                btnArea={`Learn more about ${service.title}`}
-              />
-            </div>
-          </div>
+          </a>
         </article>
       ))
     }

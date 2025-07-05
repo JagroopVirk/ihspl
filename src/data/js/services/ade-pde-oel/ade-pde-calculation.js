@@ -1,8 +1,9 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/ade-pde-calculation';
-import { FaCheck } from 'react-icons/fa6';
 
 export default {
+  slug: 'ade-pde-calculation',
+  parentSlug: 'ade-pde-oel',
   service_id: 'ade_pde_calc_001',
   report_type: 'Comprehensive Toxicological Assessment',
   title: 'ADE/PDE/OEL Calculation Services',
@@ -87,7 +88,6 @@ export default {
     },
     deliverables: {
       heading: 'Service Deliverables',
-      icon: FaCheck,
       itemList: [
         'Comprehensive toxicological evaluation report',
         'EMA/ICH Q3D-compliant PDE calculation',

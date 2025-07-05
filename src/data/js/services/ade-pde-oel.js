@@ -8,6 +8,7 @@ import traReports from '@/assets/ade_pde_oel_oeb_reports.png';
 const baseLink = '/services/ade-pde-oel';
 
 export default {
+  slug: 'ade-pde-oel',
   service_id: 'ade-pde-oel-oeb-cleaning-validation',
   report_type: 'Toxicological Risk Assessment',
   title: 'ADE/PDE/OEL & OEB Calculation for Cleaning Validation',

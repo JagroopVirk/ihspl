@@ -1,8 +1,9 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/cross-contamination';
-import { FaCheck } from 'react-icons/fa6';
 
 export default {
+  slug: 'cross-contamination',
+  parentSlug: 'ade-pde-oel',
   service_id: 'cross_contam_001',
   report_type: 'Comprehensive Cross-Contamination Risk Assessment',
   title: 'Pharmaceutical Cross-Contamination Control Services',
@@ -92,7 +93,6 @@ export default {
     },
     deliverables: {
       heading: 'Service Deliverables',
-      icon: FaCheck,
       itemList: [
         'Comprehensive HBEL-based risk assessment report',
         'Risk-MaPP implementation roadmap',

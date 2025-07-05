@@ -15,6 +15,7 @@ import hpapiConsulting from '@/assets/containment-validation.png';
 const baseLink = '/services/containment-validation';
 
 export default {
+  slug: 'containment-validation',
   service_id: 'cro-containment-isolator-validation',
   report_type: 'Containment Validation',
   title: 'Isolator Containment Validation Services',

@@ -11,6 +11,7 @@ import productRegistration from '@/assets/regulatoryAffairs.png';
 const baseLink = '/services/regulatory-affairs';
 
 export default {
+  slug: 'regulatory-affairs',
   service_id: 'cro-regulatory-compliance-device-registration',
   report_type: 'Regulatory Dossier & Device Submission',
   title: 'Regulatory Compliance & Medical Device Registration',

@@ -8,6 +8,7 @@ import specializedCalibration from '@/assets/calibration.png';
 const baseLink = '/services/calibration';
 
 export default {
+  slug: 'calibration',
   service_id: 'cro-nabl-calibration-lab',
   report_type: 'NABL Accredited Calibration Services',
   title: 'NABL-Accredited Calibration Lab for Pharma Instruments',

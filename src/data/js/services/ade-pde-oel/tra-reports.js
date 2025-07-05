@@ -1,8 +1,9 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/tra-reports';
-import { FaCheck } from 'react-icons/fa6';
 
 export default {
+  slug: 'tra-reports',
+  parentSlug: 'ade-pde-oel',
   service_id: 'tra_prep_001',
   report_type: 'Comprehensive Toxicological Risk Assessment',
   title: 'Toxicological Risk Assessment (TRA) Report Services',
@@ -92,7 +93,6 @@ export default {
     },
     deliverables: {
       heading: 'Service Deliverables',
-      icon: FaCheck,
       itemList: [
         'Comprehensive TRA report with executive summary',
         'Detailed toxicological monograph (NOAEL/LOAEL/LD50 data)',

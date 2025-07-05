@@ -1,5 +1,7 @@
 ---
 const { data } = Astro.props;
+
+import { FaCheck } from 'react-icons/fa6';
 ---
 
 <section aria-labelledby="deliverables-heading" class="section bg-white">
@@ -18,7 +20,7 @@ const { data } = Astro.props;
             aria-labelledby={`item-heading-${index}`}
           >
             <div class="text-primary text-2xl" aria-hidden="true">
-              <data.icon />
+              <FaCheck />
             </div>
             <p id={`item-heading-${index}`}>{item}</p>
           </article>

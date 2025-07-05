@@ -1,8 +1,9 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
 const link = '/services/ade-pde-oel/cleaning-validation';
-import { FaCheck } from 'react-icons/fa6';
 
 export default {
+  slug: 'cleaning-validation',
+  parentSlug: 'ade-pde-oel',
   service_id: 'clean_val_support_001',
   report_type: 'Comprehensive Cleaning Validation Package',
   title: 'Pharmaceutical Cleaning Validation Support Services',
@@ -107,7 +108,6 @@ export default {
     },
     deliverables: {
       heading: 'Service Deliverables',
-      icon: FaCheck,
       itemList: [
         'Comprehensive cleaning validation master plan',
         'Product-specific HBEL/PDE reports with toxicological justification',
