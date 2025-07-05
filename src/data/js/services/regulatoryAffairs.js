@@ -1,4 +1,13 @@
 import serviceImage from '@/assets/regulatoryAffairs.png';
+import ctdActdDossiers from '@/assets/regulatoryAffairs.png';
+import medicalDeviceFiling from '@/assets/regulatoryAffairs.png';
+import cepDmfFiling from '@/assets/regulatoryAffairs.png';
+import clinicalOverview from '@/assets/regulatoryAffairs.png';
+import regulatoryResponses from '@/assets/regulatoryAffairs.png';
+import mahQpServices from '@/assets/regulatoryAffairs.png';
+import regulatoryStrategy from '@/assets/regulatoryAffairs.png';
+import lifecycleManagement from '@/assets/regulatoryAffairs.png';
+import productRegistration from '@/assets/regulatoryAffairs.png';
 const baseLink = '/services/regulatory-affairs';
 
 export default {
@@ -52,6 +61,7 @@ export default {
       services: [
         {
           icon: '📑',
+          image: ctdActdDossiers,
           title: 'CTD/ACTD Dossier Preparation',
           items: [
             'Modules 1–5 compilation',
@@ -63,9 +73,10 @@ export default {
         },
         {
           icon: '🩺',
+          image: medicalDeviceFiling,
           title: 'Medical Device Filing',
           items: [
-            'Class A–D classification',
+            'Class A-D classification',
             'TDF/CSDT preparation',
             'Clinical evaluation & RMF',
             'Indian Authorized Agent',
@@ -74,12 +85,14 @@ export default {
         },
         {
           icon: '📄',
+          image: cepDmfFiling,
           title: 'CEP/DMF Filing',
-          items: ['DMF Type I–V preparation', 'CEP submission to EDQM', 'ASMF for EU filings', 'Lifecycle management'],
+          items: ['DMF Type I-V preparation', 'CEP submission to EDQM', 'ASMF for EU filings', 'Lifecycle management'],
           link: baseLink + '/cep-dmf-filing',
         },
         {
           icon: '🔬',
+          image: clinicalOverview,
           title: 'Clinical/Non-Clinical Overview',
           items: [
             'Module 2.4 & 2.5 preparation',
@@ -91,6 +104,7 @@ export default {
         },
         {
           icon: '🛠️',
+          image: regulatoryResponses,
           title: 'Regulatory Responses',
           items: [
             'FDA 483 & EU LoQ responses',
@@ -102,6 +116,7 @@ export default {
         },
         {
           icon: '🤝',
+          image: mahQpServices,
           title: 'MAH & QP Services',
           items: [
             'EU/UK MAH representation',
@@ -113,6 +128,7 @@ export default {
         },
         {
           icon: '🧠',
+          image: regulatoryStrategy,
           title: 'Regulatory Strategy',
           items: [
             'Global pathway analysis',
@@ -124,12 +140,14 @@ export default {
         },
         {
           icon: '🔄',
+          image: lifecycleManagement,
           title: 'Lifecycle Management',
           items: ['Variation filings', 'Labeling & renewals', 'Change control', 'License renewals'],
           link: baseLink + '/lifecycle-management',
         },
         {
           icon: '📝',
+          image: productRegistration,
           title: 'Product Registration',
           items: ['CDSCO, FDA, EMA filings', 'ROW market submissions', 'Local agent support', 'License tracking'],
           link: baseLink + '/product-registration',

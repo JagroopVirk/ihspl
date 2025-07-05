@@ -1,4 +1,10 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
+import adePdeCalculation from '@/assets/ade_pde_oel_oeb_reports.png';
+import oelDetermination from '@/assets/ade_pde_oel_oeb_reports.png';
+import oebAssignment from '@/assets/ade_pde_oel_oeb_reports.png';
+import cleaningValidation from '@/assets/ade_pde_oel_oeb_reports.png';
+import crossContamination from '@/assets/ade_pde_oel_oeb_reports.png';
+import traReports from '@/assets/ade_pde_oel_oeb_reports.png';
 const baseLink = '/services/ade-pde-oel';
 
 export default {
@@ -51,6 +57,7 @@ export default {
       services: [
         {
           icon: '🧪',
+          image: adePdeCalculation,
           title: 'ADE/PDE Calculation',
           items: [
             'Full toxicological assessment',
@@ -62,6 +69,7 @@ export default {
         },
         {
           icon: '🏭',
+          image: oelDetermination,
           title: 'OEL Determination',
           items: [
             'Airborne exposure modeling',
@@ -73,6 +81,7 @@ export default {
         },
         {
           icon: '🧑‍🏭',
+          image: oebAssignment,
           title: 'OEB Assignment',
           items: [
             'Multi-tiered banding (1–5)',
@@ -84,12 +93,14 @@ export default {
         },
         {
           icon: '🧼',
+          image: cleaningValidation,
           title: 'Cleaning Validation Support',
           items: ['MACO calculation', 'PDE-based protocols', 'Rinse/swab limit setting', 'HBEL report preparation'],
           link: baseLink + '/cleaning-validation',
         },
         {
           icon: '📄',
+          image: traReports,
           title: 'TRA Report Preparation',
           items: [
             'Toxicology monographs',
@@ -101,6 +112,7 @@ export default {
         },
         {
           icon: '📦',
+          image: crossContamination,
           title: 'Cross-Contamination Assessments',
           items: ['HBEL-based assessments', 'Risk-MaPP implementation', 'Facility/equipment design', 'PDE application'],
           link: baseLink + '/cross-contamination',

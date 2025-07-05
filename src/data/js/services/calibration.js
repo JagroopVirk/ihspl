@@ -1,4 +1,10 @@
 import serviceImage from '@/assets/calibration.png';
+import thermalCalibration from '@/assets/calibration.png';
+import electroTechnicalCalibration from '@/assets/calibration.png';
+import pressureVacuumCalibration from '@/assets/calibration.png';
+import adePdeCalculation from '@/assets/calibration.png';
+import massVolumeCalibration from '@/assets/calibration.png';
+import specializedCalibration from '@/assets/calibration.png';
 const baseLink = '/services/calibration';
 
 export default {
@@ -50,6 +56,7 @@ export default {
       services: [
         {
           icon: '🌡️',
+          image: thermalCalibration,
           title: 'Thermal Calibration',
           items: [
             'Temperature & Relative Humidity (RH)',
@@ -61,6 +68,7 @@ export default {
         },
         {
           icon: '⚡️',
+          image: electroTechnicalCalibration,
           title: 'Electro-Technical Calibration',
           items: [
             'AC/DC Current & Voltage',
@@ -72,24 +80,28 @@ export default {
         },
         {
           icon: '⚙️',
+          image: pressureVacuumCalibration,
           title: 'Mechanical Calibration',
           items: ['Dimension & Length', 'Speed & Acoustics', 'Vernier Calipers & Micrometers', 'Tachometers'],
           link: baseLink + '/mechanical-calibration',
         },
         {
           icon: '🛠️',
+          image: adePdeCalculation,
           title: 'Pressure/Vacuum Calibration',
           items: ['Pressure & Vacuum Gauges', 'Magnehelic Gauges', 'Transmitters & Safety Valves', 'HVAC Systems'],
           link: baseLink + '/pressure-vacuum-calibration',
         },
         {
           icon: '⚖️',
+          image: massVolumeCalibration,
           title: 'Mass & Volume Calibration',
           items: ['Weights & Weighing Balances', 'Pipettes & Burettes', 'Volumetric Flasks', 'Analytical Balances'],
           link: baseLink + '/mass-volume-calibration',
         },
         {
           icon: '🔬',
+          image: specializedCalibration,
           title: 'Specialized Calibration',
           items: ['pH Meters & ORP', 'Conductivity & TDS Meters', 'Flow Meters', 'Specialized Lab Equipment'],
           link: baseLink + '/specialized-calibration',

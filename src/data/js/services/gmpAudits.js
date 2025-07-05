@@ -1,4 +1,16 @@
 import serviceImage from '@/assets/gmpAudit.png';
+import vendorAssessments from '@/assets/gmpAudit.png';
+import gmpAudits from '@/assets/gmpAudit.png';
+import auditRepresentation from '@/assets/gmpAudit.png';
+import dossierSupport from '@/assets/gmpAudit.png';
+import qualitySystems from '@/assets/gmpAudit.png';
+import facilityQualification from '@/assets/gmpAudit.png';
+import regulatoryStrategy from '@/assets/gmpAudit.png';
+import globalSubmissions from '@/assets/gmpAudit.png';
+import sopAudits from '@/assets/gmpAudit.png';
+import dataIntegrity from '@/assets/gmpAudit.png';
+import riskManagement from '@/assets/gmpAudit.png';
+import paiSupport from '@/assets/gmpAudit.png';
 const baseLink = '/services/ade-pde-oel';
 
 export default {
@@ -55,6 +67,7 @@ export default {
       services: [
         {
           icon: '📋',
+          image: vendorAssessments,
           title: 'Vendor Assessment Audits',
           items: [
             'Plant layout & process flow evaluation',
@@ -66,6 +79,7 @@ export default {
         },
         {
           icon: '🔍',
+          image: gmpAudits,
           title: 'GMP Compliance Audits',
           items: [
             'Internal GMP audits',
@@ -77,6 +91,7 @@ export default {
         },
         {
           icon: '🤝',
+          image: auditRepresentation,
           title: 'Audit Representation',
           items: [
             'On-site support during inspections',
@@ -88,6 +103,7 @@ export default {
         },
         {
           icon: '📄',
+          image: dossierSupport,
           title: 'Regulatory Dossier Support',
           items: [
             'CTD/eCTD module preparation',
@@ -99,6 +115,7 @@ export default {
         },
         {
           icon: '⚙️',
+          image: qualitySystems,
           title: 'Quality System Development',
           items: [
             'QMS setup & optimization',
@@ -110,6 +127,7 @@ export default {
         },
         {
           icon: '🏭',
+          image: facilityQualification,
           title: 'Facility Qualification',
           items: [
             'DQ, IQ, OQ, PQ services',
@@ -121,6 +139,7 @@ export default {
         },
         {
           icon: '🧠',
+          image: regulatoryStrategy,
           title: 'Regulatory Strategy',
           items: [
             'Regulatory pathway consultation',
@@ -132,6 +151,7 @@ export default {
         },
         {
           icon: '🌍',
+          image: globalSubmissions,
           title: 'Global Submission Support',
           items: [
             'FDA, EMA, PMDA filings',
@@ -143,6 +163,7 @@ export default {
         },
         {
           icon: '📚',
+          image: sopAudits,
           title: 'SOP & Documentation Audits',
           items: [
             'SOP preparation & review',
@@ -154,6 +175,7 @@ export default {
         },
         {
           icon: '💾',
+          image: dataIntegrity,
           title: 'Data Integrity & CSV',
           items: [
             'Computer system validation',
@@ -165,12 +187,14 @@ export default {
         },
         {
           icon: '⚠️',
+          image: riskManagement,
           title: 'Risk Management',
           items: ['ICH Q9 compliance', 'FMEA & HACCP audits', 'Risk control documentation', 'Process risk reviews'],
           link: baseLink + '/risk-management',
         },
         {
           icon: '✅',
+          image: paiSupport,
           title: 'PAI Support',
           items: [
             'Site readiness assessments',

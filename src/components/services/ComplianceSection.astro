@@ -7,7 +7,7 @@ const { compliance } = Astro.props;
 <section
   aria-labelledby="compliance-heading"
   aria-describedby="compliance-description"
-  class="bg-secondary-light2 mb-12 rounded-lg p-6"
+  class="bg-secondary-light2 my-15 rounded-lg p-6"
 >
   <h2 id="compliance-heading" class="mb-6">
     {compliance.heading}
@@ -16,10 +16,12 @@ const { compliance } = Astro.props;
     {
       compliance.complianceSections.map((section, index) => (
         <div key={`compliance-${index}`}>
-          <h3 class="mb-2">{section.title}</h3>
+          <h3 class="mb-4">{section.title}</h3>
           <ul class="text-gray ml-4 list-outside list-disc">
             {section.items.map((item, i) => (
-              <li key={`${section.title}-${index}-item-${i}`}>{item}</li>
+              <li class="mb-1.5" key={`${section.title}-${index}-item-${i}`}>
+                {item}
+              </li>
             ))}
           </ul>
         </div>

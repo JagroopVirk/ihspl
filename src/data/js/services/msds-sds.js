@@ -1,4 +1,11 @@
 import serviceImage from '@/assets/msds-sds.png';
+import sdsPreparation from '@/assets/msds-sds.png';
+import regionSpecificSds from '@/assets/msds-sds.png';
+import hazardClassification from '@/assets/msds-sds.png';
+import toxicologicalAssessment from '@/assets/msds-sds.png';
+import msdsReview from '@/assets/msds-sds.png';
+import expertAuthoring from '@/assets/msds-sds.png';
+import regulatorySubmission from '@/assets/msds-sds.png';
 const baseLink = '/services/ade-pde-oel';
 
 export default {
@@ -44,13 +51,14 @@ export default {
     main: {
       heading: 'Our SDS/MSDS Services',
       detail:
-        "Our Contract Research Organization (CRO) provides expert Material Safety Data Sheet (MSDS) and Safety Data Sheet (SDS) preparation services to ensure compliance with global chemical safety regulations. We deliver GHS-compliant, 16-section SDS tailored to regional standards like OSHA, EU REACH, and India's IS 17803:2022, supporting pharmaceutical manufacturers, biotech firms, chemical producers, and CROs. These services are critical for ensuring worker safety, environmental protection, and regulatory compliance across clinical, manufacturing, and distribution processes.",
+        "Indivirtus provides expert Material Safety Data Sheet (MSDS) and Safety Data Sheet (SDS) preparation services to ensure compliance with global chemical safety regulations. We deliver GHS-compliant, 16-section SDS tailored to regional standards like OSHA, EU REACH, and India's IS 17803:2022, supporting pharmaceutical manufacturers, biotech firms, chemical producers, and CROs. These services are critical for ensuring worker safety, environmental protection, and regulatory compliance across clinical, manufacturing, and distribution processes.",
     },
     cards: {
       heading: 'Our SDS Expertise',
       services: [
         {
           icon: '📄',
+          image: sdsPreparation,
           title: 'SDS/MSDS Preparation',
           items: [
             'GHS-compliant 16-section format',
@@ -62,6 +70,7 @@ export default {
         },
         {
           icon: '🌍',
+          image: regionSpecificSds,
           title: 'Region-Specific Customization',
           items: [
             'EU REACH Annex II',
@@ -73,6 +82,7 @@ export default {
         },
         {
           icon: '⚠️',
+          image: hazardClassification,
           title: 'Hazard Classification & Labeling',
           items: [
             'GHS hazard assessment',
@@ -84,6 +94,7 @@ export default {
         },
         {
           icon: '🧪',
+          image: toxicologicalAssessment,
           title: 'Toxicological Assessment',
           items: [
             'LD50, LC50, NOAEL data',
@@ -95,12 +106,14 @@ export default {
         },
         {
           icon: '🔄',
+          image: msdsReview,
           title: 'MSDS Review & Updating',
           items: ['Legacy MSDS conversion', 'Periodic updates', 'Version control & tracking', 'REACH UFI integration'],
           link: baseLink + '/msds-review',
         },
         {
           icon: '✍️',
+          image: expertAuthoring,
           title: 'Expert Authoring',
           items: [
             'Toxicologist-led preparation',
@@ -112,6 +125,7 @@ export default {
         },
         {
           icon: '📤',
+          image: regulatorySubmission,
           title: 'Regulatory Submission',
           items: ['EU Poison Centers', 'Indian BIS/CIB filings', 'ECHA REACH submissions', 'DMF/CTD integration'],
           link: baseLink + '/regulatory-submission',

@@ -1,4 +1,17 @@
 import serviceImage from '@/assets/containment-validation.png';
+import cpt from '@/assets/containment-validation.png';
+import isolatorQualification from '@/assets/containment-validation.png';
+import airflowVisualization from '@/assets/containment-validation.png';
+import environmentalMonitoring from '@/assets/containment-validation.png';
+import operatorSafety from '@/assets/containment-validation.png';
+import surrogateTesting from '@/assets/containment-validation.png';
+import engineeringConsulting from '@/assets/containment-validation.png';
+import regulatorySupport from '@/assets/containment-validation.png';
+import engineeringConsulting from '@/assets/containment-validation.png';
+import regulatorySupport from '@/assets/containment-validation.png';
+import occupationalToxicology from '@/assets/containment-validation.png';
+import decontaminationValidation from '@/assets/containment-validation.png';
+import hpapiConsulting from '@/assets/containment-validation.png';
 const baseLink = '/services/containment-validation';
 
 export default {
@@ -49,6 +62,7 @@ export default {
       services: [
         {
           icon: '🧪',
+          image: cpt,
           title: 'Containment Performance Testing',
           items: [
             'SMEPAC-compliant testing',
@@ -60,6 +74,7 @@ export default {
         },
         {
           icon: '🧰',
+          image: isolatorQualification,
           title: 'Isolator Qualification',
           items: [
             'Design, Installation, Operational, and Performance Qualification',
@@ -71,6 +86,7 @@ export default {
         },
         {
           icon: '🌬️',
+          image: airflowVisualization,
           title: 'Airflow Visualization',
           items: [
             'Unidirectional airflow testing',
@@ -82,6 +98,7 @@ export default {
         },
         {
           icon: '🧫',
+          image: environmentalMonitoring,
           title: 'Environmental Monitoring',
           items: [
             'Non-viable particulate monitoring',
@@ -93,6 +110,7 @@ export default {
         },
         {
           icon: '👷',
+          image: operatorSafety,
           title: 'Operator Safety Testing',
           items: [
             'Breathing zone monitoring',
@@ -104,6 +122,7 @@ export default {
         },
         {
           icon: '🧪',
+          image: surrogateTesting,
           title: 'Surrogate Powder Testing',
           items: [
             'Simulated API handling',
@@ -115,6 +134,7 @@ export default {
         },
         {
           icon: '🏗️',
+          image: engineeringConsulting,
           title: 'Engineering Consulting',
           items: [
             'Gap analysis & containment hierarchy',
@@ -126,6 +146,7 @@ export default {
         },
         {
           icon: '📜',
+          image: regulatorySupport,
           title: 'Regulatory Support',
           items: [
             'SMEPAC-compliant reports',
@@ -137,6 +158,7 @@ export default {
         },
         {
           icon: '⚖️',
+          image: occupationalToxicology,
           title: 'Occupational Toxicology',
           items: [
             'OEL/ADE determination',
@@ -148,6 +170,7 @@ export default {
         },
         {
           icon: '📊',
+          image: decontaminationValidation,
           title: 'Decontamination Validation',
           items: [
             'Residue analysis (TOC, swabs)',
@@ -159,6 +182,7 @@ export default {
         },
         {
           icon: '🧩',
+          image: hpapiConsulting,
           title: 'HPAPI Handling Consulting',
           items: [
             'Potent compound strategy',

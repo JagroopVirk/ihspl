@@ -11,7 +11,7 @@ const { process } = Astro.props;
   <div id="process-steps" class="space-y-6">
     {
       process.steps.map((step, index) => (
-        <div key={index} class="flex items-start">
+        <div key={index} class="flex items-center">
           <div class="text-primary bg-primary/10 mr-4 flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-2xl font-bold">
             {index + 1}
           </div>

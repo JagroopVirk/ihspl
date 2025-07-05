@@ -1,4 +1,10 @@
 import serviceImage from '@/assets/riskAssessment.png';
+import impurityProfiling from '@/assets/riskAssessment.png';
+import qsarAssessment from '@/assets/riskAssessment.png';
+import inVitroTesting from '@/assets/riskAssessment.png';
+import inVivoTesting from '@/assets/riskAssessment.png';
+import eAndLStudies from '@/assets/riskAssessment.png';
+import riskAssessment from '@/assets/riskAssessment.png';
 const baseLink = '/services/risk-assessment';
 
 export default {
@@ -50,6 +56,7 @@ export default {
       services: [
         {
           icon: '🧪',
+          image: impurityProfiling,
           title: 'Impurity Profiling',
           items: [
             'Precise identification via LC-MS/MS, GC-MS, NMR, HRMS',
@@ -60,6 +67,7 @@ export default {
         },
         {
           icon: '💻',
+          image: qsarAssessment,
           title: 'In Silico (Q)SAR Assessment',
           items: [
             'Advanced toxicity predictions with Derek Nexus, Leadscope',
@@ -70,6 +78,7 @@ export default {
         },
         {
           icon: '🧬',
+          image: inVitroTesting,
           title: 'In Vitro Genotoxicity Testing',
           items: [
             'Ames Test (OECD 471) for mutagenicity',
@@ -80,6 +89,7 @@ export default {
         },
         {
           icon: '🐁',
+          image: inVivoTesting,
           title: 'In Vivo Genotoxicity Testing',
           items: [
             'In vivo Micronucleus Test (OECD 474)',
@@ -90,6 +100,7 @@ export default {
         },
         {
           icon: '⚗️',
+          image: eAndLStudies,
           title: 'Extractables and Leachables Studies',
           items: [
             'ISO 10993-18 chemical characterization',
@@ -100,6 +111,7 @@ export default {
         },
         {
           icon: '📊',
+          image: riskAssessment,
           title: 'Toxicological Risk Assessment',
           items: [
             'Tolerable Intake and PDE calculations',

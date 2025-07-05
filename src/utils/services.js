@@ -30,7 +30,7 @@
 //   }
 // }
 
-import adepde from '@/data/js/services/adepde';
+import adepde from '@/data/js/services/ade-pde-oel';
 import msdsSds from '@/data/js/services/msds-sds';
 import calibration from '@/data/js/services/calibration';
 import gmpAudits from '@/data/js/services/gmpAudits';

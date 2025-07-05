@@ -1,4 +1,11 @@
 import serviceImage from '@/assets/gmpCompliance.png';
+import cleaningValidationTraining from '@/assets/gmpCompliance.png';
+import scheduleMTraining from '@/assets/gmpCompliance.png';
+import gxpTraining from '@/assets/gmpCompliance.png';
+import whoTrsTraining from '@/assets/gmpCompliance.png';
+import qualitySystemsTraining from '@/assets/gmpCompliance.png';
+import qmsTraining from '@/assets/gmpCompliance.png';
+import trainingMethodologies from '@/assets/gmpCompliance.png';
 const baseLink = '/services/gmp-compliance-trainings';
 
 export default {
@@ -51,6 +58,7 @@ export default {
       services: [
         {
           icon: '🧼',
+          image: cleaningValidationTraining,
           title: 'Cleaning Validation Training',
           items: [
             'Worst-case product selection',
@@ -62,6 +70,7 @@ export default {
         },
         {
           icon: '📜',
+          image: gxpTraining,
           title: 'GxP Training',
           items: [
             'GMP, GLP, GCP, GDP, GVP',
@@ -73,6 +82,7 @@ export default {
         },
         {
           icon: '🇮🇳',
+          image: scheduleMTraining,
           title: 'Revised Schedule M Training',
           items: [
             'Key changes overview',
@@ -84,12 +94,14 @@ export default {
         },
         {
           icon: '🌍',
+          image: whoTrsTraining,
           title: 'WHO TRS Training',
           items: ['Annex 1–9 guidelines', 'Sterile & API GMP', 'Vaccine & biologics standards', 'FDA/EMA comparisons'],
           link: baseLink + '/who-trs-training',
         },
         {
           icon: '⚙️',
+          image: qualitySystemsTraining,
           title: 'Quality Systems Training',
           items: [
             'ICH Q10 & quality culture',
@@ -101,12 +113,14 @@ export default {
         },
         {
           icon: '📊',
+          image: qmsTraining,
           title: 'QMS Training',
           items: ['QMS framework (ICH Q10)', 'Document management', 'Supplier qualification', 'APQR & KPI tracking'],
           link: baseLink + '/qms-training',
         },
         {
           icon: '🎓',
+          image: trainingMethodologies,
           title: 'Training Methodologies',
           items: [
             'On-site/virtual/hybrid delivery',

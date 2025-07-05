@@ -1,4 +1,13 @@
 import serviceImage from '@/assets/validation.png';
+import labSystemsValidation from '@/assets/validation.png';
+import processAutomationValidation from '@/assets/validation.png';
+import emsValidation from '@/assets/validation.png';
+import enterpriseAppValidation from '@/assets/validation.png';
+import temperatureMapping from '@/assets/validation.png';
+import hvacValidation from '@/assets/validation.png';
+import validationDocumentation from '@/assets/validation.png';
+import validationTraining from '@/assets/validation.png';
+import periodicRevalidation from '@/assets/validation.png';
 const baseLink = '/services/validation';
 
 export default {
@@ -53,6 +62,7 @@ export default {
       services: [
         {
           icon: '🔬',
+          image: labSystemsValidation,
           title: 'Laboratory Systems Validation',
           items: [
             'DQ/IQ/OQ/PQ for HPLC, GC, etc.',
@@ -64,6 +74,7 @@ export default {
         },
         {
           icon: '⚙️',
+          image: processAutomationValidation,
           title: 'Process Automation Validation',
           items: [
             'PLC/HMI/SCADA validation',
@@ -75,6 +86,7 @@ export default {
         },
         {
           icon: '🌡️',
+          image: emsValidation,
           title: 'EMS Validation',
           items: [
             'IQ/OQ/PQ & software validation',
@@ -86,6 +98,7 @@ export default {
         },
         {
           icon: '💻',
+          image: enterpriseAppValidation,
           title: 'Enterprise Application Validation',
           items: [
             'CSV for SAP, LIMS, QMS',
@@ -97,6 +110,7 @@ export default {
         },
         {
           icon: '📏',
+          image: temperatureMapping,
           title: 'Temperature Mapping',
           items: [
             'Autoclave, tunnel validation',
@@ -108,6 +122,7 @@ export default {
         },
         {
           icon: '❄️',
+          image: hvacValidation,
           title: 'HVAC Validation',
           items: [
             'DOP/PAO filter testing',
@@ -119,6 +134,7 @@ export default {
         },
         {
           icon: '📜',
+          image: validationDocumentation,
           title: 'Validation Documentation',
           items: [
             'VMP & protocol preparation',
@@ -130,6 +146,7 @@ export default {
         },
         {
           icon: '🎓',
+          image: validationTraining,
           title: 'Validation Training',
           items: [
             'CSV & GAMP 5 training',
@@ -141,6 +158,7 @@ export default {
         },
         {
           icon: '🔄',
+          image: periodicRevalidation,
           title: 'Periodic Review & Revalidation',
           items: [
             'Periodic system reviews',

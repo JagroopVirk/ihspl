@@ -1,4 +1,16 @@
 import serviceImage from '@/assets/pharmacovigilance.png';
+import pvDatabase from '@/assets/pharmacovigilance.png';
+import micc from '@/assets/pharmacovigilance.png';
+import psmfSops from '@/assets/pharmacovigilance.png';
+import icsrProcessing from '@/assets/pharmacovigilance.png';
+import literatureMonitoring from '@/assets/pharmacovigilance.png';
+import aggregateReports from '@/assets/pharmacovigilance.png';
+import riskManagement from '@/assets/pharmacovigilance.png';
+import signalManagement from '@/assets/pharmacovigilance.png';
+import complianceAudit from '@/assets/pharmacovigilance.png';
+import globalSubmissions from '@/assets/pharmacovigilance.png';
+import medicalReview from '@/assets/pharmacovigilance.png';
+import pvTraining from '@/assets/pharmacovigilance.png';
 const baseLink = '/services/pharmacovigilance';
 
 export default {
@@ -54,6 +66,7 @@ export default {
       services: [
         {
           icon: '💾',
+          image: pvDatabase,
           title: 'PV Database Setup',
           items: [
             'Argus, Veeva Vault implementation',
@@ -65,6 +78,7 @@ export default {
         },
         {
           icon: '📞',
+          image: micc,
           title: 'Medical Information Call Centre',
           items: [
             '24/7 medical inquiry support',
@@ -76,6 +90,7 @@ export default {
         },
         {
           icon: '📜',
+          image: psmfSops,
           title: 'PSMF & SOPs Preparation',
           items: [
             'EMA/MHRA-compliant PSMF',
@@ -87,6 +102,7 @@ export default {
         },
         {
           icon: '📋',
+          image: icsrProcessing,
           title: 'ICSR Case Processing',
           items: [
             'Triage & MedDRA coding',
@@ -98,6 +114,7 @@ export default {
         },
         {
           icon: '🔍',
+          image: literatureMonitoring,
           title: 'Literature Monitoring',
           items: [
             'GVP Module VI compliance',
@@ -109,12 +126,14 @@ export default {
         },
         {
           icon: '📊',
+          image: aggregateReports,
           title: 'Aggregate Reports',
           items: ['PSUR, PBRER, PADER', 'DSUR & ASRs', 'ICH E2C(R2) compliance', 'Quality review & submission'],
           link: baseLink + '/aggregate-reports',
         },
         {
           icon: '⚠️',
+          image: riskManagement,
           title: 'Risk Management Plan',
           items: [
             'EU-RMP & REMS preparation',
@@ -126,6 +145,7 @@ export default {
         },
         {
           icon: '🚨',
+          image: signalManagement,
           title: 'Signal Management',
           items: [
             'Disproportionality analysis',
@@ -137,6 +157,7 @@ export default {
         },
         {
           icon: '✅',
+          image: complianceAudit,
           title: 'Compliance & Audit Support',
           items: [
             'PV compliance monitoring',
@@ -148,6 +169,7 @@ export default {
         },
         {
           icon: '🌍',
+          image: globalSubmissions,
           title: 'Global Submissions',
           items: [
             'E2B-compliant submissions',
@@ -159,6 +181,7 @@ export default {
         },
         {
           icon: '🩺',
+          image: medicalReview,
           title: 'Medical Review',
           items: [
             'ICSR & safety report review',
@@ -170,6 +193,7 @@ export default {
         },
         {
           icon: '🎓',
+          image: pvTraining,
           title: 'PV Training & Setup',
           items: [
             'GVP & ICH E2E training',

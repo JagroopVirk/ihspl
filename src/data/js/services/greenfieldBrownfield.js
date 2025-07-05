@@ -1,4 +1,19 @@
-import serviceImage from '../../../assets/greenfieldBrownfieldProjects.png';
+import serviceImage from '@/assets/greenfieldBrownfieldProjects.png';
+import feasibilityPlanning from '@/assets/greenfieldBrownfieldProjects.png';
+import conceptualDesign from '@/assets/greenfieldBrownfieldProjects.png';
+import civilDesign from '@/assets/greenfieldBrownfieldProjects.png';
+import utilityEngineering from '@/assets/greenfieldBrownfieldProjects.png';
+import equipmentProcurement from '@/assets/greenfieldBrownfieldProjects.png';
+import gmpCompliance from '@/assets/greenfieldBrownfieldProjects.png';
+import validationServices from '@/assets/greenfieldBrownfieldProjects.png';
+import constructionCommissioning from '@/assets/greenfieldBrownfieldProjects.png';
+import warehouseDesign from '@/assets/greenfieldBrownfieldProjects.png';
+import ehsServices from '@/assets/greenfieldBrownfieldProjects.png';
+import qmsSetup from '@/assets/greenfieldBrownfieldProjects.png';
+import brownfieldUpgrades from '@/assets/greenfieldBrownfieldProjects.png';
+import digitalPharma from '@/assets/greenfieldBrownfieldProjects.png';
+import projectManagement from '@/assets/greenfieldBrownfieldProjects.png';
+import postHandover from '@/assets/greenfieldBrownfieldProjects.png';
 const baseLink = '/services/greenfield-brownfield';
 
 export default {
@@ -46,6 +61,7 @@ export default {
       services: [
         {
           icon: '📊',
+          image: feasibilityPlanning,
           title: 'Feasibility & Planning',
           items: [
             'Technical & financial viability',
@@ -57,6 +73,7 @@ export default {
         },
         {
           icon: '🖼️',
+          image: conceptualDesign,
           title: 'Conceptualization & Design',
           items: [
             'Facility layout optimization',
@@ -68,6 +85,7 @@ export default {
         },
         {
           icon: '🏛️',
+          image: civilDesign,
           title: 'Civil & Architectural Design',
           items: [
             'Detailed engineering drawings',
@@ -79,6 +97,7 @@ export default {
         },
         {
           icon: '⚙️',
+          image: utilityEngineering,
           title: 'Process & Utility Engineering',
           items: [
             'HVAC & water system design',
@@ -90,6 +109,7 @@ export default {
         },
         {
           icon: '🛠️',
+          image: equipmentProcurement,
           title: 'Equipment Procurement',
           items: [
             'Vendor selection & audits',
@@ -101,12 +121,14 @@ export default {
         },
         {
           icon: '📜',
+          image: gmpCompliance,
           title: 'GMP Compliance Consulting',
           items: ['USFDA, EMA, WHO compliance', 'URS, DQ, IQ, OQ, PQ', 'Schedule M implementation', 'Mock inspections'],
           link: baseLink + '/gmp-compliance',
         },
         {
           icon: '✅',
+          image: validationServices,
           title: 'Validation & Qualification',
           items: [
             'Validation Master Plan',
@@ -118,18 +140,21 @@ export default {
         },
         {
           icon: '🏗️',
+          image: constructionCommissioning,
           title: 'Construction & Commissioning',
           items: ['Project management', 'Site supervision', 'Utility commissioning', 'As-built documentation'],
           link: baseLink + '/construction-commissioning',
         },
         {
           icon: '📦',
+          image: warehouseDesign,
           title: 'Warehouse Design',
           items: ['GMP-compliant layout', 'Cold & hazardous storage', 'Material traceability', 'Personnel flow design'],
           link: baseLink + '/warehouse-design',
         },
         {
           icon: '🛡️',
+          image: ehsServices,
           title: 'EHS Services',
           items: [
             'HAZOP & HIRA studies',
@@ -141,18 +166,21 @@ export default {
         },
         {
           icon: '📋',
+          image: qmsSetup,
           title: 'QMS Setup',
           items: ['ICH Q10 QMS development', 'SOPs & BMR/BPR', 'Electronic document systems', 'Training management'],
           link: baseLink + '/qms-setup',
         },
         {
           icon: '🔄',
+          image: brownfieldUpgrades,
           title: 'Brownfield Upgrades',
           items: ['GMP gap assessments', 'Retrofitting & expansion', 'Tech transfer support', 'Downtime minimization'],
           link: baseLink + '/brownfield-upgrades',
         },
         {
           icon: '💻',
+          image: digitalPharma,
           title: 'Digital Pharma Integration',
           items: [
             'SCADA & IoT integration',
@@ -164,12 +192,14 @@ export default {
         },
         {
           icon: '📅',
+          image: projectManagement,
           title: 'Turnkey Project Management',
           items: ['EPCM services', 'Time-cost-quality management', 'Risk mitigation planning', 'Project dashboards'],
           link: baseLink + '/project-management',
         },
         {
           icon: '🤝',
+          image: postHandover,
           title: 'Post-Handover Support',
           items: [
             'SOP training & handholding',
