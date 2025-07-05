@@ -7,7 +7,6 @@ import operatorSafety from '@/assets/containment-validation.png';
 import surrogateTesting from '@/assets/containment-validation.png';
 import engineeringConsulting from '@/assets/containment-validation.png';
 import regulatorySupport from '@/assets/containment-validation.png';
-import engineeringConsulting from '@/assets/containment-validation.png';
 import regulatorySupport from '@/assets/containment-validation.png';
 import occupationalToxicology from '@/assets/containment-validation.png';
 import decontaminationValidation from '@/assets/containment-validation.png';
