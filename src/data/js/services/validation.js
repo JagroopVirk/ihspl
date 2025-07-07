@@ -1,13 +1,13 @@
 import serviceImage from '@/assets/validation.png';
-import labSystemsValidation from '@/assets/validation.png';
-import processAutomationValidation from '@/assets/validation.png';
-import emsValidation from '@/assets/validation.png';
-import enterpriseAppValidation from '@/assets/validation.png';
-import temperatureMapping from '@/assets/validation.png';
-import hvacValidation from '@/assets/validation.png';
-import validationDocumentation from '@/assets/validation.png';
-import validationTraining from '@/assets/validation.png';
-import periodicRevalidation from '@/assets/validation.png';
+import labSystemsValidation from '@/assets/validation/lab-systems-validation.jpg';
+import processAutomationValidation from '@/assets/validation/process-automation-validation.jpg';
+import emsValidation from '@/assets/validation/ems-validation.jpg';
+import enterpriseAppValidation from '@/assets/validation/enterprise-app-validation.jpg';
+import temperatureMapping from '@/assets/validation/temperature-mapping.jpg';
+import hvacValidation from '@/assets/validation/hvac-validation.jpg';
+import validationDocumentation from '@/assets/validation/validation-documentation.jpg';
+import validationTraining from '@/assets/validation/validation-training.jpg';
+import periodicRevalidation from '@/assets/validation/periodic-revalidation.jpg';
 const baseLink = '/services/validation';
 
 export default {

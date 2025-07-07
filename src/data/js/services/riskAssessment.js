@@ -1,10 +1,10 @@
 import serviceImage from '@/assets/riskAssessment.png';
-import impurityProfiling from '@/assets/riskAssessment.png';
-import qsarAssessment from '@/assets/riskAssessment.png';
-import inVitroTesting from '@/assets/riskAssessment.png';
-import inVivoTesting from '@/assets/riskAssessment.png';
-import eAndLStudies from '@/assets/riskAssessment.png';
-import riskAssessment from '@/assets/riskAssessment.png';
+import impurityProfiling from '@/assets/risk-assessment/impurity-profiling.jpg';
+import qsarAssessment from '@/assets/risk-assessment/qsar-assessment.jpg';
+import inVitroTesting from '@/assets/risk-assessment/in-vitro-testing.jpg';
+import inVivoTesting from '@/assets/risk-assessment/in-vivo-testing.jpg';
+import eAndLStudies from '@/assets/risk-assessment/e-and-l-studies.jpg';
+import riskAssessment from '@/assets/risk-assessment/risk-assessment.jpg';
 const baseLink = '/services/risk-assessment';
 
 export default {

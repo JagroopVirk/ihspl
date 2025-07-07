@@ -1,11 +1,11 @@
 import serviceImage from '@/assets/gmpCompliance.png';
-import cleaningValidationTraining from '@/assets/gmpCompliance.png';
-import scheduleMTraining from '@/assets/gmpCompliance.png';
-import gxpTraining from '@/assets/gmpCompliance.png';
-import whoTrsTraining from '@/assets/gmpCompliance.png';
-import qualitySystemsTraining from '@/assets/gmpCompliance.png';
-import qmsTraining from '@/assets/gmpCompliance.png';
-import trainingMethodologies from '@/assets/gmpCompliance.png';
+import cleaningValidationTraining from '@/assets/gmp-compliance-trainings/cleaning-validation-training.jpg';
+import scheduleMTraining from '@/assets/gmp-compliance-trainings/gxp-training.jpg';
+import gxpTraining from '@/assets/gmp-compliance-trainings/gxp-training.jpg';
+import whoTrsTraining from '@/assets/gmp-compliance-trainings/who-trs-training.jpg';
+import qualitySystemsTraining from '@/assets/gmp-compliance-trainings/quality-systems-training.jpg';
+import qmsTraining from '@/assets/gmp-compliance-trainings/qms-training.jpg';
+import trainingMethodologies from '@/assets/gmp-compliance-trainings/training-methodologies.jpg';
 const baseLink = '/services/gmp-compliance-trainings';
 
 export default {

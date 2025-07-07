@@ -1,16 +1,16 @@
 import serviceImage from '@/assets/gmpAudit.png';
-import vendorAssessments from '@/assets/gmpAudit.png';
-import gmpAudits from '@/assets/gmpAudit.png';
-import auditRepresentation from '@/assets/gmpAudit.png';
-import dossierSupport from '@/assets/gmpAudit.png';
-import qualitySystems from '@/assets/gmpAudit.png';
-import facilityQualification from '@/assets/gmpAudit.png';
-import regulatoryStrategy from '@/assets/gmpAudit.png';
-import globalSubmissions from '@/assets/gmpAudit.png';
-import sopAudits from '@/assets/gmpAudit.png';
-import dataIntegrity from '@/assets/gmpAudit.png';
-import riskManagement from '@/assets/gmpAudit.png';
-import paiSupport from '@/assets/gmpAudit.png';
+import vendorAssessments from '@/assets/gmp-audits/vendor-assessments.jpg';
+import gmpAudits from '@/assets/gmp-audits/gmp-audits.jpg';
+import auditRepresentation from '@/assets/gmp-audits/audit-representation.jpg';
+import dossierSupport from '@/assets/gmp-audits/dossier-support.jpg';
+import qualitySystems from '@/assets/gmp-audits/quality-systems.jpg';
+import facilityQualification from '@/assets/gmp-audits/facility-qualification.jpg';
+import regulatoryStrategy from '@/assets/gmp-audits/regulatory-strategy.jpg';
+import globalSubmissions from '@/assets/gmp-audits/global-submissions.jpg';
+import sopAudits from '@/assets/gmp-audits/sop-audits.jpg';
+import dataIntegrity from '@/assets/gmp-audits/data-integrity.jpg';
+import riskManagement from '@/assets/gmp-audits/risk-management.jpg';
+import paiSupport from '@/assets/gmp-audits/pai-support.jpg';
 const baseLink = '/services/gmp-audits';
 
 export default {
@@ -23,7 +23,7 @@ export default {
     'Comprehensive CRO support for GMP approvals from global authorities like EU-GMP, USFDA, WHO-GMP, TGA, and more.',
   full_description:
     'Indivirtus offers end-to-end assistance for pharmaceutical facilities seeking GMP approvals from global regulatory bodies such as EU-GMP, USFDA, WHO-GMP, PIC/S, TGA, Health Canada, GCC, ANVISA (Brazil), and COFEPRIS (Mexico). Services include vendor assessment audits, plant design and infrastructure evaluations, validation and calibration checks, documentation reviews, and GAP assessments as per Schedule M and international GMP guidelines. Our experts help prepare for regulatory inspections with tailored remediation and compliance strategies.',
-  estimated_duration: '4–12 weeks depending on facility size and regulatory scope',
+  estimated_duration: '4-12 weeks depending on facility size and regulatory scope',
   deliverables: [
     'Regulatory Readiness Assessment Report',
     'Vendor Audit Checklist and Reports',
@@ -61,7 +61,7 @@ export default {
     main: {
       heading: 'Our GMP Compliance Services',
       detail:
-        'Our Contract Research Organization (CRO) specializes in Good Manufacturing Practice (GMP) approval and compliance services to help pharmaceutical companies navigate complex regulatory landscapes. From vendor assessments and GMP audits to regulatory dossier preparation and facility qualifications, we ensure your operations align with global standards like EU-GMP, USFDA, WHO-GMP, and PIC/S. These services are critical for ensuring product quality, patient safety, and regulatory compliance. Our solutions support pharmaceutical manufacturers, biotech firms, API producers, and contract manufacturers, helping them achieve approvals and maintain robust quality systems.',
+        'Indivirtus specializes in Good Manufacturing Practice (GMP) approval and compliance services to help pharmaceutical companies navigate complex regulatory landscapes. From vendor assessments and GMP audits to regulatory dossier preparation and facility qualifications, we ensure your operations align with global standards like EU-GMP, USFDA, WHO-GMP, and PIC/S. These services are critical for ensuring product quality, patient safety, and regulatory compliance. Our solutions support pharmaceutical manufacturers, biotech firms, API producers, and contract manufacturers, helping them achieve approvals and maintain robust quality systems.',
     },
     cards: {
       heading: 'Our GMP Expertise',

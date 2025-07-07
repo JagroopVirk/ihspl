@@ -48,7 +48,16 @@ const TestimonialCarousel = forwardRef(({ setStyle }, ref) => {
       <div className="maxwidth relative">
         <div className="mx-[3%] grid grid-cols-1 gap-6 transition-all duration-500 ease-in-out select-none md:grid-cols-3">
           {getVisibleTestimonials().map((testimonial, idx) => (
-            <div key={idx} className="flex min-h-[300px] flex-col justify-between rounded-2xl bg-white p-6 shadow">
+            <div
+              key={idx}
+              className="relative isolate flex min-h-[300px] flex-col justify-between overflow-hidden rounded-2xl bg-white p-6 shadow"
+            >
+              <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,var(--color-indigo-100),white)] opacity-20" />
+              <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl ring-1 shadow-indigo-600/10 ring-indigo-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
+              <div
+                style={{ backgroundImage: `url('../../opening-quote.svg')` }}
+                className="absolute top-0 left-[10px] h-1/3 w-1/3 skew-x-[-10deg] bg-cover bg-center opacity-10"
+              />
               <p className="mb-4 italic">“{testimonial.quote}”</p>
               <div>
                 <p className="text-right font-semibold">{testimonial.name}</p>

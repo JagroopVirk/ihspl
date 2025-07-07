@@ -1,10 +1,10 @@
 import serviceImage from '@/assets/calibration.png';
-import thermalCalibration from '@/assets/calibration.png';
-import electroTechnicalCalibration from '@/assets/calibration.png';
-import pressureVacuumCalibration from '@/assets/calibration.png';
-import adePdeCalculation from '@/assets/calibration.png';
-import massVolumeCalibration from '@/assets/calibration.png';
-import specializedCalibration from '@/assets/calibration.png';
+import thermalCalibration from '@/assets/calibration/thermal-calibration.jpg';
+import electroTechnicalCalibration from '@/assets/calibration/electro-technical-calibration.jpg';
+import pressureVacuumCalibration from '@/assets/calibration/pressure-vacuum-calibration.jpg';
+import mechanicalCalibration from '@/assets/calibration/mechanical-calibration.jpg';
+import massVolumeCalibration from '@/assets/calibration/mass-volume-calibration.jpg';
+import specializedCalibration from '@/assets/calibration/specialized-calibration.jpg';
 const baseLink = '/services/calibration';
 
 export default {
@@ -81,14 +81,14 @@ export default {
         },
         {
           icon: '⚙️',
-          image: pressureVacuumCalibration,
+          image: mechanicalCalibration,
           title: 'Mechanical Calibration',
           items: ['Dimension & Length', 'Speed & Acoustics', 'Vernier Calipers & Micrometers', 'Tachometers'],
           link: baseLink + '/mechanical-calibration',
         },
         {
           icon: '🛠️',
-          image: adePdeCalculation,
+          image: pressureVacuumCalibration,
           title: 'Pressure/Vacuum Calibration',
           items: ['Pressure & Vacuum Gauges', 'Magnehelic Gauges', 'Transmitters & Safety Valves', 'HVAC Systems'],
           link: baseLink + '/pressure-vacuum-calibration',

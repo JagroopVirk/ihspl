@@ -1,11 +1,11 @@
 import serviceImage from '@/assets/msds-sds.png';
-import sdsPreparation from '@/assets/msds-sds.png';
-import regionSpecificSds from '@/assets/msds-sds.png';
-import hazardClassification from '@/assets/msds-sds.png';
-import toxicologicalAssessment from '@/assets/msds-sds.png';
-import msdsReview from '@/assets/msds-sds.png';
-import expertAuthoring from '@/assets/msds-sds.png';
-import regulatorySubmission from '@/assets/msds-sds.png';
+import sdsPreparation from '@/assets/msds-sds/sds-preparation.jpg';
+import regionSpecificSds from '@/assets/msds-sds/region-specific-sds.jpg';
+import hazardClassification from '@/assets/msds-sds/hazard-classification.jpg';
+import toxicologicalAssessment from '@/assets/msds-sds/toxicological-assessment.jpg';
+import msdsReview from '@/assets/msds-sds/msds-review.jpg';
+import expertAuthoring from '@/assets/msds-sds/expert-authoring.jpg';
+import regulatorySubmission from '@/assets/msds-sds/regulatory-submission.jpg';
 const baseLink = '/services/msds-sds';
 
 export default {

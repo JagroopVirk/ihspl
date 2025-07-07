@@ -1,13 +1,13 @@
 import serviceImage from '@/assets/regulatoryAffairs.png';
-import ctdActdDossiers from '@/assets/regulatoryAffairs.png';
-import medicalDeviceFiling from '@/assets/regulatoryAffairs.png';
-import cepDmfFiling from '@/assets/regulatoryAffairs.png';
-import clinicalOverview from '@/assets/regulatoryAffairs.png';
-import regulatoryResponses from '@/assets/regulatoryAffairs.png';
-import mahQpServices from '@/assets/regulatoryAffairs.png';
-import regulatoryStrategy from '@/assets/regulatoryAffairs.png';
-import lifecycleManagement from '@/assets/regulatoryAffairs.png';
-import productRegistration from '@/assets/regulatoryAffairs.png';
+import ctdActdDossiers from '@/assets/regulatory-affairs/ctd-actd-dossiers.jpg';
+import medicalDeviceFiling from '@/assets/regulatory-affairs/medical-device-filing.jpg';
+import cepDmfFiling from '@/assets/regulatory-affairs/cep-dmf-filing.jpg';
+import clinicalOverview from '@/assets/regulatory-affairs/clinical-overview.jpg';
+import regulatoryResponses from '@/assets/regulatory-affairs/regulatory-responses.jpg';
+import mahQpServices from '@/assets/regulatory-affairs/mah-qp-services.jpg';
+import regulatoryStrategy from '@/assets/regulatory-affairs/regulatory-strategy.jpg';
+import lifecycleManagement from '@/assets/regulatory-affairs/lifecycle-management.jpg';
+import productRegistration from '@/assets/regulatory-affairs/product-registration.jpg';
 const baseLink = '/services/regulatory-affairs';
 
 export default {

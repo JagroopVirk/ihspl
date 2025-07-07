@@ -1,15 +1,15 @@
 import serviceImage from '@/assets/containment-validation.png';
-import cpt from '@/assets/containment-validation.png';
-import isolatorQualification from '@/assets/containment-validation.png';
-import airflowVisualization from '@/assets/containment-validation.png';
-import environmentalMonitoring from '@/assets/containment-validation.png';
-import operatorSafety from '@/assets/containment-validation.png';
-import surrogateTesting from '@/assets/containment-validation.png';
-import engineeringConsulting from '@/assets/containment-validation.png';
-import regulatorySupport from '@/assets/containment-validation.png';
-import occupationalToxicology from '@/assets/containment-validation.png';
-import decontaminationValidation from '@/assets/containment-validation.png';
-import hpapiConsulting from '@/assets/containment-validation.png';
+import cpt from '@/assets/containment-validation/cpt.jpg';
+import isolatorQualification from '@/assets/containment-validation/isolator-qualification.jpg';
+import airflowVisualization from '@/assets/containment-validation/airflow-visualization.jpg';
+import environmentalMonitoring from '@/assets/containment-validation/environmental-monitoring.jpg';
+import operatorSafety from '@/assets/containment-validation/operator-safety.jpg';
+import surrogateTesting from '@/assets/containment-validation/surrogate-testing.jpg';
+import engineeringConsulting from '@/assets/containment-validation/engineering-consulting.jpg';
+import regulatorySupport from '@/assets/containment-validation/regulatory-support.jpg';
+import occupationalToxicology from '@/assets/containment-validation/occupational-toxicology.jpg';
+import decontaminationValidation from '@/assets/containment-validation/decontamination-validation.jpg';
+import hpapiConsulting from '@/assets/containment-validation/hpapi-consulting.jpg';
 const baseLink = '/services/containment-validation';
 
 export default {
