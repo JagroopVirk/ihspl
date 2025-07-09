@@ -1,4 +1,4 @@
-import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
+import serviceImage from '@/assets/pde-oel-oeb/ade-pde-calculation.jpg';
 const link = '/services/ade-pde-oel/ade-pde-calculation';
 
 export default {

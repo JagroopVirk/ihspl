@@ -41,11 +41,11 @@ export default {
     hero: {heading:"",tagline:"",detail:""},
     overview: {heading:"" overviewCards:[{heading:"", detail:""},]},
     approach:{heading:"", detail:[]},
-deliverables: {heading:"", deliverables:[], icon: FaCheck}, 
-compliance:{heading:"", detail:[], regulations: []},
-applications: {heading:"", detail:[]},
-conclusion: {heading:"", detail:[]},
-cta: {heading:"", tagline:"",},
+    deliverables: {heading:"", itemList:[]}, 
+    compliance:{heading:"", detail:[], itemList: []},
+    applications: {heading:"", detail:[]},
+    conclusion: {heading:"", detail:[]},
+    cta: {heading:"", tagline:"", aria:""},
 
   },
 

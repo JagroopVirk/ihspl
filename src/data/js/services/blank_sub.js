@@ -1,7 +1,9 @@
 import serviceImage from '@/assets/ade_pde_oel_oeb_reports.png';
-const link = "/services/ade-pde-oel";
+const link = "/services/calibration";
 
 export default {
+  slug: '',
+  parentSlug: 'calibration',
   service_id: ,
   report_type: ,
   title: ,
