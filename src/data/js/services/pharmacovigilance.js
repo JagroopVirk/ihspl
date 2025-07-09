@@ -54,16 +54,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Pharmacovigilance Services',
+      heading: 'Pharmacovigilance <span class="halfHeading">Services</span>',
       tagline: 'Ensuring Drug Safety with Comprehensive PV Solutions',
     },
     main: {
-      heading: 'Our Pharmacovigilance Services',
+      heading: 'Our <span class="halfHeading">Pharmacovigilance Services</span>',
       detail:
         'Our Contract Research Organization (CRO) provides end-to-end pharmacovigilance (PV) services to ensure drug safety and regulatory compliance across the product lifecycle. From database setup and adverse event reporting to risk management and global submissions, we help pharmaceutical companies, biotech firms, and marketing authorization holders (MAHs) monitor and manage drug safety effectively. Our services are critical for maintaining patient safety, meeting stringent regulatory requirements, and supporting clinical and post-marketing phases for generics, biosimilars, and innovative drugs.',
     },
     cards: {
-      heading: 'Our PV Expertise',
+      heading: 'Our <span class="halfHeading">PV Expertise</span>',
       services: [
         {
           icon: '💾',
@@ -207,7 +207,7 @@ export default {
       ],
     },
     process: {
-      heading: 'Our PV Service Process',
+      heading: 'Our <span class="halfHeading">PV Service Process</span>',
       steps: [
         {
           title: 'System Setup & Planning',
@@ -232,7 +232,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Compliance & Standards',
+      heading: 'Compliance & <span class="halfHeading">Standards</span>',
       complianceSections: [
         {
           title: 'Regulatory Bodies',
@@ -267,7 +267,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Why Choose Our PV Services?',
+      heading: 'Why Choose <span class="halfHeading">Our PV Services?</span>',
       detail:
         'Our CRO delivers comprehensive pharmacovigilance services to ensure drug safety and regulatory compliance. With expertise in ICSR processing, signal management, and global submissions, we help you meet stringent requirements from FDA, EMA, and other authorities. Partner with us to safeguard patients, streamline PV operations, and achieve regulatory success with confidence.',
     },

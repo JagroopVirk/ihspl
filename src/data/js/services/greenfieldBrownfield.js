@@ -49,16 +49,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Greenfield & Brownfield Pharmaceutical Projects',
+      heading: 'Greenfield & Brownfield <span class="halfHeading">Pharmaceutical Projects</span>',
       tagline: 'Building and Upgrading Compliant Facilities for Pharma Excellence',
     },
     main: {
-      heading: 'Our Turnkey Project Services',
+      heading: 'Our <span class="halfHeading">Turnkey Project Services</span>',
       detail:
         'Our Contract Research Organization (CRO) specializes in delivering turnkey greenfield and brownfield pharmaceutical projects, covering finished dosage forms, active pharmaceutical ingredients (APIs), and intermediates. From feasibility studies and facility design to regulatory compliance, validation, and commissioning, we provide end-to-end solutions to ensure GMP-compliant, efficient, and future-proof facilities. These services are critical for ensuring product quality, regulatory approvals, and operational excellence, serving pharmaceutical manufacturers, biotech firms, API producers, and CROs aiming to establish or upgrade their facilities.',
     },
     cards: {
-      heading: 'Our Project Expertise',
+      heading: 'Our <span class="halfHeading">Project Expertise</span>',
       services: [
         {
           icon: '📊',
@@ -213,7 +213,7 @@ export default {
       ],
     },
     process: {
-      heading: 'Our Project Delivery Process',
+      heading: 'Our <span class="halfHeading">Project Delivery Process</span>',
       steps: [
         {
           title: 'Feasibility & Planning',
@@ -242,7 +242,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Compliance & Standards',
+      heading: 'Compliance & <span class="halfHeading">Standards</span>',
       complianceSections: [
         {
           title: 'Regulatory Bodies',
@@ -277,7 +277,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Why Choose Our CRO?',
+      heading: 'Why Choose <span class="halfHeading">Our CRO?</span>',
       detail:
         'Our CRO delivers end-to-end greenfield and brownfield pharmaceutical projects with precision, ensuring GMP compliance, operational efficiency, and regulatory success. With expertise in facility design, validation, and Industry 4.0 integration, we build future-proof facilities tailored to your needs. Partner with us to transform your vision into a compliant, high-performing pharmaceutical operation.',
     },

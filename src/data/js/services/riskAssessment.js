@@ -44,16 +44,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Genotoxicity Risk Assessment & Medical Device Toxicity Assessment',
+      heading: 'Genotoxicity Risk Assessment & <span class="halfHeading">Medical Device Toxicity Assessment</span>',
       tagline: 'Unrivaled expertise in genotoxic impurity evaluation and toxicological risk assessment',
     },
     main: {
-      heading: 'Why Our CRO Services Stand Out',
+      heading: 'Why Our <span class="halfHeading">CRO Services Stand Out</span>',
       detail:
         'Indivirtus provides specialized CRO services, delivering precision in genotoxic impurity evaluation, toxicological risk assessments, and extractables and leachables (E&L) studies. These services empower pharmaceutical companies, biotech innovators, and medical device manufacturers to achieve compliance with stringent global regulations while ensuring patient safety. By integrating advanced analytics, computational toxicology, and rigorous testing, we streamline drug and device development, helping clients bring safe, high-quality products to market efficiently.',
     },
     cards: {
-      heading: 'Tailored CRO Services',
+      heading: 'Tailored <span class="halfHeading">CRO Services</span>',
       services: [
         {
           icon: '🧪',
@@ -124,7 +124,7 @@ export default {
       ],
     },
     process: {
-      heading: 'How We Deliver Excellence',
+      heading: 'How We <span class="halfHeading">Deliver Excellence</span>',
       steps: [
         {
           title: 'Project Onboarding',
@@ -149,7 +149,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Global Compliance, Assured',
+      heading: 'Global Compliance, <span class="halfHeading">Assured</span>',
       complianceSections: [
         {
           title: 'Regulatory Oversight',
@@ -172,7 +172,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Your Trusted CRO Partner',
+      heading: 'Your Trusted <span class="halfHeading">CRO Partner</span>',
       detail:
         'Indivirtus combines scientific rigor with regulatory expertise to deliver CRO services that ensure your pharmaceutical and medical device products are safe, compliant, and market-ready. Our advanced analytical tools, global compliance know-how, and commitment to precision make us the ideal partner to accelerate your development journey with confidence.',
     },

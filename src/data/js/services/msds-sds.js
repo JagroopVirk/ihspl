@@ -46,16 +46,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'MSDS/SDS Preparation Services',
+      heading: 'MSDS/SDS <span class="halfHeading">Preparation Services</span>',
       tagline: 'Ensuring Global Compliance for Chemical Safety',
     },
     main: {
-      heading: 'Our SDS/MSDS Services',
+      heading: 'Our <span class="halfHeading">SDS/MSDS Services</span>',
       detail:
         "Indivirtus provides expert Material Safety Data Sheet (MSDS) and Safety Data Sheet (SDS) preparation services to ensure compliance with global chemical safety regulations. We deliver GHS-compliant, 16-section SDS tailored to regional standards like OSHA, EU REACH, and India's IS 17803:2022, supporting pharmaceutical manufacturers, biotech firms, chemical producers, and CROs. These services are critical for ensuring worker safety, environmental protection, and regulatory compliance across clinical, manufacturing, and distribution processes.",
     },
     cards: {
-      heading: 'Our SDS Expertise',
+      heading: 'Our <span class="halfHeading">SDS Expertise</span>',
       services: [
         {
           icon: '📄',
@@ -134,7 +134,7 @@ export default {
       ],
     },
     process: {
-      heading: 'Our SDS Preparation Process',
+      heading: 'Our <span class="halfHeading">SDS Preparation Process</span>',
       steps: [
         {
           title: 'Data Collection',
@@ -163,7 +163,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Compliance & Standards',
+      heading: 'Compliance & <span class="halfHeading">Standards</span>',
       complianceSections: [
         {
           title: 'Regulatory Bodies',
@@ -198,7 +198,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Why Choose Our SDS Services?',
+      heading: 'Why Choose <span class="halfHeading">Our SDS Services?</span>',
       detail:
         'Our CRO delivers expert SDS/MSDS preparation services, ensuring compliance with global GHS standards and regional regulations like OSHA, REACH, and IS 17803:2022. With toxicologist-led authoring, multilingual customization, and regulatory submission support, we help you ensure worker safety and streamline compliance. Choose us for accurate, reliable SDS solutions that support your global operations.',
     },

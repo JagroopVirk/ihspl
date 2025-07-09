@@ -44,16 +44,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'NABL-Accredited Calibration Services',
+      heading: 'NABL-Accredited <span class="halfHeading">Calibration Services</span>',
       tagline: 'Precision Calibration for Pharmaceutical Excellence and Regulatory Compliance',
     },
     main: {
-      heading: 'Our Calibration Services',
+      heading: 'Our <span class="halfHeading">Calibration Services</span>',
       detail:
         'Our NABL-accredited Contract Research Organization (CRO) offers comprehensive calibration services tailored for the pharmaceutical industry. From thermal and electro-technical calibration to mechanical, pressure, and mass/volume measurements, we ensure your equipment delivers precise, reliable, and compliant results.\n\nThese services are vital for maintaining Good Manufacturing Practices (GMP), ensuring product quality, and meeting stringent regulatory standards set by bodies like the FDA, EMA, and CDSCO. Our calibration solutions support pharmaceutical manufacturers, biotech firms, research laboratories, and quality assurance teams, helping them achieve operational excellence and regulatory compliance.',
     },
     cards: {
-      heading: 'Our Calibration Expertise',
+      heading: 'Our <span class="halfHeading">Calibration Expertise</span>',
       services: [
         {
           icon: '🌡️',
@@ -110,7 +110,7 @@ export default {
       ],
     },
     process: {
-      heading: 'Our Calibration Process',
+      heading: 'Our <span class="halfHeading">Calibration Process</span>',
       steps: [
         {
           title: 'Client Consultation & Planning',
@@ -140,7 +140,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Compliance & Standards',
+      heading: 'Compliance & <span class="halfHeading">Standards</span>',
       complianceSections: [
         {
           title: 'Regulatory Bodies',
@@ -175,7 +175,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Why Partner with Us?',
+      heading: 'Why Partner <span class="halfHeading">with Us?</span>',
       detail:
         'Our NABL-accredited CRO delivers precise, reliable, and compliant calibration services to keep your pharmaceutical operations running smoothly. With expertise across thermal, electro-technical, mechanical, and specialized calibration, we help you meet global regulatory standards, ensure product quality, and maintain operational efficiency.\n\nChoose us for trusted calibration solutions that empower your success in the pharmaceutical industry.',
     },

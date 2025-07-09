@@ -15,9 +15,7 @@ const { overviewCards } = Astro.props;
             aria-labelledby={`card-heading-${index}`}
             aria-describedby={`card-detail-${index}`}
           >
-            <h3 id={`card-heading-${index}`} class="mb-4">
-              {card.heading}
-            </h3>
+            <h3 id={`card-heading-${index}`} class="mb-4" set:html={card.heading}></h3>
             <p id={`card-detail-${index}`}>{card.detail}</p>
           </article>
         ))

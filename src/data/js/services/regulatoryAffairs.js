@@ -49,16 +49,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Regulatory Compliance & Medical Device Registration',
+      heading: 'Regulatory Compliance & <span class="halfHeading">Medical Device Registration</span>',
       tagline: 'Streamlined Solutions for Global Regulatory Success',
     },
     main: {
-      heading: 'Our Regulatory Compliance Services',
+      heading: 'Our <span class="halfHeading">Regulatory Compliance Services</span>',
       detail:
         "Our Contract Research Organization (CRO) provides comprehensive regulatory compliance and medical device registration services to help pharmaceutical and medical device companies navigate complex global regulations. From dossier preparation (CTD/ACTD, DMF, CEP) to medical device filings under CDSCO's MDR-2017 rules, we ensure compliance with standards set by FDA, EMA, ICH, and other authorities. Our services are essential for ensuring product approvals, maintaining compliance, and accelerating market entry for pharmaceutical manufacturers, biotech firms, medical device companies, and marketing authorization holders (MAHs).",
     },
     cards: {
-      heading: 'Our Regulatory Expertise',
+      heading: 'Our <span class="halfHeading">Regulatory Expertise</span>',
       services: [
         {
           icon: '📑',
@@ -156,7 +156,7 @@ export default {
       ],
     },
     process: {
-      heading: 'Our Regulatory Service Process',
+      heading: 'Our <span class="halfHeading">Regulatory Service Process</span>',
       steps: [
         {
           title: 'Regulatory Assessment',
@@ -181,7 +181,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Compliance & Standards',
+      heading: 'Compliance & <span class="halfHeading">Standards</span>',
       complianceSections: [
         {
           title: 'Regulatory Bodies',
@@ -216,7 +216,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Why Choose Our Regulatory Services?',
+      heading: 'Why Choose Our <span class="halfHeading">Regulatory Services?</span>',
       detail:
         'Our CRO provides expert regulatory compliance and medical device registration services, ensuring seamless approvals across global markets. With comprehensive dossier preparation, strategic consulting, and post-approval support, we help you navigate complex regulations from FDA, EMA, CDSCO, and beyond. Choose us to accelerate your market entry and maintain compliance with confidence.',
     },

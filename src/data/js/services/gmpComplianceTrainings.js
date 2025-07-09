@@ -46,16 +46,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Pharmaceutical Quality & Compliance Training',
+      heading: 'Pharmaceutical Quality & <span class="halfHeading">Compliance Training</span>',
       tagline: 'Empowering Your Team with Expert-Led Compliance Training',
     },
     main: {
-      heading: 'Our Training Programs',
+      heading: 'Our <span class="halfHeading">Training Programs</span>',
       detail:
         'Our Contract Research Organization (CRO) offers comprehensive, expert-led training programs designed for pharmaceutical and biotech teams. Covering critical topics like Cleaning Validation, GxP standards (GMP, GLP, GCP, GDP, GVP), Revised Schedule M, WHO TRS guidelines, Data Integrity, and Quality Management Systems (QMS), our sessions equip your staff with the knowledge and skills needed to ensure compliance. Tailored for pharmaceutical manufacturers, biotech firms, CROs, and regulatory affairs teams, our training programs help you meet global regulatory standards, streamline operations, and prepare for audits with confidence.',
     },
     cards: {
-      heading: 'Our Training Expertise',
+      heading: 'Our <span class="halfHeading">Training Expertise</span>',
       services: [
         {
           icon: '🧼',
@@ -134,7 +134,7 @@ export default {
       ],
     },
     process: {
-      heading: 'Our Training Process',
+      heading: 'Our <span class="halfHeading">Training Process</span>',
       steps: [
         {
           title: 'Needs Assessment',
@@ -164,7 +164,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Compliance & Standards',
+      heading: 'Compliance & <span class="halfHeading">Standards</span>',
       complianceSections: [
         {
           title: 'Regulatory Bodies',
@@ -199,7 +199,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Why Choose Our Training?',
+      heading: 'Why Choose <span class="halfHeading">Our Training?</span>',
       detail:
         "Our expert-led training programs empower your pharmaceutical and biotech teams with the knowledge and skills to excel in compliance and quality. With customized, practical sessions aligned with FDA, EMA, WHO, and ICH standards, we help you build a robust quality culture and prepare for regulatory success. Choose us to enhance your team's capabilities and ensure compliance with confidence.",
     },

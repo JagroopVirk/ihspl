@@ -48,16 +48,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Isolator Containment Validation Services',
+      heading: 'Isolator Containment <span class="halfHeading">Validation Services</span>',
       tagline: 'Safeguarding Your Operations with Expert Containment Solutions',
     },
     main: {
-      heading: 'Our Isolator Validation Services',
+      heading: 'Isolator <span class="halfHeading">Validation Services</span>',
       detail:
         'Our Contract Research Organization (CRO) provides specialized isolator containment validation services to ensure the safe handling of potent compounds (OEB 3+) in pharmaceutical manufacturing. From surrogate powder testing to airflow visualization and operator safety assessments, our services protect workers, prevent environmental contamination, and ensure compliance with global standards like ISPE SMEPAC and cGMP. These solutions are essential for pharmaceutical manufacturers, biotech firms, and CROs working with high-potency active pharmaceutical ingredients (HPAPIs), helping them maintain safety, quality, and regulatory compliance.',
     },
     cards: {
-      heading: 'Our Comprehensive Validation Services',
+      heading: 'Our Comprehensive <span class="halfHeading">Validation Services</span>',
       services: [
         {
           icon: '🧪',
@@ -69,7 +69,7 @@ export default {
             'Operator exposure measurement',
             'Gravimetric/chemical analysis',
           ],
-          link: baseLink + '/cpt',
+          link: baseLink + '/containment-performance-testing',
         },
         {
           icon: '🧰',
@@ -194,7 +194,7 @@ export default {
       ],
     },
     process: {
-      heading: 'Our Validation Process',
+      heading: 'Our <span class="halfHeading">Validation Process</span>',
       steps: [
         {
           title: 'Client Onboarding',
@@ -220,7 +220,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Compliance & Standards',
+      heading: 'Compliance & <span class="halfHeading">Standards</span>',
       complianceSections: [
         {
           title: 'Regulatory Bodies',
@@ -255,7 +255,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Why Partner with Us?',
+      heading: 'Why Partner <span class="halfHeading">with Us?</span>',
       detail:
         'Our CRO delivers expert isolator containment validation to ensure your pharmaceutical operations are safe, compliant, and efficient. With Certified Industrial Hygienists, AIHA-accredited lab partnerships, and adherence to ISPE SMEPAC and cGMP standards, we provide reliable solutions for handling potent compounds. Choose us to safeguard your workforce, protect the environment, and streamline your regulatory compliance.',
     },

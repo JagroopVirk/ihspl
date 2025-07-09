@@ -50,16 +50,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Validation Services for Pharma & Biotech',
+      heading: 'Validation Services for <span class="halfHeading">Pharma & Biotech</span>',
       tagline: 'Ensuring Compliance for Critical Systems and Processes',
     },
     main: {
-      heading: 'Our Validation Services',
+      heading: 'Our <span class="halfHeading">Validation Services</span>',
       detail:
         'Our Contract Research Organization (CRO) offers comprehensive validation services for pharmaceutical and biotech systems, including laboratory instruments, process automation, HVAC, and enterprise applications. These services ensure compliance with global regulatory standards, maintain data integrity, and support operational excellence. Our solutions are critical for pharmaceutical manufacturers, biotech firms, CROs, and medical device companies seeking to meet stringent requirements from FDA, EMA, and other authorities while ensuring system reliability and product quality.',
     },
     cards: {
-      heading: 'Our Validation Expertise',
+      heading: 'Our <span class="halfHeading">Validation Expertise</span>',
       services: [
         {
           icon: '🔬',
@@ -172,7 +172,7 @@ export default {
       ],
     },
     process: {
-      heading: 'Our Validation Process',
+      heading: 'Our <span class="halfHeading">Validation Process</span>',
       steps: [
         {
           title: 'System Assessment',
@@ -200,7 +200,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Compliance & Standards',
+      heading: 'Compliance & <span class="halfHeading">Standards</span>',
       complianceSections: [
         {
           title: 'Regulatory Bodies',
@@ -235,7 +235,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Why Choose Our Validation Services?',
+      heading: 'Why Choose Our <span class="halfHeading">Validation Services?</span>',
       detail:
         'Our CRO delivers expert validation services for laboratory, automation, HVAC, and enterprise systems, ensuring compliance with global standards like 21 CFR Part 11, GAMP 5, and ISO 14644. With a risk-based approach and comprehensive documentation, we help you maintain system integrity and pass regulatory inspections. Partner with us to ensure your systems are robust, compliant, and ready for operational excellence.',
     },

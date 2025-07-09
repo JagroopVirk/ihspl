@@ -45,16 +45,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'ADE/PDE, OEL & Cleaning Validation Services',
+      heading: 'ADE/PDE, OEL & <span class="halfHeading">Cleaning Validation Services</span>',
       tagline: 'Ensuring Safe and Compliant Pharmaceutical Manufacturing',
     },
     main: {
-      heading: 'Our Cleaning Validation Services',
+      heading: 'Our <span class="halfHeading">Cleaning Validation Services</span>',
       detail:
         'Our Contract Research Organization (CRO) specializes in ADE/PDE, OEL, and OEB calculations, alongside comprehensive cleaning validation services to ensure safe pharmaceutical manufacturing. These services help prevent cross-contamination, meet stringent regulatory requirements, and protect patient and worker safety. With expertise in toxicological assessments and health-based exposure limits, we serve pharmaceutical manufacturers, biotech firms, and CROs. Our proven track record, inspired by industry leaders like Indivirtus with over 13,000 PDE/ADE reports delivered, ensures robust, compliant solutions for shared facilities and equipment.',
     },
     cards: {
-      heading: 'Our Validation Expertise',
+      heading: 'Our <span class="halfHeading">Validation Expertise</span>',
       services: [
         {
           icon: '🧪',
@@ -121,7 +121,7 @@ export default {
       ],
     },
     process: {
-      heading: 'Our Cleaning Validation Process',
+      heading: 'Our Cleaning <span class="halfHeading">Validation Process</span>',
       steps: [
         {
           title: 'Toxicological Assessment',
@@ -148,7 +148,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Compliance & Standards',
+      heading: 'Compliance & <span class="halfHeading">Standards</span>',
       complianceSections: [
         {
           title: 'Regulatory Bodies',
@@ -183,7 +183,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Why Choose Our Cleaning Validation Services?',
+      heading: 'Why Choose Our <span class="halfHeading">Cleaning Validation Services?</span>',
       detail:
         'Our CRO delivers expert ADE/PDE, OEL, and cleaning validation services to ensure safe, compliant pharmaceutical manufacturing. With a robust toxicological approach and alignment with EMA, PIC/S, and ISPE guidelines, we minimize cross-contamination risks and ensure audit readiness. Choose us for precise, health-based solutions that protect patients and workers while meeting global regulatory standards.',
     },

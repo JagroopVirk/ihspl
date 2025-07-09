@@ -6,9 +6,7 @@ import { FaCheck } from 'react-icons/fa6';
 
 <section aria-labelledby="deliverables-heading" class="section bg-white">
   <div class="maxwidth">
-    <h2 id="deliverables-heading" class="mb-6 text-center">
-      {data.heading}
-    </h2>
+    <h2 id="deliverables-heading" class="mb-6 text-center" set:html={data.heading} />
     <div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
       {
         data.itemList.map((item, index) => (

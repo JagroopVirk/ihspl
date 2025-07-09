@@ -55,16 +55,16 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'GMP Approval & Compliance Services',
+      heading: 'GMP Approval & <span class="halfHeading">Compliance Services</span>',
       tagline: 'Streamlining Regulatory Approvals for Pharmaceutical Excellence',
     },
     main: {
-      heading: 'Our GMP Compliance Services',
+      heading: 'Our <span class="halfHeading">GMP Compliance Services</span>',
       detail:
         'Indivirtus specializes in Good Manufacturing Practice (GMP) approval and compliance services to help pharmaceutical companies navigate complex regulatory landscapes. From vendor assessments and GMP audits to regulatory dossier preparation and facility qualifications, we ensure your operations align with global standards like EU-GMP, USFDA, WHO-GMP, and PIC/S. These services are critical for ensuring product quality, patient safety, and regulatory compliance. Our solutions support pharmaceutical manufacturers, biotech firms, API producers, and contract manufacturers, helping them achieve approvals and maintain robust quality systems.',
     },
     cards: {
-      heading: 'Our GMP Expertise',
+      heading: 'Our <span class="halfHeading">GMP Expertise</span>',
       services: [
         {
           icon: '📋',
@@ -208,7 +208,7 @@ export default {
       ],
     },
     process: {
-      heading: 'Our GMP Compliance Process',
+      heading: 'Our <span class="halfHeading">GMP Compliance Process</span>',
       steps: [
         {
           title: 'Client Onboarding',
@@ -235,7 +235,7 @@ export default {
       ],
     },
     compliance: {
-      heading: 'Compliance & Standards',
+      heading: 'Compliance & <span class="halfHeading">Standards</span>',
       complianceSections: [
         {
           title: 'Regulatory Bodies',
@@ -270,7 +270,7 @@ export default {
       ],
     },
     conclusion: {
-      heading: 'Why Choose Our CRO?',
+      heading: 'Why Choose <span class="halfHeading">Our CRO?</span>',
       detail:
         'Our CRO delivers expert GMP compliance and regulatory approval services, ensuring your pharmaceutical operations meet global standards. With comprehensive audits, robust quality systems, and strategic regulatory support, we help you achieve approvals from authorities like USFDA, EMA, and WHO. Partner with us for reliable, efficient solutions that enhance product quality and regulatory success.',
     },
