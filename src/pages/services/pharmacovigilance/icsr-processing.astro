@@ -4,7 +4,7 @@ import Layout from '../../../layouts/Layout.astro';
 import '@/styles/global.css';
 
 // SEO Data
-import seoData from '@/data/js/services/ade-pde-oel.js';
+import seoData from '@/data/js/services/pharmacovigilance/icsr-processing';
 
 // Components
 import Faq from '@/components/other/Faq.astro';
@@ -16,9 +16,9 @@ import ComplianceSection from '@/components/services/ComplianceSection.astro';
 import ConclusionSection from '@/components/services/ConclusionSection.astro';
 import CTASection from '@/components/services/CTASection.astro';
 
-const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
+const { meta, image, schema, faqSchema, pageLink, full_description, deliverables, regulatory_basis } = seoData;
 const { mainEntity } = faqSchema;
-const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
+// const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -34,6 +34,27 @@ const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <h1 class="flex h-[500px] items-center justify-center">Coming Soon</h1>
+    <div class="p-20">
+      <h1>{full_description}</h1>
+
+      <div class="py-10">
+        <h3>Deliverables</h3>
+        <ul>
+          {deliverables.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+      <div>
+        <h3>Regulatory Basis</h3>
+        <ul>
+          {regulatory_basis.map((item) => <li>{item}</li>)}
+        </ul>
+      </div>
+    </div>
+
+    {/* FAQ Section */}
+    <section class="maxwidth" aria-labelledby="faq-heading">
+      <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
+      <Faq faqs={mainEntity} />
+    </section>
   </main>
 </Layout>
