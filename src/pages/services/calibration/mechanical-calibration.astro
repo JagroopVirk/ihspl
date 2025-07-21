@@ -8,19 +8,15 @@ import seoData from '@/data/js/services/calibration/mechanical-calibration';
 
 // Components
 import Faq from '@/components/other/Faq.astro';
-import BTN from '@/components/other/BTN.astro';
 import HeroSection from '@/components/services/HeroSection.astro';
-import MainContentSection from '@/components/services/MainContentSection.astro';
-import ServiceCard from '@/components/services/ServiceCard.astro';
-import ProcessSection from '@/components/services/ProcessSection.astro';
-import ComplianceSection from '@/components/services/ComplianceSection.astro';
-import ConclusionSection from '@/components/services/ConclusionSection.astro';
+import OverviewCards from '@/components/services/subServices/OverviewCards.astro';
+import SubSection from '@/components/services/subServices/SubSection.astro';
 import CTASection from '@/components/services/CTASection.astro';
+import DeliverableCards from '@/components/services/subServices/DeliverableCards.astro';
 
-const { meta, image, schema, faqSchema, pageLink, full_description, deliverables, regulatory_basis, description } =
-  seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
-// const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
+const { hero, overview, approach, deliverables, compliance, applications, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -36,253 +32,29 @@ const { mainEntity } = faqSchema;
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <!-- Hero Section -->
-    <section class="bg-[var(--color-primary-light)] px-4 py-16 text-center">
-      <div class="mx-auto max-w-6xl">
-        <h1 class="mb-4 text-4xl font-bold text-[var(--color-primaryBlue)] md:text-5xl">
-          Precision Mechanical Calibration for GMP-Compliant Operations
-        </h1>
-        <p class="mb-6 text-lg text-[var(--color-gray)] md:text-xl">
-          Ensure compliance and accuracy with Indivirtus Healthcare’s NABL-accredited calibration services for
-          dimensional, speed, and acoustic instruments.
-        </p>
-        <p class="mx-auto max-w-3xl text-base text-[var(--color-black)]">
-          At Indivirtus Healthcare Services Pvt. Ltd., we provide ISO/IEC 17025:2017 accredited mechanical calibration
-          with pharmaceutical-grade precision, ensuring your instruments meet stringent regulatory standards for
-          pharmaceutical and medical device manufacturing.
-        </p>
-      </div>
-    </section>
+    {/* Hero Section */}
+    <HeroSection hero={hero} />
 
-    <!-- Overview Section -->
-    <section class="bg-[var(--color-white)] px-4 py-12">
-      <div class="mx-auto max-w-6xl">
-        <h2 class="mb-6 text-3xl font-semibold text-[var(--color-primaryBlue)]">
-          Overview of Mechanical Calibration Services
-        </h2>
-        <p class="mb-4 text-[var(--color-gray)]">
-          <strong>What:</strong> Our NABL-accredited calibration services validate dimensional, speed, and acoustic instruments,
-          including micrometers (0-300mm), calipers (0-1000mm), tachometers (10-100,000 RPM), sound level meters (30-130dB),
-          and torque wrenches (0.1-300Nm).
-        </p>
-        <p class="mb-4 text-[var(--color-gray)]">
-          <strong>Why:</strong> Accurate calibration of these instruments is critical for pharmaceutical manufacturing, quality
-          control, and medical device production, ensuring compliance with GMP and regulatory standards.
-        </p>
-        <p class="text-[var(--color-gray)]">
-          <strong>Role:</strong> We support pharmaceutical companies by ensuring measurement accuracy, regulatory compliance,
-          and audit readiness with traceable, high-precision calibration services.
-        </p>
-      </div>
-    </section>
+    {/* Overview Section */}
+    <OverviewCards overviewCards={overview.overviewCards} />
 
-    <!-- Our Expert Approach Section -->
-    <section class="bg-[var(--color-secondary-light2)] px-4 py-12">
-      <div class="mx-auto max-w-6xl">
-        <h2 class="mb-6 text-3xl font-semibold text-[var(--color-primaryBlue)]">Our Expert Approach</h2>
-        <p class="mb-4 text-[var(--color-gray)]">
-          At Indivirtus, we use laser interferometers, accredited reference standards, and automated test systems
-          traceable to NPL/NIST to deliver exceptional precision (±1μm for dimensional tools, ±0.1% for tachometers,
-          ±0.5dB for sound meters). Our team performs environmental compensation and measurement uncertainty analysis to
-          ensure reliable results.
-        </p>
-        <p class="text-[var(--color-gray)]">
-          We tailor our calibration services to meet the specific needs of your pharmaceutical and medical device
-          manufacturing processes, providing comprehensive documentation for FDA, EMA, and other regulatory audits. Our
-          expertise ensures your instruments perform reliably in GMP-compliant operations.
-        </p>
-      </div>
-    </section>
+    {/* Our Expert Approach Section */}
+    <SubSection data={approach} , bgColor="bg-secondary-light2" ariaLabel="approach" />
 
-    <!-- Service Deliverables Section -->
-    <section class="bg-[var(--color-white)] px-4 py-12">
-      <div class="mx-auto max-w-6xl">
-        <h2 class="mb-6 text-3xl font-semibold text-[var(--color-primaryBlue)]">Service Deliverables</h2>
-        <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-          <div class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md">
-            <svg
-              class="mr-4 h-8 w-8 text-[var(--color-primaryBlue)]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg
-            >
-            <div>
-              <h3 class="text-lg font-semibold text-[var(--color-black)]">NABL-accredited Calibration Certificate</h3>
-              <p class="text-[var(--color-gray)]">
-                Official certification ensuring compliance with ISO/IEC 17025:2017 standards.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md">
-            <svg
-              class="mr-4 h-8 w-8 text-[var(--color-primaryBlue)]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M10 9v6m4-6v6m7-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg
-            >
-            <div>
-              <h3 class="text-lg font-semibold text-[var(--color-black)]">Measurement Uncertainty Analysis Report</h3>
-              <p class="text-[var(--color-gray)]">
-                Detailed analysis to quantify measurement reliability and accuracy.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md">
-            <svg
-              class="mr-4 h-8 w-8 text-[var(--color-primaryBlue)]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
-              ></path></svg
-            >
-            <div>
-              <h3 class="text-lg font-semibold text-[var(--color-black)]">As-Found/As-Left Compliance Data</h3>
-              <p class="text-[var(--color-gray)]">
-                Comprehensive report comparing pre- and post-calibration measurements with compliance details.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md">
-            <svg
-              class="mr-4 h-8 w-8 text-[var(--color-primaryBlue)]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-              ></path></svg
-            >
-            <div>
-              <h3 class="text-lg font-semibold text-[var(--color-black)]">Traceability Documentation to NPL/NIST</h3>
-              <p class="text-[var(--color-gray)]">
-                Documentation linking measurements to NPL/NIST standards for global recognition.
-              </p>
-            </div>
-          </div>
-          <div class="flex items-start rounded-lg bg-[var(--color-primary-light)] p-6 shadow-md">
-            <svg
-              class="mr-4 h-8 w-8 text-[var(--color-primaryBlue)]"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg"
-              ><path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg
-            >
-            <div>
-              <h3 class="text-lg font-semibold text-[var(--color-black)]">
-                Recommended Adjustment Intervals Based on Usage Patterns
-              </h3>
-              <p class="text-[var(--color-gray)]">Tailored guidance to maintain instrument accuracy and compliance.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+    {/* Service Deliverables Section */}
+    <DeliverableCards data={deliverables} />
 
-    <!-- Regulatory Compliance Section -->
-    <section class="bg-[var(--color-secondary-light2)] px-4 py-12">
-      <div class="mx-auto max-w-6xl">
-        <h2 class="mb-6 text-3xl font-semibold text-[var(--color-primaryBlue)]">Regulatory Compliance & Guidelines</h2>
-        <p class.="text-[var(--color-gray)] mb-4">
-          Our mechanical calibration services adhere to stringent global standards, ensuring your dimensional, speed,
-          and acoustic instruments meet regulatory requirements for GMP-compliant pharmaceutical operations. We comply
-          with:
-        </p>
-        <ul class="mb-4 list-disc pl-6 text-[var(--color-gray)]">
-          <li><strong>ISO/IEC 17025:2017:</strong> International standard for calibration and testing laboratories.</li>
-          <li><strong>NABL Accreditation:</strong> Ensures technical competence and reliability in calibration.</li>
-          <li><strong>21 CFR Part 820:</strong> FDA regulations for medical device quality systems.</li>
-          <li><strong>EU GMP Annex 11:</strong> European guidelines for computerized systems in GMP environments.</li>
-          <li><strong>ISO 9001:2015:</strong> International standard for quality management systems.</li>
-          <li><strong>ISO 13485:2016:</strong> International standard for medical device quality management.</li>
-        </ul>
-        <p class="text-[var(--color-gray)]">
-          By adhering to these standards, we ensure your instruments are audit-ready and compliant with global market
-          requirements. Our comprehensive documentation and traceability provide confidence for passing FDA, EMA, and
-          other regulatory inspections.
-        </p>
-      </div>
-    </section>
+    {/* Regulatory Compliance Section */}
+    <SubSection data={compliance} , bgColor="bg-secondary-light2" ariaLabel="regulations" />
 
-    <!-- Applications & Use Cases Section -->
-    <section class="bg-[var(--color-white)] px-4 py-12">
-      <div class="mx-auto max-w-6xl">
-        <h2 class="mb-6 text-3xl font-semibold text-[var(--color-primaryBlue)]">Applications & Use Cases</h2>
-        <p class="mb-4 text-[var(--color-gray)]">
-          Our mechanical calibration services are essential for pharmaceutical companies involved in manufacturing,
-          quality control, and medical device production. Accurate dimensional, speed, and acoustic measurements are
-          critical for ensuring process reliability and product quality.
-        </p>
-        <p class="text-[var(--color-gray)]">
-          Use cases include calibrating micrometers and calipers for precise component measurements, validating
-          tachometers for equipment speed monitoring, and ensuring sound level meters meet occupational safety standards
-          in pharmaceutical facilities. Our services support regulatory audits, process validation, and global market
-          compliance.
-        </p>
-      </div>
-    </section>
+    {/* Applications & Use Cases Section */}
+    <SubSection data={applications} , bgColor="bg-white" ariaLabel="applications" />
 
-    <!-- Why Choose Us Section -->
-    <section class="bg-[var(--color-primary-light)] px-4 py-12">
-      <div class="mx-auto max-w-6xl">
-        <h2 class="mb-6 text-3xl font-semibold text-[var(--color-primaryBlue)]">Why Choose Indivirtus Healthcare</h2>
-        <p class="mb-4 text-[var(--color-gray)]">
-          Our team of certified calibration experts and toxicologists brings extensive global regulatory experience to
-          every project. We deliver scientifically defensible results with rapid turnaround times, ensuring your
-          operations remain efficient and compliant.
-        </p>
-        <p class="text-[var(--color-gray)]">
-          At Indivirtus, we prioritize confidentiality and adhere to industry best practices, safeguarding your
-          sensitive data and equipment. Our commitment to precision, regulatory compliance, and customer satisfaction
-          makes us the trusted choice for mechanical calibration needs.
-        </p>
-      </div>
-    </section>
+    {/* Why Choose Us Section */}
+    <SubSection data={conclusion} , bgColor="bg-primary-light" ariaLabel="why-us" />
 
-    <!-- Call to Action Section -->
-    <section class="px-4 py-12">
-      <div class="mx-auto max-w-6xl">
-        <div
-          class="mb-12 rounded-lg border border-[var(--color-secondary)] bg-[var(--color-secondary-light)] p-6 text-center"
-        >
-          <h3 class="mb-4 text-xl font-semibold text-[var(--color-black)]">
-            Ready to Ensure Precision in Your GMP Operations?
-          </h3>
-          <p class="mb-4 text-[var(--color-gray)]">
-            Partner with Indivirtus for NABL-accredited mechanical calibration services tailored to your pharmaceutical
-            needs.
-          </p>
-          <BTN
-            btnLink="/contact-us"
-            btnClass="button bg-[var(--color-primaryBlue)] text-[var(--color-white)] hover:bg-[var(--color-primaryBlueLight)]"
-            btnText="Contact Us Today"
-            btnAria="Contact Indivirtus for mechanical calibration services"
-          />
-        </div>
-      </div>
-    </section>
+    {/* CTA Section */}
+    <CTASection cta={cta} />
 
     {/* FAQ Section */}
     <section class="maxwidth" aria-labelledby="faq-heading">

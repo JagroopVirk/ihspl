@@ -20,7 +20,7 @@ import { FaCheck } from 'react-icons/fa6';
             <div class="text-primary text-2xl" aria-hidden="true">
               <FaCheck />
             </div>
-            <p id={`item-heading-${index}`}>{item}</p>
+            <p id={`item-heading-${index}`} set:html={item} />
           </article>
         ))
       }

@@ -51,6 +51,86 @@ export default {
     alt: 'NABL-accredited pharmaceutical mass and volume calibration',
     caption: 'Precision calibration of analytical balances and pipettes in controlled environment',
   },
+  pageContent: {
+    hero: {
+      heading: 'Precision Mass & Volume Calibration for Pharmaceutical Compliance',
+      tagline:
+        'Ensure GMP-compliant operations with Indivirtus Healthcare’s NABL-accredited calibration services for weighing and volumetric instruments.',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., we deliver ISO/IEC 17025:2017 accredited mass and volume calibration with pharmaceutical-grade precision, ensuring your analytical balances, pipettes, and other critical devices meet global regulatory standards.',
+    },
+    overview: {
+      heading: 'Overview of Mass & Volume Calibration Services',
+      overviewCards: [
+        {
+          heading: 'What',
+          detail:
+            'Our NABL-accredited calibration services validate the accuracy of weighing instruments (0.1mg–30kg) and volumetric devices (0.1μL–100mL), including analytical balances, microbalances, pipettes, burettes, and certified weights.',
+        },
+        {
+          heading: 'Why',
+          detail:
+            'Precise calibration is vital for pharmaceutical operations to ensure accurate dosing, formulation, and quality control, while meeting stringent GMP and pharmacopeia standards.',
+        },
+        {
+          heading: 'Role',
+          detail:
+            'We support pharmaceutical companies by ensuring measurement accuracy, regulatory compliance, and audit readiness, enabling seamless operations and high-quality outputs.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach',
+      detail: [
+        'At Indivirtus, we combine cutting-edge automated gravimetric systems with NIST-traceable reference standards to deliver unparalleled precision (up to 0.001mg for balances, ±0.1% for volumetric devices). Our team of certified professionals meticulously calibrates your instruments, recording environmental conditions and providing comprehensive documentation for FDA and EMA audits.',
+        'We tailor our calibration services to your specific needs, ensuring that your weighing and volumetric instruments perform reliably in critical pharmaceutical processes. Our commitment to accuracy and compliance helps you maintain product integrity and regulatory confidence.',
+      ],
+    },
+    deliverables: {
+      heading: 'Service Deliverables',
+      itemList: [
+        '<strong>NABL-accredited Calibration Certificate:</strong> Official certification ensuring compliance with ISO/IEC 17025:2017 standards.',
+        '<strong>Measurement Uncertainty Analysis Report:</strong> Detailed analysis to quantify measurement reliability and accuracy.',
+        '<strong>As-Found/As-Left Data with Compliance Statement:</strong> Comprehensive report comparing pre- and post-calibration measurements with compliance details.',
+        '<strong>Traceability Documentation to National Standards:</strong> Documentation linking measurements to NIST standards for global recognition.',
+        '<strong>Recommended Calibration Interval Based on Usage:</strong> Tailored guidance to maintain instrument accuracy and compliance.',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance & Guidelines',
+      detail: [
+        'Our mass and volume calibration services adhere to the highest global standards, ensuring your instruments meet regulatory requirements for pharmaceutical operations. We comply with:',
+      ],
+      itemList: [
+        'ISO/IEC 17025:2017: International standard for calibration and testing laboratories.',
+        'NABL (ISO 17025 compliant): Accreditation for technical competence and reliability.',
+        'USP General Chapters <41> & <1251>: U.S. Pharmacopeia standards for balances and weighing processes.',
+        'EU GMP Annex 11: European guidelines for computerized systems in GMP environments.',
+        '21 CFR Part 11: FDA regulations for electronic records and signatures.',
+        'OIML R111: International standards for weights and measures.',
+      ],
+    },
+    applications: {
+      heading: 'Applications & Use Cases',
+      detail: [
+        'Our calibration services are designed for pharmaceutical companies engaged in drug development, manufacturing, and quality assurance. Accurate weighing and volumetric measurements are critical for precise dosing, formulation, and quality control processes.',
+        'Use cases include calibrating analytical balances for active pharmaceutical ingredient (API) measurements, validating pipettes for precise liquid handling in labs, and ensuring certified weights meet OIML standards for quality control. Our services are essential for regulatory audits, new product launches, and maintaining compliance in global markets.',
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus Healthcare',
+      detail: [
+        'Our team of certified calibration experts and toxicologists brings extensive global regulatory experience to every project. We deliver scientifically defensible results with rapid turnaround times, ensuring your operations remain efficient and compliant.',
+        'At Indivirtus, we prioritize confidentiality and adhere to industry best practices, safeguarding your sensitive data and equipment. Our commitment to precision, regulatory compliance, and customer satisfaction makes us the trusted choice for pharmaceutical calibration needs.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Achieve Precision in Your Operations?',
+      tagline:
+        'Partner with Indivirtus for NABL-accredited mass and volume calibration services tailored to your pharmaceutical needs.',
+      aria: 'Contact Indivirtus for mass and volume calibration services',
+    },
+  },
   gtm: {
     eventCategory: 'Pharma Metrology Services',
     eventAction: 'View Mass & Volume Calibration',

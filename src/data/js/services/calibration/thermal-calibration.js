@@ -51,6 +51,86 @@ export default {
     alt: 'NABL-accredited thermal calibration for pharmaceutical equipment',
     caption: 'Precision calibration of temperature sensors and stability chambers in controlled environment',
   },
+  pageContent: {
+    hero: {
+      heading: 'Precision Thermal Calibration for GMP-Critical Environments',
+      tagline:
+        'Ensure compliance and accuracy with Indivirtus Healthcare’s NABL-accredited temperature and humidity calibration services.',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., we provide ISO/IEC 17025:2017 accredited thermal calibration for temperature and humidity instruments, delivering pharmaceutical-grade precision for critical applications like stability chambers and cleanrooms.',
+    },
+    overview: {
+      heading: 'Overview of Thermal Calibration Services',
+      overviewCards: [
+        {
+          heading: 'What',
+          detail:
+            'Our NABL-accredited thermal calibration services validate temperature sensors (-80°C to 1200°C), IR thermometers, humidity sensors (±0.8% RH), stability chambers, autoclaves, and cleanroom monitoring systems with high precision.',
+        },
+        {
+          heading: 'Why',
+          detail:
+            'Accurate temperature and humidity control is essential for pharmaceutical processes, ensuring product stability, safety, and compliance with stringent GMP and pharmacopeia standards.',
+        },
+        {
+          heading: 'Role',
+          detail:
+            'We help pharmaceutical companies maintain regulatory compliance, ensure product integrity, and achieve audit readiness with traceable, high-precision calibration services.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach',
+      detail: [
+        'At Indivirtus, we use SPRT primary standards, dry-block calibrators, and humidity generators traceable to NPL/NIST to deliver exceptional accuracy (RTDs: ±0.05°C, thermocouples: ±0.1°C, RH sensors: ±0.8%). Our team of certified professionals performs stability analysis and uniformity mapping to ensure your instruments meet the highest industry standards.',
+        'We customize our calibration services to your specific needs, whether for autoclaves, stability chambers, or cleanroom systems. Our comprehensive documentation supports FDA and EMA audits, giving you confidence in your compliance and operational reliability.',
+      ],
+    },
+    deliverables: {
+      heading: 'Service Deliverables',
+      itemList: [
+        '<strong>NABL-accredited Calibration Certificate:</strong> Official certification ensuring compliance with ISO/IEC 17025:2017 standards.',
+        '<strong>Measurement Uncertainty Analysis:</strong> Detailed analysis to quantify measurement reliability and accuracy.',
+        '<strong>As-Found/As-Left Compliance Data:</strong> Comprehensive report comparing pre- and post-calibration measurements with compliance details.',
+        '<strong>Temperature Uniformity Mapping Report:</strong> Detailed report assessing temperature consistency across chambers or environments.',
+        '<strong>Sensor Performance Evaluation:</strong> In-depth evaluation of sensor accuracy and reliability for optimal performance.',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance & Guidelines',
+      detail: [
+        'Our thermal calibration services adhere to stringent global standards, ensuring your temperature and humidity instruments meet regulatory requirements for GMP-critical applications.',
+      ],
+      itemList: [
+        'ISO/IEC 17025:2017: International standard for calibration and testing laboratories.',
+        'NABL Accreditation: Ensures technical competence and reliability in calibration.',
+        'USP <660> Containers: Standards for pharmaceutical container performance.',
+        'EP 2.2.12 Temperature: European Pharmacopoeia guidelines for temperature measurement.',
+        '21 CFR Part 11: FDA regulations for electronic records and signatures.',
+        'EU GMP Annex 15: European guidelines for qualification and validation.',
+      ],
+    },
+    applications: {
+      heading: 'Applications & Use Cases',
+      detail: [
+        'Our thermal calibration services are vital for pharmaceutical companies involved in drug development, manufacturing, and storage. Accurate temperature and humidity control is critical for maintaining product stability and quality in GMP-critical environments.',
+        'Use cases include calibrating sensors for stability chambers to ensure consistent storage conditions, validating autoclaves for sterilization processes, and monitoring cleanroom environments for compliance. Our services support regulatory audits, product launches, and global market compliance.',
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus Healthcare',
+      detail: [
+        'Our team of certified calibration experts and toxicologists brings extensive global regulatory experience to every project. We deliver scientifically defensible results with rapid turnaround times, ensuring your operations remain efficient and compliant.',
+        'At Indivirtus, we prioritize confidentiality and adhere to industry best practices, safeguarding your sensitive data and equipment. Our commitment to precision, regulatory compliance, and customer satisfaction makes us the trusted choice for thermal calibration needs.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Ensure GMP-Compliant Environments?',
+      tagline:
+        'Partner with Indivirtus for NABL-accredited thermal calibration services tailored to your pharmaceutical needs.',
+      aria: 'Contact Indivirtus for thermal calibration services',
+    },
+  },
   gtm: {
     eventCategory: 'Pharma Metrology Services',
     eventAction: 'View Thermal Calibration',
