@@ -49,81 +49,80 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'End-to-End Environmental Monitoring for Pharmaceutical Cleanrooms',
-      tagline: 'Robust Contamination Control for Compliance and Quality',
+      heading: "Environmental Monitoring for <span class='halfHeading'>Cleanroom Excellence</span>",
+      tagline: 'Ensure Compliance and Quality with Robust Contamination Control',
       detail:
-        'At Indivirtus Healthcare Services, our Environmental Monitoring (EM) program ensures your pharmaceutical and biotech cleanrooms maintain a state of control. From routine monitoring to comprehensive contamination control strategies, we deliver scientifically rigorous solutions aligned with global regulatory standards.',
+        'At Indivirtus Healthcare Services, our Environmental Monitoring (EM) services ensure pharmaceutical and biotech cleanrooms maintain a <strong>state of control</strong>. Through advanced sampling, real-time analytics, and comprehensive contamination control strategies, we deliver <strong>scientifically rigorous</strong> solutions to safeguard product integrity and achieve global regulatory compliance.',
     },
     overview: {
-      heading: 'Why Environmental Monitoring is Essential',
+      heading: "Mastering Cleanroom <span class='halfHeading'>Environmental Monitoring</span>",
       overviewCards: [
         {
           heading: 'What is Environmental Monitoring?',
           detail:
-            'Our Environmental Monitoring service provides risk-based strategies to detect and control contamination in pharmaceutical cleanrooms. Using advanced sampling and analytics, we ensure compliance with stringent standards and safeguard product quality.',
+            'Our Environmental Monitoring service provides <strong>risk-based strategies</strong> to detect and control contamination in pharmaceutical cleanrooms. Using cutting-edge sampling techniques and advanced analytics, we ensure compliance with stringent standards, protecting <strong>product quality</strong> and patient safety.',
         },
         {
-          heading: 'Why It’s Critical',
+          heading: 'Why is it Critical?',
           detail:
-            'Effective environmental monitoring prevents contamination risks that could compromise product safety and regulatory compliance. Our services help maintain cleanroom integrity, protect patients, and ensure audit readiness.',
+            'Effective environmental monitoring mitigates <strong>contamination risks</strong> that could compromise product safety and regulatory compliance. Our services maintain cleanroom integrity, ensure patient safety, and prepare your facility for <strong>audit readiness</strong>.',
         },
         {
           heading: 'Our Role in Your Compliance',
           detail:
-            'Indivirtus partners with you to design and implement tailored EM programs. With expertise in global regulations and advanced data analytics, we provide actionable insights to keep your facility compliant and optimized.',
+            'Indivirtus Healthcare Services partners with you to design and implement <strong>tailored EM programs</strong>. Leveraging global regulatory expertise and advanced data analytics, we deliver actionable insights to keep your cleanroom operations compliant and optimized.',
         },
       ],
     },
     approach: {
-      heading: 'Our Expert Approach to Environmental Monitoring',
+      heading: "Our Expert <span class='halfHeading'>Monitoring Approach</span>",
       detail: [
-        'At Indivirtus, we design risk-based environmental monitoring programs aligned with EU GMP Annex 1 (2022) Contamination Control Strategy requirements. Our approach includes real-time non-viable particle monitoring with statistical process control (SPC) analysis to detect trends early. We perform viable air sampling using active (impaction) and passive (settle plates) methods, alongside surface monitoring with contact plates, swabs, and ATP bioluminescence for cleaning verification.',
-        'For aseptic processing areas, we implement enhanced monitoring with frequent sampling and rapid microbial methods (RMM) to ensure sterility. Our team conducts personnel monitoring through glove and gown sampling to assess human-related contamination risks. We provide comprehensive data analytics, including trend reports, alert/action limit analysis, and contamination investigation support with root cause analysis, ensuring your facility remains in a state of control.',
+        'At Indivirtus Healthcare Services, we craft <strong>risk-based environmental monitoring programs</strong> aligned with EU GMP Annex 1 (2022) Contamination Control Strategy requirements. Our approach incorporates real-time non-viable particle monitoring with <strong>statistical process control (SPC) analysis</strong> to detect trends proactively. We conduct viable air sampling using active (impaction) and passive (settle plates) methods, complemented by surface monitoring with contact plates, swabs, and ATP bioluminescence for cleaning verification.',
+        'For aseptic processing areas, we deploy enhanced monitoring with frequent sampling and <strong>rapid microbial methods (RMM)</strong> to ensure sterility. Our personnel monitoring, including glove and gown sampling, assesses human-related contamination risks. We provide comprehensive data analytics, including trend reports, alert/action limit analysis, and <strong>root cause analysis</strong> for contamination investigations, ensuring your facility remains compliant and in control.',
       ],
     },
     deliverables: {
-      heading: 'Comprehensive Deliverables for Cleanroom Control',
+      heading: "Environmental Monitoring <span class='halfHeading'>Deliverables</span>",
       itemList: [
-        'Risk-based EM program design documentation',
-        'Comprehensive monitoring reports with SPC trend charts',
-        'ISO 14644-1 classification certification package',
-        'Microbial identification reports (speciation upon request)',
-        'Contamination investigation support with root cause analysis',
-        'Data visualization dashboards for EM trends',
-        'Regulatory gap assessment against Annex 1 CCS requirements',
+        '<strong>Risk-Based EM Program Design Documentation</strong>: A strategic plan tailored to your cleanroom requirements.',
+        '<strong>Comprehensive Monitoring Reports</strong>: Detailed reports with SPC trend charts for actionable insights.',
+        '<strong>ISO 14644-1 Classification Certification Package</strong>: Official documentation verifying cleanroom classification.',
+        '<strong>Microbial Identification Reports</strong>: Speciation data (upon request) for precise contamination analysis.',
+        '<strong>Contamination Investigation Support</strong>: Root cause analysis to resolve contamination issues effectively.',
+        '<strong>Data Visualization Dashboards</strong>: Real-time dashboards for monitoring EM trends and performance.',
+        '<strong>Regulatory Gap Assessment</strong>: Analysis against Annex 1 CCS requirements to ensure compliance.',
       ],
     },
     compliance: {
-      heading: 'Regulatory Compliance for Global Standards',
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our Environmental Monitoring service adheres to the latest global regulatory guidelines, ensuring your cleanroom operations are compliant and audit-ready. By aligning with stringent standards, we provide confidence in your contamination control strategies.',
+        'Our Environmental Monitoring services adhere to the highest global regulatory standards, ensuring your cleanroom operations are <strong>audit-ready</strong> and compliant. By aligning with industry-leading guidelines, we provide scientifically defensible documentation and processes that withstand scrutiny from regulatory bodies, ensuring confidence in your contamination control strategy.',
       ],
       itemList: [
-        'EU GMP Annex 1 (2022) for Contamination Control Strategy',
-        'ISO 14644-1:2015 for cleanroom classification',
-        'ISO 14644-2:2015 for monitoring requirements',
-        'US FDA Sterile Drug Products Guidance (2004)',
-        'PIC/S PI 007-6 for environmental monitoring',
-        'USP <1116> for microbiological control and monitoring',
+        '<strong>EU GMP Annex 1 (2022)</strong>: Compliance with contamination control strategy requirements for sterile manufacturing.',
+        '<strong>ISO 14644-1:2015</strong>: Adherence to international cleanroom classification standards.',
+        '<strong>ISO 14644-2:2015</strong>: Conformance with cleanroom monitoring requirements.',
+        '<strong>US FDA Sterile Drug Products Guidance (2004)</strong>: Alignment with FDA standards for sterile production.',
+        '<strong>PIC/S PI 007-6</strong>: Compliance with environmental monitoring recommendations.',
+        '<strong>USP <1116></strong>: Adherence to standards for microbiological control and monitoring.',
       ],
     },
     applications: {
-      heading: 'Applications and Use Cases',
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our Environmental Monitoring service is vital for pharmaceutical and biotech facilities operating cleanrooms for sterile or non-sterile production. It’s essential for routine monitoring, cleanroom classification, contamination investigations, or compliance with aseptic processing requirements. Use cases include validating new cleanrooms, supporting sterile drug manufacturing, or preparing for regulatory audits.',
+        'Our Environmental Monitoring services are essential for pharmaceutical and biotech facilities operating cleanrooms for <strong>sterile or non-sterile production</strong>. Whether validating new cleanrooms, conducting routine monitoring, or preparing for regulatory inspections, our services ensure compliance and performance. Key use cases include supporting <strong>sterile drug manufacturing</strong>, performing cleanroom classification, investigating contamination events, and ensuring compliance with aseptic processing requirements for FDA, EMA, or other regulatory audits.',
       ],
     },
     conclusion: {
-      heading: 'Why Choose Indivirtus for Environmental Monitoring?',
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Indivirtus Healthcare Services combines certified expertise, advanced monitoring technologies, and global regulatory knowledge to deliver robust environmental monitoring solutions. Our team of specialists ensures scientifically defensible results, rapid turnaround times, and strict confidentiality to protect your proprietary data.',
-        'With tailored programs and actionable analytics, we help you maintain cleanroom integrity and achieve compliance with confidence. Partner with Indivirtus to elevate your contamination control strategy and ensure operational excellence.',
+        'Indivirtus Healthcare Services combines certified expertise, cutting-edge monitoring technologies, and global regulatory knowledge to deliver unmatched Environmental Monitoring solutions. Our team ensures <strong>scientifically defensible results</strong>, rapid turnaround times, and strict confidentiality to protect your proprietary data. With tailored programs and <strong>actionable analytics</strong>, we help you maintain cleanroom integrity, achieve regulatory compliance, and ensure <strong>operational excellence</strong> in your pharmaceutical operations.',
       ],
     },
     cta: {
-      heading: 'Ready to Optimize Your Cleanroom Monitoring?',
-      tagline: 'Partner with Indivirtus for Comprehensive Contamination Control',
-      aria: 'Contact Indivirtus Healthcare Services to discuss your environmental monitoring needs',
+      heading: "Ready to Strengthen Your <span class='halfHeading'>Cleanroom Monitoring?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Comprehensive Contamination Control',
+      aria: 'Contact us to discuss your environmental monitoring needs',
     },
   },
   gtm: {

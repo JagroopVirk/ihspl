@@ -49,82 +49,80 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Precision Surrogate Powder Testing for Pharmaceutical Safety',
-      tagline: 'Ensuring Containment Integrity with Advanced Analytical Solutions',
+      heading: "Surrogate Powder Testing for <span class='halfHeading'>Pharmaceutical Safety</span>",
+      tagline: 'Ensure Containment Integrity with Precision Analytical Solutions',
       detail:
-        'At Indivirtus Healthcare Services, our Surrogate Powder Testing service delivers rigorous, scientifically validated assessments of pharmaceutical containment systems. Using cutting-edge detection methods and engineered surrogate materials, we help you safeguard your workforce, products, and compliance with global standards.',
+        'At Indivirtus Healthcare Services, our Surrogate Powder Testing services deliver <strong>scientifically validated assessments</strong> of pharmaceutical containment systems. Using advanced detection methods and engineered surrogate materials, we safeguard your <strong>workforce and products</strong> while ensuring compliance with global regulatory standards.',
     },
     overview: {
-      heading: 'Why Surrogate Powder Testing Matters',
+      heading: "Mastering Containment <span class='halfHeading'>Validation</span>",
       overviewCards: [
         {
           heading: 'What is Surrogate Powder Testing?',
           detail:
-            'Surrogate Powder Testing is a specialized service to evaluate the integrity of containment systems used in handling potent pharmaceutical compounds. By simulating real-world conditions with safe, engineered materials, we quantify containment performance to ensure worker safety and product purity.',
+            'Surrogate Powder Testing evaluates the integrity of containment systems for handling potent pharmaceutical compounds. By simulating real-world conditions with <strong>safe, engineered materials</strong>, we quantify containment performance to ensure worker safety and product purity.',
         },
         {
-          heading: 'Why It’s Critical',
+          heading: 'Why is it Critical?',
           detail:
-            'Potent compounds, including APIs and biologics, pose significant risks if containment fails. Our testing identifies vulnerabilities, validates system performance, and ensures compliance with stringent regulatory standards, minimizing exposure risks and protecting your operations.',
+            'Potent compounds, including APIs and biologics, pose significant risks if containment fails. Our testing identifies <strong>vulnerabilities</strong>, validates system performance, and ensures compliance with stringent regulatory standards, minimizing exposure risks and protecting operations.',
         },
         {
           heading: 'Our Role in Your Success',
           detail:
-            'As a trusted CRO, Indivirtus combines advanced analytical techniques, regulatory expertise, and customized testing protocols to deliver actionable insights. We empower your team to maintain safe, compliant, and efficient pharmaceutical manufacturing processes.',
+            'Indivirtus Healthcare Services combines advanced analytical techniques with regulatory expertise to deliver <strong>tailored testing protocols</strong>. As a trusted CRO, we empower your team with actionable insights to maintain safe, compliant, and efficient pharmaceutical manufacturing processes.',
         },
       ],
     },
     approach: {
-      heading: 'Our Expert Approach to Containment Validation',
+      heading: "Our Expert <span class='halfHeading'>Testing Approach</span>",
       detail: [
-        'At Indivirtus, we take a meticulous, science-driven approach to validate pharmaceutical containment systems. Our process begins with a risk-based test protocol tailored to your specific equipment and compounds. We use fluorescent tracers like sodium fluorescein for visual breach detection, alongside engineered lactose/naproxen blends that mimic the particle characteristics of your target APIs. For biologics, we deploy specialized surrogate APIs to ensure relevance.',
-        'Our multi-modal testing includes real-time airborne particle monitoring paired with synchronized video recording for precise contamination tracking. We employ 3D contamination mapping with UV-visible tracers and quantitative analysis via HPLC, achieving detection limits as low as ng/cm². For cytotoxic applications, our ultra-sensitive LC-MS/MS analysis ensures unparalleled accuracy. All tests incorporate worst-case scenarios—such as equipment failures or improper PPE use—to stress-test your systems and confirm robustness.',
-        'Every study adheres to ISPE SMEPAC guidelines, with results benchmarked against Occupational Exposure Limits (OELs). Our team provides clear, actionable recommendations for engineering controls to achieve ALARP conditions, ensuring your systems are audit-ready and optimized for safety.',
+        'At Indivirtus Healthcare Services, we adopt a <strong>meticulous, science-driven approach</strong> to validate pharmaceutical containment systems. Our process begins with a risk-based test protocol tailored to your specific equipment and compounds. We use fluorescent tracers like sodium fluorescein for <strong>visual breach detection</strong>, alongside engineered lactose/naproxen blends that mimic the particle characteristics of your target APIs. For biologics, we deploy specialized surrogate APIs to ensure relevance.',
+        'Our multi-modal testing includes real-time airborne particle monitoring paired with <strong>synchronized video recording</strong> for precise contamination tracking. We employ 3D contamination mapping with UV-visible tracers and quantitative analysis via <strong>HPLC</strong>, achieving detection limits as low as ng/cm². For cytotoxic applications, our ultra-sensitive <strong>LC-MS/MS analysis</strong> ensures unparalleled accuracy. All tests incorporate worst-case scenarios—such as equipment failures or improper PPE use—to stress-test systems and confirm <strong>robustness</strong>, with results benchmarked against Occupational Exposure Limits (OELs) and aligned with ISPE SMEPAC guidelines.',
       ],
     },
     deliverables: {
-      heading: 'Comprehensive Deliverables for Actionable Insights',
+      heading: "Surrogate Powder Testing <span class='halfHeading'>Deliverables</span>",
       itemList: [
-        'Risk-based test protocol with clear acceptance criteria',
-        'High-resolution contamination heat maps for visual analysis',
-        'Time-synchronized video and particle data for precise diagnostics',
-        'Quantitative containment performance metrics for validation',
-        'Comparative analysis against OEB (Occupational Exposure Band) requirements',
-        'Engineering control improvement roadmap to enhance safety',
-        'Regulatory-ready documentation package for seamless compliance',
+        '<strong>Risk-Based Test Protocol</strong>: Clear acceptance criteria tailored to your systems and compounds.',
+        '<strong>High-Resolution Contamination Heat Maps</strong>: Visual analysis for identifying exposure risks.',
+        '<strong>Time-Synchronized Video and Particle Data</strong>: Precise diagnostics for contamination tracking.',
+        '<strong>Quantitative Containment Performance Metrics</strong>: Data-driven validation of system performance.',
+        '<strong>Comparative Analysis Against OEB Requirements</strong>: Evaluation against Occupational Exposure Band standards.',
+        '<strong>Engineering Control Improvement Roadmap</strong>: Prioritized actions to achieve ALARP conditions.',
+        '<strong>Regulatory-Ready Documentation Package</strong>: Comprehensive documentation for seamless compliance.',
       ],
     },
     compliance: {
-      heading: 'Regulatory Compliance for Global Standards',
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our Surrogate Powder Testing service is built on a foundation of strict adherence to global regulatory guidelines. By aligning with industry standards, we ensure your containment systems are audit-ready and compliant with international markets. Our approach integrates the latest regulatory frameworks to provide confidence in your operations.',
+        'Our Surrogate Powder Testing services adhere to stringent global regulatory guidelines, ensuring your containment systems are <strong>audit-ready</strong> and compliant with international standards. By aligning with industry-leading frameworks, we provide scientifically defensible documentation to support regulatory scrutiny and ensure operational confidence.',
       ],
       itemList: [
-        'ISPE SMEPAC Guidelines (2021) for standardized containment testing',
-        'EU GMP Annex 1 (2022) for robust contamination control strategies',
-        'OSHA 29 CFR 1910.1000 for air contaminant safety',
-        'NIOSH Hazardous Drug Handling Guidelines for worker protection',
-        'EMA Guideline on Setting Health Based Exposure Limits',
-        'ISO 14644-7 for cleanroom isolator performance',
+        '<strong>ISPE SMEPAC Guidelines (2021)</strong>: Compliance with standardized containment testing protocols.',
+        '<strong>EU GMP Annex 1 (2022)</strong>: Alignment with contamination control strategy requirements.',
+        '<strong>OSHA 29 CFR 1910.1000</strong>: Adherence to U.S. standards for air contaminant safety.',
+        '<strong>NIOSH Hazardous Drug Handling Guidelines</strong>: Conformance with worker protection standards.',
+        '<strong>EMA Guideline on Health-Based Exposure Limits</strong>: Compliance with European exposure limit standards.',
+        '<strong>ISO 14644-7</strong>: Adherence to cleanroom isolator performance standards.',
       ],
     },
     applications: {
-      heading: 'Applications and Use Cases',
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our Surrogate Powder Testing service is essential for pharmaceutical manufacturers handling potent compounds, APIs, or biologics. It’s critical during system commissioning, routine validation, or troubleshooting containment issues. Use cases include validating glovebox isolators, assessing transfer systems, or ensuring safety in cytotoxic drug production. This service is ideal when you need to confirm compliance, optimize containment performance, or prepare for regulatory audits.',
+        'Our Surrogate Powder Testing services are essential for pharmaceutical manufacturers handling <strong>potent compounds</strong>, APIs, or biologics. Whether commissioning new systems, conducting routine validation, or troubleshooting containment issues, our services ensure safety and compliance. Key use cases include validating <strong>glovebox isolators</strong>, assessing transfer systems, and ensuring safety in cytotoxic drug production, as well as preparing for regulatory audits by agencies like the FDA or EMA.',
       ],
     },
     conclusion: {
-      heading: 'Why Choose Indivirtus Healthcare Services?',
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'At Indivirtus, our team of certified toxicologists and regulatory experts brings decades of global experience to every project. We prioritize scientific defensibility, delivering results that withstand scrutiny from regulators and stakeholders. Our rapid turnaround times ensure your operations stay on track, while our commitment to confidentiality and industry best practices protects your proprietary data.',
-        'With a client-centric approach, we tailor our testing to your unique needs, providing clear, actionable insights that drive safety and compliance. Partner with Indivirtus to elevate your containment strategies and achieve operational excellence.',
+        'Indivirtus Healthcare Services combines the expertise of certified toxicologists and regulatory specialists with advanced analytical capabilities to deliver unmatched Surrogate Powder Testing solutions. Our <strong>scientifically defensible</strong> approach ensures robust results, rapid turnaround times, and strict confidentiality to protect your proprietary data. With tailored testing protocols and <strong>actionable insights</strong>, we help you optimize containment performance, achieve regulatory compliance, and ensure <strong>operational excellence</strong> in your pharmaceutical operations.',
       ],
     },
     cta: {
-      heading: 'Ready to Validate Your Containment Systems?',
-      tagline: 'Partner with Indivirtus for Scientifically Robust Testing and Compliance',
-      aria: 'Contact Indivirtus Healthcare Services to discuss your surrogate powder testing needs',
+      heading: "Ready to Strengthen Your <span class='halfHeading'>Containment Systems?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Precision Testing Excellence',
+      aria: 'Contact us to discuss your surrogate powder testing needs',
     },
   },
   gtm: {

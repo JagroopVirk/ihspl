@@ -50,82 +50,81 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'End-to-End Isolator Qualification for Pharmaceutical Excellence',
-      tagline: 'Ensuring Compliance and Performance for Sterile and Potent Compound Processing',
+      heading: "Isolator Qualification for <span class='halfHeading'>Pharmaceutical Precision</span>",
+      tagline: 'Ensure Sterility and Safety with Expert Validation',
       detail:
-        'At Indivirtus Healthcare Services, our Isolator Qualification service provides comprehensive validation for pharmaceutical isolators, ensuring compliance with global standards for sterile processing and potent compound containment. From design review to performance validation, we deliver robust solutions for your critical operations.',
+        'At Indivirtus Healthcare Services, our Isolator Qualification services provide <strong>comprehensive validation</strong> for pharmaceutical isolators, ensuring compliance with global standards for <strong>sterile processing</strong> and potent compound containment. From design review to performance validation, we deliver robust solutions to safeguard product integrity and operator safety.',
     },
     overview: {
-      heading: 'Why Isolator Qualification is Essential',
+      heading: "Mastering Isolator <span class='halfHeading'>Qualification</span>",
       overviewCards: [
         {
           heading: 'What is Isolator Qualification?',
           detail:
-            'Our Isolator Qualification service validates pharmaceutical isolators for sterile processing and high-potency API containment. Through a lifecycle approach, we ensure compliance with stringent regulatory standards, optimizing performance and safety.',
+            'Isolator Qualification validates pharmaceutical isolators for <strong>sterile processing</strong> and high-potency API containment. Our lifecycle approach ensures compliance with stringent regulatory standards, optimizing performance and safety across critical operations.',
         },
         {
-          heading: 'Why It’s Critical',
+          heading: 'Why is it Critical?',
           detail:
-            'Isolators are vital for maintaining sterility and containing potent compounds. Proper qualification ensures product quality, operator safety, and regulatory compliance, minimizing risks of contamination or exposure in critical manufacturing processes.',
+            'Isolators are essential for maintaining <strong>sterility</strong> and containing potent compounds, protecting products, operators, and the environment. Proper qualification ensures product quality, <strong>operator safety</strong>, and regulatory compliance, minimizing risks of contamination or exposure.',
         },
         {
-          heading: 'Our Role in Your Success',
+          heading: 'Our Role in Your Compliance',
           detail:
-            'Indivirtus combines regulatory expertise and advanced validation techniques to deliver tailored isolator qualification solutions. We support your sterile and containment operations with comprehensive documentation and actionable insights.',
+            'Indivirtus Healthcare Services combines regulatory expertise with advanced validation techniques to deliver <strong>tailored isolator qualification</strong> solutions. We support your sterile and containment operations with comprehensive documentation and actionable insights for audit readiness.',
         },
       ],
     },
     approach: {
-      heading: 'Our Expert Approach to Isolator Qualification',
+      heading: "Our Expert <span class='halfHeading'>Qualification Approach</span>",
       detail: [
-        'At Indivirtus, we provide a lifecycle approach to isolator qualification, aligning with EU GMP Annex 1 (2022) and FDA requirements. Our process begins with a risk-based qualification master plan, followed by Design Qualification (DQ), Installation Qualification (IQ), Operational Qualification (OQ), and Performance Qualification (PQ). We conduct 3D airflow mapping using smoke studies to verify airflow patterns, certify HEPA/ULPA filters to ISO 14644-3 standards, and perform automated glove integrity testing with pressure decay methodology.',
-        'For sterilization, we validate Vaporized Hydrogen Peroxide (VHP) cycles using biological and chemical indicators. For potent compound containment, we perform surrogate testing with fluorescent tracers or API-specific surrogates to verify performance. For advanced applications like ATMP manufacturing, we offer isolator-robot interface qualification and closed system validation, ensuring robustness and compliance across all scenarios.',
+        'At Indivirtus Healthcare Services, we adopt a <strong>lifecycle approach</strong> to isolator qualification, aligned with EU GMP Annex 1 (2022) and FDA requirements. Our process begins with a risk-based qualification master plan, followed by Design Qualification (DQ), Installation Qualification (IQ), Operational Qualification (OQ), and Performance Qualification (PQ). We conduct <strong>3D airflow mapping</strong> using smoke studies to verify airflow patterns, certify HEPA/ULPA filters to ISO 14644-3 standards, and perform automated glove integrity testing with pressure decay methodology.',
+        'For sterilization, we validate <strong>Vaporized Hydrogen Peroxide (VHP) cycles</strong> using biological and chemical indicators. For potent compound containment, we perform surrogate testing with fluorescent tracers or API-specific surrogates to verify performance. For advanced applications like ATMP manufacturing, we offer isolator-robot interface qualification and closed system validation, ensuring <strong>robustness and compliance</strong> across all scenarios.',
       ],
     },
     deliverables: {
-      heading: 'Comprehensive Deliverables for Isolator Validation',
+      heading: "Isolator Qualification <span class='halfHeading'>Deliverables</span>",
       itemList: [
-        'Risk-based qualification master plan',
-        'Complete DQ/IQ/OQ/PQ documentation package',
-        '3D airflow visualization videos and reports',
-        'HEPA/ULPA filter certification with particle count data',
-        'Automated glove integrity test results with trend analysis',
-        'VHP cycle validation report with BI/CI data',
-        'Containment verification using surrogate testing (fluorescent or API-specific)',
-        'Periodic review and requalification protocol',
+        '<strong>Risk-Based Qualification Master Plan</strong>: A strategic roadmap for isolator validation.',
+        '<strong>Complete DQ/IQ/OQ/PQ Documentation Package</strong>: Comprehensive documentation for all qualification phases.',
+        '<strong>3D Airflow Visualization Videos and Reports</strong>: Detailed evidence of airflow patterns and performance.',
+        '<strong>HEPA/ULPA Filter Certification</strong>: Particle count data ensuring filter compliance with ISO standards.',
+        '<strong>Automated Glove Integrity Test Results</strong>: Trend analysis for glove integrity verification.',
+        '<strong>VHP Cycle Validation Report</strong>: BI/CI data confirming sterilization efficacy.',
+        '<strong>Containment Verification</strong>: Surrogate testing results using fluorescent or API-specific tracers.',
+        '<strong>Periodic Review and Requalification Protocol</strong>: Guidance for ongoing compliance and requalification.',
       ],
     },
     compliance: {
-      heading: 'Regulatory Compliance for Global Standards',
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our Isolator Qualification service adheres to the latest global regulatory guidelines, ensuring your isolators are compliant and audit-ready. By aligning with stringent standards, we provide confidence in your sterile and containment processes.',
+        'Our Isolator Qualification services adhere to the highest global regulatory standards, ensuring your isolators are <strong>audit-ready</strong> and compliant. By aligning with industry-leading guidelines, we provide scientifically defensible documentation and processes that withstand scrutiny from regulatory bodies, ensuring confidence in your sterile and containment processes.',
       ],
       itemList: [
-        'EU GMP Annex 1 (2022) for contamination control strategy',
-        'FDA Guidance for Industry: Sterile Drug Products (2004)',
-        'ISPE Good Practice Guide: Isolators (2nd Edition)',
-        'ISO 14644-7:2004 for cleanroom isolators',
-        'ISO 10648-2:1994 for containment enclosures',
-        'USP <1208> for sterility testing and isolator validation',
+        '<strong>EU GMP Annex 1 (2022)</strong>: Compliance with contamination control strategy requirements.',
+        '<strong>FDA Guidance for Industry: Sterile Drug Products (2004)</strong>: Adherence to FDA standards for sterile manufacturing.',
+        '<strong>ISPE Good Practice Guide: Isolators (2nd Edition)</strong>: Alignment with industry best practices for isolator validation.',
+        '<strong>ISO 14644-7:2004</strong>: Conformance with standards for cleanroom isolators.',
+        '<strong>ISO 10648-2:1994</strong>: Compliance with containment enclosure requirements.',
+        '<strong>USP <1208></strong>: Adherence to standards for sterility testing and isolator validation.',
       ],
     },
     applications: {
-      heading: 'Applications and Use Cases',
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our Isolator Qualification service is essential for pharmaceutical facilities using isolators for sterile processing or potent compound containment. It’s critical during system commissioning, routine requalification, or validation for ATMP manufacturing. Use cases include validating aseptic isolators for sterile drug production, ensuring containment for high-potency APIs, or supporting regulatory inspections.',
+        'Our Isolator Qualification services are essential for pharmaceutical facilities using isolators for <strong>sterile processing</strong> or potent compound containment. Whether commissioning new systems, conducting routine requalification, or supporting ATMP manufacturing, our services ensure compliance and performance. Key use cases include validating <strong>aseptic isolators</strong> for sterile drug production, ensuring containment for high-potency APIs, and preparing for regulatory inspections by agencies like the FDA or EMA.',
       ],
     },
     conclusion: {
-      heading: 'Why Choose Indivirtus for Isolator Qualification?',
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Indivirtus Healthcare Services brings unmatched expertise in isolator qualification, with a team of certified professionals and extensive regulatory knowledge. Our scientifically rigorous approach ensures defensible results, rapid turnaround times, and strict confidentiality to protect your proprietary data.',
-        'By delivering comprehensive documentation and tailored validation strategies, we help you achieve compliance and operational excellence. Partner with Indivirtus to ensure your isolators meet the highest standards for safety and performance.',
+        'Indivirtus Healthcare Services brings unmatched expertise in isolator qualification, with a team of certified professionals and extensive global regulatory knowledge. Our <strong>scientifically rigorous</strong> approach delivers defensible results, rapid turnaround times, and strict confidentiality to protect your proprietary data. With tailored validation strategies and comprehensive documentation, we help you achieve <strong>regulatory compliance</strong> and operational excellence, ensuring your isolators perform at the highest level.',
       ],
     },
     cta: {
-      heading: 'Ready to Validate Your Pharmaceutical Isolators?',
-      tagline: 'Partner with Indivirtus for Expert Qualification and Compliance',
-      aria: 'Contact Indivirtus Healthcare Services to discuss your isolator qualification needs',
+      heading: "Ready to Validate Your <span class='halfHeading'>Isolator Systems?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Precision Qualification Excellence',
+      aria: 'Contact us to discuss your isolator qualification needs',
     },
   },
   gtm: {
