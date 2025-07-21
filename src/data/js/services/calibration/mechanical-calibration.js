@@ -211,6 +211,54 @@ export default {
           text: 'Recommended intervals: • Critical dimensional tools: 6 months • Production tachometers: 12 months • Sound level meters: 12 months • Torque devices: 3-6 months (or per usage/risk assessment)—we provide customized schedules based on your usage patterns and quality requirements.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is NABL-accredited mechanical calibration for dimensional, speed, and acoustic instruments?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'NABL-accredited mechanical calibration ensures that dimensional, speed, and acoustic instruments meet precise measurement standards as per ISO/IEC 17025:2017. This is critical for GMP-compliant pharmaceutical operations to ensure accuracy, compliance, and product quality.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which instruments can Indivirtus calibrate for mechanical measurements?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We calibrate micrometers (0-300mm), calipers (0-1000mm), tachometers (10-100,000 RPM), sound level meters (30-130dB), and torque wrenches (0.1-300Nm) used in pharmaceutical and medical device manufacturing.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure regulatory compliance for mechanical calibration?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our calibration services comply with ISO/IEC 17025:2017, ISO 9001, ISO 13485, 21 CFR Part 820, and EU GMP Annex 11, ensuring your instruments are audit-ready for FDA, EMA, and other regulatory inspections.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are included with your mechanical calibration services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Each calibration includes a NABL-accredited certificate, measurement uncertainty analysis, as-found/as-left compliance data, traceability documentation to NPL/NIST, and recommended adjustment intervals based on usage patterns.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How often should dimensional, speed, and acoustic instruments be calibrated?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Calibration frequency depends on instrument usage, environmental conditions, and regulatory requirements. We provide tailored recommendations to maintain accuracy and compliance for your specific instruments.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is environmental compensation important for mechanical calibration?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Environmental compensation accounts for factors like temperature and humidity that can affect measurement accuracy, ensuring reliable results in GMP-compliant pharmaceutical operations.',
+        },
+      },
     ],
   },
   meta: {

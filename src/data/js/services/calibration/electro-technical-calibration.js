@@ -208,6 +208,46 @@ export default {
           text: 'We offer: • Standard: 3–5 business days • Priority: 48 hours (surcharge applies) • Emergency: 24-hour service (for critical equipment failure situations) with proper documentation maintained for all expedited services.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is NABL-accredited calibration, and why is it important?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'NABL-accredited calibration ensures that your equipment’s measurements are accurate and traceable to national and international standards, as per ISO/IEC 17025:2017. This is critical for pharmaceutical companies to meet regulatory requirements, ensure product safety, and maintain audit readiness.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure traceability in calibration?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We use certified reference standards traceable to NIST, providing a detailed traceability matrix with each calibration. This ensures that your equipment measurements are globally recognized and compliant with regulatory standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What types of equipment can you calibrate?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services cover a wide range of pharmaceutical equipment, including laboratory instruments, production machinery, and quality control devices, with parameters like AC/DC current, voltage, resistance, inductance, and time/frequency.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How often should equipment be calibrated?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Calibration intervals depend on equipment usage, manufacturer recommendations, and regulatory requirements. We provide tailored recommendations for optimal calibration intervals based on your specific equipment and processes.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does your calibration service support regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our calibration services adhere to ISO/IEC 17025:2017, 21 CFR Part 11, EU GMP Annex 11, and WHO TRS 986, ensuring your equipment meets global regulatory standards and is audit-ready.',
+        },
+      },
     ],
   },
   meta: {

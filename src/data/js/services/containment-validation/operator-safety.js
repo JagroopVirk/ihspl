@@ -53,6 +53,85 @@ export default {
     alt: 'Operator exposure monitoring in high-potency pharmaceutical manufacturing',
     caption: 'Industrial hygienist conducting personal air sampling in API production area',
   },
+  pageContent: {
+    hero: {
+      heading: 'Advanced Operator Safety Testing for Pharmaceutical Facilities',
+      tagline: 'Protecting Your Workforce with Rigorous Exposure Assessments',
+      detail:
+        'At Indivirtus Healthcare Services, our Operator Safety Testing service ensures the safety of personnel handling hazardous pharmaceutical substances. Through cutting-edge monitoring and analytical methods, we deliver comprehensive evaluations and actionable solutions to minimize exposure risks and ensure regulatory compliance.',
+    },
+    overview: {
+      heading: 'Why Operator Safety Testing is Critical',
+      overviewCards: [
+        {
+          heading: 'What is Operator Safety Testing?',
+          detail:
+            'Our Operator Safety Testing service evaluates the effectiveness of containment systems and operator practices in pharmaceutical facilities. Using advanced monitoring and analytical techniques, we assess exposure risks to ensure personnel safety and compliance with global standards.',
+        },
+        {
+          heading: 'Why It’s Essential',
+          detail:
+            'Handling potent compounds poses significant health risks to operators. Our testing identifies exposure pathways, validates containment measures, and ensures compliance with occupational safety standards, protecting your workforce and operations.',
+        },
+        {
+          heading: 'Our Role in Your Safety Strategy',
+          detail:
+            'Indivirtus combines scientific rigor and regulatory expertise to deliver tailored safety assessments. From real-time exposure monitoring to comprehensive containment studies, we provide actionable insights to enhance operator safety and regulatory readiness.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach to Operator Safety',
+      detail: [
+        'At Indivirtus, we prioritize the safety of your personnel with a multi-modal approach to operator safety evaluations. Our process includes real-time personal exposure monitoring using direct-reading instruments (DRI) and full-shift breathing zone sampling compliant with OSHA methods. We employ fluorescent tracer surrogate studies for visual contamination mapping and sensitive wipe sampling with LC-MS/MS analysis for potent compounds, ensuring comprehensive risk assessment across inhalation, dermal, and ingestion pathways.',
+        'For sterile operations, we include aseptic technique evaluations and gowning validation to ensure compliance with stringent standards. All assessments are benchmarked against Occupational Exposure Limits (OELs), Acceptable Daily Exposures (ADEs), and Occupational Exposure Band (OEB) classifications. Our studies align with ISPE Risk-MaPP guidelines and culminate in actionable containment improvement plans designed to achieve ALARP (As Low As Reasonably Practicable) conditions, ensuring both safety and compliance.',
+      ],
+    },
+    deliverables: {
+      heading: 'Comprehensive Deliverables for Operator Safety',
+      itemList: [
+        'Detailed exposure assessment report with risk categorization',
+        'Contamination heat maps from fluorescent tracer studies',
+        'Analytical reports for wipe samples (HPLC/LC-MS/MS)',
+        'Video documentation of operator handling techniques',
+        'Containment effectiveness scorecard with gap analysis',
+        'ALARP improvement roadmap with prioritized actions',
+        'Regulatory-ready documentation package for audits',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance for Operator Safety',
+      detail: [
+        'Our Operator Safety Testing service adheres to global regulatory standards, ensuring your facility is prepared for audits and compliant with international safety requirements. By aligning with the latest guidelines, we provide confidence in your safety protocols and documentation.',
+      ],
+      itemList: [
+        'ISPE Risk-Based Manufacture of Pharma Products (Risk-MaPP 2nd Ed)',
+        'EU GMP Annex 1 (2022) for personnel monitoring requirements',
+        'OSHA 29 CFR 1910.1000 for air contaminants standards',
+        'NIOSH Hazardous Drug Handling Guidelines for worker protection',
+        'EMA Guideline on Setting Health Based Exposure Limits',
+        'USP <797> for sterile compounding and operator safety',
+      ],
+    },
+    applications: {
+      heading: 'Applications and Use Cases',
+      detail: [
+        'Our Operator Safety Testing service is vital for pharmaceutical facilities handling potent compounds, biologics, or sterile products. It’s ideal for routine exposure monitoring, validating containment systems, or ensuring compliance during regulatory inspections. Use cases include assessing operator safety in cytotoxic drug production, evaluating gowning procedures in sterile environments, or addressing exposure risks in high-potency API manufacturing.',
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus for Operator Safety Testing?',
+      detail: [
+        'Indivirtus Healthcare Services combines certified expertise, advanced analytical methods, and global regulatory knowledge to deliver unmatched operator safety evaluations. Our team of toxicologists and safety specialists ensures scientifically defensible results, rapid turnaround times, and strict confidentiality to protect your proprietary data.',
+        'By providing actionable insights and tailored improvement plans, we help you safeguard your workforce and maintain compliance with industry best practices. Partner with Indivirtus to elevate your safety standards and protect what matters most—your people.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Enhance Operator Safety?',
+      tagline: 'Partner with Indivirtus for Comprehensive Safety Assessments',
+      aria: 'Contact Indivirtus Healthcare Services to discuss your operator safety testing needs',
+    },
+  },
   gtm: {
     eventCategory: 'Pharmaceutical Safety Services',
     eventAction: 'Operator Safety Inquiry',
@@ -195,6 +274,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We recommend: 1) Annual reassessment for routine monitoring, 2) After significant process/equipment changes, 3) When introducing new compounds, and 4) Following any exposure incident - with more frequent surrogate monitoring for high-risk operations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does Operator Safety Testing involve?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our service includes real-time exposure monitoring, breathing zone sampling, fluorescent tracer studies, wipe sampling with LC-MS/MS analysis, and aseptic technique evaluations for sterile operations, covering all exposure pathways.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you ensure compliance with regulations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We align with ISPE Risk-MaPP, EU GMP Annex 1 (2022), OSHA 29 CFR 1910.1000, NIOSH Hazardous Drug Guidelines, EMA Exposure Limits, and USP <797> to ensure regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You receive a detailed exposure assessment report, contamination heat maps, analytical wipe sample reports, video documentation, a containment effectiveness scorecard, an ALARP improvement roadmap, and regulatory-ready documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'When is Operator Safety Testing needed?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'This service is critical for routine exposure monitoring, validating containment systems, ensuring sterile operation safety, or preparing for regulatory inspections in facilities handling potent or hazardous compounds.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus protect proprietary data?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We adhere to strict confidentiality protocols and industry best practices to ensure your proprietary data and operational details remain secure throughout the testing process.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What makes your testing approach unique?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our multi-modal approach combines real-time monitoring, sensitive analytical methods, and visual mapping with tailored improvement plans, ensuring comprehensive risk assessment and actionable outcomes.',
         },
       },
     ],

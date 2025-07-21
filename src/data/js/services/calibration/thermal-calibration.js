@@ -209,6 +209,54 @@ export default {
           text: 'Recommended intervals: • Critical process sensors: 3-6 months • Stability chambers: 12 months • Warehouse monitors: 6 months • Based on risk assessment—we provide customized schedules aligned with your validation master plan.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is NABL-accredited thermal calibration, and why is it important?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'NABL-accredited thermal calibration ensures temperature and humidity instruments meet precise measurement standards per ISO/IEC 17025:2017. This is critical for pharmaceutical applications to maintain product quality, safety, and regulatory compliance in GMP-critical environments.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which instruments can Indivirtus calibrate for temperature and humidity?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We calibrate a wide range of instruments, including RTDs (±0.05°C), thermocouples (±0.1°C), RH sensors (±0.8%), IR thermometers, stability chambers, autoclaves, and cleanroom monitoring systems.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure regulatory compliance for thermal calibration?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services comply with ISO/IEC 17025:2017, USP <660>, EP 2.2.12, FDA 21 CFR Part 11, and EU GMP Annex 15, ensuring your instruments are audit-ready for FDA and EMA inspections.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are included with your thermal calibration services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Each calibration includes a NABL-accredited certificate, measurement uncertainty analysis, as-found/as-left compliance data, temperature uniformity mapping report, and sensor performance evaluation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How often should temperature and humidity instruments be calibrated?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Calibration frequency depends on instrument usage, environmental conditions, and regulatory requirements. We provide tailored recommendations to ensure ongoing accuracy and compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is temperature uniformity mapping, and why is it important?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Temperature uniformity mapping assesses the consistency of temperature across a chamber or environment, ensuring compliance with GMP standards and reliable performance in critical pharmaceutical processes.',
+        },
+      },
     ],
   },
   meta: {

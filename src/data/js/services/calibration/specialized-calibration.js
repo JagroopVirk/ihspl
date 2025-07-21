@@ -211,6 +211,54 @@ export default {
           text: 'Recommended intervals: • Critical process pH/conductivity: 3 months • Laboratory meters: 6 months • Validation studies: Pre/post campaign • Based on risk assessment—we provide customized schedules aligned with your water system validation protocol.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is NABL-accredited electrochemical and flow calibration?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'NABL-accredited electrochemical and flow calibration ensures that pH, conductivity, and flow instruments meet precise measurement standards as per ISO/IEC 17025:2017. This is essential for GMP-critical pharmaceutical applications to ensure accuracy, compliance, and product quality.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which instruments can Indivirtus calibrate for electrochemical and flow measurements?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We calibrate pH/ORP meters (0-14 pH, ±2000mV), conductivity/TDS meters (0.01μS/cm-1000mS/cm), and flow meters (0.1mL/min-1000L/min) used in laboratory and process applications.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure regulatory compliance for these calibrations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our calibration services comply with ISO/IEC 17025:2017, USP <645>, EP 2.2.38, FDA 21 CFR Part 11, and WHO TRS 992, ensuring your instruments are audit-ready for FDA, EMA, and other regulatory inspections.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are included with your electrochemical and flow calibration services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Each calibration includes a NABL-accredited certificate, measurement uncertainty analysis, as-found/as-left compliance data, traceability documentation to NIST/NPL, and an electrode performance evaluation report.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How often should electrochemical and flow instruments be calibrated?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Calibration frequency depends on instrument usage, environmental conditions, and regulatory requirements. We provide tailored recommendations to maintain accuracy and compliance for your specific instruments.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is electrode performance evaluation important for pH and conductivity meters?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Electrode performance evaluation, including slope verification, ensures that pH and conductivity meters provide accurate and reliable measurements, critical for pharmaceutical processes and regulatory compliance.',
+        },
+      },
     ],
   },
   meta: {

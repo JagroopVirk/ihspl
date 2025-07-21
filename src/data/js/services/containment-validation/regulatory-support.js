@@ -48,6 +48,87 @@ export default {
     alt: 'Pharmaceutical regulatory documentation team preparing CTD submission',
     caption: 'Regulatory experts compiling technical documentation for global health authority submissions',
   },
+  pageContent: {
+    hero: {
+      heading: 'Comprehensive Regulatory Documentation for Pharmaceutical Success',
+      tagline: 'Streamlined, Submission-Ready Solutions for Global Compliance',
+      detail:
+        'At Indivirtus Healthcare Services, our End-to-End Regulatory Support service delivers meticulously crafted documentation to meet the stringent requirements of global health authorities. From SMEPAC reports to complete CTD modules, we ensure your regulatory submissions are robust, compliant, and audit-ready.',
+    },
+    overview: {
+      heading: 'Why Regulatory Documentation is Essential',
+      overviewCards: [
+        {
+          heading: 'What is Regulatory Support?',
+          detail:
+            'Our Regulatory Support service provides comprehensive documentation solutions for pharmaceutical manufacturers, covering everything from containment performance reports to full CTD/eCTD module preparation. We align with global standards to streamline your regulatory submissions.',
+        },
+        {
+          heading: 'Why It Matters',
+          detail:
+            'Accurate, compliant documentation is critical for regulatory approval and market access. Our services reduce the risk of delays, rejections, or non-compliance by ensuring your submissions meet the expectations of FDA, EMA, PMDA, and other authorities.',
+        },
+        {
+          heading: 'Our Role in Your Compliance',
+          detail:
+            'Indivirtus acts as your trusted partner, leveraging our team of former regulators and industry experts to deliver submission-ready documentation. We provide tailored solutions, gap analysis, and inspection readiness to support your regulatory journey.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach to Regulatory Documentation',
+      detail: [
+        'At Indivirtus, we combine deep regulatory expertise with a client-centric approach to deliver documentation that meets the highest global standards. Our process begins with a thorough understanding of your product and regulatory needs, followed by the development of customized documentation packages. We specialize in SMEPAC-compliant containment performance reports with 3D visualization, ICH Q9-based risk assessments (FMEA, HACCP, PHA), and cleaning validation master files with health-based exposure limits (HBEL).',
+        'For submissions, we prepare complete CTD/eCTD modules for ANDA, DMF, and MA applications, ensuring alignment with the specific requirements of FDA, EMA, PMDA, and other authorities. Our team conducts gap analysis against evolving standards like EU GMP Annex 1 (2022) to identify and address potential compliance issues. During inspections, we provide robust support through position papers, response strategies, and mock audits, ensuring your team is fully prepared.',
+        'Every document is crafted with precision, incorporating regulatory insights and industry best practices. Our goal is to simplify your regulatory process while ensuring audit readiness and global market compliance.',
+      ],
+    },
+    deliverables: {
+      heading: 'Comprehensive Deliverables for Regulatory Success',
+      itemList: [
+        'SMEPAC-compliant containment documentation with 3D visualization',
+        'Risk assessment dossiers (FMEA, HACCP, PHA) for quality assurance',
+        'Cleaning validation master file with HBEL justification',
+        'Complete CTD modules (Quality, Nonclinical) for submissions',
+        'Regulatory gap analysis and actionable compliance roadmap',
+        'Inspection readiness package with Q&A documents and mock audits',
+        'eCTD publishing support for seamless submission processes',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance for Global Markets',
+      detail: [
+        'Our Regulatory Support service is designed to meet the rigorous standards of global health authorities. By adhering to the latest regulatory guidelines, we ensure your documentation is robust, compliant, and ready for audits, giving you confidence in your submissions and inspections.',
+      ],
+      itemList: [
+        'ISPE SMEPAC Guidelines (2021) for containment documentation',
+        'ICH Q9 (Quality Risk Management) for risk-based approaches',
+        'EU GMP Annex 1 (2022) for contamination control strategies',
+        'FDA Guidance for Industry: Sterile Drug Products',
+        'EMA Guideline on Setting Health Based Exposure Limits',
+        'PIC/S PI 006-3 for cleaning validation standards',
+        'WHO TRS 992 (Annex 4) for global regulatory alignment',
+      ],
+    },
+    applications: {
+      heading: 'Applications and Use Cases',
+      detail: [
+        'Our Regulatory Support service is ideal for pharmaceutical manufacturers preparing for regulatory submissions, audits, or market expansions. Use cases include developing CTD modules for ANDA or DMF filings, validating containment systems for potent compounds, or ensuring compliance with evolving standards like EU Annex 1. It’s essential when launching new products, addressing regulatory deficiencies, or preparing for inspections by global authorities.',
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus for Regulatory Support?',
+      detail: [
+        'Indivirtus Healthcare Services brings unparalleled expertise to your regulatory needs. Our team of former regulators, certified toxicologists, and industry specialists ensures your documentation is scientifically defensible and globally compliant. We pride ourselves on rapid turnaround times, delivering submission-ready packages without compromising quality.',
+        'With a commitment to confidentiality and adherence to industry best practices, we protect your proprietary data while streamlining your regulatory processes. Partner with Indivirtus to navigate complex regulations with confidence and achieve market success.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Streamline Your Regulatory Submissions?',
+      tagline: 'Partner with Indivirtus for Expert Documentation and Compliance',
+      aria: 'Contact Indivirtus Healthcare Services to discuss your regulatory documentation needs',
+    },
+  },
   gtm: {
     eventCategory: 'Regulatory Services',
     eventAction: 'Regulatory Support Inquiry',
@@ -190,6 +271,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Our package includes: 1) Anticipated Q&A documents with scientific references, 2) Mock audit simulations focusing on containment and cleaning validation, 3) Staff training on documentation retrieval, and 4) Visual aids for explaining complex containment strategies to inspectors.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does the Regulatory Support service include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our service includes SMEPAC-compliant containment reports, ICH Q9-based risk assessments, cleaning validation master files, complete CTD/eCTD modules, gap analysis, inspection readiness packages, and eCTD publishing support.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which regulatory authorities do you align with?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We ensure compliance with FDA, EMA, PMDA, and other global health authorities, adhering to standards like ICH Q9, EU GMP Annex 1 (2022), and WHO TRS 992.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you ensure audit readiness?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide inspection readiness packages with Q&A documents, mock audits, and response strategies. Our gap analysis against standards like EU Annex 1 ensures compliance and preparedness.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What types of submissions do you support?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We support ANDA, DMF, and MA submissions by preparing complete CTD/eCTD modules, including Quality and Nonclinical sections, tailored to global regulatory requirements.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure confidentiality?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We adhere to strict confidentiality protocols and industry best practices to safeguard your proprietary data throughout the documentation and submission process.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'When should I use this service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'This service is ideal for preparing regulatory submissions, addressing compliance gaps, validating containment systems, or preparing for inspections by global health authorities.',
         },
       },
     ],

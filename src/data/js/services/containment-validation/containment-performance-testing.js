@@ -45,6 +45,84 @@ export default {
     alt: 'SMEPAC Containment Performance Testing for HPAPI Facilities',
     caption: 'Engineer conducting airborne particulate monitoring in API manufacturing suite',
   },
+  pageContent: {
+    hero: {
+      heading: 'Comprehensive SMEPAC-Based Containment Validation',
+      tagline: 'Ensuring Operator Safety and Compliance for High-Potency Facilities',
+      detail:
+        'At Indivirtus Healthcare Services, our Containment Performance Testing service delivers rigorous validation of containment systems for high-potency APIs, cytotoxic drugs, and hazardous compounds. Using SMEPAC methodologies, we ensure operator safety and regulatory compliance with actionable, data-driven solutions.',
+    },
+    overview: {
+      heading: 'Why Containment Performance Testing Matters',
+      overviewCards: [
+        {
+          heading: 'What is Containment Performance Testing?',
+          detail:
+            'Our service evaluates the effectiveness of containment systems in pharmaceutical facilities using SMEPAC methodologies. Through airborne monitoring, surface mapping, and personal sampling, we verify compliance with occupational exposure limits (OELs).',
+        },
+        {
+          heading: 'Why It’s Critical',
+          detail:
+            'Handling potent compounds poses significant risks to operators and product integrity. Our testing ensures containment systems perform reliably, protecting personnel and meeting stringent regulatory requirements.',
+        },
+        {
+          heading: 'Our Role in Your Safety',
+          detail:
+            'Indivirtus combines advanced analytical techniques and regulatory expertise to deliver tailored containment validation. We provide actionable insights to optimize your systems, ensuring safety and compliance.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach to Containment Validation',
+      detail: [
+        'At Indivirtus, we employ SMEPAC (Standardized Measurement of Equipment Particulate Airborne Concentration) methodologies to rigorously evaluate containment systems for high-potency API facilities. Our testing includes airborne particulate monitoring to assess real-time exposure risks, surface contamination mapping to identify critical zones, and personal breathing zone sampling to measure operator exposure over 8-hour TWA and peak periods.',
+        'We use gravimetric and chemical analysis, including HPLC and LC-MS/MS, to quantify residues and verify compliance with OELs. Our protocols align with ISPE Good Practice Guides and global GMP requirements, incorporating worst-case scenarios to stress-test containment strategies. The result is a comprehensive dataset with actionable recommendations to address any identified breaches, ensuring operator safety and regulatory readiness.',
+      ],
+    },
+    deliverables: {
+      heading: 'Comprehensive Deliverables for Containment Validation',
+      itemList: [
+        'SMEPAC-compliant qualification report with risk assessment',
+        'Operator exposure profiles (8-hour TWA and peak exposures)',
+        '3D contamination mapping of critical zones',
+        'Gravimetric and chemical residue analysis reports',
+        'Comparative performance analysis against OEL thresholds',
+        'Corrective action recommendations for containment breaches',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance for Global Standards',
+      detail: [
+        'Our Containment Performance Testing service adheres to stringent global regulatory guidelines, ensuring your containment systems are audit-ready and compliant with international standards. We provide confidence in your safety and compliance strategies.',
+      ],
+      itemList: [
+        'SMEPAC Guidelines (2021) for standardized testing',
+        'ISPE Good Practice Guide: Assessing Particulate Containment Performance',
+        'OSHA 29 CFR 1910.1000 and ACGIH TLVs for exposure limits',
+        'EU GMP Annex 1 (2022) for sterile/high-risk applications',
+        'EMA Guideline on Setting Health Based Exposure Limits',
+        'NIOSH Hazardous Drug Handling Guidelines',
+      ],
+    },
+    applications: {
+      heading: 'Applications and Use Cases',
+      detail: [
+        'Our Containment Performance Testing service is essential for facilities handling high-potency APIs, cytotoxic drugs, or hazardous compounds. It’s critical for validating new containment systems, routine performance checks, or addressing regulatory audits. Use cases include ensuring operator safety in cytotoxic manufacturing, verifying isolator performance, or optimizing containment for multi-product facilities.',
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus for Containment Validation?',
+      detail: [
+        'Indivirtus Healthcare Services brings together certified toxicologists, regulatory experts, and advanced analytical capabilities to deliver unmatched containment validation. Our scientifically rigorous approach ensures defensible results, rapid turnaround times, and strict confidentiality to protect your proprietary data.',
+        'With tailored testing protocols and actionable recommendations, we help you safeguard your workforce and achieve compliance with confidence. Partner with Indivirtus to optimize your containment systems and ensure operational excellence.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Validate Your Containment Systems?',
+      tagline: 'Partner with Indivirtus for SMEPAC-Based Safety Solutions',
+      aria: 'Contact Indivirtus Healthcare Services to discuss your containment performance testing needs',
+    },
+  },
   gtm: {
     eventCategory: 'Containment Validation Services',
     eventAction: 'Containment Performance Inquiry',
@@ -185,6 +263,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We recommend annual revalidation, with additional testing after equipment modifications, process changes, or when introducing new compounds with lower OELs than previously handled materials.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does the Containment Performance Testing service include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our service includes airborne particulate monitoring, surface contamination mapping, personal breathing zone sampling, gravimetric/chemical analysis, and corrective action recommendations, all aligned with SMEPAC methodologies.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which regulatory standards do you follow?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We align with SMEPAC Guidelines (2021), ISPE Good Practice Guide, OSHA 29 CFR 1910.1000, ACGIH TLVs, EU GMP Annex 1 (2022), EMA HBEL, and NIOSH Hazardous Drug Guidelines.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables can I expect?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You’ll receive a SMEPAC-compliant qualification report, operator exposure profiles, 3D contamination mapping, residue analysis reports, OEL performance analysis, and corrective action recommendations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'When should I use this service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'This service is ideal for validating new containment systems, routine performance checks, ensuring operator safety in cytotoxic manufacturing, or preparing for regulatory audits.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure confidentiality?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We adhere to strict confidentiality protocols and industry best practices to protect your proprietary data throughout the testing and reporting process.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What makes your testing approach unique?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our SMEPAC-based approach combines advanced analytics, worst-case testing, and tailored recommendations to deliver precise, actionable data for optimizing containment systems.',
         },
       },
     ],

@@ -46,7 +46,6 @@ export default {
     applications: {heading:"", detail:[]},
     conclusion: {heading:"", detail:[]},
     cta: {heading:"", tagline:"", aria:""},
-
   },
 
   gtm: {

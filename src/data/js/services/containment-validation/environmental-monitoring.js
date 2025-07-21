@@ -47,6 +47,85 @@ export default {
     alt: 'Comprehensive Environmental Monitoring in ISO 5 Cleanroom',
     caption: 'Microbiologist performing active air sampling in aseptic processing area',
   },
+  pageContent: {
+    hero: {
+      heading: 'End-to-End Environmental Monitoring for Pharmaceutical Cleanrooms',
+      tagline: 'Robust Contamination Control for Compliance and Quality',
+      detail:
+        'At Indivirtus Healthcare Services, our Environmental Monitoring (EM) program ensures your pharmaceutical and biotech cleanrooms maintain a state of control. From routine monitoring to comprehensive contamination control strategies, we deliver scientifically rigorous solutions aligned with global regulatory standards.',
+    },
+    overview: {
+      heading: 'Why Environmental Monitoring is Essential',
+      overviewCards: [
+        {
+          heading: 'What is Environmental Monitoring?',
+          detail:
+            'Our Environmental Monitoring service provides risk-based strategies to detect and control contamination in pharmaceutical cleanrooms. Using advanced sampling and analytics, we ensure compliance with stringent standards and safeguard product quality.',
+        },
+        {
+          heading: 'Why It’s Critical',
+          detail:
+            'Effective environmental monitoring prevents contamination risks that could compromise product safety and regulatory compliance. Our services help maintain cleanroom integrity, protect patients, and ensure audit readiness.',
+        },
+        {
+          heading: 'Our Role in Your Compliance',
+          detail:
+            'Indivirtus partners with you to design and implement tailored EM programs. With expertise in global regulations and advanced data analytics, we provide actionable insights to keep your facility compliant and optimized.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach to Environmental Monitoring',
+      detail: [
+        'At Indivirtus, we design risk-based environmental monitoring programs aligned with EU GMP Annex 1 (2022) Contamination Control Strategy requirements. Our approach includes real-time non-viable particle monitoring with statistical process control (SPC) analysis to detect trends early. We perform viable air sampling using active (impaction) and passive (settle plates) methods, alongside surface monitoring with contact plates, swabs, and ATP bioluminescence for cleaning verification.',
+        'For aseptic processing areas, we implement enhanced monitoring with frequent sampling and rapid microbial methods (RMM) to ensure sterility. Our team conducts personnel monitoring through glove and gown sampling to assess human-related contamination risks. We provide comprehensive data analytics, including trend reports, alert/action limit analysis, and contamination investigation support with root cause analysis, ensuring your facility remains in a state of control.',
+      ],
+    },
+    deliverables: {
+      heading: 'Comprehensive Deliverables for Cleanroom Control',
+      itemList: [
+        'Risk-based EM program design documentation',
+        'Comprehensive monitoring reports with SPC trend charts',
+        'ISO 14644-1 classification certification package',
+        'Microbial identification reports (speciation upon request)',
+        'Contamination investigation support with root cause analysis',
+        'Data visualization dashboards for EM trends',
+        'Regulatory gap assessment against Annex 1 CCS requirements',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance for Global Standards',
+      detail: [
+        'Our Environmental Monitoring service adheres to the latest global regulatory guidelines, ensuring your cleanroom operations are compliant and audit-ready. By aligning with stringent standards, we provide confidence in your contamination control strategies.',
+      ],
+      itemList: [
+        'EU GMP Annex 1 (2022) for Contamination Control Strategy',
+        'ISO 14644-1:2015 for cleanroom classification',
+        'ISO 14644-2:2015 for monitoring requirements',
+        'US FDA Sterile Drug Products Guidance (2004)',
+        'PIC/S PI 007-6 for environmental monitoring',
+        'USP <1116> for microbiological control and monitoring',
+      ],
+    },
+    applications: {
+      heading: 'Applications and Use Cases',
+      detail: [
+        'Our Environmental Monitoring service is vital for pharmaceutical and biotech facilities operating cleanrooms for sterile or non-sterile production. It’s essential for routine monitoring, cleanroom classification, contamination investigations, or compliance with aseptic processing requirements. Use cases include validating new cleanrooms, supporting sterile drug manufacturing, or preparing for regulatory audits.',
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus for Environmental Monitoring?',
+      detail: [
+        'Indivirtus Healthcare Services combines certified expertise, advanced monitoring technologies, and global regulatory knowledge to deliver robust environmental monitoring solutions. Our team of specialists ensures scientifically defensible results, rapid turnaround times, and strict confidentiality to protect your proprietary data.',
+        'With tailored programs and actionable analytics, we help you maintain cleanroom integrity and achieve compliance with confidence. Partner with Indivirtus to elevate your contamination control strategy and ensure operational excellence.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Optimize Your Cleanroom Monitoring?',
+      tagline: 'Partner with Indivirtus for Comprehensive Contamination Control',
+      aria: 'Contact Indivirtus Healthcare Services to discuss your environmental monitoring needs',
+    },
+  },
   gtm: {
     eventCategory: 'Contamination Control Services',
     eventAction: 'Environmental Monitoring Inquiry',
@@ -189,6 +268,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Absolutely. Our gap assessment service evaluates your current program against Annex 1 CCS requirements, providing a roadmap for enhancement including monitoring point rationalization, data integration strategies, and investigation procedures.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does the Environmental Monitoring service include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our service includes risk-based EM program design, real-time particle monitoring, viable and surface sampling, personnel monitoring, rapid microbial methods for aseptic areas, and comprehensive data analytics with trend reports.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which regulatory standards do you follow?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We align with EU GMP Annex 1 (2022), ISO 14644-1:2015, ISO 14644-2:2015, US FDA Sterile Drug Products Guidance, PIC/S PI 007-6, and USP <1116> for comprehensive compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables can I expect?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You’ll receive EM program documentation, monitoring reports with SPC trends, ISO 14644-1 certification, microbial identification, contamination investigation support, data dashboards, and Annex 1 gap assessments.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'When should I use this service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'This service is ideal for routine cleanroom monitoring, validating new facilities, supporting sterile drug production, investigating contamination events, or preparing for regulatory audits.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure confidentiality?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We adhere to strict confidentiality protocols and industry best practices to protect your proprietary data throughout the monitoring and reporting process.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What makes your EM program unique?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our risk-based approach, combined with real-time analytics, rapid microbial methods, and comprehensive trend reporting, ensures proactive contamination control tailored to your facility’s needs.',
         },
       },
     ],

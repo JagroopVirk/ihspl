@@ -210,6 +210,54 @@ export default {
           text: 'Yes, we offer: • Factory floor balance calibration • In-place pipette verification • Production vessel volume certification • Cleanroom-compatible calibration services • IQ/OQ documentation support—all performed with portable NABL-traceable standards.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is NABL-accredited mass and volume calibration?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'NABL-accredited mass and volume calibration ensures that weighing instruments and volumetric devices meet precise measurement standards as per ISO/IEC 17025:2017. This is critical for pharmaceutical operations to ensure accuracy, compliance, and product safety.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which instruments can Indivirtus calibrate?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We calibrate analytical balances (0.1mg–30kg), microbalances, pipettes (0.1μL–100mL), burettes, and certified weights (Class E1 to M3), ensuring precision for a wide range of pharmaceutical applications.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure compliance with regulatory standards?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our calibration services adhere to ISO/IEC 17025:2017, USP <41>, USP <1251>, ISO 8655, OIML R111, EU GMP Annex 11, and 21 CFR Part 11, ensuring audit readiness for FDA and EMA inspections.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is included in the calibration deliverables?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Each calibration includes a NABL-accredited certificate, measurement uncertainty analysis, as-found/as-left data, traceability documentation, and recommendations for optimal calibration intervals based on usage.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How often should weighing and volumetric instruments be calibrated?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Calibration frequency depends on usage, manufacturer guidelines, and regulatory requirements. We provide tailored recommendations to maintain accuracy and compliance for your specific instruments.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is measurement uncertainty analysis important?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Measurement uncertainty analysis quantifies the reliability of your measurements, ensuring confidence in results and compliance with stringent pharmaceutical standards like USP and OIML.',
+        },
+      },
     ],
   },
   meta: {

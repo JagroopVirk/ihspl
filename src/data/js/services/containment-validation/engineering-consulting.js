@@ -53,6 +53,85 @@ export default {
     alt: 'Pharmaceutical Containment Engineering Consulting for High-Potency Facilities',
     caption: 'Engineering team conducting containment system review in HPAPI manufacturing suite',
   },
+  pageContent: {
+    hero: {
+      heading: 'Specialized Containment Engineering for Pharmaceutical Excellence',
+      tagline: 'Tailored Solutions for High-Potency Facilities and Compliance',
+      detail:
+        'At Indivirtus Healthcare Services, our Containment Engineering Consulting service delivers end-to-end technical solutions for pharmaceutical containment systems. From conceptual design to operational qualification, we ensure your high-potency and sterile facilities meet global regulatory standards with precision and efficiency.',
+    },
+    overview: {
+      heading: 'Why Containment Engineering Matters',
+      overviewCards: [
+        {
+          heading: 'What is Containment Engineering Consulting?',
+          detail:
+            'Our service provides comprehensive engineering support for pharmaceutical containment systems, optimizing designs for high-potency APIs, sterile products, and ATMPs. We combine advanced engineering with regulatory expertise to ensure safety and compliance.',
+        },
+        {
+          heading: 'Why It’s Critical',
+          detail:
+            'Effective containment systems are essential to protect operators, products, and the environment from hazardous compounds. Our solutions ensure robust performance, regulatory compliance, and operational efficiency for your facility.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'Indivirtus bridges engineering design and regulatory compliance, delivering tailored solutions for new and existing facilities. Our expertise ensures your containment systems are optimized, compliant, and ready for operation.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach to Containment Engineering',
+      detail: [
+        'At Indivirtus, we provide a holistic approach to containment engineering, integrating advanced technical methodologies with regulatory compliance. For new projects, we conduct design-phase risk assessments using Computational Fluid Dynamics (CFD) simulations to optimize airflow and containment hierarchies. For existing facilities, our gap analyses against EU GMP Annex 1 and ISPE guidelines identify and prioritize risks.',
+        'Our services include 3D airflow modeling, containment hierarchy validation using tracer gas studies, isolator/RABS performance qualification, and cleanroom pressure cascade optimization. We also perform decontamination system validation and provide operational qualification support to ensure seamless facility performance. For advanced therapy medicinal products (ATMPs), we tailor our approach to meet unique containment challenges, ensuring compliance and safety.',
+      ],
+    },
+    deliverables: {
+      heading: 'Comprehensive Deliverables for Containment Excellence',
+      itemList: [
+        'Comprehensive gap analysis report with risk prioritization',
+        '3D containment hierarchy diagrams with airflow simulations',
+        'Isolator/RABS design review with CFD analysis (where applicable)',
+        'Pressure mapping validation package with dynamic testing data',
+        'Decontamination system performance qualification protocol',
+        'Regulatory roadmap for containment compliance',
+        'Turnover package for facility handover (DQ/IQ/OQ support)',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance for Global Standards',
+      detail: [
+        'Our Containment Engineering Consulting service adheres to stringent global regulatory guidelines, ensuring your facility is audit-ready and compliant with international standards. We align with the latest regulations to provide confidence in your containment systems.',
+      ],
+      itemList: [
+        'EU GMP Annex 1 (2022) for Contamination Control Strategy',
+        'ISPE Baseline Guide Vol 5 for Commissioning & Qualification',
+        'SMEPAC Containment Performance Standards',
+        'ISO 14644-1:2015 for cleanroom classification',
+        'ISO 10648-2 for containment enclosures',
+        'EMA Guideline on Hazardous Compounds (2014)',
+      ],
+    },
+    applications: {
+      heading: 'Applications and Use Cases',
+      detail: [
+        'Our Containment Engineering Consulting service is critical for pharmaceutical manufacturers handling high-potency APIs, sterile products, or ATMPs. It’s ideal for designing new facilities, upgrading existing systems, or ensuring compliance during regulatory inspections. Use cases include optimizing isolator/RABS performance, validating cleanroom pressure cascades, or supporting ATMP manufacturing.',
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus for Containment Engineering?',
+      detail: [
+        'Indivirtus Healthcare Services combines certified engineering expertise, advanced simulation tools, and global regulatory knowledge to deliver unmatched containment solutions. Our team ensures scientifically defensible designs, rapid project timelines, and strict confidentiality to protect your proprietary data.',
+        'By providing tailored engineering solutions and comprehensive documentation, we help you achieve operational excellence and regulatory compliance. Partner with Indivirtus to optimize your containment systems and ensure facility success.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Optimize Your Containment Systems?',
+      tagline: 'Partner with Indivirtus for Expert Engineering Solutions',
+      aria: 'Contact Indivirtus Healthcare Services to discuss your containment engineering needs',
+    },
+  },
   gtm: {
     eventCategory: 'Containment Engineering Services',
     eventAction: 'Engineering Consultation Inquiry',
@@ -195,6 +274,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We provide turnkey documentation packages including: User Requirement Specifications (URS), Design Qualification (DQ) reports, Factory Acceptance Test (FAT) protocols, and Operational Qualification (OQ) templates tailored to your containment systems.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does the Containment Engineering Consulting service include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our service includes 3D airflow modeling, containment hierarchy validation, isolator/RABS performance qualification, cleanroom pressure cascade optimization, CFD-based design assessments, gap analyses, and DQ/IQ/OQ support.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which regulatory standards do you follow?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We align with EU GMP Annex 1 (2022), ISPE Baseline Guide Vol 5, SMEPAC standards, ISO 14644-1:2015, ISO 10648-2, and EMA Hazardous Compounds Guideline (2014).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables can I expect?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You’ll receive a gap analysis report, 3D containment diagrams, CFD-based design reviews, pressure mapping validation, decontamination qualification protocols, regulatory roadmaps, and turnover packages.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'When should I use this service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'This service is ideal for designing new containment facilities, upgrading existing systems, validating isolator/RABS performance, or ensuring compliance for high-potency APIs and ATMP manufacturing.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure confidentiality?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We adhere to strict confidentiality protocols and industry best practices to protect your proprietary data throughout the engineering and qualification process.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What makes your approach unique?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our integration of advanced CFD simulations, risk-based assessments, and regulatory expertise ensures tailored, compliant, and efficient containment solutions for your facility.',
         },
       },
     ],

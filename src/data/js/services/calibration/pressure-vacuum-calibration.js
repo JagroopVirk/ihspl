@@ -210,6 +210,54 @@ export default {
           text: 'Recommended intervals: • Critical process gauges: 6 months • Cleanroom monitoring: 12 months • Safety valves: 12-24 months (with in-service checks) • Reference standards: 3-6 months—we provide risk-based schedules aligned with your validation master plan.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'What is NABL-accredited pressure and vacuum calibration?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'NABL-accredited pressure and vacuum calibration ensures that instruments meet precise measurement standards as per ISO/IEC 17025:2017. This is critical for GMP-critical pharmaceutical applications to ensure accuracy, compliance, and safety in processes like autoclaving and sterile manufacturing.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which pressure and vacuum instruments can Indivirtus calibrate?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We calibrate digital/analog pressure gauges, vacuum transducers, Magnehelic gauges, pressure switches, and safety relief valves, covering a range from 0.01 mbar to 700 bar, used in autoclaves, bioreactors, and sterile manufacturing.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure regulatory compliance for pressure and vacuum calibration?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our calibration services comply with ISO/IEC 17025:2017, USP <1058>, EU GMP Annex 1, FDA 21 CFR Part 11, and ASME B40.100, ensuring your instruments are audit-ready for FDA and EMA inspections.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are included with your pressure and vacuum calibration services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Each calibration includes a NABL-accredited certificate, measurement uncertainty analysis, as-found/as-left compliance data, traceability documentation to NPL/NIST, and valve set pressure certification where applicable.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How often should pressure and vacuum instruments be calibrated?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Calibration frequency depends on instrument usage, environmental conditions, and regulatory requirements. We provide tailored recommendations to maintain accuracy and compliance for your specific instruments.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is hysteresis testing important for pressure instruments?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Hysteresis testing evaluates an instrument’s accuracy during increasing and decreasing pressure cycles, ensuring reliable performance in critical pharmaceutical processes and compliance with regulatory standards.',
+        },
+      },
     ],
   },
   meta: {

@@ -48,6 +48,86 @@ export default {
     alt: 'Pharmaceutical Occupational Toxicology Risk Assessment Dashboard',
     caption: 'Toxicologist reviewing API exposure risk data and OEB classification models',
   },
+  pageContent: {
+    hero: {
+      heading: 'Science-Based Toxicological Evaluations for Pharmaceutical Safety',
+      tagline: 'Protecting Your Workforce with Robust Health Risk Assessments',
+      detail:
+        'At Indivirtus Healthcare Services, our Occupational Toxicology service delivers comprehensive risk assessments for pharmaceutical compounds. From OEL derivation to facility-wide exposure control strategies, we combine advanced methodologies and regulatory expertise to ensure worker safety and compliance.',
+    },
+    overview: {
+      heading: 'Why Toxicological Evaluations Matter',
+      overviewCards: [
+        {
+          heading: 'What is Occupational Toxicology?',
+          detail:
+            'Our Occupational Toxicology service assesses the health risks of pharmaceutical compounds, deriving safe exposure limits and developing control strategies to protect workers. We use advanced methodologies to ensure compliance with global regulatory standards.',
+        },
+        {
+          heading: 'Why It’s Critical',
+          detail:
+            'Potent compounds, including novel modalities like ATMPs and ADCs, pose significant health risks if not properly managed. Our evaluations identify exposure risks, set safe limits, and provide actionable strategies to minimize harm and ensure compliance.',
+        },
+        {
+          heading: 'Our Role in Your Safety',
+          detail:
+            'Indivirtus leverages certified toxicologists and global regulatory expertise to deliver tailored risk assessments. From OEL derivation to facility-wide risk mapping, we provide scientifically defensible solutions to safeguard your operations.',
+        },
+      ],
+    },
+    approach: {
+      heading: 'Our Expert Approach to Toxicological Evaluations',
+      detail: [
+        'At Indivirtus, we employ a rigorous, science-driven approach to assess the toxicological risks of pharmaceutical compounds. Our process begins with the derivation of Occupational Exposure Limits (OELs) using NOAEL/LOAEL data and species-specific allometric scaling, ensuring precision in setting safe exposure thresholds. We calculate Acceptable Daily Exposures (ADEs) for cross-contamination control and provide Occupational Exposure Banding (OEB) classifications aligned with global frameworks.',
+        'For novel modalities like ATMPs, oligonucleotides, and ADCs, we apply modified risk assessment methodologies to address unique challenges. Our team conducts facility-wide risk mapping using FMEA to identify critical exposure points, followed by the development of compound-specific control strategies aligned with ISPE Risk-MaPP and EMA HBEL guidelines. Each assessment includes detailed uncertainty analysis and clear implementation roadmaps for engineering controls and PPE strategies, ensuring practical and compliant solutions.',
+      ],
+    },
+    deliverables: {
+      heading: 'Comprehensive Deliverables for Toxicological Safety',
+      itemList: [
+        'Detailed OEL/ADE derivation report with uncertainty analysis',
+        'OEB classification with band-specific containment recommendations',
+        'Facility risk assessment matrix in FMEA format',
+        'Cross-contamination control strategy document',
+        'Compound-specific safety data sheets (SDS)',
+        'Toxicological data gap analysis (when applicable)',
+        'Regulatory submission-ready toxicology summaries',
+      ],
+    },
+    compliance: {
+      heading: 'Regulatory Compliance for Global Standards',
+      detail: [
+        'Our Occupational Toxicology service adheres to stringent global regulatory guidelines, ensuring your risk assessments are robust, defensible, and audit-ready. By aligning with the latest standards, we help you achieve compliance across international markets.',
+      ],
+      itemList: [
+        'EMA Guideline on Setting Health Based Exposure Limits (2014)',
+        'ICH Q3D Elemental Impurities (2019)',
+        'ISPE Risk-Based Manufacture of Pharma Products (Risk-MaPP 2nd Ed)',
+        'OSHA 29 CFR 1910.1000 for air contaminants',
+        'ACGIH Threshold Limit Values (TLVs)',
+        'REACH Regulation (EC) No 1907/2006',
+        'NIOSH Hazardous Drug Handling Guidelines',
+      ],
+    },
+    applications: {
+      heading: 'Applications and Use Cases',
+      detail: [
+        'Our Occupational Toxicology service is essential for pharmaceutical manufacturers handling potent compounds, novel modalities, or hazardous substances. It’s critical for deriving OELs/ADEs, classifying compounds under OEB frameworks, or developing facility-wide exposure control plans. Use cases include risk assessments for new drug development, cross-contamination control in shared facilities, or ensuring compliance during regulatory audits.',
+      ],
+    },
+    conclusion: {
+      heading: 'Why Choose Indivirtus for Toxicological Evaluations?',
+      detail: [
+        'Indivirtus Healthcare Services brings together certified toxicologists and regulatory experts with extensive global experience. Our assessments are scientifically rigorous, delivering defensible results that meet the highest regulatory standards. We prioritize rapid turnaround times, strict confidentiality, and adherence to industry best practices to protect your proprietary data.',
+        'By providing actionable roadmaps and tailored control strategies, we help you mitigate risks and achieve compliance with confidence. Partner with Indivirtus to ensure the safety of your workforce and the success of your operations.',
+      ],
+    },
+    cta: {
+      heading: 'Ready to Ensure Toxicological Safety?',
+      tagline: 'Partner with Indivirtus for Expert Risk Assessments',
+      aria: 'Contact Indivirtus Healthcare Services to discuss your occupational toxicology needs',
+    },
+  },
   gtm: {
     eventCategory: 'Pharmaceutical Safety Services',
     eventAction: 'Toxicology Assessment Inquiry',
@@ -189,6 +269,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Our standard deliverables include both technical reports (with full methodology and references) and submission-ready modules formatted per CTD requirements, including granular uncertainty analysis and clear rationale for all derived values suitable for MHRA, FDA, and EMA review.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does the Occupational Toxicology service include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our service includes OEL/ADE derivation, OEB classification, facility-wide risk mapping using FMEA, cross-contamination control strategies, compound-specific SDS, data gap analysis, and regulatory-ready toxicology summaries.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which regulatory standards do you follow?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We align with EMA HBEL (2014), ICH Q3D (2019), ISPE Risk-MaPP, OSHA 29 CFR 1910.1000, ACGIH TLVs, REACH Regulation, and NIOSH Hazardous Drug Guidelines.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do you handle novel modalities like ATMPs or ADCs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We apply modified risk assessment methodologies tailored to the unique properties of novel modalities like ATMPs, oligonucleotides, and ADCs, ensuring accurate and relevant safety evaluations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables can I expect?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You’ll receive OEL/ADE reports, OEB classifications, FMEA risk matrices, control strategy documents, SDS, data gap analyses, and regulatory submission-ready toxicology summaries.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'When should I use this service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'This service is ideal for new drug development, cross-contamination control in shared facilities, OEL/ADE derivation for potent compounds, or ensuring compliance during regulatory audits.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure confidentiality?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We follow strict confidentiality protocols and industry best practices to protect your proprietary data throughout the assessment and documentation process.',
         },
       },
     ],
