@@ -14,8 +14,8 @@ const { process } = Astro.props;
             {index + 1}
           </div>
           <div>
-            <h3 class="mb-2">{step.title}</h3>
-            <p>{step.description}</p>
+            <h3 class="mb-2" set:html={step.title} />
+            <p set:html={step.description} />
           </div>
         </div>
       ))

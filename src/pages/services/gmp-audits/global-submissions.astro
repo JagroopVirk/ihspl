@@ -9,17 +9,14 @@ import seoData from '@/data/js/services/gmp-audits/global-submissions';
 // Components
 import Faq from '@/components/other/Faq.astro';
 import HeroSection from '@/components/services/HeroSection.astro';
-import MainContentSection from '@/components/services/MainContentSection.astro';
-import ServiceCard from '@/components/services/ServiceCard.astro';
-import ProcessSection from '@/components/services/ProcessSection.astro';
-import ComplianceSection from '@/components/services/ComplianceSection.astro';
-import ConclusionSection from '@/components/services/ConclusionSection.astro';
+import OverviewCards from '@/components/services/subServices/OverviewCards.astro';
+import SubSection from '@/components/services/subServices/SubSection.astro';
 import CTASection from '@/components/services/CTASection.astro';
+import DeliverableCards from '@/components/services/subServices/DeliverableCards.astro';
 
-const { meta, image, schema, faqSchema, pageLink, full_description, deliverables, regulatory_basis, description } =
-  seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
 const { mainEntity } = faqSchema;
-// const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
+const { hero, overview, approach, deliverables, compliance, applications, conclusion, cta } = pageContent;
 ---
 
 <Layout
@@ -35,23 +32,29 @@ const { mainEntity } = faqSchema;
   }}
 >
   <main id="main-content" aria-labelledby="page-title">
-    <div class="p-20">
-      <h1 class="pb-10">{description}</h1>
-      <h2>{full_description}</h2>
+    {/* Hero Section */}
+    <HeroSection hero={hero} />
 
-      <div class="py-10">
-        <h3>Deliverables</h3>
-        <ul>
-          {deliverables.map((item) => <li>{item}</li>)}
-        </ul>
-      </div>
-      <div>
-        <h3>Regulatory Basis</h3>
-        <ul>
-          {regulatory_basis.map((item) => <li>{item}</li>)}
-        </ul>
-      </div>
-    </div>
+    {/* Overview Section */}
+    <OverviewCards overviewCards={overview.overviewCards} />
+
+    {/* Our Expert Approach Section */}
+    <SubSection data={approach} , bgColor="bg-secondary-light2" ariaLabel="approach" />
+
+    {/* Service Deliverables Section */}
+    <DeliverableCards data={deliverables} />
+
+    {/* Regulatory Compliance Section */}
+    <SubSection data={compliance} , bgColor="bg-secondary-light2" ariaLabel="regulations" />
+
+    {/* Applications & Use Cases Section */}
+    <SubSection data={applications} , bgColor="bg-white" ariaLabel="applications" />
+
+    {/* Why Choose Us Section */}
+    <SubSection data={conclusion} , bgColor="bg-primary-light" ariaLabel="why-us" />
+
+    {/* CTA Section */}
+    <CTASection cta={cta} />
 
     {/* FAQ Section */}
     <section class="maxwidth" aria-labelledby="faq-heading">

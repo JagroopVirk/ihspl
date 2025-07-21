@@ -30,6 +30,78 @@ export default {
     alt: 'PAI Support Services for Regulatory Readiness',
     caption: 'Inspection readiness and documentation support for smooth regulatory approvals.',
   },
+  pageContent: {
+    hero: {
+      heading: "PAI Support for Seamless <span class='halfHeading'>Regulatory Success</span>",
+      tagline: 'Expert Guidance to Ace Your Pre-Approval Inspections',
+      detail:
+        'At Indivirtus Healthcare Services, we specialize in preparing pharmaceutical manufacturers for Pre-Approval Inspections (PAIs) with comprehensive support, ensuring your facility meets stringent regulatory standards with confidence.',
+    },
+    overview: {
+      heading: "Why PAI Support is <span class='halfHeading'>Critical for Compliance</span>",
+      overviewCards: [
+        {
+          heading: 'What is PAI Support?',
+          detail:
+            'Pre-Approval Inspection (PAI) Support involves thorough preparation for regulatory inspections required before a pharmaceutical product can be approved for market. Our services ensure your site, processes, and documentation are audit-ready.',
+        },
+        {
+          heading: 'Why It Matters',
+          detail:
+            'PAIs are a critical step in the drug approval process. A successful inspection demonstrates compliance with global standards, paving the way for market entry. Our expertise minimizes risks and ensures readiness.',
+        },
+        {
+          heading: 'Our Role',
+          detail:
+            'Indivirtus acts as your strategic partner, offering end-to-end support from readiness assessments to real-time audit guidance, ensuring your facility meets the expectations of regulatory bodies like FDA, EMA, and CDSCO.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Approach to PAI Success</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, we take a meticulous and tailored approach to PAI preparation. Our team of certified toxicologists and regulatory experts conducts comprehensive site assessments to identify potential gaps in compliance. We provide actionable insights through detailed readiness reports and align your documentation with regulatory requirements. During inspections, our real-time guidance ensures smooth interactions with auditors, while our remediation planning addresses any findings promptly. With global regulatory expertise, we ensure your facility is prepared for inspections by agencies like FDA, EMA, CDSCO, and PIC/S, delivering peace of mind and a clear path to approval.',
+      ],
+    },
+    deliverables: {
+      heading: "PAI Support <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Site Readiness Assessment Report</strong>: A detailed evaluation of your facility’s compliance status, highlighting strengths and areas for improvement.',
+        '<strong>PAI Document Checklist and Review</strong>: A comprehensive checklist ensuring all required documentation is complete, accurate, and audit-ready.',
+        '<strong>Audit Response Plan</strong>: A strategic plan to address auditor queries effectively during inspections.',
+        '<strong>Remediation Roadmap</strong>: A step-by-step guide to resolve any identified compliance gaps post-inspection.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'At Indivirtus, we adhere to the highest regulatory standards to ensure your facility is audit-ready and compliant with global market requirements. Our PAI Support services align with guidelines from leading regulatory bodies, guaranteeing robust preparation for inspections. By following these standards, we help you achieve audit readiness, minimize compliance risks, and ensure your product meets the stringent requirements for global market entry.',
+      ],
+      itemList: [
+        '<strong>FDA</strong>: Compliance with U.S. Food and Drug Administration guidelines for pre-approval inspections.',
+        '<strong>EMA</strong>: Adherence to European Medicines Agency standards for pharmaceutical manufacturing.',
+        '<strong>CDSCO</strong>: Alignment with India’s Central Drugs Standard Control Organization requirements.',
+        '<strong>PIC/S</strong>: Conformance with Pharmaceutical Inspection Co-operation Scheme standards for global harmonization.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our PAI Support services are essential for pharmaceutical manufacturers preparing for regulatory inspections before launching new drugs or generics. Whether you’re a small biotech firm scaling up or a large manufacturer seeking global market approval, our services ensure compliance at every stage. Use cases include preparing for FDA inspections for new drug applications (NDAs), ensuring EMA compliance for European markets, or meeting CDSCO standards for local approvals. Our support is critical when timelines are tight, documentation is complex, or facilities need rapid remediation to meet regulatory expectations.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus for PAI Support</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our team of certified toxicologists and regulatory experts brings unparalleled expertise to PAI preparation. With extensive global regulatory experience, we ensure scientifically defensible processes that withstand scrutiny. Our commitment to fast turnaround times means you meet tight deadlines without compromising quality. We prioritize confidentiality, adhering to industry best practices to protect your sensitive data. Choose Indivirtus for a trusted partner that delivers compliance, confidence, and success in your regulatory journey.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ace Your <span class='halfHeading'>Pre-Approval Inspection?</span>",
+      tagline: 'Partner with Indivirtus to ensure regulatory compliance and market success.',
+      aria: 'Contact Indivirtus Healthcare Services to start your PAI preparation today',
+    },
+  },
   gtm: {
     eventCategory: 'GMP Audit Services',
     eventAction: 'PAI Support Accessed',
@@ -165,6 +237,46 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We identify root causes, draft CAPA plans, and provide timelines and documentation to address any inspectional findings effectively.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is a Pre-Approval Inspection (PAI)?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A Pre-Approval Inspection (PAI) is a regulatory evaluation conducted by authorities like the FDA, EMA, or CDSCO to verify that a manufacturing facility complies with Good Manufacturing Practices (GMP) before a drug is approved for market.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus prepare my facility for a PAI?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We conduct comprehensive site readiness assessments, review and align documentation, provide real-time audit guidance, and develop remediation plans to address any compliance gaps, ensuring your facility meets regulatory standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which regulatory guidelines does Indivirtus follow?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We adhere to guidelines from FDA, EMA, CDSCO, and PIC/S, ensuring your facility is compliant with global standards for pharmaceutical manufacturing and inspections.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does PAI preparation take with Indivirtus?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The timeline depends on your facility’s current state and the complexity of the inspection. Our efficient processes and fast turnaround times ensure readiness within your required deadlines.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can Indivirtus assist with post-inspection remediation?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we provide a detailed remediation roadmap to address any findings from the inspection, ensuring swift resolution and compliance with regulatory expectations.',
         },
       },
     ],

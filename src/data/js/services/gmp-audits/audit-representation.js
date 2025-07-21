@@ -31,6 +31,77 @@ export default {
     alt: 'Audit Representation for Pharma CROs',
     caption: 'Supporting regulatory audits for pharmaceutical companies.',
   },
+  pageContent: {
+    hero: {
+      heading: "Audit Representation for <span class='halfHeading'>Regulatory Confidence</span>",
+      tagline: 'Navigate Inspections with Expert Support and Strategic Responses',
+      detail:
+        'Indivirtus Healthcare Services provides specialized Audit Representation services to support pharmaceutical manufacturers and CROs during regulatory inspections. Our on-site assistance, response preparation, and post-inspection follow-up ensure your compliance posture is robust and audit-ready.',
+    },
+    overview: {
+      heading: "Mastering Regulatory <span class='halfHeading'>Audit Representation</span>",
+      overviewCards: [
+        {
+          heading: 'What is Audit Representation?',
+          detail:
+            'Audit Representation involves providing expert support during regulatory inspections, including on-site assistance, response preparation, and follow-up actions. It ensures compliance with international standards and helps address findings effectively.',
+        },
+        {
+          heading: 'Why is it Essential?',
+          detail:
+            'Regulatory audits are critical for maintaining compliance and market access. Expert representation minimizes risks, ensures accurate responses, and helps avoid costly penalties, ensuring a smooth inspection process.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'Indivirtus Healthcare Services acts as your trusted partner, offering real-time support and strategic responses during audits. Our expertise in global regulations ensures your organization is prepared and confident throughout the inspection process.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Audit Support Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Audit Representation services are designed to provide seamless support during regulatory inspections. Our team of certified professionals, with deep knowledge of international regulations, offers on-site assistance to address inspector queries in real time. We prepare comprehensive audit response documents and develop robust Corrective and Preventive Action (CAPA) plans to address findings. Our post-inspection follow-up ensures all issues are resolved, keeping your compliance posture strong and aligned with global standards like FDA, EMA, and ICH guidelines.',
+      ],
+    },
+    deliverables: {
+      heading: "Audit Representation <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>On-Site Audit Support Report</strong>: A detailed summary of inspection support, including key interactions and outcomes.',
+        '<strong>Audit Response Documents</strong>: Comprehensive responses to regulatory findings, ensuring clarity and compliance.',
+        '<strong>CAPA Plan and Documentation</strong>: Tailored strategies to address audit observations and prevent future non-compliance.',
+        '<strong>Post-Inspection Summary & Follow-Up Plan</strong>: A roadmap for resolving findings and maintaining audit readiness.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Guidelines Followed</span>",
+      detail: [
+        'Our Audit Representation services align with stringent global regulatory standards, ensuring your organization is prepared for inspections by agencies like the FDA and EMA. By adhering to industry-recognized guidelines, we provide scientifically defensible support and documentation, helping you maintain compliance and achieve successful audit outcomes.',
+      ],
+      itemList: [
+        '<strong>21 CFR Part 210/211</strong>: Compliance with FDA regulations for pharmaceutical manufacturing and quality control.',
+        '<strong>EU GMP Guidelines</strong>: Adherence to European Union Good Manufacturing Practice standards for global compliance.',
+        '<strong>ICH Q10</strong>: Alignment with International Council for Harmonisation guidelines for pharmaceutical quality systems.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Audit Representation services are tailored for pharmaceutical manufacturers and CROs facing regulatory inspections. Whether you’re preparing for an FDA, EMA, or other agency audit, our real-time support ensures a smooth process. We assist with pre-approval inspections, routine GMP audits, and post-approval compliance checks. Our services are ideal for addressing complex findings, developing CAPA plans, and ensuring follow-up actions are completed. From startups to established companies, we help you maintain compliance and navigate inspections with confidence.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services stands out with our team of certified regulatory experts, offering global experience and deep knowledge of international standards. Our scientifically robust support and rapid response times ensure your audits are handled with precision and professionalism. We prioritize confidentiality and adhere to industry best practices, safeguarding your sensitive information. Partner with us to achieve audit success and maintain a strong compliance posture, ensuring your operations meet global regulatory expectations.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ace Your <span class='halfHeading'>Regulatory Audit?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for expert audit support and compliance success.',
+      aria: 'Contact us to discuss your audit representation needs',
+    },
+  },
   gtm: {
     eventCategory: 'Audit Services',
     eventAction: 'Audit Representation Viewed',
@@ -168,6 +239,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, we offer both on-site and virtual audit support depending on your location and regulatory needs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is Audit Representation, and why is it important?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Audit Representation involves providing expert support during regulatory inspections, including on-site assistance, response preparation, and follow-up actions. It’s critical for ensuring compliance, addressing findings, and avoiding penalties during audits.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which regulatory agencies do you support during audits?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide support for audits conducted by agencies like the FDA, EMA, and other global regulatory bodies, ensuring compliance with their specific requirements.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are included in your Audit Representation services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our deliverables include an On-Site Audit Support Report, Audit Response Documents, CAPA Plan and Documentation, and a Post-Inspection Summary & Follow-Up Plan.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Which regulatory guidelines do your services align with?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We align with 21 CFR Part 210/211, EU GMP Guidelines, and ICH Q10, ensuring compliance with global regulatory standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure confidentiality during audits?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We follow strict confidentiality protocols and industry best practices to protect your sensitive information throughout the audit process.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can your services support both pre-approval and routine audits?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our Audit Representation services are tailored for pre-approval inspections, routine GMP audits, and post-approval compliance checks, ensuring comprehensive support.',
         },
       },
     ],

@@ -31,6 +31,81 @@ export default {
     alt: 'Vendor assessment audit for pharmaceutical GMP compliance',
     caption: 'Comprehensive vendor audits aligned with Schedule M and GMP standards',
   },
+  pageContent: {
+    hero: {
+      heading: "Vendor Assessment Audits for <span class='halfHeading'>Pharmaceutical Excellence</span>",
+      tagline: 'Ensuring GMP Compliance and Quality Through Expert Vendor Audits',
+      detail:
+        'At Indivirtus Healthcare Services, we provide meticulous vendor assessment audits to ensure your third-party suppliers meet stringent GMP and regulatory standards, safeguarding product quality and compliance.',
+    },
+    overview: {
+      heading: "Why Vendor Assessments Are <span class='halfHeading'>Critical for Compliance</span>",
+      overviewCards: [
+        {
+          heading: 'What Are Vendor Assessments?',
+          detail:
+            'Vendor assessments are systematic evaluations of third-party manufacturers and raw material suppliers to ensure compliance with Good Manufacturing Practices (GMP) and regulatory standards. Our audits verify that your supply chain partners meet the highest quality and safety requirements.',
+        },
+        {
+          heading: 'Why Are They Essential?',
+          detail:
+            'Non-compliant vendors can introduce risks such as product recalls, regulatory penalties, or compromised patient safety. Our audits mitigate these risks by ensuring vendors adhere to Schedule M, GMP guidelines, and ICH Q9 standards, fostering a robust and compliant supply chain.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted pharmaceutical CRO, Indivirtus Healthcare Services conducts thorough audits to evaluate vendor facilities, processes, and systems. We provide actionable insights to strengthen your vendor ecosystem and ensure global market compliance.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert Approach to <span class='halfHeading'>Vendor Assessments</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, we take a meticulous and scientific approach to vendor assessments. Our team of certified toxicologists and regulatory experts conducts comprehensive audits that go beyond surface-level checks. We evaluate facility layouts to ensure optimal process flow, assess equipment for performance and compliance, verify CAPA (Corrective and Preventive Action) systems for robustness, and perform GAP analysis against Schedule M guidelines. Our audits are designed to identify risks, ensure GMP compliance, and provide actionable recommendations to enhance vendor performance.',
+        'We collaborate closely with your team to understand your specific needs, tailoring our audits to address unique challenges in your supply chain. Our goal is to empower you with a compliant, high-quality vendor network that supports your pharmaceutical objectives.',
+      ],
+    },
+    deliverables: {
+      heading: "Vendor Assessment <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Vendor Audit Report</strong>: A detailed evaluation of the vendor’s facility, processes, and compliance status.',
+        '<strong>Risk Assessment Summary</strong>: A comprehensive analysis of potential risks in the vendor’s operations.',
+        '<strong>CAPA Recommendations</strong>: Actionable corrective and preventive measures to address identified gaps.',
+        '<strong>Schedule M Compliance Gap Report</strong>: A targeted report outlining deviations from Schedule M guidelines.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our vendor assessments adhere to stringent regulatory guidelines to ensure audit readiness and global market compliance. We align with Schedule M, GMP guidelines, and ICH Q9 standards, providing a robust framework for evaluating vendor performance. By adhering to these standards, we help you mitigate regulatory risks, avoid costly penalties, and ensure your products meet international quality requirements.',
+        'Our audits are designed to withstand scrutiny from regulatory bodies, providing you with confidence in your vendor ecosystem. Whether you’re targeting local or global markets, our compliance-focused approach ensures your supply chain is audit-ready and aligned with industry best practices.',
+      ],
+      itemList: [
+        '<strong>Schedule M</strong>: Ensures compliance with India’s drug manufacturing standards.',
+        '<strong>GMP Guidelines</strong>: Adheres to global Good Manufacturing Practices for quality assurance.',
+        '<strong>ICH Q9</strong>: Follows risk management principles for consistent vendor performance.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Vendor assessments are critical when onboarding new suppliers, ensuring they meet regulatory and quality standards before entering your supply chain. They are also essential during periodic evaluations to maintain compliance and address emerging risks. Our services are ideal for pharmaceutical companies seeking to expand into global markets, where stringent regulatory requirements demand a compliant vendor ecosystem.',
+        'Whether you’re mitigating risks from raw material suppliers or ensuring third-party manufacturers align with GMP standards, our audits provide the insights you need to maintain product quality and regulatory compliance.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose Indivirtus for <span class='halfHeading'>Vendor Assessments</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our team of certified toxicologists and regulatory experts brings unparalleled expertise to vendor assessments. With extensive global regulatory experience, we ensure your vendors meet the highest standards of quality and compliance. Our scientifically defensible audits provide clear, actionable insights, delivered with rapid turnaround times to keep your operations on track.',
+        'We prioritize confidentiality and adhere to industry best practices, ensuring your sensitive data is protected. Partner with us to build a compliant, high-quality vendor ecosystem that supports your pharmaceutical goals.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Strengthen Your <span class='halfHeading'>Vendor Ecosystem?</span>",
+      tagline: 'Partner with Indivirtus to ensure GMP compliance and quality with expert vendor assessments.',
+      aria: 'Contact Indivirtus Healthcare Services to discuss vendor assessment audits',
+    },
+  },
   gtm: {
     eventCategory: 'GMP Audit Services',
     eventAction: 'Vendor Assessment Audit',
@@ -169,6 +244,46 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'It identifies non-compliance areas with Indian GMP guidelines (Schedule M) and suggests corrective actions to meet regulatory standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is a vendor assessment audit?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A vendor assessment audit is a systematic evaluation of third-party manufacturers or raw material suppliers to ensure they meet GMP and regulatory standards, such as Schedule M and ICH Q9, safeguarding product quality and compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is GMP compliance important for vendors?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'GMP compliance ensures that vendors adhere to strict quality standards, reducing risks of product recalls, regulatory penalties, and compromised patient safety. It’s essential for maintaining a reliable supply chain.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables can I expect from a vendor assessment?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You’ll receive a Vendor Audit Report, Risk Assessment Summary, CAPA Recommendations, and a Schedule M Compliance Gap Report, providing comprehensive insights and actionable steps to improve vendor performance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We align our audits with Schedule M, GMP guidelines, and ICH Q9 standards, ensuring audit readiness and compliance with global regulatory requirements for your vendors.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How long does a vendor assessment take?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The duration varies based on the vendor’s complexity and scope, but our team prioritizes rapid turnaround times without compromising thoroughness, typically completing audits within a few weeks.',
         },
       },
     ],

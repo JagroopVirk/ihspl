@@ -6,16 +6,9 @@ const { heading, detail, itemList } = data;
 <section aria-labelledby=`${ariaLabel}-heading` class=`${bgColor} section`>
   <div class="maxwidth">
     <h2 id="approach-heading" class="mb-6 text-center" set:html={heading} />
-    {detail && detail.map((item) => <p class="mx-auto mb-4 md:max-w-2/3">{item}</p>)}
+    {detail && detail.map((item) => <p class="mx-auto mb-4 md:max-w-2/3" set:html={item} />)}
     <ul class="text-gray mx-auto list-inside list-disc md:max-w-2/3">
-      {
-        itemList &&
-          itemList.map((item, index) => (
-            <li key={index} class="pb-1.5">
-              {item}{' '}
-            </li>
-          ))
-      }
+      {itemList && itemList.map((item, index) => <li key={index} class="pb-1.5" set:html={item} />)}
     </ul>
   </div>
 </section>

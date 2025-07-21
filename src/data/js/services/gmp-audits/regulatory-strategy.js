@@ -31,6 +31,83 @@ export default {
     alt: 'Regulatory strategy consulting for pharmaceutical submissions and compliance',
     caption: 'Global regulatory strategy services including submission planning and authority engagement',
   },
+  pageContent: {
+    hero: {
+      heading: "Strategic Regulatory Consulting for <span class='halfHeading'>Global Market Success</span>",
+      tagline: 'Navigate Complex Regulatory Landscapes with Confidence',
+      detail:
+        'Indivirtus Healthcare Services offers expert regulatory strategy consulting to streamline your path to global market entry, ensuring compliance and efficient product registration.',
+    },
+    overview: {
+      heading: "Mastering Regulatory Strategy for <span class='halfHeading'>Pharmaceutical Success</span>",
+      overviewCards: [
+        {
+          heading: 'What is Regulatory Strategy Consulting?',
+          detail:
+            'Regulatory strategy consulting involves developing tailored plans to navigate complex regulatory requirements for pharmaceutical product registration and lifecycle management. Our services include pathway planning, submission harmonization, gap analysis, and authority engagement, aligned with ICH CTD/eCTD, FDA, EMA, CDSCO, and WHO TRS standards.',
+        },
+        {
+          heading: 'Why is it Essential?',
+          detail:
+            'Navigating global regulatory landscapes can be challenging, with varying requirements across markets. A robust regulatory strategy ensures compliance, minimizes delays, and accelerates market entry, reducing risks of costly revisions or rejections.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'Indivirtus Healthcare Services partners with you to create strategic regulatory plans that align with your business goals. We provide expert guidance to ensure your submissions are compliant, harmonized, and optimized for global health authorities.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert Approach to <span class='halfHeading'>Regulatory Strategy</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our regulatory strategy consulting is driven by a team of global regulatory experts who understand the intricacies of pharmaceutical compliance. We identify optimal regulatory pathways tailored to your product and target markets, ensuring alignment with ICH CTD/eCTD standards. Our country-specific gap analysis highlights potential compliance issues, while our submission harmonization services streamline dossier preparation for authorities like the FDA, EMA, and CDSCO.',
+        'We also develop proactive strategies for engaging with health authorities, fostering clear and effective communication to address queries and expedite approvals. Our collaborative approach ensures your regulatory strategy is both scientifically robust and aligned with your business objectives.',
+      ],
+    },
+    deliverables: {
+      heading: "Regulatory Strategy <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Regulatory Pathway Report</strong>: A detailed plan outlining the optimal regulatory route for your product.',
+        '<strong>Submission Dossier Alignment Map</strong>: A roadmap for harmonizing submissions across global markets.',
+        '<strong>Gap Analysis Matrix (per target country)</strong>: Aappdata: A country-specific matrix identifying regulatory gaps and compliance needs.',
+        '<strong>Authority Communication Strategy Document</strong>: A tailored strategy for effective engagement with health authorities.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our regulatory strategy services are grounded in global standards, including ICH CTD/eCTD, FDA Guidance, EMA Guidelines, CDSCO Regulations, and WHO TRS. This ensures your submissions are compliant, audit-ready, and optimized for successful market entry across diverse regulatory environments.',
+        'By adhering to these frameworks, we help you navigate complex requirements, minimize regulatory risks, and ensure your product documentation meets the stringent expectations of global health authorities, facilitating smoother approvals and inspections.',
+      ],
+      itemList: [
+        '<strong>ICH CTD/eCTD</strong>: Standardized formats for global regulatory submissions.',
+        '<strong>FDA Guidance</strong>: Compliance with U.S. regulatory requirements for drug approval.',
+        '<strong>EMA Guidelines</strong>: Adherence to European Medicines Agency standards for market access.',
+        '<strong>CDSCO Regulations</strong>: Alignment with India’s Central Drugs Standard Control Organization requirements.',
+        '<strong>WHO TRS</strong>: Conformance with World Health Organization Technical Report Series guidelines.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our regulatory strategy services are critical during product registration, lifecycle management, and preparation for regulatory inspections. They are ideal for pharmaceutical companies launching new products, expanding into new markets, or addressing regulatory challenges during inspections or renewals.',
+        'Whether you’re seeking approval for a novel drug, harmonizing submissions for multiple regions, or preparing for a regulatory audit, our services provide the expertise and tools to ensure compliance and accelerate market entry.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose Indivirtus for <span class='halfHeading'>Regulatory Strategy</span>",
+      detail: [
+        'Indivirtus Healthcare Services combines deep regulatory expertise with a team of certified toxicologists and global regulatory specialists. Our scientifically defensible strategies are delivered with rapid turnaround times, ensuring minimal delays in your regulatory processes. We uphold strict confidentiality and industry best practices to protect your sensitive data.',
+        'Partner with us to navigate complex regulatory landscapes, streamline submissions, and achieve global market success with confidence and efficiency.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Streamline Your <span class='halfHeading'>Regulatory Journey?</span>",
+      tagline: 'Partner with Indivirtus to achieve seamless compliance and faster market entry.',
+      aria: 'Contact Indivirtus Healthcare Services to discuss regulatory strategy consulting',
+    },
+  },
   gtm: {
     eventCategory: 'GMP Audit Services',
     eventAction: 'Regulatory Strategy Services',
@@ -170,6 +247,46 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: "We support global markets including the US, EU, India, GCC, LATAM, and Southeast Asia, tailoring strategy to each region's regulatory framework.",
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is regulatory strategy consulting?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Regulatory strategy consulting involves creating tailored plans for pharmaceutical product registration and lifecycle management, including pathway planning, submission harmonization, gap analysis, and health authority engagement, aligned with global standards like ICH CTD/eCTD.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is regulatory strategy important for market entry?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A robust regulatory strategy ensures compliance with diverse global requirements, minimizes submission delays, and reduces risks of costly rejections, accelerating your product’s market entry.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables can I expect from regulatory strategy services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You’ll receive a Regulatory Pathway Report, Submission Dossier Alignment Map, Gap Analysis Matrix per target country, and an Authority Communication Strategy Document to guide your regulatory efforts.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure compliance with global regulations?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We align our services with ICH CTD/eCTD, FDA Guidance, EMA Guidelines, CDSCO Regulations, and WHO TRS, ensuring your submissions are compliant and ready for global health authority reviews.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'When should I engage regulatory strategy consulting?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Engage our services during product registration, market expansion, lifecycle management, or when preparing for regulatory inspections to ensure compliance and streamline approvals.',
         },
       },
     ],

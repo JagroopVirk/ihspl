@@ -13,9 +13,7 @@ import BTN from '@/components/other/BTN.astro';
   aria-describedby="cta-tagline"
 >
   <div class="maxwidth p-6">
-    <h3 id="cta-heading">
-      {cta.heading}
-    </h3>
+    <h3 id="cta-heading" set:html={cta.heading} />
     <p id="cta-tagline">
       {cta.tagline}
     </p>

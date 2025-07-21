@@ -40,78 +40,77 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Precision Airflow Visualization for Cleanroom Excellence',
-      tagline: 'Optimize Containment and Compliance with Expert Analysis',
+      heading: "Precision Airflow Visualization for <span class='halfHeading'>Cleanroom Excellence</span>",
+      tagline: 'Achieve Optimal Containment and Regulatory Compliance',
       detail:
-        'At Indivirtus Healthcare Services, our Airflow Visualization service ensures optimal performance of pharmaceutical cleanrooms, isolators, and biosafety cabinets. Through detailed airflow pattern analysis and compliance testing, we safeguard aseptic conditions, product integrity, and personnel safety while meeting global regulatory standards.',
+        'At Indivirtus Healthcare Services, our Airflow Visualization services ensure pharmaceutical cleanrooms, isolators, and biosafety cabinets perform at their best. Through advanced airflow pattern analysis and compliance testing, we safeguard <strong>aseptic conditions</strong>, protect product integrity, and ensure personnel safety while meeting stringent global regulatory standards.',
     },
     overview: {
-      heading: 'Why Airflow Visualization is Essential',
+      heading: "Mastering Airflow <span class='halfHeading'>Visualization</span>",
       overviewCards: [
         {
           heading: 'What is Airflow Visualization?',
           detail:
-            'Our Airflow Visualization service analyzes airflow patterns in cleanrooms, LAF cabinets, isolators, and biosafety cabinets to ensure unidirectional, turbulence-free flow. We verify containment boundaries and compliance with stringent regulatory standards.',
+            'Airflow Visualization is a critical process to analyze and validate airflow patterns in cleanrooms, laminar airflow (LAF) cabinets, isolators, and biosafety cabinets. Our service ensures <strong>unidirectional flow</strong>, eliminates turbulence, and verifies containment boundaries to meet global regulatory standards.',
         },
         {
-          heading: 'Why It’s Critical',
+          heading: 'Why is it Critical?',
           detail:
-            'Proper airflow is vital for maintaining aseptic conditions and preventing contamination in pharmaceutical manufacturing. Our service ensures cleanroom performance, protects product quality, and enhances operator safety.',
+            'Proper airflow is essential for maintaining <strong>aseptic environments</strong>, preventing contamination, and ensuring product quality in pharmaceutical manufacturing. Our services enhance operator safety, protect product integrity, and prepare your facility for regulatory inspections.',
         },
         {
-          heading: 'Our Role in Your Compliance',
+          heading: 'Our Role in Your Success',
           detail:
-            'Indivirtus delivers expert airflow analysis and actionable insights to optimize cleanroom performance. With advanced visualization techniques and regulatory expertise, we help you meet GMP requirements and achieve audit readiness.',
+            'Indivirtus Healthcare Services delivers expert airflow analysis with actionable insights to optimize cleanroom performance. Using cutting-edge visualization techniques and deep regulatory knowledge, we ensure your facility achieves <strong>audit readiness</strong> and complies with global GMP standards.',
         },
       ],
     },
     approach: {
-      heading: 'Our Expert Approach to Airflow Visualization',
+      heading: "Our Expert <span class='halfHeading'>Visualization Approach</span>",
       detail: [
-        'At Indivirtus, we provide comprehensive airflow visualization services to validate cleanroom performance in ISO-classified areas, laminar airflow (LAF) cabinets, isolators, and biosafety cabinets. Our process includes detailed airflow pattern analysis using smoke studies to detect turbulence and verify unidirectional flow. We conduct containment boundary assessments to ensure robust separation between critical zones and surrounding areas.',
-        'Our team uses high-definition video documentation to capture airflow dynamics, providing clear evidence of compliance with regulatory standards. We also perform turbulence detection and containment verification to safeguard product integrity and personnel safety. For facilities requiring customized solutions, we offer annotated airflow maps and regulatory gap analyses to address potential compliance issues and optimize performance.',
+        'At Indivirtus Healthcare Services, we provide comprehensive Airflow Visualization services tailored to validate cleanroom performance in ISO-classified areas, LAF cabinets, isolators, and biosafety cabinets. Our meticulous process includes advanced <strong>smoke studies</strong> to map airflow patterns, detect turbulence, and confirm unidirectional flow. We perform containment boundary assessments to ensure robust separation between critical zones and surrounding areas, safeguarding both products and personnel.',
+        'Our team leverages <strong>high-definition video documentation</strong> to capture airflow dynamics, providing clear, audit-ready evidence of compliance. For facilities requiring customized solutions, we offer annotated airflow maps and regulatory gap analyses to address potential issues and optimize performance. Our proactive approach ensures your cleanroom operations align with global standards, minimizing risks and enhancing operational efficiency.',
       ],
     },
     deliverables: {
-      heading: 'Comprehensive Deliverables for Cleanroom Validation',
+      heading: "Airflow Visualization <span class='halfHeading'>Deliverables</span>",
       itemList: [
-        'High-definition video documentation of airflow patterns',
-        'Detailed compliance report with expert observations',
-        'Containment boundary verification certification',
-        'Customized annotated airflow maps (upon request)',
-        'Regulatory gap analysis and recommendations',
+        '<strong>High-Definition Video Documentation</strong>: Detailed recordings of airflow patterns for regulatory evidence and analysis.',
+        '<strong>Comprehensive Compliance Report</strong>: Expert observations and recommendations to ensure regulatory adherence.',
+        '<strong>Containment Boundary Verification Certification</strong>: Official certification confirming robust separation of critical zones.',
+        '<strong>Customized Annotated Airflow Maps</strong>: Tailored maps highlighting airflow dynamics (available upon request).',
+        '<strong>Regulatory Gap Analysis</strong>: Actionable insights and recommendations to address compliance gaps.',
       ],
     },
     compliance: {
-      heading: 'Regulatory Compliance for Global Standards',
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our Airflow Visualization service adheres to stringent global regulatory guidelines, ensuring your cleanroom operations are compliant and audit-ready. By aligning with the latest standards, we provide confidence in your contamination control and safety strategies.',
+        'Our Airflow Visualization services are designed to meet the highest global regulatory standards, ensuring your cleanroom operations are <strong>audit-ready</strong> and compliant. By aligning with industry-leading guidelines, we provide scientifically defensible documentation and processes that withstand scrutiny from regulatory bodies, giving you confidence in your contamination control strategies.',
       ],
       itemList: [
-        'EU GMP Annex 1 (2022) for sterile manufacturing',
-        'ISO 14644-3:2019 for cleanroom testing',
-        'WHO TRS 961 (Annex 5) for GMP compliance',
-        'FDA Guidance for Industry: Sterile Drug Products (2004)',
-        'PIC/S PE 009-16 for GMP guidelines',
+        '<strong>EU GMP Annex 1 (2022)</strong>: Compliance with updated guidelines for sterile manufacturing.',
+        '<strong>ISO 14644-3:2019</strong>: Adherence to international standards for cleanroom testing and performance.',
+        '<strong>WHO TRS 961 (Annex 5)</strong>: Alignment with World Health Organization GMP requirements.',
+        '<strong>FDA Guidance for Industry: Sterile Drug Products (2004)</strong>: Conformance with FDA standards for aseptic processing.',
+        '<strong>PIC/S PE 009-16</strong>: Compliance with Pharmaceutical Inspection Co-operation Scheme GMP guidelines.',
       ],
     },
     applications: {
-      heading: 'Applications and Use Cases',
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our Airflow Visualization service is critical for pharmaceutical and biotech facilities operating cleanrooms, isolators, or biosafety cabinets. It’s essential for validating new systems, routine performance checks, or ensuring compliance during regulatory inspections. Use cases include verifying unidirectional airflow in aseptic processing areas, optimizing LAF cabinets, or supporting sterile drug manufacturing.',
+        'Our Airflow Visualization services are vital for pharmaceutical and biotech facilities operating cleanrooms, isolators, or biosafety cabinets. Whether you’re validating new systems, conducting routine performance checks, or preparing for regulatory inspections, our services ensure compliance and performance. Key use cases include verifying <strong>unidirectional airflow</strong> in aseptic processing areas, optimizing LAF cabinets for sterile drug manufacturing, and supporting compliance during FDA or EMA audits. From new facilities to ongoing operations, we help you maintain <strong>aseptic integrity</strong> and achieve regulatory success.',
       ],
     },
     conclusion: {
-      heading: 'Why Choose Indivirtus for Airflow Visualization?',
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Indivirtus Healthcare Services combines advanced visualization techniques, regulatory expertise, and a client-centric approach to deliver unmatched airflow validation solutions. Our team of specialists ensures scientifically defensible results, rapid turnaround times, and strict confidentiality to protect your proprietary data.',
-        'With tailored analysis and comprehensive documentation, we help you maintain aseptic conditions and achieve regulatory compliance. Partner with Indivirtus to optimize your cleanroom performance and ensure operational excellence.',
+        'Indivirtus Healthcare Services combines cutting-edge visualization technology with the expertise of certified professionals to deliver unmatched Airflow Visualization solutions. Our team, with extensive global regulatory experience, ensures <strong>scientifically defensible results</strong> and rapid turnaround times. We prioritize strict confidentiality and adhere to industry best practices, protecting your proprietary data. Partner with us to optimize cleanroom performance, achieve regulatory compliance, and maintain <strong>operational excellence</strong> in your pharmaceutical operations.',
       ],
     },
     cta: {
-      heading: 'Ready to Optimize Your Cleanroom Airflow?',
-      tagline: 'Partner with Indivirtus for Precision Visualization and Compliance',
-      aria: 'Contact Indivirtus Healthcare Services to discuss your airflow visualization needs',
+      heading: "Ready to Enhance Your <span class='halfHeading'>Cleanroom Performance?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Precision Airflow Validation',
+      aria: 'Contact us to discuss your airflow visualization needs',
     },
   },
   gtm: {

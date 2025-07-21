@@ -31,6 +31,78 @@ export default {
     alt: 'Regulatory Dossier Support Services',
     caption: 'CTD/eCTD Preparation, CMC Review, Global Submissions',
   },
+  pageContent: {
+    hero: {
+      heading: "Data Integrity & CSV for <span class='halfHeading'>Regulatory Compliance</span>",
+      tagline: 'Safeguard Your Data with Expert Audits and Validation',
+      detail:
+        'Indivirtus Healthcare Services delivers specialized Data Integrity and Computer System Validation (CSV) services to ensure compliance with 21 CFR Part 11 and global standards. Our expert audits and technical support help pharmaceutical companies maintain data integrity, ensuring regulatory readiness and operational trust.',
+    },
+    overview: {
+      heading: "Mastering Data Integrity <span class='halfHeading'>& System Validation</span>",
+      overviewCards: [
+        {
+          heading: 'What is Data Integrity & CSV?',
+          detail:
+            'Data Integrity ensures that data is accurate, complete, and reliable throughout its lifecycle. Computer System Validation (CSV) verifies that computerized systems in GxP environments meet regulatory requirements, such as 21 CFR Part 11, for data security and traceability.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Compliance with data integrity standards prevents regulatory penalties, ensures patient safety, and maintains trust in your operations. Proper CSV ensures systems are reliable, secure, and audit-ready for global regulatory inspections.',
+        },
+        {
+          heading: 'Our Role in Your Compliance',
+          detail:
+            'Indivirtus Healthcare Services provides comprehensive audits and validation services to align your systems with 21 CFR Part 11, ALCOA+ principles, and global guidelines. We help you achieve robust data governance and regulatory compliance.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Validation Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, we take a meticulous approach to Data Integrity and Computer System Validation. Our certified professionals conduct thorough assessments, including audit trail verification, data backup evaluations, and system qualification, to ensure compliance with global standards. We align with ALCOA+ principles (Attributable, Legible, Contemporaneous, Original, Accurate, and more) to safeguard data integrity across GxP environments. Our services include developing tailored CSV Master Plans and providing technical support to address gaps, ensuring your systems are secure, compliant, and ready for regulatory scrutiny.',
+      ],
+    },
+    deliverables: {
+      heading: "Data Integrity & CSV <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Data Integrity Audit Report</strong>: A detailed report identifying risks, non-conformities, and recommendations for compliance.',
+        '<strong>CSV Master Plan</strong>: A strategic roadmap outlining the validation process for computerized systems.',
+        '<strong>Audit Trail & Backup Validation Summary</strong>: Documentation verifying the integrity of audit trails and data backup processes.',
+        '<strong>21 CFR Part 11 Compliance Checklist</strong>: A practical tool to ensure adherence to FDA’s electronic records and signatures regulations.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Guidelines Followed</span>",
+      detail: [
+        'Our Data Integrity and CSV services are designed to meet stringent global regulatory requirements, ensuring your systems are audit-ready and compliant. By adhering to industry standards, we provide scientifically defensible solutions that support inspections by regulatory bodies like the FDA, MHRA, and WHO. Our expertise ensures your data governance aligns with international expectations, facilitating seamless compliance.',
+      ],
+      itemList: [
+        '<strong>21 CFR Part 11</strong>: Compliance with FDA regulations for electronic records and electronic signatures.',
+        '<strong>MHRA Data Integrity Guidance</strong>: Adherence to UK Medicines and Healthcare products Regulatory Agency guidelines for data integrity.',
+        '<strong>EU Annex 11</strong>: Alignment with European Union requirements for computerized systems in GMP environments.',
+        '<strong>WHO Guidance on Data Integrity</strong>: Conformance with World Health Organization standards for global data governance.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Data Integrity and CSV services are essential for pharmaceutical and life science companies managing computerized systems in GxP environments. Whether you’re implementing new systems, upgrading existing ones, or preparing for regulatory inspections, our services ensure compliance and reliability. We support applications such as electronic batch records, laboratory information management systems (LIMS), and quality management systems. Our audits and validations are ideal for companies addressing data integrity gaps, ensuring audit trail compliance, or seeking to align with 21 CFR Part 11 for global market access.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services brings unmatched expertise in Data Integrity and Computer System Validation, with a team of certified professionals experienced in global regulatory requirements. Our scientifically robust audits and validations ensure your systems are secure and compliant. We prioritize rapid turnaround times, delivering actionable insights to maintain data integrity and regulatory readiness. With a commitment to confidentiality and industry best practices, we help you build trust in your operations and achieve compliance with confidence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ensure <span class='halfHeading'>Data Integrity Compliance?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services to secure your systems and achieve regulatory success.',
+      aria: 'Contact us to discuss your data integrity and CSV needs',
+    },
+  },
   gtm: {
     eventCategory: 'Regulatory Dossier Support',
     eventAction: 'View Service',
@@ -111,6 +183,54 @@ export default {
             '@type': 'Service',
             name: 'Pre-Approval Inspection (PAI) Readiness',
             description: 'Support for PAI documentation and regulatory inspection readiness.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What is Data Integrity and Computer System Validation (CSV)?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Data Integrity ensures data is accurate, complete, and reliable throughout its lifecycle. CSV verifies that computerized systems in GxP environments meet regulatory requirements, such as 21 CFR Part 11, for security and traceability.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Why is 21 CFR Part 11 compliance important?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Compliance with 21 CFR Part 11 ensures that electronic records and signatures are trustworthy, secure, and equivalent to paper records, meeting FDA requirements and avoiding regulatory penalties.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What deliverables are included in your Data Integrity and CSV services?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We provide a Data Integrity Audit Report, CSV Master Plan, Audit Trail & Backup Validation Summary, and a 21 CFR Part 11 Compliance Checklist to ensure regulatory compliance.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'Which regulatory guidelines do your services align with?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'Our services comply with 21 CFR Part 11, MHRA Data Integrity Guidance, EU Annex 11, and WHO Guidance on Data Integrity, ensuring global regulatory alignment.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'How does Indivirtus ensure confidentiality during audits?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We adhere to strict confidentiality protocols and industry best practices, protecting your sensitive data throughout the audit and validation process.',
+          },
+        },
+        {
+          '@type': 'Question',
+          name: 'What types of systems can Indivirtus validate?',
+          acceptedAnswer: {
+            '@type': 'Answer',
+            text: 'We validate a range of GxP systems, including electronic batch records, laboratory information management systems (LIMS), quality management systems, and other computerized systems.',
           },
         },
       ],

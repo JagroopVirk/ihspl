@@ -14,12 +14,10 @@ const { compliance } = Astro.props;
     {
       compliance.complianceSections.map((section, index) => (
         <div key={`compliance-${index}`}>
-          <h3 class="mb-4">{section.title}</h3>
+          <h3 class="mb-4" set:html={section.title} />
           <ul class="text-gray ml-4 list-outside list-disc">
             {section.items.map((item, i) => (
-              <li class="mb-1.5" key={`${section.title}-${index}-item-${i}`}>
-                {item}
-              </li>
+              <li class="mb-1.5" key={`${section.title}-${index}-item-${i}`} set:html={item} />
             ))}
           </ul>
         </div>

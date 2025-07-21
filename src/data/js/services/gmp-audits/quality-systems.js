@@ -36,6 +36,82 @@ export default {
     alt: 'Quality system development consulting for pharmaceutical QMS',
     caption: 'Comprehensive QMS development & data integrity auditing',
   },
+  pageContent: {
+    hero: {
+      heading: "Quality System Development for <span class='halfHeading'>Pharmaceutical Excellence</span>",
+      tagline: 'Build Robust, Compliant Quality Systems with Global Standards',
+      detail:
+        'Indivirtus Healthcare Services delivers tailored quality system development, ensuring your pharmaceutical operations align with ICH Q10, FDA, WHO, and EU GMP standards for a robust, inspection-ready quality culture.',
+    },
+    overview: {
+      heading: "Why Quality Systems Are <span class='halfHeading'>Vital for Compliance</span>",
+      overviewCards: [
+        {
+          heading: 'What is Quality System Development?',
+          detail:
+            'Quality system development involves establishing, enhancing, or auditing pharmaceutical Quality Management Systems (QMS) to ensure compliance with global regulatory standards like ICH Q10, FDA 21 CFR Parts 210 & 211, WHO TRS, and EU GMP. Our services include ALCOA+ compliance, SOP audits, and deviation management.',
+        },
+        {
+          heading: 'Why is it Essential?',
+          detail:
+            'A robust QMS ensures consistent product quality, regulatory compliance, and audit readiness. Without it, companies risk deviations, regulatory penalties, or compromised patient safety. Our services create a strong quality culture to mitigate these risks.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'Indivirtus Healthcare Services partners with you to build or optimize QMS frameworks that meet global standards. We ensure your systems are efficient, compliant, and ready for regulatory inspections, supporting your operational and market goals.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert Approach to <span class='halfHeading'>Quality Systems</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, we take a risk-based, global compliance approach to quality system development. Our certified experts design and enhance QMS frameworks tailored to your organization’s needs, aligning with ICH Q10, FDA, WHO, and EU GMP standards. We conduct thorough SOP audits, ensure ALCOA+ compliance (Attributable, Legible, Contemporaneous, Original, Accurate, and more), and implement robust deviation and Out-of-Specification (OOS) management processes.',
+        'Our collaborative process involves assessing your current systems, identifying gaps, and providing customized solutions to foster a sustainable quality culture. We prioritize efficiency and compliance, ensuring your QMS is inspection-ready and supports long-term success.',
+      ],
+    },
+    deliverables: {
+      heading: "Quality System <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Quality Management System (QMS) Framework</strong>: A comprehensive, tailored QMS aligned with global standards.',
+        '<strong>ALCOA+ Compliance Checklist and Remediation Plan</strong>: A detailed checklist and actionable plan to ensure data integrity.',
+        '<strong>SOP Audit Reports</strong>: In-depth evaluations of SOP compliance and effectiveness.',
+        '<strong>Deviation & OOS Review Summary</strong>: A summary of deviation and OOS findings with corrective recommendations.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our quality system development services are aligned with key regulatory frameworks, including ICH Q10, FDA 21 CFR Parts 210 & 211, WHO TRS 986 Annex 2, and EU GMP Chapter 1. This ensures your QMS meets global expectations for quality, data integrity, and audit readiness.',
+        'By adhering to these standards, we help you mitigate regulatory risks, streamline inspections, and maintain compliance across local and global markets, fostering confidence in your quality systems.',
+      ],
+      itemList: [
+        '<strong>ICH Q10</strong>: Pharmaceutical Quality System standards for robust QMS development.',
+        '<strong>FDA 21 CFR Parts 210 & 211</strong>: Compliance with U.S. regulations for drug manufacturing and quality control.',
+        '<strong>WHO TRS 986 Annex 2</strong>: Adherence to WHO quality system guidelines.',
+        '<strong>EU GMP Chapter 1</strong>: Alignment with European quality management requirements.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our quality system development services are essential when establishing a new QMS, optimizing existing systems, or preparing for regulatory inspections. They are critical for companies scaling operations, entering new markets, or addressing compliance gaps identified during audits.',
+        'Whether you’re implementing ALCOA+ principles, refining SOPs, or managing deviations, our services ensure your quality systems are robust, compliant, and ready to support your pharmaceutical operations.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose Indivirtus for <span class='halfHeading'>Quality Systems</span>",
+      detail: [
+        'Indivirtus Healthcare Services brings unparalleled expertise to quality system development, with a team of certified toxicologists and global regulatory specialists. Our risk-based, scientifically defensible approach delivers rapid results, ensuring your QMS is both compliant and efficient. We prioritize confidentiality and adhere to industry best practices, safeguarding your sensitive data.',
+        'Partner with us to build a quality culture that supports compliance, enhances operational efficiency, and prepares your organization for regulatory success.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Build a Robust <span class='halfHeading'>Quality System?</span>",
+      tagline: 'Partner with Indivirtus to create compliant, inspection-ready quality systems.',
+      aria: 'Contact Indivirtus Healthcare Services to discuss quality system development',
+    },
+  },
   gtm: {
     eventCategory: 'GMP Audit Services',
     eventAction: 'View Quality System Development Service',
@@ -178,6 +254,46 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Absolutely. We align our QMS frameworks with EMA, USFDA, MHRA, WHO, and CDSCO standards, ensuring readiness for global inspections.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is quality system development in pharmaceuticals?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Quality system development involves establishing or enhancing Quality Management Systems (QMS) to ensure compliance with global standards like ICH Q10, FDA 21 CFR Parts 210 & 211, WHO TRS, and EU GMP, focusing on ALCOA+ compliance, SOP audits, and deviation management.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why is a robust QMS important?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'A robust QMS ensures consistent product quality, regulatory compliance, and audit readiness, reducing risks of deviations, penalties, or compromised patient safety.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are included in quality system development?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'You’ll receive a tailored QMS framework, ALCOA+ compliance checklist and remediation plan, SOP audit reports, and a deviation & OOS review summary to ensure compliance and quality.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Indivirtus ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We align our services with ICH Q10, FDA 21 CFR Parts 210 & 211, WHO TRS 986 Annex 2, and EU GMP Chapter 1, ensuring your QMS is compliant and inspection-ready.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'When should I invest in quality system development?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Invest in quality system development when establishing a new QMS, optimizing existing systems, scaling operations, or preparing for regulatory inspections to ensure compliance and efficiency.',
         },
       },
     ],

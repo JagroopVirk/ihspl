@@ -55,81 +55,80 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Specialized Containment Engineering for Pharmaceutical Excellence',
-      tagline: 'Tailored Solutions for High-Potency Facilities and Compliance',
+      heading: "Containment Engineering for <span class='halfHeading'>Pharmaceutical Precision</span>",
+      tagline: 'Tailored Solutions for Safe and Compliant High-Potency Facilities',
       detail:
-        'At Indivirtus Healthcare Services, our Containment Engineering Consulting service delivers end-to-end technical solutions for pharmaceutical containment systems. From conceptual design to operational qualification, we ensure your high-potency and sterile facilities meet global regulatory standards with precision and efficiency.',
+        'At Indivirtus Healthcare Services, our Containment Engineering Consulting services deliver <strong>end-to-end technical solutions</strong> for pharmaceutical containment systems. From conceptual design to operational qualification, we ensure your high-potency and sterile facilities achieve <strong>regulatory compliance</strong> and operational excellence with precision.',
     },
     overview: {
-      heading: 'Why Containment Engineering Matters',
+      heading: "Mastering Containment <span class='halfHeading'>Engineering</span>",
       overviewCards: [
         {
           heading: 'What is Containment Engineering Consulting?',
           detail:
-            'Our service provides comprehensive engineering support for pharmaceutical containment systems, optimizing designs for high-potency APIs, sterile products, and ATMPs. We combine advanced engineering with regulatory expertise to ensure safety and compliance.',
+            'Our service provides comprehensive engineering support for containment systems handling <strong>high-potency APIs</strong>, sterile products, and ATMPs. We integrate advanced engineering with regulatory expertise to ensure <strong>operator safety</strong>, product integrity, and compliance.',
         },
         {
-          heading: 'Why It’s Critical',
+          heading: 'Why is it Critical?',
           detail:
-            'Effective containment systems are essential to protect operators, products, and the environment from hazardous compounds. Our solutions ensure robust performance, regulatory compliance, and operational efficiency for your facility.',
+            'Effective containment systems are vital to protect operators, products, and the environment from hazardous compounds. Our solutions ensure <strong>robust performance</strong>, regulatory compliance, and operational efficiency, minimizing risks and ensuring audit readiness.',
         },
         {
           heading: 'Our Role in Your Success',
           detail:
-            'Indivirtus bridges engineering design and regulatory compliance, delivering tailored solutions for new and existing facilities. Our expertise ensures your containment systems are optimized, compliant, and ready for operation.',
+            'Indivirtus Healthcare Services bridges engineering design and regulatory compliance, delivering <strong>tailored solutions</strong> for new and existing facilities. Our expertise ensures your containment systems are optimized, compliant, and ready for seamless operation.',
         },
       ],
     },
     approach: {
-      heading: 'Our Expert Approach to Containment Engineering',
+      heading: "Our Expert <span class='halfHeading'>Engineering Approach</span>",
       detail: [
-        'At Indivirtus, we provide a holistic approach to containment engineering, integrating advanced technical methodologies with regulatory compliance. For new projects, we conduct design-phase risk assessments using Computational Fluid Dynamics (CFD) simulations to optimize airflow and containment hierarchies. For existing facilities, our gap analyses against EU GMP Annex 1 and ISPE guidelines identify and prioritize risks.',
-        'Our services include 3D airflow modeling, containment hierarchy validation using tracer gas studies, isolator/RABS performance qualification, and cleanroom pressure cascade optimization. We also perform decontamination system validation and provide operational qualification support to ensure seamless facility performance. For advanced therapy medicinal products (ATMPs), we tailor our approach to meet unique containment challenges, ensuring compliance and safety.',
+        'At Indivirtus Healthcare Services, we adopt a <strong>holistic approach</strong> to containment engineering, integrating advanced technical methodologies with global regulatory compliance. For new projects, we conduct design-phase risk assessments using <strong>Computational Fluid Dynamics (CFD) simulations</strong> to optimize airflow and containment hierarchies. For existing facilities, our gap analyses against EU GMP Annex 1 and ISPE guidelines identify and prioritize risks to enhance performance.',
+        'Our services include <strong>3D airflow modeling</strong>, containment hierarchy validation using tracer gas studies, isolator/RABS performance qualification, and cleanroom pressure cascade optimization. We also perform decontamination system validation and provide operational qualification support to ensure seamless facility performance. For advanced therapy medicinal products (ATMPs), we tailor our approach to meet unique containment challenges, ensuring <strong>safety and compliance</strong>.',
       ],
     },
     deliverables: {
-      heading: 'Comprehensive Deliverables for Containment Excellence',
+      heading: "Containment Engineering <span class='halfHeading'>Deliverables</span>",
       itemList: [
-        'Comprehensive gap analysis report with risk prioritization',
-        '3D containment hierarchy diagrams with airflow simulations',
-        'Isolator/RABS design review with CFD analysis (where applicable)',
-        'Pressure mapping validation package with dynamic testing data',
-        'Decontamination system performance qualification protocol',
-        'Regulatory roadmap for containment compliance',
-        'Turnover package for facility handover (DQ/IQ/OQ support)',
+        '<strong>Comprehensive Gap Analysis Report</strong>: Detailed risk prioritization to address compliance gaps.',
+        '<strong>3D Containment Hierarchy Diagrams</strong>: Airflow simulations visualizing containment performance.',
+        '<strong>Isolator/RABS Design Review</strong>: CFD analysis ensuring optimal system design (where applicable).',
+        '<strong>Pressure Mapping Validation Package</strong>: Dynamic testing data for cleanroom pressure cascades.',
+        '<strong>Decontamination System Performance Protocol</strong>: Qualification protocols for robust decontamination.',
+        '<strong>Regulatory Roadmap for Compliance</strong>: Strategic guidance for meeting global standards.',
+        '<strong>Turnover Package for Facility Handover</strong>: Complete DQ/IQ/OQ support for seamless operations.',
       ],
     },
     compliance: {
-      heading: 'Regulatory Compliance for Global Standards',
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our Containment Engineering Consulting service adheres to stringent global regulatory guidelines, ensuring your facility is audit-ready and compliant with international standards. We align with the latest regulations to provide confidence in your containment systems.',
+        'Our Containment Engineering Consulting services adhere to the highest global regulatory standards, ensuring your facility is <strong>audit-ready</strong> and compliant. By aligning with industry-leading guidelines, we provide scientifically defensible documentation and processes that withstand scrutiny from regulatory bodies, ensuring confidence in your containment systems.',
       ],
       itemList: [
-        'EU GMP Annex 1 (2022) for Contamination Control Strategy',
-        'ISPE Baseline Guide Vol 5 for Commissioning & Qualification',
-        'SMEPAC Containment Performance Standards',
-        'ISO 14644-1:2015 for cleanroom classification',
-        'ISO 10648-2 for containment enclosures',
-        'EMA Guideline on Hazardous Compounds (2014)',
+        '<strong>EU GMP Annex 1 (2022)</strong>: Compliance with contamination control strategy requirements.',
+        '<strong>ISPE Baseline Guide Vol 5</strong>: Adherence to commissioning and qualification standards.',
+        '<strong>SMEPAC Containment Performance Standards</strong>: Alignment with standardized testing protocols.',
+        '<strong>ISO 14644-1:2015</strong>: Conformance with cleanroom classification standards.',
+        '<strong>ISO 10648-2</strong>: Compliance with containment enclosure requirements.',
+        '<strong>EMA Guideline on Hazardous Compounds (2014)</strong>: Adherence to safety standards for hazardous materials.',
       ],
     },
     applications: {
-      heading: 'Applications and Use Cases',
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our Containment Engineering Consulting service is critical for pharmaceutical manufacturers handling high-potency APIs, sterile products, or ATMPs. It’s ideal for designing new facilities, upgrading existing systems, or ensuring compliance during regulatory inspections. Use cases include optimizing isolator/RABS performance, validating cleanroom pressure cascades, or supporting ATMP manufacturing.',
+        'Our Containment Engineering Consulting services are essential for pharmaceutical manufacturers handling <strong>high-potency APIs</strong>, sterile products, or advanced therapy medicinal products (ATMPs). Whether designing new facilities, upgrading existing systems, or preparing for regulatory inspections, our services ensure compliance and performance. Key use cases include optimizing <strong>isolator/RABS performance</strong>, validating cleanroom pressure cascades, and supporting ATMP manufacturing, ensuring <strong>operator safety</strong> and regulatory success across all facility types.',
       ],
     },
     conclusion: {
-      heading: 'Why Choose Indivirtus for Containment Engineering?',
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Indivirtus Healthcare Services combines certified engineering expertise, advanced simulation tools, and global regulatory knowledge to deliver unmatched containment solutions. Our team ensures scientifically defensible designs, rapid project timelines, and strict confidentiality to protect your proprietary data.',
-        'By providing tailored engineering solutions and comprehensive documentation, we help you achieve operational excellence and regulatory compliance. Partner with Indivirtus to optimize your containment systems and ensure facility success.',
+        'Indivirtus Healthcare Services combines certified engineering expertise with advanced simulation tools and global regulatory knowledge to deliver unmatched containment solutions. Our team of specialists ensures <strong>scientifically defensible designs</strong>, rapid project timelines, and strict confidentiality to protect your proprietary data. With tailored engineering solutions and comprehensive documentation, we help you achieve <strong>operational excellence</strong> and regulatory compliance, ensuring your containment systems perform at the highest level.',
       ],
     },
     cta: {
-      heading: 'Ready to Optimize Your Containment Systems?',
-      tagline: 'Partner with Indivirtus for Expert Engineering Solutions',
-      aria: 'Contact Indivirtus Healthcare Services to discuss your containment engineering needs',
+      heading: "Ready to Optimize Your <span class='halfHeading'>Containment Systems?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Precision Engineering Excellence',
+      aria: 'Contact us to discuss your containment engineering needs',
     },
   },
   gtm: {

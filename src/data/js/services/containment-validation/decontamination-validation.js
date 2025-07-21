@@ -49,81 +49,80 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Comprehensive Decontamination Validation for Pharmaceutical Compliance',
-      tagline: 'Ensuring Cleanroom and Equipment Integrity with Rigorous Validation',
+      heading: "Decontamination Validation for <span class='halfHeading'>Pharmaceutical Integrity</span>",
+      tagline: 'Ensure Cleanroom and Equipment Safety with Rigorous Validation',
       detail:
-        'At Indivirtus Healthcare Services, our Decontamination Validation service delivers scientifically robust validation of cleaning and sterilization processes. We ensure your pharmaceutical equipment and cleanroom surfaces are free from residues and contaminants, meeting stringent global regulatory standards.',
+        'At Indivirtus Healthcare Services, our Decontamination Validation services deliver <strong>scientifically robust</strong> validation of cleaning and sterilization processes. We ensure your pharmaceutical equipment and cleanroom surfaces are free from residues, microbial contaminants, and cleaning agents, meeting stringent global regulatory standards for <strong>aseptic compliance</strong> and product safety.',
     },
     overview: {
-      heading: 'Why Decontamination Validation is Essential',
+      heading: "Mastering Decontamination <span class='halfHeading'>Validation</span>",
       overviewCards: [
         {
           heading: 'What is Decontamination Validation?',
           detail:
-            'Our Decontamination Validation service verifies that cleaning and sterilization processes effectively eliminate product residues, microbial contaminants, and cleaning agents from pharmaceutical equipment and cleanroom surfaces, ensuring compliance and safety.',
+            'Decontamination Validation verifies that cleaning and sterilization processes effectively eliminate <strong>product residues</strong>, microbial contaminants, and cleaning agents from pharmaceutical equipment and cleanroom surfaces. Our services ensure compliance with global standards, safeguarding product quality and safety.',
         },
         {
-          heading: 'Why It’s Critical',
+          heading: 'Why is it Critical?',
           detail:
-            'Effective cleaning and decontamination prevent cross-contamination and ensure product quality in pharmaceutical manufacturing. Our validation services provide regulatory-compliant proof of cleanliness, protecting patients and ensuring audit readiness.',
+            'Effective decontamination prevents <strong>cross-contamination</strong>, ensures product integrity, and protects patient safety in pharmaceutical manufacturing. Our validation services provide audit-ready proof of cleanliness, ensuring compliance with regulatory requirements.',
         },
         {
           heading: 'Our Role in Your Compliance',
           detail:
-            'Indivirtus partners with you to design and execute risk-based validation protocols. With expertise in global regulations and advanced analytical methods, we deliver actionable insights to maintain contamination control and compliance.',
+            'Indivirtus Healthcare Services partners with you to design and execute <strong>risk-based validation protocols</strong>. With deep expertise in global regulations and advanced analytical methods, we deliver actionable insights to maintain contamination control and achieve regulatory success.',
         },
       ],
     },
     approach: {
-      heading: 'Our Expert Approach to Decontamination Validation',
+      heading: "Our Expert <span class='halfHeading'>Validation Approach</span>",
       detail: [
-        'At Indivirtus, we employ a risk-based approach to decontamination validation, aligned with ASTM E3106-18 and FDA guidance. Our protocols cover both manual cleaning procedures and automated systems, such as Vaporized Hydrogen Peroxide (VHP) generators, and include worst-case scenario testing to ensure robustness. We quantify residues using advanced analytical techniques like Total Organic Carbon (TOC), High-Performance Liquid Chromatography (HPLC), and conductivity measurements.',
-        'For microbial control, we conduct recovery studies and sporicidal efficacy validation using biological indicators (Geobacillus stearothermophilus) to meet EU GMP Annex 1 requirements for aseptic processing. We also perform material compatibility assessments to ensure cleaning processes do not compromise equipment integrity. Our comprehensive approach includes 3D contamination mapping of critical surfaces, providing clear visualization of cleaning effectiveness.',
+        'At Indivirtus Healthcare Services, we adopt a <strong>risk-based approach</strong> to decontamination validation, aligned with ASTM E3106-18 and FDA guidance. Our protocols cover both manual and automated cleaning systems, including Vaporized Hydrogen Peroxide (VHP) generators, and incorporate worst-case scenario testing to ensure robustness. We utilize advanced analytical techniques such as <strong>Total Organic Carbon (TOC)</strong>, High-Performance Liquid Chromatography (HPLC), and conductivity measurements to quantify residues with precision.',
+        'For microbial control, we conduct recovery studies and sporicidal efficacy validation using biological indicators (Geobacillus stearothermophilus) to meet EU GMP Annex 1 requirements for <strong>aseptic processing</strong>. We also perform material compatibility assessments to ensure cleaning processes do not compromise equipment integrity. Our comprehensive approach includes <strong>3D contamination mapping</strong> of critical surfaces, providing clear, audit-ready visualization of cleaning effectiveness.',
       ],
     },
     deliverables: {
-      heading: 'Comprehensive Deliverables for Cleaning Validation',
+      heading: "Decontamination <span class='halfHeading'>Validation Deliverables</span>",
       itemList: [
-        'Risk-based validation master plan',
-        'TOC, swab, and rinse sample analytical reports with trend analysis',
-        'Validated VHP cycle parameters with BI/CI evidence',
-        '3D contamination mapping of critical surfaces',
-        'Cleaning verification matrix for multi-product facilities',
-        'Material compatibility assessment report',
-        'SOPs for routine monitoring and requalification',
+        '<strong>Risk-Based Validation Master Plan</strong>: A strategic roadmap for cleaning and sterilization validation.',
+        '<strong>TOC, Swab, and Rinse Sample Analytical Reports</strong>: Detailed reports with trend analysis for residue quantification.',
+        '<strong>Validated VHP Cycle Parameters</strong>: Evidence of efficacy with biological and chemical indicators (BI/CI).',
+        '<strong>3D Contamination Mapping</strong>: Visual documentation of critical surface cleanliness.',
+        '<strong>Cleaning Verification Matrix</strong>: Tailored matrix for multi-product facilities to ensure compliance.',
+        '<strong>Material Compatibility Assessment Report</strong>: Analysis ensuring cleaning processes preserve equipment integrity.',
+        '<strong>SOPs for Routine Monitoring</strong>: Standardized procedures for ongoing monitoring and requalification.',
       ],
     },
     compliance: {
-      heading: 'Regulatory Compliance for Global Standards',
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our Decontamination Validation service adheres to the latest global regulatory guidelines, ensuring your cleaning processes are compliant and audit-ready. By aligning with stringent standards, we provide confidence in your contamination control strategy.',
+        'Our Decontamination Validation services are designed to meet the highest global regulatory standards, ensuring your cleaning processes are <strong>audit-ready</strong> and compliant. By aligning with industry-leading guidelines, we provide scientifically defensible documentation and processes that withstand scrutiny from regulatory bodies, ensuring confidence in your contamination control strategy.',
       ],
       itemList: [
-        'EU GMP Annex 1 (2022) for sterile manufacturing',
-        'FDA Cleaning Validation Guidance (1993)',
-        'PIC/S PI 006-3 for cleaning validation recommendations',
-        'ASTM E3106-18 for science-based cleaning',
-        'ISO 14698-1/2 for cleanroom biocontamination control',
-        'USP <1072> for disinfectant efficacy testing',
+        '<strong>EU GMP Annex 1 (2022)</strong>: Compliance with guidelines for sterile manufacturing and aseptic processing.',
+        '<strong>FDA Cleaning Validation Guidance (1993)</strong>: Adherence to FDA standards for cleaning validation.',
+        '<strong>PIC/S PI 006-3</strong>: Alignment with Pharmaceutical Inspection Co-operation Scheme recommendations for cleaning validation.',
+        '<strong>ASTM E3106-18</strong>: Conformance with science-based cleaning validation standards.',
+        '<strong>ISO 14698-1/2</strong>: Compliance with standards for cleanroom biocontamination control.',
+        '<strong>USP <1072></strong>: Adherence to disinfectant efficacy testing requirements.',
       ],
     },
     applications: {
-      heading: 'Applications and Use Cases',
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our Decontamination Validation service is critical for pharmaceutical and biotech facilities requiring robust cleaning and sterilization processes. It’s essential for validating new equipment, ensuring compliance in multi-product facilities, or supporting aseptic manufacturing. Use cases include validating VHP systems, verifying cleaning for high-potency APIs, or preparing for regulatory inspections.',
+        'Our Decontamination Validation services are essential for pharmaceutical and biotech facilities requiring robust cleaning and sterilization processes. Whether validating new equipment, ensuring compliance in <strong>multi-product facilities</strong>, or supporting aseptic manufacturing, our services deliver reliability and compliance. Key use cases include validating <strong>VHP systems</strong>, verifying cleaning processes for high-potency APIs, and preparing for regulatory inspections by agencies like the FDA or EMA. We support facilities at all stages to achieve <strong>contamination-free operations</strong> and regulatory success.',
       ],
     },
     conclusion: {
-      heading: 'Why Choose Indivirtus for Decontamination Validation?',
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Indivirtus Healthcare Services combines certified expertise, advanced analytical methods, and global regulatory knowledge to deliver robust decontamination validation solutions. Our team ensures scientifically defensible results, rapid turnaround times, and strict confidentiality to protect your proprietary data.',
-        'With tailored validation protocols and comprehensive documentation, we help you maintain contamination control and achieve compliance with confidence. Partner with Indivirtus to ensure the integrity of your cleaning processes and operational excellence.',
+        'Indivirtus Healthcare Services combines the expertise of certified professionals with advanced analytical methods and global regulatory knowledge to deliver unmatched Decontamination Validation solutions. Our <strong>scientifically robust</strong> approach ensures defensible results, rapid turnaround times, and strict confidentiality to protect your proprietary data. With tailored validation protocols and comprehensive documentation, we help you maintain <strong>contamination control</strong> and achieve regulatory compliance with confidence, ensuring operational excellence in your pharmaceutical operations.',
       ],
     },
     cta: {
-      heading: 'Ready to Validate Your Cleaning Processes?',
-      tagline: 'Partner with Indivirtus for Comprehensive Decontamination Solutions',
-      aria: 'Contact Indivirtus Healthcare Services to discuss your decontamination validation needs',
+      heading: "Ready to Ensure <span class='halfHeading'>Cleaning Compliance?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Robust Decontamination Validation',
+      aria: 'Contact us to discuss your decontamination validation needs',
     },
   },
   gtm: {
