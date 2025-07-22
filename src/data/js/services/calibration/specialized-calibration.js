@@ -53,82 +53,78 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Precision Electrochemical & Flow Calibration for GMP Excellence',
-      tagline:
-        'Ensure compliance and accuracy with Indivirtus Healthcare’s NABL-accredited calibration services for electrochemical and flow instruments.',
+      heading: "Electrochemical & Flow Calibration for <span class='halfHeading'>Pharmaceutical Precision</span>",
+      tagline: 'Ensure GMP Compliance with NABL-Accredited Calibration Solutions',
       detail:
-        'At Indivirtus Healthcare Services Pvt. Ltd., we provide ISO/IEC 17025:2017 accredited calibration for pH, conductivity, and flow instruments, delivering pharmaceutical-grade precision for critical GMP applications.',
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>NABL-accredited electrochemical and flow calibration services</strong> deliver ISO/IEC 17025:2017-compliant validation for pH, conductivity, and flow instruments. We ensure <strong>pharmaceutical-grade precision</strong> to meet stringent global regulatory standards, safeguarding the accuracy and integrity of your critical processes.',
     },
     overview: {
-      heading: 'Overview of Electrochemical & Flow Calibration Services',
+      heading: "Mastering Electrochemical & Flow <span class='halfHeading'>Calibration</span>",
       overviewCards: [
         {
-          heading: 'What',
+          heading: 'What is Electrochemical & Flow Calibration?',
           detail:
-            'Our NABL-accredited calibration services validate electrochemical and flow instruments, including pH/ORP meters (0–14 pH, ±2000mV), conductivity/TDS meters (0.01μS/cm–1000mS/cm), and flow meters (0.1mL/min–1000L/min).',
+            'Our NABL-accredited services validate electrochemical and flow instruments, including pH/ORP meters (0–14 pH, ±2000mV), conductivity/TDS meters (0.01μS/cm–1000mS/cm), and flow meters (0.1mL/min–1000L/min), ensuring <strong>precision in measurements</strong> for pharmaceutical applications.',
         },
         {
-          heading: 'Why',
+          heading: 'Why is it Critical?',
           detail:
-            'Accurate calibration of these instruments is critical for pharmaceutical processes like water quality testing, formulation, and flow control, ensuring compliance with GMP and pharmacopeia standards.',
+            'Accurate calibration of pH, conductivity, and flow instruments is vital for <strong>water quality testing</strong>, formulation, and process control, ensuring compliance with GMP and pharmacopeia standards while maintaining product quality and safety.',
         },
         {
-          heading: 'Role',
+          heading: 'Our Role in Your Compliance',
           detail:
-            'We support pharmaceutical companies by ensuring measurement accuracy, regulatory compliance, and audit readiness with traceable, high-precision calibration services.',
+            'Indivirtus Healthcare Services provides <strong>traceable, high-precision calibration</strong> to enhance operational reliability, ensure audit readiness, and support pharmaceutical companies with compliant, high-quality processes.',
         },
       ],
     },
     approach: {
-      heading: 'Our Expert Approach',
+      heading: "Our Expert <span class='halfHeading'>Calibration Approach</span>",
       detail: [
-        'At Indivirtus, we use NIST-traceable reference standards and automated calibration systems to deliver exceptional precision (pH: ±0.01, conductivity: ±0.5% FS, flow: ±0.25% RD). Our team performs temperature compensation and electrode slope verification to ensure reliable measurements for pH and conductivity meters.',
-        'We tailor our services to meet the unique needs of your laboratory and process instruments, providing comprehensive documentation for FDA, EMA, and WHO audits. Our expertise ensures your instruments perform reliably in critical pharmaceutical applications.',
+        'At Indivirtus Healthcare Services, we deliver <strong>precision-driven calibration</strong> using NIST-traceable reference standards and automated calibration systems, achieving exceptional accuracy (pH: ±0.01, conductivity: ±0.5% FS, flow: ±0.25% RD). Our certified professionals perform temperature compensation and electrode slope verification to ensure reliable measurements for pH and conductivity meters.',
+        'We tailor our calibration services to meet the unique needs of your laboratory and process instruments, providing <strong>customized solutions</strong> that optimize performance in critical pharmaceutical applications. Our comprehensive documentation supports FDA, EMA, and WHO audits, ensuring your instruments maintain <strong>GMP compliance</strong> and process reliability.',
       ],
     },
     deliverables: {
-      heading: 'Service Deliverables',
+      heading: "Electrochemical & Flow Calibration <span class='halfHeading'>Deliverables</span>",
       itemList: [
-        '<strong>NABL-accredited Calibration Certificate:</strong> Official certification ensuring compliance with ISO/IEC 17025:2017 standards.',
-        '<strong>Measurement Uncertainty Analysis:</strong> Detailed analysis to quantify measurement reliability and accuracy.',
-        '<strong>As-Found/As-Left Compliance Data:</strong> Comprehensive report comparing pre- and post-calibration measurements with compliance details.',
-        '<strong>Traceability Documentation to NIST/NPL:</strong> Documentation linking measurements to NIST/NPL standards for global recognition.',
-        '<strong>Electrode Performance Evaluation Report:</strong> In-depth evaluation of electrode accuracy and reliability for pH and conductivity meters.',
+        '<strong>NABL-Accredited Calibration Certificate</strong>: Official certification ensuring compliance with ISO/IEC 17025:2017 standards.',
+        '<strong>Measurement Uncertainty Analysis</strong>: Detailed analysis quantifying measurement reliability and accuracy.',
+        '<strong>As-Found/As-Left Compliance Data</strong>: Comprehensive report comparing pre- and post-calibration measurements.',
+        '<strong>Traceability Documentation to NIST/NPL</strong>: Documentation linking measurements to global standards for recognition.',
+        '<strong>Electrode Performance Evaluation Report</strong>: In-depth evaluation of electrode accuracy and reliability for pH and conductivity meters.',
       ],
     },
     compliance: {
-      heading: 'Regulatory Compliance & Guidelines',
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our electrochemical and flow calibration services adhere to rigorous global standards, ensuring your instruments meet regulatory requirements for GMP-critical pharmaceutical applications.',
+        'Our electrochemical and flow calibration services adhere to rigorous global standards, ensuring your instruments meet <strong>regulatory requirements</strong> and are audit-ready for GMP-critical applications. By aligning with industry-leading guidelines, we provide confidence in the accuracy and compliance of your pharmaceutical operations.',
       ],
       itemList: [
-        'ISO/IEC 17025:2017: International standard for calibration and testing laboratories.',
-        'NABL Accreditation: Ensures technical competence and reliability in calibration.',
-        'USP <645> Water Conductivity: U.S. Pharmacopeia standards for water quality testing.',
-        'EP 2.2.38 Conductivity: European Pharmacopoeia guidelines for conductivity measurements.',
-        '21 CFR Part 11: FDA regulations for electronic records and signatures.',
-        'WHO Technical Report Series 992: WHO guidelines for good practices in pharmaceutical quality control.',
+        '<strong>ISO/IEC 17025:2017</strong>: International standard for calibration and testing laboratories.',
+        '<strong>NABL Accreditation</strong>: Ensures technical competence and reliability in calibration.',
+        '<strong>USP <645> Water Conductivity</strong>: U.S. Pharmacopeia standards for water quality testing.',
+        '<strong>EP 2.2.38 Conductivity</strong>: European Pharmacopoeia guidelines for conductivity measurements.',
+        '<strong>21 CFR Part 11</strong>: FDA regulations for electronic records and signatures.',
+        '<strong>WHO Technical Report Series 992</strong>: WHO guidelines for pharmaceutical quality control.',
       ],
     },
     applications: {
-      heading: 'Applications & Use Cases',
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our calibration services are essential for pharmaceutical companies involved in water quality testing, formulation, and process control. Accurate pH, conductivity, and flow measurements are critical for ensuring product quality and regulatory compliance.',
-        'Use cases include calibrating pH meters for buffer preparation, validating conductivity meters for purified water testing, and ensuring flow meters provide accurate measurements for liquid processing. Our services support regulatory audits, product development, and global market compliance.',
+        'Our calibration services are vital for pharmaceutical companies engaged in <strong>water quality testing</strong>, formulation, and process control. Accurate pH, conductivity, and flow measurements are critical for product quality and regulatory compliance. Key use cases include calibrating pH meters for <strong>buffer preparation</strong>, validating conductivity meters for purified water testing, and ensuring flow meters provide accurate measurements for liquid processing, supporting regulatory audits and global market compliance.',
       ],
     },
     conclusion: {
-      heading: 'Why Choose Indivirtus Healthcare',
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Our team of certified calibration experts and toxicologists brings extensive global regulatory experience to every project. We deliver scientifically defensible results with rapid turnaround times, ensuring your operations remain efficient and compliant.',
-        'At Indivirtus, we prioritize confidentiality and adhere to industry best practices, safeguarding your sensitive data and equipment. Our commitment to precision, regulatory compliance, and customer satisfaction makes us the trusted choice for electrochemical and flow calibration needs.',
+        'Indivirtus Healthcare Services combines certified expertise and global regulatory knowledge to deliver unmatched electrochemical and flow calibration solutions. Our team ensures <strong>scientifically defensible results</strong>, rapid turnaround times, and strict confidentiality to protect your proprietary data. With a commitment to precision and compliance, we help you achieve <strong>operational excellence</strong> and maintain trust in your pharmaceutical processes.',
       ],
     },
     cta: {
-      heading: 'Ready to Ensure Precision in Your Processes?',
-      tagline:
-        'Partner with Indivirtus for NABL-accredited electrochemical and flow calibration services tailored to your pharmaceutical needs.',
-      aria: 'Contact Indivirtus for electrochemical and flow calibration services',
+      heading: "Ready to Ensure <span class='halfHeading'>Process Precision?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for NABL-Accredited Calibration Excellence',
+      aria: 'Contact us to discuss your electrochemical and flow calibration needs',
     },
   },
   gtm: {

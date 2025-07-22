@@ -75,85 +75,84 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Comprehensive Cleaning Validation & Verification Solutions',
-      tagline: 'Ensuring Contamination-Free Pharmaceutical Manufacturing',
+      heading: "Cleaning Validation for <span class='halfHeading'>Pharmaceutical Purity</span>",
+      tagline: 'Ensure Contamination-Free Manufacturing with Tailored Solutions',
       detail:
-        'At Indivirtus Healthcare Services, we provide tailored cleaning validation strategies to ensure your manufacturing processes meet stringent regulatory standards, safeguarding product quality and patient safety.',
+        'At Indivirtus Healthcare Services, our <strong>cleaning validation services</strong> deliver customized strategies to eliminate contamination risks in pharmaceutical manufacturing. We ensure <strong>regulatory compliance</strong> and safeguard product quality and patient safety, aligning with stringent global standards.',
     },
     overview: {
-      heading: 'Overview',
+      heading: "Mastering Cleaning <span class='halfHeading'>Validation</span>",
       overviewCards: [
         {
-          heading: 'What We Do',
+          heading: 'What is Cleaning Validation?',
           detail:
-            'Our cleaning validation services deliver customized strategies to control contamination in pharmaceutical manufacturing, ensuring compliance with global regulatory standards.',
+            'Our services provide <strong>tailored validation strategies</strong> to control contamination in pharmaceutical manufacturing, ensuring compliance with global regulatory standards through rigorous protocols and toxicological expertise.',
         },
         {
-          heading: 'Why It Matters',
+          heading: 'Why is it Critical?',
           detail:
-            'Effective cleaning validation prevents cross-contamination, ensures product safety, and meets regulatory requirements, protecting your brand and patients.',
+            'Effective cleaning validation prevents <strong>cross-contamination</strong>, ensures product safety, and meets regulatory requirements, protecting your brand reputation and patient health in pharmaceutical production.',
         },
         {
-          heading: 'Our Role',
+          heading: 'Our Role in Your Compliance',
           detail:
-            'We provide scientifically robust validation protocols, backed by toxicological expertise, to streamline your compliance process and ensure audit readiness.',
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>scientifically robust validation protocols</strong>, empowering pharmaceutical manufacturers with audit-ready solutions to maintain compliance and operational excellence.',
         },
       ],
     },
     approach: {
-      heading: 'Our Expert Approach',
+      heading: "Our Expert <span class='halfHeading'>Validation Approach</span>",
       detail: [
-        "At Indivirtus, we craft bespoke cleaning validation strategies that integrate HBEL/PDE limits, MACO calculations, and equipment grouping rationale. Our team of certified toxicologists and regulatory experts ensures each protocol is tailored to your facility's needs, incorporating swab/rinse sampling and analytical method suitability testing. With a focus on scientific rigor and regulatory alignment, we deliver solutions that stand up to global scrutiny.",
+        'At Indivirtus Healthcare Services, we craft <strong>bespoke cleaning validation strategies</strong> that integrate Health-Based Exposure Limits (HBEL), Permitted Daily Exposure (PDE), Maximum Allowable Carryover (MACO) calculations, and equipment grouping rationale. Our certified toxicologists and regulatory experts tailor each protocol to your facility’s unique needs, incorporating swab/rinse sampling and analytical method suitability testing.',
+        'With a focus on <strong>scientific rigor</strong> and regulatory alignment, our solutions withstand global scrutiny, ensuring your manufacturing processes are compliant, efficient, and ready for regulatory audits.',
       ],
     },
     deliverables: {
-      heading: 'Service Deliverables',
+      heading: "Cleaning Validation <span class='halfHeading'>Deliverables</span>",
       itemList: [
-        'Comprehensive cleaning validation master plan',
-        'Product-specific HBEL/PDE reports with toxicological justification',
-        'MACO calculation dossier with multiple scenario analysis',
-        'Equipment grouping strategy and rationale',
-        'Worst-case product selection documentation',
-        'Ready-to-use cleaning validation protocols (swab/rinse methods)',
-        'Analytical method suitability evaluation report',
-        'Acceptance limit calculation spreadsheet',
-        'Regulatory compliance gap analysis',
-        'Training package for validation teams',
+        '<strong>Comprehensive Cleaning Validation Master Plan</strong>: Strategic roadmap for contamination control.',
+        '<strong>Product-Specific HBEL/PDE Reports</strong>: Toxicological justification for safe exposure limits.',
+        '<strong>MACO Calculation Dossier</strong>: Multiple scenario analysis for carryover limits.',
+        '<strong>Equipment Grouping Strategy</strong>: Rationale for optimized validation processes.',
+        '<strong>Worst-Case Product Selection Documentation</strong>: Identification of critical products for validation.',
+        '<strong>Ready-to-Use Cleaning Validation Protocols</strong>: Swab/rinse methods for immediate implementation.',
+        '<strong>Analytical Method Suitability Evaluation Report</strong>: Validation of analytical techniques.',
+        '<strong>Acceptance Limit Calculation Spreadsheet</strong>: Transparent calculations for compliance.',
+        '<strong>Regulatory Compliance Gap Analysis</strong>: Actionable roadmap to address deficiencies.',
+        '<strong>Training Package for Validation Teams</strong>: Resources to empower your staff.',
       ],
     },
     compliance: {
-      heading: 'Regulatory Compliance & Guidelines',
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our cleaning validation services adhere to stringent global regulatory standards, ensuring your manufacturing processes are compliant and audit-ready. By aligning with leading guidelines, we provide robust documentation that supports regulatory submissions and ensures market compliance worldwide.',
+        'Our cleaning validation services adhere to stringent global standards, ensuring your manufacturing processes are <strong>audit-ready</strong> and compliant with international markets. By aligning with industry-leading guidelines, we provide robust documentation that supports regulatory submissions and ensures operational confidence.',
       ],
       itemList: [
-        'EMA Guideline on Setting Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)',
-        'FDA Guidance for Industry: Cleaning Validation Requirements (2015)',
-        'PIC/S PI 006-3 Recommendations on Cleaning Validation',
-        'WHO TRS 1019 Annex 3: GMP for HVAC systems',
-        'ICH Q3D Guideline for Elemental Impurities (R2)',
-        'EU GMP Annex 15: Qualification and Validation',
-        'ISPE Baseline Guide: Commissioning and Qualification',
+        '<strong>EMA Guideline on Health-Based Exposure Limits (EMA/CHMP/CVMP/SWP/169430/2012)</strong>: Compliance with European exposure limit standards.',
+        '<strong>FDA Guidance for Industry: Cleaning Validation Requirements (2015)</strong>: Alignment with U.S. regulatory standards.',
+        '<strong>PIC/S PI 006-3 Recommendations on Cleaning Validation</strong>: Adherence to cleaning validation best practices.',
+        '<strong>WHO TRS 1019 Annex 3</strong>: GMP compliance for HVAC systems.',
+        '<strong>ICH Q3D Guideline for Elemental Impurities (R2)</strong>: Conformance with impurity guidelines.',
+        '<strong>EU GMP Annex 15</strong>: European guidelines for qualification and validation.',
+        '<strong>ISPE Baseline Guide: Commissioning and Qualification</strong>: Industry best practices for validation.',
       ],
     },
     applications: {
-      heading: 'Applications & Use Cases',
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our cleaning validation services are critical for pharmaceutical manufacturers scaling production, introducing new products, or upgrading facilities. These solutions are applied during equipment qualification, product changeovers, and routine manufacturing to prevent cross-contamination and ensure product integrity.',
-        'From small-scale facilities to global manufacturers, our tailored protocols support compliance and operational efficiency, making your processes robust and reliable.',
+        'Our cleaning validation services are critical for pharmaceutical manufacturers scaling production, introducing new products, or upgrading facilities. These solutions ensure <strong>contamination-free manufacturing</strong> during equipment qualification, product changeovers, and routine operations. Key use cases include validating cleaning processes for <strong>potent compounds</strong>, ensuring compliance during regulatory audits, and supporting global market expansion with robust, reliable protocols.',
       ],
     },
     conclusion: {
-      heading: 'Why Choose Indivirtus',
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers worldwide, delivering customized cleaning validation solutions. Our team of certified toxicologists and regulatory experts ensures scientific rigor and compliance with global standards. We prioritize fast turnaround times, confidentiality, and adherence to industry best practices to keep your operations compliant and efficient.',
-        'With a proven track record and a commitment to excellence, Indivirtus empowers your team with the tools and expertise needed for successful validation.',
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers worldwide, delivering <strong>customized cleaning validation solutions</strong> backed by certified toxicologists and regulatory experts. Our commitment to scientific rigor ensures compliance with global standards, while our rapid turnaround times and strict confidentiality protect your operations and proprietary data. Partner with us to achieve <strong>operational excellence</strong> and regulatory success.',
       ],
     },
     cta: {
-      heading: 'Ready to Streamline Your Cleaning Validation?',
-      tagline: 'Partner with Indivirtus for robust, compliant, and efficient validation solutions.',
-      aria: 'Contact Indivirtus for Cleaning Validation Services',
+      heading: "Ready to Ensure <span class='halfHeading'>Contamination-Free Manufacturing?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Robust Validation Excellence',
+      aria: 'Contact us to discuss your cleaning validation needs',
     },
   },
   schema: {

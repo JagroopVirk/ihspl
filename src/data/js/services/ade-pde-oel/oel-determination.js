@@ -62,85 +62,84 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Comprehensive OEL Assessment & Control Strategies',
-      tagline: 'Ensuring Worker Safety with Tailored Exposure Solutions',
+      heading: "OEL Assessment for <span class='halfHeading'>Worker Safety</span>",
+      tagline: 'Safeguard Manufacturing with Precision Exposure Solutions',
       detail:
-        'At Indivirtus Healthcare Services, we deliver rigorous Occupational Exposure Limit (OEL) assessments and containment strategies to protect workers and ensure compliance in pharmaceutical manufacturing.',
+        'At Indivirtus Healthcare Services, our <strong>OEL assessment and containment strategy services</strong> deliver rigorous evaluations to establish safe exposure limits, protecting workers and ensuring <strong>regulatory compliance</strong> in pharmaceutical manufacturing.',
     },
     overview: {
-      heading: 'Overview',
+      heading: "Mastering Occupational <span class='halfHeading'>Exposure Control</span>",
       overviewCards: [
         {
-          heading: 'What We Do',
+          heading: 'What is OEL Assessment?',
           detail:
-            'We provide comprehensive OEL assessments, integrating toxicological evaluations, route-specific risk analysis, and advanced modeling to develop safe exposure limits and containment strategies.',
+            'Our services provide <strong>comprehensive OEL assessments</strong>, integrating toxicological evaluations, route-specific risk analysis, and advanced modeling to develop safe exposure limits and tailored containment strategies for pharmaceutical facilities.',
         },
         {
-          heading: 'Why It Matters',
+          heading: 'Why is it Critical?',
           detail:
-            'Accurate OELs protect workers from hazardous compounds, ensure regulatory compliance, and minimize occupational health risks in pharmaceutical manufacturing.',
+            'Accurate OELs protect workers from <strong>hazardous compounds</strong>, ensure compliance with global regulations, and minimize occupational health risks, enhancing safety in pharmaceutical manufacturing.',
         },
         {
-          heading: 'Our Role',
+          heading: 'Our Role in Your Safety',
           detail:
-            'As a trusted CRO, we deliver scientifically robust OEL solutions and actionable control strategies to enhance workplace safety and meet global regulatory standards.',
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>scientifically robust OEL solutions</strong> and actionable control strategies, empowering your facility to achieve workplace safety and regulatory compliance.',
         },
       ],
     },
     approach: {
-      heading: 'Our Expert Approach',
+      heading: "Our Expert <span class='halfHeading'>Assessment Approach</span>",
       detail: [
-        'At Indivirtus, we combine rigorous toxicological evaluations with advanced airborne dispersion modeling and route-specific risk analysis. Our assessments integrate NIOSH, ACGIH, and EU REACH methodologies to deliver precise OELs and tailored containment strategies. Our certified toxicologists ensure every solution is scientifically defensible, operationally practical, and compliant with global standards.',
+        'At Indivirtus Healthcare Services, we combine <strong>rigorous toxicological evaluations</strong> with advanced airborne dispersion modeling and route-specific risk analysis. Our assessments integrate NIOSH, ACGIH, and EU REACH methodologies to deliver precise OELs and tailored containment strategies.',
+        'Our certified toxicologists ensure every solution is <strong>scientifically defensible</strong>, operationally practical, and compliant with global standards, optimizing your facility’s safety protocols and regulatory readiness.',
       ],
     },
     deliverables: {
-      heading: 'Service Deliverables',
+      heading: "OEL Assessment <span class='halfHeading'>Deliverables</span>",
       itemList: [
-        'Comprehensive OEL justification report',
-        'Route-specific exposure limit analysis',
-        'Airborne dispersion modeling results',
-        'NIOSH/ACGIH/EU-REACH benchmark comparison',
-        'Containment control strategy',
-        'Engineering control recommendations',
-        'PPE requirement guidelines',
-        'Exposure monitoring plan',
-        'Regulatory compliance assessment',
-        'Training package for EHS teams',
+        '<strong>Comprehensive OEL Justification Report</strong>: Detailed evaluation of exposure limits.',
+        '<strong>Route-Specific Exposure Limit Analysis</strong>: Tailored analysis for exposure pathways.',
+        '<strong>Airborne Dispersion Modeling Results</strong>: Data-driven insights into contaminant spread.',
+        '<strong>NIOSH/ACGIH/EU-REACH Benchmark Comparison</strong>: Multi-framework compliance analysis.',
+        '<strong>Containment Control Strategy</strong>: Practical strategies for safe operations.',
+        '<strong>Engineering Control Recommendations</strong>: Guidance for facility enhancements.',
+        '<strong>PPE Requirement Guidelines</strong>: Specific protective equipment recommendations.',
+        '<strong>Exposure Monitoring Plan</strong>: Structured plan for ongoing safety monitoring.',
+        '<strong>Regulatory Compliance Assessment</strong>: Audit-ready compliance documentation.',
+        '<strong>Training Package for EHS Teams</strong>: Resources to empower safety staff.',
       ],
     },
     compliance: {
-      heading: 'Regulatory Compliance & Guidelines',
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our OEL determination services adhere to stringent global regulatory standards, ensuring worker safety and compliance in pharmaceutical manufacturing. By aligning with leading guidelines, we deliver robust, audit-ready solutions that support safe operations and market compliance.',
+        'Our OEL determination services adhere to stringent global standards, ensuring <strong>worker safety</strong> and compliance in pharmaceutical manufacturing. By aligning with industry-leading guidelines, we deliver robust, audit-ready solutions that support safe operations and seamless market compliance.',
       ],
       itemList: [
-        'NIOSH Occupational Exposure Banding e-Tool (2019)',
-        'ACGIH Threshold Limit Values (TLVs) and Biological Exposure Indices (BEIs)',
-        'EU REACH Regulation (EC) No 1907/2006',
-        'OSHA Permissible Exposure Limits (29 CFR 1910)',
-        'ISPE Risk-Based Manufacture of Pharmaceutical Products (Risk-MaPP 2.0)',
-        'EMA Guideline on Hazardous Medicines (EMA/CHMP/608186/2009)',
-        'ISO 28862: Workplace Atmospheres Guidance',
+        '<strong>NIOSH Occupational Exposure Banding e-Tool (2019)</strong>: Alignment with occupational safety guidelines.',
+        '<strong>ACGIH Threshold Limit Values (TLVs) and Biological Exposure Indices (BEIs)</strong>: Industry-recognized exposure limits.',
+        '<strong>EU REACH Regulation (EC) No 1907/2006</strong>: European chemical safety standards.',
+        '<strong>OSHA Permissible Exposure Limits (29 CFR 1910)</strong>: U.S. worker safety regulations.',
+        '<strong>ISPE Risk-Based Manufacture of Pharmaceutical Products (Risk-MaPP 2.0)</strong>: Industry best practices for risk management.',
+        '<strong>EMA Guideline on Hazardous Medicines (EMA/CHMP/608186/2009)</strong>: European standards for hazardous compounds.',
+        '<strong>ISO 28862</strong>: Workplace atmospheres guidance for safety.',
       ],
     },
     applications: {
-      heading: 'Applications & Use Cases',
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our OEL determination and control strategy services are critical for manufacturers handling potent or hazardous compounds, developing new drugs, or operating shared facilities. These solutions are applied during process design, facility upgrades, and occupational safety planning to protect workers and ensure compliance.',
-        'From small-scale operations to large manufacturing plants, our tailored strategies ensure safe handling and regulatory adherence, enhancing workplace safety.',
+        'Our OEL determination and control strategy services are vital for manufacturers handling <strong>potent or hazardous compounds</strong>, developing new drugs, or operating shared facilities. These solutions ensure safe handling during process design, facility upgrades, and occupational safety planning. Key use cases include protecting workers in <strong>multi-product facilities</strong>, ensuring compliance during regulatory audits, and optimizing safety for new production lines.',
       ],
     },
     conclusion: {
-      heading: 'Why Choose Indivirtus',
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Indivirtus Healthcare Services is a trusted leader in OEL determination and containment strategy development. Our certified toxicologists and regulatory experts deliver scientifically robust solutions, ensuring rapid turnaround, strict confidentiality, and adherence to industry best practices. We empower your facility with safe, compliant, and practical safety measures.',
-        'Choose Indivirtus for reliable, actionable strategies that protect your workforce and streamline compliance.',
+        'Indivirtus Healthcare Services is a trusted leader in OEL determination and containment strategy development, delivering <strong>scientifically robust solutions</strong> tailored to your facility. Our certified toxicologists and regulatory experts ensure compliance with global standards, rapid turnaround times, and strict confidentiality. Partner with us to achieve <strong>workplace safety</strong> and regulatory success.',
       ],
     },
     cta: {
-      heading: 'Ready to Protect Your Workforce?',
-      tagline: 'Partner with Indivirtus for expert OEL assessments and containment solutions.',
-      aria: 'Contact Indivirtus for OEL Assessment Services',
+      heading: "Ready to Ensure <span class='halfHeading'>Worker Safety?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert OEL Solutions',
+      aria: 'Contact us to discuss your OEL assessment needs',
     },
   },
   gtm: {

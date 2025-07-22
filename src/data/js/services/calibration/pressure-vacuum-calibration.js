@@ -53,82 +53,78 @@ export default {
   },
   pageContent: {
     hero: {
-      heading: 'Precision Pressure & Vacuum Calibration for GMP-Critical Applications',
-      tagline:
-        'Ensure compliance and accuracy with Indivirtus Healthcare’s NABL-accredited calibration services for pressure and vacuum instruments.',
+      heading: "Pressure & Vacuum Calibration for <span class='halfHeading'>Pharmaceutical Precision</span>",
+      tagline: 'Ensure GMP Compliance with NABL-Accredited Calibration Solutions',
       detail:
-        'At Indivirtus Healthcare Services Pvt. Ltd., we provide ISO/IEC 17025:2017 accredited pressure and vacuum calibration with pharmaceutical-grade precision, ensuring your instruments meet stringent regulatory standards for autoclaves, bioreactors, and sterile manufacturing.',
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>NABL-accredited pressure and vacuum calibration services</strong> deliver ISO/IEC 17025:2017-compliant validation for critical instruments in autoclaves, bioreactors, and sterile manufacturing. We ensure <strong>pharmaceutical-grade precision</strong> to meet stringent global regulatory standards, safeguarding process safety and product quality.',
     },
     overview: {
-      heading: 'Overview of Pressure & Vacuum Calibration Services',
+      heading: "Mastering Pressure & Vacuum <span class='halfHeading'>Calibration</span>",
       overviewCards: [
         {
-          heading: 'What',
+          heading: 'What is Pressure & Vacuum Calibration?',
           detail:
-            'Our NABL-accredited calibration services validate pressure and vacuum instruments, including digital/analog pressure gauges, vacuum transducers, Magnehelic gauges, pressure switches, and safety relief valves (0.01 mbar to 700 bar, ±0.025% FS accuracy).',
+            'Our NABL-accredited services validate pressure and vacuum instruments, including digital/analog pressure gauges, vacuum transducers, Magnehelic gauges, pressure switches, and safety relief valves (0.01 mbar to 700 bar, ±0.025% FS accuracy), ensuring <strong>precision in measurements</strong> for pharmaceutical applications.',
         },
         {
-          heading: 'Why',
+          heading: 'Why is it Critical?',
           detail:
-            'Accurate pressure and vacuum measurements are critical for pharmaceutical processes like sterilization, fermentation, and sterile manufacturing, ensuring compliance with GMP and regulatory standards.',
+            'Accurate pressure and vacuum measurements are vital for <strong>sterilization, fermentation</strong>, and sterile manufacturing processes, ensuring compliance with GMP standards and maintaining process safety and product quality.',
         },
         {
-          heading: 'Role',
+          heading: 'Our Role in Your Compliance',
           detail:
-            'We support pharmaceutical companies by ensuring measurement accuracy, regulatory compliance, and audit readiness with traceable, high-precision calibration services.',
+            'Indivirtus Healthcare Services provides <strong>traceable, high-precision calibration</strong> to enhance operational reliability, ensure audit readiness, and support pharmaceutical companies with compliant, high-quality processes.',
         },
       ],
     },
     approach: {
-      heading: 'Our Expert Approach',
+      heading: "Our Expert <span class='halfHeading'>Calibration Approach</span>",
       detail: [
-        'At Indivirtus, we use deadweight testers, pneumatic comparators, and vacuum standards traceable to NPL/NIST to deliver exceptional precision (±0.025% FS accuracy). Our team performs hysteresis testing and repeatability analysis to ensure reliable performance in critical pharmaceutical applications.',
-        'We customize our calibration services to meet the specific needs of your autoclaves, bioreactors, and sterile manufacturing systems, providing comprehensive documentation for FDA and EMA audits. Our expertise ensures your instruments operate within regulatory tolerances, minimizing risks and enhancing process reliability.',
+        'At Indivirtus Healthcare Services, we deliver <strong>precision-driven calibration</strong> using advanced deadweight testers, pneumatic comparators, and vacuum standards traceable to NPL/NIST, achieving exceptional accuracy (±0.025% FS). Our certified professionals perform hysteresis testing and repeatability analysis to ensure reliable performance in critical pharmaceutical applications.',
+        'We tailor our calibration services to meet the specific needs of your autoclaves, bioreactors, and sterile manufacturing systems, providing <strong>customized solutions</strong> that optimize performance and compliance. Our comprehensive documentation supports FDA, EMA, and other regulatory audits, ensuring your instruments maintain <strong>GMP compliance</strong> and process reliability.',
       ],
     },
     deliverables: {
-      heading: 'Service Deliverables',
+      heading: "Pressure & Vacuum Calibration <span class='halfHeading'>Deliverables</span>",
       itemList: [
-        '<strong>NABL-accredited Calibration Certificate:</strong> Official certification ensuring compliance with ISO/IEC 17025:2017 standards.',
-        '<strong>Measurement Uncertainty Analysis:</strong> Detailed analysis to quantify measurement reliability and accuracy.',
-        '<strong>As-Found/As-Left Data with Compliance Statement:</strong> Comprehensive report comparing pre- and post-calibration measurements with compliance details.',
-        '<strong>Traceability Documentation to National Standards:</strong> Documentation linking measurements to NPL/NIST standards for global recognition.',
-        '<strong>Valve Set Pressure Certification:</strong> Certification for safety relief valves, ensuring accurate set pressure for critical applications.',
+        '<strong>NABL-Accredited Calibration Certificate</strong>: Official certification ensuring compliance with ISO/IEC 17025:2017 standards.',
+        '<strong>Measurement Uncertainty Analysis</strong>: Detailed analysis quantifying measurement reliability and accuracy.',
+        '<strong>As-Found/As-Left Data with Compliance Statement</strong>: Comprehensive report comparing pre- and post-calibration measurements.',
+        '<strong>Traceability Documentation to NPL/NIST</strong>: Documentation linking measurements to global standards for recognition.',
+        '<strong>Valve Set Pressure Certification</strong>: Certification for safety relief valves, ensuring accurate set pressure for critical applications.',
       ],
     },
     compliance: {
-      heading: 'Regulatory Compliance & Guidelines',
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our pressure and vacuum calibration services adhere to stringent global standards, ensuring your instruments meet regulatory requirements for GMP-critical pharmaceutical applications. We comply with:',
+        'Our pressure and vacuum calibration services adhere to stringent global standards, ensuring your instruments meet <strong>regulatory requirements</strong> and are audit-ready for GMP-critical applications. By aligning with industry-leading guidelines, we provide confidence in the accuracy and compliance of your pharmaceutical operations.',
       ],
       itemList: [
-        'ISO/IEC 17025:2017: International standard for calibration and testing laboratories.',
-        'NABL Accreditation: Ensures technical competence and reliability in calibration.',
-        'USP <1058> Analytical Instrument Qualification: U.S. Pharmacopeia standards for instrument qualification.',
-        'EU GMP Annex 1: European guidelines for sterile manufacturing.',
-        '21 CFR Part 11: FDA regulations for electronic records and signatures.',
-        'ASME B40.100: Standards for pressure gauges and measurement devices.',
+        '<strong>ISO/IEC 17025:2017</strong>: International standard for calibration and testing laboratories.',
+        '<strong>NABL Accreditation</strong>: Ensures technical competence and reliability in calibration.',
+        '<strong>USP <1058> Analytical Instrument Qualification</strong>: U.S. Pharmacopeia standards for instrument qualification.',
+        '<strong>EU GMP Annex 1</strong>: European guidelines for sterile manufacturing.',
+        '<strong>21 CFR Part 11</strong>: FDA regulations for electronic records and signatures.',
+        '<strong>ASME B40.100</strong>: Standards for pressure gauges and measurement devices.',
       ],
     },
     applications: {
-      heading: 'Applications & Use Cases',
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our pressure and vacuum calibration services are essential for pharmaceutical companies involved in sterile manufacturing, fermentation, and sterilization processes. Accurate pressure and vacuum measurements are critical for ensuring process safety and product quality.',
-        'Use cases include calibrating pressure gauges for autoclaves, validating vacuum transducers for bioreactors, and ensuring safety relief valves meet set pressure requirements for sterile manufacturing. Our services support regulatory audits, process validation, and global market compliance.',
+        'Our pressure and vacuum calibration services are vital for pharmaceutical companies engaged in <strong>sterile manufacturing</strong>, fermentation, and sterilization processes. Accurate measurements are critical for process safety and product quality. Key use cases include calibrating pressure gauges for autoclaves, validating vacuum transducers for bioreactors, and ensuring safety relief valves meet set pressure requirements, supporting <strong>regulatory audits</strong> and global market compliance.',
       ],
     },
     conclusion: {
-      heading: 'Why Choose Indivirtus Healthcare',
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Our team of certified calibration experts and toxicologists brings extensive global regulatory experience to every project. We deliver scientifically defensible results with rapid turnaround times, ensuring your operations remain efficient and compliant.',
-        'At Indivirtus, we prioritize confidentiality and adhere to industry best practices, safeguarding your sensitive data and equipment. Our commitment to precision, regulatory compliance, and customer satisfaction makes us the trusted choice for pressure and vacuum calibration needs.',
+        'Indivirtus Healthcare Services combines certified expertise and global regulatory knowledge to deliver unmatched pressure and vacuum calibration solutions. Our team ensures <strong>scientifically defensible results</strong>, rapid turnaround times, and strict confidentiality to protect your proprietary data. With a commitment to precision and compliance, we help you achieve <strong>operational excellence</strong> and maintain trust in your pharmaceutical processes.',
       ],
     },
     cta: {
-      heading: 'Ready to Ensure Precision in Your GMP Processes?',
-      tagline:
-        'Partner with Indivirtus for NABL-accredited pressure and vacuum calibration services tailored to your pharmaceutical needs.',
-      aria: 'Contact Indivirtus for pressure and vacuum calibration services',
+      heading: "Ready to Ensure <span class='halfHeading'>GMP Precision?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for NABL-Accredited Calibration Excellence',
+      aria: 'Contact us to discuss your pressure and vacuum calibration needs',
     },
   },
   gtm: {
