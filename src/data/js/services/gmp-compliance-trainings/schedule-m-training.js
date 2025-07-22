@@ -31,6 +31,82 @@ export default {
     alt: 'Revised Schedule M training program by Indivirtus',
     caption: 'Training on Revised Schedule M for Indian pharmaceutical GMP compliance',
   },
+  pageContent: {
+    hero: {
+      heading: "Revised Schedule M Training for <span class='halfHeading'>Pharmaceutical Compliance</span>",
+      tagline: 'Master India’s Updated GMP Standards with Expert-Led Guidance',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Revised Schedule M training program</strong> equips pharmaceutical teams with comprehensive knowledge of the 2024 amendments. Designed to ensure <strong>regulatory alignment</strong>, our training covers key changes, documentation, implementation strategies, and audit preparedness to meet India’s updated GMP expectations.',
+    },
+    overview: {
+      heading: "Mastering Revised Schedule M <span class='halfHeading'>Compliance</span>",
+      overviewCards: [
+        {
+          heading: 'What is Revised Schedule M Training?',
+          detail:
+            'Our training program provides an in-depth understanding of the 2024 Revised Schedule M amendments, focusing on updated provisions, enhanced documentation, quality control requirements, and practical strategies for <strong>GMP compliance</strong> in pharmaceutical manufacturing.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Compliance with Revised Schedule M is essential for ensuring <strong>product quality</strong>, patient safety, and regulatory adherence in India, reducing the risk of non-compliance during inspections and supporting market approval.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led training</strong> to empower pharmaceutical teams, ensuring audit-ready operations and seamless alignment with India’s updated regulatory standards.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Training Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Revised Schedule M training is led by seasoned regulatory experts and auditors who bring <strong>deep regulatory expertise</strong> to every session. We provide a detailed exploration of the 2024 amendments, covering updated provisions, enhanced documentation, and quality control requirements. Our program includes practical implementation strategies and a mock audit simulation to ensure your team is fully prepared for regulatory inspections.',
+        'Our approach emphasizes actionable insights, combining interactive workshops, real-world case studies, and tailored guidance to align your operations with <strong>India’s GMP standards</strong>, fostering compliance and operational excellence.',
+      ],
+    },
+    deliverables: {
+      heading: "Revised Schedule M Training <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Training Certificate</strong>: Official certification recognizing completion of Revised Schedule M training.',
+        '<strong>Change Impact Matrix</strong>: Detailed analysis of the 2024 amendments and their impact on operations.',
+        '<strong>Implementation Toolkit</strong>: Practical resources for adopting updated GMP requirements.',
+        '<strong>Mock Audit Feedback Report</strong>: Comprehensive feedback from simulated audit exercises.',
+        '<strong>Regulatory Reference Guides</strong>: Supplemental materials to support ongoing compliance.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Indian Standards</span>",
+      detail: [
+        'Our Revised Schedule M training aligns with India’s updated regulatory framework, ensuring your team is equipped to meet <strong>statutory requirements</strong> and maintain audit-ready operations. By adhering to the latest guidelines, we deliver training that supports compliance with Indian and global pharmaceutical standards.',
+      ],
+      itemList: [
+        '<strong>Revised Schedule M (2024)</strong>: Updated GMP guidelines for pharmaceutical manufacturing in India.',
+        '<strong>Drugs and Cosmetics Act & Rules, India</strong>: Legal framework for regulatory compliance.',
+        '<strong>WHO GMP Guidelines</strong>: Global standards for quality assurance in pharmaceuticals.',
+        '<strong>ICH Q10</strong>: Pharmaceutical quality system guidelines for compliance.',
+        '<strong>EU GMP Annex 1</strong>: Supplementary guidelines for sterile manufacturing compliance.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Revised Schedule M training is essential for pharmaceutical manufacturers seeking to align with India’s <strong>2024 GMP amendments</strong>. The program is ideal for teams preparing for regulatory inspections, implementing new documentation processes, or enhancing quality control systems. Key use cases include ensuring compliance during facility upgrades, supporting new product launches, and preparing for <strong>CDSCO audits</strong> to achieve market compliance.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led Revised Schedule M training</strong> backed by certified regulatory experts with extensive Indian and global experience. Our programs ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your team with the knowledge and tools to achieve <strong>regulatory success</strong> and operational excellence in India’s evolving pharmaceutical landscape.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Master <span class='halfHeading'>Revised Schedule M?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Compliance Training',
+      aria: 'Contact us to discuss your Revised Schedule M training needs',
+    },
+  },
   gtm: {
     eventCategory: 'Training',
     eventAction: 'Schedule M Training View',
@@ -158,6 +234,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, participants receive a certificate upon successful completion of the Revised Schedule M training module.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does the Revised Schedule M training cover?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our training covers the 2024 amendments to Schedule M, including updated GMP provisions, enhanced documentation, quality control requirements, implementation strategies, and a mock audit simulation to ensure regulatory preparedness.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who should attend this training program?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'This training is ideal for pharmaceutical professionals in manufacturing, quality assurance, regulatory affairs, or compliance roles, particularly those preparing for CDSCO inspections or aligning with India’s updated GMP standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does the training ensure compliance with Revised Schedule M?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our program aligns with Revised Schedule M (2024), Drugs and Cosmetics Act & Rules, WHO GMP Guidelines, and ICH Q10, equipping your team with the knowledge to meet India’s regulatory requirements and ensure audit readiness.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What materials are provided during the training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Participants receive a training certificate, a change impact matrix, an implementation toolkit, a mock audit feedback report, and regulatory reference guides to support ongoing compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the training be tailored to our specific facility needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our training is customized based on your facility’s operational needs, focusing on specific processes like manufacturing, documentation, or quality control to ensure practical and relevant outcomes.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is the training available in different delivery formats?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, we offer flexible delivery options, including on-site, virtual, and hybrid formats, to accommodate your team’s preferences and ensure seamless learning experiences.',
         },
       },
     ],

@@ -12,7 +12,7 @@ export default {
     'Comprehensive training on cleaning validation including MACO, PDE limits, sampling methods, and protocol development tailored for regulated pharma environments.',
   full_description:
     'This training is designed to equip pharmaceutical professionals with a detailed understanding of cleaning validation principles aligned with GMP and regulatory expectations. Topics include worst-case product selection, MACO and PDE limit calculation, swab and rinse sampling methodologies, and protocol/report development. Ideal for manufacturing, QA, and validation teams.',
-  estimated_duration: '1–2 Days',
+  estimated_duration: '1-2 Days',
   deliverables: [
     'Training material (PDF/PPT)',
     'Certificate of participation',
@@ -30,6 +30,82 @@ export default {
     path: serviceImage,
     alt: 'Cleaning Validation Training for pharma manufacturing',
     caption: 'Hands-on GMP Cleaning Validation Training by Indivirtus',
+  },
+  pageContent: {
+    hero: {
+      heading: "Cleaning Validation Training for <span class='halfHeading'>Pharmaceutical Compliance</span>",
+      tagline: 'Master GMP-Aligned Cleaning Strategies with Expert Guidance',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>cleaning validation training program</strong> equips pharmaceutical professionals with in-depth knowledge of GMP-aligned cleaning validation principles. Covering MACO, PDE limits, sampling methods, and protocol development, we ensure <strong>regulatory readiness</strong> for manufacturing, QA, and validation teams.',
+    },
+    overview: {
+      heading: "Mastering Cleaning Validation <span class='halfHeading'>Excellence</span>",
+      overviewCards: [
+        {
+          heading: 'What is Cleaning Validation Training?',
+          detail:
+            'Our training provides comprehensive education on cleaning validation, including worst-case product selection, MACO and PDE limit calculations, swab and rinse sampling, and protocol development, ensuring <strong>GMP compliance</strong> in regulated pharmaceutical environments.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Effective cleaning validation prevents <strong>cross-contamination</strong>, ensures product safety, and meets stringent regulatory requirements, safeguarding patient health and supporting audit readiness.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led training</strong>, empowering manufacturing, QA, and validation teams with practical tools and knowledge to achieve regulatory compliance and operational excellence.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Training Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our cleaning validation training is delivered by experienced regulatory experts and auditors with <strong>global expertise</strong>. We cover critical topics like worst-case product selection, MACO and PDE limit calculations, swab and rinse sampling methodologies, and protocol/report development, all aligned with GMP standards.',
+        'Our interactive sessions include hands-on case studies and practical exercises, ensuring your team can apply <strong>actionable strategies</strong> to real-world cleaning validation challenges, fostering compliance and operational efficiency.',
+      ],
+    },
+    deliverables: {
+      heading: "Cleaning Validation Training <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Training Material (PDF/PPT)</strong>: Comprehensive resources covering cleaning validation principles.',
+        '<strong>Certificate of Participation</strong>: Official recognition of training completion.',
+        '<strong>Template SOPs and Protocols</strong>: Ready-to-use standard operating procedures and validation protocols.',
+        '<strong>Case Studies and Hands-On Examples</strong>: Practical scenarios to reinforce learning.',
+        '<strong>Regulatory Reference Guides</strong>: Supplemental materials for ongoing compliance.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our cleaning validation training aligns with stringent global standards, ensuring your team is equipped to meet <strong>regulatory requirements</strong> and maintain audit-ready operations. By adhering to industry-leading guidelines, we deliver training that supports compliance and enhances quality assurance for international markets.',
+      ],
+      itemList: [
+        '<strong>ICH Q7</strong>: Good manufacturing practice guide for active pharmaceutical ingredients.',
+        '<strong>PIC/S PI 006</strong>: Recommendations on cleaning validation best practices.',
+        '<strong>WHO TRS 1019</strong>: Global GMP guidelines for quality assurance.',
+        '<strong>FDA Cleaning Validation Guidelines</strong>: U.S. standards for cleaning validation in pharmaceuticals.',
+        '<strong>EU GMP Annex 15</strong>: European guidelines for qualification and validation.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our cleaning validation training is essential for manufacturing, QA, and validation teams seeking to ensure <strong>contamination-free production</strong>. The program supports regulatory audits, equipment qualification, and process validation in GMP environments. Key use cases include implementing <strong>cleaning protocols</strong> for new product introductions, preparing for facility inspections, and ensuring compliance in multi-product facilities.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led cleaning validation training</strong> backed by certified regulatory experts with global experience. Our programs ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your team with the knowledge and tools to achieve <strong>regulatory success</strong> and operational excellence, ensuring compliance and competitiveness.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Master <span class='halfHeading'>Cleaning Validation?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert GMP Training',
+      aria: 'Contact us to discuss your cleaning validation training needs',
+    },
   },
   gtm: {
     eventCategory: 'Training',
@@ -166,6 +242,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'QA/QC personnel, validation engineers, manufacturing supervisors, and compliance managers are ideal participants.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What topics are covered in the cleaning validation training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our training covers worst-case product selection, MACO and PDE limit calculations, swab and rinse sampling methodologies, and protocol/report development, with hands-on case studies for GMP-aligned application.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who should participate in this training program?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The program is ideal for manufacturing, QA, and validation teams involved in GMP-compliant cleaning processes, seeking to ensure compliance and prepare for regulatory audits.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does the training ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our training aligns with ICH Q7, PIC/S PI 006, WHO TRS 1019, FDA Cleaning Validation Guidelines, and EU GMP Annex 15, ensuring your team meets global regulatory standards and audit requirements.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What materials are provided during the training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Participants receive training materials (PDF/PPT), a certificate of participation, template SOPs and protocols, case studies with hands-on examples, and regulatory reference guides.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the training be customized for our facility’s needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our training is tailored to your facility’s specific cleaning validation needs, focusing on processes like equipment qualification or multi-product facility compliance for practical outcomes.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What delivery formats are available for the training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We offer flexible delivery options, including on-site, virtual, and hybrid formats, designed to accommodate your team’s preferences and ensure seamless learning experiences.',
         },
       },
     ],

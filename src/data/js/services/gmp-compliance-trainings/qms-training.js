@@ -31,6 +31,82 @@ export default {
     alt: 'QMS Training for Pharma',
     caption: 'Master ICH Q10 and document control through interactive QMS training sessions.',
   },
+  pageContent: {
+    hero: {
+      heading: "QMS Training for <span class='halfHeading'>Pharmaceutical Excellence</span>",
+      tagline: 'Build Robust Quality Systems with Expert-Led ICH Q10 Training',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>QMS training program</strong> equips pharmaceutical professionals with the knowledge and tools to design and maintain a robust Quality Management System. Focused on the ICH Q10 framework, our training covers documentation practices, supplier qualification, and KPI monitoring to ensure <strong>regulatory compliance</strong> and operational excellence.',
+    },
+    overview: {
+      heading: "Mastering Quality Management <span class='halfHeading'>Systems</span>",
+      overviewCards: [
+        {
+          heading: 'What is QMS Training?',
+          detail:
+            'Our training provides comprehensive education on the ICH Q10 framework, document management, supplier qualification strategies, and continuous improvement through APQR and KPI tracking, ensuring <strong>GMP-aligned quality systems</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'A robust QMS ensures <strong>product quality</strong>, patient safety, and regulatory compliance by fostering effective documentation, supplier oversight, and performance monitoring, reducing risks and enhancing audit readiness.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led QMS training</strong>, empowering QA/QC teams, regulatory personnel, and compliance managers to achieve operational excellence and regulatory alignment.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Training Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our QMS training is led by seasoned regulatory experts who bring <strong>global expertise</strong> to every session. We provide in-depth insights into the ICH Q10 framework, covering document management, supplier qualification, and continuous improvement through APQR and KPI monitoring. Our interactive workshops include practical case studies and hands-on exercises to ensure real-world applicability.',
+        'Our approach is tailored to your team’s needs, delivering <strong>actionable strategies</strong> that align with global GMP standards. We focus on building a quality-driven culture, equipping your team for regulatory audits and operational success.',
+      ],
+    },
+    deliverables: {
+      heading: "QMS Training <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Interactive QMS Workshop Materials</strong>: Comprehensive resources for hands-on learning.',
+        '<strong>Templates for APQR and KPI Tracking</strong>: Practical tools for continuous improvement monitoring.',
+        '<strong>Document Control and Supplier Evaluation Tools</strong>: Streamlined resources for QMS implementation.',
+        '<strong>Participation Certificate</strong>: Official certification recognizing training completion.',
+        '<strong>Regulatory Reference Guides</strong>: Supplemental materials to support ongoing compliance.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our QMS training aligns with stringent global standards, ensuring your team is equipped to meet <strong>regulatory requirements</strong> and maintain audit-ready operations. By adhering to industry-leading guidelines, we deliver training that supports compliance and enhances quality assurance for international markets.',
+      ],
+      itemList: [
+        '<strong>ICH Q10</strong>: Pharmaceutical Quality System framework for robust QMS implementation.',
+        '<strong>WHO Technical Report Series</strong>: Global GMP guidelines for quality assurance.',
+        '<strong>FDA 21 CFR Part 210/211</strong>: U.S. regulations for manufacturing and quality control.',
+        '<strong>EU GMP Annex 1</strong>: European guidelines for quality systems in sterile manufacturing.',
+        '<strong>ISO 9001</strong>: International standard for quality management systems.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our QMS training is vital for pharmaceutical teams aiming to strengthen <strong>quality management</strong>, streamline documentation, and enhance supplier oversight. Ideal for QA/QC teams, regulatory personnel, and compliance managers, the program supports audit preparation, facility expansions, and new product launches. Key use cases include implementing <strong>ICH Q10-compliant systems</strong>, improving APQR processes, and ensuring compliance with global regulatory standards.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led QMS training</strong> backed by certified regulatory experts with global experience. Our programs ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your team with the knowledge and tools to achieve <strong>regulatory success</strong> and operational excellence, ensuring compliance and competitiveness.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Elevate Your <span class='halfHeading'>Quality Systems?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert QMS Training',
+      aria: 'Contact us to discuss your QMS training needs',
+    },
+  },
   gtm: {
     eventCategory: 'Training Services',
     eventAction: 'View QMS Training',
@@ -166,6 +242,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, Indivirtus offers tailored sessions including company-specific documentation, SOP walkthroughs, and role-based training.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What topics are covered in the QMS training program?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our training covers the ICH Q10 framework, document management, supplier qualification, and continuous improvement through APQR and KPI tracking, with practical case studies and hands-on exercises for real-world application.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who should participate in the QMS training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The program is ideal for QA/QC teams, regulatory personnel, compliance managers, and manufacturing staff seeking to strengthen quality systems and ensure compliance with global GMP standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does the training ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our training aligns with ICH Q10, WHO TRS, FDA 21 CFR Part 210/211, EU GMP Annex 1, and ISO 9001, ensuring your team meets global regulatory requirements and is prepared for audits.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What materials are provided during the training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Participants receive interactive QMS workshop materials, templates for APQR and KPI tracking, document control and supplier evaluation tools, a participation certificate, and regulatory reference guides.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the training be customized for our specific needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our training is tailored to your organization’s needs, focusing on specific areas like documentation, supplier qualification, or KPI monitoring to ensure relevant and practical outcomes.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What delivery formats are available for the training?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We offer flexible delivery options, including on-site, virtual, and hybrid formats, designed to accommodate your team’s preferences and ensure seamless learning experiences.',
         },
       },
     ],
