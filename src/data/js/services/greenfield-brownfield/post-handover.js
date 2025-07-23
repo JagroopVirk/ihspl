@@ -31,6 +31,82 @@ export default {
     alt: 'Post-Handover support for pharma facility',
     caption: 'End-to-end post-handover compliance & training support',
   },
+  pageContent: {
+    hero: {
+      heading: "Post-Handover Support for <span class='halfHeading'>Pharma Excellence</span>",
+      tagline: 'Ensure Seamless Operations with Expert GMP Compliance Guidance',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Post-Handover Support services</strong> empower pharmaceutical facilities to achieve operational excellence and <strong>regulatory compliance</strong> after project completion. From SOP training to inspection readiness and preventive maintenance, we deliver tailored solutions for sustainable GMP-compliant operations.',
+    },
+    overview: {
+      heading: "Mastering Post-Handover <span class='halfHeading'>Compliance</span>",
+      overviewCards: [
+        {
+          heading: 'What are Post-Handover Support Services?',
+          detail:
+            'Our services provide comprehensive support post-project handover, including customized SOP training, regulatory inspection readiness audits, preventive maintenance plans, and APR/PQR frameworks to ensure <strong>GMP-compliant operations</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Post-handover support ensures a smooth transition to <strong>operational efficiency</strong>, maintains product quality, and aligns facilities with global regulatory standards, minimizing risks during inspections.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led support</strong>, guiding pharmaceutical facilities to establish sustainable, audit-ready operations with a focus on compliance and performance.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Support Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Post-Handover Support services are led by seasoned regulatory experts specializing in <strong>GMP compliance</strong>. We provide hands-on SOP training, conduct thorough inspection readiness audits, and develop preventive maintenance and APR/PQR systems tailored to your facility’s needs.',
+        'Our approach emphasizes practical implementation and ongoing guidance, ensuring your team is equipped to maintain <strong>regulatory alignment</strong> and operational excellence in a sustainable GMP-compliant environment.',
+      ],
+    },
+    deliverables: {
+      heading: "Post-Handover Support <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Customized SOP Training Sessions</strong>: Tailored training for operational and compliance procedures.',
+        '<strong>Regulatory Inspection Readiness Audits</strong>: Comprehensive audits to prepare for regulatory inspections.',
+        '<strong>Preventive Maintenance Calendar</strong>: Structured plans for equipment and system upkeep.',
+        '<strong>APR/PQR Frameworks</strong>: Tools for annual and periodic product quality reviews.',
+        '<strong>Compliance Reference Guides</strong>: Supplemental resources for ongoing regulatory adherence.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Post-Handover Support services align with stringent global standards, ensuring your facility is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance quality assurance and regulatory confidence.',
+      ],
+      itemList: [
+        '<strong>ICH Q10</strong>: Pharmaceutical Quality System framework for robust operations.',
+        '<strong>GMP</strong>: Global good manufacturing practice guidelines for quality assurance.',
+        '<strong>US FDA 21 CFR Part 211</strong>: U.S. regulations for pharmaceutical manufacturing and quality control.',
+        '<strong>EU GMP Annex 1</strong>: European guidelines for sterile manufacturing compliance.',
+        '<strong>WHO TRS 1019</strong>: Global standards for GMP-aligned operations.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Post-Handover Support services are essential for pharmaceutical manufacturers transitioning to full operations after project completion. Ideal for ensuring <strong>GMP compliance</strong>, these solutions support regulatory inspections, equipment maintenance, and product quality reviews. Key use cases include establishing <strong>sustainable quality systems</strong>, preparing for FDA or EMA audits, and optimizing operations for new or upgraded facilities.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led post-handover support</strong> backed by certified regulatory experts with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your facility with sustainable, compliant, and efficient operations, driving <strong>regulatory success</strong> and operational excellence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Achieve <span class='halfHeading'>Operational Excellence?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Post-Handover Support',
+      aria: 'Contact us to discuss your post-handover support needs',
+    },
+  },
   gtm: {
     eventCategory: 'Post-Handover Support',
     eventAction: 'Submit',
@@ -169,6 +245,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Absolutely. Our experts provide on-site assistance during the initial operational phase to help your team transition seamlessly and address real-time issues.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Post-Handover Support services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include customized SOP training, regulatory inspection readiness audits, preventive maintenance calendars, APR/PQR frameworks, and compliance reference guides for GMP-aligned operations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Post-Handover Support services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers transitioning to full operations after project handover, particularly those seeking GMP compliance and audit readiness, benefit from our tailored support services.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH Q10, GMP, US FDA 21 CFR Part 211, EU GMP Annex 1, and WHO TRS 1019, ensuring your facility meets global regulatory standards and is audit-ready.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive customized SOP training sessions, regulatory inspection readiness audits, preventive maintenance calendars, APR/PQR frameworks, and compliance reference guides.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the support services be customized for our facility’s needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your facility’s specific operational and regulatory requirements, ensuring practical and compliant solutions for seamless operations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support inspection readiness?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We conduct thorough inspection readiness audits and provide tailored SOP training and APR/PQR frameworks to ensure your facility is fully prepared for regulatory inspections.',
         },
       },
     ],

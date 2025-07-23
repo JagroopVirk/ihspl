@@ -10,6 +10,33 @@ export const navItems = [
     ],
   },
   {
+    name: 'Group of Companies',
+    href: '/group-of-companies',
+    submenu: [
+      {
+        name: 'Indivirtus Healthcare Services Pvt. Ltd.',
+        href: '/',
+      },
+      {
+        name: 'Indivirtus Solutions Pvt. Ltd.',
+        href: 'http://www.indivirtussolutions.com',
+      },
+      {
+        name: 'Indivirtus Strategic Solutions Pvt. Ltd.',
+        href: 'http://www.indivirtusrnd.com',
+      },
+      {
+        name: 'Indivirtus Global CRO Pvt. Ltd.',
+        href: 'http://www.indivirtuscro.com',
+      },
+      // {
+      //   name: 'Indivirtus Ecological Services Pvt. Ltd.',
+      //   href: 'http://www.indivirtuseco.com',
+      // },
+      { name: 'Indivirtus AB7 Pvt. Ltd.', href: 'http://www.indivirtusab7.com' },
+    ],
+  },
+  {
     name: 'Services',
     href: '/services',
     submenu: [
@@ -26,33 +53,9 @@ export const navItems = [
       { name: 'Validation (CSV/ Equipment/ HVAC)', href: '/services/validation' },
     ],
   },
-  { name: 'Resources', href: '/resources' },
+  { name: 'Downloads', href: '/downloads' },
   { name: 'Blogs', href: '/blogs' },
   { name: 'Career', href: '/career' },
-
-  {
-    name: 'Group of Companies',
-    href: '/group-of-companies',
-    submenu: [
-      {
-        name: 'Indivirtus Solutions Pvt Ltd',
-        href: 'http://www.indivirtussolutions.com',
-      },
-      {
-        name: 'Indivirtus Strategic Solutions Pvt Ltd',
-        href: 'http://www.indivirtusrnd.com',
-      },
-      {
-        name: 'Indivirtus Global CRO Pvt Ltd',
-        href: 'http://www.indivirtuscro.com',
-      },
-      // {
-      //   name: 'Indivirtus Ecological Services Pvt Ltd',
-      //   href: 'http://www.indivirtuseco.com',
-      // },
-      { name: 'Indivirtus AB7 Pvt Ltd', href: 'http://www.indivirtusab7.com' },
-    ],
-  },
 
   { name: 'Contact us', href: '/contact-us' },
 ];

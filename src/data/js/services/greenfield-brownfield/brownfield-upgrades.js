@@ -32,6 +32,82 @@ export default {
     alt: 'Brownfield pharmaceutical facility upgrades and GMP compliance',
     caption: 'Transform existing pharma facilities to GMP-compliant, efficient manufacturing plants',
   },
+  pageContent: {
+    hero: {
+      heading: "Facility Upgrades for <span class='halfHeading'>GMP Compliance</span>",
+      tagline: 'Modernize Pharma Plants with Minimal Disruption',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Facility Upgrade services</strong> transform legacy pharmaceutical plants into GMP-compliant, efficient, and scalable facilities. From gap assessments to retrofitting, tech transfers, and optimized shutdowns, we ensure <strong>regulatory readiness</strong> with minimal operational downtime.',
+    },
+    overview: {
+      heading: "Mastering Facility <span class='halfHeading'>Modernization</span>",
+      overviewCards: [
+        {
+          heading: 'What are Facility Upgrade Services?',
+          detail:
+            'Our services deliver comprehensive brownfield upgrades, including GMP gap assessments, retrofitting, plant expansion, seamless technology transfers, and downtime management, ensuring <strong>regulatory compliance</strong> and operational efficiency.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Upgrading legacy facilities ensures <strong>product quality</strong>, compliance with evolving GMP standards, and scalability, minimizing risks and enabling audit-ready operations for global markets.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services provides <strong>expert-led upgrade solutions</strong>, modernizing pharmaceutical facilities with minimal disruption while aligning with global regulatory standards.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Upgrade Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Facility Upgrade services are led by experienced regulatory and engineering experts specializing in <strong>GMP-compliant modernization</strong>. We conduct detailed GMP gap assessments, design retrofitting and expansion plans, manage technology transfers, and optimize shutdown schedules to minimize production downtime.',
+        'Our tailored approach integrates regulatory insights and operational expertise, delivering <strong>scalable and audit-ready solutions</strong> that ensure compliance with global standards and enhance facility performance.',
+      ],
+    },
+    deliverables: {
+      heading: "Facility Upgrade <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Comprehensive GMP Gap Analysis Reports</strong>: Detailed assessments identifying compliance gaps.',
+        '<strong>Retrofitting and Expansion Design Plans</strong>: Tailored designs for facility modernization.',
+        '<strong>Tech Transfer Documentation and Coordination</strong>: Seamless transfer of processes and technologies.',
+        '<strong>Downtime Management and Execution Schedule</strong>: Optimized plans to minimize operational disruptions.',
+        '<strong>Final Validation Readiness Review</strong>: Comprehensive review ensuring audit readiness.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Facility Upgrade services align with stringent global standards, ensuring your modernized facility is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and operational reliability.',
+      ],
+      itemList: [
+        '<strong>GMP (WHO, USFDA, EMA)</strong>: Global good manufacturing practice guidelines for facility upgrades.',
+        '<strong>Schedule M (2024)</strong>: India’s updated GMP requirements for pharmaceutical manufacturing.',
+        '<strong>ISPE Baseline® Guides</strong>: Industry best practices for facility design and modernization.',
+        '<strong>ICH Q10</strong>: Pharmaceutical Quality System framework for robust compliance.',
+        '<strong>EU GMP Annex 1</strong>: European guidelines for sterile manufacturing upgrades.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Facility Upgrade services are essential for pharmaceutical manufacturers modernizing legacy plants or expanding operations to meet <strong>GMP standards</strong>. Ideal for retrofitting, technology transfers, and compliance upgrades, our solutions support regulatory audits and operational scalability. Key use cases include upgrading <strong>legacy manufacturing facilities</strong>, implementing new technologies, and ensuring compliance for global market expansions.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led facility upgrade solutions</strong> backed by certified regulatory and engineering experts with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your facility with compliant, efficient, and scalable upgrades, driving <strong>regulatory success</strong> and operational excellence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Upgrade Your <span class='halfHeading'>Pharma Facility?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Modernization Solutions',
+      aria: 'Contact us to discuss your facility upgrade needs',
+    },
+  },
   gtm: {
     eventCategory: 'Brownfield Upgrade Services',
     eventAction: 'View Service',
@@ -159,6 +235,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes. All upgrades are planned and executed with regulatory compliance in mind, ensuring readiness for inspections by USFDA, EMA, WHO, and other authorities.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Facility Upgrade services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include GMP gap assessments, retrofitting and expansion design, technology transfer coordination, downtime management, and final validation readiness reviews for compliant facility upgrades.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Facility Upgrade services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers modernizing legacy facilities or expanding operations to meet GMP standards benefit from our tailored upgrade solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with GMP (WHO, USFDA, EMA), Schedule M (2024), ISPE Baseline® Guides, ICH Q10, and EU GMP Annex 1, ensuring compliance with global regulatory standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive GMP gap analysis reports, retrofitting and expansion design plans, tech transfer documentation, downtime management schedules, and validation readiness reviews.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the upgrade services be customized for our facility’s needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your facility’s specific operational, regulatory, and scalability requirements, ensuring practical and compliant upgrade solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services minimize operational disruptions?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We optimize shutdown timelines and provide detailed execution schedules to ensure minimal production downtime during retrofitting and technology transfers.',
         },
       },
     ],

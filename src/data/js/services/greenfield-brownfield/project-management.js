@@ -35,6 +35,82 @@ export default {
     alt: 'Turnkey Project Management in pharma facilities',
     caption: 'Complete EPCM-based project management with dashboards and GMP compliance',
   },
+  pageContent: {
+    hero: {
+      heading: "EPCM Solutions for <span class='halfHeading'>Pharmaceutical Projects</span>",
+      tagline: 'Streamline Facility Delivery with Expert Turnkey Management',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>EPCM project management services</strong> deliver seamless execution of pharmaceutical projects from concept to commissioning. With expertise in Engineering, Procurement, and Construction Management, we ensure <strong>GMP-compliant delivery</strong>, optimizing safety, efficiency, and compliance.',
+    },
+    overview: {
+      heading: "Mastering Pharmaceutical <span class='halfHeading'>Project Management</span>",
+      overviewCards: [
+        {
+          heading: 'What are EPCM Solutions?',
+          detail:
+            'Our turnkey EPCM services provide end-to-end project management for pharmaceutical facilities, covering engineering, procurement, and construction management, ensuring <strong>regulatory compliance</strong> and operational efficiency.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Effective EPCM ensures timely, cost-effective, and compliant project delivery, minimizing risks and aligning facilities with <strong>GMP standards</strong> to support product quality and regulatory audits.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led project management</strong>, streamlining pharmaceutical projects with real-time oversight and proactive risk mitigation for audit-ready outcomes.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>EPCM Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our EPCM solutions are led by seasoned project managers with <strong>deep pharmaceutical expertise</strong>. We provide comprehensive project oversight, from conceptual design to commissioning, integrating engineering, procurement, and construction management. Our approach includes real-time project dashboards, proactive risk mitigation, and stringent control over time, cost, and quality.',
+        'Tailored to your facility’s needs, our services ensure <strong>GMP-compliant execution</strong>, delivering scalable and efficient solutions that align with global regulatory standards and drive operational success.',
+      ],
+    },
+    deliverables: {
+      heading: "EPCM Project Management <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Detailed Project Execution Plan (PEP)</strong>: Comprehensive roadmap for project delivery.',
+        '<strong>EPCM Implementation Strategy</strong>: Tailored plan for engineering, procurement, and construction.',
+        '<strong>Risk Register and Mitigation Plan</strong>: Proactive tools for identifying and addressing project risks.',
+        '<strong>Real-Time Dashboards and KPI Tracking</strong>: Dynamic tools for monitoring project performance.',
+        '<strong>Commissioning and Handover Documentation</strong>: Complete records for facility operationalization.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our EPCM services align with stringent global standards, ensuring your pharmaceutical projects are <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and operational reliability.',
+      ],
+      itemList: [
+        '<strong>ICH Q9 – Quality Risk Management</strong>: Framework for proactive risk mitigation in projects.',
+        '<strong>WHO TRS 961 Annex 6</strong>: GMP guidelines for pharmaceutical plant design and operation.',
+        '<strong>ISPE Good Practice Guides</strong>: Industry best practices for facility project management.',
+        '<strong>EU GMP Annex 1</strong>: European guidelines for sterile manufacturing compliance.',
+        '<strong>US FDA 21 CFR</strong>: U.S. regulations for pharmaceutical facility operations.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our EPCM project management services are essential for pharmaceutical manufacturers building new facilities or upgrading existing ones to meet <strong>GMP standards</strong>. Ideal for managing complex projects, our solutions support facility design, equipment installation, and regulatory audits. Key use cases include overseeing <strong>turnkey cleanroom projects</strong>, ensuring compliance during facility expansions, and streamlining new product manufacturing setups.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led EPCM solutions</strong> backed by certified project managers with global regulatory experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we streamline your projects to achieve <strong>regulatory success</strong> and operational excellence, ensuring compliance and efficiency from concept to commissioning.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Streamline Your <span class='halfHeading'>Pharma Project?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert EPCM Solutions',
+      aria: 'Contact us to discuss your EPCM project management needs',
+    },
+  },
   gtm: {
     eventCategory: 'Turnkey Project Management',
     eventAction: 'view_service',
@@ -170,6 +246,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Absolutely. We have expertise in managing and standardizing multi-site projects while ensuring regulatory harmonization and operational consistency.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does the EPCM project management service include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our service includes end-to-end project management, covering engineering, procurement, and construction management, with detailed project execution plans, risk mitigation, real-time dashboards, and commissioning documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from EPCM project management services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers building new facilities or upgrading existing ones, particularly those requiring GMP-compliant project execution, benefit from our turnkey EPCM solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does the service ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH Q9, WHO TRS 961 Annex 6, ISPE Good Practice Guides, EU GMP Annex 1, and US FDA 21 CFR, ensuring your projects meet global regulatory standards and are audit-ready.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the EPCM service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive a detailed Project Execution Plan (PEP), EPCM implementation strategy, risk register and mitigation plan, real-time dashboards with KPI tracking, and commissioning/handover documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the EPCM service be customized for our project needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our EPCM solutions are tailored to your project’s specific requirements, including facility type, scale, and regulatory needs, ensuring practical and compliant outcomes.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does the service support risk mitigation and project tracking?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide a risk register with proactive mitigation plans and real-time dashboards for KPI tracking, ensuring tight control over time, cost, and quality throughout the project lifecycle.',
         },
       },
     ],

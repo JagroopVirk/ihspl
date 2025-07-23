@@ -32,6 +32,82 @@ export default {
     alt: 'Civil and architectural design for pharmaceutical facilities',
     caption: 'Cleanroom-compliant facility layouts and structural design solutions for pharma plants',
   },
+  pageContent: {
+    hero: {
+      heading: "Civil & Architectural Design for <span class='halfHeading'>Pharma Facilities</span>",
+      tagline: 'Build GMP-Compliant Plants with Expert Design Solutions',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Civil & Architectural Design services</strong> deliver comprehensive solutions for pharmaceutical manufacturing plants. From site master planning to ISO-classified cleanroom layouts, we ensure <strong>regulatory compliance</strong>, safety, and operational efficiency from concept to commissioning.',
+    },
+    overview: {
+      heading: "Mastering Pharma Facility <span class='halfHeading'>Design</span>",
+      overviewCards: [
+        {
+          heading: 'What are Civil & Architectural Design Services?',
+          detail:
+            'Our services provide end-to-end design solutions, including site master planning, detailed civil and architectural drawings, ISO-classified cleanroom layouts, and compliance with fire and seismic safety norms, ensuring <strong>GMP-compliant facilities</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Optimized civil and architectural design ensures <strong>regulatory compliance</strong>, personnel safety, and operational efficiency, supporting GMP standards and enabling audit-ready pharmaceutical facilities.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led design solutions</strong>, creating compliant, safe, and efficient pharmaceutical plants tailored to global regulatory standards.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Design Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Civil & Architectural Design services are led by experienced engineers and architects specializing in <strong>GMP-compliant facility design</strong>. We develop detailed engineering drawings, ISO-classified cleanroom layouts, and structural safety assessments, ensuring compliance with fire, seismic, and regulatory standards.',
+        'Our integrated approach includes close coordination with construction and qualification teams, delivering <strong>scalable and audit-ready designs</strong> that optimize operational workflows and ensure regulatory readiness from concept to commissioning.',
+      ],
+    },
+    deliverables: {
+      heading: "Civil & Architectural Design <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Site Master Planning and Layout</strong>: Comprehensive plans for optimized facility design.',
+        '<strong>Detailed Civil & Architectural Drawings</strong>: Precise blueprints for construction execution.',
+        '<strong>Cleanroom Classification and Layout (ISO 14644)</strong>: Compliant designs for sterile and non-sterile environments.',
+        '<strong>Seismic & Fire Safety Compliance Reports</strong>: Assessments ensuring structural and safety compliance.',
+        '<strong>Construction Phase Coordination and Handover Support</strong>: Guidance for seamless project execution.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Civil & Architectural Design services align with stringent global and local standards, ensuring your facility is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver designs that enhance safety and regulatory confidence.',
+      ],
+      itemList: [
+        '<strong>ISO 14644</strong>: Standards for cleanroom classification and performance.',
+        '<strong>GMP</strong>: Global good manufacturing practice guidelines for facility design.',
+        '<strong>IS 1893</strong>: Indian standards for seismic design and safety.',
+        '<strong>NBC 2016</strong>: National Building Code of India for structural and fire safety.',
+        '<strong>Factory Act</strong>: Indian regulations for industrial safety and compliance.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Civil & Architectural Design services are essential for pharmaceutical manufacturers developing new facilities or upgrading existing ones to meet <strong>GMP and ISO standards</strong>. Ideal for sterile and non-sterile environments, our solutions support cleanroom design, structural safety, and regulatory audits. Key use cases include designing <strong>GMP-compliant manufacturing plants</strong>, ensuring compliance for facility expansions, and optimizing layouts for operational efficiency.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led civil and architectural design solutions</strong> backed by certified engineers and regulatory experts with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your facility with compliant, safe, and efficient designs, driving <strong>regulatory success</strong> and operational excellence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Design a <span class='halfHeading'>GMP-Compliant Facility?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Design Solutions',
+      aria: 'Contact us to discuss your civil and architectural design needs',
+    },
+  },
   gtm: {
     eventCategory: 'Civil Design Services',
     eventAction: 'View Service',
@@ -157,6 +233,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Absolutely. Our team is experienced in designing new facilities from scratch as well as modifying and upgrading existing sites while ensuring minimal disruption and full compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Civil & Architectural Design services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include site master planning, detailed civil and architectural drawings, ISO 14644-compliant cleanroom layouts, seismic and fire safety assessments, and construction phase coordination.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Civil & Architectural Design services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers developing new facilities or upgrading existing ones, particularly those requiring GMP-compliant and ISO-classified designs, benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ISO 14644, GMP, IS 1893, NBC 2016, and Factory Act, ensuring facility designs meet global and local regulatory standards and are audit-ready.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive site master planning, detailed civil and architectural drawings, cleanroom classification layouts, seismic and fire safety reports, and construction phase coordination support.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the design services be customized for our facility’s needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your facility’s specific operational, regulatory, and safety requirements, ensuring practical and compliant design solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support cleanroom and safety compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide ISO 14644-compliant cleanroom layouts and seismic/fire safety assessments, ensuring compliance with GMP and safety standards for sterile and non-sterile environments.',
         },
       },
     ],

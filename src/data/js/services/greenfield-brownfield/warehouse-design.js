@@ -32,6 +32,82 @@ export default {
     alt: 'GMP pharmaceutical warehouse layout design',
     caption: 'GMP-compliant warehouse design for pharmaceutical manufacturing',
   },
+  pageContent: {
+    hero: {
+      heading: "Warehouse Design for <span class='halfHeading'>GMP Compliance</span>",
+      tagline: 'Optimize Pharmaceutical Storage with Expert Solutions',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Warehouse Design consulting service</strong> delivers GMP-compliant solutions for pharmaceutical storage. We specialize in layout planning, personnel and material flow segregation, and traceability systems, ensuring <strong>regulatory compliance</strong> and operational efficiency for new or upgraded facilities.',
+    },
+    overview: {
+      heading: "Mastering GMP Warehouse <span class='halfHeading'>Design</span>",
+      overviewCards: [
+        {
+          heading: 'What is GMP Warehouse Design?',
+          detail:
+            'Our service provides expert design of GMP-compliant pharmaceutical warehouses, focusing on optimal layouts, storage types, personnel and material flow segregation, and traceability systems for <strong>safe and compliant storage</strong> of raw materials, APIs, intermediates, and finished products.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'GMP-compliant warehouse design ensures <strong>product integrity</strong>, prevents contamination, and meets stringent regulatory standards, safeguarding patient safety and supporting audit readiness.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led warehouse design solutions</strong>, optimizing storage functionality and ensuring compliance with global GMP standards for pharmaceutical facilities.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Design Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our warehouse design consulting is led by experienced GMP experts who specialize in creating <strong>regulatory-compliant storage solutions</strong>. We focus on optimal layout planning, segregation of personnel and material flows, hazardous and cold storage accommodations, and advanced traceability systems to ensure full compliance with global standards.',
+        'Our tailored approach includes detailed assessments of your facility’s needs, whether for new construction or upgrades, delivering <strong>practical and efficient designs</strong> that enhance operational workflows and ensure audit-ready compliance.',
+      ],
+    },
+    deliverables: {
+      heading: "Warehouse Design <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>GMP-Compliant Warehouse Layout Drawings</strong>: Detailed blueprints for optimized storage design.',
+        '<strong>Storage Zone Classification & Specifications</strong>: Defined zones for raw materials, APIs, and finished products.',
+        '<strong>Personnel and Material Flow Maps</strong>: Segregated flow plans to prevent cross-contamination.',
+        '<strong>Traceability & Barcode Integration Plan</strong>: Systems for full material traceability.',
+        '<strong>Cold & Hazardous Material Storage Design</strong>: Specialized solutions for temperature-sensitive and hazardous materials.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our warehouse design services align with stringent global standards, ensuring your storage facilities meet <strong>regulatory requirements</strong> and are audit-ready. By adhering to industry-leading guidelines, we deliver designs that support compliance and enhance operational confidence for international markets.',
+      ],
+      itemList: [
+        '<strong>EU GMP</strong>: European guidelines for good manufacturing practices in storage.',
+        '<strong>US FDA 21 CFR</strong>: U.S. regulations for pharmaceutical manufacturing and storage.',
+        '<strong>WHO TRS 1019</strong>: Global GMP guidelines for quality assurance in warehousing.',
+        '<strong>ISPE Baseline Guide Vol 6</strong>: Industry best practices for pharmaceutical facility design.',
+        '<strong>ICH Q7</strong>: Good manufacturing practice guide for active pharmaceutical ingredients.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our warehouse design services are vital for pharmaceutical manufacturers building new facilities or upgrading existing ones to ensure <strong>GMP compliance</strong>. Ideal for managing raw materials, APIs, intermediates, and finished products, our solutions support cold chain logistics, hazardous material storage, and traceability. Key use cases include designing <strong>multi-product warehouses</strong>, preparing for regulatory audits, and optimizing storage for global market expansion.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>GMP-compliant warehouse design solutions</strong> backed by certified experts with global regulatory experience. Our designs ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your facility with safe, efficient, and compliant storage solutions, driving <strong>regulatory success</strong> and operational excellence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Design a <span class='halfHeading'>GMP-Compliant Warehouse?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Storage Solutions',
+      aria: 'Contact us to discuss your warehouse design needs',
+    },
+  },
   gtm: {
     eventCategory: 'Warehouse Design',
     eventAction: 'view_service',
@@ -171,6 +247,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, our warehouse design service is tailored for both Greenfield and Brownfield pharmaceutical projects, including facility upgrades and new constructions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does the warehouse design consulting service include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our service includes GMP-compliant layout planning, storage zone classification, personnel and material flow segregation, traceability and barcode integration, and specialized designs for cold and hazardous material storage.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from GMP-compliant warehouse design?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers building new facilities or upgrading existing ones, particularly those managing raw materials, APIs, intermediates, or finished products, benefit from our compliant and efficient designs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does the service ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our designs align with EU GMP, US FDA 21 CFR, WHO TRS 1019, ISPE Baseline Guide Vol 6, and ICH Q7, ensuring your warehouse meets global regulatory standards and is audit-ready.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the warehouse design service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive GMP-compliant layout drawings, storage zone specifications, personnel and material flow maps, traceability and barcode integration plans, and cold/hazardous material storage designs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the warehouse design be customized for our facility’s needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our designs are tailored to your facility’s specific requirements, including storage types, material flows, and regulatory needs, ensuring practical and compliant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does the service support cold chain or hazardous material storage?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide specialized designs for cold and hazardous material storage, including temperature-controlled zones and safety protocols, ensuring compliance with GMP and regulatory standards.',
         },
       },
     ],

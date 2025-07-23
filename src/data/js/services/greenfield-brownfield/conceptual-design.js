@@ -32,6 +32,82 @@ export default {
     alt: 'Conceptual facility design and layout for pharmaceutical plant',
     caption: 'Modular & GMP-Compliant Pharmaceutical Facility Design',
   },
+  pageContent: {
+    hero: {
+      heading: "Facility Design for <span class='halfHeading'>Pharma Excellence</span>",
+      tagline: 'Optimize Layouts with Modular & BIM-Integrated Solutions',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Conceptualization & Design service</strong> delivers intelligent, GMP-compliant layout planning for pharmaceutical facilities. From modular cleanroom designs to 3D BIM modeling, we ensure <strong>regulatory compliance</strong>, operational efficiency, and scalability for sterile and non-sterile environments.',
+    },
+    overview: {
+      heading: "Mastering Facility <span class='halfHeading'>Design</span>",
+      overviewCards: [
+        {
+          heading: 'What are Conceptualization & Design Services?',
+          detail:
+            'Our services provide advanced facility layout planning, modular and prefabricated cleanroom designs, and 3D BIM integration, optimizing workflows, HVAC zoning, and material/personnel movement for <strong>GMP-compliant operations</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Optimized facility design ensures <strong>product quality</strong>, regulatory compliance, and operational efficiency, supporting ISO/GMP classifications and enabling scalable, future-ready pharmaceutical manufacturing.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led design solutions</strong>, creating compliant, efficient, and scalable facility layouts that meet global regulatory standards.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Design Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Conceptualization & Design services are led by experienced engineers and regulatory experts specializing in <strong>GMP-compliant facility planning</strong>. We utilize 3D BIM modeling to visualize workflows, HVAC zoning, and critical utility paths, ensuring optimized material and personnel movement. Our modular and prefabricated cleanroom designs support ISO/GMP classifications for sterile and non-sterile environments.',
+        'Our tailored approach integrates compliance-driven planning with operational efficiency, delivering <strong>scalable and future-ready designs</strong> that align with global standards and support regulatory audits.',
+      ],
+    },
+    deliverables: {
+      heading: "Conceptualization & Design <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Facility Layout Drawings</strong>: Detailed plans for optimized facility design.',
+        '<strong>3D BIM Models</strong>: Advanced visualizations for workflows and utility integration.',
+        '<strong>Zoning and Classification Maps</strong>: ISO/GMP-compliant cleanroom zoning plans.',
+        '<strong>Utility & Material Flow Diagrams</strong>: Optimized paths for efficient operations.',
+        '<strong>Design Basis Document (DBD)</strong>: Comprehensive foundation for design execution.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Conceptualization & Design services align with stringent global standards, ensuring your facility is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver designs that enhance regulatory confidence and operational reliability.',
+      ],
+      itemList: [
+        '<strong>GMP</strong>: Global good manufacturing practice guidelines for facility design.',
+        '<strong>ISO 14644</strong>: Standards for cleanroom classification and performance.',
+        '<strong>EU Annex 1</strong>: European guidelines for sterile manufacturing environments.',
+        '<strong>WHO TRS</strong>: Global GMP guidelines for quality assurance in facility design.',
+        '<strong>Schedule M (2024)</strong>: India’s updated GMP requirements for pharmaceutical facilities.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Conceptualization & Design services are essential for pharmaceutical manufacturers developing new facilities or upgrading existing ones to meet <strong>GMP and ISO standards</strong>. Ideal for sterile and non-sterile environments, our solutions support cleanroom zoning, workflow optimization, and regulatory compliance. Key use cases include designing <strong>modular cleanrooms</strong>, planning facility expansions, and ensuring compliance for global market approvals.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led design solutions</strong> backed by certified engineers and regulatory experts with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your facility with compliant, efficient, and scalable designs, driving <strong>regulatory success</strong> and operational excellence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Optimize Your <span class='halfHeading'>Pharma Facility?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Design Solutions',
+      aria: 'Contact us to discuss your facility design needs',
+    },
+  },
   gtm: {
     eventCategory: 'Conceptual Design Services',
     eventAction: 'Service View',
@@ -154,6 +230,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, our designs comply with global GMP regulations including EU Annex 1, WHO TRS, Schedule M, and ISO 14644, ensuring inspection readiness worldwide.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Conceptualization & Design services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include facility layout planning, modular and prefabricated cleanroom designs, 3D BIM modeling, HVAC zoning, and utility/material flow optimization, ensuring GMP-compliant operations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Conceptualization & Design services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers developing new facilities or upgrading existing ones, particularly those requiring GMP and ISO-compliant cleanroom designs, benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with GMP, ISO 14644, EU Annex 1, WHO TRS, and Schedule M (2024), ensuring facility designs meet global regulatory standards and are audit-ready.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive facility layout drawings, 3D BIM models, zoning and classification maps, utility and material flow diagrams, and a design basis document (DBD).',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the design services be customized for our facility’s needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your facility’s specific operational and regulatory requirements, ensuring practical and compliant design solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support cleanroom zoning and scalability?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide modular cleanroom designs and zoning maps aligned with ISO/GMP classifications, ensuring scalability and compliance for both sterile and non-sterile environments.',
         },
       },
     ],

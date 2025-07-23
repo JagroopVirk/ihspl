@@ -32,6 +32,82 @@ export default {
     alt: 'Digital transformation and integration services for pharma',
     caption: 'SCADA, eBMR/eBPR, IoT, serialization and digital compliance for GMP pharma',
   },
+  pageContent: {
+    hero: {
+      heading: "Digital Pharma Integration for <span class='halfHeading'>Transformative Operations</span>",
+      tagline: 'Embrace Advanced Digital Solutions for GMP Compliance',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Digital Pharma Integration services</strong> empower pharmaceutical manufacturers to transform operations with SCADA, IoT, eBMR/eBPR, serialization, and 21 CFR Part 11 compliance. We ensure <strong>regulatory-ready digital systems</strong> for real-time monitoring, data integrity, and supply chain transparency.',
+    },
+    overview: {
+      heading: "Mastering Digital <span class='halfHeading'>Transformation</span>",
+      overviewCards: [
+        {
+          heading: 'What are Digital Pharma Integration Services?',
+          detail:
+            'Our services provide end-to-end digital transformation, including SCADA and IoT integration, eBMR/eBPR implementation, serialization for track-and-trace, and 21 CFR Part 11 compliance, ensuring <strong>GMP-aligned operations</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Digital transformation enhances <strong>operational efficiency</strong>, ensures data integrity, and improves supply chain transparency, meeting regulatory requirements and enabling audit-ready pharmaceutical operations.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led digital solutions</strong>, guiding manufacturers to implement compliant, scalable, and innovative systems for global market readiness.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Digital Transformation Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Digital Pharma Integration services are led by certified experts specializing in <strong>pharmaceutical digitization</strong>. We design and implement SCADA and IoT systems for real-time monitoring, deploy eBMR/eBPR for paperless operations, and establish serialization systems for supply chain compliance. Our team ensures 21 CFR Part 11 compliance through robust data integrity practices.',
+        'Our tailored approach includes comprehensive assessments and strategic implementation plans, delivering <strong>scalable and audit-ready solutions</strong> that align with global regulatory standards and enhance operational efficiency.',
+      ],
+    },
+    deliverables: {
+      heading: "Digital Pharma Integration <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Digital Integration Assessment Report</strong>: Detailed analysis of digital transformation needs and gaps.',
+        '<strong>SCADA/IoT System Architecture</strong>: Framework for real-time monitoring and control systems.',
+        '<strong>eBMR/eBPR Implementation Plan</strong>: Roadmap for paperless batch record systems.',
+        '<strong>Serialization Compliance Framework</strong>: Tools for track-and-trace and supply chain transparency.',
+        '<strong>21 CFR Part 11 Audit Checklist</strong>: Comprehensive guide for data integrity compliance.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Digital Pharma Integration services align with stringent global standards, ensuring your digital systems are <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance data integrity and regulatory confidence.',
+      ],
+      itemList: [
+        '<strong>21 CFR Part 11</strong>: U.S. regulations for electronic records and signatures.',
+        '<strong>EU GMP Annex 11</strong>: European guidelines for computerized systems in GMP environments.',
+        '<strong>PIC/S Guidelines</strong>: Global standards for GMP-compliant digital systems.',
+        '<strong>GS1 Standards for Serialization</strong>: Guidelines for supply chain track-and-trace systems.',
+        '<strong>ICH Q10</strong>: Pharmaceutical Quality System framework for digital integration.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Digital Pharma Integration services are essential for pharmaceutical manufacturers seeking to modernize operations and ensure <strong>GMP compliance</strong>. Ideal for implementing real-time monitoring, paperless systems, or serialization, our solutions support regulatory audits and supply chain transparency. Key use cases include deploying <strong>SCADA/IoT for manufacturing</strong>, transitioning to eBMR/eBPR, and ensuring compliance for global market distribution.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led digital transformation solutions</strong> backed by certified professionals with global regulatory experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your facility with innovative, compliant, and scalable digital systems, driving <strong>regulatory success</strong> and operational excellence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Transform Your <span class='halfHeading'>Pharma Operations?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Digital Solutions',
+      aria: 'Contact us to discuss your digital transformation needs',
+    },
+  },
   gtm: {
     eventCategory: 'Digital Pharma Integration',
     eventAction: 'View Service',
@@ -159,6 +235,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Digital transformation projects generally take 6–8 weeks depending on facility complexity, system maturity, and whether integrations are local or cloud-based.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Digital Pharma Integration services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include SCADA and IoT integration, eBMR/eBPR implementation, serialization for track-and-trace, and 21 CFR Part 11 compliance, ensuring GMP-aligned digital transformation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Digital Pharma Integration services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers modernizing operations, seeking real-time monitoring, paperless systems, or supply chain transparency benefit from our tailored digital solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with 21 CFR Part 11, EU GMP Annex 11, PIC/S Guidelines, GS1 Standards, and ICH Q10, ensuring digital systems are audit-ready and compliant with global standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive a digital integration assessment report, SCADA/IoT system architecture, eBMR/eBPR implementation plan, serialization compliance framework, and a 21 CFR Part 11 audit checklist.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the digital transformation services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your facility’s specific operational and regulatory requirements, ensuring practical and compliant digital solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support serialization and data integrity?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We deploy serialization frameworks for track-and-trace compliance and ensure 21 CFR Part 11 compliance through robust data integrity practices, supporting audit-ready operations.',
         },
       },
     ],
