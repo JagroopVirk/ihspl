@@ -32,6 +32,81 @@ export default {
     alt: 'Medical Review of ICSRs and Signal Reports',
     caption: 'Expert clinical review of ICSRs, narratives, and safety signals for pharmacovigilance.',
   },
+  pageContent: {
+    hero: {
+      heading: "Medical Review for <span class='halfHeading'>Pharmacovigilance Excellence</span>",
+      tagline: 'Expert Oversight for Accurate Safety Insights',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Medical Review service</strong> provides expert evaluation of ICSRs, medical narratives, signal trends, and benefit-risk profiles. Led by qualified healthcare professionals, we ensure <strong>scientific accuracy and regulatory compliance</strong> for global pharmacovigilance, supporting PSURs/PADERs and safety surveillance.',
+    },
+    overview: {
+      heading: "Mastering Medical <span class='halfHeading'>Review Processes</span>",
+      overviewCards: [
+        {
+          heading: 'What are Medical Review Services?',
+          detail:
+            'Our services offer expert review of Individual Case Safety Reports (ICSRs), medical narratives, signal trends, and benefit-risk profiles, ensuring <strong>clinical relevance and compliance</strong> with global PV standards.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Medical review ensures <strong>patient safety</strong>, data accuracy, and regulatory compliance, supporting robust safety surveillance, timely submissions, and informed benefit-risk decisions.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led medical review solutions</strong>, acting as an extension of your PV team to ensure compliant and accurate safety reporting.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Medical Review Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Medical Review services are led by qualified healthcare professionals with <strong>global pharmacovigilance expertise</strong>. We conduct structured evaluations of ICSRs, medical narratives, signal trends, and benefit-risk profiles, ensuring clinical relevance and regulatory compliance.',
+        'Our approach integrates with your PV system, delivering <strong>audit-ready documentation</strong> that aligns with ICH E2D, GVP Modules VI & IX, and FDA/EMA requirements, supporting timely PSURs/PADERs and safety surveillance.',
+      ],
+    },
+    deliverables: {
+      heading: "Medical Review <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Medically Reviewed ICSRs (CIOMS/MedWatch)</strong>: Accurate and compliant case evaluations.',
+        '<strong>Signal Trend Evaluation Reports</strong>: Detailed analysis of safety signals.',
+        '<strong>Benefit-Risk Assessment Documents</strong>: Comprehensive safety and efficacy profiles.',
+        '<strong>Medical Narratives and Case Summaries</strong>: Clinically relevant case documentation.',
+        '<strong>Safety Reporting Dashboards or Annotated Trackers</strong>: Tools for real-time safety insights.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Medical Review services align with stringent global pharmacovigilance standards, ensuring your documentation is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance safety and regulatory confidence.',
+      ],
+      itemList: [
+        '<strong>ICH E2D</strong>: Guidelines for post-approval safety data management.',
+        '<strong>GVP Module VI & IX</strong>: European standards for adverse event reporting and signal management.',
+        '<strong>US FDA 21 CFR Part 314.80</strong>: U.S. regulations for post-marketing safety reporting.',
+        '<strong>EMA GVP Guidelines</strong>: European standards for pharmacovigilance processes.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Medical Review services are essential for pharmaceutical companies and MAHs managing <strong>global pharmacovigilance requirements</strong>. Ideal for ICSR processing, signal detection, and benefit-risk assessments, our solutions support regulatory submissions and safety surveillance. Key use cases include reviewing ICSRs for <strong>new drugs</strong>, supporting PSUR/PADER submissions, and enhancing post-market safety monitoring.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led medical review solutions</strong> backed by qualified healthcare professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, accurate, and clinically relevant safety documentation, driving <strong>regulatory success</strong> and patient safety.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Enhance Your <span class='halfHeading'>PV Medical Review?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Safety Solutions',
+      aria: 'Contact us to discuss your medical review needs',
+    },
+  },
   gtm: {
     eventCategory: 'Pharmacovigilance Services',
     eventAction: 'Medical Review Viewed',
@@ -161,6 +236,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We offer both options. Our team can create concise, regulatory-compliant narratives or refine and medicalize existing drafts provided by your PV team.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Medical Review services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include expert review of ICSRs, medical narratives, signal trend evaluations, benefit-risk assessments, and safety reporting dashboards, ensuring PV compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Medical Review services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies and MAHs managing ICSRs, signal detection, or PSUR/PADER submissions benefit from our expert-led medical review solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH E2D, GVP Module VI & IX, US FDA 21 CFR Part 314.80, and EMA GVP Guidelines, ensuring global pharmacovigilance compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive reviewed ICSRs, signal trend reports, benefit-risk assessments, medical narratives, and safety reporting dashboards or trackers.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the medical review services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific PV requirements, drug products, and submission timelines, ensuring compliant and relevant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support PSUR/PADER submissions?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide medically reviewed ICSRs, signal evaluations, and benefit-risk assessments to support accurate and compliant PSUR/PADER submissions.',
         },
       },
     ],

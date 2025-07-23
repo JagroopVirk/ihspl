@@ -32,6 +32,81 @@ export default {
     alt: 'Literature Monitoring and ADR Screening',
     caption: 'Systematic literature screening of PubMed, Embase, and local sources for pharmacovigilance.',
   },
+  pageContent: {
+    hero: {
+      heading: "GVP-Compliant Literature Monitoring for <span class='halfHeading'>Drug Safety</span>",
+      tagline: 'Proactive ADR Detection and Regulatory Compliance',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Literature Monitoring service</strong> ensures GVP-compliant screening of global and local databases like Embase and PubMed for adverse drug reactions (ADRs), signals, and safety concerns. We deliver <strong>traceable, submission-ready outputs</strong> to support regulatory compliance and pharmacovigilance.',
+    },
+    overview: {
+      heading: "Mastering Literature <span class='halfHeading'>Monitoring Excellence</span>",
+      overviewCards: [
+        {
+          heading: 'What are Literature Monitoring Services?',
+          detail:
+            'Our services screen global and local literature databases to identify ADRs, safety concerns, and signals, providing case intake, data abstraction, and submission-ready outputs aligned with <strong>GVP Module VI requirements</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Proactive literature monitoring ensures <strong>patient safety</strong>, timely ADR detection, and regulatory compliance, supporting robust pharmacovigilance and submission readiness.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led literature monitoring</strong>, ensuring compliant, traceable, and timely detection of safety signals for regulatory submissions.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Monitoring Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Literature Monitoring services are led by qualified pharmacovigilance professionals specializing in <strong>global safety compliance</strong>. We screen databases like Embase and PubMed, perform structured data abstraction, draft narratives, and prepare submission-ready outputs.',
+        'Our approach uses structured workflows and rigorous review processes, ensuring <strong>compliant and traceable documentation</strong> that aligns with GVP Module VI, ICH E2D, and EMA standards for pharmacovigilance.',
+      ],
+    },
+    deliverables: {
+      heading: "Literature Monitoring <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Literature Search Log and Documentation</strong>: Comprehensive records of screening activities.',
+        '<strong>ADR Case Identification Reports</strong>: Detailed reports of identified adverse drug reactions.',
+        '<strong>Signal Detection Summaries</strong>: Analysis of emerging safety signals.',
+        '<strong>Narrative-Ready Case Outputs</strong>: Prepared narratives for regulatory reporting.',
+        '<strong>Submission-Ready Case Forms or Line Listings</strong>: Compliant outputs for regulatory authorities.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Literature Monitoring services align with stringent global pharmacovigilance standards, ensuring your documentation is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance safety and regulatory confidence.',
+      ],
+      itemList: [
+        '<strong>GVP Module VI</strong>: European standards for adverse event reporting and literature monitoring.',
+        '<strong>ICH E2D</strong>: Guidelines for post-approval safety data management.',
+        '<strong>EMA Good Vigilance Practices</strong>: European requirements for pharmacovigilance processes.',
+        '<strong>WHO Pharmacovigilance Guidelines</strong>: Global standards for safety monitoring.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Literature Monitoring services are essential for pharmaceutical companies and MAHs ensuring <strong>proactive safety monitoring</strong>. Ideal for ADR detection, signal identification, and regulatory submissions, our solutions support global pharmacovigilance requirements. Key use cases include monitoring literature for <strong>new drug products</strong>, supporting PSUR submissions, and identifying emerging safety signals.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led literature monitoring solutions</strong> backed by certified pharmacovigilance professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, traceable, and timely safety monitoring, driving <strong>regulatory success</strong> and patient safety.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Enhance Your <span class='halfHeading'>PV Monitoring?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Literature Solutions',
+      aria: 'Contact us to discuss your literature monitoring needs',
+    },
+  },
   gtm: {
     eventCategory: 'Pharmacovigilance Services',
     eventAction: 'Literature Monitoring Viewed',
@@ -161,6 +236,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We can export outputs in formats compatible with safety databases like Argus, ArisG, or Veeva Vault Safety, and integrate with your internal workflows as needed.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Literature Monitoring services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include screening Embase/PubMed for ADRs, signal identification, data abstraction, narrative drafting, and submission-ready case forms, aligned with GVP Module VI.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Literature Monitoring services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies and MAHs monitoring ADRs, signals, or preparing regulatory submissions benefit from our proactive, compliant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with GVP Module VI, ICH E2D, EMA Good Vigilance Practices, and WHO Pharmacovigilance Guidelines, ensuring global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive literature search logs, ADR case reports, signal detection summaries, narrative-ready outputs, and submission-ready case forms or line listings.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the literature monitoring services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific drug products, monitoring needs, and regulatory requirements, ensuring compliant and effective solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support regulatory submissions?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide submission-ready case forms, line listings, and narratives to support PSURs and other regulatory submissions, ensuring timely and compliant reporting.',
         },
       },
     ],

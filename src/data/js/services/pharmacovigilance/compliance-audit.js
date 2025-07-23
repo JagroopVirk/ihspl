@@ -31,6 +31,81 @@ export default {
     alt: 'Pharmacovigilance Compliance & Audit Support Services',
     caption: 'PV audit readiness and compliance assurance by Indivirtus',
   },
+  pageContent: {
+    hero: {
+      heading: "Pharmacovigilance Compliance & <span class='halfHeading'>Audit Readiness</span>",
+      tagline: 'Stay Compliant with Expert PV Support',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Compliance & Audit Support service</strong> ensures your pharmacovigilance system meets global regulatory expectations. Through robust monitoring, inspection readiness, CAPA planning, and tailored training, we deliver <strong>audit-ready solutions</strong> aligned with GVP and ICH E2E guidelines.',
+    },
+    overview: {
+      heading: "Mastering PV <span class='halfHeading'>Compliance & Audits</span>",
+      overviewCards: [
+        {
+          heading: 'What are Compliance & Audit Support Services?',
+          detail:
+            'Our services provide PV system monitoring, compliance assessments, audit readiness preparation, CAPA planning, and training on GVP and ICH E2E, ensuring <strong>global pharmacovigilance compliance</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Continuous compliance and audit readiness ensure <strong>regulatory adherence</strong>, patient safety, and operational confidence, minimizing risks during health authority or internal audits.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led compliance solutions</strong>, strengthening your PV system for regulatory inspections and operational excellence.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Compliance Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Compliance & Audit Support services are led by certified pharmacovigilance experts with <strong>global regulatory expertise</strong>. We conduct thorough compliance assessments, prepare audit readiness checklists, develop CAPA plans, and provide tailored training on GVP and ICH E2E guidelines.',
+        'Our structured approach ensures <strong>inspection-ready PV systems</strong>, integrating with your operations to align with EMA, FDA, and global standards, supporting both internal reviews and health authority audits.',
+      ],
+    },
+    deliverables: {
+      heading: "Compliance & Audit Support <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>PV Compliance Assessment Reports</strong>: Detailed evaluations of your PV system.',
+        '<strong>Audit Readiness Checklist</strong>: Comprehensive guide for inspection preparation.',
+        '<strong>CAPA Plans & Tracker</strong>: Action plans to address compliance gaps.',
+        '<strong>Training Session Reports</strong>: Documentation of GVP/ICH E2E training outcomes.',
+        '<strong>Mock Inspection Summaries</strong>: Simulated audit results to ensure readiness.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Compliance & Audit Support services align with stringent global pharmacovigilance standards, ensuring your PV system is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence.',
+      ],
+      itemList: [
+        '<strong>GVP Modules I-XVI</strong>: European standards for pharmacovigilance systems and processes.',
+        '<strong>ICH E2E</strong>: Guidelines for pharmacovigilance planning and safety management.',
+        '<strong>EMA/FDA PV Guidance</strong>: European and U.S. regulations for pharmacovigilance compliance.',
+        '<strong>WHO Pharmacovigilance Guidelines</strong>: Global standards for safety monitoring.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Compliance & Audit Support services are essential for pharmaceutical companies and MAHs ensuring <strong>continuous PV compliance</strong>. Ideal for audit preparation, internal reviews, and CAPA implementation, our solutions support global pharmacovigilance requirements. Key use cases include preparing for <strong>EMA/FDA inspections</strong>, aligning PV systems with GVP, and training teams for compliance.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led compliance and audit solutions</strong> backed by certified pharmacovigilance professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, robust, and inspection-ready PV systems, driving <strong>regulatory success</strong> and patient safety.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ensure <span class='halfHeading'>PV Audit Readiness?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Compliance Solutions',
+      aria: 'Contact us to discuss your compliance and audit support needs',
+    },
+  },
   gtm: {
     eventCategory: 'Pharmacovigilance Services',
     eventAction: 'Compliance Audit Support Accessed',
@@ -158,6 +233,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Absolutely. We assist with CAPA execution, documentation corrections, retraining, and responding to inspection findings to ensure compliance restoration.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Compliance & Audit Support services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include PV compliance assessments, audit readiness checklists, CAPA planning, GVP/ICH E2E training, and mock inspection summaries.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Compliance & Audit Support services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies and MAHs preparing for health authority audits or conducting internal PV reviews benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with GVP Modules I-XVI, ICH E2E, EMA/FDA PV Guidance, and WHO Pharmacovigilance Guidelines, ensuring global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive compliance assessment reports, audit readiness checklists, CAPA plans, training session reports, and mock inspection summaries.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the compliance services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific PV system, regulatory requirements, and audit goals, ensuring compliant and effective solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support audit readiness?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide checklists, CAPA plans, mock inspections, and training to ensure your PV system is prepared for health authority or internal audits.',
         },
       },
     ],

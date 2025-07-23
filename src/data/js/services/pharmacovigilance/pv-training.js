@@ -31,6 +31,80 @@ export default {
     alt: 'Pharmacovigilance training and system design',
     caption: 'Upskill your PV team with regulatory-driven training programs.',
   },
+  pageContent: {
+    hero: {
+      heading: "Pharmacovigilance Training for <span class='halfHeading'>Global Compliance</span>",
+      tagline: 'Empower Your Team with Tailored PV Expertise',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Pharmacovigilance (PV) Training services</strong> deliver specialized programs for pharmaceutical companies and MAHs. From GVP and ICH E2E training to custom PV process design, we ensure <strong>regulatory compliance</strong> and operational efficiency through expert-led, tailored solutions.',
+    },
+    overview: {
+      heading: "Mastering Pharmacovigilance <span class='halfHeading'>Training</span>",
+      overviewCards: [
+        {
+          heading: 'What are Pharmacovigilance Training Services?',
+          detail:
+            'Our services provide tailored training on GVP, ICH E2E, MAH PV systems, and custom workflows, enhancing team competence and ensuring <strong>global regulatory compliance</strong> for pharmacovigilance operations.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Comprehensive PV training ensures <strong>team readiness</strong>, regulatory compliance, and efficient safety monitoring, supporting audit readiness and robust pharmacovigilance systems.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led PV training</strong>, empowering teams with the knowledge and tools to maintain compliance and operational excellence.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Training Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Pharmacovigilance Training services are led by certified PV experts specializing in <strong>global regulatory standards</strong>. We offer foundational and advanced training modules on GVP and ICH E2E, PV system setup for MAHs, and train-the-trainer workshops, alongside custom SOPs and workflows tailored to your organization.',
+        'Our approach combines regulatory expertise with practical applications, delivering <strong>comprehensive and compliant training solutions</strong> that align with global best practices and enhance team competence.',
+      ],
+    },
+    deliverables: {
+      heading: "Pharmacovigilance Training <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>GVP & ICH E2E Training Modules</strong>: Comprehensive sessions on global PV standards.',
+        '<strong>PV System Setup Templates for MAHs</strong>: Tools for establishing compliant PV systems.',
+        '<strong>Trainer Kits and Facilitator Guides</strong>: Resources for internal training scalability.',
+        '<strong>Custom PV Process SOPs and Workflows</strong>: Tailored procedures for operational efficiency.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Pharmacovigilance Training services align with stringent global standards, ensuring your team is equipped for <strong>audit-ready compliance</strong> across international markets. By adhering to industry-leading guidelines, we deliver training that enhances regulatory confidence and safety.',
+      ],
+      itemList: [
+        '<strong>ICH E2E</strong>: Guidelines for pharmacovigilance planning and safety management.',
+        '<strong>EMA GVP Modules I–XV</strong>: European standards for pharmacovigilance operations.',
+        '<strong>21 CFR Part 314</strong>: U.S. regulations for post-marketing drug safety reporting.',
+        '<strong>WHO Pharmacovigilance Guidelines</strong>: Global standards for adverse event monitoring.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Pharmacovigilance Training services are essential for pharmaceutical companies and MAHs seeking to ensure <strong>team compliance and efficiency</strong>. Ideal for onboarding, system setup, or process optimization, our solutions support global pharmacovigilance requirements. Key use cases include training teams for <strong>new drug launches</strong>, aligning MAH systems with GVP, and designing custom PV workflows.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies and MAHs, delivering <strong>expert-led PV training solutions</strong> backed by certified pharmacovigilance experts with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your team with compliant, effective, and tailored training, driving <strong>regulatory success</strong> and pharmacovigilance excellence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Enhance Your <span class='halfHeading'>PV Compliance?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Training Solutions',
+      aria: 'Contact us to discuss your pharmacovigilance training needs',
+    },
+  },
   gtm: {
     eventCategory: 'Pharmacovigilance Services',
     eventAction: 'PV Training Inquiry',
@@ -169,6 +243,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, all our training modules are available in virtual, on-site, and hybrid formats based on your preference and team location.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Pharmacovigilance Training services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include GVP and ICH E2E training modules, PV system setup templates, trainer kits, and custom SOPs/workflows tailored for pharmaceutical companies and MAHs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Pharmacovigilance Training services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies, MAHs, and regulatory professionals seeking compliant PV training or custom process design benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH E2E, EMA GVP Modules I–XV, 21 CFR Part 314, and WHO Pharmacovigilance Guidelines, ensuring global regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive GVP/ICH E2E training modules, PV system setup templates, trainer kits, and custom PV process SOPs and workflows.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the training services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your organization’s specific PV needs, regulatory requirements, and operational goals, ensuring effective and compliant training.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support MAH PV system setup?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide templates, SOPs, and training to establish compliant MAH PV systems, aligning with GVP and global pharmacovigilance standards.',
         },
       },
     ],

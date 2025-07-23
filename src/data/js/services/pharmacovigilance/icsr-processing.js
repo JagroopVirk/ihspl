@@ -32,6 +32,81 @@ export default {
     alt: 'ICSR Case Processing and E2B Submissions',
     caption: 'Case intake, MedDRA coding, and global regulatory reporting through ICSR workflows.',
   },
+  pageContent: {
+    hero: {
+      heading: "ICSR Case Processing for <span class='halfHeading'>Global Compliance</span>",
+      tagline: 'Efficient and Precise Pharmacovigilance Solutions',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>ICSR Case Processing service</strong> provides full lifecycle management of Individual Case Safety Reports for pharmaceutical and biotech companies. From intake to E2B R2/R3 submissions, we ensure <strong>regulatory compliance</strong> and signal detection readiness with expert triage, MedDRA coding, and validated systems.',
+    },
+    overview: {
+      heading: "Mastering ICSR <span class='halfHeading'>Case Processing</span>",
+      overviewCards: [
+        {
+          heading: 'What are ICSR Case Processing Services?',
+          detail:
+            'Our services manage the full lifecycle of ICSRs, including intake, triage, MedDRA coding, narrative drafting, seriousness assessment, and E2B R2/R3 submissions, ensuring <strong>global pharmacovigilance compliance</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Efficient ICSR processing ensures <strong>patient safety</strong>, regulatory compliance, and accurate adverse event reporting, supporting signal detection and audit readiness.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led ICSR solutions</strong>, providing precise, compliant, and traceable case processing for global safety monitoring.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>ICSR Processing Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our ICSR Case Processing services are led by certified pharmacovigilance specialists with <strong>global compliance expertise</strong>. We handle intake, triage, MedDRA coding, narrative drafting, seriousness assessment, and E2B R2/R3 submissions using industry-standard safety databases.',
+        'Our structured workflows ensure <strong>traceable and compliant case management</strong>, with follow-up actions and source reconciliation to support signal detection and regulatory submissions, aligned with ICH E2B, GVP Module VI, and FDA/EMA standards.',
+      ],
+    },
+    deliverables: {
+      heading: "ICSR Case Processing <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Processed ICSRs (MedWatch, CIOMS, e2B XML)</strong>: Fully compliant case reports.',
+        '<strong>MedDRA-Coded Adverse Events</strong>: Standardized coding for accuracy.',
+        '<strong>Case Narratives and Seriousness Justification</strong>: Detailed and compliant documentation.',
+        '<strong>Follow-Up Action Logs</strong>: Records of case follow-up activities.',
+        '<strong>Reconciliation Reports with Safety Database and Source Systems</strong>: Ensured data integrity.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our ICSR Case Processing services align with stringent global pharmacovigilance standards, ensuring your documentation is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance safety and regulatory confidence.',
+      ],
+      itemList: [
+        '<strong>ICH E2B(R2/R3)</strong>: Guidelines for electronic submission of safety reports.',
+        '<strong>GVP Module VI</strong>: European standards for adverse event reporting.',
+        '<strong>FDA 21 CFR Part 314.80</strong>: U.S. regulations for post-marketing safety reporting.',
+        '<strong>EMA Volume 9A</strong>: European guidelines for pharmacovigilance processes.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our ICSR Case Processing services are essential for pharmaceutical and biotech companies managing <strong>global pharmacovigilance requirements</strong>. Ideal for spontaneous and solicited case workflows, signal detection, and regulatory submissions, our solutions support patient safety. Key use cases include processing ICSRs for <strong>new drug products</strong>, supporting post-market surveillance, and ensuring compliance for global markets.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical and biotech companies, delivering <strong>expert-led ICSR processing solutions</strong> backed by certified pharmacovigilance specialists with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, efficient, and traceable ICSR management, driving <strong>regulatory success</strong> and patient safety.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Streamline Your <span class='halfHeading'>ICSR Processing?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert PV Solutions',
+      aria: 'Contact us to discuss your ICSR case processing needs',
+    },
+  },
   gtm: {
     eventCategory: 'Pharmacovigilance Services',
     eventAction: 'ICSR Processing Viewed',
@@ -160,6 +235,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We perform regular reconciliation between source systems (e.g., medical information, clinical, PV database) to ensure no case is missed or duplicated, with full traceability logs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do ICSR Case Processing services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include intake, triage, MedDRA coding, narrative drafting, seriousness assessment, E2B R2/R3 submissions, follow-up, and reconciliation, ensuring PV compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from ICSR Case Processing services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical and biotech companies managing spontaneous or solicited ICSRs for regulatory compliance and signal detection benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH E2B(R2/R3), GVP Module VI, FDA 21 CFR Part 314.80, and EMA Volume 9A, ensuring global pharmacovigilance compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive processed ICSRs, MedDRA-coded events, case narratives, seriousness justifications, follow-up logs, and reconciliation reports.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the ICSR processing services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific drug products, PV workflows, and regulatory requirements, ensuring compliant and efficient processing.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support signal detection?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide accurate MedDRA coding, seriousness assessments, and reconciliation to ensure ICSRs are ready for signal detection and regulatory analysis.',
         },
       },
     ],
