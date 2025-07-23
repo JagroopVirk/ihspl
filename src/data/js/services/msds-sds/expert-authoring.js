@@ -30,6 +30,80 @@ export default {
     alt: 'Expert authoring of toxicological and regulatory documents',
     caption: 'Toxicologist-led documentation & regulatory submissions',
   },
+  pageContent: {
+    hero: {
+      heading: "Expert Authoring for <span class='halfHeading'>Global Compliance</span>",
+      tagline: 'Toxicologist-Led Documentation for Regulatory Success',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Expert Authoring service</strong> delivers meticulously crafted safety data sheets, toxicological reports, and regulatory dossiers by qualified toxicologists. With expert review, sign-off, and alignment with REACH, GHS, and OSHA, we ensure <strong>scientific accuracy and audit-ready compliance</strong> for global submissions.',
+    },
+    overview: {
+      heading: "Mastering Expert <span class='halfHeading'>Documentation</span>",
+      overviewCards: [
+        {
+          heading: 'What is Expert Authoring?',
+          detail:
+            'Our service provides toxicologist-authored safety data sheets (SDS), toxicological reports, and regulatory dossiers, with expert review and sign-off, ensuring compliance with <strong>global regulatory standards</strong> like REACH, GHS, and OSHA.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Expert-authored documentation ensures <strong>scientific accuracy</strong>, regulatory compliance, and audit readiness, facilitating smooth submissions and safe handling for pharmaceutical and chemical products.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>toxicologist-led solutions</strong>, providing precise, compliant, and endorsed documentation to support regulatory approvals and global market entry.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Authoring Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Expert Authoring services are led by qualified toxicologists with <strong>global regulatory expertise</strong>. We craft detailed safety data sheets, toxicological reports, and regulatory dossiers, followed by rigorous peer review and expert sign-off to ensure scientific accuracy.',
+        'Our approach aligns with REACH, GHS, OSHA, and other global standards, delivering <strong>audit-ready documentation</strong> that supports regulatory submissions and ensures compliance across international markets.',
+      ],
+    },
+    deliverables: {
+      heading: "Expert Authoring <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Toxicologist-Authored Safety or Technical Documentation</strong>: Scientifically accurate SDS and reports.',
+        '<strong>Peer-Reviewed and Signed-Off Reports</strong>: Expert-endorsed documentation for credibility.',
+        '<strong>Regulatory-Ready Dossiers (e.g., REACH, GHS)</strong>: Compliant submissions for global markets.',
+        '<strong>Documentation Compliant with Global Guidelines</strong>: Aligned with OSHA, ECHA, and ICH standards.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Expert Authoring services align with stringent global standards, ensuring your documentation is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and submission success.',
+      ],
+      itemList: [
+        '<strong>ICH Q3D</strong>: Guidelines for elemental impurities in drug products.',
+        '<strong>GHS – Globally Harmonized System</strong>: International standard for chemical hazard classification.',
+        '<strong>REACH (ECHA)</strong>: European regulations for chemical safety and registration.',
+        '<strong>CLP Regulation (EC) No 1272/2008</strong>: European standards for classification, labeling, and packaging.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Expert Authoring services are essential for pharmaceutical and chemical manufacturers requiring <strong>compliant regulatory documentation</strong>. Ideal for SDS preparation, toxicological assessments, and dossier submissions, our solutions support product safety and global approvals. Key use cases include authoring SDS for <strong>new APIs</strong>, preparing REACH dossiers, and ensuring compliance for global supply chains.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical and chemical manufacturers, delivering <strong>toxicologist-led authoring solutions</strong> backed by certified experts with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, accurate, and endorsed documentation, driving <strong>regulatory success</strong> and market readiness.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ensure <span class='halfHeading'>Compliant Documentation?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Authoring Solutions',
+      aria: 'Contact us to discuss your regulatory documentation needs',
+    },
+  },
   gtm: {
     eventCategory: 'Expert Authoring',
     eventAction: 'Authoring Completed',
@@ -172,6 +246,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We typically need chemical composition, safety data, existing study reports (if any), and target regulatory region to begin the authoring process.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Expert Authoring services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include toxicologist-authored SDS, toxicological reports, and regulatory dossiers, with peer review, expert sign-off, and compliance with REACH, GHS, and OSHA standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Expert Authoring services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical and chemical manufacturers requiring accurate, compliant documentation for SDS, regulatory dossiers, or global submissions benefit from our tailored authoring solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH Q3D, GHS, REACH (ECHA), and CLP Regulation (EC No 1272/2008), ensuring compliance with global regulatory standards and audit readiness.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive toxicologist-authored documentation, peer-reviewed reports, regulatory-ready dossiers, and documentation compliant with OSHA, ECHA, and ICH guidelines.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the authoring services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific compounds, regulatory requirements, and submission needs, ensuring accurate and compliant documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support audit readiness?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide peer-reviewed, expert-signed documentation with rigorous compliance checks, ensuring your dossiers and SDS are audit-ready for global regulatory submissions.',
         },
       },
     ],

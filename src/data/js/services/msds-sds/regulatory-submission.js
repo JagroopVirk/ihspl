@@ -39,6 +39,83 @@ export default {
     alt: 'Submission portal and regulatory document preparation',
     caption: 'Comprehensive support for global regulatory filings and technical dossier integration.',
   },
+  pageContent: {
+    hero: {
+      heading: "Regulatory Submission Support for <span class='halfHeading'>Global Compliance</span>",
+      tagline: 'Streamline Approvals with Expert Documentation Solutions',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Regulatory Submission service</strong> provides comprehensive support for pharmaceutical manufacturers, ensuring compliance with EU Poison Centers, Indian BIS/CIB&RC, ECHA REACH, and integration with DMF/CTD formats for seamless <strong>global market entry</strong>.',
+    },
+    overview: {
+      heading: "Mastering Regulatory <span class='halfHeading'>Submissions</span>",
+      overviewCards: [
+        {
+          heading: 'What are Regulatory Submission Services?',
+          detail:
+            'Our services deliver compliant documentation for EU Poison Centers (CLP Annex VIII), Indian BIS/CIB&RC, ECHA REACH, and DMF/CTD integration, ensuring <strong>regulatory compliance</strong> for product approvals and market entry.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Accurate regulatory submissions ensure <strong>product safety</strong>, compliance with global standards, and timely market approvals, minimizing risks and enabling access to international markets.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services provides <strong>expert-led submission support</strong>, delivering precise, compliant documentation to streamline approvals and ensure regulatory readiness.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Submission Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Regulatory Submission services are led by certified regulatory experts specializing in <strong>global compliance</strong>. We prepare submissions for EU Poison Centers under CLP Annex VIII, Indian BIS/CIB&RC, and ECHA REACH dossiers using IUCLID, while integrating safety, efficacy, and quality data into DMF/CTD formats.',
+        'Our tailored approach includes thorough gap analysis and pre-submission reviews, delivering <strong>compliant and audit-ready documentation</strong> that supports product approvals and market entry across global regulatory landscapes.',
+      ],
+    },
+    deliverables: {
+      heading: "Regulatory Submission <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>EU CLP Annex VIII Submission for Poison Centers</strong>: Compliant notifications for hazardous substances.',
+        '<strong>Indian BIS or CIB&RC Submission Documentation</strong>: Tailored dossiers for Indian regulatory approvals.',
+        '<strong>REACH IUCLID Dossier Creation and Registration Support</strong>: Comprehensive dossiers for ECHA compliance.',
+        '<strong>DMF/CTD Integration of Safety, Efficacy, and Quality Data</strong>: Structured data for global product approvals.',
+        '<strong>Regulatory Gap Analysis and Pre-Submission Review</strong>: Detailed assessment to ensure submission readiness.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Regulatory Submission services align with stringent global and regional standards, ensuring your documentation is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and submission success.',
+      ],
+      itemList: [
+        '<strong>CLP Regulation (EC) No 1272/2008 – Annex VIII</strong>: European requirements for Poison Center notifications.',
+        '<strong>REACH Regulation (EC) No 1907/2006</strong>: European standards for chemical registration and safety.',
+        '<strong>Indian Bureau of Indian Standards (BIS)</strong>: Indian regulations for product quality and safety.',
+        '<strong>Central Insecticides Board (CIB&RC)</strong>: Indian standards for agrochemical and pharmaceutical approvals.',
+        '<strong>ICH M4 CTD Guidelines</strong>: Global framework for regulatory submission dossiers.',
+        '<strong>US FDA DMF Format</strong>: U.S. standards for Drug Master File submissions.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Regulatory Submission services are essential for pharmaceutical manufacturers and suppliers seeking <strong>global market approvals</strong>. Ideal for EU Poison Center notifications, Indian BIS/CIB&RC filings, REACH registrations, and DMF/CTD submissions, our solutions support product safety and compliance. Key use cases include preparing dossiers for <strong>new APIs</strong>, ensuring compliance for global supply chains, and supporting product registrations across multiple regions.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led regulatory submission solutions</strong> backed by certified regulatory experts with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, accurate, and tailored submission documentation, driving <strong>regulatory success</strong> and market entry.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Streamline Your <span class='halfHeading'>Regulatory Submissions?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Compliance Solutions',
+      aria: 'Contact us to discuss your regulatory submission needs',
+    },
+  },
   gtm: {
     eventCategory: 'Regulatory Submission',
     eventAction: 'Submit Request',
@@ -164,6 +241,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We require substance identifiers (CAS, EC numbers), use pattern, formulation details, available safety data, and any prior regulatory communications or dossiers.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Regulatory Submission services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include EU CLP Annex VIII submissions, Indian BIS/CIB&RC dossiers, REACH IUCLID dossier creation, DMF/CTD data integration, and regulatory gap analysis for global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Regulatory Submission services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers and suppliers seeking approvals for APIs, products, or supply chains in EU, India, or global markets benefit from our tailored submission solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with CLP Annex VIII, REACH (EC No. 1907/2006), BIS, CIB&RC, ICH M4 CTD, and US FDA DMF standards, ensuring compliance with global and regional regulations.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive EU CLP Annex VIII submissions, BIS/CIB&RC dossiers, REACH IUCLID dossiers, DMF/CTD integrated data, and regulatory gap analysis reports.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the submission services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific product, market, and regulatory requirements, ensuring accurate and compliant submission documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support DMF/CTD integration?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We integrate safety, efficacy, and quality data into DMF and CTD formats, ensuring structured and compliant documentation for global product approvals.',
         },
       },
     ],

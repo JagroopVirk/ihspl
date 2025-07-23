@@ -36,6 +36,80 @@ export default {
     alt: 'MSDS review and updating services for regulatory compliance',
     caption: 'Modernize and maintain your safety documentation with Indivirtus',
   },
+  pageContent: {
+    hero: {
+      heading: "MSDS Review & Updating for <span class='halfHeading'>Global Compliance</span>",
+      tagline: 'Keep Your Safety Data Sheets Current and Audit-Ready',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>MSDS Review and Updating service</strong> ensures your Material Safety Data Sheets remain compliant with evolving global standards. We convert legacy MSDS to GHS-compliant SDS, incorporate REACH UFI codes, and maintain version control for <strong>accurate, traceable, and audit-ready documentation</strong> tailored to pharmaceutical and chemical industries.',
+    },
+    overview: {
+      heading: "Mastering MSDS <span class='halfHeading'>Compliance Updates</span>",
+      overviewCards: [
+        {
+          heading: 'What are MSDS Review & Updating Services?',
+          detail:
+            'Our services provide expert review and updates of MSDS, converting outdated formats to GHS-compliant 16-section SDS, integrating REACH UFI codes, and ensuring compliance with OSHA, REACH, and regional standards like IS 17803:2022.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Regular MSDS updates ensure <strong>regulatory compliance</strong>, workplace safety, and audit readiness, adapting to evolving global standards and maintaining accurate hazard communication.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led MSDS solutions</strong>, providing accurate, version-controlled documentation to support regulatory compliance and safe operations.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Review & Updating Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our MSDS Review and Updating services are led by certified regulatory experts specializing in <strong>global chemical safety</strong>. We review and convert legacy MSDS to the latest GHS-compliant 16-section SDS, incorporate REACH UFI codes where applicable, and implement version control systems to track changes.',
+        'Our rigorous approach includes periodic updates to align with evolving OSHA, REACH, and country-specific regulations like IS 17803:2022, ensuring <strong>audit-ready and compliant documentation</strong> for pharmaceutical and chemical industries.',
+      ],
+    },
+    deliverables: {
+      heading: "MSDS Review & Updating <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Updated GHS-Compliant SDS in 16-Section Format</strong>: Modernized documentation meeting global standards.',
+        '<strong>Version-Controlled Documentation</strong>: Traceable records with historical tracking.',
+        '<strong>REACH UFI Inclusion (if applicable)</strong>: Integration of Unique Formula Identifier codes for EU compliance.',
+        '<strong>Audit Trail of Changes and Rationale</strong>: Detailed documentation of updates for regulatory transparency.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our MSDS Review and Updating services align with stringent global and regional standards, ensuring your documentation is <strong>audit-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and safety.',
+      ],
+      itemList: [
+        '<strong>GHS – Globally Harmonized System</strong>: International standard for chemical hazard classification and labeling.',
+        '<strong>REACH – Registration, Evaluation, Authorisation and Restriction of Chemicals (EU)</strong>: European regulations for chemical safety and SDS compliance.',
+        '<strong>OSHA HCS – Hazard Communication Standard (29 CFR 1910.1200)</strong>: U.S. regulations for workplace safety documentation.',
+        '<strong>IS 17803:2022</strong>: Indian guidelines for Safety Data Sheet compliance.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our MSDS Review and Updating services are essential for pharmaceutical and chemical manufacturers ensuring <strong>ongoing regulatory compliance</strong>. Ideal for updating legacy documentation, integrating UFI codes, or aligning with new regulations, our solutions support workplace safety and global market requirements. Key use cases include modernizing SDS for <strong>APIs and drug products</strong>, ensuring compliance for EU/US/India markets, and maintaining audit-ready documentation.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical and chemical manufacturers, delivering <strong>expert-led MSDS review and updating solutions</strong> backed by certified regulatory experts with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, up-to-date, and traceable Safety Data Sheets, driving <strong>regulatory success</strong> and workplace safety.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Update Your <span class='halfHeading'>SDS for Compliance?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Documentation Solutions',
+      aria: 'Contact us to discuss your MSDS review and updating needs',
+    },
+  },
   gtm: {
     eventCategory: 'MSDS Services',
     eventAction: 'MSDS Review & Updating',
@@ -171,6 +245,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Absolutely. Each updated SDS is version-controlled with detailed change history, ensuring full traceability for audits and regulatory reviews.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do MSDS Review and Updating services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include converting legacy MSDS to GHS-compliant 16-section SDS, integrating REACH UFI codes, implementing version control, and ensuring compliance with OSHA, REACH, and IS 17803:2022.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from MSDS Review and Updating services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical and chemical manufacturers needing to modernize legacy MSDS, ensure ongoing compliance, or support global market requirements benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with GHS, REACH, OSHA HCS (29 CFR 1910.1200), and IS 17803:2022, ensuring compliance with global and regional regulatory standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive updated GHS-compliant SDS, version-controlled documentation, REACH UFI inclusion (if applicable), and an audit trail of changes and rationale.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the MSDS updating services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific compounds, regulatory requirements, and market needs, ensuring accurate and compliant SDS updates.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support version control and audit readiness?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We implement version control systems and provide detailed audit trails of changes, ensuring traceability and compliance for regulatory audits.',
         },
       },
     ],

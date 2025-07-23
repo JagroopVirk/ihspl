@@ -38,6 +38,82 @@ export default {
     alt: 'SDS/MSDS preparation document showing GHS-compliant hazard sections',
     caption: 'Professionally prepared SDS/MSDS for pharmaceutical regulatory and safety compliance.',
   },
+  pageContent: {
+    hero: {
+      heading: "SDS/MSDS Preparation for <span class='halfHeading'>Global Compliance</span>",
+      tagline: 'Ensure Safe Handling with Regulatory-Compliant Safety Data Sheets',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>SDS/MSDS Preparation service</strong> delivers comprehensive, globally compliant Safety Data Sheets for pharmaceutical compounds. Tailored to GHS, OSHA, REACH, and regional standards, we ensure <strong>accurate hazard communication</strong> for regulatory submissions and workplace safety.',
+    },
+    overview: {
+      heading: "Mastering Safety Data <span class='halfHeading'>Sheet Compliance</span>",
+      overviewCards: [
+        {
+          heading: 'What is SDS/MSDS Preparation?',
+          detail:
+            'Our service provides GHS-compliant 16-section Safety Data Sheets tailored to a compound’s chemical properties, toxicity, and industrial use, ensuring compliance with OSHA, REACH, WHMIS, and regional regulations for <strong>global safety standards</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Accurate SDS/MSDS ensures <strong>workplace safety</strong>, regulatory compliance, and effective hazard communication, supporting safe handling, transport, and disposal while meeting global submission requirements.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led SDS/MSDS solutions</strong>, providing precise, compliant documentation to support regulatory submissions and safe pharmaceutical operations.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>SDS/MSDS Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our SDS/MSDS Preparation services are led by certified toxicologists and regulatory experts specializing in <strong>global chemical safety</strong>. We develop 16-section Safety Data Sheets in accordance with GHS standards, incorporating region-specific requirements for the US, EU, India, China, and Japan, based on the compound’s toxicity profile and intended use.',
+        'Our rigorous approach ensures <strong>accurate and compliant documentation</strong>, integrating toxicological and ecological data to support regulatory submissions, workplace safety, and hazard communication across global markets.',
+      ],
+    },
+    deliverables: {
+      heading: "SDS/MSDS Preparation <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>GHS-Compliant 16-Section SDS/MSDS</strong>: Comprehensive safety documentation for global use.',
+        '<strong>Region-Specific Compliance Versions</strong>: Tailored SDS for US, EU, India, China, and Japan regulations.',
+        '<strong>Classification of Hazards and Precautionary Statements</strong>: Precise hazard and safety guidance.',
+        '<strong>Toxicological and Ecological Summaries</strong>: Detailed compound safety profiles.',
+        '<strong>Handling, Storage, Transport, and Disposal Guidance</strong>: Practical instructions for safe operations.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our SDS/MSDS Preparation services align with stringent global and regional standards, ensuring your documentation is <strong>regulatory-compliant</strong> and ready for international submissions. By adhering to industry-leading guidelines, we deliver solutions that enhance safety and compliance confidence.',
+      ],
+      itemList: [
+        '<strong>GHS (Globally Harmonized System)</strong>: International standard for chemical hazard classification and labeling.',
+        '<strong>OSHA Hazard Communication Standard (29 CFR 1910.1200)</strong>: U.S. regulations for workplace safety documentation.',
+        '<strong>REACH Regulation (EC) No 1907/2006</strong>: European requirements for chemical safety data.',
+        '<strong>WHMIS 2015 (Canada)</strong>: Canadian standards for workplace hazardous materials information.',
+        '<strong>Japan ISHL, China GB Standards</strong>: Regional regulations for chemical safety and compliance.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our SDS/MSDS Preparation services are essential for pharmaceutical manufacturers requiring <strong>compliant hazard communication</strong> for compounds and APIs. Ideal for regulatory submissions, workplace safety, and global market approvals, our solutions support safe handling and transport. Key use cases include preparing SDS for <strong>new drug products</strong>, ensuring compliance for API manufacturing, and supporting global supply chain safety.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led SDS/MSDS solutions</strong> backed by certified toxicologists and regulatory experts with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, accurate, and tailored Safety Data Sheets, driving <strong>regulatory success</strong> and workplace safety.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ensure <span class='halfHeading'>SDS Compliance?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Documentation Solutions',
+      aria: 'Contact us to discuss your SDS/MSDS preparation needs',
+    },
+  },
   gtm: {
     eventCategory: 'SDS Preparation',
     eventAction: 'Submit Request',
@@ -162,6 +238,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We incorporate GHS, OSHA HazCom 2012, EU REACH & CLP, WHMIS, and local environmental health and safety rules applicable in the target market.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do SDS/MSDS Preparation services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include GHS-compliant 16-section SDS/MSDS, region-specific versions for US, EU, India, China, and Japan, hazard classifications, toxicological summaries, and handling/storage guidance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from SDS/MSDS Preparation services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers preparing regulatory submissions, ensuring workplace safety, or managing global supply chains for compounds and APIs benefit from our tailored SDS solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with GHS, OSHA (29 CFR 1910.1200), REACH (EC No. 1907/2006), WHMIS 2015, Japan ISHL, and China GB Standards, ensuring global and regional compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive GHS-compliant SDS/MSDS, region-specific compliance versions, hazard classifications, toxicological/ecological summaries, and handling/storage guidance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the SDS/MSDS services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your compound’s specific properties, regulatory requirements, and intended use, ensuring accurate and compliant documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support global regulatory submissions?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide region-specific SDS versions and comprehensive hazard data, ensuring compliance with global standards for regulatory submissions and safe handling across markets.',
         },
       },
     ],
