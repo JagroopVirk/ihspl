@@ -32,6 +32,83 @@ export default {
     alt: 'CTD ACTD eCTD Dossier Preparation',
     caption: 'ICH CTD, ASEAN ACTD, eCTD publishing & localization support',
   },
+  pageContent: {
+    hero: {
+      heading: "CTD & ACTD Dossier Preparation for <span class='halfHeading'>Global Submissions</span>",
+      tagline: 'Accurate, Compliant, and Market-Ready Dossiers',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>CTD and ACTD Dossier Preparation services</strong> provide end-to-end support for pharmaceutical companies targeting global markets. We deliver compliant CTD/ACTD dossiers (Modules 1–5), eCTD/NeeS publishing, and localization, ensuring <strong>regulatory readiness</strong> for ICH, ASEAN, GCC, and ROW submissions.',
+    },
+    overview: {
+      heading: "Mastering Dossier <span class='halfHeading'>Preparation Excellence</span>",
+      overviewCards: [
+        {
+          heading: 'What are CTD & ACTD Dossier Preparation Services?',
+          detail:
+            'Our services include preparation of CTD/ACTD dossiers (Modules 1–5), eCTD/NeeS publishing, gap analysis, and localization for health authorities, ensuring <strong>global regulatory compliance</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Compliant dossiers ensure <strong>regulatory approval</strong>, minimize submission delays, and facilitate market entry across ICH, ASEAN, GCC, and ROW markets.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led dossier solutions</strong>, providing accurate, regulator-ready submissions to support global market authorization.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Dossier Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our CTD and ACTD Dossier Preparation services are led by certified regulatory experts with <strong>global submission expertise</strong>. We prepare comprehensive CTD/ACTD dossiers, publish in eCTD/NeeS formats, conduct gap analyses, and localize Module 1 for specific health authority requirements.',
+        'Our structured approach ensures <strong>submission-ready dossiers</strong>, aligning with ICH M4, ASEAN ACTD, US FDA, EMA, CDSCO, TGA, and other global standards for efficient regulatory approvals.',
+      ],
+    },
+    deliverables: {
+      heading: "Dossier Preparation <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Complete CTD or ACTD Dossier (Modules 1–5)</strong>: Comprehensive, compliant documentation.',
+        '<strong>Formatted eCTD/NeeS Output</strong>: Submission-ready electronic formats.',
+        '<strong>Gap Analysis Report</strong>: Detailed assessment to address compliance gaps.',
+        '<strong>Localized Module 1 per Authority</strong>: Region-specific administrative documentation.',
+        '<strong>Submission-Ready Archive Package</strong>: Organized files for regulatory submission.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our CTD and ACTD Dossier Preparation services align with stringent global standards, ensuring your submissions are <strong>regulator-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance approval success.',
+      ],
+      itemList: [
+        '<strong>ICH M4</strong>: Global standards for Common Technical Document structure.',
+        '<strong>ASEAN ACTD Guidelines</strong>: Standards for Southeast Asian market submissions.',
+        '<strong>US FDA eCTD</strong>: U.S. regulations for electronic submission formats.',
+        '<strong>EMA eCTD</strong>: European standards for electronic dossier submissions.',
+        '<strong>CDSCO CTD</strong>: Indian regulations for dossier preparation.',
+        '<strong>TGA CTD/NeeS</strong>: Australian standards for dossier submission formats.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our CTD and ACTD Dossier Preparation services are essential for pharmaceutical companies targeting <strong>global market authorization</strong>. Ideal for new drugs, biologics, and generics, our solutions support regulatory submissions across ICH, ASEAN, GCC, and ROW markets. Key use cases include preparing dossiers for <strong>FDA/EMA approvals</strong>, localizing submissions for CDSCO, and ensuring compliance for TGA filings.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led dossier preparation solutions</strong> backed by certified regulatory professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, efficient dossier submissions, driving <strong>regulatory success</strong> and market access.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Streamline Your <span class='halfHeading'>Global Submissions?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Dossier Solutions',
+      aria: 'Contact us to discuss your CTD/ACTD dossier preparation needs',
+    },
+  },
   gtm: {
     eventCategory: 'CTD ACTD Dossier Preparation',
     eventAction: 'Request Dossier Support',
@@ -171,6 +248,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Timelines range from 2 to 6 months depending on data availability, complexity, and market. Expedited timelines are possible for streamlined products.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do CTD & ACTD Dossier Preparation services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include preparation of CTD/ACTD dossiers (Modules 1–5), eCTD/NeeS publishing, gap analysis, localized Module 1, and submission-ready archives.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from CTD & ACTD Dossier Preparation services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies targeting global market authorization for new drugs, biologics, or generics benefit from our tailored dossier solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH M4, ASEAN ACTD, US FDA eCTD, EMA eCTD, CDSCO CTD, and TGA CTD/NeeS standards, ensuring global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive complete CTD/ACTD dossiers, eCTD/NeeS outputs, gap analysis reports, localized Module 1, and submission-ready archives.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the dossier preparation services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific product, market, and regulatory requirements, ensuring compliant and effective submissions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support global market entry?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We prepare region-specific dossiers, publish in compliant formats, and localize documentation to ensure seamless approvals across global markets.',
         },
       },
     ],

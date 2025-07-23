@@ -31,6 +31,80 @@ export default {
     alt: 'Lifecycle Management Service',
     caption: 'Variation Filing, Labeling, and License Renewals for Pharma',
   },
+  pageContent: {
+    hero: {
+      heading: "Pharmaceutical Lifecycle Management for <span class='halfHeading'>Global Compliance</span>",
+      tagline: 'Sustain Market Readiness with Expert Support',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Pharmaceutical Lifecycle Management services</strong> provide end-to-end support for post-approval variations, labeling updates, change control, and license renewals. We ensure <strong>continuous compliance</strong> with EMA, FDA, CDSCO, and other global regulatory bodies, keeping your product market-ready.',
+    },
+    overview: {
+      heading: "Mastering Pharmaceutical <span class='halfHeading'>Lifecycle Management</span>",
+      overviewCards: [
+        {
+          heading: 'What are Lifecycle Management Services?',
+          detail:
+            'Our services include managing post-approval variations, labeling updates, change control, and license renewals, ensuring <strong>global regulatory compliance</strong> and market maintenance for pharmaceutical products.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Effective lifecycle management ensures <strong>continuous compliance</strong>, minimizes regulatory risks, and maintains market authorization, supporting product longevity and patient safety.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led lifecycle solutions</strong>, providing tailored support to navigate global regulatory requirements and sustain market presence.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Lifecycle Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Pharmaceutical Lifecycle Management services are led by certified regulatory experts with <strong>global compliance expertise</strong>. We handle post-approval variations, labeling updates, change control assessments, and license renewals, tailored to meet region-specific requirements.',
+        'Our structured approach ensures <strong>seamless regulatory compliance</strong>, aligning with ICH Q12, EU Regulation (EC) No 1234/2008, US FDA Post-Approval Changes, and CDSCO guidelines to support market maintenance and product lifecycle.',
+      ],
+    },
+    deliverables: {
+      heading: "Lifecycle Management <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Variation Application Dossier</strong>: Comprehensive documentation for post-approval changes.',
+        '<strong>Updated Product Labels and SmPC</strong>: Region-specific, compliant labeling updates.',
+        '<strong>Change Control Impact Assessment</strong>: Detailed evaluations for regulatory alignment.',
+        '<strong>License Renewal Filing Documents</strong>: Submission-ready documents for market authorization.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Pharmaceutical Lifecycle Management services align with stringent global standards, ensuring your products are <strong>market-ready</strong> and compliant with international regulatory expectations. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and product longevity.',
+      ],
+      itemList: [
+        '<strong>ICH Q12</strong>: Guidelines for pharmaceutical lifecycle management.',
+        '<strong>EU Regulation (EC) No 1234/2008</strong>: European standards for post-approval variations.',
+        '<strong>US FDA Post-Approval Changes</strong>: U.S. regulations for post-market modifications.',
+        '<strong>CDSCO Guidelines</strong>: Indian standards for pharmaceutical regulatory compliance.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Pharmaceutical Lifecycle Management services are essential for pharmaceutical companies maintaining <strong>global market authorization</strong>. Ideal for post-approval variations, labeling updates, and license renewals, our solutions support compliance and market presence. Key use cases include managing <strong>post-market changes</strong>, updating SmPCs for EMA compliance, and renewing licenses with CDSCO.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led lifecycle management solutions</strong> backed by certified regulatory professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, efficient lifecycle management, driving <strong>regulatory success</strong> and sustained market presence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Sustain Your <span class='halfHeading'>Product Lifecycle?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Regulatory Solutions',
+      aria: 'Contact us to discuss your lifecycle management needs',
+    },
+  },
   gtm: {
     eventCategory: 'Lifecycle Management',
     eventAction: 'Variation Filing Request',
@@ -170,6 +244,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, we provide full lifecycle management support across global regulatory jurisdictions including EMA, FDA, CDSCO, MHRA, and more.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Pharmaceutical Lifecycle Management services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include post-approval variations, labeling updates, change control assessments, and license renewals, tailored for global regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Pharmaceutical Lifecycle Management services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies maintaining market authorization or managing post-approval changes benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH Q12, EU Regulation (EC) No 1234/2008, US FDA Post-Approval Changes, and CDSCO guidelines, ensuring global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive variation application dossiers, updated labels/SmPCs, change control assessments, and license renewal documents.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the lifecycle management services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific product, market, and regulatory requirements, ensuring compliant and effective solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support market maintenance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We manage variations, labeling updates, and renewals to ensure continuous compliance and sustained market authorization across global regions.',
         },
       },
     ],

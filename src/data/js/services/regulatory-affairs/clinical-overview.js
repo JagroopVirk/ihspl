@@ -37,6 +37,81 @@ export default {
     alt: 'Clinical and Non-Clinical Overviews',
     caption: 'Module 2.4 & 2.5 summaries, bioequivalence justification & BCS biowaiver support',
   },
+  pageContent: {
+    hero: {
+      heading: "Clinical & Nonclinical Overviews for <span class='halfHeading'>Regulatory Success</span>",
+      tagline: 'High-Quality Scientific Narratives for Global Submissions',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Clinical and Nonclinical Overview services</strong> deliver expertly crafted Module 2.4 (Nonclinical Overview) and Module 2.5 (Clinical Overview) documents, along with bioequivalence justifications and BCS biowaiver support. We ensure <strong>ICH-compliant, submission-ready narratives</strong> for global regulatory approvals.',
+    },
+    overview: {
+      heading: "Mastering Clinical & Nonclinical <span class='halfHeading'>Narratives</span>",
+      overviewCards: [
+        {
+          heading: 'What are Clinical & Nonclinical Overview Services?',
+          detail:
+            'Our services include preparation of ICH-compliant Module 2.4 and 2.5 documents, bioequivalence justifications, BCS biowaiver support, and bridging study reports, ensuring <strong>robust scientific narratives</strong> for global submissions.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'High-quality overviews provide the scientific foundation for Modules 3–5, ensuring <strong>regulatory acceptance</strong>, compliance, and streamlined approval processes for pharmaceuticals.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led overview solutions</strong>, providing scientifically sound and compliant narratives to support successful dossier submissions.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Overview Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Clinical and Nonclinical Overview services are led by certified regulatory and scientific experts with <strong>global submission expertise</strong>. We compile Module 2.4 (Nonclinical Overview) and Module 2.5 (Clinical Overview), develop bioequivalence justifications, and provide BCS biowaiver support for Class I/III drugs.',
+        'Our structured approach ensures <strong>submission-ready documents</strong>, aligning with ICH M4S, US FDA, EMA, ASEAN, and CDSCO guidelines, delivering robust narratives and bridging study reports for global regulatory approvals.',
+      ],
+    },
+    deliverables: {
+      heading: "Clinical & Nonclinical Overview <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Module 2.4 (Nonclinical Overview)</strong>: Comprehensive nonclinical summary for regulatory dossiers.',
+        '<strong>Module 2.5 (Clinical Overview)</strong>: Detailed clinical summary supporting safety and efficacy.',
+        '<strong>Bioequivalence Justification Document</strong>: Scientific rationale for bioequivalence claims.',
+        '<strong>BCS-Based Biowaiver Support</strong>: Documentation for Class I/III biowaiver applications.',
+        '<strong>Bridging Study Summary Report</strong>: Reports to support global submission requirements.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Clinical and Nonclinical Overview services align with stringent global standards, ensuring your documents are <strong>submission-ready</strong> and compliant with international regulatory expectations. By adhering to industry-leading guidelines, we deliver solutions that enhance approval success.',
+      ],
+      itemList: [
+        '<strong>ICH M4S</strong>: Guidelines for nonclinical and clinical overviews in CTD dossiers.',
+        '<strong>US FDA Guidance on Clinical/Non-Clinical Summaries</strong>: U.S. standards for summary documents.',
+        '<strong>EMA and ASEAN Guidelines on Biowaivers</strong>: Standards for bioequivalence and biowaiver applications.',
+        '<strong>CDSCO Bioavailability/Bioequivalence Norms</strong>: Indian regulations for BA/BE studies.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Clinical and Nonclinical Overview services are essential for pharmaceutical companies preparing <strong>global regulatory submissions</strong>. Ideal for new drugs, generics, and biosimilars, our solutions support dossier acceptance and approval. Key use cases include compiling overviews for <strong>FDA/EMA submissions</strong>, justifying bioequivalence for generics, and securing BCS biowaivers for Class I/III drugs.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led overview solutions</strong> backed by certified regulatory and scientific professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, high-quality narratives, driving <strong>regulatory success</strong> and market authorization.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Enhance Your <span class='halfHeading'>Regulatory Dossiers?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Overview Solutions',
+      aria: 'Contact us to discuss your clinical and nonclinical overview needs',
+    },
+  },
   gtm: {
     eventCategory: 'Clinical Overview Services',
     eventAction: 'Submit Request',
@@ -185,6 +260,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, all overviews include updated literature references, citations from global guidance documents, and rationale to support conclusions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Clinical & Nonclinical Overview services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include preparation of Module 2.4 and 2.5 documents, bioequivalence justifications, BCS biowaiver support, and bridging study reports for global submissions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Clinical & Nonclinical Overview services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies preparing regulatory dossiers for new drugs, generics, or biosimilars benefit from our tailored overview solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH M4S, US FDA, EMA, ASEAN biowaiver guidelines, and CDSCO BA/BE norms, ensuring global regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive Module 2.4 and 2.5 documents, bioequivalence justifications, BCS biowaiver support, and bridging study reports.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the overview services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific product, regulatory requirements, and submission goals, ensuring compliant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support bioequivalence and biowaiver applications?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide scientific justifications for bioequivalence and BCS-based biowaiver support for Class I/III drugs, ensuring robust regulatory submissions.',
         },
       },
     ],

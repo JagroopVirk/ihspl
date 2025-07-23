@@ -32,6 +32,83 @@ export default {
     alt: 'Global Product Registration Services',
     caption: 'Dossier Compilation, Regulatory Submissions, Local Agent Support',
   },
+  pageContent: {
+    hero: {
+      heading: "Dossier Compilation & Submission for <span class='halfHeading'>Global Markets</span>",
+      tagline: 'Streamlined Regulatory Pathways to Authorization',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Dossier Compilation and Submission services</strong> support pharmaceutical and biotech companies in achieving global product registration. We prepare and submit compliant dossiers in CTD/eCTD formats for CDSCO, FDA, EMA, and ROW markets, ensuring <strong>seamless market authorization</strong> with expert coordination and tracking.',
+    },
+    overview: {
+      heading: "Mastering Global <span class='halfHeading'>Regulatory Submissions</span>",
+      overviewCards: [
+        {
+          heading: 'What are Dossier Compilation & Submission Services?',
+          detail:
+            'Our services include preparation and submission of regulatory dossiers in CTD/eCTD formats, local agent coordination, and license tracking for CDSCO, FDA, EMA, and ROW markets, ensuring <strong>global compliance</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Compliant dossier preparation and submission ensure <strong>regulatory approval</strong>, minimize delays, and facilitate market entry for new drugs, biologics, and generics across global markets.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led submission solutions</strong>, providing tailored dossiers and coordination to achieve successful market authorizations.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Submission Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Dossier Compilation and Submission services are led by certified regulatory experts with <strong>global compliance expertise</strong>. We prepare region-specific CTD/eCTD dossiers, manage communications with local agents, and track licenses through every milestone.',
+        'Our structured approach ensures <strong>compliant and timely submissions</strong>, aligning with CDSCO, FDA, EMA, ICH M4, ASEAN CTD, and GCC guidelines to support market entry for new drugs, biologics, and generics.',
+      ],
+    },
+    deliverables: {
+      heading: "Dossier Compilation & Submission <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Dossier in CTD or eCTD Format</strong>: Region-specific, submission-ready dossiers.',
+        '<strong>Regulatory Submission Forms</strong>: Completed forms for agency requirements.',
+        '<strong>Authorization Letters and Power of Attorney</strong>: Documentation for local representation.',
+        '<strong>Local Agent Coordination</strong>: Managed communications for seamless submissions.',
+        '<strong>License Tracking Reports</strong>: Milestone updates for regulatory approvals.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Dossier Compilation and Submission services align with stringent global standards, ensuring your dossiers are <strong>submission-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and approval success.',
+      ],
+      itemList: [
+        '<strong>CDSCO</strong>: Indian regulations for drug registration and approval.',
+        '<strong>US FDA 21 CFR</strong>: U.S. regulations for drug and biologic submissions.',
+        '<strong>EMA Guidelines</strong>: European standards for medicinal product authorization.',
+        '<strong>ICH M4</strong>: Global standards for Common Technical Document (CTD) structure.',
+        '<strong>ASEAN CTD</strong>: Guidelines for Southeast Asian market submissions.',
+        '<strong>GCC Guidelines</strong>: Standards for Gulf Cooperation Council market approvals.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Dossier Compilation and Submission services are essential for pharmaceutical and biotech companies seeking <strong>global market authorization</strong>. Ideal for new drugs, biologics, and generics, our solutions support regulatory submissions and approvals. Key use cases include preparing dossiers for <strong>CDSCO approvals</strong>, managing FDA/EMA submissions, and coordinating ROW market registrations.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical and biotech companies, delivering <strong>expert-led dossier and submission solutions</strong> backed by certified regulatory professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, efficient submission processes, driving <strong>regulatory success</strong> and market access.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Achieve <span class='halfHeading'>Global Market Authorization?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Submission Solutions',
+      aria: 'Contact us to discuss your dossier compilation and submission needs',
+    },
+  },
   gtm: {
     eventCategory: 'Product Registration',
     eventAction: 'Dossier Submission Request',
@@ -171,6 +248,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'We offer proactive license tracking with regular updates on status, authority queries, and deadlines to ensure nothing is missed during the review process.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Dossier Compilation & Submission services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include CTD/eCTD dossier preparation, submission forms, local agent coordination, authorization letters, and license tracking for CDSCO, FDA, EMA, and ROW markets.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Dossier Compilation & Submission services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical and biotech companies seeking global market authorization for new drugs, biologics, or generics benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with CDSCO, US FDA 21 CFR, EMA Guidelines, ICH M4, ASEAN CTD, and GCC standards, ensuring global regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive CTD/eCTD dossiers, submission forms, authorization letters, local agent coordination, and license tracking reports.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the submission services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific product, market, and regulatory requirements, ensuring compliant and efficient submissions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support global market entry?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We prepare region-specific dossiers, manage local agent communications, and track licenses to ensure seamless approvals across global markets.',
         },
       },
     ],

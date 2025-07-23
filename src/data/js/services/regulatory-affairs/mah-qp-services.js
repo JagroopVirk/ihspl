@@ -31,6 +31,80 @@ export default {
     alt: 'MAH & QP Services in EU/UK',
     caption: 'MAH Representation, QP Batch Release, and Local EU Compliance',
   },
+  pageContent: {
+    hero: {
+      heading: "MAH & QP Support for <span class='halfHeading'>EU/UK Compliance</span>",
+      tagline: 'Seamless Pharmacovigilance and Batch Release Solutions',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>MAH and QP Support services</strong> provide comprehensive solutions for pharmaceutical manufacturers in the EU and UK. We offer MAH representation, QP batch certification, pharmacovigilance oversight, and regulatory alignment, ensuring <strong>GMP compliance and market readiness</strong>.',
+    },
+    overview: {
+      heading: "Mastering MAH & <span class='halfHeading'>QP Excellence</span>",
+      overviewCards: [
+        {
+          heading: 'What are MAH & QP Support Services?',
+          detail:
+            'Our services include Marketing Authorization Holder (MAH) representation, Qualified Person (QP) batch certification, pharmacovigilance oversight, and local regulatory compliance for EU/UK markets, ensuring <strong>GMP and PV compliance</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'MAH and QP services ensure <strong>regulatory compliance</strong>, seamless product release, and robust pharmacovigilance, supporting market access and patient safety in regulated markets.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led MAH and QP solutions</strong>, providing compliant, efficient support for EU/UK market authorization and product release.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>MAH & QP Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our MAH and QP Support services are led by certified regulatory and pharmacovigilance experts with <strong>EU/UK compliance expertise</strong>. We provide MAH representation, QP batch certification, pharmacovigilance system management, and local regulatory alignment.',
+        'Our tailored approach ensures <strong>seamless compliance</strong> with EU GMP Annex 16, EU/UK MAH Guidelines, and EMA QP requirements, supporting both formal MAH setups and ad-hoc QP engagements for product release.',
+      ],
+    },
+    deliverables: {
+      heading: "MAH & QP Support <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>MAH Contract & Regulatory Interface Documentation</strong>: Formal agreements and regulatory support documents.',
+        '<strong>QP Declaration & Batch Release Reports</strong>: Certified documentation for product release.',
+        '<strong>Pharmacovigilance (PV) System Management Plan</strong>: Comprehensive PV oversight strategy.',
+        '<strong>Local Representative Letters & Compliance Proof</strong>: Documentation for EU/UK regulatory alignment.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our MAH and QP Support services align with stringent EU and UK standards, ensuring your operations are <strong>audit-ready</strong> and compliant with regulated markets. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and market access.',
+      ],
+      itemList: [
+        '<strong>EU GMP Annex 16</strong>: Standards for Qualified Person responsibilities and batch release.',
+        '<strong>EU/UK MAH Guidelines</strong>: Regulations for Marketing Authorization Holder responsibilities.',
+        '<strong>EMA QP Requirements</strong>: European standards for QP certification and compliance.',
+        '<strong>WHO GMP Guidelines</strong>: Global standards for good manufacturing practices.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our MAH and QP Support services are essential for pharmaceutical manufacturers requiring <strong>EU/UK market compliance</strong>. Ideal for MAH representation, batch release, and pharmacovigilance oversight, our solutions support regulatory compliance. Key use cases include establishing <strong>MAH setups for new products</strong>, facilitating QP batch certifications, and ensuring PV compliance in the EU/UK.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led MAH and QP solutions</strong> backed by certified regulatory and pharmacovigilance professionals with EU/UK experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, efficient solutions, driving <strong>regulatory success</strong> and market readiness.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ensure <span class='halfHeading'>EU/UK PV Compliance?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert MAH & QP Solutions',
+      aria: 'Contact us to discuss your MAH and QP support needs',
+    },
+  },
   gtm: {
     eventCategory: 'MAH & QP Services',
     eventAction: 'MAH/QP Service Inquiry',
@@ -170,6 +244,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Pricing depends on engagement type—per batch, annual MAH retainer, or full-service PV and compliance support. Contact us for tailored quotes.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do MAH & QP Support services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include MAH representation, QP batch certification, pharmacovigilance system management, and local regulatory alignment for EU/UK compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from MAH & QP Support services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers requiring EU/UK MAH representation, QP batch release, or PV oversight benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with EU GMP Annex 16, EU/UK MAH Guidelines, EMA QP Requirements, and WHO GMP standards, ensuring compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive MAH contracts, QP declarations, PV system plans, and local representative compliance documents.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the MAH and QP services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific product, regulatory, and PV requirements, ensuring compliant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support batch release and PV oversight?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide QP certifications for batch release and comprehensive PV system management to ensure compliance and market readiness.',
         },
       },
     ],

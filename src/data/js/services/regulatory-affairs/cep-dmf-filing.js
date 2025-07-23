@@ -35,6 +35,80 @@ export default {
     alt: 'CEP/DMF Filing Services - Indivirtus Healthcare',
     caption: 'Global regulatory documentation and CEP/DMF submissions',
   },
+  pageContent: {
+    hero: {
+      heading: "CEP, DMF & ASMF Filings for <span class='halfHeading'>Global Compliance</span>",
+      tagline: 'Streamlined Regulatory Support for Market Access',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>CEP, DMF, and ASMF Filing services</strong> provide end-to-end support for pharmaceutical manufacturers. We manage Type I-V DMF dossiers, CEP submissions to EDQM, and ASMF filings for EU markets, ensuring <strong>regulatory compliance</strong> and seamless market authorization across global territories.',
+    },
+    overview: {
+      heading: "Mastering CEP, DMF & <span class='halfHeading'>ASMF Excellence</span>",
+      overviewCards: [
+        {
+          heading: 'What are CEP, DMF & ASMF Filing Services?',
+          detail:
+            'Our services include preparation of Type I-V DMF dossiers, CEP applications, ASMF filings, and lifecycle management, ensuring <strong>global regulatory compliance</strong> for pharmaceutical submissions.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Compliant CEP, DMF, and ASMF filings ensure <strong>regulatory approval</strong>, data integrity, and market access, minimizing delays in global pharmaceutical submissions.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led filing solutions</strong>, providing accurate, regulator-ready submissions to support seamless market entry.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Filing Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our CEP, DMF, and ASMF Filing services are led by certified regulatory experts with <strong>global compliance expertise</strong>. We prepare comprehensive Type I-V DMF dossiers, CEP applications for EDQM, and ASMF filings for EU markets, managing updates, gap closures, and post-approval variations.',
+        'Our structured approach ensures <strong>submission-ready documentation</strong>, aligning with ICH M4, EU EMA ASMF guidance, EDQM certification procedures, and US FDA DMF requirements for efficient regulatory approvals.',
+      ],
+    },
+    deliverables: {
+      heading: "CEP, DMF & ASMF <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>DMF (Type I-V) Dossier</strong>: Comprehensive documentation for API and product submissions.',
+        '<strong>CEP Application with Supporting Modules</strong>: Submission-ready documents for EDQM certification.',
+        '<strong>ASMF for EU Compliance</strong>: Active Substance Master File for European market authorization.',
+        '<strong>Lifecycle Management Documentation</strong>: Updates and variations for ongoing compliance.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our CEP, DMF, and ASMF Filing services align with stringent global standards, ensuring your submissions are <strong>regulator-ready</strong> and compliant with international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance approval success.',
+      ],
+      itemList: [
+        '<strong>ICH M4 Guidelines</strong>: Global standards for Common Technical Document structure.',
+        '<strong>EU EMA ASMF Guidance</strong>: European standards for Active Substance Master File submissions.',
+        '<strong>EDQM Certification Procedures</strong>: Standards for Certificate of Suitability (CEP) filings.',
+        '<strong>US FDA DMF Filing Requirements</strong>: U.S. regulations for Drug Master File submissions.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our CEP, DMF, and ASMF Filing services are essential for pharmaceutical manufacturers seeking <strong>global market authorization</strong>. Ideal for API and finished product submissions, our solutions support regulatory compliance across US, EU, and other markets. Key use cases include preparing <strong>DMFs for generics</strong>, CEPs for APIs, and ASMFs for EU submissions.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical manufacturers, delivering <strong>expert-led filing solutions</strong> backed by certified regulatory professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, efficient filing processes, driving <strong>regulatory success</strong> and market access.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Streamline Your <span class='halfHeading'>Global Filings?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert CEP, DMF, and ASMF Solutions',
+      aria: 'Contact us to discuss your filing needs',
+    },
+  },
   gtm: {
     eventCategory: 'Regulatory Services',
     eventAction: 'CEP/DMF Filing Accessed',
@@ -162,6 +236,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, our team provides post-submission lifecycle support such as variation filing, renewal management, and addressing queries raised by regulatory agencies for CEP/DMF/ASMF documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do CEP, DMF, and ASMF Filing services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include preparation of Type I-V DMF dossiers, CEP applications, ASMF filings, and lifecycle management for global regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from CEP, DMF, and ASMF Filing services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical manufacturers seeking market authorization for APIs or finished products in US, EU, and other markets benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH M4, EU EMA ASMF guidance, EDQM certification procedures, and US FDA DMF requirements, ensuring global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive DMF dossiers, CEP applications, ASMF filings, and lifecycle management documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the filing services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific product, market, and regulatory requirements, ensuring compliant and effective filings.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support global market entry?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We prepare compliant DMF, CEP, and ASMF submissions, manage updates, and address gaps to ensure seamless approvals across global markets.',
         },
       },
     ],

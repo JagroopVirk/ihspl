@@ -221,8 +221,9 @@ export default {
         'Our CRO provides expert regulatory compliance and medical device registration services, ensuring seamless approvals across global markets. With comprehensive dossier preparation, strategic consulting, and post-approval support, we help you navigate complex regulations from FDA, EMA, CDSCO, and beyond. Choose us to accelerate your market entry and maintain compliance with confidence.',
     },
     cta: {
-      heading: 'Ready to Achieve Global Regulatory Compliance?',
+      heading: 'Ready to Achieve Global <span class="halfHeading">Regulatory Compliance</span>?',
       tagline: 'Let us streamline your drug and device approvals with precision.',
+      aria: 'Contact us for your Regulatory Compliance needs.',
     },
   },
   gtm: {

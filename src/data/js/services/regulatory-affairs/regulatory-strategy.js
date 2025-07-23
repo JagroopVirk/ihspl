@@ -12,7 +12,7 @@ export default {
     'End-to-end regulatory strategy planning including global pathway analysis, agency consultations, and expedited approval programs.',
   full_description:
     'Our Regulatory Strategy services help pharmaceutical and biotech companies navigate complex global regulatory landscapes. We provide tailored guidance from early-stage planning through post-marketing, ensuring your product meets all compliance requirements while accelerating market entry. Services include regulatory gap assessments, strategic support for expedited programs, global submission planning, and consultation management with key regulatory bodies like the US FDA, EMA, and other international agencies.',
-  estimated_duration: '2–6 weeks depending on scope',
+  estimated_duration: '2-6 weeks depending on scope',
   deliverables: [
     'Global regulatory pathway roadmap',
     'Agency meeting briefing documents',
@@ -30,6 +30,80 @@ export default {
     path: serviceImage,
     alt: 'Regulatory Strategy Service',
     caption: 'Pharmaceutical Regulatory Strategy Consultation',
+  },
+  pageContent: {
+    hero: {
+      heading: "Global Regulatory Strategy for <span class='halfHeading'>Market Success</span>",
+      tagline: 'Navigate Compliance and Accelerate Approvals',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Regulatory Strategy services</strong> guide pharmaceutical and biotech companies through complex global regulatory landscapes. From early-stage planning to post-marketing, we deliver <strong>tailored strategies</strong> to ensure compliance and accelerate market entry with agencies like FDA, EMA, and beyond.',
+    },
+    overview: {
+      heading: "Mastering Global <span class='halfHeading'>Regulatory Planning</span>",
+      overviewCards: [
+        {
+          heading: 'What are Regulatory Strategy Services?',
+          detail:
+            'Our services provide end-to-end regulatory planning, including gap assessments, global pathway analysis, agency consultations, and expedited approval strategies, ensuring <strong>compliance and market readiness</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'A robust regulatory strategy ensures <strong>compliance with global standards</strong>, minimizes approval delays, and optimizes pathways for expedited programs, accelerating market access.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led regulatory solutions</strong>, providing strategic guidance to navigate complex requirements and achieve successful submissions.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Regulatory Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Regulatory Strategy services are led by certified regulatory experts with <strong>global compliance expertise</strong>. We conduct gap assessments, develop global pathway roadmaps, manage agency consultations, and strategize for expedited approval programs.',
+        'Our tailored approach ensures <strong>seamless regulatory navigation</strong>, aligning with ICH, FDA, EMA, and other international guidelines to support efficient submissions and market entry.',
+      ],
+    },
+    deliverables: {
+      heading: "Regulatory Strategy <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Global Regulatory Pathway Roadmap</strong>: Comprehensive plan for global submissions.',
+        '<strong>Agency Meeting Briefing Documents</strong>: Prepared materials for FDA, EMA, and other consultations.',
+        '<strong>Gap Analysis Report with Recommendations</strong>: Detailed assessment to address compliance gaps.',
+        '<strong>Expedited Program Eligibility Strategy</strong>: Tailored plans for fast-track approvals.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Regulatory Strategy services align with stringent global standards, ensuring your submissions are <strong>compliant and optimized</strong> for international markets. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and approval success.',
+      ],
+      itemList: [
+        '<strong>ICH Guidelines</strong>: Global standards for drug development and registration.',
+        '<strong>FDA Guidelines</strong>: U.S. regulations for drug approval and post-marketing compliance.',
+        '<strong>EMA Scientific Advice Procedures</strong>: European standards for regulatory consultations.',
+        '<strong>WHO Regulatory Guidelines</strong>: Global standards for medicinal product registration.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Regulatory Strategy services are essential for pharmaceutical and biotech companies navigating <strong>global regulatory landscapes</strong>. Ideal for early-stage planning, expedited approvals, and global submissions, our solutions support market entry. Key use cases include developing strategies for <strong>new drug applications</strong>, managing agency consultations, and optimizing expedited program eligibility.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical and biotech companies, delivering <strong>expert-led regulatory strategy solutions</strong> backed by certified professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, strategic regulatory plans, driving <strong>approval success</strong> and market readiness.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Navigate Your <span class='halfHeading'>Regulatory Pathway?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Strategy Solutions',
+      aria: 'Contact us to discuss your regulatory strategy needs',
+    },
   },
   gtm: {
     eventCategory: 'Regulatory Strategy',
@@ -170,6 +244,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, our regulatory strategy services are customized for all stages, including startups needing foundational guidance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Regulatory Strategy services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include global pathway analysis, agency consultation management, gap assessments, and expedited approval strategies, ensuring regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Regulatory Strategy services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical and biotech companies planning global submissions, seeking expedited approvals, or navigating regulatory landscapes benefit from our solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH, FDA, EMA Scientific Advice, and WHO guidelines, ensuring compliance with global regulatory standards.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive global regulatory pathway roadmaps, agency meeting briefing documents, gap analysis reports, and expedited program strategies.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the regulatory strategy services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific drug products, regulatory goals, and market entry plans, ensuring compliant and effective strategies.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support expedited approval programs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We assess eligibility and develop tailored strategies for fast-track, breakthrough, or orphan drug programs, optimizing approval timelines.',
         },
       },
     ],
