@@ -12,6 +12,8 @@
     "@astrojs/mdx": "^4.3.1",
     "@astrojs/react": "^4.3.0",
     "@astrojs/sitemap": "^3.4.1",
+    "@babel/parser": "^7.28.0",
+    "@babel/traverse": "^7.28.0",
     "@tailwindcss/vite": "^4.0.12",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",

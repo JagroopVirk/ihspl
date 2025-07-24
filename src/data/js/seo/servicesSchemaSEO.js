@@ -1,18 +1,3 @@
-export const pdeReports = {
-  service_id: 'svc-pde-001',
-  report_type: 'PDE',
-  name: 'PDE Report',
-  description: 'Assessment of Permitted Daily Exposure based on NOAEL/LOAEL, uncertainty factors, and EMA guidelines.',
-  price_model: 'Fixed',
-  estimated_duration: '3 business days',
-  deliverables: ['PDE Report (PDF)', 'Toxicological Summary', 'Calculation Sheet'],
-  regulatory_basis: ['ICH Q3D', 'EMA'],
-  requires_data_from_client: true,
-  target_industry: ['Pharma', 'API', 'CMO'],
-  expertise_area: ['Toxicology', 'Regulatory Compliance'],
-  is_active: true,
-};
-
 export const allServicesSchema = {
   '@context': 'https://schema.org',
   '@type': 'ItemList',
