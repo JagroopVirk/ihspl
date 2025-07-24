@@ -35,6 +35,80 @@ export default {
     alt: 'Toxicological Risk Assessment Services',
     caption: 'Toxicological evaluations for pharmaceutical safety and compliance.',
   },
+  pageContent: {
+    hero: {
+      heading: "Toxicological Risk Assessments for <span class='halfHeading'>Pharmaceutical Safety</span>",
+      tagline: 'Robust Evaluations for Regulatory Compliance',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Toxicological Risk Assessment (TRA) services</strong> deliver scientifically robust evaluations, including PDE calculations, Cramer classification, and route-specific safety profiling. We ensure <strong>regulatory compliance</strong> and patient safety to support pharmaceutical development and impurity management.',
+    },
+    overview: {
+      heading: "Mastering Toxicological <span class='halfHeading'>Risk Evaluations</span>",
+      overviewCards: [
+        {
+          heading: 'What are Toxicological Risk Assessment Services?',
+          detail:
+            'Our services provide comprehensive TRA reports, PDE/TI calculations, route-specific risk summaries, and Cramer Class determinations, ensuring <strong>safety and compliance</strong> for pharmaceutical products.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'TRA ensures <strong>patient safety</strong>, supports regulatory compliance, and informs decisions in formulation, manufacturing, and impurity management, minimizing risks in drug development.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led TRA solutions</strong>, providing scientifically sound assessments to support regulatory submissions and product safety.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>TRA Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Toxicological Risk Assessment services are led by certified toxicology experts with <strong>global regulatory expertise</strong>. We perform PDE/TI calculations, route-specific safety profiling, and Cramer Class determinations using a scientifically robust methodology.',
+        'Our approach ensures <strong>regulator-ready assessments</strong>, aligning with ICH Q3C/Q3D, EMA Guidelines on Health-Based Exposure Limits, and FDA Guidance on Genotoxic Impurities to support formulation and manufacturing decisions.',
+      ],
+    },
+    deliverables: {
+      heading: "Toxicological Risk Assessment <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Comprehensive TRA Report</strong>: Detailed toxicological evaluation for regulatory submissions.',
+        '<strong>PDE/TI Calculation Summary</strong>: Permissible Daily Exposure and Tolerable Intake calculations.',
+        '<strong>Route-Specific Risk Summary</strong>: Safety profiles for various administration routes.',
+        '<strong>Cramer Class Determination Rationale</strong>: Justification for substance classification.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Toxicological Risk Assessment services align with stringent global standards, ensuring your assessments are <strong>regulator-ready</strong> and compliant with international expectations. By adhering to industry-leading guidelines, we deliver solutions that enhance safety and regulatory confidence.',
+      ],
+      itemList: [
+        '<strong>ICH Q3C/Q3D</strong>: Guidelines for residual solvents and elemental impurities.',
+        '<strong>EMA Guidelines on Setting Health-Based Exposure Limits</strong>: Standards for exposure limit calculations.',
+        '<strong>FDA Guidance on Genotoxic Impurities</strong>: U.S. regulations for impurity safety assessments.',
+        '<strong>WHO Guidelines on Impurity Management</strong>: Global standards for pharmaceutical safety.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Toxicological Risk Assessment services are essential for pharmaceutical companies ensuring <strong>product safety</strong> and regulatory compliance. Ideal for formulation development, impurity management, and regulatory submissions, our solutions support global markets. Key use cases include PDE calculations for <strong>impurity control</strong>, Cramer classification for excipients, and safety profiling for new drugs.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led TRA solutions</strong> backed by certified toxicology professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, robust assessments, driving <strong>regulatory success</strong> and patient safety.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ensure <span class='halfHeading'>Product Safety?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert TRA Solutions',
+      aria: 'Contact us to discuss your toxicological risk assessment needs',
+    },
+  },
   gtm: {
     eventCategory: 'Toxicological Risk Assessment',
     eventAction: 'TRA Page View',
@@ -165,6 +239,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Pharmaceutical companies, CDMOs, and API manufacturers involved in formulation development, cleaning validation, or impurity profiling should consider TRA for regulatory and safety purposes.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Toxicological Risk Assessment services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include comprehensive TRA reports, PDE/TI calculations, route-specific risk summaries, and Cramer Class determinations for pharmaceutical safety.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Toxicological Risk Assessment services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies developing formulations, managing impurities, or preparing regulatory submissions benefit from our tailored TRA solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH Q3C/Q3D, EMA Health-Based Exposure Limits, FDA Genotoxic Impurities guidance, and WHO standards, ensuring global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive comprehensive TRA reports, PDE/TI summaries, route-specific risk summaries, and Cramer Class determination rationales.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the TRA services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific product, impurities, and regulatory requirements, ensuring compliant and effective assessments.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support impurity management?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide PDE calculations and Cramer classifications to assess impurity safety, supporting formulation and manufacturing decisions.',
         },
       },
     ],

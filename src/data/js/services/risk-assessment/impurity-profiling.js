@@ -36,6 +36,80 @@ export default {
     alt: 'Impurity Profiling and Qualification Lab Analysis',
     caption: 'Advanced identification and toxicological evaluation of pharmaceutical impurities.',
   },
+  pageContent: {
+    hero: {
+      heading: "Impurity Profiling for <span class='halfHeading'>Regulatory Compliance</span>",
+      tagline: 'Precise Identification and Qualification for Pharmaceutical Safety',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Impurity Profiling services</strong> deliver precise identification, characterization, and toxicological qualification of impurities using advanced analytical techniques like LC-MS/MS, GC-MS, NMR, and HRMS. We ensure <strong>regulatory compliance</strong> with ICH Q3A/B and M7 guidelines, supporting global submissions.',
+    },
+    overview: {
+      heading: "Mastering Impurity <span class='halfHeading'>Profiling Excellence</span>",
+      overviewCards: [
+        {
+          heading: 'What are Impurity Profiling Services?',
+          detail:
+            'Our services include identification, characterization, and toxicological qualification of impurities using advanced analytical tools and TTC evaluations, ensuring <strong>compliance with global standards</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Impurity profiling ensures <strong>product safety</strong>, supports regulatory submissions, and mitigates risks by identifying and qualifying trace-level impurities in pharmaceuticals.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led impurity profiling solutions</strong>, providing accurate, regulator-ready data to support global market authorization.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Profiling Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Impurity Profiling services are led by certified analytical and toxicology experts with <strong>global regulatory expertise</strong>. We utilize advanced instruments like LC-MS/MS, GC-MS, NMR, and HRMS for precise impurity identification and structure elucidation.',
+        'Our approach includes toxicological qualification and TTC evaluations, ensuring <strong>regulator-ready reports</strong> aligned with ICH Q3A/B, ICH M7, EMA, and FDA guidelines to support pharmaceutical safety and submissions.',
+      ],
+    },
+    deliverables: {
+      heading: "Impurity Profiling <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Analytical Characterization Report</strong>: Detailed impurity identification and analysis.',
+        '<strong>Structure Elucidation (MS/NMR Data)</strong>: Comprehensive structural data for impurities.',
+        '<strong>TTC Evaluation Report (if needed)</strong>: Threshold of Toxicological Concern assessment.',
+        '<strong>Impurity Qualification Summary</strong>: Regulatory-compliant qualification documentation.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Impurity Profiling services align with stringent global standards, ensuring your submissions are <strong>regulator-ready</strong> and compliant with international expectations. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and product safety.',
+      ],
+      itemList: [
+        '<strong>ICH Q3A/B</strong>: Guidelines for impurities in drug substances and products.',
+        '<strong>ICH M7</strong>: Standards for assessment and control of mutagenic impurities.',
+        '<strong>EMA Impurity Guidelines</strong>: European standards for impurity evaluation.',
+        '<strong>FDA Guidance for Industry – Impurities in Drug Substances</strong>: U.S. regulations for impurity management.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Impurity Profiling services are essential for pharmaceutical companies ensuring <strong>product safety</strong> and regulatory compliance. Ideal for drug substance and product development, our solutions support global submissions. Key use cases include identifying impurities in <strong>new drug formulations</strong>, qualifying impurities for NDA submissions, and conducting TTC evaluations for regulatory filings.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led impurity profiling solutions</strong> backed by certified analytical and toxicology professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, robust impurity data, driving <strong>regulatory success</strong> and patient safety.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ensure <span class='halfHeading'>Impurity Compliance?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Profiling Solutions',
+      aria: 'Contact us to discuss your impurity profiling needs',
+    },
+  },
   gtm: {
     eventCategory: 'Impurity Profiling',
     eventAction: 'Impurity Profiling Page View',
@@ -166,6 +240,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes. Our impurity profiling services are conducted in full alignment with ICH Q3A/B and M7 guidelines, using validated methods and regulatory-grade documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Impurity Profiling services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include impurity identification, characterization, structure elucidation, TTC evaluations, and qualification summaries using advanced analytical techniques.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Impurity Profiling services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies developing drug substances or products and preparing regulatory submissions benefit from our tailored profiling solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ICH Q3A/B, ICH M7, EMA, and FDA impurity guidelines, ensuring global regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive analytical characterization reports, structure elucidation data, TTC evaluation reports, and impurity qualification summaries.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the impurity profiling services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific drug substances, products, and regulatory requirements, ensuring compliant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support regulatory submissions?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide regulator-ready reports and qualification summaries to support impurity data for NDA, ANDA, and other global submissions.',
         },
       },
     ],

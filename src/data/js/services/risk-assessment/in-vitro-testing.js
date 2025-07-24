@@ -31,6 +31,80 @@ export default {
     alt: 'In Vitro Genotoxicity Testing Lab',
     caption: 'OECD-aligned in vitro assays for regulatory mutagenicity evaluations.',
   },
+  pageContent: {
+    hero: {
+      heading: "In Vitro Genotoxicity Testing for <span class='halfHeading'>Regulatory Safety</span>",
+      tagline: 'High-Throughput, GLP-Compliant Safety Assessments',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>In Vitro Genotoxicity Testing services</strong> provide OECD-compliant Ames Test (OECD 471) and Mouse Lymphoma Assay (OECD 490) under GLP conditions. These assays deliver <strong>reliable mutagenicity and clastogenicity data</strong> for regulatory filings and impurity profiling, minimizing ethical concerns.',
+    },
+    overview: {
+      heading: "Mastering In Vitro <span class='halfHeading'>Genotoxicity Testing</span>",
+      overviewCards: [
+        {
+          heading: 'What are In Vitro Genotoxicity Testing Services?',
+          detail:
+            'Our services include GLP-compliant Ames Test and Mouse Lymphoma Assay, aligned with OECD 471 and 490, to assess mutagenic and clastogenic risks for <strong>regulatory compliance</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'In vitro genotoxicity testing identifies <strong>safety risks early</strong>, supports regulatory filings, and reduces reliance on animal testing, ensuring compliance and efficient development.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led genotoxicity solutions</strong>, providing reliable, regulator-ready data to support global submissions and safety profiling.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>In Vitro Testing Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our In Vitro Genotoxicity Testing services are led by certified toxicology experts with <strong>global regulatory expertise</strong>. We conduct the Ames Test (OECD 471) and Mouse Lymphoma Assay (OECD 490) under GLP conditions to evaluate mutagenic and clastogenic risks.',
+        'Our high-throughput approach ensures <strong>regulator-ready reports</strong>, aligning with OECD 471, OECD 490, ICH S2(R1), and FDA Guidance on Genotoxic Impurities to support pharmaceutical safety assessments.',
+      ],
+    },
+    deliverables: {
+      heading: "In Vitro Genotoxicity <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>OECD-Compliant Study Protocol</strong>: Detailed plan for genotoxicity testing.',
+        '<strong>GLP Study Report with Statistical Evaluation</strong>: Comprehensive report with robust analysis.',
+        '<strong>Raw Data and Interpretation</strong>: Complete data sets with scientific insights.',
+        '<strong>Mutagenicity/Clastogenicity Classification</strong>: Clear hazard classification for submissions.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our In Vitro Genotoxicity Testing services align with stringent global standards, ensuring your data is <strong>regulator-ready</strong> and compliant with international expectations. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and submission success.',
+      ],
+      itemList: [
+        '<strong>OECD 471</strong>: Guideline for Bacterial Reverse Mutation Test (Ames Test).',
+        '<strong>OECD 490</strong>: Guideline for In Vitro Mammalian Cell Gene Mutation Tests (Mouse Lymphoma Assay).',
+        '<strong>ICH S2(R1)</strong>: Standards for genotoxicity testing in pharmaceuticals.',
+        '<strong>FDA Guidance on Genotoxic Impurities</strong>: U.S. regulations for impurity safety assessments.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our In Vitro Genotoxicity Testing services are essential for pharmaceutical companies ensuring <strong>compound safety</strong> and regulatory compliance. Ideal for impurity profiling, early-stage safety evaluations, and regulatory filings, our solutions support global markets. Key use cases include assessing <strong>mutagenicity of impurities</strong>, supporting IND submissions, and classifying hazards for new drug candidates.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led genotoxicity testing solutions</strong> backed by certified toxicology professionals with global experience. Our services ensure <strong>scientifically defensible outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, high-throughput genotoxicity data, driving <strong>regulatory success</strong> and patient safety.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ensure <span class='halfHeading'>Compound Safety?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert In Vitro Testing Solutions',
+      aria: 'Contact us to discuss your in vitro genotoxicity testing needs',
+    },
+  },
   gtm: {
     eventCategory: 'In Vitro Genotoxicity Testing',
     eventAction: 'In Vitro Genotoxicity Page View',
@@ -161,6 +235,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes. In vitro assays like the Ames Test and MLA are standard requirements under ICH S2(R1) and are accepted by regulatory agencies worldwide including FDA, EMA, and PMDA.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do In Vitro Genotoxicity Testing services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include OECD-compliant Ames Test and Mouse Lymphoma Assay under GLP conditions, delivering protocols, reports, and hazard classifications.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from In Vitro Genotoxicity Testing services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies conducting early-stage safety evaluations, impurity profiling, or regulatory filings benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with OECD 471, OECD 490, ICH S2(R1), and FDA Genotoxicity Guidance, ensuring global regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive OECD-compliant protocols, GLP study reports with statistical evaluation, raw data, and mutagenicity/clastogenicity classifications.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the in vitro testing services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific compounds, impurities, and regulatory requirements, ensuring compliant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support regulatory submissions?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide GLP-compliant reports and classifications to support genotoxicity data for IND, impurity profiling, and other regulatory submissions.',
         },
       },
     ],
