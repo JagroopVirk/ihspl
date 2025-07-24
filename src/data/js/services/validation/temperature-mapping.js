@@ -39,6 +39,83 @@ export default {
     alt: 'Temperature Mapping for Pharma Warehouses and Equipment',
     caption: 'Sensor-based mapping and validation of thermal performance for regulatory compliance',
   },
+  pageContent: {
+    hero: {
+      heading: "Temperature Mapping & Validation for <span class='halfHeading'>Thermal Compliance</span>",
+      tagline: 'Ensuring Consistent Performance in Controlled Environments',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Temperature Mapping and Validation services</strong> ensure the thermal performance of autoclaves, depyrogenation tunnels, cold rooms, and warehouses. Using calibrated data loggers and high-resolution systems, we deliver <strong>regulatory-compliant validation</strong> for WHO, EU GMP, and FDA standards.',
+    },
+    overview: {
+      heading: "Mastering Temperature <span class='halfHeading'>Mapping Excellence</span>",
+      overviewCards: [
+        {
+          heading: 'What are Temperature Mapping & Validation Services?',
+          detail:
+            'Our services include temperature mapping protocols, sensor placement, data logger deployment, deviation analysis, and comprehensive validation reports, ensuring <strong>thermal compliance</strong> for critical equipment and environments.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Accurate temperature mapping ensures <strong>product integrity</strong>, regulatory compliance, and patient safety by identifying hot/cold zones and validating controlled environments.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led validation solutions</strong>, providing regulator-ready documentation to support compliance and audit-readiness.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Mapping Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Temperature Mapping and Validation services are led by certified validation experts with <strong>global regulatory expertise</strong>. We design customized protocols, deploy calibrated data loggers, and analyze data to map thermal performance across autoclaves, tunnels, cold storage, and warehouses.',
+        'Our approach ensures <strong>regulator-ready validation</strong>, aligning with WHO TRS 961 Annex 9, EU GMP Chapter 3 & 5, US FDA cGMP 21 CFR Part 211, and ISPE Good Practice Guide for Controlled Temperature Chambers.',
+      ],
+    },
+    deliverables: {
+      heading: "Temperature Mapping <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Temperature Mapping Protocol</strong>: Customized plan for thermal validation.',
+        '<strong>Sensor Placement Plan</strong>: Strategic mapping for accurate data collection.',
+        '<strong>Calibrated Data Logger Deployment</strong>: High-resolution data acquisition.',
+        '<strong>Graphical and Tabular Data Reports</strong>: Clear insights into hot and cold zones.',
+        '<strong>Deviation and Excursion Analysis</strong>: Detailed evaluation of temperature variations.',
+        '<strong>Comprehensive Validation Report</strong>: Regulator-ready documentation.',
+        '<strong>Calibration Certificates</strong>: Verification of data logger accuracy.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Temperature Mapping and Validation services align with stringent global standards, ensuring your environments are <strong>audit-ready</strong> and compliant with international expectations. By adhering to industry-leading guidelines, we deliver solutions that enhance regulatory confidence and product safety.',
+      ],
+      itemList: [
+        '<strong>WHO Technical Report Series No. 961, Annex 9</strong>: Guidelines for storage and distribution.',
+        '<strong>EU GMP Chapter 3 & 5</strong>: European standards for premises and production.',
+        '<strong>US FDA cGMP 21 CFR Part 211</strong>: U.S. regulations for manufacturing practices.',
+        '<strong>ISPE Good Practice Guide: Controlled Temperature Chambers</strong>: Framework for thermal validation.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Temperature Mapping and Validation services are essential for pharmaceutical and biotech companies ensuring <strong>thermal compliance</strong>. Ideal for autoclaves, depyrogenation tunnels, cold rooms, and warehouses, our solutions support global markets. Key use cases include validating <strong>new storage facilities</strong>, ensuring compliance for FDA/EMA audits, and maintaining product integrity in cold chain logistics.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical and biotech companies, delivering <strong>expert-led validation solutions</strong> backed by certified professionals with global experience. Our services ensure <strong>regulator-ready outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, robust thermal validation, driving <strong>regulatory success</strong> and product integrity.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Validate Your <span class='halfHeading'>Thermal Environments?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Mapping Solutions',
+      aria: 'Contact us to discuss your temperature mapping and validation needs',
+    },
+  },
   gtm: {
     eventCategory: 'Temperature Mapping',
     eventAction: 'view_service',
@@ -164,6 +241,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Our reports comply with WHO Annex 9, EU GMP, US FDA, and ISPE guidance for good storage and distribution practices.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Temperature Mapping and Validation services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include customized protocols, sensor placement, data logger deployment, graphical reports, deviation analysis, validation reports, and calibration certificates.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Temperature Mapping and Validation services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical and biotech companies validating autoclaves, tunnels, cold storage, or warehouses benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with WHO TRS 961 Annex 9, EU GMP Chapter 3 & 5, US FDA cGMP 21 CFR Part 211, and ISPE guidelines, ensuring global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive protocols, sensor plans, data reports, deviation analyses, validation reports, and calibration certificates.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the mapping services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific equipment, storage systems, and regulatory requirements, ensuring compliant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support audit-readiness?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide comprehensive, regulator-compliant reports and documentation to ensure seamless audits and compliance with global standards.',
         },
       },
     ],

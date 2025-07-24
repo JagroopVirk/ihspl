@@ -31,6 +31,80 @@ export default {
     alt: 'Cleanroom HVAC Validation',
     caption: 'HEPA filter testing, particle count & airflow validation services',
   },
+  pageContent: {
+    hero: {
+      heading: "HVAC Validation for <span class='halfHeading'>Cleanroom Compliance</span>",
+      tagline: 'Ensuring Sterility and Environmental Control',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>HVAC Validation services</strong> ensure cleanroom compliance through comprehensive testing, including DOP/PAO filter integrity, airflow analysis, and ISO 14644-compliant particle testing. We deliver <strong>regulatory-compliant solutions</strong> to maintain sterility and environmental control in pharmaceutical facilities.',
+    },
+    overview: {
+      heading: "Mastering HVAC <span class='halfHeading'>Validation Excellence</span>",
+      overviewCards: [
+        {
+          heading: 'What are HVAC Validation Services?',
+          detail:
+            'Our services include DOP/PAO filter testing, airflow velocity and differential pressure analysis, non-viable particulate testing, and cleanroom classification per ISO 14644, ensuring <strong>sterility and compliance</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'HVAC validation ensures <strong>environmental control</strong>, sterility, and regulatory compliance in cleanrooms, minimizing contamination risks for sterile and non-sterile products.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led validation solutions</strong>, providing regulator-ready documentation to support compliance and audit-readiness.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>HVAC Validation Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our HVAC Validation services are led by certified validation experts with <strong>global regulatory expertise</strong>. We perform comprehensive testing, including HEPA filter integrity (DOP/PAO), airflow pattern visualization, differential pressure analysis, and non-viable particulate testing to ensure cleanroom performance.',
+        'Our approach ensures <strong>regulator-ready validation</strong>, aligning with ISO 14644-1:2015, EU GMP Annex 1, US FDA cGMP, and ISPE Guidelines for reliable and compliant HVAC systems.',
+      ],
+    },
+    deliverables: {
+      heading: "HVAC Validation <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>HEPA Filter Integrity Test Reports (DOP/PAO)</strong>: Verification of filter performance.',
+        '<strong>Airflow Pattern Visualization Reports</strong>: Detailed analysis of airflow dynamics.',
+        '<strong>ISO 14644 Cleanroom Classification Certificates</strong>: Certification of cleanroom compliance.',
+        '<strong>Temperature, Humidity, and Particle Count Logs</strong>: Comprehensive environmental data.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our HVAC Validation services align with stringent global standards, ensuring your cleanrooms are <strong>audit-ready</strong> and compliant with international regulatory expectations. By adhering to industry-leading guidelines, we deliver solutions that enhance sterility and regulatory confidence.',
+      ],
+      itemList: [
+        '<strong>ISO 14644-1:2015</strong>: Standards for cleanroom classification and testing.',
+        '<strong>EU GMP Annex 1</strong>: European guidelines for sterile manufacturing.',
+        '<strong>US FDA cGMP</strong>: U.S. regulations for current good manufacturing practices.',
+        '<strong>ISPE Guidelines</strong>: Industry best practices for cleanroom and HVAC validation.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our HVAC Validation services are essential for pharmaceutical companies ensuring <strong>cleanroom compliance</strong> and sterility. Ideal for production and packaging zones, our solutions support global markets. Key use cases include validating <strong>new cleanroom installations</strong>, ensuring compliance for sterile product manufacturing, and preparing for FDA/EMA audits.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led HVAC validation solutions</strong> backed by certified professionals with global experience. Our services ensure <strong>regulator-ready outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your facility with compliant, robust HVAC systems, driving <strong>regulatory success</strong> and product safety.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Ensure <span class='halfHeading'>Cleanroom Compliance?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert HVAC Validation Solutions',
+      aria: 'Contact us to discuss your HVAC validation needs',
+    },
+  },
   gtm: {
     eventCategory: 'Validation Services',
     eventAction: 'HVAC Validation',
@@ -166,6 +240,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, Indivirtus provides end-to-end HVAC qualification support during facility commissioning, including testing, documentation, and regulatory alignment.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do HVAC Validation services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include DOP/PAO filter testing, airflow pattern visualization, non-viable particulate testing, and ISO 14644 cleanroom classification.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from HVAC Validation services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies operating cleanrooms for sterile or non-sterile production benefit from our tailored validation solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with ISO 14644-1:2015, EU GMP Annex 1, US FDA cGMP, and ISPE Guidelines, ensuring global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive HEPA filter test reports, airflow visualization reports, ISO 14644 certificates, and environmental data logs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the HVAC validation services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific cleanroom systems and regulatory requirements, ensuring compliant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support audit-readiness?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide comprehensive, regulator-compliant reports and certifications to ensure seamless audits and cleanroom compliance.',
         },
       },
     ],

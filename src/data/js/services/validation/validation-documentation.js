@@ -39,6 +39,83 @@ export default {
     alt: 'Validation Documentation Services for Pharma',
     caption: 'Protocol and documentation development to meet global regulatory expectations',
   },
+  pageContent: {
+    hero: {
+      heading: "Validation Documentation for <span class='halfHeading'>Audit Readiness</span>",
+      tagline: 'Comprehensive Support for Regulatory Compliance',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Validation Documentation services</strong> provide end-to-end support for pharmaceutical and biotech companies, delivering inspection-ready Validation Master Plans (VMP), protocols, risk assessments, and traceability matrices. We ensure <strong>regulatory compliance</strong> with global standards for seamless audits.',
+    },
+    overview: {
+      heading: "Mastering Validation <span class='halfHeading'>Documentation Excellence</span>",
+      overviewCards: [
+        {
+          heading: 'What are Validation Documentation Services?',
+          detail:
+            'Our services include customized Validation Master Plans, IQ/OQ/PQ protocols, GAMP 5-compliant risk assessments, traceability matrices, and audit-ready documentation, ensuring <strong>global compliance</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Comprehensive documentation ensures <strong>audit-readiness</strong>, supports regulatory compliance, and streamlines validation processes, reducing risks during inspections.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led documentation solutions</strong>, providing accurate, regulator-ready records to support global compliance and validation.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Documentation Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Validation Documentation services are led by certified validation experts with <strong>global regulatory expertise</strong>. We develop tailored Validation Master Plans, IQ/OQ/PQ protocols, risk assessments, and traceability matrices aligned with GAMP 5 principles.',
+        'Our approach ensures <strong>inspection-ready documentation</strong>, aligning with EU GMP Annex 15, US FDA 21 CFR Part 11, WHO Technical Report Series 1019, ISPE GAMP 5®, and ICH Q8–Q10 guidelines for seamless audits.',
+      ],
+    },
+    deliverables: {
+      heading: "Validation Documentation <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Validation Master Plan (VMP)</strong>: Comprehensive roadmap for validation activities.',
+        '<strong>IQ/OQ/PQ Protocols and Templates</strong>: Installation, Operational, and Performance Qualification documents.',
+        '<strong>GAMP 5-Compliant Risk Assessments</strong>: Risk-based evaluations for validation processes.',
+        '<strong>Traceability Matrices</strong>: Clear mapping of requirements to validation activities.',
+        '<strong>Summary and Deviation Reports</strong>: Detailed summaries addressing validation outcomes.',
+        '<strong>Audit-Ready Documentation Sets</strong>: Complete, regulator-compliant records.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Validation Documentation services align with stringent global standards, ensuring your records are <strong>audit-ready</strong> and compliant with international regulatory expectations. By adhering to industry-leading guidelines, we deliver solutions that enhance compliance and inspection success.',
+      ],
+      itemList: [
+        '<strong>EU GMP Annex 15</strong>: European standards for qualification and validation.',
+        '<strong>US FDA 21 CFR Part 11</strong>: U.S. regulations for electronic records and signatures.',
+        '<strong>WHO Technical Report Series 1019</strong>: Global standards for validation and qualification.',
+        '<strong>ISPE GAMP 5®</strong>: Framework for good automated manufacturing practices.',
+        '<strong>ICH Q8–Q10</strong>: Guidelines for pharmaceutical development and quality systems.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Validation Documentation services are essential for pharmaceutical and biotech companies ensuring <strong>GxP compliance</strong> and audit-readiness. Ideal for equipment, process, and computer system validation, our solutions support global markets. Key use cases include developing VMPs for <strong>new manufacturing facilities</strong>, preparing IQ/OQ/PQ protocols for equipment, and ensuring audit-ready records for FDA/EMA inspections.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical and biotech companies, delivering <strong>expert-led documentation solutions</strong> backed by certified validation professionals with global experience. Our services ensure <strong>regulator-ready outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, robust documentation, driving <strong>regulatory success</strong> and operational excellence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Achieve <span class='halfHeading'>Audit-Ready Validation?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Documentation Solutions',
+      aria: 'Contact us to discuss your validation documentation needs',
+    },
+  },
   gtm: {
     eventCategory: 'Validation Documentation',
     eventAction: 'view_service',
@@ -163,6 +240,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, all documentation is prepared to meet FDA, EU GMP, and WHO standards, ensuring global compliance for our pharmaceutical clients.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Validation Documentation services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include Validation Master Plans, IQ/OQ/PQ protocols, GAMP 5-compliant risk assessments, traceability matrices, and audit-ready documentation sets.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Validation Documentation services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical and biotech companies conducting equipment, process, or system validation benefit from our tailored documentation solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with EU GMP Annex 15, US FDA 21 CFR Part 11, WHO TRS 1019, ISPE GAMP 5®, and ICH Q8–Q10, ensuring global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive VMPs, IQ/OQ/PQ protocols, risk assessments, traceability matrices, deviation reports, and audit-ready documentation.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the documentation services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific validation processes, systems, and regulatory requirements, ensuring compliant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support audit-readiness?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide comprehensive, regulator-compliant documentation to ensure seamless audits and compliance with global regulatory expectations.',
         },
       },
     ],

@@ -37,6 +37,156 @@ export default {
     alt: 'Validation Training for Pharmaceutical Systems',
     caption: 'Empowering pharma teams through regulatory training programs',
   },
+  pageContent: {
+    hero: {
+      heading: "Validation Training for <span class='halfHeading'>Pharmaceutical Compliance</span>",
+      tagline: 'Empowering Teams with CSV, GAMP 5, and GxP Expertise',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Validation Training services</strong> provide comprehensive, industry-standard programs on Computer System Validation (CSV), GAMP 5, ALCOA+ data integrity, and GxP compliance. Tailored for pharmaceutical professionals, our training ensures <strong>audit-readiness and regulatory compliance</strong> across global markets.',
+    },
+    overview: {
+      heading: "Mastering Validation & <span class='halfHeading'>Compliance Training</span>",
+      overviewCards: [
+        {
+          heading: 'What are Validation Training Services?',
+          detail:
+            'Our services include interactive workshops on CSV, GAMP 5, ALCOA+ data integrity, and GxP compliance, designed to equip QA/QC, IT, and regulatory teams with <strong>practical compliance skills</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Training ensures teams are <strong>audit-ready</strong>, understand regulatory expectations, and can implement compliant CSV and GxP systems, reducing risks and ensuring data integrity.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led training solutions</strong>, bridging regulatory requirements with practical implementation for global compliance.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Training Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Validation Training services are led by certified regulatory and validation experts with <strong>global compliance expertise</strong>. We offer interactive workshops, real-case exercises, and tailored content covering CSV, GAMP 5, ALCOA+, and GxP systems.',
+        'Our approach ensures <strong>practical, audit-ready knowledge</strong>, aligning with ICH Q9, EU GMP Annex 11, US FDA 21 CFR Part 11, MHRA GxP Data Integrity Guidance, and ISPE GAMP 5® standards.',
+      ],
+    },
+    deliverables: {
+      heading: "Validation Training <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Interactive Training Sessions (Online/On-Site)</strong>: Engaging workshops tailored to your team.',
+        '<strong>Certification of Completion</strong>: Official recognition of training completion.',
+        '<strong>Customized Handouts and Workshop Material</strong>: Practical resources for ongoing reference.',
+        '<strong>Knowledge Assessments and Feedback Reports</strong>: Evaluations to ensure learning outcomes.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Validation Training services align with stringent global standards, ensuring your team is <strong>audit-ready</strong> and compliant with international regulatory expectations. By adhering to industry-leading guidelines, we deliver training that enhances compliance and operational excellence.',
+      ],
+      itemList: [
+        '<strong>ICH Q9 – Quality Risk Management</strong>: Guidelines for risk-based approaches in pharmaceuticals.',
+        '<strong>EU GMP Annex 11</strong>: European standards for computerized systems.',
+        '<strong>US FDA 21 CFR Part 11</strong>: U.S. regulations for electronic records and signatures.',
+        '<strong>MHRA GxP Data Integrity Guidance</strong>: UK standards for data integrity in GxP environments.',
+        '<strong>ISPE GAMP 5®</strong>: Global framework for good automated manufacturing practices.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Validation Training services are essential for pharmaceutical companies ensuring <strong>GxP compliance</strong> and audit-readiness. Ideal for QA/QC professionals, IT validation engineers, and regulatory affairs teams, our programs support global markets. Key use cases include training for <strong>CSV implementation</strong>, ensuring ALCOA+ data integrity, and preparing teams for GAMP 5 audits.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led training solutions</strong> backed by certified validation professionals with global experience. Our programs ensure <strong>practical, compliant outcomes</strong>, rapid knowledge transfer, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your team with the skills to achieve <strong>regulatory success</strong> and operational excellence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Empower Your <span class='halfHeading'>Compliance Team?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Training Solutions',
+      aria: 'Contact us to discuss your validation training needs',
+    },
+  },
+  pageContent: {
+    hero: {
+      heading: "Validation Training for <span class='halfHeading'>Pharmaceutical Compliance</span>",
+      tagline: 'Empowering Teams with CSV, GAMP 5, and GxP Expertise',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Validation Training services</strong> provide comprehensive, industry-standard programs on Computer System Validation (CSV), GAMP 5, ALCOA+ data integrity, and GxP compliance. Tailored for pharmaceutical professionals, our training ensures <strong>audit-readiness and regulatory compliance</strong> across global markets.',
+    },
+    overview: {
+      heading: "Mastering Validation & <span class='halfHeading'>Compliance Training</span>",
+      overviewCards: [
+        {
+          heading: 'What are Validation Training Services?',
+          detail:
+            'Our services include interactive workshops on CSV, GAMP 5, ALCOA+ data integrity, and GxP compliance, designed to equip QA/QC, IT, and regulatory teams with <strong>practical compliance skills</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'Training ensures teams are <strong>audit-ready</strong>, understand regulatory expectations, and can implement compliant CSV and GxP systems, reducing risks and ensuring data integrity.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led training solutions</strong>, bridging regulatory requirements with practical implementation for global compliance.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>Training Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our Validation Training services are led by certified regulatory and validation experts with <strong>global compliance expertise</strong>. We offer interactive workshops, real-case exercises, and tailored content covering CSV, GAMP 5, ALCOA+, and GxP systems.',
+        'Our approach ensures <strong>practical, audit-ready knowledge</strong>, aligning with ICH Q9, EU GMP Annex 11, US FDA 21 CFR Part 11, MHRA GxP Data Integrity Guidance, and ISPE GAMP 5® standards.',
+      ],
+    },
+    deliverables: {
+      heading: "Validation Training <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>Interactive Training Sessions (Online/On-Site)</strong>: Engaging workshops tailored to your team.',
+        '<strong>Certification of Completion</strong>: Official recognition of training completion.',
+        '<strong>Customized Handouts and Workshop Material</strong>: Practical resources for ongoing reference.',
+        '<strong>Knowledge Assessments and Feedback Reports</strong>: Evaluations to ensure learning outcomes.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our Validation Training services align with stringent global standards, ensuring your team is <strong>audit-ready</strong> and compliant with international regulatory expectations. By adhering to industry-leading guidelines, we deliver training that enhances compliance and operational excellence.',
+      ],
+      itemList: [
+        '<strong>ICH Q9 – Quality Risk Management</strong>: Guidelines for risk-based approaches in pharmaceuticals.',
+        '<strong>EU GMP Annex 11</strong>: European standards for computerized systems.',
+        '<strong>US FDA 21 CFR Part 11</strong>: U.S. regulations for electronic records and signatures.',
+        '<strong>MHRA GxP Data Integrity Guidance</strong>: UK standards for data integrity in GxP environments.',
+        '<strong>ISPE GAMP 5®</strong>: Global framework for good automated manufacturing practices.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our Validation Training services are essential for pharmaceutical companies ensuring <strong>GxP compliance</strong> and audit-readiness. Ideal for QA/QC professionals, IT validation engineers, and regulatory affairs teams, our programs support global markets. Key use cases include training for <strong>CSV implementation</strong>, ensuring ALCOA+ data integrity, and preparing teams for GAMP 5 audits.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led training solutions</strong> backed by certified validation professionals with global experience. Our programs ensure <strong>practical, compliant outcomes</strong>, rapid knowledge transfer, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your team with the skills to achieve <strong>regulatory success</strong> and operational excellence.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Empower Your <span class='halfHeading'>Compliance Team?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Training Solutions',
+      aria: 'Contact us to discuss your validation training needs',
+    },
+  },
   gtm: {
     eventCategory: 'Validation Training',
     eventAction: 'view_service',
@@ -160,6 +310,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes. All our training modules can be tailored to your SOPs, systems, and compliance goals. On-site, hybrid, or remote sessions are available globally.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do Validation Training services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include interactive workshops on CSV, GAMP 5, ALCOA+ data integrity, and GxP compliance, with certifications, handouts, and assessments.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from Validation Training services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'QA/QC professionals, IT validation engineers, and regulatory affairs teams benefit from our tailored training programs.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our training aligns with ICH Q9, EU GMP Annex 11, US FDA 21 CFR Part 11, MHRA GxP, and ISPE GAMP 5® standards, ensuring global compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive interactive training sessions, certifications of completion, customized handouts, and knowledge assessment reports.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the training services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our training is tailored to your team’s roles, systems, and regulatory requirements, ensuring relevant and effective learning.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support audit-readiness?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our programs equip teams with practical knowledge of CSV, GAMP 5, and ALCOA+, ensuring compliance and readiness for regulatory audits.',
         },
       },
     ],

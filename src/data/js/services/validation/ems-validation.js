@@ -33,6 +33,82 @@ export default {
     alt: 'EMS system validation with HVAC and BMS integration',
     caption: 'EMS validation including software compliance and environmental sensor calibration.',
   },
+  pageContent: {
+    hero: {
+      heading: "EMS Validation for <span class='halfHeading'>GxP Compliance</span>",
+      tagline: 'Ensuring Accurate Environmental Control and Data Integrity',
+      detail:
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>Environmental Monitoring System (EMS) Validation services</strong> ensure accurate measurement and control of critical parameters like temperature, humidity, and pressure. We provide IQ/OQ/PQ execution, 21 CFR Part 11 software validation, and BMS/HVAC integration, delivering <strong>audit-ready compliance</strong> for pharmaceutical facilities.',
+    },
+    overview: {
+      heading: "Mastering EMS <span class='halfHeading'>Validation Excellence</span>",
+      overviewCards: [
+        {
+          heading: 'What are EMS Validation Services?',
+          detail:
+            'Our services include IQ/OQ/PQ protocols, 21 CFR Part 11 software validation, sensor calibration, and BMS/HVAC integration assessments, ensuring <strong>GxP compliance and data integrity</strong>.',
+        },
+        {
+          heading: 'Why is it Critical?',
+          detail:
+            'EMS validation ensures <strong>accurate environmental monitoring</strong>, regulatory compliance, and data integrity, minimizing risks during audits and ensuring reliable facility operations.',
+        },
+        {
+          heading: 'Our Role in Your Success',
+          detail:
+            'As a trusted CRO, Indivirtus Healthcare Services delivers <strong>expert-led validation solutions</strong>, providing regulator-ready documentation to support compliance and operational reliability.',
+        },
+      ],
+    },
+    approach: {
+      heading: "Our Expert <span class='halfHeading'>EMS Validation Approach</span>",
+      detail: [
+        'At Indivirtus Healthcare Services, our EMS Validation services are led by certified validation experts with <strong>global regulatory expertise</strong>. We execute IQ/OQ/PQ protocols, validate EMS software per 21 CFR Part 11, calibrate sensors, and assess integration with BMS/HVAC systems.',
+        'Our approach ensures <strong>audit-ready systems</strong>, aligning with 21 CFR Part 11, EU Annex 11, GAMP 5, and WHO TRS 961 to support compliant and reliable environmental monitoring.',
+      ],
+    },
+    deliverables: {
+      heading: "EMS Validation <span class='halfHeading'>Deliverables</span>",
+      itemList: [
+        '<strong>IQ/OQ/PQ Protocols & Reports</strong>: Comprehensive qualification documentation.',
+        '<strong>Software Validation Report (21 CFR Part 11)</strong>: Validation of EMS software compliance.',
+        '<strong>Sensor Calibration Certificates</strong>: Verification of sensor accuracy.',
+        '<strong>BMS/HVAC Integration Assessment</strong>: Evaluation of system integration performance.',
+        '<strong>21 CFR Part 11 Compliance Checklist</strong>: Compliance assessment for electronic records.',
+        '<strong>Traceability Matrix & Final Validation Summary</strong>: Mapping requirements to validation outcomes.',
+      ],
+    },
+    compliance: {
+      heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
+      detail: [
+        'Our EMS Validation services align with stringent global standards, ensuring your systems are <strong>audit-ready</strong> and compliant with international regulatory expectations. By adhering to industry-leading guidelines, we deliver solutions that enhance compliance and system reliability.',
+      ],
+      itemList: [
+        '<strong>21 CFR Part 11</strong>: U.S. regulations for electronic records and signatures.',
+        '<strong>EU Annex 11</strong>: European standards for computerized systems.',
+        '<strong>GAMP 5</strong>: Risk-based approach to compliant GxP systems.',
+        '<strong>WHO TRS 961</strong>: Global guidelines for good storage and distribution practices.',
+      ],
+    },
+    applications: {
+      heading: "Applications & <span class='halfHeading'>Use Cases</span>",
+      detail: [
+        'Our EMS Validation services are essential for pharmaceutical companies ensuring <strong>GxP compliance</strong> in environmental monitoring systems. Ideal for cleanrooms, warehouses, and manufacturing facilities, our solutions support global markets. Key use cases include validating <strong>new EMS installations</strong>, ensuring data integrity for regulatory audits, and integrating EMS with BMS/HVAC for FDA/EMA/MHRA compliance.',
+      ],
+    },
+    conclusion: {
+      heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
+      detail: [
+        'Indivirtus Healthcare Services is a trusted partner for pharmaceutical companies, delivering <strong>expert-led validation solutions</strong> backed by certified professionals with global experience. Our services ensure <strong>regulator-ready outcomes</strong>, rapid delivery, and strict confidentiality to protect your proprietary information.',
+        'With a commitment to industry best practices, we empower your organization with compliant, robust EMS validation, driving <strong>regulatory success</strong> and operational reliability.',
+      ],
+    },
+    cta: {
+      heading: "Ready to Validate Your <span class='halfHeading'>EMS Systems?</span>",
+      tagline: 'Partner with Indivirtus Healthcare Services for Expert Validation Solutions',
+      aria: 'Contact us to discuss your EMS validation needs',
+    },
+  },
   gtm: {
     eventCategory: 'EMS Validation',
     eventAction: 'view_service',
@@ -171,6 +247,54 @@ export default {
         acceptedAnswer: {
           '@type': 'Answer',
           text: 'Yes, our EMS validation includes protocol development and execution for IQ, OQ, and PQ stages, along with summary reports and traceability matrices.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What do EMS Validation services include?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services include IQ/OQ/PQ protocols, 21 CFR Part 11 software validation, sensor calibration, BMS/HVAC integration assessments, compliance checklists, and traceability matrices.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Who benefits from EMS Validation services?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Pharmaceutical companies monitoring environmental parameters in cleanrooms, warehouses, or manufacturing facilities benefit from our tailored solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do these services ensure regulatory compliance?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Our services align with 21 CFR Part 11, EU Annex 11, GAMP 5, and WHO TRS 961, ensuring global regulatory compliance.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What deliverables are provided with the service?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Clients receive IQ/OQ/PQ protocols, software validation reports, sensor calibration certificates, integration assessments, compliance checklists, and final summaries.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Can the EMS validation services be customized for our needs?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Yes, our services are tailored to your specific EMS systems, sensors, and regulatory requirements, ensuring compliant solutions.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do the services support audit-readiness?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'We provide comprehensive, regulator-compliant documentation and validation to ensure seamless audits and reliable environmental monitoring.',
         },
       },
     ],
