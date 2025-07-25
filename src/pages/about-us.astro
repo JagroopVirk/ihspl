@@ -1,12 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 
+import AboutFull from '../components/aboutus/AboutFull.astro';
 import '../styles/global.css';
 
-import ResourceGrid from '../components/downloads/DownloadGrid.astro';
-
 // Importing the SEO and location schema
-import seoData from '../data/js/seo/downloads.js';
+import seoData from '../data/js/seo/about-us.js';
 
 const { meta, faqSchema, gtm, pageLink, schema } = seoData;
 ---
@@ -25,7 +24,5 @@ const { meta, faqSchema, gtm, pageLink, schema } = seoData;
   }}
   gtm={gtm}
 >
-  <ResourceGrid />
+  <AboutFull />
 </Layout>
-
-style

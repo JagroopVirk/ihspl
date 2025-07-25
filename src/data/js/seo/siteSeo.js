@@ -3,8 +3,6 @@ const siteUrl = 'https://indivirtus.com';
 const siteLogo = siteUrl + '/logo.png';
 
 export const defaultSeo = {
-  slug: '',
-  pageLink: '/',
   meta: {
     title: 'Indivirtus Healthcare Services | Pharmaceutical CRO & Calibration Experts',
     description:

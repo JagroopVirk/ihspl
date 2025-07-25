@@ -2,7 +2,7 @@ export const navItems = [
   { name: 'Home', href: '/' },
   {
     name: 'About us',
-    href: '/about',
+    href: '/about-us',
     submenu: [
       { name: 'Vision, Mission and Quality Policy', href: '/about/vision-mission-qualityPolicy' },
       { name: 'Security and Confidentiality', href: '/about/security-confidentiality' },

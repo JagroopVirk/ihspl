@@ -3,11 +3,23 @@ import Layout from '../layouts/Layout.astro';
 
 import '../styles/global.css';
 
-// Importing the default SEO and location schema
-// import { servicesPageSeo } from "../data/js/siteSeo.js";
-import { allServicesSchema } from '../data/js/seo/servicesSchemaSEO.js';
+/// Importing the SEO and location schema
+import seoData from '../data/js/seo/career.js';
 
-//  seo={{ ...servicesPageSeo, canonical: servicesPageSeo.url, servicesSchema: allServicesSchema}}
+const { meta, faqSchema, gtm, pageLink, schema } = seoData;
 ---
 
-<Layout seo={{ servicesSchema: allServicesSchema }} />
+<Layout
+  seo={{
+    title: `${meta.title} - Indivirtus`,
+    description: meta.description,
+    keywords: meta.keywords,
+    canonical: meta.canonicalUrl,
+    url: pageLink,
+    schema: schema,
+    faqSchema: faqSchema,
+    ogTags: meta.ogTags,
+    twitterCard: meta.twitterCard,
+  }}
+  gtm={gtm}
+/>
