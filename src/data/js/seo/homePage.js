@@ -96,7 +96,7 @@ export default {
       description: '',
       image: serviceImage.src,
     },
-    canonicalUrl: `'https://www.indivirtus.com' + ${link}`,
+    canonicalUrl: `https://www.indivirtus.com${link}`,
     robotsMeta: {
       index: true,
       follow: true,
