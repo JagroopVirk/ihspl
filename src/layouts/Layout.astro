@@ -7,18 +7,32 @@ import GoogleFonts from '@/components/extras/GoogleFonts.astro';
 // Importing google tag manager
 import GoogleTag from '@/components/extras/GoogleTag.astro';
 
-// Importing the default SEO and location schema
+// Importing the SEO and GTM component
 import Seo from '../components/seo/Seo.astro';
+import GtmPush from '@/components/extras/GtmPush.astro';
+
+// Importing the default SEO and location schema
 import { defaultSeo } from '../data/js/seo/siteSeo.js';
 import { locationSchema } from '../data/js/seo/locationSchema.js';
 
 import Header from '../components/header/Header.astro';
 import Footer from '../components/footer/Footer.astro';
 
-const {
-  seo = defaultSeo, // page-specific SEO, or fall back to default
-  location = locationSchema, // locationSchema can also be optional
-} = Astro.props;
+const { seo = defaultSeo, location = locationSchema, gtm = null } = Astro.props;
+
+const gtmProps = gtm
+  ? {
+      event: gtm.eventAction,
+      eventCategory: gtm.eventCategory,
+      eventLabel: gtm.eventLabel,
+      serviceTier: gtm.dataLayerPush?.reportType?.join(', ') ?? '',
+      regulatoryLevel: Array.isArray(gtm.dataLayerPush?.certification)
+        ? gtm.dataLayerPush.certification.join(', ')
+        : (gtm.dataLayerPush?.certification ?? ''),
+    }
+  : null;
+
+// console.log('🚀 ~ gtmProps:', gtmProps);
 ---
 
 <!doctype html>
@@ -36,6 +50,9 @@ const {
 
     {/* Google Tag Manager */}
     <GoogleTag />
+
+    {/* GTM  */}
+    {gtmProps && <GtmPush {...gtmProps} />}
   </head>
   <Header />
   <slot />

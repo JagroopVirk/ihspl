@@ -1,202 +1,121 @@
 export const allServicesSchema = {
   '@context': 'https://schema.org',
-  '@type': 'ItemList',
-  itemListElement: [
-    {
-      '@type': 'ListItem',
-      position: 1,
-      item: {
-        '@type': 'ProfessionalService',
-        name: 'Comprehensive Pharmacovigilance Services',
-        description: 'End-to-end pharmacovigilance solutions for global regulatory compliance',
-        serviceType: 'Pharmacovigilance',
-        url: '/services/pharmacovigilance',
-        provider: {
-          '@type': 'Organization',
-          name: 'Indivirtus',
-          logo: 'https://www.indivirtus.com/logo.png',
-        },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: 'Contact for customized pricing',
-        },
-      },
+  '@type': 'WebPage',
+  name: 'Indivirtus Healthcare Services | CRO, Calibration & Regulatory Experts',
+  description:
+    'Explore comprehensive pharmaceutical services by Indivirtus - including CRO toxicology, cleaning validation, metrology calibration, containment consulting, and regulatory support for global GMP compliance.',
+  url: 'https://indivirtus.com/',
+  publisher: {
+    '@type': 'Organization',
+    name: 'Indivirtus Healthcare Services Pvt. Ltd.',
+    url: 'https://www.indivirtus.com',
+    logo: {
+      '@type': 'ImageObject',
+      url: 'https://www.indivirtus.com/logo.png',
     },
-    {
-      '@type': 'ListItem',
-      position: 2,
-      item: {
-        '@type': 'ProfessionalService',
-        name: 'Pharmaceutical Turnkey Facility Solutions',
-        description: 'End-to-end design, construction and validation of GMP-compliant pharmaceutical facilities',
-        serviceType: ['EngineeringService', 'ConstructionService'],
-        url: '/services/greenfield-brownfield',
-        provider: {
-          '@type': 'Organization',
-          name: 'Indivirtus',
-          logo: 'https://www.indivirtus.com/logo.png',
-        },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: 'Project-based',
-        },
+    sameAs: [
+      'https://www.linkedin.com/company/indivirtus-group-of-companies',
+      'https://twitter.com/indivirtus',
+      'https://www.facebook.com/Indivirtus',
+      'https://www.instagram.com/indivirtus_healthcare',
+    ],
+  },
+  mainEntity: {
+    '@type': 'ItemList',
+    name: 'Services Offered by Indivirtus',
+    itemListOrder: 'ItemListOrderDescending',
+    numberOfItems: 20,
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        url: '/services/ade-pde-oel/ade-pde-calculation',
+        name: 'ADE/PDE/OEL Calculation',
       },
-    },
-    {
-      '@type': 'ListItem',
-      position: 3,
-      item: {
-        '@type': 'ProfessionalService',
-        name: 'GMP Validation Services - CSV & Equipment Qualification',
-        description: 'Comprehensive validation services ensuring 21 CFR Part 11, EU Annex 11 and GAMP 5 compliance',
-        serviceType: 'ValidationService',
-        url: '/services/validation',
-        provider: {
-          '@type': 'Organization',
-          name: 'Indivirtus',
-          logo: 'https://www.indivirtus.com/logo.png',
-        },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: 'Contact for quote',
-        },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        url: '/services/cleaning-validation',
+        name: 'Cleaning Validation',
       },
-    },
-    {
-      '@type': 'ListItem',
-      position: 4,
-      item: {
-        '@type': 'ProfessionalService',
-        name: 'ICH M7 Impurity Risk Assessment Service',
-        description: 'Regulatory-compliant evaluation of genotoxic and non-genotoxic impurities per ICH guidelines',
-        serviceType: 'ToxicologyService',
-        url: '/services/risk-assessment',
-        provider: {
-          '@type': 'Organization',
-          name: 'Indivirtus',
-          logo: 'https://www.indivirtus.com/logo.png',
-        },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: 'Contact for quote',
-        },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        url: '/services/tra-risk-assessment',
+        name: 'Toxicological Risk Assessment (TRA)',
       },
-    },
-    {
-      '@type': 'ListItem',
-      position: 5,
-      item: {
-        '@type': 'ProfessionalService',
-        name: 'Pharmaceutical Exposure Limit Assessment Services',
-        description:
-          'Science-based derivation of ADE, PDE, OEL and OEB values with DABT-certified toxicological review',
-        serviceType: 'ToxicologyService',
-        url: '/services/ade-pde-oel',
-        provider: {
-          '@type': 'Organization',
-          name: 'Indivirtus',
-          logo: 'https://www.indivirtus.com/logo.png',
-        },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: 'Compound-based pricing',
-        },
+      {
+        '@type': 'ListItem',
+        position: 4,
+        url: '/services/oel-band-determination',
+        name: 'Occupational Exposure Banding (OEB)',
       },
-    },
-    {
-      '@type': 'ListItem',
-      position: 6,
-      item: {
-        '@type': 'ProfessionalService',
-        name: 'Global Regulatory Affairs Services',
-        description:
-          'End-to-end regulatory strategy and submission support for pharmaceutical market approvals worldwide',
-        serviceType: 'RegulatoryConsulting',
-        url: '/services/regulatory-affairs',
-        provider: {
-          '@type': 'Organization',
-          name: 'Indivirtus',
-          logo: 'https://www.indivirtus.com/logo.png',
-        },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: 'Project-based pricing',
-        },
+      {
+        '@type': 'ListItem',
+        position: 5,
+        url: '/services/containment-validation',
+        name: 'Containment Performance Validation',
       },
-    },
-    {
-      '@type': 'ListItem',
-      position: 7,
-      item: {
-        '@type': 'ProfessionalService',
-        name: 'GMP Compliance & Training Services',
-        description: 'Comprehensive GMP audit, remediation and training solutions for pharmaceutical quality systems',
-        serviceType: 'QualityAssuranceService',
-        url: '/services/gmp-compliance-trainings',
-        provider: {
-          '@type': 'Organization',
-          name: 'Indivirtus',
-          logo: 'https://www.indivirtus.com/logo.png',
-        },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: 'Project-based',
-        },
+      {
+        '@type': 'ListItem',
+        position: 6,
+        url: '/services/airflow-visualization',
+        name: 'GMP Airflow Visualization',
       },
-    },
-    {
-      '@type': 'ListItem',
-      position: 8,
-      item: {
-        '@type': 'ProfessionalService',
-        name: 'NABL Accredited Calibration Services',
-        description:
-          'Precision calibration services for pharmaceutical and healthcare instruments with full metrological traceability',
-        serviceType: 'CalibrationService',
-        url: '/services/calibration',
-        provider: {
-          '@type': 'Organization',
-          name: 'Indivirtus',
-          logo: 'https://www.indivirtus.com/logo.png',
-        },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: 'Instrument-based pricing',
-        },
+      {
+        '@type': 'ListItem',
+        position: 7,
+        url: '/services/decontamination-validation',
+        name: 'Decontamination Validation',
       },
-    },
-    {
-      '@type': 'ListItem',
-      position: 9,
-      item: {
-        '@type': 'ProfessionalService',
-        name: 'Vendor GMP Audit & Qualification Services',
-        description: 'Regulatory-standard GMP audits and approval dossier preparation for pharmaceutical suppliers',
-        serviceType: 'QualityAuditService',
-        url: '/services/gmp-audits',
-        provider: {
-          '@type': 'Organization',
-          name: 'Indivirtus',
-          logo: 'https://www.indivirtus.com/logo.png',
-        },
-        offers: {
-          '@type': 'Offer',
-          priceCurrency: 'USD',
-          price: 'Project-based',
-        },
+      {
+        '@type': 'ListItem',
+        position: 8,
+        url: '/services/environmental-monitoring',
+        name: 'Environmental Monitoring',
       },
-    },
-  ],
-  mainEntityOfPage: {
-    '@type': 'WebPage',
-    '@id': 'https://www.indivirtus.com/services',
+      {
+        '@type': 'ListItem',
+        position: 9,
+        url: '/services/containment-engineering',
+        name: 'Containment Engineering Consulting',
+      },
+      {
+        '@type': 'ListItem',
+        position: 10,
+        url: '/services/calibration/electro-technical',
+        name: 'Electro-Technical Calibration',
+      },
+      {
+        '@type': 'ListItem',
+        position: 11,
+        url: '/services/calibration/mass-volume',
+        name: 'Mass & Volume Calibration',
+      },
+      {
+        '@type': 'ListItem',
+        position: 12,
+        url: '/services/calibration/mechanical',
+        name: 'Mechanical Metrology',
+      },
+      {
+        '@type': 'ListItem',
+        position: 13,
+        url: '/services/calibration/thermal-humidity',
+        name: 'Thermal & Humidity Calibration',
+      },
+      {
+        '@type': 'ListItem',
+        position: 14,
+        url: '/services/calibration/pressure-vacuum',
+        name: 'Pressure & Vacuum Calibration',
+      },
+      {
+        '@type': 'ListItem',
+        position: 15,
+        url: '/services/calibration/electrochemical-flow',
+        name: 'Electrochemical & Flow Calibration',
+      },
+    ],
   },
 };

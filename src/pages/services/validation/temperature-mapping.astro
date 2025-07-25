@@ -14,7 +14,7 @@ import SubSection from '@/components/services/subServices/SubSection.astro';
 import CTASection from '@/components/services/CTASection.astro';
 import DeliverableCards from '@/components/services/subServices/DeliverableCards.astro';
 
-const { meta, image, schema, faqSchema, pageLink, pageContent } = seoData;
+const { meta, image, schema, faqSchema, pageLink, pageContent, gtm } = seoData;
 const { mainEntity } = faqSchema;
 const { hero, overview, approach, deliverables, compliance, applications, conclusion, cta } = pageContent;
 ---
@@ -29,7 +29,10 @@ const { hero, overview, approach, deliverables, compliance, applications, conclu
     url: pageLink,
     schema: schema,
     faqSchema: faqSchema,
+    ogTags: meta.ogTags,
+    twitterCard: meta.twitterCard,
   }}
+  gtm={gtm}
 >
   <main id="main-content" aria-labelledby="page-title">
     {/* Hero Section */}

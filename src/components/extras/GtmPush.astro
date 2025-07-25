@@ -1,0 +1,20 @@
+---
+const {
+  event = 'Service Inquiry',
+  eventCategory = 'Default Category',
+  eventLabel = 'Default Label',
+  serviceTier = '',
+  regulatoryLevel = '',
+} = Astro.props;
+---
+
+<script is:inline>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: `${event}`,
+    eventCategory: `${eventCategory}`,
+    eventLabel: `${eventLabel}`,
+    serviceTier: `${serviceTier}`,
+    regulatoryLevel: `${regulatoryLevel}`,
+  });
+</script>
