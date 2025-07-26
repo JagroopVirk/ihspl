@@ -1,6 +1,10 @@
 ---
-import { defaultSeo } from '../../data/js/seo/siteSeo.js';
-const {meta} = defaultSeo
+
+// defaultSEO
+import  defaultSeo  from '../../data/js/seo/index.js';
+
+const { meta } = defaultSeo;
+
 
 const {
   title = meta.title,
@@ -13,8 +17,8 @@ const {
   schema = null,
   locationSchema = null,
   servicesSchema = null,
-  faqSchema = null,
-  canonical = meta.canonical,
+  faqSchema = defaultSeo.faqSchema,
+  canonical = null,
   robots = meta.robotsMeta,
 } = Astro.props;
 
