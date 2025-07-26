@@ -5,7 +5,7 @@ const link = '/';
 export default {
   pageLink: `${siteUrl}${link}`,
   meta: {
-    title: 'Indivirtus Healthcare | Perfect Blend of Quality and Economy',
+    title: 'Indivirtus Healthcare | Contract Research Organization',
     description:
       'Indivirtus Healthcare offers a perfect blend of quality and economy in pharmaceutical CRO services, including cleaning validation, pharmacovigilance, GMP approvals, and more.',
     keywords: [

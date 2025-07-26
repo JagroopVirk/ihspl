@@ -14,13 +14,29 @@ import Seo from '../components/seo/Seo.astro';
 import GtmPush from '@/components/extras/GtmPush.astro';
 
 // Importing the default SEO and location schema
-import { defaultSeo } from '../data/js/seo/index.js';
+import defaultSeo from '../data/js/seo/index.js';
 import { locationSchema } from '../data/js/seo/locationSchema.js';
 
 import Header from '../components/header/Header.astro';
 import Footer from '../components/footer/Footer.astro';
 
-const { seo = defaultSeo, location = locationSchema, gtm = null } = Astro.props;
+const { meta, faqSchema, pageLink } = defaultSeo;
+
+const {
+  seo = {
+    title: `${meta.title} - Indivirtus`,
+    description: meta.description,
+    keywords: meta.keywords,
+    canonical: meta.canonicalUrl,
+    url: pageLink,
+    schema: null,
+    faqSchema: faqSchema,
+    ogTags: meta.ogTags,
+    twitterCard: meta.twitterCard,
+  },
+  location = locationSchema,
+  gtm = null,
+} = Astro.props;
 
 const gtmProps = gtm
   ? {
