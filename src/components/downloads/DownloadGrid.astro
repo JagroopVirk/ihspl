@@ -8,15 +8,15 @@ import { downloads } from '../../data/js/downloads.js';
 
 <section class="section">
   <div class="maxwidth">
-    <h3>Resources</h3>
-    <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
-      {downloads.map((file) => <ResourceCard title={file.title} fileUrl={file.fileUrl} />)}
+    <h3>Brochures & <span class="halfHeading">Sample reports</span></h3>
+    <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
+      {downloads.map((file) => <ResourceCard title={file.title} fileUrl={file.fileUrl} aria={file.aria} />)}
     </div>
   </div>
 </section>
 <style>
   @reference "tailwindcss";
   h3 {
-    @apply mb-8 text-center text-6xl;
+    @apply mb-8 md:mb-12 text-center text-6xl;
   }
 </style>

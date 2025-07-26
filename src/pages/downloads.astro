@@ -3,7 +3,7 @@ import Layout from '../layouts/Layout.astro';
 
 import '../styles/global.css';
 
-import ResourceGrid from '../components/downloads/DownloadGrid.astro';
+import DownloadGrid from '../components/downloads/DownloadGrid.astro';
 
 // Importing the SEO and location schema
 import seoData from '../data/js/seo/downloads.js';
@@ -25,7 +25,7 @@ const { meta, faqSchema, gtm, pageLink, schema } = seoData;
   }}
   gtm={gtm}
 >
-  <ResourceGrid />
+  <DownloadGrid />
 </Layout>
 
 style
