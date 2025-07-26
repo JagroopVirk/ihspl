@@ -1,13 +1,13 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 
 import ContactForm from '../components/contact/ContactForm.astro';
 import GoogleMap from '../components/contact/GoogleMap.astro';
 
 // Importing the SEO
-import seoData from '../data/js/seo/contact-us.js';
+import seoData from '@/data/js/seo/contact-us.js';
 
-import { allServicesSchema } from '../data/js/seo/servicesSchemaSEO.js';
+import { allServicesSchema } from '@/data/js/seo/servicesSchemaSEO.js';
 
 const { meta, faqSchema, gtm, pageLink, schema } = seoData;
 ---

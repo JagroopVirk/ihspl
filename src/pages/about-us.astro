@@ -1,11 +1,10 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from '@/layouts/Layout.astro';
 
-import AboutFull from '../components/aboutus/AboutFull.astro';
-import '../styles/global.css';
+import AboutFull from '@/components/aboutus/AboutFull.astro';
 
 // Importing the SEO
-import seoData from '../data/js/seo/about-us.js';
+import seoData from '@/data/js/seo/about-us.js';
 
 const { meta, faqSchema, gtm, pageLink, schema } = seoData;
 ---

@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 
-import favIcon from '../assets/favicon.png';
+import favIcon from '@/assets/favicon.png';
 
 // Importing google fonts
 import GoogleFonts from '@/components/extras/GoogleFonts.astro';
@@ -10,15 +10,15 @@ import GoogleFonts from '@/components/extras/GoogleFonts.astro';
 import GoogleTag from '@/components/extras/GoogleTag.astro';
 
 // Importing the SEO and GTM component
-import Seo from '../components/seo/Seo.astro';
+import Seo from '@/components/seo/Seo.astro';
 import GtmPush from '@/components/extras/GtmPush.astro';
 
 // Importing the default SEO and location schema
-import defaultSeo from '../data/js/seo/index.js';
-import { locationSchema } from '../data/js/seo/locationSchema.js';
+import defaultSeo from '@/data/js/seo/index.js';
+import { locationSchema } from '@/data/js/seo/locationSchema.js';
 
-import Header from '../components/header/Header.astro';
-import Footer from '../components/footer/Footer.astro';
+import Header from '@/components/header/Header.astro';
+import Footer from '@/components/footer/Footer.astro';
 
 const { meta, faqSchema, pageLink } = defaultSeo;
 

@@ -6,7 +6,7 @@
 // const __filename = fileURLToPath(import.meta.url);
 // const __dirname = path.dirname(__filename);
 
-// const folderPath = path.join(__dirname, '../data/js/services'); // make sure this matches your folder
+// const folderPath = path.join(__dirname, '@/data/js/services'); // make sure this matches your folder
 
 // /** @typedef {{ id: number, name: string }} Service */
 
