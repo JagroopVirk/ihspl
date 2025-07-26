@@ -63,14 +63,14 @@ export const aboutPageSeo = {
   logo: siteLogo,
 };
 
-export const servicesPageSeo = {
-  title: 'Services Provided -Indivirtus',
-  description:
-    'Journey of Indivirtus: A leading Contract Research Organization (CRO) providing comprehensive clinical trial services.',
-  keywords: 'about, mission, company',
-  image: siteLogo,
-  url: siteUrl + '/about',
-  twitterHandle: '@indivirtus',
-  type: 'article',
-  logo: siteLogo,
-};
+// export const servicesPageSeo = {
+//   title: 'Services Provided -Indivirtus',
+//   description:
+//     'Journey of Indivirtus: A leading Contract Research Organization (CRO) providing comprehensive clinical trial services.',
+//   keywords: 'about, mission, company',
+//   image: siteLogo,
+//   url: siteUrl + '/about',
+//   twitterHandle: '@indivirtus',
+//   type: 'article',
+//   logo: siteLogo,
+// };
