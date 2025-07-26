@@ -85,7 +85,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: `${siteUrl}/downloads`,
+      serviceUrl: `${siteUrl}${link}`,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',

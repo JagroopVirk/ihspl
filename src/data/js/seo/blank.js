@@ -70,7 +70,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: baseLink,
+      serviceUrl: `${siteUrl}${link}`, //managed with const
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',

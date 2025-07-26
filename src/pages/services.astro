@@ -5,13 +5,29 @@ import ServiceCatalog from '../components/services/ServicesCatalog.astro';
 import '../styles/global.css';
 
 // Importing the default SEO and location schema
-import { servicesPageSeo } from '../data/js/seo/siteSeo.js';
+import seoData from '../data/js/seo/services.js';
 import { allServicesSchema } from '../data/js/seo/servicesSchemaSEO.js';
 
 import services from '../utils/services.js';
+
+const { meta, faqSchema, gtm, pageLink, schema } = seoData;
 ---
 
-<Layout seo={{ ...servicesPageSeo, canonical: servicesPageSeo.url, servicesSchema: allServicesSchema }}>
+<Layout
+  seo={{
+    title: `${meta.title} - Indivirtus`,
+    description: meta.description,
+    keywords: meta.keywords,
+    canonical: meta.canonicalUrl,
+    url: pageLink,
+    schema: schema,
+    faqSchema: faqSchema,
+    ogTags: meta.ogTags,
+    twitterCard: meta.twitterCard,
+    servicesSchema: allServicesSchema,
+  }}
+  gtm={gtm}
+>
   <main>
     <ServiceCatalog services={services} />
   </main>

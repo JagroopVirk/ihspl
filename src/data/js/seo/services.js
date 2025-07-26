@@ -1,12 +1,50 @@
-const link = '/';
+const siteUrl = 'https://indivirtus.com';
+const siteLogo = siteUrl + '/logo.png';
+const link = '/services';
 
 export default {
+  pageLink: `${siteUrl}${link}`, //managed with const
+  meta: {
+    title: '',
+    description: '',
+    keywords: [],
+    twitterHandle: '@indivirtus',
+    url: siteUrl,
+    logo: siteLogo,
+    type: 'website',
+    canonicalUrl: `${siteUrl}${link}`, //managed with const
+    robotsMeta: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googlebot: 'index, follow',
+    },
+    ogTags: {
+      type: 'website',
+      url: siteUrl,
+      site_name: 'Indivirtus Healthcare Services Pvt Ltd',
+      image: siteLogo,
+      title: ' | Indivirtus Healthcare',
+      description: '',
+    },
+    twitterCard: {
+      card: 'summary_large_image',
+      title: ' | Indivirtus Healthcare',
+      description: '',
+      image: siteLogo,
+      site: '@indivirtus',
+      creator: '@indivirtus',
+    },
+  },
   gtm: {
     eventCategory: '',
     eventAction: '',
     eventLabel: '',
     customDimensions: {},
-    dataLayerPush: {},
+    dataLayerPush: {
+      reportType: [],
+      certification: '',
+    },
   },
   schema: {
     '@context': 'https://schema.org',
@@ -32,7 +70,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: `https://www.indivirtus.com${link}`,
+      serviceUrl: `${siteUrl}${link}`, //managed with const
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
@@ -49,21 +87,10 @@ export default {
       itemListElement: [
         {
           '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: '',
-            description: '',
-          },
+          name: '',
+          description: '',
         },
       ],
-    },
-    offers: {
-      '@type': 'Offer',
-      priceCurrency: ['INR', 'USD'],
-      price: 'Compound-based pricing',
-      url: link,
-      availability: 'https://schema.org/InStock',
-      businessFunction: 'https://schema.org/ProvideService',
     },
   },
   faqSchema: {
@@ -79,28 +106,5 @@ export default {
         },
       },
     ],
-  },
-  meta: {
-    title: '',
-    description: '',
-    keywords: [],
-    ogTags: {
-      type: 'service',
-      image: serviceImage.src,
-      url: link,
-      site_name: 'Indivirtus',
-    },
-    twitterCard: {
-      card: 'summary_large_image',
-      title: '',
-      description: '',
-      image: serviceImage.src,
-    },
-    canonicalUrl: `https://www.indivirtus.com${link}`,
-    robotsMeta: {
-      index: true,
-      follow: true,
-      nocache: false,
-    },
   },
 };

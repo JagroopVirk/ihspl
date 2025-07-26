@@ -321,7 +321,7 @@ export default {
     },
     availableChannel: {
       '@type': 'ServiceChannel',
-      serviceUrl: baseLink,
+      serviceUrl: `https://www.indivirtus.com${baseLink}`,
       servicePhone: '+91-9131925456',
       servicePostalAddress: {
         '@type': 'PostalAddress',
