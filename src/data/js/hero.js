@@ -11,12 +11,12 @@ export const heroStats = [
   {
     key: 'pde',
     qty: 13000,
-    description: 'PDE/OEL Reports as per<br />EMA/PICS/ APIC/WHO',
+    description: 'PDE/OEL Reports as per<br />EMA | PIC/S | APIC | WHO',
     image: { path: stats1, alt: 'stats picture icon1' },
   },
   {
     key: 'genotox',
-    qty: 4200,
+    qty: 3200,
     description: 'Mutagenic & Genotox Assessments<br />as per ICH, M7',
     image: { path: stats2, alt: 'stats picture icon2' },
   },

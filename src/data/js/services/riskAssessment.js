@@ -16,7 +16,7 @@ export default {
   description:
     'Comprehensive CRO support for genotoxic impurity evaluation and toxicological risk assessments of medical devices.',
   full_description:
-    'Indivirtus offers specialized CRO services for genotoxic impurity evaluation and medical device toxicological risk assessment. We follow global regulatory standards like ICH Q3A(R2), Q3B(R2), Q3C(R8), M7 for mutagenic impurity profiling and ISO 10993-17 for evaluating extractables, leachables, and their toxicological relevance in medical devices. Our expert toxicologists provide data-driven risk assessments to ensure product safety and global compliance.',
+    'Indivirtus offers specialized CRO services for genotoxic impurity evaluation and medical device toxicological risk assessment. We follow global regulatory standards like ICH Q3A(R2), Q3B(R2), Q3C(R8), M7 for mutagenic impurity profiling and ISO 10993-17 for evaluating extractables, leachables, and their toxicological relevance in medical devices. Indivirtus with over 3,200 Risk Assessment reports delivered, Our expert toxicologists provide data-driven risk assessments to ensure product safety and global compliance.',
   estimated_duration: '2–6 weeks (depending on data availability and number of substances)',
   deliverables: [
     'Genotoxicity risk assessment report aligned with ICH Q3A/B/C/M7',

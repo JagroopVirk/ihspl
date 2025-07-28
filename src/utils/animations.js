@@ -24,26 +24,37 @@ export function initScrollAnimations() {
 
   animations.forEach(({ selector, config }) => {
     gsap.utils.toArray(selector).forEach((el) => {
-      const scrollTrigger = {
-        trigger: el,
-        start: el.dataset.start || 'top bottom',
-        end: el.dataset.end || undefined,
-        toggleActions: el.dataset.toggle || 'play none none none',
-      };
+      const bounds = el.getBoundingClientRect();
+      const inView = bounds.top < window.innerHeight && bounds.bottom > 0;
 
-      gsap.from(el, {
+      const animationProps = {
         ...config,
         opacity: config.opacity ?? 0,
         duration: parseFloat(el.dataset.duration) || 1,
         delay: parseFloat(el.dataset.delay) || 0,
         ease: el.dataset.ease || config.ease || 'power2.out',
         stagger: config.stagger || 0.2,
-        scrollTrigger,
-      });
+      };
+
+      if (inView) {
+        // Animate immediately if already visible
+        gsap.from(el, animationProps);
+      } else {
+        // Otherwise wait for scroll
+        gsap.from(el, {
+          ...animationProps,
+          scrollTrigger: {
+            trigger: el,
+            start: el.dataset.start || 'top 90%',
+            end: el.dataset.end || undefined,
+            toggleActions: el.dataset.toggle || 'play none none none',
+          },
+        });
+      }
     });
   });
 
-  // Additional effects
+  // Hover scale effect
   gsap.utils.toArray('.hover-scale').forEach((el) => {
     el.addEventListener('mouseenter', () => {
       gsap.to(el, { scale: 1.2, duration: 0.05, ease: 'power2.out', transformOrigin: 'left' });
@@ -53,12 +64,14 @@ export function initScrollAnimations() {
     });
   });
 
+  // Click expand
   gsap.utils.toArray('.click-expand').forEach((el) => {
     el.addEventListener('click', () => {
       gsap.to(el, { height: 'auto', duration: 0.5, ease: 'power2.inOut' });
     });
   });
 
+  // Parallax backgrounds
   gsap.utils.toArray('.parallax-bg').forEach((el) => {
     gsap.to(el, {
       yPercent: 20,
@@ -72,7 +85,7 @@ export function initScrollAnimations() {
     });
   });
 
-  // Optional timeline example
+  // Timeline animations (example)
   const tl = document.querySelector('.timeline-section');
   if (tl) {
     gsap
@@ -86,10 +99,4 @@ export function initScrollAnimations() {
       .from('.step-2', { opacity: 0, x: 50, duration: 0.6 }, '-=0.4')
       .from('.step-3', { opacity: 0, scale: 0.8, duration: 0.6 }, '-=0.4');
   }
-
-  window.addEventListener('load', () => {
-    requestAnimationFrame(() => {
-      ScrollTrigger.refresh();
-    });
-  });
 }

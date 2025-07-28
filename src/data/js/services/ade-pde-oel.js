@@ -51,7 +51,7 @@ export default {
     main: {
       heading: 'Our <span class="halfHeading">Cleaning Validation Services</span>',
       detail:
-        'Our Contract Research Organization (CRO) specializes in ADE/PDE, OEL, and OEB calculations, alongside comprehensive cleaning validation services to ensure safe pharmaceutical manufacturing. These services help prevent cross-contamination, meet stringent regulatory requirements, and protect patient and worker safety. With expertise in toxicological assessments and health-based exposure limits, we serve pharmaceutical manufacturers, biotech firms, and CROs. Our proven track record, inspired by industry leaders like Indivirtus with over 13,000 PDE/ADE reports delivered, ensures robust, compliant solutions for shared facilities and equipment.',
+        'Our Contract Research Organization (CRO) specializes in ADE/PDE, OEL, and OEB calculations, alongside comprehensive cleaning validation services to ensure safe pharmaceutical manufacturing. These services help prevent cross-contamination, meet stringent regulatory requirements, and protect patient and worker safety. With expertise in toxicological assessments and health-based exposure limits, we serve pharmaceutical manufacturers, biotech firms, and CROs. Our proven track record, inspired by industry leaders like Indivirtus with over 13,000 PDE/ADE/OEL reports delivered, ensures robust, compliant solutions for shared facilities and equipment.',
     },
     cards: {
       heading: 'Our <span class="halfHeading">Validation Expertise</span>',
