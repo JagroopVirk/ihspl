@@ -1,19 +1,13 @@
 ---
-import '../styles/global.css';
+import '@/styles/global.css';
 
 import favIcon from '@/assets/favicon.png';
 
-// Importing google fonts
 import GoogleFonts from '@/components/extras/GoogleFonts.astro';
-
-// Importing google tag manager
 import GoogleTag from '@/components/extras/GoogleTag.astro';
-
-// Importing the SEO and GTM component
 import Seo from '@/components/seo/Seo.astro';
 import GtmPush from '@/components/extras/GtmPush.astro';
 
-// Importing the default SEO and location schema
 import defaultSeo from '@/data/js/seo/index.js';
 import { locationSchema } from '@/data/js/seo/locationSchema.js';
 
@@ -49,8 +43,6 @@ const gtmProps = gtm
         : (gtm.dataLayerPush?.certification ?? ''),
     }
   : null;
-
-// console.log('🚀 ~ gtmProps:', gtmProps);
 ---
 
 <!doctype html>
@@ -60,19 +52,22 @@ const gtmProps = gtm
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png+xml" href={favIcon.src} />
 
-    {/* Google Fonts */}
     <GoogleFonts />
-
-    {/* SEO component */}
     <Seo {...seo} locationSchema={location} />
-
-    {/* Google Tag Manager */}
     <GoogleTag />
-
-    {/* GTM  */}
     {gtmProps && <GtmPush {...gtmProps} />}
   </head>
-  <Header />
-  <slot />
-  <Footer />
+
+  <body>
+    <Header />
+
+    <main>
+      <slot />
+    </main>
+
+    <Footer />
+
+    {/* gsap import */}
+    <script type="module" src="/scripts/gsap-init.js"></script>
+  </body>
 </html>

@@ -2,6 +2,6 @@
 const { btnLink, btnClass, btnText, btnAria } = Astro.props;
 ---
 
-<div class={btnClass} aria-label={btnAria ? btnAria : 'Contact Indivirtus'}>
+<div class=`${btnClass} hover-scale` aria-label={btnAria ? btnAria : 'Contact Indivirtus'}>
   <a href={btnLink}>{btnText}</a>
 </div>

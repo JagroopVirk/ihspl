@@ -2,13 +2,15 @@
 import FormAlert from '../other/FormAlert.astro';
 ---
 
-<div class="formDiv w-full md:w-1/2 pxy-8 flex flex-col justify-center">
+<div class="formDiv w-full md:w-1/2 pxy-8 flex flex-col justify-center slide-right" data-toggle="play reverse play reverse">
 
 {/* Alert Message */}
 <FormAlert />
    
 {/* Form */}
-<h2 class="text-center mb-6">Have a Question? <span class="halfHeading">Let’s Talk</span></h2>
+    <h2 class="text-center mb-6">
+      Have a Question? <span class="halfHeading">Let’s Talk</span>
+      </h2>
     <form 
     id="contactForm"
       action="../sendmail.php" 
