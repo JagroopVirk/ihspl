@@ -1,102 +1,178 @@
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollSmoother } from 'gsap/ScrollSmoother';
 
-gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-export function initScrollAnimations() {
-  const animations = [
-    { selector: '.fade-in', config: { y: 40, opacity: 0, ease: 'power2.out' } },
-    { selector: '.slide-left', config: { x: 100, opacity: 0, ease: 'back.out(1.7)' } },
-    { selector: '.slide-right', config: { x: -100, opacity: 0, ease: 'back.out(1.7)' } },
-    { selector: '.slide-up', config: { y: 100, opacity: 0, ease: 'circ.out' } },
-    { selector: '.slide-down', config: { y: -100, opacity: 0, ease: 'circ.out' } },
-    { selector: '.zoom-in', config: { scale: 0.8, opacity: 0, ease: 'elastic.out(1, 0.5)' } },
-    { selector: '.zoom-out', config: { scale: 1.2, opacity: 0, ease: 'elastic.out(1, 0.5)' } },
-    { selector: '.rotate-in', config: { rotation: 45, opacity: 0, ease: 'expo.out' } },
-    { selector: '.flip-x', config: { rotationX: 90, opacity: 0, ease: 'sine.out' } },
-    { selector: '.flip-y', config: { rotationY: 90, opacity: 0, ease: 'sine.out' } },
-    { selector: '.bounce-in', config: { y: 100, opacity: 0, ease: 'bounce.out' } },
-    { selector: '.skew-in', config: { skewY: 10, opacity: 0, ease: 'power1.out' } },
-    { selector: '.scale-rotate', config: { scale: 0.5, rotation: 90, opacity: 0, ease: 'expo.out' } },
-    { selector: '.blur-in', config: { opacity: 0, filter: 'blur(10px)', ease: 'power2.out' } },
-    { selector: '.stagger-list', config: { y: 20, opacity: 0, stagger: 0.1, ease: 'power3.out' } },
-  ];
+// Optional ScrollSmoother initialization
+export function initScrollSmoother() {
+  ScrollSmoother.create({
+    wrapper: '#smooth-wrapper',
+    content: '#smooth-content',
+    smooth: 1,
+    effects: true,
+  });
+}
 
-  animations.forEach(({ selector, config }) => {
-    gsap.utils.toArray(selector).forEach((el) => {
-      const bounds = el.getBoundingClientRect();
-      const inView = bounds.top < window.innerHeight && bounds.bottom > 0;
+export function animateWithDataAttributes(selector = '.gsap-animate') {
+  const groups = {};
 
-      const animationProps = {
-        ...config,
-        opacity: config.opacity ?? 0,
-        duration: parseFloat(el.dataset.duration) || 1,
-        delay: parseFloat(el.dataset.delay) || 0,
-        ease: el.dataset.ease || config.ease || 'power2.out',
-        stagger: config.stagger || 0.2,
-      };
+  document.querySelectorAll(selector).forEach((el, index) => {
+    const animation = el.dataset.animation ?? 'fade';
+    const direction = el.dataset.direction ?? 'up';
+    let duration = parseFloat(el.dataset.duration) || 1;
+    let delay = el.dataset.delay ?? 0;
+    const scroll = el.dataset.scroll === 'true';
+    const ease = el.dataset.ease || 'power2.out';
+    const repeatAttr = el.dataset.repeat;
+    const hover = el.dataset.hover === 'true';
+    const exit = el.dataset.exit ?? null;
+    const origin = el.dataset.origin || 'center center';
+    const group = el.dataset.staggerGroup;
 
-      if (inView) {
-        // Animate immediately if already visible
-        gsap.from(el, animationProps);
+    // ScrollReverse
+    const scrollReverse = el.dataset.scrollReverse === 'true';
+
+    // Smart delay
+    if (delay === 'rand') {
+      delay = Math.random();
+    } else if (delay === 'index') {
+      delay = index * 0.2;
+    } else {
+      delay = parseFloat(delay) || 0;
+    }
+
+    // Repeat
+    const repeat = repeatAttr === 'true' ? -1 : isNaN(parseInt(repeatAttr)) ? 0 : parseInt(repeatAttr);
+
+    // Set transform origin if scaling or zooming
+    if ((animation === 'scale' || animation === 'zoom') && origin) {
+      el.style.transformOrigin = origin;
+    }
+
+    // Prepare base animation
+    const base = {
+      duration,
+      delay,
+      ease,
+      repeat,
+      opacity: 0,
+    };
+
+    // Modify based on animation type
+    switch (animation) {
+      case 'fade':
+        break;
+      case 'slide':
+        if (direction === 'left') base.x = -50;
+        else if (direction === 'right') base.x = 50;
+        else if (direction === 'up') base.y = 50;
+        else if (direction === 'down') base.y = -50;
+        break;
+      case 'scale':
+        base.scale = 0.8;
+        break;
+      case 'rotate':
+        base.rotate = -15;
+        break;
+      case 'zoom':
+        base.scale = 0.8;
+        base.opacity = 0;
+        break;
+      default:
+        console.warn(`Unknown animation: ${animation}`, el);
+    }
+
+    const enterAnim = () => {
+      if (el.dataset.timeline === 'true') {
+        const tl = gsap.timeline();
+        tl.from(el, base);
+
+        if (el.dataset.scaleAfter) {
+          tl.to(el, {
+            scale: parseFloat(el.dataset.scaleAfter),
+            duration: 0.3,
+          });
+        }
+
+        if (el.dataset.fadeAfter === 'true') {
+          tl.to(el, {
+            opacity: 0,
+            duration: 0.3,
+          });
+        }
+
+        gsap.delayedCall(delay, () => tl.play());
       } else {
-        // Otherwise wait for scroll
-        gsap.from(el, {
-          ...animationProps,
-          scrollTrigger: {
-            trigger: el,
-            start: el.dataset.start || 'top 90%',
-            end: el.dataset.end || undefined,
-            toggleActions: el.dataset.toggle || 'play none none none',
-          },
-        });
+        gsap.from(el, base);
       }
-    });
-  });
+    };
 
-  // Hover scale effect
-  gsap.utils.toArray('.hover-scale').forEach((el) => {
-    el.addEventListener('mouseenter', () => {
-      gsap.to(el, { scale: 1.2, duration: 0.05, ease: 'power2.out', transformOrigin: 'left' });
-    });
-    el.addEventListener('mouseleave', () => {
-      gsap.to(el, { scale: 1, duration: 0.1, ease: 'elastic.out(1, 0.5)' });
-    });
-  });
+    // Exit animation
+    const exitAnim = () => {
+      if (!exit) return;
+      const exitBase = {
+        duration,
+        ease,
+        opacity: 0,
+      };
+      if (exit === 'slide') {
+        exitBase.y = 50;
+      } else if (exit === 'zoom') {
+        exitBase.scale = 0.8;
+      } else if (exit === 'rotate') {
+        exitBase.rotate = 15;
+      }
+      gsap.to(el, exitBase);
+    };
 
-  // Click expand
-  gsap.utils.toArray('.click-expand').forEach((el) => {
-    el.addEventListener('click', () => {
-      gsap.to(el, { height: 'auto', duration: 0.5, ease: 'power2.inOut' });
-    });
-  });
+    // Hover animation
+    if (hover) {
+      el.addEventListener('mouseenter', () => {
+        gsap.fromTo(
+          el,
+          { scale: 1 },
+          {
+            scale: 1.1,
+            duration: 0.3,
+            ease: 'power1.out',
+          },
+        );
+      });
+      el.addEventListener('mouseleave', () => {
+        gsap.to(el, {
+          scale: 1,
+          duration: 0.3,
+          ease: 'power1.inOut',
+        });
+      });
+      return;
+    }
 
-  // Parallax backgrounds
-  gsap.utils.toArray('.parallax-bg').forEach((el) => {
-    gsap.to(el, {
-      yPercent: 20,
-      ease: 'none',
-      scrollTrigger: {
+    if (group) {
+      if (!groups[group]) groups[group] = [];
+      groups[group].push({ el, base });
+    } else if (scroll) {
+      ScrollTrigger.create({
         trigger: el,
-        start: 'top bottom',
-        end: 'bottom top',
-        scrub: true,
-      },
-    });
+        start: 'top 80%',
+        onEnter: enterAnim,
+        onLeaveBack: scrollReverse ? exitAnim : undefined,
+      });
+    } else {
+      enterAnim();
+    }
   });
 
-  // Timeline animations (example)
-  const tl = document.querySelector('.timeline-section');
-  if (tl) {
-    gsap
-      .timeline({
-        scrollTrigger: {
-          trigger: tl,
-          start: 'top 80%',
-        },
-      })
-      .from('.step-1', { opacity: 0, x: -50, duration: 0.6 })
-      .from('.step-2', { opacity: 0, x: 50, duration: 0.6 }, '-=0.4')
-      .from('.step-3', { opacity: 0, scale: 0.8, duration: 0.6 }, '-=0.4');
+  // Handle staggered groups
+  for (const groupName in groups) {
+    const items = groups[groupName];
+    const elements = items.map((i) => i.el);
+    const base = items[0].base;
+
+    gsap.from(elements, {
+      ...base,
+      stagger: 0.2,
+    });
   }
 }

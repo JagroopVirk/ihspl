@@ -23,6 +23,10 @@ body {
   }
 }
 
+body.preload {
+  opacity: 0;
+}
+
 .maxwidth {
   max-width: clamp(10%, 1348px, 100%);
   @apply px-6 mx-auto;

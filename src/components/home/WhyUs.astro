@@ -5,7 +5,12 @@ const { features = [], setStyle } = Astro.props;
 <section class="section px-6" style={`background: ${setStyle}`}>
   <div class="maxwidth mx-auto text-center">
     <h2 class="mb-10 text-3xl font-bold">Why Choose <span class="halfHeading">Us?</span></h2>
-    <div class="grid grid-cols-1 gap-10 text-left md:grid-cols-2 lg:grid-cols-3">
+    <div
+      class="gsap-animate grid grid-cols-1 gap-10 text-left md:grid-cols-2 lg:grid-cols-3"
+      data-animation="slide"
+      data-direction="up"
+      data-scroll="true"
+    >
       {
         features.map((item, idx) => (
           <div class="bg-primary rounded-2xl p-6 shadow transition hover:shadow-md">

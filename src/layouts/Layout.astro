@@ -1,12 +1,15 @@
 ---
+//layouts/Layout.astro
 import '@/styles/global.css';
 
-import favIcon from '@/assets/favicon.png';
-
 import GoogleFonts from '@/components/extras/GoogleFonts.astro';
-import GoogleTag from '@/components/extras/GoogleTag.astro';
+import GoogleTagHead from '@/components/extras/GoogleTagHead.astro';
+import GoogleTagBody from '@/components/extras/GoogleTagBody.astro';
 import Seo from '@/components/seo/Seo.astro';
 import GtmPush from '@/components/extras/GtmPush.astro';
+
+// Import GSAP
+import GsapInit from '@/components/extras/GsapInit.jsx';
 
 import defaultSeo from '@/data/js/seo/index.js';
 import { locationSchema } from '@/data/js/seo/locationSchema.js';
@@ -50,24 +53,29 @@ const gtmProps = gtm
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png+xml" href={favIcon.src} />
+    <link rel="icon" type="image/png+xml" href="/favicon.png" />
 
     <GoogleFonts />
     <Seo {...seo} locationSchema={location} />
-    <GoogleTag />
+    <GoogleTagHead />
     {gtmProps && <GtmPush {...gtmProps} />}
   </head>
 
   <body>
     <Header />
 
-    <main>
-      <slot />
-    </main>
-
-    <Footer />
-
-    {/* gsap import */}
-    <script type="module" src="/scripts/gsap-init.js"></script>
+    {/* ScrollSmoother required structure */}
+    <div id="smooth-wrapper">
+      <GoogleTagBody />
+      <div id="smooth-content">
+        <main>
+          <slot />
+        </main>
+        <Footer />
+      </div>
+    </div>
+    <GsapInit client:load />
   </body>
 </html>
+
+{/* <script type="module" src="/scripts/gsap-init.js"></script> */}

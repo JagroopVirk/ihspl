@@ -4,7 +4,14 @@ import Picture from 'astro/components/Picture.astro';
 import QRwhatsApp from '../../assets/QRwhatsApp.jpg';
 ---
 
-<div class="slide-left flex flex-col items-center justify-center text-center" data-toggle="play reverse play reverse">
+<div
+  class="gsap-animate flex flex-col items-center justify-center text-center"
+  data-direction="right"
+  data-duration="1.2"
+  data-delay="0.3"
+  data-scroll="true"
+  data-animation="slide"
+>
   <h2 class="leading-relaxed tracking-wider">
     Scan QR to connect us on <br />
     <span class="halfHeading">WhatsApp</span>
