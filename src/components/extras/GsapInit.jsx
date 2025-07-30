@@ -1,5 +1,4 @@
 // GsapInit.jsx
-import gsap from 'gsap';
 import { useEffect } from 'react';
 import { animateWithDataAttributes, initScrollSmoother } from '@/utils/animations';
 

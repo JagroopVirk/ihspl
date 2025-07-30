@@ -23,11 +23,11 @@ import BTN from '../other/BTN.astro';
                 btnLink={service.pageLink}
                 btnClass="buttonSimple text-secondary"
                 btnText="Learn more...."
-                btnAria={`"read more about ${service.name}"`}
+                btnAria={`read more about ${service.name}`}
               />
             </div>
             <div class="hidden transition-shadow hover:shadow-md md:block md:w-1/2 lg:w-1/3">
-              <Picture src={service.image.path} alt={service.image.alt} />
+              <Picture src={service.image.path} alt={service.image.alt} loading="lazy" />
             </div>
           </div>
         ))

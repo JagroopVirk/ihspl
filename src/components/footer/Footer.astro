@@ -162,6 +162,8 @@ import SetMarginTop from '../extras/SetMarginTop.astro';
     </div>
     } */
     }
+    {/* blank div for compensating top margin  */}
+    <div id="bottomSpacing"></div>
   </div>
   <GoTopBtn />
   <SetMarginTop />
@@ -185,7 +187,7 @@ import SetMarginTop from '../extras/SetMarginTop.astro';
         content: '';
       }
       &:before {
-        @apply absolute z-1 top-0 px-6 left-1/2 -translate-x-1/2 h-4 w-60 rounded-t-xl;
+        @apply absolute z-1 top-0 px-6 left-1/2 -translate-x-1/2 h-[17px] w-60 rounded-t-xl;
         box-shadow:
           -300.6Q 0Q var(--color-primary),
           -280Q 0Q var(--color-footer-box),
@@ -220,7 +222,7 @@ import SetMarginTop from '../extras/SetMarginTop.astro';
 
     .footerCopyright {
       margin-top: 2rem;
-      padding-top: 1rem;
+      padding-bottom: 4rem;
       overflow: hidden;
       color: rgb(from var(--color-white) r g b / 0.7);
 

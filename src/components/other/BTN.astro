@@ -2,15 +2,8 @@
 const { btnLink, btnClass, btnText, btnAria } = Astro.props;
 ---
 
-<div
-  class=`${btnClass} gsap-animate`
-  aria-label={btnAria ? btnAria : 'Contact Indivirtus'}
-  data-direction="left"
-  data-hover="true"
-  data-animation="scale"
-  data-origin="left"
-  data-duration="0.3"
-  data-delay="0"
->
-  <a href={btnLink}>{btnText}</a>
+<div class=`${btnClass}`>
+  <a class=`${btnClass}` aria-label={btnAria} href={btnLink}>
+    {btnText}
+  </a>
 </div>

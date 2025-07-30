@@ -39,6 +39,5 @@
 }
 
 .buttonSimple {
-  @apply py-2 pr-2 cursor-pointer text-xl font-medium max-w-fit transition-all;
-  /* @apply py-2 pr-2 cursor-pointer text-xl font-medium max-w-fit hover:scale-110 focus:scale-110 transition-all hover:origin-left; */
+  @apply py-2 pr-2 cursor-pointer text-xl font-medium max-w-fit hover:scale-115 focus:scale-115 transition-all hover:origin-left duration-300;
 }

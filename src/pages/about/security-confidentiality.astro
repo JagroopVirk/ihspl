@@ -1,9 +1,7 @@
 ---
 import Layout from '@/layouts/Layout.astro';
-import Header from '@/components/header/Header.astro';
-import Footer from '@/components/footer/Footer.astro';
 
-import SecurityConfidentiality from '@/components/aboutus/SecurityConfidentiality.astro';
+import SecurityAndConfidentiality from '@/components/aboutus/SecurityConfidentiality.astro';
 
 // Importing the SEO
 import seoData from '@/data/js/seo/aboutus/securityConfidentiality.js';
@@ -25,7 +23,5 @@ const { meta, faqSchema, gtm, pageLink, schema } = seoData;
   }}
   gtm={gtm}
 >
-  <Header />
-  <SecurityConfidentiality />
-  <Footer />
+  <SecurityAndConfidentiality />
 </Layout>

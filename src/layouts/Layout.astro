@@ -3,14 +3,17 @@
 import '@/styles/global.css';
 
 import GoogleFonts from '@/components/extras/GoogleFonts.astro';
+import Seo from '@/components/seo/Seo.astro';
+
+// import google components
 import GoogleTagHead from '@/components/extras/GoogleTagHead.astro';
 import GoogleTagBody from '@/components/extras/GoogleTagBody.astro';
-import Seo from '@/components/seo/Seo.astro';
 import GtmPush from '@/components/extras/GtmPush.astro';
 
 // Import GSAP
 import GsapInit from '@/components/extras/GsapInit.jsx';
 
+// defaultSeo and locationSchema
 import defaultSeo from '@/data/js/seo/index.js';
 import { locationSchema } from '@/data/js/seo/locationSchema.js';
 
@@ -62,11 +65,11 @@ const gtmProps = gtm
   </head>
 
   <body>
+    <GoogleTagBody />
     <Header />
 
     {/* ScrollSmoother required structure */}
     <div id="smooth-wrapper">
-      <GoogleTagBody />
       <div id="smooth-content">
         <main>
           <slot />
@@ -77,5 +80,3 @@ const gtmProps = gtm
     <GsapInit client:load />
   </body>
 </html>
-
-{/* <script type="module" src="/scripts/gsap-init.js"></script> */}
