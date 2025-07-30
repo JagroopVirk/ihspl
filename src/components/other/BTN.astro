@@ -2,8 +2,6 @@
 const { btnLink, btnClass, btnText, btnAria } = Astro.props;
 ---
 
-<div class=`${btnClass}`>
-  <a class=`${btnClass}` aria-label={btnAria} href={btnLink}>
-    {btnText}
-  </a>
-</div>
+<a class=`${btnClass}` aria-label={btnAria} href={btnLink}>
+  {btnText}
+</a>

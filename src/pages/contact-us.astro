@@ -1,13 +1,11 @@
 ---
 import Layout from '@/layouts/Layout.astro';
 
-import ContactForm from '../components/contact/ContactForm.astro';
-import GoogleMap from '../components/contact/GoogleMap.astro';
+import ContactForm from '@/components/contact/ContactForm.astro';
+import GoogleMap from '@/components/contact/GoogleMap.astro';
 
 // Importing the SEO
 import seoData from '@/data/js/seo/contact-us.js';
-
-import { allServicesSchema } from '@/data/js/seo/servicesSchemaSEO.js';
 
 const { meta, faqSchema, gtm, pageLink, schema } = seoData;
 ---
@@ -27,8 +25,11 @@ const { meta, faqSchema, gtm, pageLink, schema } = seoData;
   gtm={gtm}
 >
   <section class="section">
+    <h1 class="mb-8 text-center">
+      Contact <span class="halfHeading">Indivirtus Healthcare Services</span>
+    </h1>
     <div class="maxwidth flex flex-col gap-8 p-10 md:flex-row-reverse">
-      <ContactForm />
+      <ContactForm slideDirection="right" />
       <GoogleMap />
     </div>
   </section>

@@ -1,10 +1,12 @@
 ---
 import FormAlert from '../other/FormAlert.astro';
+
+const { slideDirection } = Astro.props;
 ---
 
 <div
   class="formDiv pxy-8 gsap-animate flex w-full flex-col justify-center md:w-1/2"
-  data-direction="left"
+  data-direction={slideDirection}
   data-duration="1.2"
   data-delay="0.3"
   data-scroll="true"

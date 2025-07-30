@@ -1,3 +1,7 @@
+* {
+  @apply focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+}
+
 html,
 body {
   margin: 0;
@@ -34,8 +38,3 @@ body.preload {
 footer {
   transform: none !important;
 }
-
-@import './variables.css';
-@import './buttons.css';
-@import './typography.css';
-@import './fallBackGsap.css';
