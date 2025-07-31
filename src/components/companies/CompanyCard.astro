@@ -8,8 +8,8 @@ const { title, services, link, bgColor, textColor, linkColor } = Astro.props;
   data-scroll="true"
   data-stagger-group="companies"
   data-delay="index"
+  data-ease="back.inOut"
 >
-  {/* // TODO: color and font variables */}
   <h3 class="mb-3 text-lg font-semibold">{title}</h3>
   <ul class="mb-4 ml-4 list-outside list-disc space-y-1 text-sm">
     {services.map((item) => <li>{item}</li>)}

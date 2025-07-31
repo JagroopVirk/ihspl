@@ -11,10 +11,10 @@ const { features = [], setStyle } = Astro.props;
         features.map((item, idx) => (
           <div
             class="bg-primary gsap-animate rounded-2xl p-6 shadow transition hover:shadow-md"
-            data-animation="fade"
             data-scroll="true"
             data-stagger-group="why-choose"
             data-delay="index"
+            data-ease="expo.out"
           >
             <div class="flex items-center gap-1.5 text-3xl">
               <div class="flex h-10 w-10 items-center text-white">
