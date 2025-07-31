@@ -1,6 +1,6 @@
 const siteUrl = 'https://indivirtus.com';
 const siteLogo = siteUrl + '/logo.png';
-const link = '/about/vision-mission-qualityPolicy';
+const link = '/about-us/vision-mission-qualityPolicy';
 
 export default {
   pageLink: `${siteUrl}${link}`,

@@ -1,6 +1,6 @@
 const siteUrl = 'https://indivirtus.com';
 const siteLogo = siteUrl + '/logo.png';
-const link = '/about/terms-policy';
+const link = '/about-us/terms-policy';
 
 export default {
   pageLink: `${siteUrl}${link}`,

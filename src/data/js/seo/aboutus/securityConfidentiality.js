@@ -1,6 +1,6 @@
 const siteUrl = 'https://indivirtus.com';
 const siteLogo = siteUrl + '/logo.png';
-const link = '/about/security-confidentiality';
+const link = '/about-us/security-confidentiality';
 
 export default {
   pageLink: `${siteUrl}${link}`,
