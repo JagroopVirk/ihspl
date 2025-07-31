@@ -44,12 +44,14 @@ import BTN from '@/components/other/BTN.astro';
             </ul>
 
             <div class="mt-4 transition-opacity delay-300 duration-500 md:opacity-0 md:group-hover:opacity-100">
-              <BTN
-                btnLink={service.link}
-                btnClass="buttonSimple text-secondary"
-                btnText="Learn More..."
-                btnArea={`Learn more about ${service.title}`}
-              />
+              <div class="buttonSimple">
+                <BTN
+                  btnLink={service.link}
+                  btnClass="buttonSimple text-secondary"
+                  btnText="Learn More..."
+                  btnArea={`Learn more about ${service.title}`}
+                />
+              </div>
             </div>
           </div>
           {/* </a> */}

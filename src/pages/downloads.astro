@@ -23,7 +23,17 @@ const { meta, faqSchema, gtm, pageLink, schema } = seoData;
   }}
   gtm={gtm}
 >
-  <DownloadGrid />
+  <section class="section">
+    <div class="maxwidth">
+      <h1>Brochures & <span class="halfHeading">Sample reports</span></h1>
+      <DownloadGrid />
+    </div>
+  </section>
 </Layout>
 
-style
+<style>
+  @reference "tailwindcss";
+  h1 {
+    @apply mb-8 md:mb-12 text-center;
+  }
+</style>

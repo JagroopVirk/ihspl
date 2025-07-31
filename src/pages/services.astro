@@ -26,7 +26,23 @@ const { meta, faqSchema, gtm, pageLink } = seoData;
   }}
   gtm={gtm}
 >
-  <main>
-    <ServiceCatalog services={services} />
-  </main>
+  <section
+    aria-labelledby="services-offerings-heading"
+    aria-describedby="services-offerings-description"
+    class="section"
+  >
+    <div class="maxwidth mx-auto px-4">
+      <h1 id="services-offerings-heading">
+        Browse Our <span class="halfHeading">Comprehensive Service Offerings</span>
+      </h1>
+      <ServiceCatalog services={services} />
+    </div>
+  </section>
 </Layout>
+<style>
+  @reference "tailwindcss";
+
+  h1 {
+    @apply mb-8 text-center;
+  }
+</style>

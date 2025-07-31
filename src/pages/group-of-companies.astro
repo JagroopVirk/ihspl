@@ -24,11 +24,19 @@ const { meta, faqSchema, gtm, pageLink, schema } = seoData;
   }}
   gtm={gtm}
 >
-  <section>
-    <div
-      class="maxwidth mx-auto mt-36 mb-12 grid grid-cols-1 justify-items-center gap-6 px-4 sm:grid-cols-2 md:grid-cols-3"
-    >
-      {cards.map((card) => <CompanyCard {...card} />)}
+  <section class="section">
+    <div class="maxwidth mx-auto px-4">
+      <h1>Indivirtus <span class="halfHeading">Group of Companies!</span></h1>
+      <div class="mb-12 grid grid-cols-1 justify-items-center gap-x-40 gap-y-20 px-4 sm:grid-cols-2 md:grid-cols-3">
+        {cards.map((card) => <CompanyCard {...card} />)}
+      </div>
     </div>
   </section>
 </Layout>
+
+<style>
+  @reference "tailwindcss";
+  h1 {
+    @apply mb-8 md:mb-16 text-center;
+  }
+</style>
