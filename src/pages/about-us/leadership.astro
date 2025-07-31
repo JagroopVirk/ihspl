@@ -1,5 +1,8 @@
 ---
 import Layout from '@/layouts/Layout.astro';
+import LeadershipCard from '@/components/aboutus/LeadershipCard.astro';
+
+import leaders from '@/data/js/aboutus/leadership';
 
 /// Importing the SEO and location schema
 import seoData from '@/data/js/seo/career.js';
@@ -21,11 +24,12 @@ const { meta, faqSchema, gtm, pageLink, schema } = seoData;
   }}
   gtm={gtm}
 >
-  <section class="section">
-    <div class="maxwidth">
-      <h3 class="pageHeading">
-        Opportunities <span class="halfHeading">@ Indivirtus!</span>
+  <section aria-labelledby="leadership-heading" class="section">
+    <div class="maxwidth mx-auto px-4 text-center">
+      <h3 id="leadership-heading" class="pageHeading">
+        Our Visionary <span class="halfHeading">Leadership Team</span>
       </h3>
+      <LeadershipCard leaders={leaders} />
     </div>
   </section>
 </Layout>

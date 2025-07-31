@@ -46,6 +46,10 @@ p,
   color: var(--color-secondary);
 }
 
+.pageHeading {
+  @apply text-3xl md:text-4xl text-center mb-8 md:mb-12;
+}
+
 /* navigation typography */
 
 .subMenuItem,

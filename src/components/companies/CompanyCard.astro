@@ -14,5 +14,6 @@ const { title, services, link, bgColor, textColor, linkColor } = Astro.props;
   <ul class="mb-4 ml-4 list-outside list-disc space-y-1 text-sm">
     {services.map((item) => <li>{item}</li>)}
   </ul>
+
   <a href={link} class={`${linkColor}`} target="_blank">View More Services +</a>
 </div>

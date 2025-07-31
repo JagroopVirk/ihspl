@@ -40,7 +40,7 @@ export default [
     bg: 'bg-blue-100',
     description: {
       name: 'Dr. Ashish Jain',
-      qualification: '',
+      qualification: 'Chartered Accountant ',
       details: ['22+ Years of experience in Marketing & Business Development in Domestic & Export'],
     },
   },
@@ -51,7 +51,7 @@ export default [
     bg: 'bg-yellow-100',
     description: {
       name: 'Dr. Randeep Singh',
-      qualification: '',
+      qualification: 'Master Of Commerce',
       details: ['22+ years of experience in Marketing & Business Development in Domestic & Export'],
     },
   },

@@ -4,9 +4,10 @@ export const navItems = [
     name: 'About us',
     href: '/about-us',
     submenu: [
-      { name: 'Vision, Mission and Quality Policy', href: '/about/vision-mission-qualityPolicy' },
-      { name: 'Security and Confidentiality', href: '/about/security-confidentiality' },
-      { name: 'Terms, Policy, Payments and Refunds', href: '/about/tearms-policy' },
+      { name: 'Leadership', href: '/about-us/leadership' },
+      { name: 'Vision, Mission and Quality Policy', href: '/about-us/vision-mission-qualityPolicy' },
+      { name: 'Security and Confidentiality', href: '/about-us/security-confidentiality' },
+      { name: 'Terms, Policy, Payments and Refunds', href: '/about-us/tearms-policy' },
     ],
   },
   {
