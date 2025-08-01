@@ -34,7 +34,7 @@ const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
     twitterCard: meta.twitterCard,
   }}
 >
-  <main id="main-content" aria-labelledby="page-title">
+  <div id="main-content" aria-labelledby="page-title">
     <HeroSection hero={hero} />
 
     <div class="maxwidth">
@@ -56,5 +56,5 @@ const { hero, main, cards, process, compliance, conclusion, cta } = pageContent;
       <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
       <Faq faqs={mainEntity} />
     </section>
-  </main>
+  </div>
 </Layout>

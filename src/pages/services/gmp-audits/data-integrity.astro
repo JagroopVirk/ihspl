@@ -33,7 +33,7 @@ const { hero, overview, approach, deliverables, compliance, applications, conclu
   }}
   gtm={gtm}
 >
-  <main id="main-content" aria-labelledby="page-title">
+  <div id="main-content" aria-labelledby="page-title">
     {/* Hero Section */}
     <HeroSection hero={hero} />
 
@@ -63,5 +63,5 @@ const { hero, overview, approach, deliverables, compliance, applications, conclu
       <h2 id="faq-heading" class="sr-only">Frequently Asked Questions</h2>
       <Faq faqs={mainEntity} />
     </section>
-  </main>
+  </div>
 </Layout>
