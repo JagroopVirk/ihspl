@@ -1,9 +1,14 @@
+//src\components\career\JobApplicationModal.jsx
+
 import { useState, useEffect } from 'react';
 import '@/styles/career/jobApplicationModal.css';
+
+import { useSubmitJobForm } from './useSubmitJobForm';
 
 export default function JobApplicationModal() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
+  const { submitApplication } = useSubmitJobForm();
 
   useEffect(() => {
     const handler = (e) => {
@@ -13,6 +18,23 @@ export default function JobApplicationModal() {
     window.addEventListener('open-job-modal', handler);
     return () => window.removeEventListener('open-job-modal', handler);
   }, []);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    try {
+      await submitApplication(formData);
+      alert('Application submitted successfully!');
+      setIsOpen(false);
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      alert('Failed to submit application.');
+    }
+  };
 
   if (!isOpen || !selectedJob) return null;
 
@@ -29,51 +51,8 @@ export default function JobApplicationModal() {
           &times;
         </button>
         <h3 className="mb-4 text-2xl font-semibold">Apply for {selectedJob.title}</h3>
-        <form
-          className="space-y-4"
-          onSubmit={async (e) => {
-            e.preventDefault();
 
-            const form = e.target;
-            const formData = new FormData(form);
-
-            const payload = {
-              name: formData.get('name'),
-              email: formData.get('email'),
-              phone: formData.get('phone'),
-              message: formData.get('message'),
-              resumeUrl: 'Uploaded Separately', // optional: use a file upload service
-            };
-
-            if (formData.get('website')) {
-              return; // likely a bot
-            }
-
-            try {
-              const response = await fetch(
-                'https://script.google.com/macros/s/AKfycbz1ysEFuq61SmGkkcZOUolKYyOBUQPLmkhZeNQZ0tjBcGK-1XWCPrnYAUDe3VK0lp-gHg/exec',
-                {
-                  method: 'POST',
-                  body: JSON.stringify(payload),
-                  headers: {
-                    'Content-Type': 'application/json',
-                  },
-                },
-              );
-
-              const result = await response.json();
-              if (result.result === 'success') {
-                alert('Application submitted successfully!');
-                form.reset();
-              } else {
-                alert('Something went wrong. Please try again.');
-              }
-            } catch (error) {
-              console.error(error);
-              alert('Error submitting form');
-            }
-          }}
-        >
+        <form className="space-y-4" onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="name" className="mb-1 block text-base font-medium">
               Name<span className="text-red-500">*</span>
@@ -148,14 +127,59 @@ export default function JobApplicationModal() {
             </label>
             <input type="text" id="website" name="website" placeholder="website" className="border text-base" />
           </div>
-          <button
-            type="submit"
-            className="button contactBtn mt-4 w-full rounded-md bg-teal-500 py-2 text-white hover:bg-teal-600"
-          >
+          <button type="submit" className="button contactBtn">
             Submit Application
           </button>
         </form>
       </div>
     </div>
   );
+}
+
+{
+  /* <form
+          className="space-y-4"
+          onSubmit={async (e) => {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            const payload = {
+              name: formData.get('name'),
+              email: formData.get('email'),
+              phone: formData.get('phone'),
+              message: formData.get('message'),
+              resumeUrl: 'Uploaded Separately', // optional: use a file upload service
+            };
+
+            if (formData.get('website')) {
+              return; // likely a bot
+            }
+
+            try {
+              const response = await fetch(
+                'https://script.google.com/macros/s/AKfycbz1ysEFuq61SmGkkcZOUolKYyOBUQPLmkhZeNQZ0tjBcGK-1XWCPrnYAUDe3VK0lp-gHg/exec',
+                {
+                  method: 'POST',
+                  body: JSON.stringify(payload),
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                },
+              );
+
+              const result = await response.json();
+              if (result.result === 'success') {
+                alert('Application submitted successfully!');
+                form.reset();
+              } else {
+                alert('Something went wrong. Please try again.');
+              }
+            } catch (error) {
+              console.error(error);
+              alert('Error submitting form');
+            }
+          }}
+        >*/
 }
