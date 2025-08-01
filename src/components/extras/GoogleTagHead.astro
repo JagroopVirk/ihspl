@@ -1,11 +1,12 @@
 ---
+// src/components/extras/GoogleTagHead.astro
 const googleTagID = 'GTM-XXXXXXX'; // Replace with your actual GTM ID
 const gtmUrl = `https://www.googletagmanager.com/gtm.js?id=${googleTagID}`;
 const nsUrl = `https://www.googletagmanager.com/ns.html?id=${googleTagID}`;
 ---
 
-{/* Google Tag Manager */}
-<script is:inline>
+<!-- Google Tag Manager -->
+<script define:vars={{ googleTagID }}>
   (function (w, d, s, l, i) {
     w[l] = w[l] || [];
     w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
@@ -15,6 +16,6 @@ const nsUrl = `https://www.googletagmanager.com/ns.html?id=${googleTagID}`;
     j.async = true;
     j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
     f.parentNode.insertBefore(j, f);
-  })(window, document, 'script', 'dataLayer', '{googleTagID}');
+  })(window, document, 'script', 'dataLayer', googleTagID);
 </script>
-{/* End Google Tag Manager */}
+<!-- End Google Tag Manager -->

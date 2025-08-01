@@ -1,3 +1,4 @@
+// src\data\js\seo\index.js
 const siteUrl = 'https://indivirtus.com';
 const siteLogo = siteUrl + '/logo.png';
 const link = '/';
