@@ -1,5 +1,5 @@
-// src/components/career/JobApplicationModal.jsx
 import { useState, useEffect } from 'react';
+import '@/styles/career/jobApplicationModal.css';
 
 export default function JobApplicationModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -17,7 +17,10 @@ export default function JobApplicationModal() {
   if (!isOpen || !selectedJob) return null;
 
   return (
-    <div className="bg-bg-opaque fixed inset-0 z-50 mt-10 flex h-fit justify-center" onClick={() => setIsOpen(false)}>
+    <div
+      className="modalBg fixed inset-0 z-[1000] flex items-center justify-center bg-black/30 backdrop-blur-sm"
+      onClick={() => setIsOpen(false)}
+    >
       <div className="relative w-full max-w-md rounded-lg bg-white p-6 shadow-lg" onClick={(e) => e.stopPropagation()}>
         <button
           onClick={() => setIsOpen(false)}
@@ -27,27 +30,84 @@ export default function JobApplicationModal() {
         </button>
         <h3 className="mb-4 text-2xl font-semibold">Apply for {selectedJob.title}</h3>
         <form className="space-y-4">
-          <div>
-            <label className="block text-sm font-medium">Full Name</label>
-            <input type="text" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
+          <div className="mb-4">
+            <label htmlFor="name" className="mb-1 block text-base font-medium">
+              Name<span className="text-red-500">*</span>
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Full Name"
+              required
+              className="focus:ring-input-focus w-full rounded-md border p-2 text-base focus:ring-1 focus:outline-none"
+            />
           </div>
-          <div>
-            <label className="block text-sm font-medium">Email</label>
-            <input type="email" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
+
+          <div className="mb-4">
+            <label htmlFor="email" className="mb-1 block text-base font-medium">
+              Email<span className="text-red-500">*</span>
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email address"
+              required
+              className="focus:ring-input-focus w-full rounded-md border p-2 text-base focus:ring-1 focus:outline-none"
+            />
           </div>
-          <div>
-            <label className="block text-sm font-medium">Phone</label>
-            <input type="tel" className="mt-1 block w-full rounded-md border-gray-300 shadow-sm" required />
+
+          <div className="mb-4">
+            <label htmlFor="phone" className="mb-1 block text-base font-medium">
+              Phone
+            </label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Your phone number"
+              className="focus:ring-input-focus w-full rounded-md border p-2 text-base focus:ring-1 focus:outline-none"
+              required
+            />
           </div>
-          <div>
-            <label className="block text-sm font-medium">Upload Resume</label>
-            <input type="file" accept=".pdf,.doc,.docx" className="mt-1 block w-full rounded-md shadow-sm" required />
+
+          <div className="mb-4">
+            <label htmlFor="resume" className="mb-1 block text-base font-medium">
+              Upload Resume
+            </label>
+            <input
+              type="file"
+              id="resume"
+              accept=".pdf,.doc,.docx"
+              className="focus:ring-input-focus w-full rounded-md border p-2 text-base focus:ring-1 focus:outline-none"
+              required
+            />
           </div>
-          <div>
-            <label className="block text-sm font-medium">Cover Letter</label>
-            <textarea rows="4" className="mt-1 block w-full rounded-md shadow-sm" />
+
+          <div className="mb-4">
+            <label htmlFor="message" className="mb-1 block text-base font-medium">
+              Cover Letter<span className="text-red-500">*</span>
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write cover letter"
+              required
+              className="focus:ring-input-focus h-32 w-full rounded-md border p-2 text-base focus:ring-1 focus:outline-none"
+            ></textarea>
           </div>
-          <button type="submit" className="button contactBtn">
+
+          <div className="mb-4 hidden">
+            <label htmlFor="website" className="mb-1 block text-base font-medium">
+              Website
+            </label>
+            <input type="text" id="website" name="website" placeholder="website" className="border text-base" />
+          </div>
+          <button
+            type="submit"
+            className="button contactBtn mt-4 w-full rounded-md bg-teal-500 py-2 text-white hover:bg-teal-600"
+          >
             Submit Application
           </button>
         </form>
