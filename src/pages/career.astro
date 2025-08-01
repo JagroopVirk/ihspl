@@ -1,8 +1,15 @@
 ---
+// src\pages\career.astro
+
 import Layout from '@/layouts/Layout.astro';
+
+import JobCard from '@/components/career/JobCard.astro';
+import JobApplicationModal from '@/components/career/JobApplicationModal.jsx';
 
 /// Importing the SEO and location schema
 import seoData from '@/data/js/seo/career.js';
+
+import jobs from '@/data/js/jobOpenings';
 
 const { meta, faqSchema, gtm, pageLink, schema } = seoData;
 ---
@@ -26,6 +33,8 @@ const { meta, faqSchema, gtm, pageLink, schema } = seoData;
       <h3 class="pageHeading">
         Opportunities <span class="halfHeading">@ Indivirtus!</span>
       </h3>
+      <JobCard jobs={jobs} />
+      <JobApplicationModal client:load />
     </div>
   </section>
 </Layout>

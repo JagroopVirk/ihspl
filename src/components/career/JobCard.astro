@@ -1,0 +1,34 @@
+---
+const { jobs } = Astro.props;
+---
+
+<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+  {
+    jobs.map((job) => (
+      <div class="rounded-lg bg-white p-6 shadow-md transition-shadow duration-300 hover:shadow-lg">
+        <h3 class=" ">{job.title}</h3>
+        <p class="mt-2">Department: {job.department}</p>
+        <p class="">Positions: {job.noOfPositions}</p>
+        <p class="mt-4">{job.jobDescription}</p>
+        <p class="mt-2">Experience: {job.relevantExperience}</p>
+        <p class="">CTC: {job.offeredCTC}</p>
+        <p class="mt-2">
+          Location: {job.location} | {job.type}
+        </p>
+        <p class="mt-2">Posted on: {job.posted}</p>
+        <button class="button contactBtn mt-4" data-job={JSON.stringify(job)}>
+          Apply Now
+        </button>
+      </div>
+    ))
+  }
+</div>
+
+<script client:load>
+  document.querySelectorAll('button[data-job]').forEach((btn) => {
+    btn.addEventListener('click', () => {
+      const job = JSON.parse(btn.dataset.job);
+      window.dispatchEvent(new CustomEvent('open-job-modal', { detail: job }));
+    });
+  });
+</script>
