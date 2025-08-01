@@ -4,18 +4,18 @@ import electroTechnicalCalibration from '@/assets/calibration/electro-technical-
 import pressureVacuumCalibration from '@/assets/calibration/pressure-vacuum-calibration.jpg';
 import mechanicalCalibration from '@/assets/calibration/mechanical-calibration.jpg';
 import massVolumeCalibration from '@/assets/calibration/mass-volume-calibration.jpg';
-import specializedCalibration from '@/assets/calibration/specialized-calibration.jpg';
+import otherCalibration from '@/assets/calibration/other-calibration.jpg';
 const baseLink = '/services/calibration';
 
 export default {
   slug: 'calibration',
   service_id: 'cro-nabl-calibration-lab',
   report_type: 'NABL Accredited Calibration Services',
-  title: 'NABL-Accredited Calibration Lab for Pharma Instruments',
+  title: 'NABL-Accredited Calibration Lab for Instruments',
   name: 'Accurate Calibration of Thermal, Electrical, Mechanical, Pressure/Vacuum, Mass/Volume & Other Instruments',
-  description: 'Precise calibration services for critical pharmaceutical instruments, backed by NABL accreditation.',
+  description: 'Calibration services for critical instruments, backed by NABL accreditation.',
   full_description:
-    'Our NABL-accredited calibration lab offers full-spectrum support to pharmaceutical CROs, ensuring accuracy and compliance of analytical, lab, production, and utility instruments. We calibrate thermal and humidity devices, electro‑technical meters, mechanical gauges, pressure/vacuum instruments, mass/volume equipment, and a variety of specialty meters. Each service is underpinned by traceable procedures and recognized across global regulators.',
+    'Our NABL-accredited calibration lab offers full-spectrum support, ensuring accuracy and compliance of analytical lab, production, and utility instruments. We calibrate thermal and humidity devices, electro-technical meters, mechanical gauges, pressure/vacuum instruments, mass/volume equipment, and a variety of specialty meters. Each service is underpinned by traceable procedures and recognized across global regulators.',
   estimated_duration: '2-5 business days per instrument (depends on queue and scope)',
   deliverables: [
     'Accredited Calibration Certificate',
@@ -50,7 +50,7 @@ export default {
     main: {
       heading: 'Our <span class="halfHeading">Calibration Services</span>',
       detail:
-        'Our NABL-accredited Contract Research Organization (CRO) offers comprehensive calibration services tailored for the pharmaceutical industry. From thermal and electro-technical calibration to mechanical, pressure, and mass/volume measurements, we ensure your equipment delivers precise, reliable, and compliant results.\n\nThese services are vital for maintaining Good Manufacturing Practices (GMP), ensuring product quality, and meeting stringent regulatory standards set by bodies like the FDA, EMA, and CDSCO. Our calibration solutions support pharmaceutical manufacturers, biotech firms, research laboratories, and quality assurance teams, helping them achieve operational excellence and regulatory compliance.',
+        'Our <strong>NABL-accredited</strong> Calibration Lab offers comprehensive calibration services tailored for the pharmaceutical industry. From thermal and electro-technical calibration to mechanical, pressure, and mass/volume measurements, we ensure your equipment delivers precise, reliable, and compliant results.\n\nThese services are vital for maintaining Good Manufacturing Practices (GMP), ensuring product quality, and meeting stringent regulatory standards set by bodies like the FDA, EMA, and CDSCO. Our calibration solutions support pharmaceutical manufacturers, biotech firms, research laboratories, and quality assurance teams, helping them achieve operational excellence and regulatory compliance.',
     },
     cards: {
       heading: 'Our <span class="halfHeading">Calibration Expertise</span>',
@@ -102,10 +102,10 @@ export default {
         },
         {
           icon: '🔬',
-          image: specializedCalibration,
-          title: 'Specialized Calibration',
-          items: ['pH Meters & ORP', 'Conductivity & TDS Meters', 'Flow Meters', 'Specialized Lab Equipment'],
-          link: baseLink + '/specialized-calibration',
+          image: otherCalibration,
+          title: 'other Calibration',
+          items: ['pH Meters & ORP', 'Conductivity & TDS Meters', 'Flow Meters', 'Other Lab Equipment'],
+          link: baseLink + '/other-calibration',
         },
       ],
     },
@@ -177,7 +177,7 @@ export default {
     conclusion: {
       heading: 'Why Partner <span class="halfHeading">with Us?</span>',
       detail:
-        'Our NABL-accredited CRO delivers precise, reliable, and compliant calibration services to keep your pharmaceutical operations running smoothly. With expertise across thermal, electro-technical, mechanical, and specialized calibration, we help you meet global regulatory standards, ensure product quality, and maintain operational efficiency.\n\nChoose us for trusted calibration solutions that empower your success in the pharmaceutical industry.',
+        'Our NABL-accredited CRO delivers precise, reliable, and compliant calibration services to keep your pharmaceutical operations running smoothly. With expertise across thermal, electro-technical, mechanical, and other calibration, we help you meet global regulatory standards, ensure product quality, and maintain operational efficiency.\n\nChoose us for trusted calibration solutions that empower your success in the pharmaceutical industry.',
     },
     cta: {
       heading: 'Need Precision Calibration for Your Equipment?',
@@ -382,7 +382,7 @@ export default {
         name: 'How does your CRO support multi-disciplinary calibration needs?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Our CRO provides comprehensive calibration services across thermal, electro-technical, mechanical, pressure/vacuum, mass/volume, and other specialized areas, ensuring all pharmaceutical equipment meets stringent quality and regulatory standards.',
+          text: 'Our CRO provides comprehensive calibration services across thermal, electro-technical, mechanical, pressure/vacuum, mass/volume, and other other areas, ensuring all pharmaceutical equipment meets stringent quality and regulatory standards.',
         },
       },
       {

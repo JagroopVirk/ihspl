@@ -68,8 +68,9 @@ export default {
         {
           icon: '💾',
           image: pvDatabase,
-          title: 'PV Database Setup',
+          title: 'PV Sytem Setup',
           items: [
+            'End to end PV System Setup',
             'Argus, Veeva Vault implementation',
             'MedDRA/WHO-DD coding',
             'E2B R3 data exchange',
@@ -159,7 +160,7 @@ export default {
         {
           icon: '✅',
           image: complianceAudit,
-          title: 'Compliance & Audit Support',
+          title: 'OMS & Audit Support',
           items: [
             'PV compliance monitoring',
             'Audit/inspection preparation',
@@ -195,13 +196,8 @@ export default {
         {
           icon: '🎓',
           image: pvTraining,
-          title: 'PV Training & Setup',
-          items: [
-            'GVP & ICH E2E training',
-            'PV system setup for MAHs',
-            'Train-the-trainer workshops',
-            'Custom PV process design',
-          ],
+          title: 'PV Training',
+          items: ['GVP & ICH E2E training', 'Train-the-trainer workshops', 'Custom PV process design'],
           link: baseLink + '/pv-training',
         },
       ],

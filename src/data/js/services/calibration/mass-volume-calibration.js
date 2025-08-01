@@ -6,13 +6,13 @@ export default {
   parentSlug: 'calibration',
   service_id: 'MVC-002',
   report_type: 'NABL Accredited Calibration Certificate',
-  title: 'Pharmaceutical-Grade Mass & Volume Calibration Services',
+  title: 'Grade Mass & Volume Calibration Services',
   name: 'Mass & Volume Calibration',
   description:
-    'ISO/IEC 17025:2017 accredited calibration of weighing instruments and volumetric devices for GMP-compliant pharmaceutical operations.',
+    'ISO/IEC 17025:2017 accredited calibration of weighing instruments and volumetric devices for GMP-compliant operations.',
   full_description:
-    'Indivirtus Healthcare Services Pvt. Ltd. delivers NABL-accredited Mass & Volume Calibration with pharmaceutical-grade precision (up to 0.001mg for balances, ±0.1% for volumetric devices). Our comprehensive services cover analytical balances (0.1mg–30kg), microbalances, pipettes (0.1μL–100mL), burettes, and certified weights (Class E1 to M3). Using automated gravimetric systems and reference standards traceable to NIST, we ensure compliance with USP <41>, USP <1251>, ISO 8655, and OIML R111 standards. Each calibration includes measurement uncertainty analysis, environmental condition recording, and full documentation for FDA/EMA audit readiness.',
-  estimated_duration: '3–5 working days (express 24/48-hour service available)',
+    'Indivirtus Healthcare Services Pvt. Ltd. delivers NABL-accredited Mass & Volume Calibration with grade precision. Our comprehensive services cover analytical balances, microbalances, pipettes, burettes, and certified weights. Using automated gravimetric systems and reference standards traceable to NIST, we ensure compliance with USP <41>, USP <1251>, ISO 8655, and OIML R111 standards. Each calibration includes measurement uncertainty analysis, environmental condition recording, and full documentation for FDA/EMA audit readiness.',
+  estimated_duration: '3-5 working days (express 24/48-hour service available)',
   deliverables: [
     'NABL-accredited Calibration Certificate',
     'Measurement Uncertainty Analysis Report',
@@ -30,7 +30,7 @@ export default {
   ],
   requires_data_from_client: true,
   target_industry: [
-    'Pharmaceutical Manufacturing',
+    'Manufacturing',
     'Biotechnology Research',
     'Clinical Trial Laboratories',
     'Medical Device Production',
@@ -39,7 +39,7 @@ export default {
   expertise_area: [
     'Gravimetric Analysis',
     'Measurement Uncertainty Calculation',
-    'Pharmaceutical Metrology',
+    'Metrology',
     'Quality Control Instrumentation',
     'Regulatory Compliance',
   ],
@@ -48,15 +48,15 @@ export default {
   icon: '🧪⚖️',
   image: {
     path: serviceImage,
-    alt: 'NABL-accredited pharmaceutical mass and volume calibration',
+    alt: 'NABL-accredited mass and volume calibration',
     caption: 'Precision calibration of analytical balances and pipettes in controlled environment',
   },
   pageContent: {
     hero: {
-      heading: "Mass & Volume Calibration for <span class='halfHeading'>Pharmaceutical Precision</span>",
+      heading: "Mass & Volume Calibration for <span class='halfHeading'>Precision</span>",
       tagline: 'Ensure GMP Compliance with NABL-Accredited Calibration Solutions',
       detail:
-        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>NABL-accredited mass and volume calibration services</strong> deliver ISO/IEC 17025:2017-compliant validation for analytical balances, pipettes, and other critical devices. We ensure <strong>pharmaceutical-grade precision</strong> to meet global regulatory standards, safeguarding the accuracy and integrity of your operations.',
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>NABL-accredited mass and volume calibration services</strong> deliver ISO/IEC 17025:2017-compliant validation for analytical balances, pipettes, and other critical devices. We ensure <strong>grade precision</strong> to meet global regulatory standards, safeguarding the accuracy and integrity of your operations.',
     },
     overview: {
       heading: "Mastering Calibration <span class='halfHeading'>Accuracy</span>",
@@ -64,25 +64,25 @@ export default {
         {
           heading: 'What is Mass & Volume Calibration?',
           detail:
-            'Our NABL-accredited services validate the accuracy of weighing instruments (0.1mg–30kg) and volumetric devices (0.1μL–100mL), including analytical balances, microbalances, pipettes, burettes, and certified weights, ensuring <strong>precision in measurements</strong> for pharmaceutical applications.',
+            'Our NABL-accredited services validate the accuracy of weighing instruments and volumetric devices, including analytical balances, microbalances, pipettes, burettes, and certified weights, ensuring <strong>precision in measurements</strong> for applications.',
         },
         {
           heading: 'Why is it Critical?',
           detail:
-            'Precise calibration is essential for ensuring <strong>accurate dosing</strong>, formulation, and quality control in pharmaceutical operations. Our services meet stringent GMP and pharmacopeia standards, minimizing risks and ensuring regulatory compliance.',
+            'Precise calibration is essential for ensuring <strong>accurate dosing</strong>, formulation, and quality control in operations. Our services meet stringent GMP and pharmacopeia standards, minimizing risks and ensuring regulatory compliance.',
         },
         {
           heading: 'Our Role in Your Compliance',
           detail:
-            'Indivirtus Healthcare Services supports pharmaceutical companies with <strong>traceable, high-precision calibration</strong> to enhance operational efficiency, ensure audit readiness, and deliver reliable, high-quality outputs across your processes.',
+            'Indivirtus Healthcare Services supports companies with <strong>traceable, high-precision calibration</strong> to enhance operational efficiency, ensure audit readiness, and deliver reliable, high-quality outputs across your processes.',
         },
       ],
     },
     approach: {
       heading: "Our Expert <span class='halfHeading'>Calibration Approach</span>",
       detail: [
-        'At Indivirtus Healthcare Services, we deliver <strong>precision-driven calibration</strong> using cutting-edge automated gravimetric systems and NIST-traceable reference standards. Our process achieves unparalleled accuracy (up to 0.001mg for balances, ±0.1% for volumetric devices), with meticulous recording of environmental conditions to ensure compliance with FDA and EMA audit requirements.',
-        'We tailor our calibration services to your specific equipment needs, providing <strong>customized solutions</strong> that optimize performance in critical pharmaceutical processes. Our certified professionals ensure your instruments operate within specified tolerances, enhancing <strong>quality control</strong> and maintaining regulatory confidence.',
+        'At Indivirtus Healthcare Services, we deliver <strong>precision-driven calibration</strong> using cutting-edge automated gravimetric systems and NIST-traceable reference standards. Our process achieves unparalleled accuracy, with meticulous recording of environmental conditions to ensure compliance with FDA and EMA audit requirements.',
+        'We tailor our calibration services to your specific equipment needs, providing <strong>customized solutions</strong> that optimize performance in critical processes. Our certified professionals ensure your instruments operate within specified tolerances, enhancing <strong>quality control</strong> and maintaining regulatory confidence.',
       ],
     },
     deliverables: {
@@ -98,7 +98,7 @@ export default {
     compliance: {
       heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our mass and volume calibration services adhere to the highest global standards, ensuring your instruments meet <strong>regulatory requirements</strong> and are audit-ready. By aligning with industry-leading guidelines, we provide confidence in the accuracy and compliance of your pharmaceutical operations.',
+        'Our mass and volume calibration services adhere to the highest global standards, ensuring your instruments meet <strong>regulatory requirements</strong> and are audit-ready. By aligning with industry-leading guidelines, we provide confidence in the accuracy and compliance of your operations.',
       ],
       itemList: [
         '<strong>ISO/IEC 17025:2017</strong>: International standard for calibration and testing laboratories.',
@@ -112,13 +112,13 @@ export default {
     applications: {
       heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our calibration services are vital for pharmaceutical companies engaged in <strong>drug development</strong>, manufacturing, and quality assurance. Precise weighing and volumetric measurements are critical for accurate dosing, formulation, and quality control. Key use cases include calibrating analytical balances for <strong>API measurements</strong>, validating pipettes for precise liquid handling in labs, and ensuring certified weights meet OIML standards for quality control, supporting regulatory audits and global market compliance.',
+        'Our calibration services are vital for companies engaged in <strong>drug development</strong>, manufacturing, and quality assurance. Precise weighing and volumetric measurements are critical for accurate dosing, formulation, and quality control. Key use cases include calibrating analytical balances for <strong>API measurements</strong>, validating pipettes for precise liquid handling in labs, and ensuring certified weights meet OIML standards for quality control, supporting regulatory audits and global market compliance.',
       ],
     },
     conclusion: {
       heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Indivirtus Healthcare Services combines certified expertise and global regulatory knowledge to deliver unmatched mass and volume calibration solutions. Our team ensures <strong>scientifically defensible results</strong>, rapid turnaround times, and strict confidentiality to protect your proprietary data. With a commitment to precision and compliance, we help you achieve <strong>operational excellence</strong> and maintain trust in your pharmaceutical processes.',
+        'Indivirtus Healthcare Services combines certified expertise and global regulatory knowledge to deliver unmatched mass and volume calibration solutions. Our team ensures <strong>scientifically defensible results</strong>, rapid turnaround times, and strict confidentiality to protect your proprietary data. With a commitment to precision and compliance, we help you achieve <strong>operational excellence</strong> and maintain trust in your processes.',
       ],
     },
     cta: {
@@ -130,7 +130,7 @@ export default {
   gtm: {
     eventCategory: 'Pharma Metrology Services',
     eventAction: 'View Mass & Volume Calibration',
-    eventLabel: 'Pharmaceutical Weighing Calibration Inquiry',
+    eventLabel: 'Weighing Calibration Inquiry',
     customDimensions: {
       serviceTier: 'NABL Accredited',
       complianceLevel: 'USP/EP/JP Compliant',
@@ -138,13 +138,13 @@ export default {
     dataLayerPush: {
       reportType: ['NABL Certificate', 'GMP Compliance Report'],
       certification: 'ISO/IEC 17025:2017',
-      measurementCapability: 'Balance: ±0.001mg | Pipettes: ±0.1%',
+      measurementCapability: 'Balance | Pipettes',
     },
   },
   schema: {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'Pharmaceutical Mass & Volume Metrology',
+    name: 'Mass & Volume Metrology',
     description:
       'NABL-accredited calibration of weighing and volumetric instruments for drug development, manufacturing, and quality control applications.',
     serviceType: ['CalibrationService', 'LaboratoryService'],
@@ -181,7 +181,7 @@ export default {
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Pharmaceutical Mass & Volume Calibration',
+      name: 'Mass & Volume Calibration',
       itemListElement: [
         {
           '@type': 'Offer',
@@ -201,8 +201,7 @@ export default {
           itemOffered: {
             '@type': 'Service',
             name: 'Microbalance Validation',
-            description:
-              'Sub-microgram calibration (0.001mg resolution) for dissolution testing and reference standard preparation',
+            description: 'Sub-microgram calibration for dissolution testing and reference standard preparation',
           },
         },
         {
@@ -211,7 +210,7 @@ export default {
             '@type': 'Service',
             name: 'Pipette Calibration',
             description:
-              'Gravimetric calibration of single/multi-channel pipettes (0.1μL–10mL) with Z-factor calculation per ISO 8655',
+              'Gravimetric calibration of single/multi-channel pipettes with Z-factor calculation per ISO 8655',
           },
         },
         {
@@ -251,7 +250,7 @@ export default {
         name: 'What measurement standards do you follow for balance calibration?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We adhere to: • USP <41> for balance qualification • OIML R76 for non-automatic weighing instruments • ISO 17025 for measurement uncertainty • Manufacturer specifications with strict adherence to repeatability (≤2%), eccentricity (≤1%), and linearity (≤0.1%) requirements for pharmaceutical applications.',
+          text: 'We adhere to: • USP <41> for balance qualification • OIML R76 for non-automatic weighing instruments • ISO 17025 for measurement uncertainty • Manufacturer specifications with strict adherence to repeatability, eccentricity, and linearity requirements for applications.',
         },
       },
       {
@@ -291,7 +290,7 @@ export default {
         name: 'What is NABL-accredited mass and volume calibration?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'NABL-accredited mass and volume calibration ensures that weighing instruments and volumetric devices meet precise measurement standards as per ISO/IEC 17025:2017. This is critical for pharmaceutical operations to ensure accuracy, compliance, and product safety.',
+          text: 'NABL-accredited mass and volume calibration ensures that weighing instruments and volumetric devices meet precise measurement standards as per ISO/IEC 17025:2017. This is critical for operations to ensure accuracy, compliance, and product safety.',
         },
       },
       {
@@ -299,7 +298,7 @@ export default {
         name: 'Which instruments can Indivirtus calibrate?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We calibrate analytical balances (0.1mg–30kg), microbalances, pipettes (0.1μL–100mL), burettes, and certified weights (Class E1 to M3), ensuring precision for a wide range of pharmaceutical applications.',
+          text: 'We calibrate analytical balances (0.1mg–30kg), microbalances, pipettes (0.1μL–100mL), burettes, and certified weights (Class E1 to M3), ensuring precision for a wide range of applications.',
         },
       },
       {
@@ -331,7 +330,7 @@ export default {
         name: 'Why is measurement uncertainty analysis important?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Measurement uncertainty analysis quantifies the reliability of your measurements, ensuring confidence in results and compliance with stringent pharmaceutical standards like USP and OIML.',
+          text: 'Measurement uncertainty analysis quantifies the reliability of your measurements, ensuring confidence in results and compliance with stringent standards like USP and OIML.',
         },
       },
     ],
@@ -339,10 +338,10 @@ export default {
   meta: {
     title: 'NABL-Accredited Mass & Volume Calibration for Pharma | Indivirtus',
     description:
-      'ISO 17025 compliant calibration of balances, pipettes, and volumetric glassware for pharmaceutical QC labs and manufacturing—USP/EP/JP compliant with full traceability.',
+      'ISO 17025 compliant calibration of balances, pipettes, and volumetric glassware for QC labs and manufacturing—USP/EP/JP compliant with full traceability.',
     keywords: [
       'NABL accredited mass calibration',
-      'Pharmaceutical pipette calibration',
+      'pipette calibration',
       'GMP balance verification',
       'USP <41> compliance',
       '21 CFR Part 11 metrology',

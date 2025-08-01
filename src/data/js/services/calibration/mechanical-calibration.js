@@ -6,12 +6,12 @@ export default {
   parentSlug: 'calibration',
   service_id: 'MC-003',
   report_type: 'NABL Accredited Calibration Certificate',
-  title: 'Pharmaceutical Mechanical Calibration Services | NABL Accredited',
+  title: 'Mechanical Calibration Services | NABL Accredited',
   name: 'Mechanical Calibration',
   description:
-    'ISO/IEC 17025:2017 accredited calibration of dimensional, speed, and acoustic instruments for GMP-compliant pharmaceutical operations.',
+    'ISO/IEC 17025:2017 accredited calibration of dimensional, speed, and acoustic instruments for GMP-compliant operations.',
   full_description:
-    'Indivirtus Healthcare Services Pvt. Ltd. provides NABL-accredited Mechanical Calibration with pharmaceutical-grade precision (±1μm for dimensional tools, ±0.1% for tachometers, ±0.5dB for sound meters). Our comprehensive services cover micrometers (0-300mm), calipers (0-1000mm), tachometers (10-100,000 RPM), sound level meters (30-130dB), and torque wrenches (0.1-300Nm). Using laser interferometers, accredited reference standards, and automated test systems traceable to NIST, we ensure compliance with ISO 9001, ISO 13485, and 21 CFR Part 820 requirements. Each calibration includes environmental compensation, measurement uncertainty analysis, and full documentation for regulatory audits.',
+    'Indivirtus Healthcare Services Pvt. Ltd. provides NABL-accredited Mechanical Calibration with grade precision (±1μm for dimensional tools, ±0.1% for tachometers, ±0.5dB for sound meters). Our comprehensive services cover micrometers (0-300mm), calipers (0-1000mm), tachometers (10-100,000 RPM), sound level meters (30-130dB), and torque wrenches (0.1-300Nm). Using laser interferometers, accredited reference standards, and automated test systems traceable to NIST, we ensure compliance with ISO 9001, ISO 13485, and 21 CFR Part 820 requirements. Each calibration includes environmental compensation, measurement uncertainty analysis, and full documentation for regulatory audits.',
   estimated_duration: '3–5 working days (emergency 24-hour service available for critical equipment)',
   deliverables: [
     'NABL-accredited Calibration Certificate',
@@ -30,7 +30,7 @@ export default {
   ],
   requires_data_from_client: true,
   target_industry: [
-    'Pharmaceutical Manufacturing',
+    'Manufacturing',
     'Medical Device Production',
     'Biotechnology Research',
     'Cleanroom Equipment Validation',
@@ -48,15 +48,15 @@ export default {
   icon: '📏🎚️',
   image: {
     path: serviceImage,
-    alt: 'NABL-accredited mechanical calibration for pharmaceutical equipment',
+    alt: 'NABL-accredited mechanical calibration for equipment',
     caption: 'Precision calibration of micrometers and tachometers in controlled laboratory environment',
   },
   pageContent: {
     hero: {
-      heading: "Mechanical Calibration for <span class='halfHeading'>Pharmaceutical Precision</span>",
+      heading: "Mechanical Calibration for <span class='halfHeading'>Precision</span>",
       tagline: 'Ensure GMP Compliance with NABL-Accredited Calibration Solutions',
       detail:
-        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>NABL-accredited mechanical calibration services</strong> deliver ISO/IEC 17025:2017-compliant validation for dimensional, speed, and acoustic instruments. We ensure <strong>pharmaceutical-grade precision</strong> to meet stringent global regulatory standards, safeguarding the accuracy and integrity of your manufacturing processes.',
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>NABL-accredited mechanical calibration services</strong> deliver ISO/IEC 17025:2017-compliant validation for dimensional, speed, and acoustic instruments. We ensure <strong>grade precision</strong> to meet stringent global regulatory standards, safeguarding the accuracy and integrity of your manufacturing processes.',
     },
     overview: {
       heading: "Mastering Mechanical <span class='halfHeading'>Calibration</span>",
@@ -64,17 +64,17 @@ export default {
         {
           heading: 'What is Mechanical Calibration?',
           detail:
-            'Our NABL-accredited services validate dimensional (0-300mm), speed (10–100,000 RPM), and acoustic (30–130 dB) instruments, including micrometers, calipers, tachometers, sound level meters, and torque wrenches (0.1–300 Nm), ensuring <strong>precision in measurements</strong> for pharmaceutical and medical device applications.',
+            'Our NABL-accredited services validate dimensional (0-300mm), speed (10–100,000 RPM), and acoustic (30–130 dB) instruments, including micrometers, calipers, tachometers, sound level meters, and torque wrenches (0.1–300 Nm), ensuring <strong>precision in measurements</strong> for and medical device applications.',
         },
         {
           heading: 'Why is it Critical?',
           detail:
-            'Accurate calibration is vital for ensuring <strong>process reliability</strong>, product quality, and compliance with GMP and regulatory standards in pharmaceutical manufacturing and medical device production, minimizing risks of non-compliance.',
+            'Accurate calibration is vital for ensuring <strong>process reliability</strong>, product quality, and compliance with GMP and regulatory standards in manufacturing and medical device production, minimizing risks of non-compliance.',
         },
         {
           heading: 'Our Role in Your Compliance',
           detail:
-            'Indivirtus Healthcare Services provides <strong>traceable, high-precision calibration</strong> to enhance operational efficiency and ensure audit readiness, empowering pharmaceutical companies with reliable instrument performance for seamless operations.',
+            'Indivirtus Healthcare Services provides <strong>traceable, high-precision calibration</strong> to enhance operational efficiency and ensure audit readiness, empowering companies with reliable instrument performance for seamless operations.',
         },
       ],
     },
@@ -82,7 +82,7 @@ export default {
       heading: "Our Expert <span class='halfHeading'>Calibration Approach</span>",
       detail: [
         'At Indivirtus Healthcare Services, we deliver <strong>precision-driven calibration</strong> using advanced laser interferometers, automated test systems, and NPL/NIST-traceable reference standards, achieving exceptional accuracy (±1μm for dimensional tools, ±0.1% for tachometers, ±0.5 dB for sound meters). Our certified professionals perform environmental compensation and measurement uncertainty analysis to ensure reliable, compliant results.',
-        'We tailor our calibration services to your specific pharmaceutical and medical device requirements, providing <strong>customized solutions</strong> that optimize performance in critical processes. Our comprehensive documentation supports FDA, EMA, and other regulatory audits, ensuring your instruments maintain <strong>GMP compliance</strong> and operational reliability.',
+        'We tailor our calibration services to your specific and medical device requirements, providing <strong>customized solutions</strong> that optimize performance in critical processes. Our comprehensive documentation supports FDA, EMA, and other regulatory audits, ensuring your instruments maintain <strong>GMP compliance</strong> and operational reliability.',
       ],
     },
     deliverables: {
@@ -98,7 +98,7 @@ export default {
     compliance: {
       heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our mechanical calibration services adhere to stringent global standards, ensuring your instruments meet <strong>regulatory requirements</strong> and are audit-ready for GMP-compliant operations. By aligning with industry-leading guidelines, we provide confidence in the accuracy and compliance of your pharmaceutical and medical device processes.',
+        'Our mechanical calibration services adhere to stringent global standards, ensuring your instruments meet <strong>regulatory requirements</strong> and are audit-ready for GMP-compliant operations. By aligning with industry-leading guidelines, we provide confidence in the accuracy and compliance of your and medical device processes.',
       ],
       itemList: [
         '<strong>ISO/IEC 17025:2017</strong>: International standard for calibration and testing laboratories.',
@@ -112,13 +112,13 @@ export default {
     applications: {
       heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our mechanical calibration services are essential for pharmaceutical companies and medical device manufacturers engaged in <strong>manufacturing, quality control</strong>, and process validation. Accurate dimensional, speed, and acoustic measurements are critical for reliable operations and product quality. Key use cases include calibrating micrometers and calipers for precise component measurements, validating tachometers for equipment speed monitoring, and ensuring sound level meters meet <strong>occupational safety standards</strong>, supporting regulatory audits and global market compliance.',
+        'Our mechanical calibration services are essential for companies and medical device manufacturers engaged in <strong>manufacturing, quality control</strong>, and process validation. Accurate dimensional, speed, and acoustic measurements are critical for reliable operations and product quality. Key use cases include calibrating micrometers and calipers for precise component measurements, validating tachometers for equipment speed monitoring, and ensuring sound level meters meet <strong>occupational safety standards</strong>, supporting regulatory audits and global market compliance.',
       ],
     },
     conclusion: {
       heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Indivirtus Healthcare Services combines certified expertise and global regulatory knowledge to deliver unmatched mechanical calibration solutions. Our team ensures <strong>scientifically defensible results</strong>, rapid turnaround times, and strict confidentiality to protect your proprietary data. With a commitment to precision and compliance, we help you achieve <strong>operational excellence</strong> and maintain trust in your pharmaceutical and medical device processes.',
+        'Indivirtus Healthcare Services combines certified expertise and global regulatory knowledge to deliver unmatched mechanical calibration solutions. Our team ensures <strong>scientifically defensible results</strong>, rapid turnaround times, and strict confidentiality to protect your proprietary data. With a commitment to precision and compliance, we help you achieve <strong>operational excellence</strong> and maintain trust in your and medical device processes.',
       ],
     },
     cta: {
@@ -130,7 +130,7 @@ export default {
   gtm: {
     eventCategory: 'Pharma Metrology Services',
     eventAction: 'View Mechanical Calibration',
-    eventLabel: 'Pharmaceutical Mechanical Calibration Inquiry',
+    eventLabel: 'Mechanical Calibration Inquiry',
     customDimensions: {
       serviceTier: 'NABL Accredited',
       complianceLevel: 'FDA/EMA Compliant',
@@ -144,9 +144,9 @@ export default {
   schema: {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'Pharmaceutical Mechanical Metrology',
+    name: 'Mechanical Metrology',
     description:
-      'NABL-accredited calibration of dimensional, speed, and acoustic measurement devices for pharmaceutical manufacturing and quality control.',
+      'NABL-accredited calibration of dimensional, speed, and acoustic measurement devices for manufacturing and quality control.',
     serviceType: ['CalibrationService', 'LaboratoryService'],
     provider: {
       '@type': 'Organization',
@@ -181,7 +181,7 @@ export default {
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Pharmaceutical Mechanical Calibration',
+      name: 'Mechanical Calibration',
       itemListElement: [
         {
           '@type': 'Offer',
@@ -292,7 +292,7 @@ export default {
         name: 'What is NABL-accredited mechanical calibration for dimensional, speed, and acoustic instruments?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'NABL-accredited mechanical calibration ensures that dimensional, speed, and acoustic instruments meet precise measurement standards as per ISO/IEC 17025:2017. This is critical for GMP-compliant pharmaceutical operations to ensure accuracy, compliance, and product quality.',
+          text: 'NABL-accredited mechanical calibration ensures that dimensional, speed, and acoustic instruments meet precise measurement standards as per ISO/IEC 17025:2017. This is critical for GMP-compliant operations to ensure accuracy, compliance, and product quality.',
         },
       },
       {
@@ -300,7 +300,7 @@ export default {
         name: 'Which instruments can Indivirtus calibrate for mechanical measurements?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We calibrate micrometers (0-300mm), calipers (0-1000mm), tachometers (10-100,000 RPM), sound level meters (30-130dB), and torque wrenches (0.1-300Nm) used in pharmaceutical and medical device manufacturing.',
+          text: 'We calibrate micrometers (0-300mm), calipers (0-1000mm), tachometers (10-100,000 RPM), sound level meters (30-130dB), and torque wrenches (0.1-300Nm) used in and medical device manufacturing.',
         },
       },
       {
@@ -332,7 +332,7 @@ export default {
         name: 'Why is environmental compensation important for mechanical calibration?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Environmental compensation accounts for factors like temperature and humidity that can affect measurement accuracy, ensuring reliable results in GMP-compliant pharmaceutical operations.',
+          text: 'Environmental compensation accounts for factors like temperature and humidity that can affect measurement accuracy, ensuring reliable results in GMP-compliant operations.',
         },
       },
     ],
@@ -340,10 +340,10 @@ export default {
   meta: {
     title: 'NABL-Accredited Mechanical Calibration for Pharma | Indivirtus',
     description:
-      'ISO 17025 compliant calibration of micrometers, tachometers, sound meters, and torque tools for pharmaceutical manufacturing—FDA/EMA compliant with full traceability.',
+      'ISO 17025 compliant calibration of micrometers, tachometers, sound meters, and torque tools for manufacturing—FDA/EMA compliant with full traceability.',
     keywords: [
       'NABL mechanical calibration',
-      'Pharmaceutical dimensional calibration',
+      'dimensional calibration',
       'GMP tachometer verification',
       'Cleanroom sound meter calibration',
       '21 CFR Part 820 metrology',

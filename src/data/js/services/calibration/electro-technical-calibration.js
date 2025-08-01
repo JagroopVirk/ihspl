@@ -9,10 +9,10 @@ export default {
   title: 'Electro-Technical Calibration Services for Pharma & Biotech',
   name: 'Electro-Technical Calibration',
   description:
-    'NABL-accredited calibration of electrical parameters for critical pharmaceutical equipment, ensuring measurement accuracy and regulatory compliance.',
+    'NABL-accredited calibration of electrical parameters for critical equipment, ensuring measurement accuracy and regulatory compliance.',
   full_description:
-    'Indivirtus Healthcare Services Pvt. Ltd. delivers ISO/IEC 17025:2017 accredited Electro-Technical Calibration with pharmaceutical-grade precision. Our specialized services cover comprehensive electrical parameter validation including AC/DC current (±0.5% accuracy), voltage (up to 1000V), resistance (0.1Ω–100MΩ), inductance (1μH–100H), and time/frequency (±0.01ppm). Utilizing certified reference standards and automated calibration systems, we ensure your laboratory instruments, production equipment, and quality control devices meet stringent GMP, WHO, and pharmacopeia requirements while maintaining full measurement traceability to NIST standards.',
-  estimated_duration: '3–5 working days (expedited options available)',
+    'Indivirtus Healthcare Services Pvt. Ltd. delivers ISO/IEC 17025:2017 accredited Electro-Technical Calibration with -grade precision. Our specialized services cover comprehensive electrical parameter validation including AC/DC current, voltage , resistance, inductance , and time/frequency. Utilizing certified reference standards and automated calibration systems, we ensure your laboratory instruments, production equipment, and quality control devices meet stringent GMP, WHO, and pharmacopeia requirements while maintaining full measurement traceability to NIST standards.',
+  estimated_duration: '3-5 working days (expedited options available)',
   deliverables: [
     'NABL-accredited Calibration Certificate',
     'Detailed Traceability Matrix',
@@ -28,15 +28,10 @@ export default {
     'WHO TRS 986',
   ],
   requires_data_from_client: true,
-  target_industry: [
-    'Pharmaceutical Manufacturing',
-    'Biotechnology',
-    'Medical Device Production',
-    'Clinical Research Organizations',
-  ],
+  target_industry: [' Manufacturing', 'Biotechnology', 'Medical Device Production', 'Clinical Research Organizations'],
   expertise_area: [
     'Electrical Metrology',
-    'Pharmaceutical Compliance',
+    ' Compliance',
     'Measurement Uncertainty Analysis',
     'Quality System Validation',
   ],
@@ -45,15 +40,15 @@ export default {
   icon: '⚡',
   image: {
     path: serviceImage,
-    alt: 'NABL-accredited electro-technical calibration of pharmaceutical testing equipment',
+    alt: 'NABL-accredited electro-technical calibration of testing equipment',
     caption: 'Precision calibration of multimeters and electrical test equipment in controlled laboratory environment',
   },
   pageContent: {
     hero: {
-      heading: "Precision Calibration for <span class='halfHeading'>Pharmaceutical Excellence</span>",
+      heading: "Precision Calibration for <span class='halfHeading'> Excellence</span>",
       tagline: 'Ensure Compliance with NABL-Accredited Calibration Solutions',
       detail:
-        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>NABL-accredited calibration services</strong> deliver ISO/IEC 17025:2017-compliant validation for pharmaceutical equipment. We ensure <strong>measurement accuracy</strong> and compliance with global regulatory standards, safeguarding the integrity of your processes and products.',
+        'At Indivirtus Healthcare Services Pvt. Ltd., our <strong>NABL-accredited calibration services</strong> deliver ISO/IEC 17025:2017-compliant validation for equipment. We ensure <strong>measurement accuracy</strong> and compliance with global regulatory standards, safeguarding the integrity of your processes and products.',
     },
     overview: {
       heading: "Mastering Calibration <span class='halfHeading'>Excellence</span>",
@@ -61,7 +56,7 @@ export default {
         {
           heading: 'What is Calibration?',
           detail:
-            'Our NABL-accredited calibration services validate critical electrical parameters for pharmaceutical equipment, ensuring <strong>precision in measurements</strong> for AC/DC current, voltage, resistance, inductance, and time/frequency, aligned with global standards.',
+            'Our NABL-accredited calibration services validate critical electrical parameters for equipment, ensuring <strong>precision in measurements</strong> for AC/DC current, voltage, resistance, inductance, and time/frequency, aligned with global standards.',
         },
         {
           heading: 'Why is it Critical?',
@@ -71,14 +66,14 @@ export default {
         {
           heading: 'Our Role in Your Compliance',
           detail:
-            'Indivirtus Healthcare Services provides <strong>traceable, high-precision calibration</strong> to enhance operational efficiency and ensure audit readiness, empowering pharmaceutical companies with reliable and compliant equipment performance.',
+            'Indivirtus Healthcare Services provides <strong>traceable, high-precision calibration</strong> to enhance operational efficiency and ensure audit readiness, empowering companies with reliable and compliant equipment performance.',
         },
       ],
     },
     approach: {
       heading: "Our Expert <span class='halfHeading'>Calibration Approach</span>",
       detail: [
-        'At Indivirtus Healthcare Services, we deliver <strong>precision-driven calibration</strong> using state-of-the-art automated systems and certified reference standards. Our process validates electrical parameters with pharmaceutical-grade accuracy (±0.5% for current, up to 1000V for voltage, and more), ensuring traceability to NIST standards and compliance with global benchmarks.',
+        'At Indivirtus Healthcare Services, we deliver <strong>precision-driven calibration</strong> using state-of-the-art automated systems and certified reference standards. Our process validates electrical parameters with -grade accuracy, ensuring traceability to NIST standards and compliance with global benchmarks.',
         'We adopt a tailored approach, understanding your equipment’s unique requirements to provide <strong>customized calibration solutions</strong>. From laboratory instruments to production machinery, our certified professionals ensure your equipment operates within specified tolerances, minimizing risks and enhancing <strong>quality control</strong> for seamless operations.',
       ],
     },
@@ -95,26 +90,26 @@ export default {
     compliance: {
       heading: "Regulatory Compliance & <span class='halfHeading'>Global Standards</span>",
       detail: [
-        'Our calibration services adhere to stringent global standards, ensuring your equipment meets <strong>regulatory requirements</strong> and is audit-ready. By aligning with industry-leading guidelines, we provide confidence in the accuracy and compliance of your pharmaceutical operations.',
+        'Our calibration services adhere to stringent global standards, ensuring your equipment meets <strong>regulatory requirements</strong> and is audit-ready. By aligning with industry-leading guidelines, we provide confidence in the accuracy and compliance of your operations.',
       ],
       itemList: [
         '<strong>ISO/IEC 17025:2017</strong>: International standard for testing and calibration laboratories.',
         '<strong>NABL (ISO 17025 Compliant)</strong>: Accreditation ensuring technical competence and reliability.',
         '<strong>21 CFR Part 11</strong>: U.S. FDA regulations for electronic records and signatures.',
         '<strong>EU GMP Annex 11</strong>: European guidelines for computerized systems in GMP environments.',
-        '<strong>WHO TRS 986</strong>: World Health Organization standards for pharmaceutical quality assurance.',
+        '<strong>WHO TRS 986</strong>: World Health Organization standards for quality assurance.',
       ],
     },
     applications: {
       heading: "Applications & <span class='halfHeading'>Use Cases</span>",
       detail: [
-        'Our calibration services are essential for pharmaceutical companies engaged in <strong>drug development</strong>, manufacturing, and quality control. Whether operating research labs, production facilities, or quality assurance departments, our services ensure <strong>accurate and reliable results</strong>. Key use cases include calibrating analytical instruments for drug formulation, validating production equipment for consistent output, and ensuring quality control devices meet pharmacopeia standards for regulatory audits and global market compliance.',
+        'Our calibration services are essential for companies engaged in <strong>drug development</strong>, manufacturing, and quality control. Whether operating research labs, production facilities, or quality assurance departments, our services ensure <strong>accurate and reliable results</strong>. Key use cases include calibrating analytical instruments for drug formulation, validating production equipment for consistent output, and ensuring quality control devices meet pharmacopeia standards for regulatory audits and global market compliance.',
       ],
     },
     conclusion: {
       heading: "Why Choose <span class='halfHeading'>Indivirtus Healthcare</span>",
       detail: [
-        'Indivirtus Healthcare Services combines certified expertise and global regulatory knowledge to deliver unmatched calibration solutions. Our team of calibration specialists ensures <strong>scientifically defensible results</strong>, rapid turnaround times, and strict confidentiality to protect your proprietary data. With a commitment to precision and compliance, we help you achieve <strong>operational excellence</strong> and maintain trust in your pharmaceutical processes.',
+        'Indivirtus Healthcare Services combines certified expertise and global regulatory knowledge to deliver unmatched calibration solutions. Our team of calibration specialists ensures <strong>scientifically defensible results</strong>, rapid turnaround times, and strict confidentiality to protect your proprietary data. With a commitment to precision and compliance, we help you achieve <strong>operational excellence</strong> and maintain trust in your processes.',
       ],
     },
     cta: {
@@ -126,7 +121,7 @@ export default {
   gtm: {
     eventCategory: 'Premium Calibration Services',
     eventAction: 'View Electro-Technical Calibration Details',
-    eventLabel: 'Pharma Electrical Calibration Inquiry',
+    eventLabel: 'Electrical Calibration Inquiry',
     customDimensions: {
       serviceTier: 'Premium',
       accreditationLevel: 'NABL',
@@ -134,15 +129,15 @@ export default {
     dataLayerPush: {
       reportType: ['NABL Certificate', 'Compliance Report'],
       certification: 'ISO/IEC 17025:2017',
-      measurementCapability: 'DC Voltage: ±0.02% | Resistance: ±0.05%',
+      measurementCapability: 'DC Voltage | Resistance',
     },
   },
   schema: {
     '@context': 'https://schema.org',
     '@type': 'ProfessionalService',
-    name: 'Pharmaceutical Electro-Technical Calibration',
+    name: ' Electro-Technical Calibration',
     description:
-      'NABL-accredited calibration services for electrical measurement devices used in pharmaceutical quality control and manufacturing processes.',
+      'NABL-accredited calibration services for electrical measurement devices used in quality control and manufacturing processes.',
     serviceType: ['CalibrationService', 'LaboratoryService'],
     provider: {
       '@type': 'Organization',
@@ -173,11 +168,11 @@ export default {
         addressCountry: 'IN',
       },
       serviceSmsNumber: '+91-9131925456',
-      serviceEmail: 'calibration@indivirtus.com',
+      serviceEmail: 'director@indivirtus.com',
     },
     hasOfferCatalog: {
       '@type': 'OfferCatalog',
-      name: 'Pharmaceutical Electrical Calibration Services',
+      name: ' Electrical Calibration Services',
       itemListElement: [
         {
           '@type': 'Offer',
@@ -245,10 +240,10 @@ export default {
     mainEntity: [
       {
         '@type': 'Question',
-        name: 'What measurement capabilities do you offer for pharmaceutical electrical calibration?',
+        name: 'What measurement capabilities do you offer for electrical calibration?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Our NABL-accredited lab provides: • DC Voltage: 1mV–1000V (±0.02%) • Resistance: 0.1Ω–100MΩ (±0.05%) • AC Current: 1mA–20A (±0.2%) • Frequency: 10Hz–1MHz (±0.01ppm) with full uncertainty analysis meeting ISO/IEC 17025 requirements.',
+          text: 'Our NABL-accredited lab provides: • DC Voltage • Resistance • AC Current • Frequency with full uncertainty analysis meeting ISO/IEC 17025 requirements.',
         },
       },
       {
@@ -280,7 +275,7 @@ export default {
         name: 'What turnaround times can you guarantee for urgent calibration needs?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'We offer: • Standard: 3–5 business days • Priority: 48 hours (surcharge applies) • Emergency: 24-hour service (for critical equipment failure situations) with proper documentation maintained for all expedited services.',
+          text: 'We offer: • Standard: 3-5 business days • Priority: 48 hours (surcharge applies) • Emergency: 24-hour service (for critical equipment failure situations) with proper documentation maintained for all expedited services.',
         },
       },
       {
@@ -288,7 +283,7 @@ export default {
         name: 'What is NABL-accredited calibration, and why is it important?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'NABL-accredited calibration ensures that your equipment’s measurements are accurate and traceable to national and international standards, as per ISO/IEC 17025:2017. This is critical for pharmaceutical companies to meet regulatory requirements, ensure product safety, and maintain audit readiness.',
+          text: 'NABL-accredited calibration ensures that your equipment’s measurements are accurate and traceable to national and international standards, as per ISO/IEC 17025:2017. This is critical for companies to meet regulatory requirements, ensure product safety, and maintain audit readiness.',
         },
       },
       {
@@ -304,7 +299,7 @@ export default {
         name: 'What types of equipment can you calibrate?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Our services cover a wide range of pharmaceutical equipment, including laboratory instruments, production machinery, and quality control devices, with parameters like AC/DC current, voltage, resistance, inductance, and time/frequency.',
+          text: 'Our services cover a wide range of equipment, including laboratory instruments, production machinery, and quality control devices, with parameters like AC/DC current, voltage, resistance, inductance, and time/frequency.',
         },
       },
       {
@@ -326,12 +321,12 @@ export default {
     ],
   },
   meta: {
-    title: 'NABL-Accredited Electro-Technical Calibration for Pharma | Indivirtus',
+    title: 'NABL-Accredited Electro-Technical Calibration | Indivirtus',
     description:
-      'ISO 17025 compliant calibration of electrical measurement devices for pharmaceutical QC labs and manufacturing – AC/DC current, voltage, resistance, inductance with full traceability.',
+      'ISO 17025 compliant calibration of electrical measurement devices for QC labs and manufacturing – AC/DC current, voltage, resistance, inductance with full traceability.',
     keywords: [
       'NABL accredited electrical calibration',
-      'Pharmaceutical equipment calibration',
+      ' equipment calibration',
       'GMP compliant calibration services',
       'Traceable electrical measurements',
       '21 CFR Part 11 calibration',
@@ -344,11 +339,11 @@ export default {
       type: 'service',
       image: `https://www.indivirtus.com${link}.jpg`,
       url: link,
-      site_name: 'Indivirtus Metrology Services',
+      site_name: 'Indivirtus Healthcare Services',
     },
     twitterCard: {
       card: 'summary_large_image',
-      title: 'Pharma-Grade Electro-Technical Calibration Services',
+      title: 'Electro-Technical Calibration Services',
       description:
         'Precision calibration of electrical parameters for compliance with USFDA, EU GMP, and WHO regulations',
       image: `https://www.indivirtus.com${link}.jpg`,
