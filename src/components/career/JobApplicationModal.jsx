@@ -29,7 +29,51 @@ export default function JobApplicationModal() {
           &times;
         </button>
         <h3 className="mb-4 text-2xl font-semibold">Apply for {selectedJob.title}</h3>
-        <form className="space-y-4">
+        <form
+          className="space-y-4"
+          onSubmit={async (e) => {
+            e.preventDefault();
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            const payload = {
+              name: formData.get('name'),
+              email: formData.get('email'),
+              phone: formData.get('phone'),
+              message: formData.get('message'),
+              resumeUrl: 'Uploaded Separately', // optional: use a file upload service
+            };
+
+            if (formData.get('website')) {
+              return; // likely a bot
+            }
+
+            try {
+              const response = await fetch(
+                'https://script.google.com/macros/s/AKfycbz1ysEFuq61SmGkkcZOUolKYyOBUQPLmkhZeNQZ0tjBcGK-1XWCPrnYAUDe3VK0lp-gHg/exec',
+                {
+                  method: 'POST',
+                  body: JSON.stringify(payload),
+                  headers: {
+                    'Content-Type': 'application/json',
+                  },
+                },
+              );
+
+              const result = await response.json();
+              if (result.result === 'success') {
+                alert('Application submitted successfully!');
+                form.reset();
+              } else {
+                alert('Something went wrong. Please try again.');
+              }
+            } catch (error) {
+              console.error(error);
+              alert('Error submitting form');
+            }
+          }}
+        >
           <div className="mb-4">
             <label htmlFor="name" className="mb-1 block text-base font-medium">
               Name<span className="text-red-500">*</span>
