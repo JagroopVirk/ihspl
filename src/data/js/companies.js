@@ -2,7 +2,7 @@ export default [
   {
     title: 'Indivirtus Healthcare Services',
     services: ['Toxicological Services', 'Pharmacovigilance', 'MICC', 'CSV and GxP Services'],
-    link: 'https://www.indivirtus.com',
+    link: '/services',
     bgColor: 'bg-blue-50',
     textColor: 'text-blue-900',
     linkColor: 'text-orange-600',
