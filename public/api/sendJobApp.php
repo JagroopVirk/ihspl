@@ -120,7 +120,7 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.hostinger.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = `$fromEmail "-" $name`;
+    $mail->Username   = $fromEmail;
     $mail->Password   = $smtpPass;
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
