@@ -15,33 +15,33 @@ export default function JobApplicationModal() {
     return () => window.removeEventListener('open-job-modal', handler);
   }, []);
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-  //   const form = e.target;
-  //   const formData = new FormData(form);
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const formData = new FormData(form);
 
-  //   // Append job data
-  //   if (selectedJob) {
-  //     formData.append('jobTitle', selectedJob.title || '');
-  //     formData.append('jobDepartment', selectedJob.department || '');
-  //   }
+    // Append job data
+    if (selectedJob) {
+      formData.append('jobTitle', selectedJob.title || '');
+      formData.append('jobDepartment', selectedJob.department || '');
+    }
 
-  //   try {
-  //     const res = await fetch('/api/sendJobApp.php', {
-  //       method: 'POST',
-  //       body: formData,
-  //     });
+    try {
+      const res = await fetch('../api/sendJobApp.php', {
+        method: 'POST',
+        body: formData,
+      });
 
-  //     if (!res.ok) throw new Error('Failed to submit');
+      if (!res.ok) throw new Error('Failed to submit');
 
-  //     alert('✅ Application submitted successfully!');
-  //     setIsOpen(false);
-  //     form.reset();
-  //   } catch (err) {
-  //     console.error(err);
-  //     alert('❌ Failed to submit application.');
-  //   }
-  // };
+      alert('✅ Application submitted successfully!');
+      setIsOpen(false);
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      alert('❌ Failed to submit application.');
+    }
+  };
 
   if (!isOpen || !selectedJob) return null;
 
@@ -60,8 +60,8 @@ export default function JobApplicationModal() {
         <h3 className="mb-4 text-2xl font-semibold">Apply for {selectedJob.title}</h3>
         <FormAlert />
 
-        {/* <form className="space-y-4" onSubmit={handleSubmit} action="../api/sendmail.php" encType="multipart/form-data"> */}
-        <form className="space-y-4" action="../api/sendmail.php" encType="multipart/form-data">
+        <form className="space-y-4" onSubmit={handleSubmit} action="../api/sendmail.php" encType="multipart/form-data">
+          {/* <form className="space-y-4" action="../api/sendmail.php" encType="multipart/form-data"> */}
           <div>
             <label className="mb-1 block text-base font-medium">
               Name<span className="text-red-500">*</span>
