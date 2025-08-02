@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import '@/styles/career/jobApplicationModal.css';
-import FormAlert from '../other/FormAlert.astro';
 
 export default function JobApplicationModal() {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,8 +58,13 @@ export default function JobApplicationModal() {
         </button>
         <h3 className="mb-4 text-2xl font-semibold">Apply for {selectedJob.title}</h3>
 
-        {/* <form className="space-y-4" onSubmit={handleSubmit} encType="multipart/form-data"> */}
-        <form className="space-y-4" action="../api/sendmail.php" encType="multipart/form-data">
+        <form
+          className="space-y-4"
+          onSubmit={handleSubmit}
+          action="../api/sendJobApp.php"
+          encType="multipart/form-data"
+        >
+          {/* <form className="space-y-4" action="../api/sendJobApp.php" encType="multipart/form-data"> */}
           <div>
             <label className="mb-1 block text-base font-medium">
               Name<span className="text-red-500">*</span>

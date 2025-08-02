@@ -8,8 +8,8 @@ declare(strict_types=1);
 
 /* ---------- CONFIGURE --------------------------------------- */
 $env = parse_ini_file('.env');
-// $redirectBase = 'https://indivirtus.com/contact-us';
-$redirectBase = 'https://steelblue-nightingale-280613.hostingersite.com/contact-us/';
+// $redirectBase = 'https://indivirtus.com/career';
+$redirectBase = 'https://steelblue-nightingale-280613.hostingersite.com/career/';
 $to           = 'admin@indivirtus.com';
 $fromEmail    = 'admin@indivirtuscro.com';   // Update with your Hostinger email
 $fromName     = 'Job Application Form';
