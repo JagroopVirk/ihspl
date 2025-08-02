@@ -58,10 +58,9 @@ export default function JobApplicationModal() {
           &times;
         </button>
         <h3 className="mb-4 text-2xl font-semibold">Apply for {selectedJob.title}</h3>
-        <FormAlert />
 
-        <form className="space-y-4" onSubmit={handleSubmit} action="../api/sendmail.php" encType="multipart/form-data">
-          {/* <form className="space-y-4" action="../api/sendmail.php" encType="multipart/form-data"> */}
+        {/* <form className="space-y-4" onSubmit={handleSubmit} encType="multipart/form-data"> */}
+        <form className="space-y-4" action="../api/sendmail.php" encType="multipart/form-data">
           <div>
             <label className="mb-1 block text-base font-medium">
               Name<span className="text-red-500">*</span>
