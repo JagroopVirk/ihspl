@@ -1,14 +1,9 @@
-//src\components\career\JobApplicationModal.jsx
-
 import { useState, useEffect } from 'react';
 import '@/styles/career/jobApplicationModal.css';
-
-import { useSubmitJobForm } from './useSubmitJobForm';
 
 export default function JobApplicationModal() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedJob, setSelectedJob] = useState(null);
-  const { submitApplication } = useSubmitJobForm();
 
   useEffect(() => {
     const handler = (e) => {
@@ -21,18 +16,29 @@ export default function JobApplicationModal() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-
     const form = e.target;
     const formData = new FormData(form);
 
+    // Append job data
+    if (selectedJob) {
+      formData.append('jobTitle', selectedJob.title || '');
+      formData.append('jobDepartment', selectedJob.department || '');
+    }
+
     try {
-      await submitApplication(formData);
-      alert('Application submitted successfully!');
+      const res = await fetch('/api/sendJobApp.php', {
+        method: 'POST',
+        body: formData,
+      });
+
+      if (!res.ok) throw new Error('Failed to submit');
+
+      alert('✅ Application submitted successfully!');
       setIsOpen(false);
       form.reset();
     } catch (err) {
       console.error(err);
-      alert('Failed to submit application.');
+      alert('❌ Failed to submit application.');
     }
   };
 
@@ -52,81 +58,73 @@ export default function JobApplicationModal() {
         </button>
         <h3 className="mb-4 text-2xl font-semibold">Apply for {selectedJob.title}</h3>
 
-        <form className="space-y-4" onSubmit={handleSubmit}>
-          <div className="mb-4">
-            <label htmlFor="name" className="mb-1 block text-base font-medium">
+        <form className="space-y-4" onSubmit={handleSubmit} encType="multipart/form-data">
+          <div>
+            <label className="mb-1 block text-base font-medium">
               Name<span className="text-red-500">*</span>
             </label>
             <input
               type="text"
-              id="name"
               name="name"
               placeholder="Full Name"
               required
-              className="focus:ring-input-focus w-full rounded-md border p-2 text-base focus:ring-1 focus:outline-none"
+              className="w-full rounded-md border p-2 focus:ring-1 focus:outline-none"
             />
           </div>
 
-          <div className="mb-4">
-            <label htmlFor="email" className="mb-1 block text-base font-medium">
+          <div>
+            <label className="mb-1 block text-base font-medium">
               Email<span className="text-red-500">*</span>
             </label>
             <input
               type="email"
-              id="email"
               name="email"
               placeholder="Your email address"
               required
-              className="focus:ring-input-focus w-full rounded-md border p-2 text-base focus:ring-1 focus:outline-none"
+              className="w-full rounded-md border p-2 focus:ring-1 focus:outline-none"
             />
           </div>
 
-          <div className="mb-4">
-            <label htmlFor="phone" className="mb-1 block text-base font-medium">
-              Phone
-            </label>
+          <div>
+            <label className="mb-1 block text-base font-medium">Phone</label>
             <input
               type="text"
-              id="phone"
-              name="phone"
+              name="contact"
               placeholder="Your phone number"
-              className="focus:ring-input-focus w-full rounded-md border p-2 text-base focus:ring-1 focus:outline-none"
               required
+              className="w-full rounded-md border p-2 focus:ring-1 focus:outline-none"
             />
           </div>
 
-          <div className="mb-4">
-            <label htmlFor="resume" className="mb-1 block text-base font-medium">
-              Upload Resume
-            </label>
+          <div>
+            <label className="mb-1 block text-base font-medium">Upload Resume</label>
             <input
               type="file"
-              id="resume"
+              name="resume"
               accept=".pdf,.doc,.docx"
-              className="focus:ring-input-focus w-full rounded-md border p-2 text-base focus:ring-1 focus:outline-none"
               required
+              className="w-full rounded-md border p-2 focus:ring-1 focus:outline-none"
             />
           </div>
 
-          <div className="mb-4">
-            <label htmlFor="message" className="mb-1 block text-base font-medium">
+          <div>
+            <label className="mb-1 block text-base font-medium">
               Cover Letter<span className="text-red-500">*</span>
             </label>
             <textarea
-              id="message"
               name="message"
               placeholder="Write cover letter"
               required
-              className="focus:ring-input-focus h-32 w-full rounded-md border p-2 text-base focus:ring-1 focus:outline-none"
+              className="h-32 w-full rounded-md border p-2 focus:ring-1 focus:outline-none"
             ></textarea>
           </div>
 
-          <div className="mb-4 hidden">
-            <label htmlFor="website" className="mb-1 block text-base font-medium">
-              Website
-            </label>
-            <input type="text" id="website" name="website" placeholder="website" className="border text-base" />
+          {/* Honeypot (spam bot trap) */}
+          <div className="hidden">
+            <label>Website</label>
+            <input type="text" name="website" placeholder="website" />
           </div>
+
           <button type="submit" className="button contactBtn">
             Submit Application
           </button>
@@ -134,52 +132,4 @@ export default function JobApplicationModal() {
       </div>
     </div>
   );
-}
-
-{
-  /* <form
-          className="space-y-4"
-          onSubmit={async (e) => {
-            e.preventDefault();
-
-            const form = e.target;
-            const formData = new FormData(form);
-
-            const payload = {
-              name: formData.get('name'),
-              email: formData.get('email'),
-              phone: formData.get('phone'),
-              message: formData.get('message'),
-              resumeUrl: 'Uploaded Separately', // optional: use a file upload service
-            };
-
-            if (formData.get('website')) {
-              return; // likely a bot
-            }
-
-            try {
-              const response = await fetch(
-                'https://script.google.com/macros/s/AKfycbz1ysEFuq61SmGkkcZOUolKYyOBUQPLmkhZeNQZ0tjBcGK-1XWCPrnYAUDe3VK0lp-gHg/exec',
-                {
-                  method: 'POST',
-                  body: JSON.stringify(payload),
-                  headers: {
-                    'Content-Type': 'application/json',
-                  },
-                },
-              );
-
-              const result = await response.json();
-              if (result.result === 'success') {
-                alert('Application submitted successfully!');
-                form.reset();
-              } else {
-                alert('Something went wrong. Please try again.');
-              }
-            } catch (error) {
-              console.error(error);
-              alert('Error submitting form');
-            }
-          }}
-        >*/
 }

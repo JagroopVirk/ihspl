@@ -1,3 +1,4 @@
+<!-- public\api\sendJobApp.php -->
 <?php
 /*****************************************************************
  * Secure Contact Form Handler with Rate-Limiting + PHPMailer (PHP 8+)
@@ -11,7 +12,7 @@ $env = parse_ini_file('.env');
 $redirectBase = 'https://steelblue-nightingale-280613.hostingersite.com/contact-us/';
 $to           = 'admin@indivirtus.com';
 $fromEmail    = 'admin@indivirtuscro.com';   // Update with your Hostinger email
-$fromName     = 'IHSPL Website Contact Page Form';
+$fromName     = 'Job Application Form';
 $smtpPass     = 'Indivirtus@123';             // Your email password or app password
 $rateDir      = __DIR__ . '/rate_limit';    // must be writable
 $maxRequests  = 10;                           // submissions per window
@@ -74,6 +75,11 @@ $email    = filter_var(trim($_POST['email'] ?? ''), FILTER_SANITIZE_EMAIL);
 $contact  = clean($_POST['contact'] ?? '');
 $message  = clean($_POST['message'] ?? '');
 
+//get the resume file
+if (isset($_FILES['resume']) && $_FILES['resume']['error'] === UPLOAD_ERR_OK) {
+    $mail->addAttachment($_FILES['resume']['tmp_name'], $_FILES['resume']['name']);
+}
+
 // Honeypot anti-spam
 if (!empty($_POST['website'] ?? '')) {
     redirect($redirectBase, 'error=spam_detected');
@@ -93,30 +99,20 @@ if (preg_match($injPattern, $name) || preg_match($injPattern, $email)) {
     redirect($redirectBase, 'error=invalid_input');
 }
 
+
+$jobTitle = clean($_POST['jobTitle'] ?? '');
+$jobDept = clean($_POST['jobDepartment'] ?? '');
+
 // Build HTML email
-$subject = 'New Contact Form Submission from IHSPL Website';
-$emailBody = <<<HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<style>
-  body {font-family: Arial, sans-serif; color:#333;}
-  h2   {color:#0056b3;}
-  p    {margin:0 0 10px;}
-</style>
-</head>
-<body>
-  <h2>New Contact Form Submission</h2><br>
-  <p><strong>Name:</strong> {$name} </p><br>
-  <p><strong>Email:</strong> {$email}</p><br>
-  <p><strong>Contact:</strong> {$contact}</p><br>
-  <p><strong>Message:</strong><br>
-     {($message)}
-  </p>
-</body>
-</html>
-HTML;
+$subject = "New Job Application - {$jobTitle}";
+$emailBody = "
+  <h2>New Job Application</h2>
+  <p><strong>Name:</strong> {$name}</p>
+  <p><strong>Email:</strong> {$email}</p>
+  <p><strong>Contact:</strong> {$contact}</p>
+  <p><strong>Position:</strong> {$jobTitle} ({$jobDept})</p>
+  <p><strong>Message:</strong><br>{$message}</p>
+";
 
 // Send using PHPMailer
 $mail = new PHPMailer(true);
@@ -124,7 +120,7 @@ try {
     $mail->isSMTP();
     $mail->Host       = 'smtp.hostinger.com';
     $mail->SMTPAuth   = true;
-    $mail->Username   = $fromEmail;
+    $mail->Username   = `$fromEmail "-" $name`;
     $mail->Password   = $smtpPass;
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
