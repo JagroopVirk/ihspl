@@ -8,7 +8,6 @@ export async function POST({ request }) {
     const email = formData.get('email');
     const phone = formData.get('phone');
     const message = formData.get('message');
-    const website = formData.get('website');
     const resume = formData.get('resume');
     const job = formData.get('job'); // JSON string
 
@@ -21,7 +20,7 @@ export async function POST({ request }) {
     const transporter = nodemailer.createTransport({
       host: 'smtp.hostinger.com',
       port: 465,
-      secure: 'ssl' === 'true',
+      secure: true, // SSL
       auth: {
         user: 'admin@indivirtuscro.com',
         pass: 'Indivirtus@123',
@@ -29,21 +28,21 @@ export async function POST({ request }) {
     });
 
     const mailOptions = {
-      from: `"${name}" <${email}>`,
+      from: `"${name}" `,
       to: 'admin@indivirtus.com',
-      subject: `New Job Application: ${jobObj.title || 'Unknown Position'}`,
+      replyTo: `${email}`,
+      subject: `New Job Application: ${jobObj.title || ''}`,
       text: `
 Name: ${name}
 Email: ${email}
 Phone: ${phone}
-Website: ${website}
 Job Title: ${jobObj.title}
 Department: ${jobObj.department}
 Message: ${message}
       `,
       attachments: [
         {
-          filename: resume.name,
+          filename: resume?.name || 'resume.pdf',
           content: resumeContent,
         },
       ],
